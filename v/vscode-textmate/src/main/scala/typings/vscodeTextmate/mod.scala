@@ -1,24 +1,14 @@
 package typings.vscodeTextmate
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vscodeTextmate.anon.Background
-import typings.vscodeTextmate.releaseTypesMod.IOnigLib
-import typings.vscodeTextmate.releaseTypesMod.IRawGrammar
-import typings.vscodeTextmate.vscodeTextmateDoubles.`4278190080`
-import typings.vscodeTextmate.vscodeTextmateInts.`0`
-import typings.vscodeTextmate.vscodeTextmateInts.`1024`
-import typings.vscodeTextmate.vscodeTextmateInts.`10`
-import typings.vscodeTextmate.vscodeTextmateInts.`11`
-import typings.vscodeTextmate.vscodeTextmateInts.`15`
-import typings.vscodeTextmate.vscodeTextmateInts.`16744448`
-import typings.vscodeTextmate.vscodeTextmateInts.`1`
-import typings.vscodeTextmate.vscodeTextmateInts.`24`
-import typings.vscodeTextmate.vscodeTextmateInts.`255`
-import typings.vscodeTextmate.vscodeTextmateInts.`2`
-import typings.vscodeTextmate.vscodeTextmateInts.`30720`
-import typings.vscodeTextmate.vscodeTextmateInts.`3`
-import typings.vscodeTextmate.vscodeTextmateInts.`768`
-import typings.vscodeTextmate.vscodeTextmateInts.`8`
+import typings.vscodeTextmate.releaseDiffStateStacksMod.StackDiff
+import typings.vscodeTextmate.releaseEncodedTokenAttributesMod.StandardTokenType
+import typings.vscodeTextmate.releaseGrammarMod.StateStackImpl
+import typings.vscodeTextmate.releaseOnigLibMod.IOnigLib
+import typings.vscodeTextmate.releaseOnigLibMod.OnigString
+import typings.vscodeTextmate.releaseRawGrammarMod.IRawGrammar
+import typings.vscodeTextmate.releaseThemeMod.IRawTheme
+import typings.vscodeTextmate.releaseThemeMod.ScopeName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +21,7 @@ object mod {
   
   @JSImport("vscode-textmate", "INITIAL")
   @js.native
-  val INITIAL: StackElement = js.native
+  val INITIAL: StateStack = js.native
   
   @JSImport("vscode-textmate", "Registry")
   @js.native
@@ -97,19 +87,19 @@ object mod {
     /**
       * Load the grammar for `scopeName` and all referenced included grammars asynchronously.
       */
-    def loadGrammar(initialScopeName: String): js.Promise[IGrammar | Null] = js.native
+    def loadGrammar(initialScopeName: ScopeName): js.Promise[IGrammar | Null] = js.native
     
     /**
       * Load the grammar for `scopeName` and all referenced included grammars asynchronously.
       * Please do not use language id 0.
       */
-    def loadGrammarWithConfiguration(initialScopeName: String, initialLanguage: Double, configuration: IGrammarConfiguration): js.Promise[IGrammar | Null] = js.native
+    def loadGrammarWithConfiguration(initialScopeName: ScopeName, initialLanguage: Double, configuration: IGrammarConfiguration): js.Promise[IGrammar | Null] = js.native
     
     /**
       * Load the grammar for `scopeName` and all referenced included grammars asynchronously.
       * Please do not use language id 0.
       */
-    def loadGrammarWithEmbeddedLanguages(initialScopeName: String, initialLanguage: Double, embeddedLanguages: IEmbeddedLanguagesMap): js.Promise[IGrammar | Null] = js.native
+    def loadGrammarWithEmbeddedLanguages(initialScopeName: ScopeName, initialLanguage: Double, embeddedLanguages: IEmbeddedLanguagesMap): js.Promise[IGrammar | Null] = js.native
     
     /**
       * Change the theme. Once called, no previous `ruleStack` should be used anymore.
@@ -117,6 +107,13 @@ object mod {
     def setTheme(theme: IRawTheme): Unit = js.native
     def setTheme(theme: IRawTheme, colorMap: js.Array[String]): Unit = js.native
   }
+  
+  inline def applyStateStackDiff(stack: Null, diff: StackDiff): StateStackImpl | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("applyStateStackDiff")(stack.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[StateStackImpl | Null]
+  inline def applyStateStackDiff(stack: StateStack, diff: StackDiff): StateStackImpl | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("applyStateStackDiff")(stack.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[StateStackImpl | Null]
+  
+  inline def diffStateStacksRefEq(first: StateStack, second: StateStack): StackDiff = (^.asInstanceOf[js.Dynamic].applyDynamic("diffStateStacksRefEq")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[StackDiff]
+  
+  inline def disposeOnigString(str: OnigString): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disposeOnigString")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def parseRawGrammar(content: String): IRawGrammar = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRawGrammar")(content.asInstanceOf[js.Any]).asInstanceOf[IRawGrammar]
   inline def parseRawGrammar(content: String, filePath: String): IRawGrammar = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRawGrammar")(content.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[IRawGrammar]
@@ -131,8 +128,8 @@ object mod {
       */
     def tokenizeLine(lineText: String): ITokenizeLineResult = js.native
     def tokenizeLine(lineText: String, prevState: Null, timeLimit: Double): ITokenizeLineResult = js.native
-    def tokenizeLine(lineText: String, prevState: StackElement): ITokenizeLineResult = js.native
-    def tokenizeLine(lineText: String, prevState: StackElement, timeLimit: Double): ITokenizeLineResult = js.native
+    def tokenizeLine(lineText: String, prevState: StateStack): ITokenizeLineResult = js.native
+    def tokenizeLine(lineText: String, prevState: StateStack, timeLimit: Double): ITokenizeLineResult = js.native
     
     /**
       * Tokenize `lineText` using previous line state `prevState`.
@@ -146,8 +143,8 @@ object mod {
       */
     def tokenizeLine2(lineText: String): ITokenizeLineResult2 = js.native
     def tokenizeLine2(lineText: String, prevState: Null, timeLimit: Double): ITokenizeLineResult2 = js.native
-    def tokenizeLine2(lineText: String, prevState: StackElement): ITokenizeLineResult2 = js.native
-    def tokenizeLine2(lineText: String, prevState: StackElement, timeLimit: Double): ITokenizeLineResult2 = js.native
+    def tokenizeLine2(lineText: String, prevState: StateStack): ITokenizeLineResult2 = js.native
+    def tokenizeLine2(lineText: String, prevState: StateStack, timeLimit: Double): ITokenizeLineResult2 = js.native
   }
   
   trait IGrammarConfiguration extends StObject {
@@ -192,64 +189,6 @@ object mod {
     }
   }
   
-  trait IRawTheme extends StObject {
-    
-    val name: js.UndefOr[String] = js.undefined
-    
-    val settings: js.Array[IRawThemeSetting]
-  }
-  object IRawTheme {
-    
-    inline def apply(settings: js.Array[IRawThemeSetting]): IRawTheme = {
-      val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IRawTheme]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: IRawTheme] (val x: Self) extends AnyVal {
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setSettings(value: js.Array[IRawThemeSetting]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
-      
-      inline def setSettingsVarargs(value: IRawThemeSetting*): Self = StObject.set(x, "settings", js.Array(value*))
-    }
-  }
-  
-  trait IRawThemeSetting extends StObject {
-    
-    val name: js.UndefOr[String] = js.undefined
-    
-    val scope: js.UndefOr[String | js.Array[String]] = js.undefined
-    
-    val settings: Background
-  }
-  object IRawThemeSetting {
-    
-    inline def apply(settings: Background): IRawThemeSetting = {
-      val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IRawThemeSetting]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: IRawThemeSetting] (val x: Self) extends AnyVal {
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
-      
-      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
-      
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
-      
-      inline def setSettings(value: Background): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait IToken extends StObject {
     
     val endIndex: Double
@@ -285,7 +224,7 @@ object mod {
     /**
       * The `prevState` to be passed on to the next line tokenization.
       */
-    val ruleStack: StackElement
+    val ruleStack: StateStack
     
     /**
       * Did tokenization stop early due to reaching the time limit.
@@ -296,7 +235,7 @@ object mod {
   }
   object ITokenizeLineResult {
     
-    inline def apply(ruleStack: StackElement, stoppedEarly: Boolean, tokens: js.Array[IToken]): ITokenizeLineResult = {
+    inline def apply(ruleStack: StateStack, stoppedEarly: Boolean, tokens: js.Array[IToken]): ITokenizeLineResult = {
       val __obj = js.Dynamic.literal(ruleStack = ruleStack.asInstanceOf[js.Any], stoppedEarly = stoppedEarly.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITokenizeLineResult]
     }
@@ -304,7 +243,7 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ITokenizeLineResult] (val x: Self) extends AnyVal {
       
-      inline def setRuleStack(value: StackElement): Self = StObject.set(x, "ruleStack", value.asInstanceOf[js.Any])
+      inline def setRuleStack(value: StateStack): Self = StObject.set(x, "ruleStack", value.asInstanceOf[js.Any])
       
       inline def setStoppedEarly(value: Boolean): Self = StObject.set(x, "stoppedEarly", value.asInstanceOf[js.Any])
       
@@ -319,7 +258,7 @@ object mod {
     /**
       * The `prevState` to be passed on to the next line tokenization.
       */
-    val ruleStack: StackElement
+    val ruleStack: StateStack
     
     /**
       * Did tokenization stop early due to reaching the time limit.
@@ -336,7 +275,7 @@ object mod {
   }
   object ITokenizeLineResult2 {
     
-    inline def apply(ruleStack: StackElement, stoppedEarly: Boolean, tokens: js.typedarray.Uint32Array): ITokenizeLineResult2 = {
+    inline def apply(ruleStack: StateStack, stoppedEarly: Boolean, tokens: js.typedarray.Uint32Array): ITokenizeLineResult2 = {
       val __obj = js.Dynamic.literal(ruleStack = ruleStack.asInstanceOf[js.Any], stoppedEarly = stoppedEarly.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITokenizeLineResult2]
     }
@@ -344,7 +283,7 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ITokenizeLineResult2] (val x: Self) extends AnyVal {
       
-      inline def setRuleStack(value: StackElement): Self = StObject.set(x, "ruleStack", value.asInstanceOf[js.Any])
+      inline def setRuleStack(value: StateStack): Self = StObject.set(x, "ruleStack", value.asInstanceOf[js.Any])
       
       inline def setStoppedEarly(value: Boolean): Self = StObject.set(x, "stoppedEarly", value.asInstanceOf[js.Any])
       
@@ -352,55 +291,13 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.vscodeTextmate.vscodeTextmateInts.`255`
-    - typings.vscodeTextmate.vscodeTextmateInts.`768`
-    - typings.vscodeTextmate.vscodeTextmateInts.`1024`
-    - typings.vscodeTextmate.vscodeTextmateInts.`30720`
-    - typings.vscodeTextmate.vscodeTextmateInts.`16744448`
-    - typings.vscodeTextmate.vscodeTextmateDoubles.`4278190080`
-    - typings.vscodeTextmate.vscodeTextmateInts.`0`
-    - typings.vscodeTextmate.vscodeTextmateInts.`8`
-    - typings.vscodeTextmate.vscodeTextmateInts.`10`
-    - typings.vscodeTextmate.vscodeTextmateInts.`11`
-    - typings.vscodeTextmate.vscodeTextmateInts.`15`
-    - typings.vscodeTextmate.vscodeTextmateInts.`24`
-  */
-  trait MetadataConsts extends StObject
-  object MetadataConsts {
-    
-    inline def BACKGROUND_MASK: `4278190080` = 4278190080d.asInstanceOf[`4278190080`]
-    
-    inline def BACKGROUND_OFFSET: `24` = 24.asInstanceOf[`24`]
-    
-    inline def BALANCED_BRACKETS_MASK: `1024` = 1024.asInstanceOf[`1024`]
-    
-    inline def BALANCED_BRACKETS_OFFSET: `10` = 10.asInstanceOf[`10`]
-    
-    inline def FONT_STYLE_MASK: `30720` = 30720.asInstanceOf[`30720`]
-    
-    inline def FONT_STYLE_OFFSET: `11` = 11.asInstanceOf[`11`]
-    
-    inline def FOREGROUND_MASK: `16744448` = 16744448.asInstanceOf[`16744448`]
-    
-    inline def FOREGROUND_OFFSET: `15` = 15.asInstanceOf[`15`]
-    
-    inline def LANGUAGEID_MASK: `255` = 255.asInstanceOf[`255`]
-    
-    inline def LANGUAGEID_OFFSET: `0` = 0.asInstanceOf[`0`]
-    
-    inline def TOKEN_TYPE_MASK: `768` = 768.asInstanceOf[`768`]
-    
-    inline def TOKEN_TYPE_OFFSET: `8` = 8.asInstanceOf[`8`]
-  }
-  
   trait RegistryOptions extends StObject {
     
     var colorMap: js.UndefOr[js.Array[String]] = js.undefined
     
-    var getInjections: js.UndefOr[js.Function1[/* scopeName */ String, js.UndefOr[js.Array[String]]]] = js.undefined
+    var getInjections: js.UndefOr[js.Function1[/* scopeName */ ScopeName, js.UndefOr[js.Array[ScopeName]]]] = js.undefined
     
-    def loadGrammar(scopeName: String): js.Promise[js.UndefOr[IRawGrammar | Null]]
+    def loadGrammar(scopeName: ScopeName): js.Promise[js.UndefOr[IRawGrammar | Null]]
     
     var onigLib: js.Promise[IOnigLib]
     
@@ -408,7 +305,10 @@ object mod {
   }
   object RegistryOptions {
     
-    inline def apply(loadGrammar: String => js.Promise[js.UndefOr[IRawGrammar | Null]], onigLib: js.Promise[IOnigLib]): RegistryOptions = {
+    inline def apply(
+      loadGrammar: ScopeName => js.Promise[js.UndefOr[IRawGrammar | Null]],
+      onigLib: js.Promise[IOnigLib]
+    ): RegistryOptions = {
       val __obj = js.Dynamic.literal(loadGrammar = js.Any.fromFunction1(loadGrammar), onigLib = onigLib.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegistryOptions]
     }
@@ -422,11 +322,11 @@ object mod {
       
       inline def setColorMapVarargs(value: String*): Self = StObject.set(x, "colorMap", js.Array(value*))
       
-      inline def setGetInjections(value: /* scopeName */ String => js.UndefOr[js.Array[String]]): Self = StObject.set(x, "getInjections", js.Any.fromFunction1(value))
+      inline def setGetInjections(value: /* scopeName */ ScopeName => js.UndefOr[js.Array[ScopeName]]): Self = StObject.set(x, "getInjections", js.Any.fromFunction1(value))
       
       inline def setGetInjectionsUndefined: Self = StObject.set(x, "getInjections", js.undefined)
       
-      inline def setLoadGrammar(value: String => js.Promise[js.UndefOr[IRawGrammar | Null]]): Self = StObject.set(x, "loadGrammar", js.Any.fromFunction1(value))
+      inline def setLoadGrammar(value: ScopeName => js.Promise[js.UndefOr[IRawGrammar | Null]]): Self = StObject.set(x, "loadGrammar", js.Any.fromFunction1(value))
       
       inline def setOnigLib(value: js.Promise[IOnigLib]): Self = StObject.set(x, "onigLib", value.asInstanceOf[js.Any])
       
@@ -436,48 +336,30 @@ object mod {
     }
   }
   
-  trait StackElement extends StObject {
+  trait StateStack extends StObject {
     
     var _stackElementBrand: Unit
     
     val depth: Double
     
-    def equals(other: StackElement): Boolean
+    def equals(other: StateStack): Boolean
   }
-  object StackElement {
+  object StateStack {
     
-    inline def apply(_stackElementBrand: Unit, depth: Double, equals_ : StackElement => Boolean): StackElement = {
+    inline def apply(_stackElementBrand: Unit, depth: Double, equals_ : StateStack => Boolean): StateStack = {
       val __obj = js.Dynamic.literal(_stackElementBrand = _stackElementBrand.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any])
       __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
-      __obj.asInstanceOf[StackElement]
+      __obj.asInstanceOf[StateStack]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: StackElement] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: StateStack] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      inline def setEquals_(value: StackElement => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: StateStack => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
       inline def set_stackElementBrand(value: Unit): Self = StObject.set(x, "_stackElementBrand", value.asInstanceOf[js.Any])
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.vscodeTextmate.vscodeTextmateInts.`0`
-    - typings.vscodeTextmate.vscodeTextmateInts.`1`
-    - typings.vscodeTextmate.vscodeTextmateInts.`2`
-    - typings.vscodeTextmate.vscodeTextmateInts.`3`
-  */
-  trait StandardTokenType extends StObject
-  object StandardTokenType {
-    
-    inline def Comment: `1` = 1.asInstanceOf[`1`]
-    
-    inline def Other: `0` = 0.asInstanceOf[`0`]
-    
-    inline def RegEx: `3` = 3.asInstanceOf[`3`]
-    
-    inline def String: `2` = 2.asInstanceOf[`2`]
   }
 }

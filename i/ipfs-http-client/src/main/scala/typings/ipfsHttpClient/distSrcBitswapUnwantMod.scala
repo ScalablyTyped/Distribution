@@ -14,7 +14,7 @@ object distSrcBitswapUnwantMod {
   @js.native
   val createUnwant: Factory[
     js.Function2[
-      /* cid */ (CID[Any, Double, Double, Version]) | (js.Array[CID[Any, Double, Double, Version]]), 
+      /* cids */ (CID[Any, Double, Double, Version]) | (js.Array[CID[Any, Double, Double, Version]]), 
       /* options */ js.UndefOr[AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions], 
       js.Promise[Unit]
     ]

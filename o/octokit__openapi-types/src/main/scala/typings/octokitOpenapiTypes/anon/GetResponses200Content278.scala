@@ -6,17 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200Content278 extends StObject {
   
-  /**
-    * This method returns the contents of the repository's license file, if one is detected.
-    *
-    * Similar to [Get repository content](https://docs.github.com/rest/reference/repos#get-repository-content), this method also supports [custom media types](https://docs.github.com/rest/overview/media-types) for retrieving the raw license content or rendered license HTML.
-    */
+  /** List labels for a repository */
   var get: Responses200Content278
+  
+  /** Create a label */
+  var post: RequestBodyContentApplicationjsonColorDescription
 }
 object GetResponses200Content278 {
   
-  inline def apply(get: Responses200Content278): GetResponses200Content278 = {
-    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
+  inline def apply(get: Responses200Content278, post: RequestBodyContentApplicationjsonColorDescription): GetResponses200Content278 = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponses200Content278]
   }
   
@@ -24,5 +23,7 @@ object GetResponses200Content278 {
   implicit open class MutableBuilder[Self <: GetResponses200Content278] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Responses200Content278): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    
+    inline def setPost(value: RequestBodyContentApplicationjsonColorDescription): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

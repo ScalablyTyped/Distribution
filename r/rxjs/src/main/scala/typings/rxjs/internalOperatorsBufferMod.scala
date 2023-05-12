@@ -1,6 +1,6 @@
 package typings.rxjs
 
-import typings.rxjs.distTypesInternalObservableMod.Observable
+import typings.rxjs.distTypesInternalTypesMod.ObservableInput
 import typings.rxjs.distTypesInternalTypesMod.OperatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,5 +13,5 @@ object internalOperatorsBufferMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def buffer[T](closingNotifier: Observable[Any]): OperatorFunction[T, js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(closingNotifier.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  inline def buffer[T](closingNotifier: ObservableInput[Any]): OperatorFunction[T, js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(closingNotifier.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, js.Array[T]]]
 }

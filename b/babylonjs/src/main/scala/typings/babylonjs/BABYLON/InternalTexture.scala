@@ -94,6 +94,9 @@ trait InternalTexture
   var _references: Double = js.native
   
   /** @internal */
+  def _setUniqueId(id: Double): Unit = js.native
+  
+  /** @internal */
   var _size: Double = js.native
   
   /** @internal */
@@ -205,6 +208,11 @@ trait InternalTexture
     * Defines if the texture is ready
     */
   var isReady: Boolean = js.native
+  
+  /**
+    * Used for debugging purpose only
+    */
+  var label: js.UndefOr[String] = js.native
   
   /**
     * Observable called when the texture load is raising an error

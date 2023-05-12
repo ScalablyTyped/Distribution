@@ -10,7 +10,7 @@ open class Drawer protected () extends _MDLComponent[DrawerProps] {
   def this(props: DrawerProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: DrawerProps, context: Any) = this()
 }

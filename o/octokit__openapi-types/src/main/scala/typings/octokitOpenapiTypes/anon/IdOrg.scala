@@ -18,11 +18,11 @@ trait IdOrg extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actor'] */ js.Any
   ] = js.undefined
   
-  var payload: Pages
+  var payload: CommentIssue
   
   var public: Boolean
   
-  var repo: NameUrl
+  var repo: IdName
   
   var `type`: String | Null
 }
@@ -31,9 +31,9 @@ object IdOrg {
   inline def apply(
     actor: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actor'] */ js.Any,
     id: String,
-    payload: Pages,
+    payload: CommentIssue,
     public: Boolean,
-    repo: NameUrl
+    repo: IdName
   ): IdOrg = {
     val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], created_at = null)
     __obj.updateDynamic("type")(null)
@@ -59,11 +59,11 @@ object IdOrg {
     
     inline def setOrg_Undefined: Self = StObject.set(x, "org", js.undefined)
     
-    inline def setPayload(value: Pages): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: CommentIssue): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    inline def setRepo(value: NameUrl): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: IdName): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

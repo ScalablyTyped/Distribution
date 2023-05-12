@@ -1,9 +1,9 @@
 package typings.libp2pTcp
 
 import typings.libp2pInterfaceConnection.mod.MultiaddrConnection
+import typings.libp2pInterfaceMetrics.mod.CounterGroup
 import typings.multiformatsMultiaddr.mod.Multiaddr_
 import typings.node.netMod.Socket
-import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,6 @@ object distSrcSocketToConnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def toMultiaddrConnection(socket: Socket): MultiaddrConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("toMultiaddrConnection")(socket.asInstanceOf[js.Any]).asInstanceOf[MultiaddrConnection]
   inline def toMultiaddrConnection(socket: Socket, options: ToConnectionOptions): MultiaddrConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("toMultiaddrConnection")(socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MultiaddrConnection]
   
   trait ToConnectionOptions extends StObject {
@@ -23,9 +22,11 @@ object distSrcSocketToConnMod {
     
     var localAddr: js.UndefOr[Multiaddr_] = js.undefined
     
-    var remoteAddr: js.UndefOr[Multiaddr_] = js.undefined
+    var metricPrefix: js.UndefOr[String] = js.undefined
     
-    var signal: js.UndefOr[AbortSignal] = js.undefined
+    var metrics: js.UndefOr[CounterGroup] = js.undefined
+    
+    var remoteAddr: js.UndefOr[Multiaddr_] = js.undefined
     
     var socketCloseTimeout: js.UndefOr[Double] = js.undefined
     
@@ -49,13 +50,17 @@ object distSrcSocketToConnMod {
       
       inline def setLocalAddrUndefined: Self = StObject.set(x, "localAddr", js.undefined)
       
+      inline def setMetricPrefix(value: String): Self = StObject.set(x, "metricPrefix", value.asInstanceOf[js.Any])
+      
+      inline def setMetricPrefixUndefined: Self = StObject.set(x, "metricPrefix", js.undefined)
+      
+      inline def setMetrics(value: CounterGroup): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+      
       inline def setRemoteAddr(value: Multiaddr_): Self = StObject.set(x, "remoteAddr", value.asInstanceOf[js.Any])
       
       inline def setRemoteAddrUndefined: Self = StObject.set(x, "remoteAddr", js.undefined)
-      
-      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
-      
-      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
       inline def setSocketCloseTimeout(value: Double): Self = StObject.set(x, "socketCloseTimeout", value.asInstanceOf[js.Any])
       

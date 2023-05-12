@@ -16,7 +16,7 @@ object libIconsSmallDashOutlinedMod extends Shortcut {
   @js.native
   trait SmallDashOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SmallDashOutlinedIconType: String = js.native

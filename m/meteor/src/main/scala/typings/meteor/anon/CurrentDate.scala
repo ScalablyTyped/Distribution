@@ -7,7 +7,6 @@ import typings.meteor.Mongo.ElementsOf
 import typings.meteor.Mongo.PartialMapTo
 import typings.meteor.Mongo.PushModifier
 import typings.meteor.meteorInts.`-1`
-import typings.meteor.meteorInts.`1`
 import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -37,7 +36,9 @@ trait CurrentDate[T] extends StObject {
   var $mul: js.UndefOr[(PartialMapTo[T, Double]) & Dictionary[Double]] = js.undefined
   
   @JSName("$pop")
-  var $pop: js.UndefOr[(PartialMapTo[T, `1` | `-1`]) & (Dictionary[`1` | `-1`])] = js.undefined
+  var $pop: js.UndefOr[
+    (PartialMapTo[T, typings.meteor.meteorInts.`1` | `-1`]) & (Dictionary[typings.meteor.meteorInts.`1` | `-1`])
+  ] = js.undefined
   
   @JSName("$pull")
   var $pull: js.UndefOr[ElementsOf[T] & Dictionary[Any]] = js.undefined
@@ -59,7 +60,10 @@ trait CurrentDate[T] extends StObject {
   
   @JSName("$unset")
   var $unset: js.UndefOr[
-    (PartialMapTo[T, String | Boolean | `1` | typings.meteor.meteorInts.`0`]) & Dictionary[Any]
+    (PartialMapTo[
+      T, 
+      String | Boolean | typings.meteor.meteorInts.`1` | typings.meteor.meteorInts.`0`
+    ]) & Dictionary[Any]
   ] = js.undefined
 }
 object CurrentDate {
@@ -98,7 +102,9 @@ object CurrentDate {
     
     inline def set$mulUndefined: Self = StObject.set(x, "$mul", js.undefined)
     
-    inline def set$pop(value: (PartialMapTo[T, `1` | `-1`]) & (Dictionary[`1` | `-1`])): Self = StObject.set(x, "$pop", value.asInstanceOf[js.Any])
+    inline def set$pop(
+      value: (PartialMapTo[T, typings.meteor.meteorInts.`1` | `-1`]) & (Dictionary[typings.meteor.meteorInts.`1` | `-1`])
+    ): Self = StObject.set(x, "$pop", value.asInstanceOf[js.Any])
     
     inline def set$popUndefined: Self = StObject.set(x, "$pop", js.undefined)
     
@@ -126,7 +132,12 @@ object CurrentDate {
     
     inline def set$setUndefined: Self = StObject.set(x, "$set", js.undefined)
     
-    inline def set$unset(value: (PartialMapTo[T, String | Boolean | `1` | typings.meteor.meteorInts.`0`]) & Dictionary[Any]): Self = StObject.set(x, "$unset", value.asInstanceOf[js.Any])
+    inline def set$unset(
+      value: (PartialMapTo[
+          T, 
+          String | Boolean | typings.meteor.meteorInts.`1` | typings.meteor.meteorInts.`0`
+        ]) & Dictionary[Any]
+    ): Self = StObject.set(x, "$unset", value.asInstanceOf[js.Any])
     
     inline def set$unsetUndefined: Self = StObject.set(x, "$unset", js.undefined)
   }

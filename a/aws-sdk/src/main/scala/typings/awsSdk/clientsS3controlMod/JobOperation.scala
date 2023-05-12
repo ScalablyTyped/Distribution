@@ -22,7 +22,7 @@ trait JobOperation extends StObject {
   var S3InitiateRestoreObject: js.UndefOr[S3InitiateRestoreObjectOperation] = js.undefined
   
   /**
-    * Directs the specified job to run a PUT Object acl call on every object in the manifest.
+    * Directs the specified job to run a PutObjectAcl call on every object in the manifest.
     */
   var S3PutObjectAcl: js.UndefOr[S3SetObjectAclOperation] = js.undefined
   

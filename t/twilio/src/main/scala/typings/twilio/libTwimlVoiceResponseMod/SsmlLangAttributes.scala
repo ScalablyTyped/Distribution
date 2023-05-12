@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SsmlLangAttributes extends StObject {
   
+  /** xml:lang - Specify the language */
   @JSName("xml:lang")
   var xmlColonlang: js.UndefOr[SsmlLangXmlLang] = js.undefined
 }

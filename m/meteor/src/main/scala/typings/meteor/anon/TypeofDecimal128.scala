@@ -1,7 +1,6 @@
 package typings.meteor.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.buffer.mod.Buffer
 import typings.mongodb.mod.Decimal128
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofDecimal128
   extends StObject
-     with Instantiable1[/* bytes */ Buffer, Decimal128] {
+     with Instantiable1[/* bytes */ js.typedarray.Uint8Array, Decimal128] {
   
   /**
     * Create a Decimal128 instance from a string representation

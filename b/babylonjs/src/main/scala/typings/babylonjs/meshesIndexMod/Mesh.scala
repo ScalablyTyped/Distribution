@@ -3,8 +3,8 @@ package typings.babylonjs.meshesIndexMod
 import typings.babylonjs.anon.Max
 import typings.babylonjs.mathsMathDotvectorMod.Vector3
 import typings.babylonjs.nodeMod.Node
-import typings.babylonjs.physicsPhysicsImpostorMod.IPhysicsEnabledObject
-import typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostor
+import typings.babylonjs.physicsV1PhysicsImpostorMod.IPhysicsEnabledObject
+import typings.babylonjs.physicsV1PhysicsImpostorMod.PhysicsImpostor
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject

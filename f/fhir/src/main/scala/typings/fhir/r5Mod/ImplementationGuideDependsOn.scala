@@ -10,6 +10,8 @@ trait ImplementationGuideDependsOn
   
   var _packageId: js.UndefOr[Element] = js.undefined
   
+  var _reason: js.UndefOr[Element] = js.undefined
+  
   var _uri: js.UndefOr[Element] = js.undefined
   
   var _version: js.UndefOr[Element] = js.undefined
@@ -18,6 +20,11 @@ trait ImplementationGuideDependsOn
     * The NPM package name for the Implementation Guide that this IG depends on.
     */
   var packageId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * This doesn't need to enumerate every resource used, but should give some sense of why the dependency exists.  It will be used in the rendered list of dependencies
+    */
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * Usually, A canonical reference to the implementation guide is the same as the master location at which the implementation guide is published.
@@ -43,6 +50,10 @@ object ImplementationGuideDependsOn {
     
     inline def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
     
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
@@ -52,6 +63,10 @@ object ImplementationGuideDependsOn {
     inline def set_packageId(value: Element): Self = StObject.set(x, "_packageId", value.asInstanceOf[js.Any])
     
     inline def set_packageIdUndefined: Self = StObject.set(x, "_packageId", js.undefined)
+    
+    inline def set_reason(value: Element): Self = StObject.set(x, "_reason", value.asInstanceOf[js.Any])
+    
+    inline def set_reasonUndefined: Self = StObject.set(x, "_reason", js.undefined)
     
     inline def set_uri(value: Element): Self = StObject.set(x, "_uri", value.asInstanceOf[js.Any])
     

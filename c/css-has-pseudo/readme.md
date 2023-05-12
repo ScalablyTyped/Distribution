@@ -1,7 +1,7 @@
 
 # Scala.js typings for css-has-pseudo
 
-Typings are for version 4.0.1
+Typings are for version 5.0.2
 
 ## Library description:
 Style elements relative to other elements in CSS

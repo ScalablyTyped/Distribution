@@ -965,8 +965,7 @@ object mod {
     
     def filter(filstr: String): Element = js.native
     
-    def g(): Paper = js.native
-    def g(varargs: Any): Paper = js.native
+    def g(els: Any*): Paper = js.native
     
     def gradient(gradient: String): Gradient = js.native
     
@@ -981,8 +980,10 @@ object mod {
     def path(pathSpec: String): Element = js.native
     def path(pathSpec: js.Array[js.Array[String | Double]]): Element = js.native
     
+    def polygon(varargs: Any*): Element = js.native
     def polygon(varargs: js.Array[Any]): Element = js.native
     
+    def polyline(varargs: Any*): Element = js.native
     def polyline(varargs: js.Array[Any]): Element = js.native
     
     def ptrn(

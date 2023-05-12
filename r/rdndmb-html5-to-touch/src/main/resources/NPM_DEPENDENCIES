@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rdndmb-html5-to-touch" : "8.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rdndmb-html5-to-touch" : "8.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}
