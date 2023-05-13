@@ -8166,7 +8166,6 @@
 | 0.521022813406997 | [node-static](./n/node-static) | simple, compliant file streaming module for node
 | 0.5209657449388245 | [ip1sms__is-disposable-pho](./i/ip1sms__is-disposable-phone-number) | Determine if a phone number is a disposable phone 
 | 0.5209347255211918 | [angulartics](./a/angulartics) | Vendor-agnostic web analytics for AngularJS applic
-| 0.5209193518675125 | [y-leveldb](./y/y-leveldb) | LevelDb database adapter for Yjs
 | 0.5207384856180444 | [dts-generator](./d/dts-generator) | .d.ts generator. Generates a single d.ts bundle co
 | 0.5207371309362647 | [wu](./w/wu) | Combinators for ECMAScript 6 iterators.
 | 0.520702987559894 | [stremio-addon-sdk](./s/stremio-addon-sdk) | An SDK for making and publishing Stremio add-ons

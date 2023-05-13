@@ -10967,7 +10967,7 @@ object ScalablyTypedPlugin extends AutoPlugin {
         val terraformer__wkt = "org.scalablytyped" % "terraformer__wkt_sjs1_3" % "2.0-dt-20220421Z-6cf7bd"
         val `territory-indonesia` = "org.scalablytyped" % "territory-indonesia_sjs1_3" % "0.1-dt-20230419Z-529d74"
         val terser = "org.scalablytyped" % "terser_sjs1_3" % "5.17.3-f351fb"
-        val `terser-webpack-plugin` = "org.scalablytyped" % "terser-webpack-plugin_sjs1_3" % "5.3.8-b9fdc0"
+        val `terser-webpack-plugin` = "org.scalablytyped" % "terser-webpack-plugin_sjs1_3" % "5.3.8-9d11b7"
         val teslajs = "org.scalablytyped" % "teslajs_sjs1_3" % "4.9-dt-20211202Z-dc7dd4"
         val tesseract_dot_js = "org.scalablytyped" % "tesseract_dot_js_sjs1_3" % "4.0.5-b4c6cb"
         val `test-console` = "org.scalablytyped" % "test-console_sjs1_3" % "2.0-dt-20220624Z-f096a8"
@@ -12228,7 +12228,6 @@ object ScalablyTypedPlugin extends AutoPlugin {
       }
       object Y {
         val `y-codemirror` = "org.scalablytyped" % "y-codemirror_sjs1_3" % "3.0.1-0bd5ad"
-        val `y-leveldb` = "org.scalablytyped" % "y-leveldb_sjs1_3" % "0.1.2-2c5dd1"
         val `y-protocols` = "org.scalablytyped" % "y-protocols_sjs1_3" % "1.0.5-1e6ab3"
         val `y-websocket` = "org.scalablytyped" % "y-websocket_sjs1_3" % "1.5.0-6f5c4c"
         val `ya-disk` = "org.scalablytyped" % "ya-disk_sjs1_3" % "4.0-dt-20220913Z-a0362c"

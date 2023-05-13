@@ -11047,7 +11047,6 @@
 | 0.0 | [xxhash-wasm](./x/xxhash-wasm) | A WebAssembly implementation of xxHash
 | 0.0 | [xxhashjs](./x/xxhashjs) | xxHash in Javascript
 | 0.0 | [y-codemirror](./y/y-codemirror) | CodeMirror binding for Yjs
-| 0.0 | [y-leveldb](./y/y-leveldb) | LevelDb database adapter for Yjs
 | 0.0 | [y-protocols](./y/y-protocols) | Yjs encoding protocols
 | 0.0 | [y-websocket](./y/y-websocket) | Websockets provider for Yjs
 | 0.0 | [ya-disk](./y/ya-disk) | Yandex Disk API Library

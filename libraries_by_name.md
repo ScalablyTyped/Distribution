@@ -12164,7 +12164,6 @@
 | [xxhash-wasm](./x/xxhash-wasm) | A WebAssembly implementation of xxHash | xxhash, hash, wasm, webassembly |
 | [xxhashjs](./x/xxhashjs) | xxHash in Javascript | xxhash, xxh |
 | [y-codemirror](./y/y-codemirror) | CodeMirror binding for Yjs | Yjs |
-| [y-leveldb](./y/y-leveldb) | LevelDb database adapter for Yjs | Yjs, CRDT, offline, shared editing, collaboration, concurrency |
 | [y-protocols](./y/y-protocols) | Yjs encoding protocols | Yjs |
 | [y-websocket](./y/y-websocket) | Websockets provider for Yjs | Yjs |
 | [ya-disk](./y/ya-disk) | Yandex Disk API Library | yandex, disk, api |
