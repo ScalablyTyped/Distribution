@@ -54,4 +54,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Transaction ()
   extends StObject
-     with Lf
+     with qf

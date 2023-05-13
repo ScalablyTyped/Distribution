@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class QueryCompositeFilterConstraint protected ()
   extends StObject
-     with Ar {
+     with Rr_ {
   /**
     * @internal
     */
@@ -48,5 +48,5 @@ object QueryCompositeFilterConstraint {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def create(t: Any, e: Any): Ar = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Ar]
+  inline def create(t: Any, e: Any): Rr_ = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Rr_]
 }

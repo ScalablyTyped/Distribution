@@ -67,6 +67,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -112,6 +113,76 @@ object toolbarToolbarMod {
       */
     def getElement(): HTMLDivElement = js.native
   }
+  
+  trait ToolbarPassThroughMethodOptions extends StObject {
+    
+    var props: ToolbarProps
+  }
+  object ToolbarPassThroughMethodOptions {
+    
+    inline def apply(props: ToolbarProps): ToolbarPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ToolbarPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: ToolbarProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ToolbarPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the center's DOM element.
+      */
+    var center: js.UndefOr[ToolbarPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the right's DOM element.
+      */
+    var end: js.UndefOr[ToolbarPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[ToolbarPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the start's DOM element.
+      */
+    var start: js.UndefOr[ToolbarPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object ToolbarPassThroughOptions {
+    
+    inline def apply(): ToolbarPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ToolbarPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCenter(value: ToolbarPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      
+      inline def setEnd(value: ToolbarPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      
+      inline def setRoot(value: ToolbarPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      
+      inline def setStart(value: ToolbarPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    }
+  }
+  
+  type ToolbarPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, ToolbarPassThroughMethodOptions> */ Any
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait ToolbarProps extends StObject {
@@ -461,6 +532,12 @@ object toolbarToolbarMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {ToolbarPassThroughOptions}
+      */
+    var pt: js.UndefOr[ToolbarPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1190,6 +1267,10 @@ object toolbarToolbarMod {
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      
+      inline def setPt(value: ToolbarPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       

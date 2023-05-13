@@ -50,6 +50,7 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.PassThroughType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -67,6 +68,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -90,6 +92,8 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
+import typings.std.SVGCircleElement
+import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,6 +116,85 @@ object progressspinnerProgressspinnerMod {
       */
     def getElement(): HTMLDivElement = js.native
   }
+  
+  trait ProgressSpinnerPassThroughMethodOptions extends StObject {
+    
+    var props: ProgressSpinnerProps
+  }
+  object ProgressSpinnerPassThroughMethodOptions {
+    
+    inline def apply(props: ProgressSpinnerProps): ProgressSpinnerPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ProgressSpinnerPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressSpinnerPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: ProgressSpinnerProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ProgressSpinnerPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the circle's DOM element.
+      */
+    var circle: js.UndefOr[ProgressSpinnerPassThroughType[HTMLAttributes[SVGCircleElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[ProgressSpinnerPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the spinner's DOM element.
+      */
+    var spinner: js.UndefOr[ProgressSpinnerPassThroughType[HTMLAttributes[SVGSVGElement]]] = js.undefined
+  }
+  object ProgressSpinnerPassThroughOptions {
+    
+    inline def apply(): ProgressSpinnerPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ProgressSpinnerPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressSpinnerPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCircle(value: ProgressSpinnerPassThroughType[HTMLAttributes[SVGCircleElement]]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+      
+      inline def setCircleFunction1(
+        value: /* options */ js.UndefOr[ProgressSpinnerPassThroughMethodOptions] => HTMLAttributes[SVGCircleElement] | Unit
+      ): Self = StObject.set(x, "circle", js.Any.fromFunction1(value))
+      
+      inline def setCircleNull: Self = StObject.set(x, "circle", null)
+      
+      inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+      
+      inline def setRoot(value: ProgressSpinnerPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[ProgressSpinnerPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      
+      inline def setSpinner(value: ProgressSpinnerPassThroughType[HTMLAttributes[SVGSVGElement]]): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
+      
+      inline def setSpinnerFunction1(
+        value: /* options */ js.UndefOr[ProgressSpinnerPassThroughMethodOptions] => HTMLAttributes[SVGSVGElement] | Unit
+      ): Self = StObject.set(x, "spinner", js.Any.fromFunction1(value))
+      
+      inline def setSpinnerNull: Self = StObject.set(x, "spinner", null)
+      
+      inline def setSpinnerUndefined: Self = StObject.set(x, "spinner", js.undefined)
+    }
+  }
+  
+  type ProgressSpinnerPassThroughType[T] = PassThroughType[T, ProgressSpinnerPassThroughMethodOptions]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait ProgressSpinnerProps extends StObject {
@@ -456,6 +539,12 @@ object progressspinnerProgressspinnerMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {ProgressSpinnerPassThroughOptions}
+      */
+    var pt: js.UndefOr[ProgressSpinnerPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1170,6 +1259,10 @@ object progressspinnerProgressspinnerMod {
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      
+      inline def setPt(value: ProgressSpinnerPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       

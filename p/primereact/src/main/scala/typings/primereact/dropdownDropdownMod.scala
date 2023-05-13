@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.anon.FilterOptions
 import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
@@ -514,7 +515,7 @@ object dropdownDropdownMod {
       * The template of filter element.
       * @deprecated Since v9.3.0
       */
-    var filterTemplate: js.UndefOr[ReactNode | (js.Function1[/* options */ DropdownFilterOptions, ReactNode])] = js.undefined
+    var filterTemplate: js.UndefOr[ReactNode | (js.Function1[/* options */ FilterOptions, ReactNode])] = js.undefined
     
     /**
       * Reference of the focusable input element.
@@ -802,6 +803,7 @@ object dropdownDropdownMod {
     
     /**
       * Property name or getter function that refers to the children options of option group.
+      * @defaultValue items
       */
     var optionGroupChildren: js.UndefOr[String] = js.undefined
     
@@ -835,6 +837,13 @@ object dropdownDropdownMod {
       * Style class of the overlay panel element.
       */
     var panelClassName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Template of the panel footer.
+      */
+    var panelFooterTemplate: js.UndefOr[
+        ReactNode | (js.Function2[/* props */ this.type, /* hide */ js.Function0[Unit], ReactNode])
+      ] = js.undefined
     
     /**
       * Inline style of the overlay panel element.
@@ -1369,9 +1378,9 @@ object dropdownDropdownMod {
       
       inline def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
       
-      inline def setFilterTemplate(value: ReactNode | (js.Function1[/* options */ DropdownFilterOptions, ReactNode])): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
+      inline def setFilterTemplate(value: ReactNode | (js.Function1[/* options */ FilterOptions, ReactNode])): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
       
-      inline def setFilterTemplateFunction1(value: /* options */ DropdownFilterOptions => ReactNode): Self = StObject.set(x, "filterTemplate", js.Any.fromFunction1(value))
+      inline def setFilterTemplateFunction1(value: /* options */ FilterOptions => ReactNode): Self = StObject.set(x, "filterTemplate", js.Any.fromFunction1(value))
       
       inline def setFilterTemplateUndefined: Self = StObject.set(x, "filterTemplate", js.undefined)
       
@@ -1884,6 +1893,12 @@ object dropdownDropdownMod {
       inline def setPanelClassName(value: String): Self = StObject.set(x, "panelClassName", value.asInstanceOf[js.Any])
       
       inline def setPanelClassNameUndefined: Self = StObject.set(x, "panelClassName", js.undefined)
+      
+      inline def setPanelFooterTemplate(value: ReactNode | (js.Function2[DropdownProps, /* hide */ js.Function0[Unit], ReactNode])): Self = StObject.set(x, "panelFooterTemplate", value.asInstanceOf[js.Any])
+      
+      inline def setPanelFooterTemplateFunction2(value: (DropdownProps, /* hide */ js.Function0[Unit]) => ReactNode): Self = StObject.set(x, "panelFooterTemplate", js.Any.fromFunction2(value))
+      
+      inline def setPanelFooterTemplateUndefined: Self = StObject.set(x, "panelFooterTemplate", js.undefined)
       
       inline def setPanelStyle(value: CSSProperties): Self = StObject.set(x, "panelStyle", value.asInstanceOf[js.Any])
       

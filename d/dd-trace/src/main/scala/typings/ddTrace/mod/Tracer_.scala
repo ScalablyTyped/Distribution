@@ -126,7 +126,8 @@ trait Tracer_ extends Tracer {
     * which case the span will finish at the end of the function execution.
     *
     * If the `orphanable` option is set to false, the function will not be traced
-    * unless there is already an active span or `childOf` option.
+    * unless there is already an active span or `childOf` option. Note that this
+    * option is deprecated and has been removed in version 4.0.
     */
   def trace[T](
     name: String,

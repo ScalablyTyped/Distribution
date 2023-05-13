@@ -52,6 +52,7 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.PassThroughType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -69,6 +70,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -125,6 +127,59 @@ object splitterSplitterMod {
       */
     def this(props: SplitterPanelProps, context: Any) = this()
   }
+  
+  trait SplitterPanelPassThroughMethodOptions extends StObject {
+    
+    var parent: SplitterPassThroughMethodOptions
+    
+    var props: SplitterPanelProps
+  }
+  object SplitterPanelPassThroughMethodOptions {
+    
+    inline def apply(parent: SplitterPassThroughMethodOptions, props: SplitterPanelProps): SplitterPanelPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SplitterPanelPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterPanelPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setParent(value: SplitterPassThroughMethodOptions): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: SplitterPanelProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SplitterPanelPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[SplitterPanelPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object SplitterPanelPassThroughOptions {
+    
+    inline def apply(): SplitterPanelPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SplitterPanelPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterPanelPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setRoot(value: SplitterPanelPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[SplitterPanelPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type SplitterPanelPassThroughType[T] = PassThroughType[T, SplitterPanelPassThroughMethodOptions]
   
   /**
     * Defines valid properties in SplitterPanel component.
@@ -189,6 +244,89 @@ object splitterSplitterMod {
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
+  
+  trait SplitterPassThroughMethodOptions extends StObject {
+    
+    var props: SplitterProps
+    
+    var state: SplitterState
+  }
+  object SplitterPassThroughMethodOptions {
+    
+    inline def apply(props: SplitterProps, state: SplitterState): SplitterPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SplitterPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: SplitterProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: SplitterState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SplitterPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the gutter's DOM element.
+      */
+    var gutter: js.UndefOr[SplitterPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the gutter handler's DOM element.
+      */
+    var gutterHandler: js.UndefOr[SplitterPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[SplitterPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object SplitterPassThroughOptions {
+    
+    inline def apply(): SplitterPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SplitterPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setGutter(value: SplitterPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      
+      inline def setGutterFunction1(
+        value: /* options */ js.UndefOr[SplitterPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "gutter", js.Any.fromFunction1(value))
+      
+      inline def setGutterHandler(value: SplitterPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "gutterHandler", value.asInstanceOf[js.Any])
+      
+      inline def setGutterHandlerFunction1(
+        value: /* options */ js.UndefOr[SplitterPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "gutterHandler", js.Any.fromFunction1(value))
+      
+      inline def setGutterHandlerNull: Self = StObject.set(x, "gutterHandler", null)
+      
+      inline def setGutterHandlerUndefined: Self = StObject.set(x, "gutterHandler", js.undefined)
+      
+      inline def setGutterNull: Self = StObject.set(x, "gutter", null)
+      
+      inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      
+      inline def setRoot(value: SplitterPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[SplitterPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type SplitterPassThroughType[T] = PassThroughType[T, SplitterPassThroughMethodOptions]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait SplitterProps extends StObject {
@@ -1378,6 +1516,29 @@ object splitterSplitterMod {
       inline def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
       inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value*))
+    }
+  }
+  
+  trait SplitterState extends StObject {
+    
+    /**
+      * Previous size state as a number.
+      */
+    var panelSizes: js.Array[Double]
+  }
+  object SplitterState {
+    
+    inline def apply(panelSizes: js.Array[Double]): SplitterState = {
+      val __obj = js.Dynamic.literal(panelSizes = panelSizes.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SplitterState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterState] (val x: Self) extends AnyVal {
+      
+      inline def setPanelSizes(value: js.Array[Double]): Self = StObject.set(x, "panelSizes", value.asInstanceOf[js.Any])
+      
+      inline def setPanelSizesVarargs(value: Double*): Self = StObject.set(x, "panelSizes", js.Array(value*))
     }
   }
 }

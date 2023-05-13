@@ -67,6 +67,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -78,6 +79,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.SVGProps
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -89,8 +91,11 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.HTMLAnchorElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.HTMLSpanElement
+import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,6 +129,53 @@ object accordionAccordionMod {
       */
     def this(props: AccordionTabProps, context: Any) = this()
   }
+  
+  trait AccordionPassThroughMethodOptions extends StObject {
+    
+    var props: AccordionProps
+    
+    var state: AccordionState
+  }
+  object AccordionPassThroughMethodOptions {
+    
+    inline def apply(props: AccordionProps, state: AccordionState): AccordionPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AccordionPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: AccordionProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: AccordionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait AccordionPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[AccordionPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object AccordionPassThroughOptions {
+    
+    inline def apply(): AccordionPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AccordionPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setRoot(value: AccordionPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type AccordionPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, AccordionPassThroughMethodOptions> */ Any
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait AccordionProps extends StObject {
@@ -501,6 +553,12 @@ object accordionAccordionMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {AccordionPassThroughOptions}
+      */
+    var pt: js.UndefOr[AccordionPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1246,6 +1304,10 @@ object accordionAccordionMod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
+      inline def setPt(value: AccordionPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
@@ -1326,6 +1388,36 @@ object accordionAccordionMod {
     }
   }
   
+  trait AccordionState extends StObject {
+    
+    /**
+      * Current active index state.
+      */
+    var activeIndex: Double | js.Array[Double]
+    
+    /**
+      * Current id state as a string
+      */
+    var id: String
+  }
+  object AccordionState {
+    
+    inline def apply(activeIndex: Double | js.Array[Double], id: String): AccordionState = {
+      val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AccordionState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionState] (val x: Self) extends AnyVal {
+      
+      inline def setActiveIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      
+      inline def setActiveIndexVarargs(value: Double*): Self = StObject.set(x, "activeIndex", js.Array(value*))
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait AccordionTabChangeEvent extends StObject {
     
     /**
@@ -1386,6 +1478,109 @@ object accordionAccordionMod {
     }
   }
   
+  trait AccordionTabPassThroughMethodOptions extends StObject {
+    
+    var parent: AccordionPassThroughMethodOptions
+    
+    var props: AccordionTabProps
+  }
+  object AccordionTabPassThroughMethodOptions {
+    
+    inline def apply(parent: AccordionPassThroughMethodOptions, props: AccordionTabProps): AccordionTabPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AccordionTabPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionTabPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setParent(value: AccordionPassThroughMethodOptions): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: AccordionTabProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait AccordionTabPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the content's DOM element.
+      */
+    var content: js.UndefOr[AccordionTabPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the header's DOM element.
+      */
+    var header: js.UndefOr[AccordionTabPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the headeraction's DOM element.
+      */
+    var headerAction: js.UndefOr[AccordionTabPassThroughType[HTMLAttributes[HTMLAnchorElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the headericon's DOM element.
+      */
+    var headerIcon: js.UndefOr[
+        AccordionTabPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]
+      ] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the headertitle's DOM element.
+      */
+    var headerTitle: js.UndefOr[AccordionTabPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[AccordionTabPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the toggleablecontent's DOM element.
+      */
+    var toggleableContent: js.UndefOr[AccordionTabPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object AccordionTabPassThroughOptions {
+    
+    inline def apply(): AccordionTabPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AccordionTabPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionTabPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setContent(value: AccordionTabPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setHeader(value: AccordionTabPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderAction(value: AccordionTabPassThroughType[HTMLAttributes[HTMLAnchorElement]]): Self = StObject.set(x, "headerAction", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderActionUndefined: Self = StObject.set(x, "headerAction", js.undefined)
+      
+      inline def setHeaderIcon(value: AccordionTabPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "headerIcon", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderIconUndefined: Self = StObject.set(x, "headerIcon", js.undefined)
+      
+      inline def setHeaderTitle(value: AccordionTabPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderTitleUndefined: Self = StObject.set(x, "headerTitle", js.undefined)
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      
+      inline def setRoot(value: AccordionTabPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      
+      inline def setToggleableContent(value: AccordionTabPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "toggleableContent", value.asInstanceOf[js.Any])
+      
+      inline def setToggleableContentUndefined: Self = StObject.set(x, "toggleableContent", js.undefined)
+    }
+  }
+  
+  type AccordionTabPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, AccordionTabPassThroughMethodOptions> */ Any
+  
   /**
     * Defines valid properties in AccordionTab component.
     * @group Properties
@@ -1438,6 +1633,12 @@ object accordionAccordionMod {
       * Custom header template of the tab.
       */
     var headerTemplate: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {AccordionTabPassThroughOptions}
+      */
+    var pt: js.UndefOr[AccordionTabPassThroughOptions] = js.undefined
     
     /**
       * Inline style of the tab header and content.
@@ -1497,6 +1698,10 @@ object accordionAccordionMod {
       inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      
+      inline def setPt(value: AccordionTabPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

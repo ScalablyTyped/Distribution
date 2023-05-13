@@ -67,6 +67,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -78,6 +79,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.SVGProps
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -89,8 +91,11 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.react.mod.global.JSX.Element
 import typings.std.Event
+import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.HTMLSpanElement
+import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,6 +123,44 @@ object panelPanelMod {
       * @return {HTMLDivElement} Container element
       */
     def getElement(): HTMLDivElement = js.native
+  }
+  
+  /**
+    * Custom panel footer template options.
+    */
+  trait PanelFooterTemplateOptions extends StObject {
+    
+    /**
+      * Style class of the panel.
+      */
+    var className: String
+    
+    /**
+      * The JSX element that represents the panel.
+      */
+    var element: Element
+    
+    /**
+      * The props of the Panel component.
+      */
+    var props: PanelProps
+  }
+  object PanelFooterTemplateOptions {
+    
+    inline def apply(className: String, element: Element, props: PanelProps): PanelFooterTemplateOptions = {
+      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PanelFooterTemplateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelFooterTemplateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: PanelProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
   }
   
   /**
@@ -234,6 +277,125 @@ object panelPanelMod {
       inline def setTogglerIconClassName(value: String): Self = StObject.set(x, "togglerIconClassName", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait PanelPassThroughMethodOptions extends StObject {
+    
+    var props: PanelProps
+    
+    var state: PanelState
+  }
+  object PanelPassThroughMethodOptions {
+    
+    inline def apply(props: PanelProps, state: PanelState): PanelPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PanelPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: PanelProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: PanelState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait PanelPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the content's DOM element.
+      */
+    var content: js.UndefOr[PanelPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the footer's DOM element.
+      */
+    var footer: js.UndefOr[PanelPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the header's DOM element.
+      */
+    var header: js.UndefOr[PanelPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the icons' DOM element.
+      */
+    var icons: js.UndefOr[PanelPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[PanelPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the title's DOM element.
+      */
+    var title: js.UndefOr[PanelPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the toggleablecontent's DOM element.
+      */
+    var toggleableContent: js.UndefOr[PanelPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the toggler's DOM element.
+      */
+    var toggler: js.UndefOr[PanelPassThroughType[HTMLAttributes[HTMLButtonElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the togglericon's DOM element.
+      */
+    var togglerIcon: js.UndefOr[PanelPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]] = js.undefined
+  }
+  object PanelPassThroughOptions {
+    
+    inline def apply(): PanelPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PanelPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setContent(value: PanelPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setFooter(value: PanelPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      
+      inline def setHeader(value: PanelPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      
+      inline def setIcons(value: PanelPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      
+      inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+      
+      inline def setRoot(value: PanelPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      
+      inline def setTitle(value: PanelPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
+      inline def setToggleableContent(value: PanelPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "toggleableContent", value.asInstanceOf[js.Any])
+      
+      inline def setToggleableContentUndefined: Self = StObject.set(x, "toggleableContent", js.undefined)
+      
+      inline def setToggler(value: PanelPassThroughType[HTMLAttributes[HTMLButtonElement]]): Self = StObject.set(x, "toggler", value.asInstanceOf[js.Any])
+      
+      inline def setTogglerIcon(value: PanelPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "togglerIcon", value.asInstanceOf[js.Any])
+      
+      inline def setTogglerIconUndefined: Self = StObject.set(x, "togglerIcon", js.undefined)
+      
+      inline def setTogglerUndefined: Self = StObject.set(x, "toggler", js.undefined)
+    }
+  }
+  
+  type PanelPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, PanelPassThroughMethodOptions> */ Any
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait PanelProps extends StObject {
@@ -395,6 +557,17 @@ object panelPanelMod {
     var expandIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<PanelProps> */ Any
       ] = js.undefined
+    
+    /**
+      * Custom footer template of the panel.
+      */
+    var footer: js.UndefOr[ReactNode] = js.undefined
+    
+    /**
+      * Footer template of the panel to customize more.
+      * @param {PanelFooterTemplateOptions} options - Options to customize the footer template.
+      */
+    var footerTemplate: js.UndefOr[ReactNode | (js.Function1[/* options */ PanelFooterTemplateOptions, ReactNode])] = js.undefined
     
     /**
       * Custom header template of the panel.
@@ -621,6 +794,12 @@ object panelPanelMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {PanelPassThroughOptions}
+      */
+    var pt: js.UndefOr[PanelPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -965,6 +1144,16 @@ object panelPanelMod {
       ): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
       
       inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
+      
+      inline def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      
+      inline def setFooterTemplate(value: ReactNode | (js.Function1[/* options */ PanelFooterTemplateOptions, ReactNode])): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
+      
+      inline def setFooterTemplateFunction1(value: /* options */ PanelFooterTemplateOptions => ReactNode): Self = StObject.set(x, "footerTemplate", js.Any.fromFunction1(value))
+      
+      inline def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
+      
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
       inline def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -1380,6 +1569,10 @@ object panelPanelMod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
+      inline def setPt(value: PanelPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
@@ -1461,6 +1654,35 @@ object panelPanelMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+    }
+  }
+  
+  trait PanelState extends StObject {
+    
+    /**
+      * Current collapsed state as a boolean.
+      * @defaultValue false
+      */
+    var collapsed: Boolean
+    
+    /**
+      * Current id state.
+      */
+    var id: String
+  }
+  object PanelState {
+    
+    inline def apply(collapsed: Boolean, id: String): PanelState = {
+      val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PanelState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelState] (val x: Self) extends AnyVal {
+      
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   

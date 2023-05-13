@@ -16,14 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class QueryOrderByConstraint protected ()
   extends StObject
-     with Dl {
+     with Cl {
   /**
     * @internal
     */
   def this(t: Any, e: Any) = this()
   
   /* CompleteClass */
-  override def _apply(t: Any): fh = js.native
+  override def _apply(t: Any): dh = js.native
   
   /* CompleteClass */
   var _direction: Any = js.native
@@ -42,5 +42,5 @@ object QueryOrderByConstraint {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def create(t: Any, e: Any): Dl = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Dl]
+  inline def create(t: Any, e: Any): Cl = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Cl]
 }

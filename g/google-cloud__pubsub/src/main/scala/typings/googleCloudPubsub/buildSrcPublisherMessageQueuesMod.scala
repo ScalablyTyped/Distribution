@@ -25,10 +25,8 @@ object buildSrcPublisherMessageQueuesMod {
       *
       * @param {object[]} messages The messages to publish.
       * @param {PublishCallback[]} callbacks The corresponding callback functions.
-      * @param {function} [callback] Callback to be fired when publish is done.
       */
-    def _publish(messages: js.Array[PubsubMessage], callbacks: js.Array[PublishCallback]): Unit = js.native
-    def _publish(messages: js.Array[PubsubMessage], callbacks: js.Array[PublishCallback], callback: PublishDone): Unit = js.native
+    def _publish(messages: js.Array[PubsubMessage], callbacks: js.Array[PublishCallback]): js.Promise[Unit] = js.native
     
     /**
       * Adds a message to the queue.
@@ -50,7 +48,7 @@ object buildSrcPublisherMessageQueuesMod {
       *
       * @abstract
       */
-    def publish(): Unit = js.native
+    def publish(): js.Promise[Unit] = js.native
     
     /**
       * Method to finalize publishing. Does as many publishes as are needed
@@ -58,7 +56,7 @@ object buildSrcPublisherMessageQueuesMod {
       *
       * @abstract
       */
-    def publishDrain(): Unit = js.native
+    def publishDrain(): js.Promise[Unit] = js.native
     
     var publisher: Publisher = js.native
     
@@ -114,10 +112,6 @@ object buildSrcPublisherMessageQueuesMod {
     
     var key: String = js.native
     
-    def publish(callback: PublishDone): Unit = js.native
-    
-    def publishDrain(callback: PublishDone): Unit = js.native
-    
     /**
       * Tells the queue it is ok to continue publishing messages.
       */
@@ -134,15 +128,8 @@ object buildSrcPublisherMessageQueuesMod {
       *
       * @emits Queue#drain when all messages are sent.
       */
-    def _publishInternal(fullyDrain: Boolean): Unit = js.native
-    def _publishInternal(fullyDrain: Boolean, callback: PublishDone): Unit = js.native
+    def _publishInternal(fullyDrain: Boolean): js.Promise[Unit] = js.native
     
     var batch: MessageBatch = js.native
-    
-    def publish(callback: PublishDone): Unit = js.native
-    
-    def publishDrain(callback: PublishDone): Unit = js.native
   }
-  
-  type PublishDone = js.Function1[/* err */ ServiceError | Null, Unit]
 }

@@ -5,25 +5,34 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A `Query` refers to a query which you can read or listen to. You can also
-  * construct refined `Query` objects by adding filters and ordering.
+  * The results of executing an aggregation query.
   */ trait Nn extends StObject {
   
-  var _query: Any
+  var _data: Any
   
-  var converter: Any
+  var _userDataWriter: Any
   
-  var firestore: Any
+  /**
+    * Returns the results of the aggregations performed over the underlying
+    * query.
+    *
+    * The keys of the returned object will be the same as those of the
+    * `AggregateSpec` object specified to the aggregation method, and the values
+    * will be the corresponding aggregation result.
+    *
+    * @returns The results of the aggregations performed over the underlying
+    * query.
+    */ def data(): Any
   
-  /** The type of this Firestore reference. */
+  var query: Any
+  
+  /** A type string to uniquely identify instances of this class. */
   var `type`: String
-  
-  def withConverter(t: Any): Nn
 }
 object Nn {
   
-  inline def apply(_query: Any, converter: Any, firestore: Any, `type`: String, withConverter: Any => Nn): Nn = {
-    val __obj = js.Dynamic.literal(_query = _query.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], firestore = firestore.asInstanceOf[js.Any], withConverter = js.Any.fromFunction1(withConverter))
+  inline def apply(_data: Any, _userDataWriter: Any, data: () => Any, query: Any, `type`: String): Nn = {
+    val __obj = js.Dynamic.literal(_data = _data.asInstanceOf[js.Any], _userDataWriter = _userDataWriter.asInstanceOf[js.Any], data = js.Any.fromFunction0(data), query = query.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nn]
   }
@@ -31,14 +40,14 @@ object Nn {
   @scala.inline
   implicit open class MutableBuilder[Self <: Nn] (val x: Self) extends AnyVal {
     
-    inline def setConverter(value: Any): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+    inline def setData(value: () => Any): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
     
-    inline def setFirestore(value: Any): Self = StObject.set(x, "firestore", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setWithConverter(value: Any => Nn): Self = StObject.set(x, "withConverter", js.Any.fromFunction1(value))
+    inline def set_data(value: Any): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
     
-    inline def set_query(value: Any): Self = StObject.set(x, "_query", value.asInstanceOf[js.Any])
+    inline def set_userDataWriter(value: Any): Self = StObject.set(x, "_userDataWriter", value.asInstanceOf[js.Any])
   }
 }

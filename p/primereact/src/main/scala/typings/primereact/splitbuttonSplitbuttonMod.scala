@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.buttonButtonMod.ButtonPassThroughOptions
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -76,6 +77,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -87,6 +89,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.SVGProps
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -100,6 +103,8 @@ import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.HTMLSpanElement
+import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,6 +137,81 @@ object splitbuttonSplitbuttonMod {
       */
     def show(): Unit = js.native
   }
+  
+  trait SplitButtonPassThroughMethodOptions extends StObject {
+    
+    var props: SplitButtonProps
+  }
+  object SplitButtonPassThroughMethodOptions {
+    
+    inline def apply(props: SplitButtonProps): SplitButtonPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SplitButtonPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitButtonPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: SplitButtonProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SplitButtonPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the button's DOM element.
+      */
+    var button: js.UndefOr[SplitButtonPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the icon's DOM element.
+      */
+    var icon: js.UndefOr[
+        SplitButtonPassThroughType[SVGProps[SVGSVGElement] | (HTMLAttributes[HTMLSpanElement | SVGSVGElement])]
+      ] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the Button component.
+      * @see {@link ButtonPassThroughOptions}
+      */
+    var menuButton: js.UndefOr[ButtonPassThroughOptions] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[SplitButtonPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object SplitButtonPassThroughOptions {
+    
+    inline def apply(): SplitButtonPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SplitButtonPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitButtonPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setButton(value: SplitButtonPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      
+      inline def setIcon(
+        value: SplitButtonPassThroughType[SVGProps[SVGSVGElement] | (HTMLAttributes[HTMLSpanElement | SVGSVGElement])]
+      ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setMenuButton(value: ButtonPassThroughOptions): Self = StObject.set(x, "menuButton", value.asInstanceOf[js.Any])
+      
+      inline def setMenuButtonUndefined: Self = StObject.set(x, "menuButton", js.undefined)
+      
+      inline def setRoot(value: SplitButtonPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type SplitButtonPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, SplitButtonPassThroughMethodOptions> */ Any
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait SplitButtonProps extends StObject {
@@ -575,6 +655,12 @@ object splitbuttonSplitbuttonMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {SplitButtonPassThroughOptions}
+      */
+    var pt: js.UndefOr[SplitButtonPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1417,6 +1503,10 @@ object splitbuttonSplitbuttonMod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
+      inline def setPt(value: SplitButtonPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
@@ -1526,6 +1616,34 @@ object splitbuttonSplitbuttonMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+    }
+  }
+  
+  trait SplitButtonState extends StObject {
+    
+    /**
+      * Current id state as a boolean.
+      */
+    var id: String
+    
+    /**
+      * Current overlay visible state as a boolean.
+      */
+    var overlayVisible: Boolean
+  }
+  object SplitButtonState {
+    
+    inline def apply(id: String, overlayVisible: Boolean): SplitButtonState = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], overlayVisible = overlayVisible.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SplitButtonState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitButtonState] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setOverlayVisible(value: Boolean): Self = StObject.set(x, "overlayVisible", value.asInstanceOf[js.Any])
     }
   }
 }

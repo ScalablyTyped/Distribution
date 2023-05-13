@@ -9,6 +9,7 @@ import typings.primereact.primereactStrings.mouse
 import typings.primereact.primereactStrings.right
 import typings.primereact.primereactStrings.self
 import typings.primereact.primereactStrings.top
+import typings.primereact.tooltipTooltipMod.TooltipPassThroughOptions
 import typings.react.mod.AriaAttributes
 import typings.react.mod.CSSProperties
 import typings.react.mod.DOMAttributes
@@ -506,6 +507,11 @@ object tooltipTooltipoptionsMod {
     var position: js.UndefOr[top | bottom | left | right | mouse] = js.undefined
     
     /**
+      * Uses to pass attributes to DOM elements inside the component.
+      */
+    var pt: js.UndefOr[TooltipPassThroughOptions] = js.undefined
+    
+    /**
       * Delay to show the tooltip in milliseconds.
       * @defaultValue 0
       */
@@ -621,6 +627,10 @@ object tooltipTooltipoptionsMod {
       inline def setPosition(value: top | bottom | left | right | mouse): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      
+      inline def setPt(value: TooltipPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
       inline def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
       

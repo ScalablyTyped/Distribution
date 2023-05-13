@@ -52,7 +52,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link QueryFilterConstraint}s to perform a conjunction for. These must be
   * created with calls to {@link where}, {@link or}, or {@link and}.
   * @returns The newly created {@link QueryCompositeFilterConstraint}.
-  */ inline def and(t: Any*): Ar = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Ar]
+  */ inline def and(t: Any*): Rr_ = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Rr_]
 
 /**
   * Returns a special value that can be used with {@link (setDoc:1)} or {@link
@@ -64,7 +64,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param elements - The elements to remove from the array.
   * @returns The `FieldValue` sentinel for use in a call to `setDoc()` or
   * `updateDoc()`
-  */ inline def arrayRemove(t: Any*): er = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[er]
+  */ inline def arrayRemove(t: Any*): nr = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[nr]
 
 /**
   * Returns a special value that can be used with {@link @firebase/firestore/lite#(setDoc:1)} or {@link
@@ -77,16 +77,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param elements - The elements to union into the array.
   * @returns The `FieldValue` sentinel for use in a call to `setDoc()` or
   * `updateDoc()`.
-  */ inline def arrayUnion(t: Any*): tr = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[tr]
+  */ inline def arrayUnion(t: Any*): er = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[er]
 
 /**
   * Create an AggregateField object that can be used to compute the average of
   * a specified field over a range of documents in the result set of a query.
   * @param field Specifies the field to average across the result set.
   * @internal TODO (sum/avg) remove when public
-  */ inline def average(t: Any): Vn = ^.asInstanceOf[js.Dynamic].applyDynamic("average")(t.asInstanceOf[js.Any]).asInstanceOf[Vn]
+  */ inline def average(t: Any): n = ^.asInstanceOf[js.Dynamic].applyDynamic("average")(t.asInstanceOf[js.Any]).asInstanceOf[n]
 
-inline def collection(t: Any, e: Any, n: Any*): Fn = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Fn]
+inline def collection(t: Any, e: Any, n: Any*): xn = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[xn]
 
 /**
   * Creates and returns a new `Query` instance that includes all documents in the
@@ -98,7 +98,7 @@ inline def collection(t: Any, e: Any, n: Any*): Fn = (^.asInstanceOf[js.Dynamic]
   * collection or subcollection with this ID as the last segment of its path
   * will be included. Cannot contain a slash.
   * @returns The created `Query`.
-  */ inline def collectionGroup(t: Any, e: Any): Nn = (^.asInstanceOf[js.Dynamic].applyDynamic("collectionGroup")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Nn]
+  */ inline def collectionGroup(t: Any, e: Any): Fn = (^.asInstanceOf[js.Dynamic].applyDynamic("collectionGroup")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Fn]
 
 /**
   * Modify this instance to communicate with the Cloud Firestore emulator.
@@ -119,7 +119,7 @@ inline def connectFirestoreEmulator(t: Any, e: Any, n: Any, r: js.Object): Unit 
   * Create an AggregateField object that can be used to compute the count of
   * documents in the result set of a query.
   * @internal TODO (sum/avg) remove when public
-  */ inline def count(): Vn = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Vn]
+  */ inline def count(): n = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[n]
 
 /**
   * Deletes the document referred to by the specified `DocumentReference`.
@@ -153,18 +153,18 @@ inline def connectFirestoreEmulator(t: Any, e: Any, n: Any, r: js.Object): Unit 
 /**
   * Returns a sentinel for use with {@link @firebase/firestore/lite#(updateDoc:1)} or
   * {@link @firebase/firestore/lite#(setDoc:1)} with `{merge: true}` to mark a field for deletion.
-  */ inline def deleteField(): Jn_ = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteField")().asInstanceOf[Jn_]
+  */ inline def deleteField(): Xn_ = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteField")().asInstanceOf[Xn_]
 
 inline def doc(t: Any, e: Any, n: Any*): Dn = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Dn]
 
 /**
   * Returns a special sentinel `FieldPath` to refer to the ID of a document.
   * It can be used in queries to sort or filter by the document ID.
-  */ inline def documentId(): Mn = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[Mn]
+  */ inline def documentId(): Ln = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[Ln]
 
-inline def endAt(t: Any*): Or_ = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Or_]
+inline def endAt(t: Any*): kr = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[kr]
 
-inline def endBefore(t: Any*): Or_ = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Or_]
+inline def endBefore(t: Any*): kr = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[kr]
 
 /**
   * Calculates the specified aggregations over the documents in the result
@@ -192,7 +192,7 @@ inline def endBefore(t: Any*): Or_ = ^.asInstanceOf[js.Dynamic].applyDynamic("en
   * const averageScore: number | null = aggregateSnapshot.data().averageScore;
   * ```
   * @internal TODO (sum/avg) remove when public
-  */ inline def getAggregate(t: Any, e: Any): js.Promise[n] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAggregate")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Promise[n]]
+  */ inline def getAggregate(t: Any, e: Any): js.Promise[Nn] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAggregate")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Nn]]
 
 /**
   * @license
@@ -223,7 +223,7 @@ inline def endBefore(t: Any*): Or_ = ^.asInstanceOf[js.Dynamic].applyDynamic("en
   * @returns A Promise that will be resolved with the count; the count can be
   * retrieved from `snapshot.data().count`, where `snapshot` is the
   * `AggregateQuerySnapshot` to which the returned Promise resolves.
-  */ inline def getCount(t: Any): js.Promise[n] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCount")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[n]]
+  */ inline def getCount(t: Any): js.Promise[Nn] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCount")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Nn]]
 
 /**
   * Reads the document referred to by the specified document reference.
@@ -237,7 +237,7 @@ inline def endBefore(t: Any*): Or_ = ^.asInstanceOf[js.Dynamic].applyDynamic("en
   * @param reference - The reference of the document to fetch.
   * @returns A Promise resolved with a `DocumentSnapshot` containing the current
   * document contents.
-  */ inline def getDoc(t: Any): js.Promise[mr] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDoc")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[mr]]
+  */ inline def getDoc(t: Any): js.Promise[pr] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDoc")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[pr]]
 
 /**
   * Executes the query and returns the results as a {@link QuerySnapshot}.
@@ -250,7 +250,7 @@ inline def endBefore(t: Any*): Or_ = ^.asInstanceOf[js.Dynamic].applyDynamic("en
   *
   * @param query - The `Query` to execute.
   * @returns A Promise that will be resolved with the results of the query.
-  */ inline def getDocs(t: Any): js.Promise[yr] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocs")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[yr]]
+  */ inline def getDocs(t: Any): js.Promise[gr] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocs")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[gr]]
 
 inline def getFirestore(e: Any, n: Any): typings.firebaseFirestore.distLitePackagesFirestoreLiteMod.Firestore = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirestore")(e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distLitePackagesFirestoreLiteMod.Firestore]
 
@@ -272,7 +272,7 @@ inline def getFirestore(e: Any, n: Any): typings.firebaseFirestore.distLitePacka
   * @param n - The value to increment by.
   * @returns The `FieldValue` sentinel for use in a call to `setDoc()` or
   * `updateDoc()`
-  */ inline def increment(t: Any): nr = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(t.asInstanceOf[js.Any]).asInstanceOf[nr]
+  */ inline def increment(t: Any): rr = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(t.asInstanceOf[js.Any]).asInstanceOf[rr]
 
 inline def initializeFirestore(t: Any, e: Any, n: Any): typings.firebaseFirestore.distLitePackagesFirestoreLiteMod.Firestore = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeFirestore")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distLitePackagesFirestoreLiteMod.Firestore]
 
@@ -304,7 +304,7 @@ inline def initializeFirestore(t: Any, e: Any, n: Any): typings.firebaseFirestor
   * {@link QueryFilterConstraint}s to perform a disjunction for. These must be
   * created with calls to {@link where}, {@link or}, or {@link and}.
   * @returns The newly created {@link QueryCompositeFilterConstraint}.
-  */ inline def or(t: Any*): Ar = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Ar]
+  */ inline def or(t: Any*): Rr_ = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Rr_]
 
 /**
   * Creates a {@link QueryOrderByConstraint} that sorts the query result by the
@@ -317,8 +317,8 @@ inline def initializeFirestore(t: Any, e: Any, n: Any): typings.firebaseFirestor
   * @param directionStr - Optional direction to sort by ('asc' or 'desc'). If
   * not specified, order will be ascending.
   * @returns The created {@link QueryOrderByConstraint}.
-  */ inline def orderBy(t: Any): Vr_ = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(t.asInstanceOf[js.Any]).asInstanceOf[Vr_]
-inline def orderBy(t: Any, e: String): Vr_ = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Vr_]
+  */ inline def orderBy(t: Any): r = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(t.asInstanceOf[js.Any]).asInstanceOf[r]
+inline def orderBy(t: Any, e: String): r = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[r]
 
 inline def query(t: Any, e: Any, n: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("query")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
 
@@ -364,7 +364,7 @@ inline def query(t: Any, e: Any, n: Any*): Any = (^.asInstanceOf[js.Dynamic].app
 /**
   * Returns a sentinel used with {@link @firebase/firestore/lite#(setDoc:1)} or {@link @firebase/firestore/lite#(updateDoc:1)} to
   * include a server-generated timestamp in the written data.
-  */ inline def serverTimestamp(): Zn = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[Zn]
+  */ inline def serverTimestamp(): tr = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[tr]
 
 inline def setDoc(t: Any, e: Any, n: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDoc")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
@@ -390,11 +390,11 @@ inline def setDoc(t: Any, e: Any, n: Any): js.Promise[Unit] = (^.asInstanceOf[js
   * @returns true if the snapshots are equal.
   */ inline def snapshotEqual(t: Any, e: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("snapshotEqual")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def startAfter(t: Any*): xr = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[xr]
+inline def startAfter(t: Any*): Sr = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Sr]
 
-inline def startAt(t: Any*): xr = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[xr]
+inline def startAt(t: Any*): Sr = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Sr]
 
-inline def sum(t: Any): Vn = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(t.asInstanceOf[js.Any]).asInstanceOf[Vn]
+inline def sum(t: Any): n = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(t.asInstanceOf[js.Any]).asInstanceOf[n]
 
 /**
   * Terminates the provided `Firestore` instance.
@@ -429,7 +429,7 @@ inline def updateDoc(t: Any, e: Any, n: Any, r: Any*): js.Promise[Unit] = (^.asI
   *   "&lt;=", "!=").
   * @param value - The value for comparison
   * @returns The created {@link QueryFieldFilterConstraint}.
-  */ inline def where(t: Any, e: Any, n: Any): Ir = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Ir]
+  */ inline def where(t: Any, e: Any, n: Any): Tr_ = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Tr_]
 
 /**
   * Creates a write batch, used for performing multiple writes as a single
@@ -443,7 +443,7 @@ inline def updateDoc(t: Any, e: Any, n: Any, r: Any*): js.Promise[Unit] = (^.asI
   *
   * @returns A `WriteBatch` that can be used to atomically execute multiple
   * writes.
-  */ inline def writeBatch(t: Any): ls = ^.asInstanceOf[js.Dynamic].applyDynamic("writeBatch")(t.asInstanceOf[js.Any]).asInstanceOf[ls]
+  */ inline def writeBatch(t: Any): fs = ^.asInstanceOf[js.Dynamic].applyDynamic("writeBatch")(t.asInstanceOf[js.Any]).asInstanceOf[fs]
 
 /**
   * A `QueryConstraint` is used to narrow the set of documents returned by a
@@ -452,7 +452,7 @@ inline def updateDoc(t: Any, e: Any, n: Any, r: Any*): js.Promise[Unit] = (^.asI
   * (endBefore:1)}, {@link (endAt:1)}, {@link limit}, {@link limitToLast} and
   * can then be passed to {@link (query:1)} to create a new query instance that
   * also contains this `QueryConstraint`.
-  */ type br = vr
+  */ type Er_ = br
 
 /**
   * A `QueryDocumentSnapshot` contains data read from a document in your
@@ -464,4 +464,4 @@ inline def updateDoc(t: Any, e: Any, n: Any, r: Any*): js.Promise[Unit] = (^.asI
   * `DocumentSnapshot`. Since query results contain only existing documents, the
   * `exists` property will always be true and `data()` will never return
   * 'undefined'.
-  */ type pr = mr
+  */ type yr = pr

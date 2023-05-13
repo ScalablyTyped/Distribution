@@ -27,16 +27,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Ko_ extends StObject {
   
-  @JSName("$s")
-  var $s: Boolean = js.native
+  var Bs: Uo = js.native
   
-  var Fs: Uo = js.native
+  var Fs: Boolean = js.native
   
-  def Ks(t: Any, e: Any): vt = js.native
+  def Gs(t: Any, e: Any): Rt_ = js.native
   
-  var Ls: Mo = js.native
-  
-  var Os: t = js.native
+  var Os: Ot_ = js.native
   
   def getBundleCache(): Mo = js.native
   
@@ -51,6 +48,8 @@ trait Ko_ extends StObject {
   def getTargetCache(): Uo = js.native
   
   var indexManager: zr = js.native
+  
+  var qs: Mo = js.native
   
   var referenceDelegate: Any = js.native
   

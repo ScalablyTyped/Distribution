@@ -17,6 +17,8 @@ object distFirestoreSrcPlatformBrowserWebchannelConnectionMod {
     
     /* private */ val forceLongPolling: Any = js.native
     
+    /* private */ val longPollingOptions: Any = js.native
+    
     /* private */ val useFetchStreams: Any = js.native
   }
 }

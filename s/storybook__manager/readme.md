@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__manager
 
-Typings are for version 7.0.10
+Typings are for version 7.0.11
 
 
 

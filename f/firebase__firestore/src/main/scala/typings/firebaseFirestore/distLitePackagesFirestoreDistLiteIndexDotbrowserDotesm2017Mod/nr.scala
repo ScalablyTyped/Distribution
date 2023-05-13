@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait nr
   extends StObject
-     with Un {
+     with jn {
   
-  def _toFieldTransform(t: Any): qe
+  def _toFieldTransform(t: Any): Oe
   
   var dt: Any
   
@@ -16,7 +16,7 @@ trait nr
 }
 object nr {
   
-  inline def apply(_methodName: Any, _toFieldTransform: Any => qe, dt: Any, isEqual: Any => Boolean): nr = {
+  inline def apply(_methodName: Any, _toFieldTransform: Any => Oe, dt: Any, isEqual: Any => Boolean): nr = {
     val __obj = js.Dynamic.literal(_methodName = _methodName.asInstanceOf[js.Any], _toFieldTransform = js.Any.fromFunction1(_toFieldTransform), dt = dt.asInstanceOf[js.Any], isEqual = js.Any.fromFunction1(isEqual))
     __obj.asInstanceOf[nr]
   }
@@ -28,6 +28,6 @@ object nr {
     
     inline def setIsEqual(value: Any => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
-    inline def set_toFieldTransform(value: Any => qe): Self = StObject.set(x, "_toFieldTransform", js.Any.fromFunction1(value))
+    inline def set_toFieldTransform(value: Any => Oe): Self = StObject.set(x, "_toFieldTransform", js.Any.fromFunction1(value))
   }
 }

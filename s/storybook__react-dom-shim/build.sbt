@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__react-dom-shim"
-version := "7.0.10-da5efb"
+version := "7.0.11-a6c821"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

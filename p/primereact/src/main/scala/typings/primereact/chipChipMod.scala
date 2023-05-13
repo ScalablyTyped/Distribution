@@ -67,6 +67,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -78,6 +79,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.SVGProps
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -91,6 +93,9 @@ import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.HTMLImageElement
+import typings.std.HTMLSpanElement
+import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,6 +118,89 @@ object chipChipMod {
       */
     def getElement(): HTMLDivElement = js.native
   }
+  
+  trait ChipPassThroughMethodOptions extends StObject {
+    
+    var props: ChipProps
+    
+    var state: ChipState
+  }
+  object ChipPassThroughMethodOptions {
+    
+    inline def apply(props: ChipProps, state: ChipState): ChipPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ChipPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: ChipProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: ChipState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ChipPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the icon's DOM element.
+      */
+    var icon: js.UndefOr[ChipPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the image's DOM element.
+      */
+    var image: js.UndefOr[ChipPassThroughType[HTMLAttributes[HTMLImageElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the label' DOM element.
+      */
+    var label: js.UndefOr[ChipPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the removeIcon's DOM element.
+      */
+    var removeIcon: js.UndefOr[ChipPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[ChipPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object ChipPassThroughOptions {
+    
+    inline def apply(): ChipPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ChipPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setIcon(value: ChipPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setImage(value: ChipPassThroughType[HTMLAttributes[HTMLImageElement]]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      
+      inline def setLabel(value: ChipPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
+      inline def setRemoveIcon(value: ChipPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
+      
+      inline def setRoot(value: ChipPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type ChipPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, ChipPassThroughMethodOptions> */ Any
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait ChipProps extends StObject {
@@ -480,6 +568,12 @@ object chipChipMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {ChipPassThroughOptions}
+      */
+    var pt: js.UndefOr[ChipPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1227,6 +1321,10 @@ object chipChipMod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
+      inline def setPt(value: ChipPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
@@ -1314,6 +1412,28 @@ object chipChipMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+    }
+  }
+  
+  trait ChipState extends StObject {
+    
+    /**
+      * Current visible state as a boolean.
+      * @defaultValue true
+      */
+    var visible: Boolean
+  }
+  object ChipState {
+    
+    inline def apply(visible: Boolean): ChipState = {
+      val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ChipState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipState] (val x: Self) extends AnyVal {
+      
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

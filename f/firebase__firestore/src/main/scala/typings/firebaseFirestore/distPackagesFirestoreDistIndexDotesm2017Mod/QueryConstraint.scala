@@ -15,4 +15,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class QueryConstraint ()
   extends StObject
-     with El
+     with Al

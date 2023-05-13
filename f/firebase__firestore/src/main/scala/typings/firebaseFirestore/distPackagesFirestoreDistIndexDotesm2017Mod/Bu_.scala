@@ -31,19 +31,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait Bu_ extends StObject {
   
-  /**
-    * Resets the backoff delay to the maximum delay (e.g. for use after a
-    * RESOURCE_EXHAUSTED error).
-    */ def Co(): Unit
-  
   /** The last backoff attempt, as epoch milliseconds. */
-  var Do: Double
+  var Co: Double
   
-  /** Returns a random value in the range [-currentBaseMs/2, currentBaseMs/2] */ def No(): Double
+  var Do: Any
+  
+  def Mo(): Unit
+  
+  /**
+    * Returns a promise that resolves after currentDelayMs, and increases the
+    * delay for any subsequent attempts. If there was a pending backoff operation
+    * already, it will be canceled.
+    */ def No(t: Any): Unit
   
   var Po: Double
   
-  var So: Any
+  var So: Double
   
   var Vo: Double
   
@@ -51,7 +54,9 @@ trait Bu_ extends StObject {
   
   def cancel(): Unit
   
-  def ko(): Unit
+  var ii: Any
+  
+  /** Returns a random value in the range [-currentBaseMs/2, currentBaseMs/2] */ def ko(): Double
   
   /**
     * Resets the backoff delay.
@@ -61,37 +66,32 @@ trait Bu_ extends StObject {
     * subsequent ones will increase according to the backoffFactor.
     */ def reset(): Unit
   
-  var si: Any
-  
   var timerId: Any
   
-  var vo: Double
-  
   /**
-    * Returns a promise that resolves after currentDelayMs, and increases the
-    * delay for any subsequent attempts. If there was a pending backoff operation
-    * already, it will be canceled.
-    */ def xo(t: Any): Unit
+    * Resets the backoff delay to the maximum delay (e.g. for use after a
+    * RESOURCE_EXHAUSTED error).
+    */ def xo(): Unit
 }
 object Bu_ {
   
   inline def apply(
-    Co: () => Unit,
-    Do: Double,
-    No: () => Double,
+    Co: Double,
+    Do: Any,
+    Mo: () => Unit,
+    No: Any => Unit,
     Po: Double,
-    So: Any,
+    So: Double,
     Vo: Double,
     bo: Double,
     cancel: () => Unit,
-    ko: () => Unit,
+    ii: Any,
+    ko: () => Double,
     reset: () => Unit,
-    si: Any,
     timerId: Any,
-    vo: Double,
-    xo: Any => Unit
+    xo: () => Unit
   ): Bu_ = {
-    val __obj = js.Dynamic.literal(Co = js.Any.fromFunction0(Co), Do = Do.asInstanceOf[js.Any], No = js.Any.fromFunction0(No), Po = Po.asInstanceOf[js.Any], So = So.asInstanceOf[js.Any], Vo = Vo.asInstanceOf[js.Any], bo = bo.asInstanceOf[js.Any], cancel = js.Any.fromFunction0(cancel), ko = js.Any.fromFunction0(ko), reset = js.Any.fromFunction0(reset), si = si.asInstanceOf[js.Any], timerId = timerId.asInstanceOf[js.Any], vo = vo.asInstanceOf[js.Any], xo = js.Any.fromFunction1(xo))
+    val __obj = js.Dynamic.literal(Co = Co.asInstanceOf[js.Any], Do = Do.asInstanceOf[js.Any], Mo = js.Any.fromFunction0(Mo), No = js.Any.fromFunction1(No), Po = Po.asInstanceOf[js.Any], So = So.asInstanceOf[js.Any], Vo = Vo.asInstanceOf[js.Any], bo = bo.asInstanceOf[js.Any], cancel = js.Any.fromFunction0(cancel), ii = ii.asInstanceOf[js.Any], ko = js.Any.fromFunction0(ko), reset = js.Any.fromFunction0(reset), timerId = timerId.asInstanceOf[js.Any], xo = js.Any.fromFunction0(xo))
     __obj.asInstanceOf[Bu_]
   }
   
@@ -102,26 +102,28 @@ object Bu_ {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    inline def setCo(value: () => Unit): Self = StObject.set(x, "Co", js.Any.fromFunction0(value))
+    inline def setCo(value: Double): Self = StObject.set(x, "Co", value.asInstanceOf[js.Any])
     
-    inline def setDo(value: Double): Self = StObject.set(x, "Do", value.asInstanceOf[js.Any])
+    inline def setDo(value: Any): Self = StObject.set(x, "Do", value.asInstanceOf[js.Any])
     
-    inline def setKo(value: () => Unit): Self = StObject.set(x, "ko", js.Any.fromFunction0(value))
+    inline def setIi(value: Any): Self = StObject.set(x, "ii", value.asInstanceOf[js.Any])
     
-    inline def setNo(value: () => Double): Self = StObject.set(x, "No", js.Any.fromFunction0(value))
+    inline def setKo(value: () => Double): Self = StObject.set(x, "ko", js.Any.fromFunction0(value))
+    
+    inline def setMo(value: () => Unit): Self = StObject.set(x, "Mo", js.Any.fromFunction0(value))
+    
+    inline def setNo(value: Any => Unit): Self = StObject.set(x, "No", js.Any.fromFunction1(value))
     
     inline def setPo(value: Double): Self = StObject.set(x, "Po", value.asInstanceOf[js.Any])
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    inline def setSi(value: Any): Self = StObject.set(x, "si", value.asInstanceOf[js.Any])
-    
-    inline def setSo(value: Any): Self = StObject.set(x, "So", value.asInstanceOf[js.Any])
+    inline def setSo(value: Double): Self = StObject.set(x, "So", value.asInstanceOf[js.Any])
     
     inline def setTimerId(value: Any): Self = StObject.set(x, "timerId", value.asInstanceOf[js.Any])
     
     inline def setVo(value: Double): Self = StObject.set(x, "Vo", value.asInstanceOf[js.Any])
     
-    inline def setXo(value: Any => Unit): Self = StObject.set(x, "xo", js.Any.fromFunction1(value))
+    inline def setXo(value: () => Unit): Self = StObject.set(x, "xo", js.Any.fromFunction0(value))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait bu extends StObject {
   
-  var Wr: vu
+  var Hr: Ru
   
   def addLocalQueryTarget(t: Any): Any
   
@@ -45,7 +45,7 @@ trait bu extends StObject {
 object bu {
   
   inline def apply(
-    Wr: vu,
+    Hr: Ru,
     addLocalQueryTarget: Any => Any,
     addPendingMutation: Any => Unit,
     clearQueryState: Any => Unit,
@@ -64,7 +64,7 @@ object bu {
     updateQueryState: (Any, Any, Any) => Unit,
     writeSequenceNumber: Any => Unit
   ): bu = {
-    val __obj = js.Dynamic.literal(Wr = Wr.asInstanceOf[js.Any], addLocalQueryTarget = js.Any.fromFunction1(addLocalQueryTarget), addPendingMutation = js.Any.fromFunction1(addPendingMutation), clearQueryState = js.Any.fromFunction1(clearQueryState), getAllActiveQueryTargets = js.Any.fromFunction0(getAllActiveQueryTargets), handleUserChange = js.Any.fromFunction3(handleUserChange), isActiveQueryTarget = js.Any.fromFunction1(isActiveQueryTarget), isLocalQueryTarget = js.Any.fromFunction1(isLocalQueryTarget), notifyBundleLoaded = js.Any.fromFunction1(notifyBundleLoaded), onlineStateHandler = onlineStateHandler.asInstanceOf[js.Any], removeLocalQueryTarget = js.Any.fromFunction1(removeLocalQueryTarget), sequenceNumberHandler = sequenceNumberHandler.asInstanceOf[js.Any], setOnlineState = js.Any.fromFunction1(setOnlineState), shutdown = js.Any.fromFunction0(shutdown), start = js.Any.fromFunction0(start), updateMutationState = js.Any.fromFunction3(updateMutationState), updateQueryState = js.Any.fromFunction3(updateQueryState), writeSequenceNumber = js.Any.fromFunction1(writeSequenceNumber))
+    val __obj = js.Dynamic.literal(Hr = Hr.asInstanceOf[js.Any], addLocalQueryTarget = js.Any.fromFunction1(addLocalQueryTarget), addPendingMutation = js.Any.fromFunction1(addPendingMutation), clearQueryState = js.Any.fromFunction1(clearQueryState), getAllActiveQueryTargets = js.Any.fromFunction0(getAllActiveQueryTargets), handleUserChange = js.Any.fromFunction3(handleUserChange), isActiveQueryTarget = js.Any.fromFunction1(isActiveQueryTarget), isLocalQueryTarget = js.Any.fromFunction1(isLocalQueryTarget), notifyBundleLoaded = js.Any.fromFunction1(notifyBundleLoaded), onlineStateHandler = onlineStateHandler.asInstanceOf[js.Any], removeLocalQueryTarget = js.Any.fromFunction1(removeLocalQueryTarget), sequenceNumberHandler = sequenceNumberHandler.asInstanceOf[js.Any], setOnlineState = js.Any.fromFunction1(setOnlineState), shutdown = js.Any.fromFunction0(shutdown), start = js.Any.fromFunction0(start), updateMutationState = js.Any.fromFunction3(updateMutationState), updateQueryState = js.Any.fromFunction3(updateQueryState), writeSequenceNumber = js.Any.fromFunction1(writeSequenceNumber))
     __obj.asInstanceOf[bu]
   }
   
@@ -80,6 +80,8 @@ object bu {
     inline def setGetAllActiveQueryTargets(value: () => Ee): Self = StObject.set(x, "getAllActiveQueryTargets", js.Any.fromFunction0(value))
     
     inline def setHandleUserChange(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "handleUserChange", js.Any.fromFunction3(value))
+    
+    inline def setHr(value: Ru): Self = StObject.set(x, "Hr", value.asInstanceOf[js.Any])
     
     inline def setIsActiveQueryTarget(value: Any => Boolean): Self = StObject.set(x, "isActiveQueryTarget", js.Any.fromFunction1(value))
     
@@ -102,8 +104,6 @@ object bu {
     inline def setUpdateMutationState(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "updateMutationState", js.Any.fromFunction3(value))
     
     inline def setUpdateQueryState(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "updateQueryState", js.Any.fromFunction3(value))
-    
-    inline def setWr(value: vu): Self = StObject.set(x, "Wr", value.asInstanceOf[js.Any])
     
     inline def setWriteSequenceNumber(value: Any => Unit): Self = StObject.set(x, "writeSequenceNumber", js.Any.fromFunction1(value))
   }

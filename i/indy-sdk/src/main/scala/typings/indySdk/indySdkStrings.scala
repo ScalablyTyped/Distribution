@@ -33,6 +33,14 @@ object indySdkStrings {
   inline def CL_ACCUM: CL_ACCUM = "CL_ACCUM".asInstanceOf[CL_ACCUM]
   
   @js.native
+  sealed trait CONFIG extends StObject
+  inline def CONFIG: CONFIG = "CONFIG".asInstanceOf[CONFIG]
+  
+  @js.native
+  sealed trait DOMAIN extends StObject
+  inline def DOMAIN: DOMAIN = "DOMAIN".asInstanceOf[DOMAIN]
+  
+  @js.native
   sealed trait ENDORSER
     extends StObject
        with NymRole
@@ -67,6 +75,10 @@ object indySdkStrings {
     extends StObject
        with NymRole
   inline def NETWORK_MONITOR: NETWORK_MONITOR = "NETWORK_MONITOR".asInstanceOf[NETWORK_MONITOR]
+  
+  @js.native
+  sealed trait POOL extends StObject
+  inline def POOL: POOL = "POOL".asInstanceOf[POOL]
   
   @js.native
   sealed trait RAW

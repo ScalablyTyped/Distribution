@@ -54,6 +54,7 @@ import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
 import typings.primereact.utilsUtilsMod.IconOptions
 import typings.primereact.utilsUtilsMod.IconType
+import typings.primereact.utilsUtilsMod.PassThroughType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -71,6 +72,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -159,6 +161,104 @@ object overlaypanelOverlaypanelMod {
     *  A key-value pair representing a breakpoint and its associated value.
     */
   StringDictionary[String]
+  
+  trait OverlayPanelPassThroughMethodOptions extends StObject {
+    
+    var props: OverlayPanelProps
+    
+    var state: OverlayPanelState
+  }
+  object OverlayPanelPassThroughMethodOptions {
+    
+    inline def apply(props: OverlayPanelProps, state: OverlayPanelState): OverlayPanelPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OverlayPanelPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayPanelPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: OverlayPanelProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: OverlayPanelState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait OverlayPanelPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the close button's DOM element.
+      */
+    var closeButton: js.UndefOr[OverlayPanelPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the close icon's DOM element.
+      */
+    var closeIcon: js.UndefOr[OverlayPanelPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the content's DOM element.
+      */
+    var content: js.UndefOr[OverlayPanelPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[OverlayPanelPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object OverlayPanelPassThroughOptions {
+    
+    inline def apply(): OverlayPanelPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OverlayPanelPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayPanelPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCloseButton(value: OverlayPanelPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+      
+      inline def setCloseButtonFunction1(
+        value: /* options */ js.UndefOr[OverlayPanelPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "closeButton", js.Any.fromFunction1(value))
+      
+      inline def setCloseButtonNull: Self = StObject.set(x, "closeButton", null)
+      
+      inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+      
+      inline def setCloseIcon(value: OverlayPanelPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconFunction1(
+        value: /* options */ js.UndefOr[OverlayPanelPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "closeIcon", js.Any.fromFunction1(value))
+      
+      inline def setCloseIconNull: Self = StObject.set(x, "closeIcon", null)
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
+      inline def setContent(value: OverlayPanelPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentFunction1(
+        value: /* options */ js.UndefOr[OverlayPanelPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+      
+      inline def setContentNull: Self = StObject.set(x, "content", null)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setRoot(value: OverlayPanelPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[OverlayPanelPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type OverlayPanelPassThroughType[T] = PassThroughType[T, OverlayPanelPassThroughMethodOptions]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait OverlayPanelProps extends StObject {
@@ -1357,6 +1457,28 @@ object overlaypanelOverlaypanelMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+    }
+  }
+  
+  trait OverlayPanelState extends StObject {
+    
+    /**
+      * Current visible state as a boolean.
+      * @defaultValue false
+      */
+    var visible: Boolean
+  }
+  object OverlayPanelState {
+    
+    inline def apply(visible: Boolean): OverlayPanelState = {
+      val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OverlayPanelState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayPanelState] (val x: Self) extends AnyVal {
+      
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

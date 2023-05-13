@@ -60,6 +60,12 @@ object chartChartMod {
   trait ChartProps extends StObject {
     
     /**
+      * ARIA label for the chart canvas. Defaults to options.plugins.title.text if available.
+      * @default options.plugins.title.text
+      */
+    var ariaLabel: js.UndefOr[String] = js.undefined
+    
+    /**
       * Used to get the child elements of the component.
       * @readonly
       */
@@ -119,6 +125,10 @@ object chartChartMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ChartProps] (val x: Self) extends AnyVal {
+      
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

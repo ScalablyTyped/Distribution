@@ -26,8 +26,11 @@ trait FirestoreSettings extends StObject {
     * detect if long-polling should be used. This is very similar to
     * `experimentalForceLongPolling`, but only uses long-polling if required.
     *
-    * This setting will likely be enabled by default in future releases and
-    * cannot be combined with `experimentalForceLongPolling`.
+    * After having had a default value of `false` since its inception in 2019,
+    * the default value of this setting was changed in mid-2023 to `true`. That
+    * is, auto-detection of long polling is now enabled by default. To disable
+    * it, set this setting to `false`, and please open a GitHub issue to share
+    * the problems that motivated you disabling long-polling auto-detection.
     */
   var experimentalAutoDetectLongPolling: js.UndefOr[Boolean] = js.undefined
   
@@ -46,6 +49,17 @@ trait FirestoreSettings extends StObject {
     * it in https://github.com/firebase/firebase-js-sdk/issues/1674.
     */
   var experimentalForceLongPolling: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Options that configure the SDK’s underlying network transport (WebChannel)
+    * when long-polling is used.
+    *
+    * These options are only used if `experimentalForceLongPolling` is true or if
+    * `experimentalAutoDetectLongPolling` is true and the auto-detection
+    * determined that long-polling was needed. Otherwise, these options have no
+    * effect.
+    */
+  var experimentalLongPollingOptions: js.UndefOr[ExperimentalLongPollingOptions] = js.undefined
   
   /**
     * The hostname to connect to.
@@ -98,6 +112,10 @@ object FirestoreSettings {
     inline def setExperimentalForceLongPolling(value: Boolean): Self = StObject.set(x, "experimentalForceLongPolling", value.asInstanceOf[js.Any])
     
     inline def setExperimentalForceLongPollingUndefined: Self = StObject.set(x, "experimentalForceLongPolling", js.undefined)
+    
+    inline def setExperimentalLongPollingOptions(value: ExperimentalLongPollingOptions): Self = StObject.set(x, "experimentalLongPollingOptions", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalLongPollingOptionsUndefined: Self = StObject.set(x, "experimentalLongPollingOptions", js.undefined)
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

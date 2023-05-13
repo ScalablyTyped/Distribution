@@ -21,7 +21,7 @@ open class QueryLimitConstraint protected ()
   def this(t: Any, e: Any, n: Any) = this()
   
   /* CompleteClass */
-  override def _apply(t: Any): Nn = js.native
+  override def _apply(t: Any): Fn = js.native
   
   /* CompleteClass */
   var _limit: Any = js.native

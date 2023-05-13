@@ -15,7 +15,7 @@ trait IndyCredentialInfo extends StObject {
   
   var referent: String
   
-  var rev_reg_id: js.UndefOr[Double] = js.undefined
+  var rev_reg_id: js.UndefOr[String] = js.undefined
   
   var schema_id: String
 }
@@ -39,7 +39,7 @@ object IndyCredentialInfo {
     
     inline def setReferent(value: String): Self = StObject.set(x, "referent", value.asInstanceOf[js.Any])
     
-    inline def setRev_reg_id(value: Double): Self = StObject.set(x, "rev_reg_id", value.asInstanceOf[js.Any])
+    inline def setRev_reg_id(value: String): Self = StObject.set(x, "rev_reg_id", value.asInstanceOf[js.Any])
     
     inline def setRev_reg_idUndefined: Self = StObject.set(x, "rev_reg_id", js.undefined)
     

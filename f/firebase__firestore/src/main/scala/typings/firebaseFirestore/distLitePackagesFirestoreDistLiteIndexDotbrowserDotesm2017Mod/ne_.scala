@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Filter that matches on key fields not present within an array. */ trait ne_
+/** Filter that matches on key fields within an array. */ trait ne_
   extends StObject
-     with Jt {
+     with Xt_ {
   
   var keys: Any
 }
@@ -14,9 +14,9 @@ object ne_ {
   
   inline def apply(
     field: Any,
-    getFilters: () => js.Array[Jt],
+    getFilters: () => js.Array[Xt_],
     getFirstInequalityField: () => Any,
-    getFlattenedFilters: () => js.Array[Jt],
+    getFlattenedFilters: () => js.Array[Xt_],
     isInequality: () => Boolean,
     keys: Any,
     matches: Any => Boolean | Unit,

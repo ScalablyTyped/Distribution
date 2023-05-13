@@ -79,7 +79,6 @@ object menuitemMenuitemMod {
     
     /**
       * Template of the menuitem.
-      * @deprecated Since v9.3.0
       */
     var template: js.UndefOr[
         ReactNode | (js.Function2[/* item */ this.type, /* options */ MenuItemOptions, ReactNode])
@@ -207,7 +206,6 @@ object menuitemMenuitemMod {
   
   /**
     * Menu item options
-    * @deprecated Since v9.3.0
     */
   trait MenuItemOptions extends StObject {
     

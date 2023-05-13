@@ -22,18 +22,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /** Serializer for values stored in the LocalStore. */ trait ar extends StObject {
   
-  var le: Any
+  var fe: Any
 }
 object ar {
   
-  inline def apply(le: Any): ar = {
-    val __obj = js.Dynamic.literal(le = le.asInstanceOf[js.Any])
+  inline def apply(fe: Any): ar = {
+    val __obj = js.Dynamic.literal(fe = fe.asInstanceOf[js.Any])
     __obj.asInstanceOf[ar]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ar] (val x: Self) extends AnyVal {
     
-    inline def setLe(value: Any): Self = StObject.set(x, "le", value.asInstanceOf[js.Any])
+    inline def setFe(value: Any): Self = StObject.set(x, "fe", value.asInstanceOf[js.Any])
   }
 }

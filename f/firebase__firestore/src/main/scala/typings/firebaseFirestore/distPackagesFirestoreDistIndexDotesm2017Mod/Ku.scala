@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait Ku extends StObject {
   
-  /** Invokes the provided RPC with streamed results with auth and AppCheck tokens. */ def Ao(t: Any, e: Any, n: Any, s: Any): js.Promise[Any]
+  /** Invokes the provided RPC with auth and AppCheck tokens. */ def Io(t: Any, e: Any, n: Any): js.Promise[Any]
   
   var appCheckCredentials: Any
   
@@ -39,37 +39,35 @@ trait Ku extends StObject {
   
   var connection: Any
   
-  var hu: Boolean
+  def fu(): Unit
   
-  def lu(): Unit
-  
-  /** Invokes the provided RPC with auth and AppCheck tokens. */ def po(t: Any, e: Any, n: Any): js.Promise[Any]
+  var lu: Boolean
   
   var serializer: Any
   
   def terminate(): Unit
+  
+  /** Invokes the provided RPC with streamed results with auth and AppCheck tokens. */ def vo(t: Any, e: Any, n: Any, s: Any): js.Promise[Any]
 }
 object Ku {
   
   inline def apply(
-    Ao: (Any, Any, Any, Any) => js.Promise[Any],
+    Io: (Any, Any, Any) => js.Promise[Any],
     appCheckCredentials: Any,
     authCredentials: Any,
     connection: Any,
-    hu: Boolean,
-    lu: () => Unit,
-    po: (Any, Any, Any) => js.Promise[Any],
+    fu: () => Unit,
+    lu: Boolean,
     serializer: Any,
-    terminate: () => Unit
+    terminate: () => Unit,
+    vo: (Any, Any, Any, Any) => js.Promise[Any]
   ): Ku = {
-    val __obj = js.Dynamic.literal(Ao = js.Any.fromFunction4(Ao), appCheckCredentials = appCheckCredentials.asInstanceOf[js.Any], authCredentials = authCredentials.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any], hu = hu.asInstanceOf[js.Any], lu = js.Any.fromFunction0(lu), po = js.Any.fromFunction3(po), serializer = serializer.asInstanceOf[js.Any], terminate = js.Any.fromFunction0(terminate))
+    val __obj = js.Dynamic.literal(Io = js.Any.fromFunction3(Io), appCheckCredentials = appCheckCredentials.asInstanceOf[js.Any], authCredentials = authCredentials.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any], fu = js.Any.fromFunction0(fu), lu = lu.asInstanceOf[js.Any], serializer = serializer.asInstanceOf[js.Any], terminate = js.Any.fromFunction0(terminate), vo = js.Any.fromFunction4(vo))
     __obj.asInstanceOf[Ku]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Ku] (val x: Self) extends AnyVal {
-    
-    inline def setAo(value: (Any, Any, Any, Any) => js.Promise[Any]): Self = StObject.set(x, "Ao", js.Any.fromFunction4(value))
     
     inline def setAppCheckCredentials(value: Any): Self = StObject.set(x, "appCheckCredentials", value.asInstanceOf[js.Any])
     
@@ -77,14 +75,16 @@ object Ku {
     
     inline def setConnection(value: Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    inline def setHu(value: Boolean): Self = StObject.set(x, "hu", value.asInstanceOf[js.Any])
+    inline def setFu(value: () => Unit): Self = StObject.set(x, "fu", js.Any.fromFunction0(value))
     
-    inline def setLu(value: () => Unit): Self = StObject.set(x, "lu", js.Any.fromFunction0(value))
+    inline def setIo(value: (Any, Any, Any) => js.Promise[Any]): Self = StObject.set(x, "Io", js.Any.fromFunction3(value))
     
-    inline def setPo(value: (Any, Any, Any) => js.Promise[Any]): Self = StObject.set(x, "po", js.Any.fromFunction3(value))
+    inline def setLu(value: Boolean): Self = StObject.set(x, "lu", value.asInstanceOf[js.Any])
     
     inline def setSerializer(value: Any): Self = StObject.set(x, "serializer", value.asInstanceOf[js.Any])
     
     inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
+    
+    inline def setVo(value: (Any, Any, Any, Any) => js.Promise[Any]): Self = StObject.set(x, "vo", js.Any.fromFunction4(value))
   }
 }

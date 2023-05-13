@@ -41,7 +41,7 @@ trait Dn extends StObject {
   
   /**
     * The collection this `DocumentReference` belongs to.
-    */ def parent: Fn = js.native
+    */ def parent: xn = js.native
   
   /**
     * A string representing the path of the referenced document (relative

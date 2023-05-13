@@ -26,9 +26,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait Lo_ extends StObject {
   
-  def Ds(t: Any, e: Any): vt
+  def Cs(t: Any, e: Any): Rt_
   
-  var Ss: Any
+  var Ds: Any
   
   /**
     * Adds the supplied entry to the cache and updates the cache size as appropriate.
@@ -42,13 +42,13 @@ trait Lo_ extends StObject {
   
   def getAllFromCollectionGroup(t: Any, e: Any, n: Any, s: Any): Unit
   
-  def getDocumentsMatchingQuery(t: Any, e: Any, n: Any, s: Any): vt
+  def getDocumentsMatchingQuery(t: Any, e: Any, n: Any, s: Any): Rt_
   
-  def getEntries(t: Any, e: Any): vt
+  def getEntries(t: Any, e: Any): Rt_
   
-  def getEntry(t: Any, e: Any): vt
+  def getEntry(t: Any, e: Any): Rt_
   
-  def getSize(t: Any): vt
+  def getSize(t: Any): Rt_
   
   var indexManager: Any
   
@@ -69,22 +69,22 @@ trait Lo_ extends StObject {
 object Lo_ {
   
   inline def apply(
-    Ds: (Any, Any) => vt,
-    Ss: Any,
+    Cs: (Any, Any) => Rt_,
+    Ds: Any,
     addEntry: (Any, Any) => Any,
     docs: pe,
     getAllFromCollectionGroup: (Any, Any, Any, Any) => Unit,
-    getDocumentsMatchingQuery: (Any, Any, Any, Any) => vt,
-    getEntries: (Any, Any) => vt,
-    getEntry: (Any, Any) => vt,
-    getSize: Any => vt,
+    getDocumentsMatchingQuery: (Any, Any, Any, Any) => Rt_,
+    getEntries: (Any, Any) => Rt_,
+    getEntry: (Any, Any) => Rt_,
+    getSize: Any => Rt_,
     indexManager: Any,
     newChangeBuffer: Any => qo,
     removeEntry: Any => Unit,
     setIndexManager: Any => Unit,
     size: Double
   ): Lo_ = {
-    val __obj = js.Dynamic.literal(Ds = js.Any.fromFunction2(Ds), Ss = Ss.asInstanceOf[js.Any], addEntry = js.Any.fromFunction2(addEntry), docs = docs.asInstanceOf[js.Any], getAllFromCollectionGroup = js.Any.fromFunction4(getAllFromCollectionGroup), getDocumentsMatchingQuery = js.Any.fromFunction4(getDocumentsMatchingQuery), getEntries = js.Any.fromFunction2(getEntries), getEntry = js.Any.fromFunction2(getEntry), getSize = js.Any.fromFunction1(getSize), indexManager = indexManager.asInstanceOf[js.Any], newChangeBuffer = js.Any.fromFunction1(newChangeBuffer), removeEntry = js.Any.fromFunction1(removeEntry), setIndexManager = js.Any.fromFunction1(setIndexManager), size = size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Cs = js.Any.fromFunction2(Cs), Ds = Ds.asInstanceOf[js.Any], addEntry = js.Any.fromFunction2(addEntry), docs = docs.asInstanceOf[js.Any], getAllFromCollectionGroup = js.Any.fromFunction4(getAllFromCollectionGroup), getDocumentsMatchingQuery = js.Any.fromFunction4(getDocumentsMatchingQuery), getEntries = js.Any.fromFunction2(getEntries), getEntry = js.Any.fromFunction2(getEntry), getSize = js.Any.fromFunction1(getSize), indexManager = indexManager.asInstanceOf[js.Any], newChangeBuffer = js.Any.fromFunction1(newChangeBuffer), removeEntry = js.Any.fromFunction1(removeEntry), setIndexManager = js.Any.fromFunction1(setIndexManager), size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lo_]
   }
   
@@ -93,19 +93,21 @@ object Lo_ {
     
     inline def setAddEntry(value: (Any, Any) => Any): Self = StObject.set(x, "addEntry", js.Any.fromFunction2(value))
     
+    inline def setCs(value: (Any, Any) => Rt_): Self = StObject.set(x, "Cs", js.Any.fromFunction2(value))
+    
     inline def setDocs(value: pe): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
-    inline def setDs(value: (Any, Any) => vt): Self = StObject.set(x, "Ds", js.Any.fromFunction2(value))
+    inline def setDs(value: Any): Self = StObject.set(x, "Ds", value.asInstanceOf[js.Any])
     
     inline def setGetAllFromCollectionGroup(value: (Any, Any, Any, Any) => Unit): Self = StObject.set(x, "getAllFromCollectionGroup", js.Any.fromFunction4(value))
     
-    inline def setGetDocumentsMatchingQuery(value: (Any, Any, Any, Any) => vt): Self = StObject.set(x, "getDocumentsMatchingQuery", js.Any.fromFunction4(value))
+    inline def setGetDocumentsMatchingQuery(value: (Any, Any, Any, Any) => Rt_): Self = StObject.set(x, "getDocumentsMatchingQuery", js.Any.fromFunction4(value))
     
-    inline def setGetEntries(value: (Any, Any) => vt): Self = StObject.set(x, "getEntries", js.Any.fromFunction2(value))
+    inline def setGetEntries(value: (Any, Any) => Rt_): Self = StObject.set(x, "getEntries", js.Any.fromFunction2(value))
     
-    inline def setGetEntry(value: (Any, Any) => vt): Self = StObject.set(x, "getEntry", js.Any.fromFunction2(value))
+    inline def setGetEntry(value: (Any, Any) => Rt_): Self = StObject.set(x, "getEntry", js.Any.fromFunction2(value))
     
-    inline def setGetSize(value: Any => vt): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
+    inline def setGetSize(value: Any => Rt_): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
     
     inline def setIndexManager(value: Any): Self = StObject.set(x, "indexManager", value.asInstanceOf[js.Any])
     
@@ -116,7 +118,5 @@ object Lo_ {
     inline def setSetIndexManager(value: Any => Unit): Self = StObject.set(x, "setIndexManager", js.Any.fromFunction1(value))
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-    
-    inline def setSs(value: Any): Self = StObject.set(x, "Ss", value.asInstanceOf[js.Any])
   }
 }

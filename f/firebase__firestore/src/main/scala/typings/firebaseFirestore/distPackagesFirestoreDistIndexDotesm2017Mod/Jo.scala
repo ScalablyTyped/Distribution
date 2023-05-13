@@ -57,40 +57,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Jo extends StObject {
   
-  @JSName("$s")
-  var $s: Boolean = js.native
-  
-  /**
-    * Obtains or extends the new primary lease for the local client. This
-    * method does not verify that the client is eligible for this lease.
-    */ def Ai(t: Any): Any = js.native
-  
-  /**
-    * Record client as zombied (a client that had its tab closed). Zombied
-    * clients are ignored during primary tab selection.
-    */ def Ci(): Unit = js.native
-  
-  /**
-    * Returns whether a client is "zombied" based on its LocalStorage entry.
-    * Clients become zombied when their tab closes without running all of the
-    * cleanup logic in `shutdown()`.
-    */ def Di(t: Any): Boolean = js.native
-  
-  /** Checks the primary lease and removes it if we are the current primary. */ def Ei(t: Any): Any = js.native
-  
-  var Fs: fo = js.native
-  
-  def Ii(t: Any): Any = js.native
-  
-  var Ls: Er = js.native
-  
   /**
     * Returns the IDs of the clients that are currently active. If multi-tab
     * is not supported, returns an array that only contains the local client's
     * ID.
     *
     * PORTING NOTE: This is only used for Web multi-tab.
-    */ def Mi(): js.Promise[Any] = js.native
+    */ @JSName("$i")
+  def $i(): js.Promise[Any] = js.native
+  
+  /** Checks the primary lease and removes it if we are the current primary. */ def Ai(t: Any): Any = js.native
+  
+  var Bs: fo = js.native
+  
+  /**
+    * Returns whether a client is "zombied" based on its LocalStorage entry.
+    * Clients become zombied when their tab closes without running all of the
+    * cleanup logic in `shutdown()`.
+    */ def Ci(t: Any): Boolean = js.native
+  
+  def Di(t: Any): String = js.native
+  
+  /**
+    * Evaluate the state of all active clients and determine whether the local
+    * client is or can act as the holder of the primary lease. Returns whether
+    * the client is eligible for the lease, but does not actually acquire it.
+    * May return 'false' even if there is no active leaseholder and another
+    * (foreground) client should become leaseholder instead.
+    */ def Ei(t: Any): Any = js.native
+  
+  var Fs: Boolean = js.native
+  
+  /**
+    * Registers a listener that gets called when the primary state of the
+    * instance changes. Upon registering, this listener is invoked immediately
+    * with the current primary state.
+    *
+    * PORTING NOTE: This is only used for Web multi-tab.
+    */ def Ii(t: Any): Any = js.native
+  
+  /** Removes the zombied client entry if it exists. */ def Mi(): Unit = js.native
   
   def Ni(): Unit = js.native
   
@@ -100,76 +106,62 @@ trait Jo extends StObject {
     */
   def Oi(t: Any): Any = js.native
   
-  var Os: t | Null = js.native
+  var Os: Ot_ | Null = js.native
+  
+  def Pi(t: Any): Any = js.native
+  
+  /** Checks whether `client` is the local client. */ def Ri(t: Any): Boolean = js.native
+  
+  /**
+    * Returns clients that are not zombied and have an updateTime within the
+    * provided threshold.
+    */ def Si(t: Any, e: Any): Any = js.native
+  
+  def Ti(t: Any): Any = js.native
+  
+  /** Verifies that `updateTimeMs` is within `maxAgeMs`. */ def Vi(t: Any, e: Any): Boolean = js.native
+  
+  var _i: Any = js.native
+  
+  /** Our 'visibilitychange' listener if registered. */
+  var ai: js.Function0[Unit] | Null = js.native
+  
+  var allowTabSynchronization: Any = js.native
   
   /**
     * If the garbage collection threshold has passed, prunes the
     * RemoteDocumentChanges and the ClientMetadata store based on the last update
     * time of all clients.
-    */ def Pi(): js.Promise[Unit] = js.native
+    */ def bi(): js.Promise[Unit] = js.native
   
-  /** Checks whether `client` is the local client. */ def Ri(t: Any): Boolean = js.native
-  
-  def Si(t: Any): String = js.native
-  
-  /**
-    * Evaluate the state of all active clients and determine whether the local
-    * client is or can act as the holder of the primary lease. Returns whether
-    * the client is eligible for the lease, but does not actually acquire it.
-    * May return 'false' even if there is no active leaseholder and another
-    * (foreground) client should become leaseholder instead.
-    */ def Ti(t: Any): Any = js.native
-  
-  /**
-    * Returns clients that are not zombied and have an updateTime within the
-    * provided threshold.
-    */ def Vi(t: Any, e: Any): Any = js.native
-  
-  var _i: Any = js.native
-  
-  /** The client metadata refresh task. */
-  var ai: Any = js.native
-  
-  var allowTabSynchronization: Any = js.native
-  
-  /** Verifies that `updateTimeMs` is within `maxAgeMs`. */ def bi(t: Any, e: Any): Boolean = js.native
-  
-  /** Our 'visibilitychange' listener if registered. */
+  /** Our window.unload handler, if registered. */
   var ci: js.Function0[Unit] | Null = js.native
   
   var clientId: Any = js.native
   
-  var di: bt = js.native
+  var di: String = js.native
   
   var document: Any = js.native
   
-  var fi: String = js.native
+  /** A listener to notify on primary state changes. */
+  def fi(t: Any): js.Promise[Unit] = js.native
   
   def getBundleCache(): Er = js.native
   
-  def getDocumentOverlayCache(t: Any): vr = js.native
+  def getDocumentOverlayCache(t: Any): Rr = js.native
   
   def getIndexManager(t: Any): Jr = js.native
   
   def getMutationQueue(t: Any, e: Any): oo = js.native
   
-  def getRemoteDocumentCache(): vo = js.native
+  def getRemoteDocumentCache(): Ro = js.native
   
   def getTargetCache(): fo = js.native
   
-  /**
-    * Attaches a window.unload handler that will synchronously write our
-    * clientId to a "zombie client id" location in LocalStorage. This can be used
-    * by tabs trying to acquire the primary lease to determine that the lease
-    * is no longer valid even if the timestamp is recent. This is particularly
-    * important for the refresh case (so the tab correctly re-acquires the
-    * primary lease). LocalStorage is used for this rather than IndexedDb because
-    * it is a synchronous API and so can be used reliably from  an unload
-    * handler.
-    */ def gi(): Unit = js.native
+  def gi(): Unit = js.native
   
-  /** The last time we garbage collected the client metadata object store. */
-  var hi: Double = js.native
+  /** The client metadata refresh task. */
+  var hi: Any = js.native
   
   var ii: Any = js.native
   
@@ -177,30 +169,34 @@ trait Jo extends StObject {
   
   var isPrimary: Boolean = js.native
   
-  /** Removes the zombied client entry if it exists. */ def ki(): Unit = js.native
+  def ki(): Unit = js.native
   
-  /** A listener to notify on primary state changes. */
-  def li(t: Any): js.Promise[Unit] = js.native
+  /** The last time we garbage collected the client metadata object store. */
+  var li: Double = js.native
   
-  def mi(): Unit = js.native
+  /**
+    * Updates the client metadata in IndexedDb and attempts to either obtain or
+    * extend the primary lease for the local client. Asynchronously notifies the
+    * primary state listener if the client either newly obtained or released its
+    * primary lease.
+    */ def mi(): js.Promise[Unit] = js.native
   
   var networkEnabled: Boolean = js.native
   
-  var oi: Double = js.native
+  var oi: Any = js.native
   
   var persistenceKey: Any = js.native
   
   /**
-    * Registers a listener that gets called when the primary state of the
-    * instance changes. Upon registering, this listener is invoked immediately
-    * with the current primary state.
-    *
-    * PORTING NOTE: This is only used for Web multi-tab.
-    */ def pi(t: Any): Any = js.native
+    * Schedules a recurring timer to update the client metadata and to either
+    * extend or acquire the primary lease if the client is eligible.
+    */ def pi(): Unit = js.native
+  
+  var qs: Er = js.native
   
   var referenceDelegate: Eo = js.native
   
-  var remoteDocumentCache: vo = js.native
+  var remoteDocumentCache: Ro = js.native
   
   var ri: Any = js.native
   
@@ -224,8 +220,6 @@ trait Jo extends StObject {
   
   def shutdown(): js.Promise[Unit] = js.native
   
-  var si: Any = js.native
-  
   /**
     * Attempt to start IndexedDb persistence.
     *
@@ -234,24 +228,30 @@ trait Jo extends StObject {
   
   def started: Boolean = js.native
   
-  /** Our window.unload handler, if registered. */
-  var ui: js.Function0[Unit] | Null = js.native
-  
-  def vi(t: Any): Any = js.native
+  var ui: Double = js.native
   
   /**
-    * Updates the client metadata in IndexedDb and attempts to either obtain or
-    * extend the primary lease for the local client. Asynchronously notifies the
-    * primary state listener if the client either newly obtained or released its
-    * primary lease.
-    */ def wi(): js.Promise[Unit] = js.native
+    * Obtains or extends the new primary lease for the local client. This
+    * method does not verify that the client is eligible for this lease.
+    */ def vi(t: Any): Any = js.native
+  
+  var wi: bt = js.native
   
   var window: Any = js.native
   
-  def xi(): Unit = js.native
+  /**
+    * Record client as zombied (a client that had its tab closed). Zombied
+    * clients are ignored during primary tab selection.
+    */ def xi(): Unit = js.native
   
   /**
-    * Schedules a recurring timer to update the client metadata and to either
-    * extend or acquire the primary lease if the client is eligible.
+    * Attaches a window.unload handler that will synchronously write our
+    * clientId to a "zombie client id" location in LocalStorage. This can be used
+    * by tabs trying to acquire the primary lease to determine that the lease
+    * is no longer valid even if the timestamp is recent. This is particularly
+    * important for the refresh case (so the tab correctly re-acquires the
+    * primary lease). LocalStorage is used for this rather than IndexedDb because
+    * it is a synchronous API and so can be used reliably from  an unload
+    * handler.
     */ def yi(): Unit = js.native
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gestalt" : "111.4.0"
+      "gestalt" : "111.5.3"
     }
   ],
   "test-dependencies" : [
     {
-      "gestalt" : "111.4.0"
+      "gestalt" : "111.5.3"
     }
   ],
   "compile-devDependencies" : [

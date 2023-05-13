@@ -149,7 +149,15 @@ object checkboxCheckboxMod {
     */
   type CheckboxChangeEvent = FormEvent[Any, SyntheticEvent[Element, Event]]
   
-  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'ref'> */
+  /**
+    * Custom click event.
+    * @see {@link CheckboxProps.onClick}
+    * @extends {FormEvent}
+    * @event
+    */
+  type CheckboxClickEvent = FormEvent[Any, SyntheticEvent[Element, Event]]
+  
+  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'onClick' | 'ref'> */
   trait CheckboxProps extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
@@ -424,7 +432,11 @@ object checkboxCheckboxMod {
       */
     var onChange: js.UndefOr[js.Function1[/* event */ CheckboxChangeEvent, Unit]] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    /**
+      * Callback to invoke on value change. Mark the event with preventDefault to prevent the option from changing.
+      * @param {CheckboxClickEvent} event - Custom click event
+      */
+    var onClick: js.UndefOr[js.Function1[/* event */ CheckboxClickEvent, Unit]] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
     
@@ -1149,7 +1161,7 @@ object checkboxCheckboxMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ CheckboxClickEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       

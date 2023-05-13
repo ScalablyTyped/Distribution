@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "openseadragon"
-version := "3.0-dt-20230204Z-c06f67"
+version := "3.0-dt-20230512Z-52cf0f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

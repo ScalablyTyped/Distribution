@@ -450,6 +450,11 @@ trait DataTableProps[TValue /* <: DataTableValueArray */] extends StObject {
   var exportFunction: js.UndefOr[js.Function1[/* event */ DataTableExportFunctionEvent[TValue], Any]] = js.undefined
   
   /**
+    * Icon to display when the filter can be cleared.
+    */
+  var filterClearIcon: js.UndefOr[IconType[DataTable[TValue]]] = js.undefined
+  
+  /**
     * Delay in milliseconds before filtering the data.
     * @defaultValue 300
     */
@@ -460,6 +465,11 @@ trait DataTableProps[TValue /* <: DataTableValueArray */] extends StObject {
     * @defaultValue menu
     */
   var filterDisplay: js.UndefOr[menu | row] = js.undefined
+  
+  /**
+    * Icon to display the current filtering status.
+    */
+  var filterIcon: js.UndefOr[IconType[DataTable[TValue]]] = js.undefined
   
   /**
     * Locale to use in filtering. The default locale is the host environment's current locale.
@@ -563,7 +573,7 @@ trait DataTableProps[TValue /* <: DataTableValueArray */] extends StObject {
     * @param {DataTableDataSelectableEvent<TValue>} event - Custom data selectable event.
     */
   var isDataSelectable: js.UndefOr[
-    js.Function1[/* event */ DataTableDataSelectableEvent[TValue], js.UndefOr[Boolean | Null]]
+    js.Function1[/* event */ DataTableDataSelectableEvent, js.UndefOr[Boolean | Null]]
   ] = js.undefined
   
   var itemID: js.UndefOr[String] = js.undefined
@@ -662,15 +672,15 @@ trait DataTableProps[TValue /* <: DataTableValueArray */] extends StObject {
   
   /**
     * Callback to invoke on cell select.
-    * @param {DataTableSelectEvent} event - Custom select event.
+    * @param {DataTableCellClickEvent<TValue>} event - Custom select event.
     */
-  var onCellSelect: js.UndefOr[js.Function1[/* event */ DataTableSelectEvent, Unit]] = js.undefined
+  var onCellSelect: js.UndefOr[js.Function1[/* event */ DataTableCellClickEvent[TValue], Unit]] = js.undefined
   
   /**
     * Callback to invoke on cell unselect.
-    * @param {DataTableUnselectEvent} event - Custom unselect event.
+    * @param {DataTableCellClickEvent<TValue>} event - Custom unselect event.
     */
-  var onCellUnselect: js.UndefOr[js.Function1[/* event */ DataTableUnselectEvent, Unit]] = js.undefined
+  var onCellUnselect: js.UndefOr[js.Function1[/* event */ DataTableCellClickEvent[TValue], Unit]] = js.undefined
   
   var onChange: js.UndefOr[ChangeEventHandler[HTMLDivElement]] = js.undefined
   
@@ -1240,6 +1250,12 @@ trait DataTableProps[TValue /* <: DataTableValueArray */] extends StObject {
   var showGridlines: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Whether to show headers.
+    * @defaultValue true
+    */
+  var showHeaders: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Function that returns a boolean by passing the row data to decide if the row reorder element should be displayed per row.
     * @param {DataTableRowData<TValue>} data - Editing row data.
     * @param {DataTableShowRowReorderElementOptions} options - Options for the row reorder element.
@@ -1799,6 +1815,12 @@ object DataTableProps {
     
     inline def setExportFunctionUndefined: Self = StObject.set(x, "exportFunction", js.undefined)
     
+    inline def setFilterClearIcon(value: IconType[DataTable[TValue]]): Self = StObject.set(x, "filterClearIcon", value.asInstanceOf[js.Any])
+    
+    inline def setFilterClearIconFunction1(value: /* options */ IconOptions[DataTable[TValue]] => ReactNode): Self = StObject.set(x, "filterClearIcon", js.Any.fromFunction1(value))
+    
+    inline def setFilterClearIconUndefined: Self = StObject.set(x, "filterClearIcon", js.undefined)
+    
     inline def setFilterDelay(value: Double): Self = StObject.set(x, "filterDelay", value.asInstanceOf[js.Any])
     
     inline def setFilterDelayUndefined: Self = StObject.set(x, "filterDelay", js.undefined)
@@ -1806,6 +1828,12 @@ object DataTableProps {
     inline def setFilterDisplay(value: menu | row): Self = StObject.set(x, "filterDisplay", value.asInstanceOf[js.Any])
     
     inline def setFilterDisplayUndefined: Self = StObject.set(x, "filterDisplay", js.undefined)
+    
+    inline def setFilterIcon(value: IconType[DataTable[TValue]]): Self = StObject.set(x, "filterIcon", value.asInstanceOf[js.Any])
+    
+    inline def setFilterIconFunction1(value: /* options */ IconOptions[DataTable[TValue]] => ReactNode): Self = StObject.set(x, "filterIcon", js.Any.fromFunction1(value))
+    
+    inline def setFilterIconUndefined: Self = StObject.set(x, "filterIcon", js.undefined)
     
     inline def setFilterLocale(value: String): Self = StObject.set(x, "filterLocale", value.asInstanceOf[js.Any])
     
@@ -1917,7 +1945,7 @@ object DataTableProps {
     
     inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
-    inline def setIsDataSelectable(value: /* event */ DataTableDataSelectableEvent[TValue] => js.UndefOr[Boolean | Null]): Self = StObject.set(x, "isDataSelectable", js.Any.fromFunction1(value))
+    inline def setIsDataSelectable(value: /* event */ DataTableDataSelectableEvent => js.UndefOr[Boolean | Null]): Self = StObject.set(x, "isDataSelectable", js.Any.fromFunction1(value))
     
     inline def setIsDataSelectableUndefined: Self = StObject.set(x, "isDataSelectable", js.undefined)
     
@@ -2059,11 +2087,11 @@ object DataTableProps {
     
     inline def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
     
-    inline def setOnCellSelect(value: /* event */ DataTableSelectEvent => Unit): Self = StObject.set(x, "onCellSelect", js.Any.fromFunction1(value))
+    inline def setOnCellSelect(value: /* event */ DataTableCellClickEvent[TValue] => Unit): Self = StObject.set(x, "onCellSelect", js.Any.fromFunction1(value))
     
     inline def setOnCellSelectUndefined: Self = StObject.set(x, "onCellSelect", js.undefined)
     
-    inline def setOnCellUnselect(value: /* event */ DataTableUnselectEvent => Unit): Self = StObject.set(x, "onCellUnselect", js.Any.fromFunction1(value))
+    inline def setOnCellUnselect(value: /* event */ DataTableCellClickEvent[TValue] => Unit): Self = StObject.set(x, "onCellUnselect", js.Any.fromFunction1(value))
     
     inline def setOnCellUnselectUndefined: Self = StObject.set(x, "onCellUnselect", js.undefined)
     
@@ -2690,6 +2718,10 @@ object DataTableProps {
     inline def setShowGridlines(value: Boolean): Self = StObject.set(x, "showGridlines", value.asInstanceOf[js.Any])
     
     inline def setShowGridlinesUndefined: Self = StObject.set(x, "showGridlines", js.undefined)
+    
+    inline def setShowHeaders(value: Boolean): Self = StObject.set(x, "showHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setShowHeadersUndefined: Self = StObject.set(x, "showHeaders", js.undefined)
     
     inline def setShowRowReorderElement(
       value: (/* data */ DataTableRowData[TValue], /* options */ DataTableShowRowReorderElementOptions[TValue]) => js.UndefOr[Boolean | Null]

@@ -13,18 +13,24 @@ import typings.primereact.primereactStrings.self
 import typings.primereact.primereactStrings.top
 import typings.primereact.utilsUtilsMod.IconOptions
 import typings.primereact.utilsUtilsMod.IconType
+import typings.primereact.utilsUtilsMod.PassThroughType
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.DragEvent
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
+import typings.react.mod.SVGProps
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.HTMLSpanElement
+import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,6 +130,209 @@ object dialogDialogMod {
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait DialogPassThroughMethodOptions extends StObject {
+    
+    var props: DialogProps
+    
+    var state: DialogState
+  }
+  object DialogPassThroughMethodOptions {
+    
+    inline def apply(props: DialogProps, state: DialogState): DialogPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DialogPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: DialogProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: DialogState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DialogPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the close button's component.
+      */
+    var closeButton: js.UndefOr[DialogPassThroughType[HTMLAttributes[HTMLButtonElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the close button icon's component.
+      */
+    var closeButtonIcon: js.UndefOr[DialogPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the content's DOM element.
+      */
+    var content: js.UndefOr[DialogPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the footer's DOM element.
+      */
+    var footer: js.UndefOr[DialogPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the header's DOM element.
+      */
+    var header: js.UndefOr[DialogPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the header icons' DOM element.
+      */
+    var headerIcons: js.UndefOr[DialogPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the header title's DOM element.
+      */
+    var headerTitle: js.UndefOr[DialogPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the mask's DOM element.
+      */
+    var mask: js.UndefOr[DialogPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the maximizable button's DOM element.
+      */
+    var maximizableButton: js.UndefOr[DialogPassThroughType[HTMLAttributes[HTMLButtonElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the maximizable icon's DOM element.
+      */
+    var maximizableIcon: js.UndefOr[DialogPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[DialogPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object DialogPassThroughOptions {
+    
+    inline def apply(): DialogPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DialogPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCloseButton(value: DialogPassThroughType[HTMLAttributes[HTMLButtonElement]]): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+      
+      inline def setCloseButtonFunction1(
+        value: /* options */ js.UndefOr[DialogPassThroughMethodOptions] => HTMLAttributes[HTMLButtonElement] | Unit
+      ): Self = StObject.set(x, "closeButton", js.Any.fromFunction1(value))
+      
+      inline def setCloseButtonIcon(value: DialogPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "closeButtonIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseButtonIconFunction1(
+        value: /* options */ js.UndefOr[DialogPassThroughMethodOptions] => (SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]) | Unit
+      ): Self = StObject.set(x, "closeButtonIcon", js.Any.fromFunction1(value))
+      
+      inline def setCloseButtonIconNull: Self = StObject.set(x, "closeButtonIcon", null)
+      
+      inline def setCloseButtonIconUndefined: Self = StObject.set(x, "closeButtonIcon", js.undefined)
+      
+      inline def setCloseButtonNull: Self = StObject.set(x, "closeButton", null)
+      
+      inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+      
+      inline def setContent(value: DialogPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentFunction1(
+        value: /* options */ js.UndefOr[DialogPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+      
+      inline def setContentNull: Self = StObject.set(x, "content", null)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setFooter(value: DialogPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      
+      inline def setFooterFunction1(
+        value: /* options */ js.UndefOr[DialogPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
+      
+      inline def setFooterNull: Self = StObject.set(x, "footer", null)
+      
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      
+      inline def setHeader(value: DialogPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderFunction1(
+        value: /* options */ js.UndefOr[DialogPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
+      
+      inline def setHeaderIcons(value: DialogPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "headerIcons", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderIconsFunction1(
+        value: /* options */ js.UndefOr[DialogPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "headerIcons", js.Any.fromFunction1(value))
+      
+      inline def setHeaderIconsNull: Self = StObject.set(x, "headerIcons", null)
+      
+      inline def setHeaderIconsUndefined: Self = StObject.set(x, "headerIcons", js.undefined)
+      
+      inline def setHeaderNull: Self = StObject.set(x, "header", null)
+      
+      inline def setHeaderTitle(value: DialogPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderTitleFunction1(
+        value: /* options */ js.UndefOr[DialogPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "headerTitle", js.Any.fromFunction1(value))
+      
+      inline def setHeaderTitleNull: Self = StObject.set(x, "headerTitle", null)
+      
+      inline def setHeaderTitleUndefined: Self = StObject.set(x, "headerTitle", js.undefined)
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      
+      inline def setMask(value: DialogPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      
+      inline def setMaskFunction1(
+        value: /* options */ js.UndefOr[DialogPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "mask", js.Any.fromFunction1(value))
+      
+      inline def setMaskNull: Self = StObject.set(x, "mask", null)
+      
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      
+      inline def setMaximizableButton(value: DialogPassThroughType[HTMLAttributes[HTMLButtonElement]]): Self = StObject.set(x, "maximizableButton", value.asInstanceOf[js.Any])
+      
+      inline def setMaximizableButtonFunction1(
+        value: /* options */ js.UndefOr[DialogPassThroughMethodOptions] => HTMLAttributes[HTMLButtonElement] | Unit
+      ): Self = StObject.set(x, "maximizableButton", js.Any.fromFunction1(value))
+      
+      inline def setMaximizableButtonNull: Self = StObject.set(x, "maximizableButton", null)
+      
+      inline def setMaximizableButtonUndefined: Self = StObject.set(x, "maximizableButton", js.undefined)
+      
+      inline def setMaximizableIcon(value: DialogPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "maximizableIcon", value.asInstanceOf[js.Any])
+      
+      inline def setMaximizableIconFunction1(
+        value: /* options */ js.UndefOr[DialogPassThroughMethodOptions] => (SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]) | Unit
+      ): Self = StObject.set(x, "maximizableIcon", js.Any.fromFunction1(value))
+      
+      inline def setMaximizableIconNull: Self = StObject.set(x, "maximizableIcon", null)
+      
+      inline def setMaximizableIconUndefined: Self = StObject.set(x, "maximizableIcon", js.undefined)
+      
+      inline def setRoot(value: DialogPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[DialogPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type DialogPassThroughType[T] = PassThroughType[T, DialogPassThroughMethodOptions]
   
   trait DialogProps extends StObject {
     
@@ -299,9 +508,9 @@ object dialogDialogMod {
     
     /**
       * Callback to invoke when dialog is clicked.
-      * @param {React.MouseEvent<HTMLElement>} event - Browser event.
+      * @param {React.PointerEvent<HTMLElement>} event - Browser event.
       */
-    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
+    var onClick: js.UndefOr[js.Function1[/* event */ PointerEvent[HTMLElement], Unit]] = js.undefined
     
     /**
       * Callback to invoke when dragging dialog.
@@ -368,6 +577,12 @@ object dialogDialogMod {
     var position: js.UndefOr[
         center | top | bottom | left | right | `top-left` | `top-right` | `bottom-left` | `bottom-right`
       ] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {DialogPassThroughOptions}
+      */
+    var pt: js.UndefOr[DialogPassThroughOptions] = js.undefined
     
     /**
       * Enables resizing of the content.
@@ -553,7 +768,7 @@ object dialogDialogMod {
       
       inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
       
-      inline def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ PointerEvent[HTMLElement] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
@@ -601,6 +816,10 @@ object dialogDialogMod {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
+      inline def setPt(value: DialogPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
       
       inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
@@ -626,6 +845,36 @@ object dialogDialogMod {
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
       inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    }
+  }
+  
+  trait DialogState extends StObject {
+    
+    /**
+      * Current visible state of the container as a boolean.
+      * @defaultValue false
+      */
+    var containerVisible: Boolean
+    
+    /**
+      * Current maximized state as a boolean.
+      * @defaultValue false
+      */
+    var maximized: Boolean
+  }
+  object DialogState {
+    
+    inline def apply(containerVisible: Boolean, maximized: Boolean): DialogState = {
+      val __obj = js.Dynamic.literal(containerVisible = containerVisible.asInstanceOf[js.Any], maximized = maximized.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DialogState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogState] (val x: Self) extends AnyVal {
+      
+      inline def setContainerVisible(value: Boolean): Self = StObject.set(x, "containerVisible", value.asInstanceOf[js.Any])
+      
+      inline def setMaximized(value: Boolean): Self = StObject.set(x, "maximized", value.asInstanceOf[js.Any])
     }
   }
 }

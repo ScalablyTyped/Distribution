@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait mn
   extends StObject
-     with wn {
+     with n {
   
   var field: Any
   

@@ -21,6 +21,8 @@ trait FirestoreSettingsImpl extends StObject {
   
   val experimentalForceLongPolling: Boolean
   
+  val experimentalLongPollingOptions: ExperimentalLongPollingOptions
+  
   /** The hostname to connect to. */
   val host: String
   
@@ -39,13 +41,14 @@ object FirestoreSettingsImpl {
     cacheSizeBytes: Double,
     experimentalAutoDetectLongPolling: Boolean,
     experimentalForceLongPolling: Boolean,
+    experimentalLongPollingOptions: ExperimentalLongPollingOptions,
     host: String,
     ignoreUndefinedProperties: Boolean,
     isEqual: FirestoreSettingsImpl => Boolean,
     ssl: Boolean,
     useFetchStreams: Boolean
   ): FirestoreSettingsImpl = {
-    val __obj = js.Dynamic.literal(cacheSizeBytes = cacheSizeBytes.asInstanceOf[js.Any], experimentalAutoDetectLongPolling = experimentalAutoDetectLongPolling.asInstanceOf[js.Any], experimentalForceLongPolling = experimentalForceLongPolling.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], ignoreUndefinedProperties = ignoreUndefinedProperties.asInstanceOf[js.Any], isEqual = js.Any.fromFunction1(isEqual), ssl = ssl.asInstanceOf[js.Any], useFetchStreams = useFetchStreams.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cacheSizeBytes = cacheSizeBytes.asInstanceOf[js.Any], experimentalAutoDetectLongPolling = experimentalAutoDetectLongPolling.asInstanceOf[js.Any], experimentalForceLongPolling = experimentalForceLongPolling.asInstanceOf[js.Any], experimentalLongPollingOptions = experimentalLongPollingOptions.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], ignoreUndefinedProperties = ignoreUndefinedProperties.asInstanceOf[js.Any], isEqual = js.Any.fromFunction1(isEqual), ssl = ssl.asInstanceOf[js.Any], useFetchStreams = useFetchStreams.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirestoreSettingsImpl]
   }
   
@@ -65,6 +68,8 @@ object FirestoreSettingsImpl {
     inline def setExperimentalAutoDetectLongPolling(value: Boolean): Self = StObject.set(x, "experimentalAutoDetectLongPolling", value.asInstanceOf[js.Any])
     
     inline def setExperimentalForceLongPolling(value: Boolean): Self = StObject.set(x, "experimentalForceLongPolling", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalLongPollingOptions(value: ExperimentalLongPollingOptions): Self = StObject.set(x, "experimentalLongPollingOptions", value.asInstanceOf[js.Any])
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

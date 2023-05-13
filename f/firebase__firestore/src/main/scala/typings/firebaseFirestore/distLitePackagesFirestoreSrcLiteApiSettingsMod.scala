@@ -2,6 +2,7 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcApiCacheConfigMod.FirestoreLocalCache
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcApiCredentialsMod.CredentialsSettings
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcApiLongPollingOptionsMod.ExperimentalLongPollingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,6 +31,8 @@ object distLitePackagesFirestoreSrcLiteApiSettingsMod {
     val experimentalAutoDetectLongPolling: Boolean = js.native
     
     val experimentalForceLongPolling: Boolean = js.native
+    
+    val experimentalLongPollingOptions: ExperimentalLongPollingOptions = js.native
     
     /** The hostname to connect to. */
     val host: String = js.native
@@ -96,6 +99,8 @@ object distLitePackagesFirestoreSrcLiteApiSettingsMod {
     
     var experimentalForceLongPolling: js.UndefOr[Boolean] = js.undefined
     
+    var experimentalLongPollingOptions: js.UndefOr[ExperimentalLongPollingOptions] = js.undefined
+    
     var localCache: js.UndefOr[FirestoreLocalCache] = js.undefined
     
     var useFetchStreams: js.UndefOr[Boolean] = js.undefined
@@ -125,6 +130,10 @@ object distLitePackagesFirestoreSrcLiteApiSettingsMod {
       inline def setExperimentalForceLongPolling(value: Boolean): Self = StObject.set(x, "experimentalForceLongPolling", value.asInstanceOf[js.Any])
       
       inline def setExperimentalForceLongPollingUndefined: Self = StObject.set(x, "experimentalForceLongPolling", js.undefined)
+      
+      inline def setExperimentalLongPollingOptions(value: ExperimentalLongPollingOptions): Self = StObject.set(x, "experimentalLongPollingOptions", value.asInstanceOf[js.Any])
+      
+      inline def setExperimentalLongPollingOptionsUndefined: Self = StObject.set(x, "experimentalLongPollingOptions", js.undefined)
       
       inline def setLocalCache(value: FirestoreLocalCache): Self = StObject.set(x, "localCache", value.asInstanceOf[js.Any])
       

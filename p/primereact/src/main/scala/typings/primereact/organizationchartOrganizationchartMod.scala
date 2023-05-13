@@ -577,6 +577,12 @@ object organizationchartOrganizationchartMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when node selection changes.
+      * @param {OrganizationChartSelectionChangeEvent} event - Custom selection changed event.
+      */
+    var onSelectionChange: js.UndefOr[js.Function1[/* event */ OrganizationChartSelectionChangeEvent, Unit]] = js.undefined
+    
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onSubmit: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -625,17 +631,6 @@ object organizationchartOrganizationchartMod {
       * A single treenode instance or an array to refer to the selections.
       */
     var selection: js.UndefOr[OrganizationChartNodeData | js.Array[OrganizationChartNodeData] | Null] = js.undefined
-    
-    /**
-      * Callback to invoke when node selection changes.
-      * @param {OrganizationChartNodeData | OrganizationChartNodeData[] | null | undefined} node - A node instance.
-      */
-    var selectionChange: js.UndefOr[
-        js.Function1[
-          /* node */ js.UndefOr[OrganizationChartNodeData | js.Array[OrganizationChartNodeData] | Null], 
-          Unit
-        ]
-      ] = js.undefined
     
     /**
       * Defines the selection mode, valid values "single" and "multiple".
@@ -1290,6 +1285,10 @@ object organizationchartOrganizationchartMod {
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
+      inline def setOnSelectionChange(value: /* event */ OrganizationChartSelectionChangeEvent => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
+      
+      inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
+      
       inline def setOnStalled(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
       
       inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
@@ -1380,12 +1379,6 @@ object organizationchartOrganizationchartMod {
       
       inline def setSelection(value: OrganizationChartNodeData | js.Array[OrganizationChartNodeData]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      inline def setSelectionChange(
-        value: /* node */ js.UndefOr[OrganizationChartNodeData | js.Array[OrganizationChartNodeData] | Null] => Unit
-      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
-      
-      inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
-      
       inline def setSelectionMode(value: single | multiple): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
       inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
@@ -1451,6 +1444,45 @@ object organizationchartOrganizationchartMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+    }
+  }
+  
+  /**
+    * Custom selection change event.
+    * @see {@link OrganizationChartProps.onSelectionChange}
+    * @event
+    */
+  trait OrganizationChartSelectionChangeEvent extends StObject {
+    
+    /**
+      * Selected node(s).
+      */
+    var data: js.UndefOr[OrganizationChartNodeData | js.Array[OrganizationChartNodeData] | Null] = js.undefined
+    
+    /**
+      * Browser event.
+      */
+    var originalEvent: SyntheticEvent[Element, Event]
+  }
+  object OrganizationChartSelectionChangeEvent {
+    
+    inline def apply(originalEvent: SyntheticEvent[Element, Event]): OrganizationChartSelectionChangeEvent = {
+      val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OrganizationChartSelectionChangeEvent]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrganizationChartSelectionChangeEvent] (val x: Self) extends AnyVal {
+      
+      inline def setData(value: OrganizationChartNodeData | js.Array[OrganizationChartNodeData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataNull: Self = StObject.set(x, "data", null)
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setDataVarargs(value: OrganizationChartNodeData*): Self = StObject.set(x, "data", js.Array(value*))
+      
+      inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -75,6 +75,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -120,6 +121,58 @@ object dividerDividerMod {
       */
     def getElement(): HTMLDivElement = js.native
   }
+  
+  trait DividerPassThroughMethodOptions extends StObject {
+    
+    var props: DividerProps
+  }
+  object DividerPassThroughMethodOptions {
+    
+    inline def apply(props: DividerProps): DividerPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DividerPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DividerPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: DividerProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DividerPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the content's DOM element.
+      */
+    var content: js.UndefOr[DividerPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[DividerPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object DividerPassThroughOptions {
+    
+    inline def apply(): DividerPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DividerPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DividerPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setContent(value: DividerPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setRoot(value: DividerPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type DividerPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, DividerPassThroughMethodOptions> */ Any
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait DividerProps extends StObject {
@@ -464,6 +517,12 @@ object dividerDividerMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {DividerPassThroughOptions}
+      */
+    var pt: js.UndefOr[DividerPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1178,6 +1237,10 @@ object dividerDividerMod {
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      
+      inline def setPt(value: DividerPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       

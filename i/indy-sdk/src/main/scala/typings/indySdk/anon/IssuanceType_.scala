@@ -12,7 +12,7 @@ trait IssuanceType_ extends StObject {
   
   var maxCredNum: Double
   
-  var publicKeys: js.Array[String]
+  var publicKeys: AccumKey
   
   var tailsHash: String
   
@@ -23,7 +23,7 @@ object IssuanceType_ {
   inline def apply(
     issuanceType: ISSUANCE_BY_DEFAULT | ISSUANCE_ON_DEMAND,
     maxCredNum: Double,
-    publicKeys: js.Array[String],
+    publicKeys: AccumKey,
     tailsHash: String,
     tailsLocation: String
   ): IssuanceType_ = {
@@ -38,9 +38,7 @@ object IssuanceType_ {
     
     inline def setMaxCredNum(value: Double): Self = StObject.set(x, "maxCredNum", value.asInstanceOf[js.Any])
     
-    inline def setPublicKeys(value: js.Array[String]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
-    
-    inline def setPublicKeysVarargs(value: String*): Self = StObject.set(x, "publicKeys", js.Array(value*))
+    inline def setPublicKeys(value: AccumKey): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
     inline def setTailsHash(value: String): Self = StObject.set(x, "tailsHash", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.buttonButtonMod.ButtonPassThroughOptions
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`down-left`
@@ -79,6 +80,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -90,6 +92,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.SVGProps
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -101,8 +104,12 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.react.mod.global.JSX.Element
 import typings.std.Event
+import typings.std.HTMLAnchorElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.HTMLLIElement
+import typings.std.HTMLSpanElement
+import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -202,6 +209,110 @@ object speeddialSpeeddialMod {
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait SpeedDialPassThroughMethodOptions extends StObject {
+    
+    var props: SpeedDialProps
+    
+    var state: SpeedDialState
+  }
+  object SpeedDialPassThroughMethodOptions {
+    
+    inline def apply(props: SpeedDialProps, state: SpeedDialState): SpeedDialPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SpeedDialPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeedDialPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: SpeedDialProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: SpeedDialState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SpeedDialPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the action's DOM element.
+      */
+    var action: js.UndefOr[SpeedDialPassThroughType[HTMLAttributes[HTMLAnchorElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the action icon's DOM element.
+      */
+    var actionIcon: js.UndefOr[
+        SpeedDialPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]
+      ] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the Button component.
+      *  @see {@link ButtonPassThroughOptions}
+      */
+    var button: js.UndefOr[ButtonPassThroughOptions] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the mask's DOM element.
+      */
+    var mask: js.UndefOr[SpeedDialPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the menu's DOM element.
+      */
+    var menu: js.UndefOr[SpeedDialPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the menu item's DOM element.
+      */
+    var menuitem: js.UndefOr[SpeedDialPassThroughType[HTMLAttributes[HTMLLIElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[SpeedDialPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object SpeedDialPassThroughOptions {
+    
+    inline def apply(): SpeedDialPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SpeedDialPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeedDialPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAction(value: SpeedDialPassThroughType[HTMLAttributes[HTMLAnchorElement]]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionIcon(value: SpeedDialPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "actionIcon", value.asInstanceOf[js.Any])
+      
+      inline def setActionIconUndefined: Self = StObject.set(x, "actionIcon", js.undefined)
+      
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      
+      inline def setButton(value: ButtonPassThroughOptions): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      
+      inline def setMask(value: SpeedDialPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      
+      inline def setMenu(value: SpeedDialPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      
+      inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+      
+      inline def setMenuitem(value: SpeedDialPassThroughType[HTMLAttributes[HTMLLIElement]]): Self = StObject.set(x, "menuitem", value.asInstanceOf[js.Any])
+      
+      inline def setMenuitemUndefined: Self = StObject.set(x, "menuitem", js.undefined)
+      
+      inline def setRoot(value: SpeedDialPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type SpeedDialPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, SpeedDialPassThroughMethodOptions> */ Any
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait SpeedDialProps extends StObject {
@@ -620,6 +731,12 @@ object speeddialSpeeddialMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {SpeedDialPassThroughOptions}
+      */
+    var pt: js.UndefOr[SpeedDialPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1426,6 +1543,10 @@ object speeddialSpeeddialMod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
+      inline def setPt(value: SpeedDialPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
@@ -1523,6 +1644,28 @@ object speeddialSpeeddialMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+    }
+  }
+  
+  trait SpeedDialState extends StObject {
+    
+    /**
+      * Current visible state as a boolean.
+      * @defaultValue false
+      */
+    var visible: Boolean
+  }
+  object SpeedDialState {
+    
+    inline def apply(visible: Boolean): SpeedDialState = {
+      val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SpeedDialState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeedDialState] (val x: Self) extends AnyVal {
+      
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

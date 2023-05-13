@@ -52,6 +52,7 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.PassThroughType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -69,6 +70,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -114,6 +116,100 @@ object progressbarProgressbarMod {
       */
     def getElement(): HTMLDivElement = js.native
   }
+  
+  trait ProgressBarPassThroughMethodOptions extends StObject {
+    
+    var props: ProgressBarProps
+  }
+  object ProgressBarPassThroughMethodOptions {
+    
+    inline def apply(props: ProgressBarProps): ProgressBarPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ProgressBarPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressBarPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: ProgressBarProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ProgressBarPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the indeterminate container's DOM element.
+      */
+    var indeterminateContainer: js.UndefOr[ProgressBarPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the label's DOM element.
+      */
+    var label: js.UndefOr[ProgressBarPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[ProgressBarPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the value's DOM element.
+      */
+    var value: js.UndefOr[ProgressBarPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object ProgressBarPassThroughOptions {
+    
+    inline def apply(): ProgressBarPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ProgressBarPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressBarPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setIndeterminateContainer(value: ProgressBarPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "indeterminateContainer", value.asInstanceOf[js.Any])
+      
+      inline def setIndeterminateContainerFunction1(
+        value: /* options */ js.UndefOr[ProgressBarPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "indeterminateContainer", js.Any.fromFunction1(value))
+      
+      inline def setIndeterminateContainerNull: Self = StObject.set(x, "indeterminateContainer", null)
+      
+      inline def setIndeterminateContainerUndefined: Self = StObject.set(x, "indeterminateContainer", js.undefined)
+      
+      inline def setLabel(value: ProgressBarPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelFunction1(
+        value: /* options */ js.UndefOr[ProgressBarPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+      
+      inline def setLabelNull: Self = StObject.set(x, "label", null)
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
+      inline def setRoot(value: ProgressBarPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[ProgressBarPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      
+      inline def setValue(value: ProgressBarPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueFunction1(
+        value: /* options */ js.UndefOr[ProgressBarPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      
+      inline def setValueNull: Self = StObject.set(x, "value", null)
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type ProgressBarPassThroughType[T] = PassThroughType[T, ProgressBarPassThroughMethodOptions]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait ProgressBarProps extends StObject {
@@ -461,6 +557,12 @@ object progressbarProgressbarMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {ProgressBarPassThroughOptions}
+      */
+    var pt: js.UndefOr[ProgressBarPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1186,6 +1288,10 @@ object progressbarProgressbarMod {
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      
+      inline def setPt(value: ProgressBarPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       

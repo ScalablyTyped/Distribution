@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * query instance that also contains this `QueryLimitConstraint`.
   */ trait Dr
   extends StObject
-     with vr {
+     with br {
   
-  def _apply(t: Any): Nn
+  def _apply(t: Any): Fn
   
   var _limit: Any
   
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Dr {
   
-  inline def apply(_apply: Any => Nn, _limit: Any, _limitType: Any, `type`: Any): Dr = {
+  inline def apply(_apply: Any => Fn, _limit: Any, _limitType: Any, `type`: Any): Dr = {
     val __obj = js.Dynamic.literal(_apply = js.Any.fromFunction1(_apply), _limit = _limit.asInstanceOf[js.Any], _limitType = _limitType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dr]
@@ -35,7 +35,7 @@ object Dr {
     
     inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def set_apply(value: Any => Nn): Self = StObject.set(x, "_apply", js.Any.fromFunction1(value))
+    inline def set_apply(value: Any => Fn): Self = StObject.set(x, "_apply", js.Any.fromFunction1(value))
     
     inline def set_limit(value: Any): Self = StObject.set(x, "_limit", value.asInstanceOf[js.Any])
     

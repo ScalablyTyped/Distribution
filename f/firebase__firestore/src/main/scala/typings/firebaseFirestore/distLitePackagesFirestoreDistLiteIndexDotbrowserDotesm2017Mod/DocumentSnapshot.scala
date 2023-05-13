@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class DocumentSnapshot protected ()
   extends StObject
-     with mr {
+     with pr {
   /** @hideconstructor protected */
   def this(t: Any, e: Any, n: Any, r: Any, s: Any) = this()
 }

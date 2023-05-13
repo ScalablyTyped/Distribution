@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@testing-library/dom" : "9.2.0"
+      "@testing-library/dom" : "9.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@testing-library/dom" : "9.2.0"
+      "@testing-library/dom" : "9.3.0"
     }
   ],
   "compile-devDependencies" : [

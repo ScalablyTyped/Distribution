@@ -16,8 +16,8 @@ open class ClusterClient protected () extends StObject {
   def copy(name: String, sourceName: String): js.Promise[CopyAndPutMetaResult] = js.native
   def copy(name: String, sourceName: String, options: CopyObjectOptions): js.Promise[CopyAndPutMetaResult] = js.native
   
-  def delete(name: String): js.Promise[NormalSuccessResponse] = js.native
-  def delete(name: String, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
+  def delete(name: String): js.Promise[DeleteResult] = js.native
+  def delete(name: String, options: RequestOptions): js.Promise[DeleteResult] = js.native
   
   def deleteMulti(names: js.Array[String]): js.Promise[DeleteMultiResult] = js.native
   def deleteMulti(names: js.Array[String], options: DeleteMultiOptions): js.Promise[DeleteMultiResult] = js.native

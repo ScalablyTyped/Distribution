@@ -409,6 +409,11 @@ object colorpickerColorpickerMod {
     var inlist: js.UndefOr[Any] = js.undefined
     
     /**
+      * Inline style of the input field.
+      */
+    var inputClassName: js.UndefOr[String] = js.undefined
+    
+    /**
       * Identifier of the focus input to match a label defined for the dropdown.
       */
     var inputId: js.UndefOr[String] = js.undefined
@@ -419,6 +424,11 @@ object colorpickerColorpickerMod {
       * Reference of the input element.
       */
     var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
+    
+    /**
+      * Inline style of the input field.
+      */
+    var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -1089,6 +1099,10 @@ object colorpickerColorpickerMod {
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
+      inline def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
+      
+      inline def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
+      
       inline def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
       
       inline def setInputIdUndefined: Self = StObject.set(x, "inputId", js.undefined)
@@ -1104,6 +1118,10 @@ object colorpickerColorpickerMod {
       inline def setInputRefNull: Self = StObject.set(x, "inputRef", null)
       
       inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
+      
+      inline def setInputStyle(value: CSSProperties): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
+      
+      inline def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
       
       inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
       

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@vue/reactivity-transform" : "3.3.1"
+      "@vue/reactivity-transform" : "3.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@vue/reactivity-transform" : "3.3.1"
+      "@vue/reactivity-transform" : "3.3.2"
     }
   ],
   "compile-devDependencies" : [

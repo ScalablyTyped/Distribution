@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class CollectionReference ()
   extends StObject
-     with Fn {
+     with xn {
   
   /* CompleteClass */
   var _query: Any = js.native
@@ -27,5 +27,5 @@ open class CollectionReference ()
   var `type`: String = js.native
   
   /* CompleteClass */
-  override def withConverter(t: Any): Nn = js.native
+  override def withConverter(t: Any): Fn = js.native
 }

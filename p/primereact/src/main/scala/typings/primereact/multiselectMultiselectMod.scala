@@ -213,6 +213,11 @@ object multiselectMultiselectMod {
     def preventDefault(): Unit
     
     /**
+      * Selected option
+      */
+    var selectedOption: js.UndefOr[Any] = js.undefined
+    
+    /**
       * Stops the event from propagating.
       */
     def stopPropagation(): Unit
@@ -246,6 +251,10 @@ object multiselectMultiselectMod {
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      
+      inline def setSelectedOption(value: Any): Self = StObject.set(x, "selectedOption", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedOptionUndefined: Self = StObject.set(x, "selectedOption", js.undefined)
       
       inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       

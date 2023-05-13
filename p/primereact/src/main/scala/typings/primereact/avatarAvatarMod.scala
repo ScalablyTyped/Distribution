@@ -73,6 +73,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -84,6 +85,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.SVGProps
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -97,6 +99,9 @@ import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.HTMLImageElement
+import typings.std.HTMLSpanElement
+import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,6 +124,76 @@ object avatarAvatarMod {
       */
     def getElement(): HTMLDivElement = js.native
   }
+  
+  trait AvatarPassThroughMethodOptions extends StObject {
+    
+    var props: AvatarProps
+  }
+  object AvatarPassThroughMethodOptions {
+    
+    inline def apply(props: AvatarProps): AvatarPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AvatarPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: AvatarProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait AvatarPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the icon's DOM element.
+      */
+    var icon: js.UndefOr[AvatarPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the image's DOM element.
+      */
+    var image: js.UndefOr[AvatarPassThroughType[HTMLAttributes[HTMLImageElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the label's DOM element.
+      */
+    var label: js.UndefOr[AvatarPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[AvatarPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object AvatarPassThroughOptions {
+    
+    inline def apply(): AvatarPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AvatarPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setIcon(value: AvatarPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setImage(value: AvatarPassThroughType[HTMLAttributes[HTMLImageElement]]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      
+      inline def setLabel(value: AvatarPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
+      inline def setRoot(value: AvatarPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type AvatarPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, AvatarPassThroughMethodOptions> */ Any
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait AvatarProps extends StObject {
@@ -491,6 +566,12 @@ object avatarAvatarMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {AvatarPassThroughOptions}
+      */
+    var pt: js.UndefOr[AvatarPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1234,6 +1315,10 @@ object avatarAvatarMod {
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      
+      inline def setPt(value: AvatarPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       

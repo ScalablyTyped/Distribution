@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /**
     * Returns an IndexEntry entry that sorts immediately after the current
     * directional value.
-    */ def He(): kr
+    */ def Je(): kr
   
   var arrayValue: Any
   
@@ -37,8 +37,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object kr {
   
-  inline def apply(He: () => kr, arrayValue: Any, directionalValue: Any, documentKey: Any, indexId: Any): kr = {
-    val __obj = js.Dynamic.literal(He = js.Any.fromFunction0(He), arrayValue = arrayValue.asInstanceOf[js.Any], directionalValue = directionalValue.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], indexId = indexId.asInstanceOf[js.Any])
+  inline def apply(Je: () => kr, arrayValue: Any, directionalValue: Any, documentKey: Any, indexId: Any): kr = {
+    val __obj = js.Dynamic.literal(Je = js.Any.fromFunction0(Je), arrayValue = arrayValue.asInstanceOf[js.Any], directionalValue = directionalValue.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], indexId = indexId.asInstanceOf[js.Any])
     __obj.asInstanceOf[kr]
   }
   
@@ -51,8 +51,8 @@ object kr {
     
     inline def setDocumentKey(value: Any): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
     
-    inline def setHe(value: () => kr): Self = StObject.set(x, "He", js.Any.fromFunction0(value))
-    
     inline def setIndexId(value: Any): Self = StObject.set(x, "indexId", value.asInstanceOf[js.Any])
+    
+    inline def setJe(value: () => kr): Self = StObject.set(x, "Je", js.Any.fromFunction0(value))
   }
 }

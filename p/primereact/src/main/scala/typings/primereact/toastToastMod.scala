@@ -202,6 +202,11 @@ object toastToastMod {
     var icon: js.UndefOr[IconType[ToastProps]] = js.undefined
     
     /**
+      * Unique id of the message.
+      */
+    var id: js.UndefOr[String] = js.undefined
+    
+    /**
       * Delay in milliseconds to close the message automatically.
       * @defaultValue 3000
       */
@@ -272,6 +277,10 @@ object toastToastMod {
       inline def setIconFunction1(value: /* options */ IconOptions[ToastProps] => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setLife(value: Double): Self = StObject.set(x, "life", value.asInstanceOf[js.Any])
       

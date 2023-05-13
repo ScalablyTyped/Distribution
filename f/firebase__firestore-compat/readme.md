@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__firestore-compat
 
-Typings are for version 0.3.8
+Typings are for version 0.3.9
 
 ## Library description:
 The Cloud Firestore component of the Firebase JS SDK.

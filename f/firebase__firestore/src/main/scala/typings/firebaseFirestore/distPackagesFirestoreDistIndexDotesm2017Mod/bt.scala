@@ -12,13 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See PersistencePromise for more details.
   */ trait bt extends StObject {
   
+  /**
+    * Opens the specified database, creating or upgrading it if necessary.
+    */ @JSName("$")
+  def $(t: Any): Any
+  
   def B(t: Any): Unit
   
   var F: Any
-  
-  /**
-    * Opens the specified database, creating or upgrading it if necessary.
-    */ def O(t: Any): Any
   
   var V: Any
   
@@ -35,9 +36,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object bt {
   
   inline def apply(
+    $: Any => Any,
     B: Any => Unit,
     F: Any,
-    O: Any => Any,
     V: Any,
     close: () => Unit,
     db: Any,
@@ -45,12 +46,14 @@ object bt {
     runTransaction: (Any, Any, Any, Any) => js.Promise[Any],
     version: Any
   ): bt = {
-    val __obj = js.Dynamic.literal(B = js.Any.fromFunction1(B), F = F.asInstanceOf[js.Any], O = js.Any.fromFunction1(O), V = V.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), db = db.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], runTransaction = js.Any.fromFunction4(runTransaction), version = version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal($ = js.Any.fromFunction1($), B = js.Any.fromFunction1(B), F = F.asInstanceOf[js.Any], V = V.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), db = db.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], runTransaction = js.Any.fromFunction4(runTransaction), version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[bt]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: bt] (val x: Self) extends AnyVal {
+    
+    inline def set$(value: Any => Any): Self = StObject.set(x, "$", js.Any.fromFunction1(value))
     
     inline def setB(value: Any => Unit): Self = StObject.set(x, "B", js.Any.fromFunction1(value))
     
@@ -61,8 +64,6 @@ object bt {
     inline def setF(value: Any): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
     
     inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setO(value: Any => Any): Self = StObject.set(x, "O", js.Any.fromFunction1(value))
     
     inline def setRunTransaction(value: (Any, Any, Any, Any) => js.Promise[Any]): Self = StObject.set(x, "runTransaction", js.Any.fromFunction4(value))
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-svg"
-version := "16.1.11-b6a54a"
+version := "16.1.12-b6f0fc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "18.2-dt-20230506Z-14ab9d",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20230322Z-da1b40",
   "org.scalablytyped" %%% "std" % "5.0-e63739",
-  "org.scalablytyped" %%% "tanem__svg-injector" % "10.1.53-05e2be")
+  "org.scalablytyped" %%% "tanem__svg-injector" % "10.1.54-870275")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */ @js.native
 trait po extends StObject {
   
-  def Gn(t: Any): Unit = js.native
+  var Gn: Any = js.native
   
-  var Kn: Any = js.native
+  def Qn(t: Any): Unit = js.native
   
   var asyncQueue: Any = js.native
   

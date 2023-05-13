@@ -57,6 +57,7 @@ import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.warning
 import typings.primereact.primereactStrings.xlarge
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.PassThroughType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -74,6 +75,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -119,6 +121,55 @@ object badgeBadgeMod {
       */
     def getElement(): HTMLSpanElement = js.native
   }
+  
+  trait BadgePassThroughMethodOptions extends StObject {
+    
+    var props: BadgeProps
+  }
+  object BadgePassThroughMethodOptions {
+    
+    inline def apply(props: BadgeProps): BadgePassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BadgePassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgePassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: BadgeProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait BadgePassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[BadgePassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+  }
+  object BadgePassThroughOptions {
+    
+    inline def apply(): BadgePassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BadgePassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgePassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setRoot(value: BadgePassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[BadgePassThroughMethodOptions] => HTMLAttributes[HTMLSpanElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type BadgePassThroughType[T] = PassThroughType[T, BadgePassThroughMethodOptions]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLSpanElement>, std.HTMLSpanElement>, 'ref'> */
   trait BadgeProps extends StObject {
@@ -452,6 +503,12 @@ object badgeBadgeMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {BadgePassThroughOptions}
+      */
+    var pt: js.UndefOr[BadgePassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1170,6 +1227,10 @@ object badgeBadgeMod {
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      
+      inline def setPt(value: BadgePassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       

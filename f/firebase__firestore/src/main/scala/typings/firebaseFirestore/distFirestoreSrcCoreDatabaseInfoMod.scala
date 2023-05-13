@@ -1,6 +1,7 @@
 package typings.firebaseFirestore
 
 import typings.firebaseApp.mod.FirebaseApp
+import typings.firebaseFirestore.distFirestoreSrcApiLongPollingOptionsMod.ExperimentalLongPollingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,6 +57,7 @@ object distFirestoreSrcCoreDatabaseInfoMod {
       * when using WebChannel as the network transport.
       * @param autoDetectLongPolling - Whether to use the detectBufferingProxy
       * option when using WebChannel as the network transport.
+      * @param longPollingOptions Options that configure long-polling.
       * @param useFetchStreams Whether to use the Fetch API instead of
       * XMLHTTPRequest
       */
@@ -67,6 +69,7 @@ object distFirestoreSrcCoreDatabaseInfoMod {
       ssl: Boolean,
       forceLongPolling: Boolean,
       autoDetectLongPolling: Boolean,
+      longPollingOptions: ExperimentalLongPollingOptions,
       useFetchStreams: Boolean
     ) = this()
     
@@ -79,6 +82,8 @@ object distFirestoreSrcCoreDatabaseInfoMod {
     val forceLongPolling: Boolean = js.native
     
     val host: String = js.native
+    
+    val longPollingOptions: ExperimentalLongPollingOptions = js.native
     
     val persistenceKey: String = js.native
     

@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait er
   extends StObject
-     with Un {
+     with jn {
   
-  def _toFieldTransform(t: Any): qe
+  def _toFieldTransform(t: Any): Oe
   
-  var ft: Any
+  var dt: Any
   
   def isEqual(t: Any): Boolean
 }
 object er {
   
-  inline def apply(_methodName: Any, _toFieldTransform: Any => qe, ft: Any, isEqual: Any => Boolean): er = {
-    val __obj = js.Dynamic.literal(_methodName = _methodName.asInstanceOf[js.Any], _toFieldTransform = js.Any.fromFunction1(_toFieldTransform), ft = ft.asInstanceOf[js.Any], isEqual = js.Any.fromFunction1(isEqual))
+  inline def apply(_methodName: Any, _toFieldTransform: Any => Oe, dt: Any, isEqual: Any => Boolean): er = {
+    val __obj = js.Dynamic.literal(_methodName = _methodName.asInstanceOf[js.Any], _toFieldTransform = js.Any.fromFunction1(_toFieldTransform), dt = dt.asInstanceOf[js.Any], isEqual = js.Any.fromFunction1(isEqual))
     __obj.asInstanceOf[er]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: er] (val x: Self) extends AnyVal {
     
-    inline def setFt(value: Any): Self = StObject.set(x, "ft", value.asInstanceOf[js.Any])
+    inline def setDt(value: Any): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
     
     inline def setIsEqual(value: Any => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
-    inline def set_toFieldTransform(value: Any => qe): Self = StObject.set(x, "_toFieldTransform", js.Any.fromFunction1(value))
+    inline def set_toFieldTransform(value: Any => Oe): Self = StObject.set(x, "_toFieldTransform", js.Any.fromFunction1(value))
   }
 }

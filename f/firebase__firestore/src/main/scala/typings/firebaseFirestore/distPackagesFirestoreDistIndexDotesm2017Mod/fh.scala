@@ -5,40 +5,51 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A `Query` refers to a query which you can read or listen to. You can also
-  * construct refined `Query` objects by adding filters and ordering.
-  */ trait fh extends StObject {
+  * @license
+  * Copyright 2020 Google LLC
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+  * You may obtain a copy of the License at
+  *
+  *   http://www.apache.org/licenses/LICENSE-2.0
+  *
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+/**
+  * A `DocumentReference` refers to a document location in a Firestore database
+  * and can be used to write, read, or listen to the location. The document at
+  * the referenced location may or may not exist.
+  */ @js.native
+trait fh extends StObject {
   
-  var _query: Any
+  var _key: Any = js.native
   
-  var converter: Any
+  def _path: Any = js.native
   
-  var firestore: Any
+  var converter: Any = js.native
+  
+  var firestore: Any = js.native
+  
+  /**
+    * The document's identifier within its collection.
+    */ def id: Any = js.native
+  
+  /**
+    * The collection this `DocumentReference` belongs to.
+    */ def parent: wh = js.native
+  
+  /**
+    * A string representing the path of the referenced document (relative
+    * to the root of the database).
+    */ def path: Any = js.native
   
   /** The type of this Firestore reference. */
-  var `type`: String
+  var `type`: String = js.native
   
-  def withConverter(t: Any): fh
-}
-object fh {
-  
-  inline def apply(_query: Any, converter: Any, firestore: Any, `type`: String, withConverter: Any => fh): fh = {
-    val __obj = js.Dynamic.literal(_query = _query.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], firestore = firestore.asInstanceOf[js.Any], withConverter = js.Any.fromFunction1(withConverter))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[fh]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: fh] (val x: Self) extends AnyVal {
-    
-    inline def setConverter(value: Any): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
-    
-    inline def setFirestore(value: Any): Self = StObject.set(x, "firestore", value.asInstanceOf[js.Any])
-    
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setWithConverter(value: Any => fh): Self = StObject.set(x, "withConverter", js.Any.fromFunction1(value))
-    
-    inline def set_query(value: Any): Self = StObject.set(x, "_query", value.asInstanceOf[js.Any])
-  }
+  def withConverter(t: Any): fh = js.native
 }

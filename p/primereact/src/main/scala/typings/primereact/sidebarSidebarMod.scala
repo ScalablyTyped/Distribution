@@ -72,6 +72,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -97,6 +98,7 @@ import typings.std.Event
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -131,6 +133,98 @@ object sidebarSidebarMod {
       */
     def getMask(): HTMLElement = js.native
   }
+  
+  trait SidebarPassThroughMethodOptions extends StObject {
+    
+    var props: SidebarProps
+    
+    var state: SidebarState
+  }
+  object SidebarPassThroughMethodOptions {
+    
+    inline def apply(props: SidebarProps, state: SidebarState): SidebarPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SidebarPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: SidebarProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: SidebarState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SidebarPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the close button's DOM element.
+      */
+    var closeButton: js.UndefOr[SidebarPassThroughType[HTMLAttributes[HTMLButtonElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the close icon's DOM element.
+      */
+    var closeIcon: js.UndefOr[SidebarPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the content's DOM element.
+      */
+    var content: js.UndefOr[SidebarPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the header's DOM element.
+      */
+    var header: js.UndefOr[SidebarPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the mask's DOM element.
+      */
+    var mask: js.UndefOr[SidebarPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[SidebarPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object SidebarPassThroughOptions {
+    
+    inline def apply(): SidebarPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SidebarPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCloseButton(value: SidebarPassThroughType[HTMLAttributes[HTMLButtonElement]]): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+      
+      inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+      
+      inline def setCloseIcon(value: SidebarPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
+      inline def setContent(value: SidebarPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setHeader(value: SidebarPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      
+      inline def setMask(value: SidebarPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      
+      inline def setRoot(value: SidebarPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type SidebarPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, SidebarPassThroughMethodOptions> */ Any
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait SidebarProps extends StObject {
@@ -551,6 +645,12 @@ object sidebarSidebarMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {SidebarPassThroughOptions}
+      */
+    var pt: js.UndefOr[SidebarPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1336,6 +1436,10 @@ object sidebarSidebarMod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
+      inline def setPt(value: SidebarPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
@@ -1421,6 +1525,28 @@ object sidebarSidebarMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+    }
+  }
+  
+  trait SidebarState extends StObject {
+    
+    /**
+      * Current container visible state as a boolean.
+      * @defaultValue false
+      */
+    var containerVisible: Boolean
+  }
+  object SidebarState {
+    
+    inline def apply(containerVisible: Boolean): SidebarState = {
+      val __obj = js.Dynamic.literal(containerVisible = containerVisible.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SidebarState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarState] (val x: Self) extends AnyVal {
+      
+      inline def setContainerVisible(value: Boolean): Self = StObject.set(x, "containerVisible", value.asInstanceOf[js.Any])
     }
   }
 }

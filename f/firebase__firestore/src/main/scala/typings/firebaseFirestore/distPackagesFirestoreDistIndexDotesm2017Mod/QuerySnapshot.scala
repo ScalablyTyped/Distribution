@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class QuerySnapshot protected ()
   extends StObject
-     with rf {
+     with of {
   /** @hideconstructor */
   def this(t: Any, e: Any, n: Any, s: Any) = this()
 }

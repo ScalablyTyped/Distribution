@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue__compiler-dom
 
-Typings are for version 3.3.1
+Typings are for version 3.3.2
 
 ## Library description:
 @vue/compiler-dom

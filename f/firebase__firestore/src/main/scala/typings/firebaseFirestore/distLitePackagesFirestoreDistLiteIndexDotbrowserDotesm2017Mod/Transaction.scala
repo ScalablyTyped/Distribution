@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Transaction protected ()
   extends StObject
-     with vs {
+     with bs {
   /** @hideconstructor */
   def this(t: Any, e: Any) = this()
   
   /* CompleteClass */
-  var _dataReader: Kn = js.native
+  var _dataReader: Yn = js.native
   
   /* CompleteClass */
   var _firestore: Any = js.native
@@ -27,7 +27,7 @@ open class Transaction protected ()
     * @param documentRef - A reference to the document to be deleted.
     * @returns This `Transaction` instance. Used for chaining method calls.
     */ /* CompleteClass */
-  override def delete(t: Any): vs = js.native
+  override def delete(t: Any): bs = js.native
   
   /**
     * Reads the document referenced by the provided {@link DocumentReference}.
@@ -38,8 +38,8 @@ open class Transaction protected ()
   override def get(t: Any): Any = js.native
   
   /* CompleteClass */
-  override def set(t: Any, e: Any, n: Any): vs = js.native
+  override def set(t: Any, e: Any, n: Any): bs = js.native
   
   /* CompleteClass */
-  override def update(t: Any, e: Any, n: Any, r: Any*): vs = js.native
+  override def update(t: Any, e: Any, n: Any, r: Any*): bs = js.native
 }

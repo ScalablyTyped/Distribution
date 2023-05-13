@@ -118,7 +118,7 @@ object timelineTimelineMod {
     def getElement(): HTMLDivElement = js.native
   }
   
-  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
+  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref' | 'content'> */
   trait TimelineProps extends StObject {
     
     var about: js.UndefOr[String] = js.undefined

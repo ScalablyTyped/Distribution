@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait bc extends StObject {
   
-  var Nu: Set[Any]
+  var ku: Set[Any]
   
   var onlineState: String
   
@@ -15,15 +15,15 @@ trait bc extends StObject {
 }
 object bc {
   
-  inline def apply(Nu: Set[Any], onlineState: String, queries: os): bc = {
-    val __obj = js.Dynamic.literal(Nu = Nu.asInstanceOf[js.Any], onlineState = onlineState.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any])
+  inline def apply(ku: Set[Any], onlineState: String, queries: os): bc = {
+    val __obj = js.Dynamic.literal(ku = ku.asInstanceOf[js.Any], onlineState = onlineState.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any])
     __obj.asInstanceOf[bc]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: bc] (val x: Self) extends AnyVal {
     
-    inline def setNu(value: Set[Any]): Self = StObject.set(x, "Nu", value.asInstanceOf[js.Any])
+    inline def setKu(value: Set[Any]): Self = StObject.set(x, "ku", value.asInstanceOf[js.Any])
     
     inline def setOnlineState(value: String): Self = StObject.set(x, "onlineState", value.asInstanceOf[js.Any])
     

@@ -12,4 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Firestore ()
   extends StObject
-     with Ah_
+     with vh

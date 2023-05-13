@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link DataTableProps.isDataSelectable}
   * @event
   */
-trait DataTableDataSelectableEvent[TValue /* <: DataTableValueArray */] extends StObject {
+trait DataTableDataSelectableEvent extends StObject {
   
   /**
     * Original data of the row.
     */
-  var data: DataTableRowDataArray[TValue]
+  var data: DataTableValue
   
   /**
     * Index of the row.
@@ -23,17 +23,15 @@ trait DataTableDataSelectableEvent[TValue /* <: DataTableValueArray */] extends 
 }
 object DataTableDataSelectableEvent {
   
-  inline def apply[TValue /* <: DataTableValueArray */](data: DataTableRowDataArray[TValue], index: Double): DataTableDataSelectableEvent[TValue] = {
+  inline def apply(data: DataTableValue, index: Double): DataTableDataSelectableEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DataTableDataSelectableEvent[TValue]]
+    __obj.asInstanceOf[DataTableDataSelectableEvent]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: DataTableDataSelectableEvent[?], TValue /* <: DataTableValueArray */] (val x: Self & DataTableDataSelectableEvent[TValue]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: DataTableDataSelectableEvent] (val x: Self) extends AnyVal {
     
-    inline def setData(value: DataTableRowDataArray[TValue]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataVarargs(value: DataTableRowData[TValue]*): Self = StObject.set(x, "data", js.Array(value*))
+    inline def setData(value: DataTableValue): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }

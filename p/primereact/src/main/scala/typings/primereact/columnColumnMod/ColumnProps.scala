@@ -125,6 +125,11 @@ trait ColumnProps extends StObject {
   var exportField: js.UndefOr[String] = js.undefined
   
   /**
+    * Custom export header of the column to be exported.
+    */
+  var exportHeader: js.UndefOr[String] = js.undefined
+  
+  /**
     * Defines whether the column is exported or not.
     * @defaultValue true
     */
@@ -311,7 +316,7 @@ trait ColumnProps extends StObject {
   var onBeforeCellEditHide: js.UndefOr[js.Function1[/* event */ ColumnEvent, Unit]] = js.undefined
   
   /**
-    * Callback to invoke before the cell editor is shown.
+    * Callback to invoke before the cell editor is shown. To prevent editor from showing return false or originalEvent.preventDefault().
     * @param {ColumnEvent} event - Custom event.
     */
   var onBeforeCellEditShow: js.UndefOr[js.Function1[/* event */ ColumnEvent, Unit]] = js.undefined
@@ -329,7 +334,7 @@ trait ColumnProps extends StObject {
   var onCellEditComplete: js.UndefOr[js.Function1[/* event */ ColumnEvent, Unit]] = js.undefined
   
   /**
-    * Callback to invoke when cell edit is initiated.
+    * Callback to invoke when cell edit is initiated. To prevent editor from showing return false or originalEvent.preventDefault().
     * @param {ColumnEvent} event - Custom event.
     */
   var onCellEditInit: js.UndefOr[js.Function1[/* event */ ColumnEvent, Unit]] = js.undefined
@@ -565,6 +570,10 @@ object ColumnProps {
     inline def setExportField(value: String): Self = StObject.set(x, "exportField", value.asInstanceOf[js.Any])
     
     inline def setExportFieldUndefined: Self = StObject.set(x, "exportField", js.undefined)
+    
+    inline def setExportHeader(value: String): Self = StObject.set(x, "exportHeader", value.asInstanceOf[js.Any])
+    
+    inline def setExportHeaderUndefined: Self = StObject.set(x, "exportHeader", js.undefined)
     
     inline def setExportable(value: Boolean): Self = StObject.set(x, "exportable", value.asInstanceOf[js.Any])
     

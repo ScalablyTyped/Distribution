@@ -37,14 +37,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait lo extends StObject {
   
-  def next(): Any
+  var Nn: Any
   
-  var xn: Any
+  def next(): Any
 }
 object lo {
   
-  inline def apply(next: () => Any, xn: Any): lo = {
-    val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next), xn = xn.asInstanceOf[js.Any])
+  inline def apply(Nn: Any, next: () => Any): lo = {
+    val __obj = js.Dynamic.literal(Nn = Nn.asInstanceOf[js.Any], next = js.Any.fromFunction0(next))
     __obj.asInstanceOf[lo]
   }
   
@@ -53,6 +53,6 @@ object lo {
     
     inline def setNext(value: () => Any): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
-    inline def setXn(value: Any): Self = StObject.set(x, "xn", value.asInstanceOf[js.Any])
+    inline def setNn(value: Any): Self = StObject.set(x, "Nn", value.asInstanceOf[js.Any])
   }
 }

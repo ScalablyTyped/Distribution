@@ -14,14 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class QueryFieldFilterConstraint protected ()
   extends StObject
-     with vl {
+     with Pl_ {
   /**
     * @internal
     */
   def this(t: Any, e: Any, n: Any) = this()
   
   /* CompleteClass */
-  override def _apply(t: Any): fh = js.native
+  override def _apply(t: Any): dh = js.native
   
   /* CompleteClass */
   var _field: Any = js.native
@@ -46,5 +46,5 @@ object QueryFieldFilterConstraint {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def create(t: Any, e: Any, n: Any): vl = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[vl]
+  inline def create(t: Any, e: Any, n: Any): Pl_ = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Pl_]
 }

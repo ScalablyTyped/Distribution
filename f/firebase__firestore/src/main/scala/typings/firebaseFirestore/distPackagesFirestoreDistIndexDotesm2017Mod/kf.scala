@@ -15,19 +15,23 @@ trait kf extends StObject {
   
   var _onlineComponentProvider: js.UndefOr[Pa] = js.undefined
   
+  var forceOwnership: Any
+  
   var kind: String
   
   def toJSON(): Kind
 }
 object kf {
   
-  inline def apply(_initialize: Any => Unit, kind: String, toJSON: () => Kind): kf = {
-    val __obj = js.Dynamic.literal(_initialize = js.Any.fromFunction1(_initialize), kind = kind.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+  inline def apply(_initialize: Any => Unit, forceOwnership: Any, kind: String, toJSON: () => Kind): kf = {
+    val __obj = js.Dynamic.literal(_initialize = js.Any.fromFunction1(_initialize), forceOwnership = forceOwnership.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[kf]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: kf] (val x: Self) extends AnyVal {
+    
+    inline def setForceOwnership(value: Any): Self = StObject.set(x, "forceOwnership", value.asInstanceOf[js.Any])
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

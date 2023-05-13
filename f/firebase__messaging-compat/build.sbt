@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "firebase__messaging-compat"
-version := "0.2.4-1e5dd4"
+version := "0.2.4-d4ec2b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "firebase__app" % "0.9.9-e8225c",
-  "org.scalablytyped" %%% "firebase__app-compat" % "0.2.9-a0f799",
+  "org.scalablytyped" %%% "firebase__app" % "0.9.10-0aacb8",
+  "org.scalablytyped" %%% "firebase__app-compat" % "0.2.10-b47aac",
   "org.scalablytyped" %%% "firebase__app-types" % "0.9.0-8ac2f2",
   "org.scalablytyped" %%% "firebase__component" % "0.6.4-b93592",
   "org.scalablytyped" %%% "firebase__logger" % "0.4.0-5ce190",
-  "org.scalablytyped" %%% "firebase__messaging" % "0.12.4-7a5c6f",
+  "org.scalablytyped" %%% "firebase__messaging" % "0.12.4-a8cfb0",
   "org.scalablytyped" %%% "firebase__util" % "1.9.3-ed4cef",
   "org.scalablytyped" %%% "sinon" % "10.0-dt-20230417Z-66be90",
   "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-bc3c2e",

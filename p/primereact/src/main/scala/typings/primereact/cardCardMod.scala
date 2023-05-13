@@ -67,6 +67,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -106,6 +107,103 @@ object cardCardMod {
       */
     def this(props: CardProps, context: Any) = this()
   }
+  
+  trait CardPassThroughMethodOptions extends StObject {
+    
+    var props: CardProps
+  }
+  object CardPassThroughMethodOptions {
+    
+    inline def apply(props: CardProps): CardPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CardPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: CardProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait CardPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the body's DOM element.
+      */
+    var body: js.UndefOr[CardPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the content's DOM element.
+      */
+    var content: js.UndefOr[CardPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the footer's DOM element.
+      */
+    var footer: js.UndefOr[CardPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the header's DOM element.
+      */
+    var header: js.UndefOr[CardPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[CardPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the subtitle's DOM element.
+      */
+    var subTitle: js.UndefOr[CardPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the title's DOM element.
+      */
+    var title: js.UndefOr[CardPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object CardPassThroughOptions {
+    
+    inline def apply(): CardPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CardPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setBody(value: CardPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      
+      inline def setContent(value: CardPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setFooter(value: CardPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      
+      inline def setHeader(value: CardPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      
+      inline def setRoot(value: CardPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      
+      inline def setSubTitle(value: CardPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
+      
+      inline def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
+      
+      inline def setTitle(value: CardPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    }
+  }
+  
+  type CardPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, CardPassThroughMethodOptions> */ Any
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref' | 'title'> */
   trait CardProps extends StObject {
@@ -449,6 +547,12 @@ object cardCardMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {CardPassThroughOptions}
+      */
+    var pt: js.UndefOr[CardPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1169,6 +1273,10 @@ object cardCardMod {
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      
+      inline def setPt(value: CardPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       

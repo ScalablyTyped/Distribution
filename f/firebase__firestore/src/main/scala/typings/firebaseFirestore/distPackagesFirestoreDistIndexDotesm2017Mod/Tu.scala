@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait Tu extends StObject {
   
-  def ar(): String
-  
   var batchId: Any
   
   var error: Any
+  
+  def hr(): String
   
   var state: Any
   
@@ -22,19 +22,19 @@ trait Tu extends StObject {
 }
 object Tu {
   
-  inline def apply(ar: () => String, batchId: Any, error: Any, state: Any, user: Any): Tu = {
-    val __obj = js.Dynamic.literal(ar = js.Any.fromFunction0(ar), batchId = batchId.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+  inline def apply(batchId: Any, error: Any, hr: () => String, state: Any, user: Any): Tu = {
+    val __obj = js.Dynamic.literal(batchId = batchId.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], hr = js.Any.fromFunction0(hr), state = state.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tu]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Tu] (val x: Self) extends AnyVal {
     
-    inline def setAr(value: () => String): Self = StObject.set(x, "ar", js.Any.fromFunction0(value))
-    
     inline def setBatchId(value: Any): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
     inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setHr(value: () => String): Self = StObject.set(x, "hr", js.Any.fromFunction0(value))
     
     inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

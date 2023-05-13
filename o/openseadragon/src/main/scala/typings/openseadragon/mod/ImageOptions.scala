@@ -29,6 +29,8 @@ trait ImageOptions extends StObject {
   
   var fitBoundsPlacement: js.UndefOr[Placement] = js.undefined
   
+  var flipped: js.UndefOr[Boolean] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
   
   var index: js.UndefOr[Double] = js.undefined
@@ -100,6 +102,10 @@ object ImageOptions {
     inline def setFitBoundsPlacementUndefined: Self = StObject.set(x, "fitBoundsPlacement", js.undefined)
     
     inline def setFitBoundsUndefined: Self = StObject.set(x, "fitBounds", js.undefined)
+    
+    inline def setFlipped(value: Boolean): Self = StObject.set(x, "flipped", value.asInstanceOf[js.Any])
+    
+    inline def setFlippedUndefined: Self = StObject.set(x, "flipped", js.undefined)
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

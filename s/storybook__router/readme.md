@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__router
 
-Typings are for version 7.0.10
+Typings are for version 7.0.11
 
 ## Library description:
 Core Storybook Router

@@ -24,30 +24,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var cs: Map[Any, Any]
   
-  def getBundleMetadata(t: Any, e: Any): vt
+  def getBundleMetadata(t: Any, e: Any): Rt_
   
-  def getNamedQuery(t: Any, e: Any): vt
+  def getNamedQuery(t: Any, e: Any): Rt_
   
-  def saveBundleMetadata(t: Any, e: Any): vt
+  var hs: Map[Any, Any]
   
-  def saveNamedQuery(t: Any, e: Any): vt
+  def saveBundleMetadata(t: Any, e: Any): Rt_
+  
+  def saveNamedQuery(t: Any, e: Any): Rt_
   
   var serializer: Any
-  
-  var us: Map[Any, Any]
 }
 object Mo {
   
   inline def apply(
     cs: Map[Any, Any],
-    getBundleMetadata: (Any, Any) => vt,
-    getNamedQuery: (Any, Any) => vt,
-    saveBundleMetadata: (Any, Any) => vt,
-    saveNamedQuery: (Any, Any) => vt,
-    serializer: Any,
-    us: Map[Any, Any]
+    getBundleMetadata: (Any, Any) => Rt_,
+    getNamedQuery: (Any, Any) => Rt_,
+    hs: Map[Any, Any],
+    saveBundleMetadata: (Any, Any) => Rt_,
+    saveNamedQuery: (Any, Any) => Rt_,
+    serializer: Any
   ): Mo = {
-    val __obj = js.Dynamic.literal(cs = cs.asInstanceOf[js.Any], getBundleMetadata = js.Any.fromFunction2(getBundleMetadata), getNamedQuery = js.Any.fromFunction2(getNamedQuery), saveBundleMetadata = js.Any.fromFunction2(saveBundleMetadata), saveNamedQuery = js.Any.fromFunction2(saveNamedQuery), serializer = serializer.asInstanceOf[js.Any], us = us.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cs = cs.asInstanceOf[js.Any], getBundleMetadata = js.Any.fromFunction2(getBundleMetadata), getNamedQuery = js.Any.fromFunction2(getNamedQuery), hs = hs.asInstanceOf[js.Any], saveBundleMetadata = js.Any.fromFunction2(saveBundleMetadata), saveNamedQuery = js.Any.fromFunction2(saveNamedQuery), serializer = serializer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mo]
   }
   
@@ -56,16 +56,16 @@ object Mo {
     
     inline def setCs(value: Map[Any, Any]): Self = StObject.set(x, "cs", value.asInstanceOf[js.Any])
     
-    inline def setGetBundleMetadata(value: (Any, Any) => vt): Self = StObject.set(x, "getBundleMetadata", js.Any.fromFunction2(value))
+    inline def setGetBundleMetadata(value: (Any, Any) => Rt_): Self = StObject.set(x, "getBundleMetadata", js.Any.fromFunction2(value))
     
-    inline def setGetNamedQuery(value: (Any, Any) => vt): Self = StObject.set(x, "getNamedQuery", js.Any.fromFunction2(value))
+    inline def setGetNamedQuery(value: (Any, Any) => Rt_): Self = StObject.set(x, "getNamedQuery", js.Any.fromFunction2(value))
     
-    inline def setSaveBundleMetadata(value: (Any, Any) => vt): Self = StObject.set(x, "saveBundleMetadata", js.Any.fromFunction2(value))
+    inline def setHs(value: Map[Any, Any]): Self = StObject.set(x, "hs", value.asInstanceOf[js.Any])
     
-    inline def setSaveNamedQuery(value: (Any, Any) => vt): Self = StObject.set(x, "saveNamedQuery", js.Any.fromFunction2(value))
+    inline def setSaveBundleMetadata(value: (Any, Any) => Rt_): Self = StObject.set(x, "saveBundleMetadata", js.Any.fromFunction2(value))
+    
+    inline def setSaveNamedQuery(value: (Any, Any) => Rt_): Self = StObject.set(x, "saveNamedQuery", js.Any.fromFunction2(value))
     
     inline def setSerializer(value: Any): Self = StObject.set(x, "serializer", value.asInstanceOf[js.Any])
-    
-    inline def setUs(value: Map[Any, Any]): Self = StObject.set(x, "us", value.asInstanceOf[js.Any])
   }
 }

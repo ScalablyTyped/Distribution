@@ -83,6 +83,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -94,6 +95,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.SVGProps
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -107,6 +109,8 @@ import typings.std.Element
 import typings.std.Event
 import typings.std.FormData
 import typings.std.HTMLButtonElement
+import typings.std.HTMLSpanElement
+import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -123,6 +127,93 @@ object buttonButtonMod {
       */
     def this(props: ButtonProps, context: Any) = this()
   }
+  
+  trait ButtonPassThroughMethodOptions extends StObject {
+    
+    var props: ButtonProps
+  }
+  object ButtonPassThroughMethodOptions {
+    
+    inline def apply(props: ButtonProps): ButtonPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ButtonPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: ButtonProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ButtonPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the badge's DOM element.
+      */
+    var badge: js.UndefOr[ButtonPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the icon's DOM element.
+      */
+    var icon: js.UndefOr[
+        ButtonPassThroughType[SVGProps[SVGSVGElement] | (HTMLAttributes[HTMLSpanElement | SVGSVGElement])]
+      ] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the label's DOM element.
+      */
+    var label: js.UndefOr[ButtonPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the loading icon's DOM element.
+      */
+    var loadingIcon: js.UndefOr[
+        ButtonPassThroughType[SVGProps[SVGSVGElement] | (HTMLAttributes[HTMLSpanElement | SVGSVGElement])]
+      ] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[ButtonPassThroughType[HTMLAttributes[HTMLButtonElement]]] = js.undefined
+  }
+  object ButtonPassThroughOptions {
+    
+    inline def apply(): ButtonPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ButtonPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setBadge(value: ButtonPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      
+      inline def setIcon(
+        value: ButtonPassThroughType[SVGProps[SVGSVGElement] | (HTMLAttributes[HTMLSpanElement | SVGSVGElement])]
+      ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setLabel(value: ButtonPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
+      inline def setLoadingIcon(
+        value: ButtonPassThroughType[SVGProps[SVGSVGElement] | (HTMLAttributes[HTMLSpanElement | SVGSVGElement])]
+      ): Self = StObject.set(x, "loadingIcon", value.asInstanceOf[js.Any])
+      
+      inline def setLoadingIconUndefined: Self = StObject.set(x, "loadingIcon", js.undefined)
+      
+      inline def setRoot(value: ButtonPassThroughType[HTMLAttributes[HTMLButtonElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type ButtonPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, ButtonPassThroughMethodOptions> */ Any
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.ButtonHTMLAttributes<std.HTMLButtonElement>, std.HTMLButtonElement>, 'disabled' | 'ref'> */
   trait ButtonProps extends StObject {
@@ -529,6 +620,12 @@ object buttonButtonMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {ButtonPassThroughOptions}
+      */
+    var pt: js.UndefOr[ButtonPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1351,6 +1448,10 @@ object buttonButtonMod {
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      
+      inline def setPt(value: ButtonPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       

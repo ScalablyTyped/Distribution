@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "firebase__messaging"
-version := "0.12.4-7a5c6f"
+version := "0.12.4-a8cfb0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "firebase__app" % "0.9.9-e8225c",
+  "org.scalablytyped" %%% "firebase__app" % "0.9.10-0aacb8",
   "org.scalablytyped" %%% "firebase__app-types" % "0.9.0-8ac2f2",
   "org.scalablytyped" %%% "firebase__component" % "0.6.4-b93592",
   "org.scalablytyped" %%% "firebase__logger" % "0.4.0-5ce190",

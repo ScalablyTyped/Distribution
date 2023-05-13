@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class WriteBatch_ protected ()
   extends StObject
-     with ls {
+     with fs {
   /** @hideconstructor */
   def this(t: Any, e: Any) = this()
   
@@ -42,7 +42,7 @@ open class WriteBatch_ protected ()
   var _committed: Boolean = js.native
   
   /* CompleteClass */
-  var _dataReader: Kn = js.native
+  var _dataReader: Yn = js.native
   
   /* CompleteClass */
   var _firestore: Any = js.native
@@ -73,11 +73,11 @@ open class WriteBatch_ protected ()
     * @param documentRef - A reference to the document to be deleted.
     * @returns This `WriteBatch` instance. Used for chaining method calls.
     */ /* CompleteClass */
-  override def delete(t: Any): ls = js.native
+  override def delete(t: Any): fs = js.native
   
   /* CompleteClass */
-  override def set(t: Any, e: Any, n: Any): ls = js.native
+  override def set(t: Any, e: Any, n: Any): fs = js.native
   
   /* CompleteClass */
-  override def update(t: Any, e: Any, n: Any, r: Any*): ls = js.native
+  override def update(t: Any, e: Any, n: Any, r: Any*): fs = js.native
 }

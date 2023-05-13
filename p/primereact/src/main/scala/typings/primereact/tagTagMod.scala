@@ -71,6 +71,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -116,6 +117,67 @@ object tagTagMod {
       */
     def getElement(): HTMLSpanElement = js.native
   }
+  
+  trait TagPassThroughMethodOptions extends StObject {
+    
+    var props: TagProps
+  }
+  object TagPassThroughMethodOptions {
+    
+    inline def apply(props: TagProps): TagPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TagPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: TagProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait TagPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the icon's DOM element.
+      */
+    var icon: js.UndefOr[TagPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[TagPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the value's DOM element.
+      */
+    var value: js.UndefOr[TagPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+  }
+  object TagPassThroughOptions {
+    
+    inline def apply(): TagPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TagPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setIcon(value: TagPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setRoot(value: TagPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      
+      inline def setValue(value: TagPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type TagPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, TagPassThroughMethodOptions> */ Any
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLSpanElement>, std.HTMLSpanElement>, 'ref'> */
   trait TagProps extends StObject {
@@ -456,6 +518,12 @@ object tagTagMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {TagPassThroughOptions}
+      */
+    var pt: js.UndefOr[TagPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1179,6 +1247,10 @@ object tagTagMod {
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      
+      inline def setPt(value: TagPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       

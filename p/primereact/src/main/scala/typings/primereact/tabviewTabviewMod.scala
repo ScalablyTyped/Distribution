@@ -52,6 +52,7 @@ import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
 import typings.primereact.utilsUtilsMod.IconOptions
 import typings.primereact.utilsUtilsMod.IconType
+import typings.primereact.utilsUtilsMod.PassThroughType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -69,6 +70,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -80,6 +82,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.SVGProps
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -91,8 +94,14 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.react.mod.global.JSX.Element
 import typings.std.Event
+import typings.std.HTMLAnchorElement
+import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.HTMLLIElement
+import typings.std.HTMLSpanElement
+import typings.std.HTMLUListElement
+import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -248,6 +257,119 @@ object tabviewTabviewMod {
     }
   }
   
+  trait TabPanelPassThroughMethodOptions extends StObject {
+    
+    var parent: TabViewPassThroughMethodOptions
+    
+    var props: TabPanelProps
+  }
+  object TabPanelPassThroughMethodOptions {
+    
+    inline def apply(parent: TabViewPassThroughMethodOptions, props: TabPanelProps): TabPanelPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TabPanelPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPanelPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setParent(value: TabViewPassThroughMethodOptions): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: TabPanelProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait TabPanelPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the list's DOM element.
+      */
+    var content: js.UndefOr[TabPanelPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the header's DOM element.
+      */
+    var header: js.UndefOr[TabPanelPassThroughType[HTMLAttributes[HTMLLIElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the header action's DOM element.
+      */
+    var headerAction: js.UndefOr[TabPanelPassThroughType[HTMLAttributes[HTMLAnchorElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the title's DOM element.
+      */
+    var headerTitle: js.UndefOr[TabPanelPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[TabPanelPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object TabPanelPassThroughOptions {
+    
+    inline def apply(): TabPanelPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TabPanelPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPanelPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setContent(value: TabPanelPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentFunction1(
+        value: /* options */ js.UndefOr[TabPanelPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+      
+      inline def setContentNull: Self = StObject.set(x, "content", null)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setHeader(value: TabPanelPassThroughType[HTMLAttributes[HTMLLIElement]]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderAction(value: TabPanelPassThroughType[HTMLAttributes[HTMLAnchorElement]]): Self = StObject.set(x, "headerAction", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderActionFunction1(
+        value: /* options */ js.UndefOr[TabPanelPassThroughMethodOptions] => HTMLAttributes[HTMLAnchorElement] | Unit
+      ): Self = StObject.set(x, "headerAction", js.Any.fromFunction1(value))
+      
+      inline def setHeaderActionNull: Self = StObject.set(x, "headerAction", null)
+      
+      inline def setHeaderActionUndefined: Self = StObject.set(x, "headerAction", js.undefined)
+      
+      inline def setHeaderFunction1(
+        value: /* options */ js.UndefOr[TabPanelPassThroughMethodOptions] => HTMLAttributes[HTMLLIElement] | Unit
+      ): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
+      
+      inline def setHeaderNull: Self = StObject.set(x, "header", null)
+      
+      inline def setHeaderTitle(value: TabPanelPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderTitleFunction1(
+        value: /* options */ js.UndefOr[TabPanelPassThroughMethodOptions] => HTMLAttributes[HTMLSpanElement] | Unit
+      ): Self = StObject.set(x, "headerTitle", js.Any.fromFunction1(value))
+      
+      inline def setHeaderTitleNull: Self = StObject.set(x, "headerTitle", null)
+      
+      inline def setHeaderTitleUndefined: Self = StObject.set(x, "headerTitle", js.undefined)
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      
+      inline def setRoot(value: TabPanelPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[TabPanelPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type TabPanelPassThroughType[T] = PassThroughType[T, TabPanelPassThroughMethodOptions]
+  
   trait TabPanelProps extends StObject {
     
     /**
@@ -324,6 +446,12 @@ object tabviewTabviewMod {
       * Previous button of the tab header.
       */
     var prevButton: js.UndefOr[IconType[TabPanel]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {TabPanelPassThroughOptions}
+      */
+    var pt: js.UndefOr[TabPanelPassThroughOptions] = js.undefined
     
     /**
       * Icons can be placed at right of a header.
@@ -411,6 +539,10 @@ object tabviewTabviewMod {
       
       inline def setPrevButtonUndefined: Self = StObject.set(x, "prevButton", js.undefined)
       
+      inline def setPt(value: TabPanelPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRightIcon(value: IconType[TabPanel]): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
       
       inline def setRightIconFunction1(value: /* options */ IconOptions[TabPanel] => ReactNode): Self = StObject.set(x, "rightIcon", js.Any.fromFunction1(value))
@@ -422,6 +554,198 @@ object tabviewTabviewMod {
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
+  
+  trait TabViewPassThroughMethodOptions extends StObject {
+    
+    var props: TabViewProps
+    
+    var state: TabViewState
+  }
+  object TabViewPassThroughMethodOptions {
+    
+    inline def apply(props: TabViewProps, state: TabViewState): TabViewPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TabViewPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabViewPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: TabViewProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: TabViewState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait TabViewPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the inkbar's DOM element.
+      */
+    var inkbar: js.UndefOr[TabViewPassThroughType[HTMLAttributes[HTMLLIElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the list's DOM element.
+      */
+    var nav: js.UndefOr[TabViewPassThroughType[HTMLAttributes[HTMLUListElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the nav container's DOM element.
+      */
+    var navContainer: js.UndefOr[TabViewPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the nav content's DOM element.
+      */
+    var navContent: js.UndefOr[TabViewPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the next button's DOM element.
+      */
+    var nextButton: js.UndefOr[TabViewPassThroughType[HTMLAttributes[HTMLButtonElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the next button icon's DOM element.
+      */
+    var nextIcon: js.UndefOr[
+        TabViewPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]
+      ] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the panel's DOM element.
+      */
+    var panelContainer: js.UndefOr[TabViewPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the previous button's DOM element.
+      */
+    var previousButton: js.UndefOr[TabViewPassThroughType[HTMLAttributes[HTMLButtonElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the previous button icon's DOM element.
+      */
+    var previousIcon: js.UndefOr[
+        TabViewPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]
+      ] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[TabViewPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object TabViewPassThroughOptions {
+    
+    inline def apply(): TabViewPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TabViewPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabViewPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setInkbar(value: TabViewPassThroughType[HTMLAttributes[HTMLLIElement]]): Self = StObject.set(x, "inkbar", value.asInstanceOf[js.Any])
+      
+      inline def setInkbarFunction1(
+        value: /* options */ js.UndefOr[TabViewPassThroughMethodOptions] => HTMLAttributes[HTMLLIElement] | Unit
+      ): Self = StObject.set(x, "inkbar", js.Any.fromFunction1(value))
+      
+      inline def setInkbarNull: Self = StObject.set(x, "inkbar", null)
+      
+      inline def setInkbarUndefined: Self = StObject.set(x, "inkbar", js.undefined)
+      
+      inline def setNav(value: TabViewPassThroughType[HTMLAttributes[HTMLUListElement]]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
+      
+      inline def setNavContainer(value: TabViewPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "navContainer", value.asInstanceOf[js.Any])
+      
+      inline def setNavContainerFunction1(
+        value: /* options */ js.UndefOr[TabViewPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "navContainer", js.Any.fromFunction1(value))
+      
+      inline def setNavContainerNull: Self = StObject.set(x, "navContainer", null)
+      
+      inline def setNavContainerUndefined: Self = StObject.set(x, "navContainer", js.undefined)
+      
+      inline def setNavContent(value: TabViewPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "navContent", value.asInstanceOf[js.Any])
+      
+      inline def setNavContentFunction1(
+        value: /* options */ js.UndefOr[TabViewPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "navContent", js.Any.fromFunction1(value))
+      
+      inline def setNavContentNull: Self = StObject.set(x, "navContent", null)
+      
+      inline def setNavContentUndefined: Self = StObject.set(x, "navContent", js.undefined)
+      
+      inline def setNavFunction1(
+        value: /* options */ js.UndefOr[TabViewPassThroughMethodOptions] => HTMLAttributes[HTMLUListElement] | Unit
+      ): Self = StObject.set(x, "nav", js.Any.fromFunction1(value))
+      
+      inline def setNavNull: Self = StObject.set(x, "nav", null)
+      
+      inline def setNavUndefined: Self = StObject.set(x, "nav", js.undefined)
+      
+      inline def setNextButton(value: TabViewPassThroughType[HTMLAttributes[HTMLButtonElement]]): Self = StObject.set(x, "nextButton", value.asInstanceOf[js.Any])
+      
+      inline def setNextButtonFunction1(
+        value: /* options */ js.UndefOr[TabViewPassThroughMethodOptions] => HTMLAttributes[HTMLButtonElement] | Unit
+      ): Self = StObject.set(x, "nextButton", js.Any.fromFunction1(value))
+      
+      inline def setNextButtonNull: Self = StObject.set(x, "nextButton", null)
+      
+      inline def setNextButtonUndefined: Self = StObject.set(x, "nextButton", js.undefined)
+      
+      inline def setNextIcon(value: TabViewPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "nextIcon", value.asInstanceOf[js.Any])
+      
+      inline def setNextIconFunction1(
+        value: /* options */ js.UndefOr[TabViewPassThroughMethodOptions] => (SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]) | Unit
+      ): Self = StObject.set(x, "nextIcon", js.Any.fromFunction1(value))
+      
+      inline def setNextIconNull: Self = StObject.set(x, "nextIcon", null)
+      
+      inline def setNextIconUndefined: Self = StObject.set(x, "nextIcon", js.undefined)
+      
+      inline def setPanelContainer(value: TabViewPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "panelContainer", value.asInstanceOf[js.Any])
+      
+      inline def setPanelContainerFunction1(
+        value: /* options */ js.UndefOr[TabViewPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "panelContainer", js.Any.fromFunction1(value))
+      
+      inline def setPanelContainerNull: Self = StObject.set(x, "panelContainer", null)
+      
+      inline def setPanelContainerUndefined: Self = StObject.set(x, "panelContainer", js.undefined)
+      
+      inline def setPreviousButton(value: TabViewPassThroughType[HTMLAttributes[HTMLButtonElement]]): Self = StObject.set(x, "previousButton", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousButtonFunction1(
+        value: /* options */ js.UndefOr[TabViewPassThroughMethodOptions] => HTMLAttributes[HTMLButtonElement] | Unit
+      ): Self = StObject.set(x, "previousButton", js.Any.fromFunction1(value))
+      
+      inline def setPreviousButtonNull: Self = StObject.set(x, "previousButton", null)
+      
+      inline def setPreviousButtonUndefined: Self = StObject.set(x, "previousButton", js.undefined)
+      
+      inline def setPreviousIcon(value: TabViewPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "previousIcon", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousIconFunction1(
+        value: /* options */ js.UndefOr[TabViewPassThroughMethodOptions] => (SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]) | Unit
+      ): Self = StObject.set(x, "previousIcon", js.Any.fromFunction1(value))
+      
+      inline def setPreviousIconNull: Self = StObject.set(x, "previousIcon", null)
+      
+      inline def setPreviousIconUndefined: Self = StObject.set(x, "previousIcon", js.undefined)
+      
+      inline def setRoot(value: TabViewPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[TabViewPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type TabViewPassThroughType[T] = PassThroughType[T, TabViewPassThroughMethodOptions]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait TabViewProps extends StObject {
@@ -795,6 +1119,12 @@ object tabviewTabviewMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {TabViewPassThroughOptions}
+      */
+    var pt: js.UndefOr[TabViewPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1536,6 +1866,10 @@ object tabviewTabviewMod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
+      inline def setPt(value: TabViewPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
@@ -1615,6 +1949,65 @@ object tabviewTabviewMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+    }
+  }
+  
+  trait TabViewState extends StObject {
+    
+    /**
+      * Current active index state.
+      */
+    var activeIndex: Double
+    
+    /**
+      * Current state of hidden tab.
+      */
+    var hiddenTabsState: js.Array[Double]
+    
+    /**
+      * Unique id for the TabView component.
+      */
+    var id: String
+    
+    /**
+      * Current state of the next button.
+      * @defaultValue false
+      */
+    var isNextButtonDisabled: Boolean
+    
+    /**
+      * Current state of previous button.
+      * @defaultValue true
+      */
+    var isPrevButtonDisabled: Boolean
+  }
+  object TabViewState {
+    
+    inline def apply(
+      activeIndex: Double,
+      hiddenTabsState: js.Array[Double],
+      id: String,
+      isNextButtonDisabled: Boolean,
+      isPrevButtonDisabled: Boolean
+    ): TabViewState = {
+      val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], hiddenTabsState = hiddenTabsState.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isNextButtonDisabled = isNextButtonDisabled.asInstanceOf[js.Any], isPrevButtonDisabled = isPrevButtonDisabled.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TabViewState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabViewState] (val x: Self) extends AnyVal {
+      
+      inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      
+      inline def setHiddenTabsState(value: js.Array[Double]): Self = StObject.set(x, "hiddenTabsState", value.asInstanceOf[js.Any])
+      
+      inline def setHiddenTabsStateVarargs(value: Double*): Self = StObject.set(x, "hiddenTabsState", js.Array(value*))
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIsNextButtonDisabled(value: Boolean): Self = StObject.set(x, "isNextButtonDisabled", value.asInstanceOf[js.Any])
+      
+      inline def setIsPrevButtonDisabled(value: Boolean): Self = StObject.set(x, "isPrevButtonDisabled", value.asInstanceOf[js.Any])
     }
   }
   

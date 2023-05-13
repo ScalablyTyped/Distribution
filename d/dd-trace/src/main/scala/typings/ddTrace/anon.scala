@@ -298,6 +298,12 @@ object anon {
     var maxContextOperations: js.UndefOr[Double] = js.undefined
     
     /**
+      * Whether to enable vulnerability redaction
+      * @default true
+      */
+    var redactionEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Controls the percentage of requests that iast will analyze
       * @default 30
       */
@@ -328,6 +334,10 @@ object anon {
       inline def setMaxContextOperations(value: Double): Self = StObject.set(x, "maxContextOperations", value.asInstanceOf[js.Any])
       
       inline def setMaxContextOperationsUndefined: Self = StObject.set(x, "maxContextOperations", js.undefined)
+      
+      inline def setRedactionEnabled(value: Boolean): Self = StObject.set(x, "redactionEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setRedactionEnabledUndefined: Self = StObject.set(x, "redactionEnabled", js.undefined)
       
       inline def setRequestSampling(value: Double): Self = StObject.set(x, "requestSampling", value.asInstanceOf[js.Any])
       

@@ -50,6 +50,7 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.PassThroughType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -67,6 +68,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -116,6 +118,59 @@ object blockuiBlockuiMod {
     
     def unblock(): Unit = js.native
   }
+  
+  trait BlockUIPassThroughMethodOptions extends StObject {
+    
+    var props: BlockUIProps
+    
+    var state: BlockUIState
+  }
+  object BlockUIPassThroughMethodOptions {
+    
+    inline def apply(props: BlockUIProps, state: BlockUIState): BlockUIPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BlockUIPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockUIPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: BlockUIProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: BlockUIState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait BlockUIPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[BlockUIPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object BlockUIPassThroughOptions {
+    
+    inline def apply(): BlockUIPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BlockUIPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockUIPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setRoot(value: BlockUIPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[BlockUIPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type BlockUIPassThroughType[T] = PassThroughType[T, BlockUIPassThroughMethodOptions]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait BlockUIProps extends StObject {
@@ -493,6 +548,12 @@ object blockuiBlockuiMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {BlockUIPassThroughOptions}
+      */
+    var pt: js.UndefOr[BlockUIPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1231,6 +1292,10 @@ object blockuiBlockuiMod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
+      inline def setPt(value: BlockUIPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
@@ -1310,6 +1375,28 @@ object blockuiBlockuiMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+    }
+  }
+  
+  trait BlockUIState extends StObject {
+    
+    /**
+      * Current blocked state as a boolean.
+      * @defaultValue false
+      */
+    var blocked: Boolean
+  }
+  object BlockUIState {
+    
+    inline def apply(blocked: Boolean): BlockUIState = {
+      val __obj = js.Dynamic.literal(blocked = blocked.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BlockUIState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockUIState] (val x: Self) extends AnyVal {
+      
+      inline def setBlocked(value: Boolean): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     }
   }
 }

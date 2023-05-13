@@ -117,7 +117,7 @@ trait Auth extends StObject {
   val settings: AuthSettings = js.native
   
   /**
-    * Signs out the current user.
+    * Signs out the current user. This does not automatically revoke the user's ID token.
     */
   def signOut(): js.Promise[Unit] = js.native
   

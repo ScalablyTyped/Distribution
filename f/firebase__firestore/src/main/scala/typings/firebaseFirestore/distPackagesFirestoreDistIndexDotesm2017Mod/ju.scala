@@ -24,12 +24,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */ trait ju extends StObject {
   
   /**
-    * A set of reasons for why the RemoteStore may be offline. If empty, the
-    * RemoteStore may start its network connections.
-    */
-  var Au: Set[Any]
-  
-  /**
     * A mapping of watched targets that the client cares about tracking and the
     * user has explicitly called a 'listen' for this target.
     *
@@ -38,18 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * to the server. The targets removed with unlistens are removed eagerly
     * without waiting for confirmation from the listen stream.
     */
-  var Eu: Map[Any, Any]
-  
-  var Pu: Qu
-  
-  /**
-    * Event handlers that get called when the network is disabled or enabled.
-    *
-    * PORTING NOTE: These functions are used on the Web client to create the
-    * underlying streams (to support tree-shakeable streams). On Android and iOS,
-    * the streams are created during construction of RemoteStore.
-    */
-  var Ru: js.Array[Any]
+  var Au: Map[Any, Any]
   
   /**
     * A list of up to MAX_PENDING_WRITES writes that we have fetched from the
@@ -68,30 +51,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * purely based on order, and so we can just shift() writes from the front of
     * the writePipeline as we receive responses.
     */
-  var Tu: js.Array[Any]
+  var Eu: js.Array[Any]
+  
+  var Pu: Any
+  
+  /**
+    * Event handlers that get called when the network is disabled or enabled.
+    *
+    * PORTING NOTE: These functions are used on the Web client to create the
+    * underlying streams (to support tree-shakeable streams). On Android and iOS,
+    * the streams are created during construction of RemoteStore.
+    */
+  var Ru: js.Array[Any]
   
   var asyncQueue: Any
+  
+  var bu: Qu
   
   var datastore: Any
   
   var localStore: Any
   
-  var vu: Any
+  /**
+    * A set of reasons for why the RemoteStore may be offline. If empty, the
+    * RemoteStore may start its network connections.
+    */
+  var vu: Set[Any]
 }
 object ju {
   
   inline def apply(
-    Au: Set[Any],
-    Eu: Map[Any, Any],
-    Pu: Qu,
+    Au: Map[Any, Any],
+    Eu: js.Array[Any],
+    Pu: Any,
     Ru: js.Array[Any],
-    Tu: js.Array[Any],
     asyncQueue: Any,
+    bu: Qu,
     datastore: Any,
     localStore: Any,
-    vu: Any
+    vu: Set[Any]
   ): ju = {
-    val __obj = js.Dynamic.literal(Au = Au.asInstanceOf[js.Any], Eu = Eu.asInstanceOf[js.Any], Pu = Pu.asInstanceOf[js.Any], Ru = Ru.asInstanceOf[js.Any], Tu = Tu.asInstanceOf[js.Any], asyncQueue = asyncQueue.asInstanceOf[js.Any], datastore = datastore.asInstanceOf[js.Any], localStore = localStore.asInstanceOf[js.Any], vu = vu.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Au = Au.asInstanceOf[js.Any], Eu = Eu.asInstanceOf[js.Any], Pu = Pu.asInstanceOf[js.Any], Ru = Ru.asInstanceOf[js.Any], asyncQueue = asyncQueue.asInstanceOf[js.Any], bu = bu.asInstanceOf[js.Any], datastore = datastore.asInstanceOf[js.Any], localStore = localStore.asInstanceOf[js.Any], vu = vu.asInstanceOf[js.Any])
     __obj.asInstanceOf[ju]
   }
   
@@ -100,24 +100,24 @@ object ju {
     
     inline def setAsyncQueue(value: Any): Self = StObject.set(x, "asyncQueue", value.asInstanceOf[js.Any])
     
-    inline def setAu(value: Set[Any]): Self = StObject.set(x, "Au", value.asInstanceOf[js.Any])
+    inline def setAu(value: Map[Any, Any]): Self = StObject.set(x, "Au", value.asInstanceOf[js.Any])
+    
+    inline def setBu(value: Qu): Self = StObject.set(x, "bu", value.asInstanceOf[js.Any])
     
     inline def setDatastore(value: Any): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
     
-    inline def setEu(value: Map[Any, Any]): Self = StObject.set(x, "Eu", value.asInstanceOf[js.Any])
+    inline def setEu(value: js.Array[Any]): Self = StObject.set(x, "Eu", value.asInstanceOf[js.Any])
+    
+    inline def setEuVarargs(value: Any*): Self = StObject.set(x, "Eu", js.Array(value*))
     
     inline def setLocalStore(value: Any): Self = StObject.set(x, "localStore", value.asInstanceOf[js.Any])
     
-    inline def setPu(value: Qu): Self = StObject.set(x, "Pu", value.asInstanceOf[js.Any])
+    inline def setPu(value: Any): Self = StObject.set(x, "Pu", value.asInstanceOf[js.Any])
     
     inline def setRu(value: js.Array[Any]): Self = StObject.set(x, "Ru", value.asInstanceOf[js.Any])
     
     inline def setRuVarargs(value: Any*): Self = StObject.set(x, "Ru", js.Array(value*))
     
-    inline def setTu(value: js.Array[Any]): Self = StObject.set(x, "Tu", value.asInstanceOf[js.Any])
-    
-    inline def setTuVarargs(value: Any*): Self = StObject.set(x, "Tu", js.Array(value*))
-    
-    inline def setVu(value: Any): Self = StObject.set(x, "vu", value.asInstanceOf[js.Any])
+    inline def setVu(value: Set[Any]): Self = StObject.set(x, "vu", value.asInstanceOf[js.Any])
   }
 }

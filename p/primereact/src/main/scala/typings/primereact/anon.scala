@@ -1,6 +1,7 @@
 package typings.primereact
 
 import typings.primereact.columnColumnMod.ColumnProps
+import typings.primereact.dropdownDropdownMod.DropdownFilterOptions
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
 import typings.std.Event
@@ -143,6 +144,24 @@ object anon {
       inline def setFilterMetaUndefined: Self = StObject.set(x, "filterMeta", js.undefined)
       
       inline def setProps(value: ColumnProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait FilterOptions extends StObject {
+    
+    var filterOptions: DropdownFilterOptions
+  }
+  object FilterOptions {
+    
+    inline def apply(filterOptions: DropdownFilterOptions): FilterOptions = {
+      val __obj = js.Dynamic.literal(filterOptions = filterOptions.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FilterOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterOptions] (val x: Self) extends AnyVal {
+      
+      inline def setFilterOptions(value: DropdownFilterOptions): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
     }
   }
   

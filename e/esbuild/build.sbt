@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "esbuild"
-version := "0.17.18-fcd351"
+version := "0.17.19-caf655"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

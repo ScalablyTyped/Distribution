@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/router" : "7.0.10"
+      "@storybook/router" : "7.0.11"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/router" : "7.0.10"
+      "@storybook/router" : "7.0.11"
     }
   ],
   "compile-devDependencies" : [

@@ -31,7 +31,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait nu extends StObject {
   
-  var Fs: Any
+  var Bs: Any
+  
+  var Hi: Any
   
   /**
     * Maps a targetID to data about its target.
@@ -39,16 +41,7 @@ trait nu extends StObject {
     * PORTING NOTE: We are using an immutable data structure on Web to make re-runs
     * of `applyRemoteEvent()` idempotent.
     */
-  var Hi: pe
-  
-  /** Maps a target to its targetID. */
-  var Ji: os
-  
-  var Ls: Any
-  
-  var Wi: Any
-  
-  var Xi: Any
+  var Ji: pe
   
   /**
     * A per collection group index of the last read time processed by
@@ -56,9 +49,12 @@ trait nu extends StObject {
     *
     * PORTING NOTE: This is only used for multi-tab synchronization.
     */
-  var Yi: Map[Any, Any]
+  var Xi: Map[Any, Any]
   
-  def Zi(t: Any): Unit
+  /** Maps a target to its targetID. */
+  var Yi: os
+  
+  var Zi: Any
   
   def collectGarbage(t: Any): Any
   
@@ -72,63 +68,67 @@ trait nu extends StObject {
   
   var persistence: Any
   
+  var qs: Any
+  
   var serializer: Any
+  
+  def tr(t: Any): Unit
 }
 object nu {
   
   inline def apply(
-    Fs: Any,
-    Hi: pe,
-    Ji: os,
-    Ls: Any,
-    Wi: Any,
-    Xi: Any,
-    Yi: Map[Any, Any],
-    Zi: Any => Unit,
+    Bs: Any,
+    Hi: Any,
+    Ji: pe,
+    Xi: Map[Any, Any],
+    Yi: os,
+    Zi: Any,
     collectGarbage: Any => Any,
     documentOverlayCache: Any,
     indexManager: Any,
     mutationQueue: Any,
     persistence: Any,
-    serializer: Any
+    qs: Any,
+    serializer: Any,
+    tr: Any => Unit
   ): nu = {
-    val __obj = js.Dynamic.literal(Fs = Fs.asInstanceOf[js.Any], Hi = Hi.asInstanceOf[js.Any], Ji = Ji.asInstanceOf[js.Any], Ls = Ls.asInstanceOf[js.Any], Wi = Wi.asInstanceOf[js.Any], Xi = Xi.asInstanceOf[js.Any], Yi = Yi.asInstanceOf[js.Any], Zi = js.Any.fromFunction1(Zi), collectGarbage = js.Any.fromFunction1(collectGarbage), documentOverlayCache = documentOverlayCache.asInstanceOf[js.Any], indexManager = indexManager.asInstanceOf[js.Any], mutationQueue = mutationQueue.asInstanceOf[js.Any], persistence = persistence.asInstanceOf[js.Any], serializer = serializer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Bs = Bs.asInstanceOf[js.Any], Hi = Hi.asInstanceOf[js.Any], Ji = Ji.asInstanceOf[js.Any], Xi = Xi.asInstanceOf[js.Any], Yi = Yi.asInstanceOf[js.Any], Zi = Zi.asInstanceOf[js.Any], collectGarbage = js.Any.fromFunction1(collectGarbage), documentOverlayCache = documentOverlayCache.asInstanceOf[js.Any], indexManager = indexManager.asInstanceOf[js.Any], mutationQueue = mutationQueue.asInstanceOf[js.Any], persistence = persistence.asInstanceOf[js.Any], qs = qs.asInstanceOf[js.Any], serializer = serializer.asInstanceOf[js.Any], tr = js.Any.fromFunction1(tr))
     __obj.asInstanceOf[nu]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: nu] (val x: Self) extends AnyVal {
     
+    inline def setBs(value: Any): Self = StObject.set(x, "Bs", value.asInstanceOf[js.Any])
+    
     inline def setCollectGarbage(value: Any => Any): Self = StObject.set(x, "collectGarbage", js.Any.fromFunction1(value))
     
     inline def setDocumentOverlayCache(value: Any): Self = StObject.set(x, "documentOverlayCache", value.asInstanceOf[js.Any])
     
-    inline def setFs(value: Any): Self = StObject.set(x, "Fs", value.asInstanceOf[js.Any])
-    
-    inline def setHi(value: pe): Self = StObject.set(x, "Hi", value.asInstanceOf[js.Any])
+    inline def setHi(value: Any): Self = StObject.set(x, "Hi", value.asInstanceOf[js.Any])
     
     inline def setIndexManager(value: Any): Self = StObject.set(x, "indexManager", value.asInstanceOf[js.Any])
     
-    inline def setJi(value: os): Self = StObject.set(x, "Ji", value.asInstanceOf[js.Any])
+    inline def setJi(value: pe): Self = StObject.set(x, "Ji", value.asInstanceOf[js.Any])
     
     inline def setLocalDocuments(value: ko): Self = StObject.set(x, "localDocuments", value.asInstanceOf[js.Any])
     
     inline def setLocalDocumentsUndefined: Self = StObject.set(x, "localDocuments", js.undefined)
     
-    inline def setLs(value: Any): Self = StObject.set(x, "Ls", value.asInstanceOf[js.Any])
-    
     inline def setMutationQueue(value: Any): Self = StObject.set(x, "mutationQueue", value.asInstanceOf[js.Any])
     
     inline def setPersistence(value: Any): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
     
+    inline def setQs(value: Any): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
+    
     inline def setSerializer(value: Any): Self = StObject.set(x, "serializer", value.asInstanceOf[js.Any])
     
-    inline def setWi(value: Any): Self = StObject.set(x, "Wi", value.asInstanceOf[js.Any])
+    inline def setTr(value: Any => Unit): Self = StObject.set(x, "tr", js.Any.fromFunction1(value))
     
-    inline def setXi(value: Any): Self = StObject.set(x, "Xi", value.asInstanceOf[js.Any])
+    inline def setXi(value: Map[Any, Any]): Self = StObject.set(x, "Xi", value.asInstanceOf[js.Any])
     
-    inline def setYi(value: Map[Any, Any]): Self = StObject.set(x, "Yi", value.asInstanceOf[js.Any])
+    inline def setYi(value: os): Self = StObject.set(x, "Yi", value.asInstanceOf[js.Any])
     
-    inline def setZi(value: Any => Unit): Self = StObject.set(x, "Zi", js.Any.fromFunction1(value))
+    inline def setZi(value: Any): Self = StObject.set(x, "Zi", value.asInstanceOf[js.Any])
   }
 }

@@ -14,14 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class QueryFieldFilterConstraint protected ()
   extends StObject
-     with Ir {
+     with Tr_ {
   /**
     * @internal
     */
   def this(t: Any, e: Any, n: Any) = this()
   
   /* CompleteClass */
-  override def _apply(t: Any): Nn = js.native
+  override def _apply(t: Any): Fn = js.native
   
   /* CompleteClass */
   var _field: Any = js.native
@@ -30,7 +30,7 @@ open class QueryFieldFilterConstraint protected ()
   var _op: Any = js.native
   
   /* CompleteClass */
-  override def _parse(t: Any): Jt | ee | ue = js.native
+  override def _parse(t: Any): Xt_ | ne_ | ce = js.native
   
   /* CompleteClass */
   var _value: Any = js.native
@@ -46,5 +46,5 @@ object QueryFieldFilterConstraint {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def create(t: Any, e: Any, n: Any): Ir = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Ir]
+  inline def create(t: Any, e: Any, n: Any): Tr_ = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Tr_]
 }

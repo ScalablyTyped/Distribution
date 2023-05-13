@@ -8,7 +8,7 @@ trait Cred extends StObject {
   
   var cred_def_id: CredDefId
   
-  var rev_reg_id: String
+  var rev_reg_id: js.UndefOr[String] = js.undefined
   
   var schema_id: SchemaId
   
@@ -22,13 +22,12 @@ object Cred {
   
   inline def apply(
     cred_def_id: CredDefId,
-    rev_reg_id: String,
     schema_id: SchemaId,
     signature: Any,
     signature_correctness_proof: Any,
     values: CredValues
   ): Cred = {
-    val __obj = js.Dynamic.literal(cred_def_id = cred_def_id.asInstanceOf[js.Any], rev_reg_id = rev_reg_id.asInstanceOf[js.Any], schema_id = schema_id.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], signature_correctness_proof = signature_correctness_proof.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cred_def_id = cred_def_id.asInstanceOf[js.Any], schema_id = schema_id.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], signature_correctness_proof = signature_correctness_proof.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cred]
   }
   
@@ -38,6 +37,8 @@ object Cred {
     inline def setCred_def_id(value: CredDefId): Self = StObject.set(x, "cred_def_id", value.asInstanceOf[js.Any])
     
     inline def setRev_reg_id(value: String): Self = StObject.set(x, "rev_reg_id", value.asInstanceOf[js.Any])
+    
+    inline def setRev_reg_idUndefined: Self = StObject.set(x, "rev_reg_id", js.undefined)
     
     inline def setSchema_id(value: SchemaId): Self = StObject.set(x, "schema_id", value.asInstanceOf[js.Any])
     

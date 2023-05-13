@@ -14,14 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class QueryEndAtConstraint protected ()
   extends StObject
-     with Fl {
+     with Bl {
   /**
     * @internal
     */
   def this(t: Any, e: Any, n: Any) = this()
   
   /* CompleteClass */
-  override def _apply(t: Any): fh = js.native
+  override def _apply(t: Any): dh = js.native
   
   /* CompleteClass */
   var _docOrFields: Any = js.native
@@ -39,5 +39,5 @@ object QueryEndAtConstraint {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def create(t: Any, e: Any, n: Any): Fl = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Fl]
+  inline def create(t: Any, e: Any, n: Any): Bl = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Bl]
 }

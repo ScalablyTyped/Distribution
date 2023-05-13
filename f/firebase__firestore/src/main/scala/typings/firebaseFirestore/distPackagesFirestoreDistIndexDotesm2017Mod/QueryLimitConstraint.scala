@@ -14,14 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class QueryLimitConstraint protected ()
   extends StObject
-     with xl {
+     with Nl {
   /**
     * @internal
     */
   def this(t: Any, e: Any, n: Any) = this()
   
   /* CompleteClass */
-  override def _apply(t: Any): fh = js.native
+  override def _apply(t: Any): dh = js.native
   
   /* CompleteClass */
   var _limit: Any = js.native
@@ -39,5 +39,5 @@ object QueryLimitConstraint {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def create(t: Any, e: Any, n: Any): xl = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[xl]
+  inline def create(t: Any, e: Any, n: Any): Nl = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Nl]
 }

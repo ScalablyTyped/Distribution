@@ -1,10 +1,14 @@
 package typings.indySdk.mod
 
+import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.buffer.mod.Buffer
 import typings.indySdk.anon.Issuancetype
 import typings.indySdk.indySdkInts.`0`
 import typings.indySdk.indySdkStrings.CL_ACCUM
+import typings.indySdk.indySdkStrings.CONFIG
+import typings.indySdk.indySdkStrings.DOMAIN
+import typings.indySdk.indySdkStrings.POOL
 import typings.indySdk.indySdkStrings.debug
 import typings.indySdk.indySdkStrings.info
 import typings.indySdk.indySdkStrings.trace
@@ -83,6 +87,9 @@ inline def buildGetSchemaRequest(submitterDid: Did, schemaId: SchemaId): js.Prom
 
 inline def buildGetTxnAuthorAgreementRequest(): js.Promise[LedgerRequest] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildGetTxnAuthorAgreementRequest")().asInstanceOf[js.Promise[LedgerRequest]]
 inline def buildGetTxnAuthorAgreementRequest(submitterDid: Did): js.Promise[LedgerRequest] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildGetTxnAuthorAgreementRequest")(submitterDid.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LedgerRequest]]
+
+inline def buildGetTxnRequest(submitterDid: Null, ledgerType: DOMAIN | POOL | CONFIG, seqNo: Double): js.Promise[LedgerRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildGetTxnRequest")(submitterDid.asInstanceOf[js.Any], ledgerType.asInstanceOf[js.Any], seqNo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LedgerRequest]]
+inline def buildGetTxnRequest(submitterDid: Did, ledgerType: DOMAIN | POOL | CONFIG, seqNo: Double): js.Promise[LedgerRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildGetTxnRequest")(submitterDid.asInstanceOf[js.Any], ledgerType.asInstanceOf[js.Any], seqNo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LedgerRequest]]
 
 inline def buildNymRequest(submitterDid: Did, targetDid: Did, verkey: String, alias: String): js.Promise[LedgerRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildNymRequest")(submitterDid.asInstanceOf[js.Any], targetDid.asInstanceOf[js.Any], verkey.asInstanceOf[js.Any], alias.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LedgerRequest]]
 inline def buildNymRequest(submitterDid: Did, targetDid: Did, verkey: String, alias: String, role: NymRole): js.Promise[LedgerRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildNymRequest")(submitterDid.asInstanceOf[js.Any], targetDid.asInstanceOf[js.Any], verkey.asInstanceOf[js.Any], alias.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LedgerRequest]]
@@ -220,6 +227,8 @@ inline def issuerRevokeCredential(
 
 inline def keyForLocalDid(wh: WalletHandle, did: Did): js.Promise[Verkey] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyForLocalDid")(wh.asInstanceOf[js.Any], did.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Verkey]]
 
+inline def listMyDidsWithMeta(wh: WalletHandle): js.Promise[js.Array[DidWithMeta]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listMyDidsWithMeta")(wh.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[DidWithMeta]]]
+
 inline def openBlobStorageReader(`type`: String, tailsReaderConfig: TailsReaderConfig): js.Promise[BlobReaderHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBlobStorageReader")(`type`.asInstanceOf[js.Any], tailsReaderConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BlobReaderHandle]]
 
 inline def openBlobStorageWriter(`type`: String, tailsWriterConfig: TailsWriterConfig): js.Promise[BlobWriterHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBlobStorageWriter")(`type`.asInstanceOf[js.Any], tailsWriterConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BlobWriterHandle]]
@@ -340,7 +349,7 @@ inline def verifierVerifyProof(
   schemas: Schemas,
   credentialDefs: CredentialDefs,
   revRegDefs: RevocRegDefs,
-  revRegs: RevStates
+  revRegs: RevRegs
 ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifierVerifyProof")(proofRequest.asInstanceOf[js.Any], proof.asInstanceOf[js.Any], schemas.asInstanceOf[js.Any], credentialDefs.asInstanceOf[js.Any], revRegDefs.asInstanceOf[js.Any], revRegs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
 
 type BlobReaderHandle = Double
@@ -371,7 +380,9 @@ type ReferentWalletQuery = StringDictionary[WalletQuery]
 
 type RevRegId = String
 
-type RevStates = StringDictionary[StringDictionary[Any]]
+type RevRegs = StringDictionary[NumberDictionary[RevocReg]]
+
+type RevStates = StringDictionary[NumberDictionary[RevState]]
 
 type RevocRegDefs = StringDictionary[RevocRegDef]
 

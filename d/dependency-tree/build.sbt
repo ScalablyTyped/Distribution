@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dependency-tree"
-version := "10.0.5-116325"
+version := "10.0.6-437d54"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

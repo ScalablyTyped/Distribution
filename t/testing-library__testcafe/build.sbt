@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "testing-library__testcafe"
-version := "4.4.1-ad9a4d"
+version := "4.4.1-9e94b6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "pretty-format" % "29.5.0-e0482b",
   "org.scalablytyped" %%% "std" % "5.0-e63739",
   "org.scalablytyped" %%% "testcafe" % "2.0.1-707cba",
-  "org.scalablytyped" %%% "testing-library__dom" % "9.2.0-2cf077")
+  "org.scalablytyped" %%% "testing-library__dom" % "9.3.0-8987e1")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__react-dom-shim
 
-Typings are for version 7.0.10
+Typings are for version 7.0.11
 
 
 

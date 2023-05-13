@@ -52,6 +52,7 @@ import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
 import typings.primereact.utilsUtilsMod.IconOptions
 import typings.primereact.utilsUtilsMod.IconType
+import typings.primereact.utilsUtilsMod.PassThroughType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -69,6 +70,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -185,6 +187,103 @@ object inplaceInplaceMod {
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
+  
+  trait InplacePassThroughMethodOptions extends StObject {
+    
+    var props: InplaceProps
+    
+    var state: InplaceState
+  }
+  object InplacePassThroughMethodOptions {
+    
+    inline def apply(props: InplaceProps, state: InplaceState): InplacePassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InplacePassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InplacePassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: InplaceProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: InplaceState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait InplacePassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the Button component.
+      * @see {@link ButtonPassThroughOptions}
+      */
+    var closeButton: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ButtonPassThroughOptions */ Any
+      ] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the content's DOM element.
+      */
+    var content: js.UndefOr[InplacePassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the display's DOM element.
+      */
+    var display: js.UndefOr[InplacePassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[InplacePassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object InplacePassThroughOptions {
+    
+    inline def apply(): InplacePassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InplacePassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InplacePassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCloseButton(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ButtonPassThroughOptions */ Any
+      ): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+      
+      inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+      
+      inline def setContent(value: InplacePassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentFunction1(
+        value: /* options */ js.UndefOr[InplacePassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+      
+      inline def setContentNull: Self = StObject.set(x, "content", null)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setDisplay(value: InplacePassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      
+      inline def setDisplayFunction1(
+        value: /* options */ js.UndefOr[InplacePassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
+      
+      inline def setDisplayNull: Self = StObject.set(x, "display", null)
+      
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      
+      inline def setRoot(value: InplacePassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[InplacePassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type InplacePassThroughType[T] = PassThroughType[T, InplacePassThroughMethodOptions]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait InplaceProps extends StObject {
@@ -564,6 +663,12 @@ object inplaceInplaceMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {InplacePassThroughOptions}
+      */
+    var pt: js.UndefOr[InplacePassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1299,6 +1404,10 @@ object inplaceInplaceMod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
+      inline def setPt(value: InplacePassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
@@ -1370,6 +1479,28 @@ object inplaceInplaceMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+    }
+  }
+  
+  trait InplaceState extends StObject {
+    
+    /**
+      * Current active state as a boolean.
+      * @defaultValue false
+      */
+    var active: Boolean
+  }
+  object InplaceState {
+    
+    inline def apply(active: Boolean): InplaceState = {
+      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InplaceState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InplaceState] (val x: Self) extends AnyVal {
+      
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
   }
   

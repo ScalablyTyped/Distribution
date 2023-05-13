@@ -33,6 +33,8 @@ trait DatabaseInfo extends StObject {
   
   val host: String
   
+  val longPollingOptions: ExperimentalLongPollingOptions
+  
   val persistenceKey: String
   
   val ssl: Boolean
@@ -47,11 +49,12 @@ object DatabaseInfo {
     databaseId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DatabaseId */ Any,
     forceLongPolling: Boolean,
     host: String,
+    longPollingOptions: ExperimentalLongPollingOptions,
     persistenceKey: String,
     ssl: Boolean,
     useFetchStreams: Boolean
   ): DatabaseInfo = {
-    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], autoDetectLongPolling = autoDetectLongPolling.asInstanceOf[js.Any], databaseId = databaseId.asInstanceOf[js.Any], forceLongPolling = forceLongPolling.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], persistenceKey = persistenceKey.asInstanceOf[js.Any], ssl = ssl.asInstanceOf[js.Any], useFetchStreams = useFetchStreams.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], autoDetectLongPolling = autoDetectLongPolling.asInstanceOf[js.Any], databaseId = databaseId.asInstanceOf[js.Any], forceLongPolling = forceLongPolling.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], longPollingOptions = longPollingOptions.asInstanceOf[js.Any], persistenceKey = persistenceKey.asInstanceOf[js.Any], ssl = ssl.asInstanceOf[js.Any], useFetchStreams = useFetchStreams.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseInfo]
   }
   
@@ -69,6 +72,8 @@ object DatabaseInfo {
     inline def setForceLongPolling(value: Boolean): Self = StObject.set(x, "forceLongPolling", value.asInstanceOf[js.Any])
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setLongPollingOptions(value: ExperimentalLongPollingOptions): Self = StObject.set(x, "longPollingOptions", value.asInstanceOf[js.Any])
     
     inline def setPersistenceKey(value: String): Self = StObject.set(x, "persistenceKey", value.asInstanceOf[js.Any])
     

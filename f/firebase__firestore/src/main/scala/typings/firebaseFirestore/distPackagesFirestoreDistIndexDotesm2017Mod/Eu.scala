@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait Eu extends StObject {
   
-  def ar(): String
-  
   var error: Any
+  
+  def hr(): String
   
   var state: Any
   
@@ -20,17 +20,17 @@ trait Eu extends StObject {
 }
 object Eu {
   
-  inline def apply(ar: () => String, error: Any, state: Any, targetId: Any): Eu = {
-    val __obj = js.Dynamic.literal(ar = js.Any.fromFunction0(ar), error = error.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
+  inline def apply(error: Any, hr: () => String, state: Any, targetId: Any): Eu = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], hr = js.Any.fromFunction0(hr), state = state.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Eu]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Eu] (val x: Self) extends AnyVal {
     
-    inline def setAr(value: () => String): Self = StObject.set(x, "ar", js.Any.fromFunction0(value))
-    
     inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setHr(value: () => String): Self = StObject.set(x, "hr", js.Any.fromFunction0(value))
     
     inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

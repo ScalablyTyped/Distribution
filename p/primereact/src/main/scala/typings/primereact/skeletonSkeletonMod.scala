@@ -53,6 +53,7 @@ import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.wave
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.PassThroughType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -70,6 +71,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -115,6 +117,55 @@ object skeletonSkeletonMod {
       */
     def getElement(): HTMLDivElement = js.native
   }
+  
+  trait SkeletonPassThroughMethodOptions extends StObject {
+    
+    var props: SkeletonProps
+  }
+  object SkeletonPassThroughMethodOptions {
+    
+    inline def apply(props: SkeletonProps): SkeletonPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SkeletonPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: SkeletonProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SkeletonPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[SkeletonPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object SkeletonPassThroughOptions {
+    
+    inline def apply(): SkeletonPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SkeletonPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setRoot(value: SkeletonPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[SkeletonPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type SkeletonPassThroughType[T] = PassThroughType[T, SkeletonPassThroughMethodOptions]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait SkeletonProps extends StObject {
@@ -465,6 +516,12 @@ object skeletonSkeletonMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {SkeletonPassThroughOptions}
+      */
+    var pt: js.UndefOr[SkeletonPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1194,6 +1251,10 @@ object skeletonSkeletonMod {
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      
+      inline def setPt(value: SkeletonPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       

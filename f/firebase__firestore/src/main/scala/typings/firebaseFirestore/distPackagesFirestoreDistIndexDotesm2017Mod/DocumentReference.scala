@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class DocumentReference protected ()
   extends StObject
-     with lh {
+     with fh {
   /** @hideconstructor */
   def this(t: Any, e: Any, n: Any) = this()
 }

@@ -74,8 +74,8 @@ trait OSS extends StObject {
   /**
     * Delete an object from the bucket.
     */
-  def delete(name: String): js.Promise[NormalSuccessResponse] = js.native
-  def delete(name: String, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
+  def delete(name: String): js.Promise[DeleteResult] = js.native
+  def delete(name: String, options: RequestOptions): js.Promise[DeleteResult] = js.native
   
   /**
     * Delete an empty bucket.

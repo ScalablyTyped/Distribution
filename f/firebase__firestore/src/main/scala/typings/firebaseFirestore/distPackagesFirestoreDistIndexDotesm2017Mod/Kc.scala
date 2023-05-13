@@ -21,42 +21,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */ @js.native
 trait Kc extends StObject {
   
-  var Ec: lo = js.native
+  var Ac: lo = js.native
   
   /** Stores user callbacks waiting for all pending writes to be acknowledged. */
-  var Tc: Map[Any, Any] = js.native
+  var Ec: Map[Any, Any] = js.native
+  
+  var Ic: Oo_ = js.native
   
   var _c: Map[Any, Any] = js.native
   
   var currentUser: Any = js.native
   
-  var dc: os = js.native
-  
   var eventManager: Any = js.native
   
   /**
-    * Keeps track of the information about an active limbo resolution for each
-    * active target ID that was started for the purpose of limbo resolution.
+    * Keeps track of the target ID for each document that is in limbo with an
+    * active target.
     */
-  var gc: Map[Any, Any] = js.native
+  var gc: pe = js.native
   
   def isPrimaryClient: Boolean = js.native
   
   var localStore: Any = js.native
   
   var maxConcurrentLimboResolutions: Any = js.native
-  
-  /**
-    * Keeps track of the target ID for each document that is in limbo with an
-    * active target.
-    */
-  var mc: pe = js.native
-  
-  var onlineState: String = js.native
-  
-  var remoteStore: Any = js.native
-  
-  var sharedClientState: Any = js.native
   
   /**
     * The keys of documents that are in limbo for which we haven't yet started a
@@ -67,7 +55,19 @@ trait Kc extends StObject {
     * of arbitrary elements and it also maintains insertion order, providing the
     * desired queue-like FIFO semantics.
     */
-  var wc: Set[Any] = js.native
+  var mc: Set[Any] = js.native
   
-  var yc: o = js.native
+  var onlineState: String = js.native
+  
+  var remoteStore: Any = js.native
+  
+  var sharedClientState: Any = js.native
+  
+  var wc: os = js.native
+  
+  /**
+    * Keeps track of the information about an active limbo resolution for each
+    * active target ID that was started for the purpose of limbo resolution.
+    */
+  var yc: Map[Any, Any] = js.native
 }

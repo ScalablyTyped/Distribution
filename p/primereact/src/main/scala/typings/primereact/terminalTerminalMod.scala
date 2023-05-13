@@ -67,6 +67,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -90,6 +91,8 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
+import typings.std.HTMLInputElement
+import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -117,6 +120,125 @@ object terminalTerminalMod {
       */
     def getElement(): HTMLDivElement = js.native
   }
+  
+  trait TerminalPassThroughMethodOptions extends StObject {
+    
+    var props: TerminalProps
+    
+    var state: TerminalState
+  }
+  object TerminalPassThroughMethodOptions {
+    
+    inline def apply(props: TerminalProps, state: TerminalState): TerminalPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TerminalPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TerminalPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: TerminalProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: TerminalState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait TerminalPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the command's DOM element.
+      */
+    var command: js.UndefOr[TerminalPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the command text's DOM element.
+      */
+    var commandText: js.UndefOr[TerminalPassThroughType[HTMLAttributes[HTMLInputElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the commands' DOM element.
+      */
+    var commands: js.UndefOr[TerminalPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the container's DOM element.
+      */
+    var container: js.UndefOr[TerminalPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the content's DOM element.
+      */
+    var content: js.UndefOr[TerminalPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the prompt's DOM element.
+      */
+    var prompt: js.UndefOr[TerminalPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the response's DOM element.
+      */
+    var response: js.UndefOr[TerminalPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[TerminalPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the welcome message's DOM element.
+      */
+    var welcomeMessage: js.UndefOr[TerminalPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object TerminalPassThroughOptions {
+    
+    inline def apply(): TerminalPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TerminalPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TerminalPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCommand(value: TerminalPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      
+      inline def setCommandText(value: TerminalPassThroughType[HTMLAttributes[HTMLInputElement]]): Self = StObject.set(x, "commandText", value.asInstanceOf[js.Any])
+      
+      inline def setCommandTextUndefined: Self = StObject.set(x, "commandText", js.undefined)
+      
+      inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+      
+      inline def setCommands(value: TerminalPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      
+      inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
+      
+      inline def setContainer(value: TerminalPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      
+      inline def setContent(value: TerminalPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setPrompt(value: TerminalPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      
+      inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+      
+      inline def setResponse(value: TerminalPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      
+      inline def setRoot(value: TerminalPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      
+      inline def setWelcomeMessage(value: TerminalPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "welcomeMessage", value.asInstanceOf[js.Any])
+      
+      inline def setWelcomeMessageUndefined: Self = StObject.set(x, "welcomeMessage", js.undefined)
+    }
+  }
+  
+  type TerminalPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, TerminalPassThroughMethodOptions> */ Any
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait TerminalProps extends StObject {
@@ -455,6 +577,12 @@ object terminalTerminalMod {
     var prompt: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {TerminalPassThroughOptions}
+      */
+    var pt: js.UndefOr[TerminalPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1165,6 +1293,10 @@ object terminalTerminalMod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
+      inline def setPt(value: TerminalPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
@@ -1240,6 +1372,36 @@ object terminalTerminalMod {
       inline def setWelcomeMessage(value: String): Self = StObject.set(x, "welcomeMessage", value.asInstanceOf[js.Any])
       
       inline def setWelcomeMessageUndefined: Self = StObject.set(x, "welcomeMessage", js.undefined)
+    }
+  }
+  
+  trait TerminalState extends StObject {
+    
+    /**
+      * Current command text as a string.
+      */
+    var commandText: String
+    
+    /**
+      * Current commands as an array.
+      */
+    var commands: js.Array[String]
+  }
+  object TerminalState {
+    
+    inline def apply(commandText: String, commands: js.Array[String]): TerminalState = {
+      val __obj = js.Dynamic.literal(commandText = commandText.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TerminalState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TerminalState] (val x: Self) extends AnyVal {
+      
+      inline def setCommandText(value: String): Self = StObject.set(x, "commandText", value.asInstanceOf[js.Any])
+      
+      inline def setCommands(value: js.Array[String]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      
+      inline def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value*))
     }
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue__reactivity-transform"
-version := "3.3.1-440203"
+version := "3.3.2-9425cd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

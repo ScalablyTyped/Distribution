@@ -10,7 +10,7 @@ trait Name extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var names: js.UndefOr[String] = js.undefined
+  var names: js.UndefOr[js.Array[String]] = js.undefined
   
   var non_revoked: js.UndefOr[NonRevokedInterval] = js.undefined
   
@@ -30,9 +30,11 @@ object Name {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNames(value: String): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
     
     inline def setNon_revoked(value: NonRevokedInterval): Self = StObject.set(x, "non_revoked", value.asInstanceOf[js.Any])
     

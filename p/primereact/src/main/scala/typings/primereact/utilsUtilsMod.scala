@@ -295,6 +295,8 @@ object utilsUtilsMod {
   
   inline def mask(el: HTMLElement, options: js.Object): BindEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("mask")(el.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BindEvents]
   
+  inline def mergeProps(args: js.Object*): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeProps")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.UndefOr[js.Object]]
+  
   trait IconOptions[ParentProps]
     extends StObject
        with /* key */ StringDictionary[Any] {
@@ -328,6 +330,8 @@ object utilsUtilsMod {
   }
   
   type IconType[ParentProps] = ReactNode | (js.Function1[/* options */ IconOptions[ParentProps], ReactNode])
+  
+  type PassThroughType[T, O] = js.UndefOr[T | (js.Function1[/* options */ js.UndefOr[O], T | Unit]) | Null]
   
   type TemplateType[ParentProps] = ReactNode | (js.Function1[/* props */ ParentProps, ReactNode])
 }

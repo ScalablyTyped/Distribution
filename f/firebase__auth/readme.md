@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__auth
 
-Typings are for version 0.23.1
+Typings are for version 0.23.2
 
 ## Library description:
 The Firebase Authenticaton component of the Firebase JS SDK.

@@ -50,6 +50,7 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.PassThroughType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -67,6 +68,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -112,6 +114,59 @@ object deferredcontentDeferredcontentMod {
       */
     def getElement(): HTMLDivElement = js.native
   }
+  
+  trait DeferredContentPassThroughMethodOptions extends StObject {
+    
+    var props: DeferredContentProps
+    
+    var state: DeferredContentState
+  }
+  object DeferredContentPassThroughMethodOptions {
+    
+    inline def apply(props: DeferredContentProps, state: DeferredContentState): DeferredContentPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DeferredContentPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeferredContentPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: DeferredContentProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: DeferredContentState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DeferredContentPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[DeferredContentPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object DeferredContentPassThroughOptions {
+    
+    inline def apply(): DeferredContentPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DeferredContentPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeferredContentPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setRoot(value: DeferredContentPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[DeferredContentPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type DeferredContentPassThroughType[T] = PassThroughType[T, DeferredContentPassThroughMethodOptions]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait DeferredContentProps extends StObject {
@@ -449,6 +504,12 @@ object deferredcontentDeferredcontentMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {DeferredContentPassThroughOptions}
+      */
+    var pt: js.UndefOr[DeferredContentPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1150,6 +1211,10 @@ object deferredcontentDeferredcontentMod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
+      inline def setPt(value: DeferredContentPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
@@ -1221,6 +1286,30 @@ object deferredcontentDeferredcontentMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+    }
+  }
+  
+  trait DeferredContentState extends StObject {
+    
+    /**
+      * Current loaded state as a boolean.
+      * @defaultValue false
+      */
+    var loaded: js.UndefOr[Boolean] = js.undefined
+  }
+  object DeferredContentState {
+    
+    inline def apply(): DeferredContentState = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DeferredContentState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeferredContentState] (val x: Self) extends AnyVal {
+      
+      inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      
+      inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     }
   }
 }

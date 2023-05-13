@@ -22,20 +22,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /** Provides LRU functionality for IndexedDB persistence. */ trait Eo extends StObject {
   
-  def Hn(t: Any): Any
+  def Jn(t: Any): Any
   
-  /**
-    * Call provided function for each document in the cache that is 'orphaned'. Orphaned
-    * means not a part of any target, so the only entry in the target-document index for
-    * that document will be the sentinel row (targetId 0), which will also have the sequence
-    * number for the last time the document was accessed.
-    */ def Jn(t: Any, e: Any): Any
+  def Wn(t: Any, e: Any): Any
   
   /**
     * Returns true if anything would prevent this document from being garbage
     * collected, given that the document in question is not present in any
     * targets and has a sequence number less than or equal to the upper bound for
     * the collection run.
+    */ def Xn(t: Any, e: Any): Any
+  
+  /**
+    * Call provided function for each document in the cache that is 'orphaned'. Orphaned
+    * means not a part of any target, so the only entry in the target-document index for
+    * that document will be the sentinel row (targetId 0), which will also have the sequence
+    * number for the last time the document was accessed.
     */ def Yn(t: Any, e: Any): Any
   
   def addReference(t: Any, e: Any, n: Any): Any
@@ -47,8 +49,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var garbageCollector: Io
   
   def getCacheSize(t: Any): Any
-  
-  def jn(t: Any): Any
   
   def markPotentiallyOrphaned(t: Any, e: Any): Any
   
@@ -62,29 +62,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def updateLimboDocument(t: Any, e: Any): Any
   
-  def zn(t: Any, e: Any): Any
+  def zn(t: Any): Any
 }
 object Eo {
   
   inline def apply(
-    Hn: Any => Any,
-    Jn: (Any, Any) => Any,
+    Jn: Any => Any,
+    Wn: (Any, Any) => Any,
+    Xn: (Any, Any) => Any,
     Yn: (Any, Any) => Any,
     addReference: (Any, Any, Any) => Any,
     db: Any,
     forEachTarget: (Any, Any) => Any,
     garbageCollector: Io,
     getCacheSize: Any => Any,
-    jn: Any => Any,
     markPotentiallyOrphaned: (Any, Any) => Any,
     removeOrphanedDocuments: (Any, Any) => Any,
     removeReference: (Any, Any, Any) => Any,
     removeTarget: (Any, Any) => Any,
     removeTargets: (Any, Any, Any) => Any,
     updateLimboDocument: (Any, Any) => Any,
-    zn: (Any, Any) => Any
+    zn: Any => Any
   ): Eo = {
-    val __obj = js.Dynamic.literal(Hn = js.Any.fromFunction1(Hn), Jn = js.Any.fromFunction2(Jn), Yn = js.Any.fromFunction2(Yn), addReference = js.Any.fromFunction3(addReference), db = db.asInstanceOf[js.Any], forEachTarget = js.Any.fromFunction2(forEachTarget), garbageCollector = garbageCollector.asInstanceOf[js.Any], getCacheSize = js.Any.fromFunction1(getCacheSize), jn = js.Any.fromFunction1(jn), markPotentiallyOrphaned = js.Any.fromFunction2(markPotentiallyOrphaned), removeOrphanedDocuments = js.Any.fromFunction2(removeOrphanedDocuments), removeReference = js.Any.fromFunction3(removeReference), removeTarget = js.Any.fromFunction2(removeTarget), removeTargets = js.Any.fromFunction3(removeTargets), updateLimboDocument = js.Any.fromFunction2(updateLimboDocument), zn = js.Any.fromFunction2(zn))
+    val __obj = js.Dynamic.literal(Jn = js.Any.fromFunction1(Jn), Wn = js.Any.fromFunction2(Wn), Xn = js.Any.fromFunction2(Xn), Yn = js.Any.fromFunction2(Yn), addReference = js.Any.fromFunction3(addReference), db = db.asInstanceOf[js.Any], forEachTarget = js.Any.fromFunction2(forEachTarget), garbageCollector = garbageCollector.asInstanceOf[js.Any], getCacheSize = js.Any.fromFunction1(getCacheSize), markPotentiallyOrphaned = js.Any.fromFunction2(markPotentiallyOrphaned), removeOrphanedDocuments = js.Any.fromFunction2(removeOrphanedDocuments), removeReference = js.Any.fromFunction3(removeReference), removeTarget = js.Any.fromFunction2(removeTarget), removeTargets = js.Any.fromFunction3(removeTargets), updateLimboDocument = js.Any.fromFunction2(updateLimboDocument), zn = js.Any.fromFunction1(zn))
     __obj.asInstanceOf[Eo]
   }
   
@@ -101,9 +101,7 @@ object Eo {
     
     inline def setGetCacheSize(value: Any => Any): Self = StObject.set(x, "getCacheSize", js.Any.fromFunction1(value))
     
-    inline def setHn(value: Any => Any): Self = StObject.set(x, "Hn", js.Any.fromFunction1(value))
-    
-    inline def setJn(value: (Any, Any) => Any): Self = StObject.set(x, "Jn", js.Any.fromFunction2(value))
+    inline def setJn(value: Any => Any): Self = StObject.set(x, "Jn", js.Any.fromFunction1(value))
     
     inline def setMarkPotentiallyOrphaned(value: (Any, Any) => Any): Self = StObject.set(x, "markPotentiallyOrphaned", js.Any.fromFunction2(value))
     
@@ -117,8 +115,12 @@ object Eo {
     
     inline def setUpdateLimboDocument(value: (Any, Any) => Any): Self = StObject.set(x, "updateLimboDocument", js.Any.fromFunction2(value))
     
+    inline def setWn(value: (Any, Any) => Any): Self = StObject.set(x, "Wn", js.Any.fromFunction2(value))
+    
+    inline def setXn(value: (Any, Any) => Any): Self = StObject.set(x, "Xn", js.Any.fromFunction2(value))
+    
     inline def setYn(value: (Any, Any) => Any): Self = StObject.set(x, "Yn", js.Any.fromFunction2(value))
     
-    inline def setZn(value: (Any, Any) => Any): Self = StObject.set(x, "zn", js.Any.fromFunction2(value))
+    inline def setZn(value: Any => Any): Self = StObject.set(x, "zn", js.Any.fromFunction1(value))
   }
 }

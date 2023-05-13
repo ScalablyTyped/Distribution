@@ -1,11 +1,17 @@
 package typings.primereact
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.primereact.buttonButtonMod.ButtonPassThroughOptions
 import typings.primereact.primereactStrings.self
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
+import typings.react.mod.SVGProps
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.HTMLSpanElement
+import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,6 +138,111 @@ object confirmpopupConfirmpopupMod {
     }
   }
   
+  trait ConfirmPopupPassThroughMethodOptions extends StObject {
+    
+    var props: ConfirmPopupProps
+    
+    var state: ConfirmPopupState
+  }
+  object ConfirmPopupPassThroughMethodOptions {
+    
+    inline def apply(props: ConfirmPopupProps, state: ConfirmPopupState): ConfirmPopupPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConfirmPopupPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmPopupPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: ConfirmPopupProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: ConfirmPopupState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ConfirmPopupPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the Button component.
+      * @see {@link ButtonPassThroughOptions}
+      */
+    var acceptButton: js.UndefOr[ButtonPassThroughOptions] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the content's DOM element.
+      */
+    var content: js.UndefOr[ConfirmPopupPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the footer's DOM element.
+      */
+    var footer: js.UndefOr[ConfirmPopupPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the icon's DOM element.
+      */
+    var icon: js.UndefOr[
+        ConfirmPopupPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]
+      ] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the message's DOM element.
+      */
+    var message: js.UndefOr[ConfirmPopupPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the Button component.
+      * @see {@link ButtonPassThroughOptions}
+      */
+    var rejectButton: js.UndefOr[ButtonPassThroughOptions] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[ConfirmPopupPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object ConfirmPopupPassThroughOptions {
+    
+    inline def apply(): ConfirmPopupPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ConfirmPopupPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmPopupPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAcceptButton(value: ButtonPassThroughOptions): Self = StObject.set(x, "acceptButton", value.asInstanceOf[js.Any])
+      
+      inline def setAcceptButtonUndefined: Self = StObject.set(x, "acceptButton", js.undefined)
+      
+      inline def setContent(value: ConfirmPopupPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setFooter(value: ConfirmPopupPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      
+      inline def setIcon(value: ConfirmPopupPassThroughType[SVGProps[SVGSVGElement] | HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setMessage(value: ConfirmPopupPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      
+      inline def setRejectButton(value: ButtonPassThroughOptions): Self = StObject.set(x, "rejectButton", value.asInstanceOf[js.Any])
+      
+      inline def setRejectButtonUndefined: Self = StObject.set(x, "rejectButton", js.undefined)
+      
+      inline def setRoot(value: ConfirmPopupPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  type ConfirmPopupPassThroughType[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PassThroughType<T, ConfirmPopupPassThroughMethodOptions> */ Any
+  
   trait ConfirmPopupProps extends StObject {
     
     /**
@@ -206,6 +317,12 @@ object confirmpopupConfirmpopupMod {
       * Callback to invoke when overlay panel becomes visible.
       */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {ConfirmPopupPassThroughOptions}
+      */
+    var pt: js.UndefOr[ConfirmPopupPassThroughOptions] = js.undefined
     
     /**
       * Callback to execute when action is rejected.
@@ -330,6 +447,10 @@ object confirmpopupConfirmpopupMod {
       
       inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
+      inline def setPt(value: ConfirmPopupPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setReject(value: () => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction0(value))
       
       inline def setRejectClassName(value: String): Self = StObject.set(x, "rejectClassName", value.asInstanceOf[js.Any])
@@ -400,6 +521,36 @@ object confirmpopupConfirmpopupMod {
       inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
       inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait ConfirmPopupState extends StObject {
+    
+    /**
+      * Current reshow state as a boolean.
+      * @defaultValue false
+      */
+    var reshow: Boolean
+    
+    /**
+      * Current visible state as a boolean.
+      * @defaultValue false
+      */
+    var visible: Boolean
+  }
+  object ConfirmPopupState {
+    
+    inline def apply(reshow: Boolean, visible: Boolean): ConfirmPopupState = {
+      val __obj = js.Dynamic.literal(reshow = reshow.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConfirmPopupState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmPopupState] (val x: Self) extends AnyVal {
+      
+      inline def setReshow(value: Boolean): Self = StObject.set(x, "reshow", value.asInstanceOf[js.Any])
+      
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

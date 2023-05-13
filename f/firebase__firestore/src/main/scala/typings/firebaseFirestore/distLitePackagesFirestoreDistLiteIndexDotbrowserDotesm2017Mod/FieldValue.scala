@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class FieldValue protected ()
   extends StObject
-     with Un {
+     with jn {
   /**
     * @param _methodName - The public API endpoint that returns this class.
     * @hideconstructor

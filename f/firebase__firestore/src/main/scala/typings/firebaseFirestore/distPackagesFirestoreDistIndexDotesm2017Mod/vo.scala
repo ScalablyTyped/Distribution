@@ -21,138 +21,102 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * limitations under the License.
   */
 /**
-  * The RemoteDocumentCache for IndexedDb. To construct, invoke
-  * `newIndexedDbRemoteDocumentCache()`.
+  * An in-memory buffer of entries to be written to a RemoteDocumentCache.
+  * It can be used to batch up a set of changes to be written to the cache, but
+  * additionally supports reading entries back with the `getEntry()` method,
+  * falling back to the underlying RemoteDocumentCache if no entry is
+  * buffered.
+  *
+  * Entries added to the cache *must* be read first. This is to facilitate
+  * calculating the size delta of the pending changes.
+  *
+  * PORTING NOTE: This class was implemented then removed from other platforms.
+  * If byte-counting ends up being needed on the other platforms, consider
+  * porting this class as part of that implementation work.
   */ trait vo extends StObject {
   
-  def Xn(t: Any, e: Any): Any
-  
   /**
-    * Decodes `dbRemoteDoc` and returns the document (or an invalid document if
-    * the document corresponds to the format used for sentinel deletes).
-    */ def Zn(t: Any, e: Any): Unit | an
-  
-  /**
-    * Adds the supplied entries to the cache.
+    * Buffers a `RemoteDocumentCache.addEntry()` call.
     *
-    * All calls of `addEntry` are required to go through the RemoteDocumentChangeBuffer
-    * returned by `newChangeBuffer()` to ensure proper accounting of metadata.
-    */ def addEntry(t: Any, e: Any, n: Any): Any
-  
-  def es(t: Any, e: Any, n: Any): Any
-  
-  def getAllFromCollectionGroup(t: Any, e: Any, n: Any, s: Any): Any
-  
-  def getDocumentsMatchingQuery(t: Any, e: Any, n: Any, s: Any): Any
-  
-  def getEntries(t: Any, e: Any): Any
-  
-  def getEntry(t: Any, e: Any): Any
-  
-  def getMetadata(t: Any): Any
-  
-  def getSize(t: Any): Any
-  
-  var indexManager: Any
-  
-  def newChangeBuffer(t: Any): bo
+    * You can only modify documents that have already been retrieved via
+    * `getEntry()/getEntries()` (enforced via IndexedDbs `apply()`).
+    */ def addEntry(t: Any): Unit
   
   /**
-    * Looks up several entries in the cache.
-    *
-    * @param documentKeys - The set of keys entries to look up.
-    * @returns A map of documents indexed by key and a map of sizes indexed by
-    *     key (zero if the document does not exist).
-    */ def ns(t: Any, e: Any): Any
+    * Applies buffered changes to the underlying RemoteDocumentCache, using
+    * the provided transaction.
+    */ @JSName("apply")
+  def apply(t: Any): Any
+  
+  /** Helper to assert this.changes is not null  */ def assertNotApplied(): Unit
+  
+  var changes: os
+  
+  var changesApplied: Boolean
   
   /**
-    * Removes a document from the cache.
+    * Looks up several entries in the cache, forwarding to
+    * `RemoteDocumentCache.getEntry()`.
     *
-    * All calls of `removeEntry`  are required to go through the RemoteDocumentChangeBuffer
-    * returned by `newChangeBuffer()` to ensure proper accounting of metadata.
-    */ def removeEntry(t: Any, e: Any, n: Any): Any
-  
-  var serializer: Any
-  
-  def setIndexManager(t: Any): Unit
+    * @param transaction - The transaction in which to perform any persistence
+    *     operations.
+    * @param documentKeys - The keys of the entries to look up.
+    * @returns A map of cached documents, indexed by key. If an entry cannot be
+    *     found, the corresponding key will be mapped to an invalid document.
+    */ def getEntries(t: Any, e: Any): Any
   
   /**
-    * Looks up an entry in the cache.
+    * Looks up an entry in the cache. The buffered changes will first be checked,
+    * and if no buffered change applies, this will forward to
+    * `RemoteDocumentCache.getEntry()`.
     *
+    * @param transaction - The transaction in which to perform any persistence
+    *     operations.
     * @param documentKey - The key of the entry to look up.
-    * @returns The cached document entry and its size.
-    */ def ts(t: Any, e: Any): Any
+    * @returns The cached document or an invalid document if we have nothing
+    * cached.
+    */ def getEntry(t: Any, e: Any): Any
   
   /**
-    * Updates the current cache size.
+    * Buffers a `RemoteDocumentCache.removeEntry()` call.
     *
-    * Callers to `addEntry()` and `removeEntry()` *must* call this afterwards to update the
-    * cache's metadata.
-    */ def updateMetadata(t: Any, e: Any): Any
+    * You can only remove documents that have already been retrieved via
+    * `getEntry()/getEntries()` (enforced via IndexedDbs `apply()`).
+    */ def removeEntry(t: Any, e: Any): Unit
 }
 object vo {
   
   inline def apply(
-    Xn: (Any, Any) => Any,
-    Zn: (Any, Any) => Unit | an,
-    addEntry: (Any, Any, Any) => Any,
-    es: (Any, Any, Any) => Any,
-    getAllFromCollectionGroup: (Any, Any, Any, Any) => Any,
-    getDocumentsMatchingQuery: (Any, Any, Any, Any) => Any,
+    addEntry: Any => Unit,
+    apply: Any => Any,
+    assertNotApplied: () => Unit,
+    changes: os,
+    changesApplied: Boolean,
     getEntries: (Any, Any) => Any,
     getEntry: (Any, Any) => Any,
-    getMetadata: Any => Any,
-    getSize: Any => Any,
-    indexManager: Any,
-    newChangeBuffer: Any => bo,
-    ns: (Any, Any) => Any,
-    removeEntry: (Any, Any, Any) => Any,
-    serializer: Any,
-    setIndexManager: Any => Unit,
-    ts: (Any, Any) => Any,
-    updateMetadata: (Any, Any) => Any
+    removeEntry: (Any, Any) => Unit
   ): vo = {
-    val __obj = js.Dynamic.literal(Xn = js.Any.fromFunction2(Xn), Zn = js.Any.fromFunction2(Zn), addEntry = js.Any.fromFunction3(addEntry), es = js.Any.fromFunction3(es), getAllFromCollectionGroup = js.Any.fromFunction4(getAllFromCollectionGroup), getDocumentsMatchingQuery = js.Any.fromFunction4(getDocumentsMatchingQuery), getEntries = js.Any.fromFunction2(getEntries), getEntry = js.Any.fromFunction2(getEntry), getMetadata = js.Any.fromFunction1(getMetadata), getSize = js.Any.fromFunction1(getSize), indexManager = indexManager.asInstanceOf[js.Any], newChangeBuffer = js.Any.fromFunction1(newChangeBuffer), ns = js.Any.fromFunction2(ns), removeEntry = js.Any.fromFunction3(removeEntry), serializer = serializer.asInstanceOf[js.Any], setIndexManager = js.Any.fromFunction1(setIndexManager), ts = js.Any.fromFunction2(ts), updateMetadata = js.Any.fromFunction2(updateMetadata))
+    val __obj = js.Dynamic.literal(addEntry = js.Any.fromFunction1(addEntry), apply = js.Any.fromFunction1(apply), assertNotApplied = js.Any.fromFunction0(assertNotApplied), changes = changes.asInstanceOf[js.Any], changesApplied = changesApplied.asInstanceOf[js.Any], getEntries = js.Any.fromFunction2(getEntries), getEntry = js.Any.fromFunction2(getEntry), removeEntry = js.Any.fromFunction2(removeEntry))
     __obj.asInstanceOf[vo]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: vo] (val x: Self) extends AnyVal {
     
-    inline def setAddEntry(value: (Any, Any, Any) => Any): Self = StObject.set(x, "addEntry", js.Any.fromFunction3(value))
+    inline def setAddEntry(value: Any => Unit): Self = StObject.set(x, "addEntry", js.Any.fromFunction1(value))
     
-    inline def setEs(value: (Any, Any, Any) => Any): Self = StObject.set(x, "es", js.Any.fromFunction3(value))
+    inline def setApply(value: Any => Any): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     
-    inline def setGetAllFromCollectionGroup(value: (Any, Any, Any, Any) => Any): Self = StObject.set(x, "getAllFromCollectionGroup", js.Any.fromFunction4(value))
+    inline def setAssertNotApplied(value: () => Unit): Self = StObject.set(x, "assertNotApplied", js.Any.fromFunction0(value))
     
-    inline def setGetDocumentsMatchingQuery(value: (Any, Any, Any, Any) => Any): Self = StObject.set(x, "getDocumentsMatchingQuery", js.Any.fromFunction4(value))
+    inline def setChanges(value: os): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    
+    inline def setChangesApplied(value: Boolean): Self = StObject.set(x, "changesApplied", value.asInstanceOf[js.Any])
     
     inline def setGetEntries(value: (Any, Any) => Any): Self = StObject.set(x, "getEntries", js.Any.fromFunction2(value))
     
     inline def setGetEntry(value: (Any, Any) => Any): Self = StObject.set(x, "getEntry", js.Any.fromFunction2(value))
     
-    inline def setGetMetadata(value: Any => Any): Self = StObject.set(x, "getMetadata", js.Any.fromFunction1(value))
-    
-    inline def setGetSize(value: Any => Any): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
-    
-    inline def setIndexManager(value: Any): Self = StObject.set(x, "indexManager", value.asInstanceOf[js.Any])
-    
-    inline def setNewChangeBuffer(value: Any => bo): Self = StObject.set(x, "newChangeBuffer", js.Any.fromFunction1(value))
-    
-    inline def setNs(value: (Any, Any) => Any): Self = StObject.set(x, "ns", js.Any.fromFunction2(value))
-    
-    inline def setRemoveEntry(value: (Any, Any, Any) => Any): Self = StObject.set(x, "removeEntry", js.Any.fromFunction3(value))
-    
-    inline def setSerializer(value: Any): Self = StObject.set(x, "serializer", value.asInstanceOf[js.Any])
-    
-    inline def setSetIndexManager(value: Any => Unit): Self = StObject.set(x, "setIndexManager", js.Any.fromFunction1(value))
-    
-    inline def setTs(value: (Any, Any) => Any): Self = StObject.set(x, "ts", js.Any.fromFunction2(value))
-    
-    inline def setUpdateMetadata(value: (Any, Any) => Any): Self = StObject.set(x, "updateMetadata", js.Any.fromFunction2(value))
-    
-    inline def setXn(value: (Any, Any) => Any): Self = StObject.set(x, "Xn", js.Any.fromFunction2(value))
-    
-    inline def setZn(value: (Any, Any) => Unit | an): Self = StObject.set(x, "Zn", js.Any.fromFunction2(value))
+    inline def setRemoveEntry(value: (Any, Any) => Unit): Self = StObject.set(x, "removeEntry", js.Any.fromFunction2(value))
   }
 }

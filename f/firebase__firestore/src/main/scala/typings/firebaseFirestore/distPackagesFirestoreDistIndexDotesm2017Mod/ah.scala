@@ -1,5 +1,6 @@
 package typings.firebaseFirestore.distPackagesFirestoreDistIndexDotesm2017Mod
 
+import typings.firebaseFirestore.anon.TimeoutSeconds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,57 +22,76 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * limitations under the License.
   */
 /**
-  * The Cloud Firestore service interface.
-  *
-  * Do not call this constructor directly. Instead, use {@link (getFirestore:1)}.
-  */ @js.native
+  * A concrete type describing all the values that can be applied via a
+  * user-supplied `FirestoreSettings` object. This is a separate type so that
+  * defaults can be supplied and the value can be checked for equality.
+  */
 trait ah extends StObject {
   
-  var _app: Any = js.native
+  var cache: Any
   
-  var _appCheckCredentials: Any = js.native
+  var cacheSizeBytes: Any
   
-  var _authCredentials: Any = js.native
+  var credentials: Any
   
-  var _databaseId: Any = js.native
+  var experimentalAutoDetectLongPolling: Boolean
   
-  def _delete(): js.Promise[Unit] = js.native
+  var experimentalForceLongPolling: Boolean
   
-  def _freezeSettings(): ch = js.native
+  var experimentalLongPollingOptions: TimeoutSeconds
   
-  def _getSettings(): ch = js.native
+  var host: Any
   
-  def _initialized: Boolean = js.native
+  var ignoreUndefinedProperties: Boolean
   
-  var _persistenceKey: String = js.native
+  def isEqual(t: Any): Boolean
   
-  def _setSettings(t: Any): Unit = js.native
+  var ssl: Any
   
-  var _settings: ch = js.native
+  var useFetchStreams: Boolean
+}
+object ah {
   
-  var _settingsFrozen: Boolean = js.native
+  inline def apply(
+    cache: Any,
+    cacheSizeBytes: Any,
+    credentials: Any,
+    experimentalAutoDetectLongPolling: Boolean,
+    experimentalForceLongPolling: Boolean,
+    experimentalLongPollingOptions: TimeoutSeconds,
+    host: Any,
+    ignoreUndefinedProperties: Boolean,
+    isEqual: Any => Boolean,
+    ssl: Any,
+    useFetchStreams: Boolean
+  ): ah = {
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], cacheSizeBytes = cacheSizeBytes.asInstanceOf[js.Any], credentials = credentials.asInstanceOf[js.Any], experimentalAutoDetectLongPolling = experimentalAutoDetectLongPolling.asInstanceOf[js.Any], experimentalForceLongPolling = experimentalForceLongPolling.asInstanceOf[js.Any], experimentalLongPollingOptions = experimentalLongPollingOptions.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], ignoreUndefinedProperties = ignoreUndefinedProperties.asInstanceOf[js.Any], isEqual = js.Any.fromFunction1(isEqual), ssl = ssl.asInstanceOf[js.Any], useFetchStreams = useFetchStreams.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ah]
+  }
   
-  /**
-    * Terminates all components used by this client. Subclasses can override
-    * this method to clean up their own dependencies, but must also call this
-    * method.
-    *
-    * Only ever called once.
-    */ def _terminate(): js.Promise[Unit] = js.native
-  
-  var _terminateTask: js.UndefOr[js.Promise[Unit]] = js.native
-  
-  def _terminated: Boolean = js.native
-  
-  /**
-    * The {@link @firebase/app#FirebaseApp} associated with this `Firestore` service
-    * instance.
-    */ def app: Any = js.native
-  
-  /** Returns a JSON-serializable representation of this `Firestore` instance. */ def toJSON(): typings.firebaseFirestore.anon.DatabaseId = js.native
-  
-  /**
-    * Whether it's a Firestore or Firestore Lite instance.
-    */
-  var `type`: String = js.native
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ah] (val x: Self) extends AnyVal {
+    
+    inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    
+    inline def setCacheSizeBytes(value: Any): Self = StObject.set(x, "cacheSizeBytes", value.asInstanceOf[js.Any])
+    
+    inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalAutoDetectLongPolling(value: Boolean): Self = StObject.set(x, "experimentalAutoDetectLongPolling", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalForceLongPolling(value: Boolean): Self = StObject.set(x, "experimentalForceLongPolling", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalLongPollingOptions(value: TimeoutSeconds): Self = StObject.set(x, "experimentalLongPollingOptions", value.asInstanceOf[js.Any])
+    
+    inline def setHost(value: Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreUndefinedProperties(value: Boolean): Self = StObject.set(x, "ignoreUndefinedProperties", value.asInstanceOf[js.Any])
+    
+    inline def setIsEqual(value: Any => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    
+    inline def setSsl(value: Any): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    
+    inline def setUseFetchStreams(value: Boolean): Self = StObject.set(x, "useFetchStreams", value.asInstanceOf[js.Any])
+  }
 }

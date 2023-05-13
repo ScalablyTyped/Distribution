@@ -17,7 +17,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait Qu extends StObject {
   
-  def Iu(): Unit
+  /**
+    * Updates our OnlineState as appropriate after the watch stream reports a
+    * failure. The first failure moves us to the 'Unknown' state. We then may
+    * allow multiple failures (based on MAX_WATCH_STREAM_FAILURES) before we
+    * actually transition to the 'Offline' state.
+    */ def Iu(t: Any): Unit
+  
+  def Tu(): Unit
   
   /**
     * A timer that elapses after ONLINE_STATE_TIMEOUT_MS, at which point we
@@ -29,30 +36,23 @@ trait Qu extends StObject {
   var asyncQueue: Any
   
   /**
-    * A count of consecutive failures to open the stream. If it reaches the
-    * maximum defined by MAX_WATCH_STREAM_FAILURES, we'll set the OnlineState to
-    * Offline.
-    */
-  var du: Double
-  
-  def gu(t: Any): Unit
-  
-  /**
     * Called by RemoteStore when a watch stream is started (including on each
     * backoff attempt).
     *
     * If this is the first attempt, it sets the OnlineState to Unknown and starts
     * the onlineStateTimer.
-    */ def mu(): Unit
+    */ def gu(): Unit
+  
+  /**
+    * Whether the client should log a warning message if it fails to connect to
+    * the backend (initially true, cleared after a successful stream, or if we've
+    * logged the message already).
+    */
+  var mu: Boolean
   
   var onlineStateHandler: Any
   
-  /**
-    * Updates our OnlineState as appropriate after the watch stream reports a
-    * failure. The first failure moves us to the 'Unknown' state. We then may
-    * allow multiple failures (based on MAX_WATCH_STREAM_FAILURES) before we
-    * actually transition to the 'Offline' state.
-    */ def pu(t: Any): Unit
+  def pu(t: Any): Unit
   
   /**
     * Explicitly sets the OnlineState to the specified state.
@@ -66,31 +66,31 @@ trait Qu extends StObject {
   var state: String
   
   /**
-    * Whether the client should log a warning message if it fails to connect to
-    * the backend (initially true, cleared after a successful stream, or if we've
-    * logged the message already).
+    * A count of consecutive failures to open the stream. If it reaches the
+    * maximum defined by MAX_WATCH_STREAM_FAILURES, we'll set the OnlineState to
+    * Offline.
     */
-  var wu: Boolean
+  var wu: Double
   
   def yu(t: Any): Unit
 }
 object Qu {
   
   inline def apply(
-    Iu: () => Unit,
+    Iu: Any => Unit,
+    Tu: () => Unit,
     _u: Any,
     asyncQueue: Any,
-    du: Double,
-    gu: Any => Unit,
-    mu: () => Unit,
+    gu: () => Unit,
+    mu: Boolean,
     onlineStateHandler: Any,
     pu: Any => Unit,
     set: Any => Unit,
     state: String,
-    wu: Boolean,
+    wu: Double,
     yu: Any => Unit
   ): Qu = {
-    val __obj = js.Dynamic.literal(Iu = js.Any.fromFunction0(Iu), _u = _u.asInstanceOf[js.Any], asyncQueue = asyncQueue.asInstanceOf[js.Any], du = du.asInstanceOf[js.Any], gu = js.Any.fromFunction1(gu), mu = js.Any.fromFunction0(mu), onlineStateHandler = onlineStateHandler.asInstanceOf[js.Any], pu = js.Any.fromFunction1(pu), set = js.Any.fromFunction1(set), state = state.asInstanceOf[js.Any], wu = wu.asInstanceOf[js.Any], yu = js.Any.fromFunction1(yu))
+    val __obj = js.Dynamic.literal(Iu = js.Any.fromFunction1(Iu), Tu = js.Any.fromFunction0(Tu), _u = _u.asInstanceOf[js.Any], asyncQueue = asyncQueue.asInstanceOf[js.Any], gu = js.Any.fromFunction0(gu), mu = mu.asInstanceOf[js.Any], onlineStateHandler = onlineStateHandler.asInstanceOf[js.Any], pu = js.Any.fromFunction1(pu), set = js.Any.fromFunction1(set), state = state.asInstanceOf[js.Any], wu = wu.asInstanceOf[js.Any], yu = js.Any.fromFunction1(yu))
     __obj.asInstanceOf[Qu]
   }
   
@@ -99,13 +99,11 @@ object Qu {
     
     inline def setAsyncQueue(value: Any): Self = StObject.set(x, "asyncQueue", value.asInstanceOf[js.Any])
     
-    inline def setDu(value: Double): Self = StObject.set(x, "du", value.asInstanceOf[js.Any])
+    inline def setGu(value: () => Unit): Self = StObject.set(x, "gu", js.Any.fromFunction0(value))
     
-    inline def setGu(value: Any => Unit): Self = StObject.set(x, "gu", js.Any.fromFunction1(value))
+    inline def setIu(value: Any => Unit): Self = StObject.set(x, "Iu", js.Any.fromFunction1(value))
     
-    inline def setIu(value: () => Unit): Self = StObject.set(x, "Iu", js.Any.fromFunction0(value))
-    
-    inline def setMu(value: () => Unit): Self = StObject.set(x, "mu", js.Any.fromFunction0(value))
+    inline def setMu(value: Boolean): Self = StObject.set(x, "mu", value.asInstanceOf[js.Any])
     
     inline def setOnlineStateHandler(value: Any): Self = StObject.set(x, "onlineStateHandler", value.asInstanceOf[js.Any])
     
@@ -115,7 +113,9 @@ object Qu {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setWu(value: Boolean): Self = StObject.set(x, "wu", value.asInstanceOf[js.Any])
+    inline def setTu(value: () => Unit): Self = StObject.set(x, "Tu", js.Any.fromFunction0(value))
+    
+    inline def setWu(value: Double): Self = StObject.set(x, "wu", value.asInstanceOf[js.Any])
     
     inline def setYu(value: Any => Unit): Self = StObject.set(x, "yu", js.Any.fromFunction1(value))
     

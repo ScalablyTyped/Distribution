@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait oo extends StObject {
   
-  /** Returns the mutation queue's metadata from IndexedDb. */
-  def Cn(t: Any): Any
-  
   /**
     * Clears the cached keys for a mutation batch. This method should be
     * called by secondary clients after they process mutation updates.
@@ -17,9 +14,9 @@ trait oo extends StObject {
     * the corresponding cache entries are cleared when an acknowledged or
     * rejected batch is removed from the mutation queue.
     */
-  def Dn(t: Any): Unit
+  def Cn(t: Any): Unit
   
-  def Sn(t: Any, e: Any): vt
+  def Dn(t: Any, e: Any): Rt_
   
   /**
     * Returns the document keys for the mutation batch with the given batchId.
@@ -27,7 +24,7 @@ trait oo extends StObject {
     * `removeMutationBatches()` has been called. Secondary clients return a
     * cached result until `removeCachedMutationKeys()` is invoked.
     */
-  def Vn(t: Any, e: Any): Any
+  def Sn(t: Any, e: Any): Any
   
   def addMutationBatch(t: Any, e: Any, n: Any, s: Any): Any
   
@@ -39,7 +36,7 @@ trait oo extends StObject {
   
   def getAllMutationBatchesAffectingDocumentKey(t: Any, e: Any): Any
   
-  def getAllMutationBatchesAffectingDocumentKeys(t: Any, e: Any): vt
+  def getAllMutationBatchesAffectingDocumentKeys(t: Any, e: Any): Rt_
   
   def getAllMutationBatchesAffectingQuery(t: Any, e: Any): Any
   
@@ -55,25 +52,27 @@ trait oo extends StObject {
   
   var referenceDelegate: Any
   
-  def removeMutationBatch(t: Any, e: Any): vt
+  def removeMutationBatch(t: Any, e: Any): Rt_
   
   var serializer: Any
   
   var userId: Any
+  
+  /** Returns the mutation queue's metadata from IndexedDb. */
+  def xn(t: Any): Any
 }
 object oo {
   
   inline def apply(
-    Cn: Any => Any,
-    Dn: Any => Unit,
-    Sn: (Any, Any) => vt,
-    Vn: (Any, Any) => Any,
+    Cn: Any => Unit,
+    Dn: (Any, Any) => Rt_,
+    Sn: (Any, Any) => Any,
     addMutationBatch: (Any, Any, Any, Any) => Any,
     checkEmpty: Any => Any,
     containsKey: (Any, Any) => Any,
     getAllMutationBatches: Any => Any,
     getAllMutationBatchesAffectingDocumentKey: (Any, Any) => Any,
-    getAllMutationBatchesAffectingDocumentKeys: (Any, Any) => vt,
+    getAllMutationBatchesAffectingDocumentKeys: (Any, Any) => Rt_,
     getAllMutationBatchesAffectingQuery: (Any, Any) => Any,
     getHighestUnacknowledgedBatchId: Any => Any,
     getNextMutationBatchAfterBatchId: (Any, Any) => Any,
@@ -81,11 +80,12 @@ object oo {
     lookupMutationBatch: (Any, Any) => Any,
     performConsistencyCheck: Any => Any,
     referenceDelegate: Any,
-    removeMutationBatch: (Any, Any) => vt,
+    removeMutationBatch: (Any, Any) => Rt_,
     serializer: Any,
-    userId: Any
+    userId: Any,
+    xn: Any => Any
   ): oo = {
-    val __obj = js.Dynamic.literal(Cn = js.Any.fromFunction1(Cn), Dn = js.Any.fromFunction1(Dn), Sn = js.Any.fromFunction2(Sn), Vn = js.Any.fromFunction2(Vn), addMutationBatch = js.Any.fromFunction4(addMutationBatch), checkEmpty = js.Any.fromFunction1(checkEmpty), containsKey = js.Any.fromFunction2(containsKey), getAllMutationBatches = js.Any.fromFunction1(getAllMutationBatches), getAllMutationBatchesAffectingDocumentKey = js.Any.fromFunction2(getAllMutationBatchesAffectingDocumentKey), getAllMutationBatchesAffectingDocumentKeys = js.Any.fromFunction2(getAllMutationBatchesAffectingDocumentKeys), getAllMutationBatchesAffectingQuery = js.Any.fromFunction2(getAllMutationBatchesAffectingQuery), getHighestUnacknowledgedBatchId = js.Any.fromFunction1(getHighestUnacknowledgedBatchId), getNextMutationBatchAfterBatchId = js.Any.fromFunction2(getNextMutationBatchAfterBatchId), indexManager = indexManager.asInstanceOf[js.Any], lookupMutationBatch = js.Any.fromFunction2(lookupMutationBatch), performConsistencyCheck = js.Any.fromFunction1(performConsistencyCheck), referenceDelegate = referenceDelegate.asInstanceOf[js.Any], removeMutationBatch = js.Any.fromFunction2(removeMutationBatch), serializer = serializer.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Cn = js.Any.fromFunction1(Cn), Dn = js.Any.fromFunction2(Dn), Sn = js.Any.fromFunction2(Sn), addMutationBatch = js.Any.fromFunction4(addMutationBatch), checkEmpty = js.Any.fromFunction1(checkEmpty), containsKey = js.Any.fromFunction2(containsKey), getAllMutationBatches = js.Any.fromFunction1(getAllMutationBatches), getAllMutationBatchesAffectingDocumentKey = js.Any.fromFunction2(getAllMutationBatchesAffectingDocumentKey), getAllMutationBatchesAffectingDocumentKeys = js.Any.fromFunction2(getAllMutationBatchesAffectingDocumentKeys), getAllMutationBatchesAffectingQuery = js.Any.fromFunction2(getAllMutationBatchesAffectingQuery), getHighestUnacknowledgedBatchId = js.Any.fromFunction1(getHighestUnacknowledgedBatchId), getNextMutationBatchAfterBatchId = js.Any.fromFunction2(getNextMutationBatchAfterBatchId), indexManager = indexManager.asInstanceOf[js.Any], lookupMutationBatch = js.Any.fromFunction2(lookupMutationBatch), performConsistencyCheck = js.Any.fromFunction1(performConsistencyCheck), referenceDelegate = referenceDelegate.asInstanceOf[js.Any], removeMutationBatch = js.Any.fromFunction2(removeMutationBatch), serializer = serializer.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any], xn = js.Any.fromFunction1(xn))
     __obj.asInstanceOf[oo]
   }
   
@@ -96,17 +96,17 @@ object oo {
     
     inline def setCheckEmpty(value: Any => Any): Self = StObject.set(x, "checkEmpty", js.Any.fromFunction1(value))
     
-    inline def setCn(value: Any => Any): Self = StObject.set(x, "Cn", js.Any.fromFunction1(value))
+    inline def setCn(value: Any => Unit): Self = StObject.set(x, "Cn", js.Any.fromFunction1(value))
     
     inline def setContainsKey(value: (Any, Any) => Any): Self = StObject.set(x, "containsKey", js.Any.fromFunction2(value))
     
-    inline def setDn(value: Any => Unit): Self = StObject.set(x, "Dn", js.Any.fromFunction1(value))
+    inline def setDn(value: (Any, Any) => Rt_): Self = StObject.set(x, "Dn", js.Any.fromFunction2(value))
     
     inline def setGetAllMutationBatches(value: Any => Any): Self = StObject.set(x, "getAllMutationBatches", js.Any.fromFunction1(value))
     
     inline def setGetAllMutationBatchesAffectingDocumentKey(value: (Any, Any) => Any): Self = StObject.set(x, "getAllMutationBatchesAffectingDocumentKey", js.Any.fromFunction2(value))
     
-    inline def setGetAllMutationBatchesAffectingDocumentKeys(value: (Any, Any) => vt): Self = StObject.set(x, "getAllMutationBatchesAffectingDocumentKeys", js.Any.fromFunction2(value))
+    inline def setGetAllMutationBatchesAffectingDocumentKeys(value: (Any, Any) => Rt_): Self = StObject.set(x, "getAllMutationBatchesAffectingDocumentKeys", js.Any.fromFunction2(value))
     
     inline def setGetAllMutationBatchesAffectingQuery(value: (Any, Any) => Any): Self = StObject.set(x, "getAllMutationBatchesAffectingQuery", js.Any.fromFunction2(value))
     
@@ -122,14 +122,14 @@ object oo {
     
     inline def setReferenceDelegate(value: Any): Self = StObject.set(x, "referenceDelegate", value.asInstanceOf[js.Any])
     
-    inline def setRemoveMutationBatch(value: (Any, Any) => vt): Self = StObject.set(x, "removeMutationBatch", js.Any.fromFunction2(value))
+    inline def setRemoveMutationBatch(value: (Any, Any) => Rt_): Self = StObject.set(x, "removeMutationBatch", js.Any.fromFunction2(value))
     
     inline def setSerializer(value: Any): Self = StObject.set(x, "serializer", value.asInstanceOf[js.Any])
     
-    inline def setSn(value: (Any, Any) => vt): Self = StObject.set(x, "Sn", js.Any.fromFunction2(value))
+    inline def setSn(value: (Any, Any) => Any): Self = StObject.set(x, "Sn", js.Any.fromFunction2(value))
     
     inline def setUserId(value: Any): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    inline def setVn(value: (Any, Any) => Any): Self = StObject.set(x, "Vn", js.Any.fromFunction2(value))
+    inline def setXn(value: Any => Any): Self = StObject.set(x, "xn", js.Any.fromFunction1(value))
   }
 }

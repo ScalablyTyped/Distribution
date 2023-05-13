@@ -155,7 +155,15 @@ object radiobuttonRadiobuttonMod {
     */
   type RadioButtonChangeEvent = FormEvent[Any, SyntheticEvent[Element, Event]]
   
-  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'ref'> */
+  /**
+    * Custom click event.
+    * @see {@link RadioButtonProps.onClick}
+    * @extends {FormEvent}
+    * @event
+    */
+  type RadioButtonClickEvent = FormEvent[Any, SyntheticEvent[Element, Event]]
+  
+  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'onClick' | 'ref'> */
   trait RadioButtonProps extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
@@ -411,7 +419,11 @@ object radiobuttonRadiobuttonMod {
       */
     var onChange: js.UndefOr[js.Function1[/* event */ RadioButtonChangeEvent, Unit]] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    /**
+      * Callback to invoke on click.  Mark the event with preventDefault to prevent the option from changing.
+      * @param {RadioButtonClickEvent} event - Custom click event.
+      */
+    var onClick: js.UndefOr[js.Function1[/* event */ RadioButtonClickEvent, Unit]] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
     
@@ -1102,7 +1114,7 @@ object radiobuttonRadiobuttonMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ RadioButtonClickEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       

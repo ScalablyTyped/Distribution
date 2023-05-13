@@ -52,6 +52,7 @@ import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
 import typings.primereact.utilsUtilsMod.IconOptions
 import typings.primereact.utilsUtilsMod.IconType
+import typings.primereact.utilsUtilsMod.PassThroughType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -69,6 +70,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -91,9 +93,12 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.HTMLAnchorElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLFieldSetElement
+import typings.std.HTMLLegendElement
+import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -122,6 +127,149 @@ object fieldsetFieldsetMod {
       */
     def getElement(): HTMLFieldSetElement = js.native
   }
+  
+  trait FieldsetPassThroughMethodOptions extends StObject {
+    
+    var props: FieldsetProps
+    
+    var state: FieldsetState
+  }
+  object FieldsetPassThroughMethodOptions {
+    
+    inline def apply(props: FieldsetProps, state: FieldsetState): FieldsetPassThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FieldsetPassThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldsetPassThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: FieldsetProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: FieldsetState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait FieldsetPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the content's DOM element.
+      */
+    var content: js.UndefOr[FieldsetPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the legend's DOM element.
+      */
+    var legend: js.UndefOr[FieldsetPassThroughType[HTMLAttributes[HTMLLegendElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the legend title's DOM element.
+      */
+    var legendTitle: js.UndefOr[FieldsetPassThroughType[HTMLAttributes[HTMLSpanElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[FieldsetPassThroughType[HTMLAttributes[HTMLFieldSetElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the toggleable content's DOM element.
+      */
+    var toggleableContent: js.UndefOr[FieldsetPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the toggler's DOM element.
+      */
+    var toggler: js.UndefOr[FieldsetPassThroughType[HTMLAttributes[HTMLAnchorElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the toggler icon's DOM element.
+      */
+    var togglerIcon: js.UndefOr[FieldsetPassThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object FieldsetPassThroughOptions {
+    
+    inline def apply(): FieldsetPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FieldsetPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldsetPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setContent(value: FieldsetPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentFunction1(
+        value: /* options */ js.UndefOr[FieldsetPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+      
+      inline def setContentNull: Self = StObject.set(x, "content", null)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setLegend(value: FieldsetPassThroughType[HTMLAttributes[HTMLLegendElement]]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+      
+      inline def setLegendFunction1(
+        value: /* options */ js.UndefOr[FieldsetPassThroughMethodOptions] => HTMLAttributes[HTMLLegendElement] | Unit
+      ): Self = StObject.set(x, "legend", js.Any.fromFunction1(value))
+      
+      inline def setLegendNull: Self = StObject.set(x, "legend", null)
+      
+      inline def setLegendTitle(value: FieldsetPassThroughType[HTMLAttributes[HTMLSpanElement]]): Self = StObject.set(x, "legendTitle", value.asInstanceOf[js.Any])
+      
+      inline def setLegendTitleFunction1(
+        value: /* options */ js.UndefOr[FieldsetPassThroughMethodOptions] => HTMLAttributes[HTMLSpanElement] | Unit
+      ): Self = StObject.set(x, "legendTitle", js.Any.fromFunction1(value))
+      
+      inline def setLegendTitleNull: Self = StObject.set(x, "legendTitle", null)
+      
+      inline def setLegendTitleUndefined: Self = StObject.set(x, "legendTitle", js.undefined)
+      
+      inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+      
+      inline def setRoot(value: FieldsetPassThroughType[HTMLAttributes[HTMLFieldSetElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[FieldsetPassThroughMethodOptions] => HTMLAttributes[HTMLFieldSetElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      
+      inline def setToggleableContent(value: FieldsetPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "toggleableContent", value.asInstanceOf[js.Any])
+      
+      inline def setToggleableContentFunction1(
+        value: /* options */ js.UndefOr[FieldsetPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "toggleableContent", js.Any.fromFunction1(value))
+      
+      inline def setToggleableContentNull: Self = StObject.set(x, "toggleableContent", null)
+      
+      inline def setToggleableContentUndefined: Self = StObject.set(x, "toggleableContent", js.undefined)
+      
+      inline def setToggler(value: FieldsetPassThroughType[HTMLAttributes[HTMLAnchorElement]]): Self = StObject.set(x, "toggler", value.asInstanceOf[js.Any])
+      
+      inline def setTogglerFunction1(
+        value: /* options */ js.UndefOr[FieldsetPassThroughMethodOptions] => HTMLAttributes[HTMLAnchorElement] | Unit
+      ): Self = StObject.set(x, "toggler", js.Any.fromFunction1(value))
+      
+      inline def setTogglerIcon(value: FieldsetPassThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "togglerIcon", value.asInstanceOf[js.Any])
+      
+      inline def setTogglerIconFunction1(
+        value: /* options */ js.UndefOr[FieldsetPassThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "togglerIcon", js.Any.fromFunction1(value))
+      
+      inline def setTogglerIconNull: Self = StObject.set(x, "togglerIcon", null)
+      
+      inline def setTogglerIconUndefined: Self = StObject.set(x, "togglerIcon", js.undefined)
+      
+      inline def setTogglerNull: Self = StObject.set(x, "toggler", null)
+      
+      inline def setTogglerUndefined: Self = StObject.set(x, "toggler", js.undefined)
+    }
+  }
+  
+  type FieldsetPassThroughType[T] = PassThroughType[T, FieldsetPassThroughMethodOptions]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLFieldSetElement>, std.HTMLFieldSetElement>, 'ref'> */
   trait FieldsetProps extends StObject {
@@ -498,6 +646,12 @@ object fieldsetFieldsetMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {FieldsetPassThroughOptions}
+      */
+    var pt: js.UndefOr[FieldsetPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1245,6 +1399,10 @@ object fieldsetFieldsetMod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
+      inline def setPt(value: FieldsetPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
@@ -1329,6 +1487,28 @@ object fieldsetFieldsetMod {
     }
   }
   
+  trait FieldsetState extends StObject {
+    
+    /**
+      * Current collapsed state as a boolean.
+      * @defaultValue false
+      */
+    var collapse: Boolean
+  }
+  object FieldsetState {
+    
+    inline def apply(collapse: Boolean): FieldsetState = {
+      val __obj = js.Dynamic.literal(collapse = collapse.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FieldsetState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldsetState] (val x: Self) extends AnyVal {
+      
+      inline def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /**
     * Custom toggle event.
     * @see {@link FieldsetProps.onToggle}
@@ -1337,10 +1517,16 @@ object fieldsetFieldsetMod {
   trait FieldsetToggleEvent extends StObject {
     
     /**
+      * Browser event.
+      */
+    /**
       * Browser mouse event.
       */
     var originalEvent: MouseEvent[HTMLElement, NativeMouseEvent]
     
+    /**
+      * Collapsed state as a boolean
+      */
     /**
       * Collapsed state as a boolean.
       */

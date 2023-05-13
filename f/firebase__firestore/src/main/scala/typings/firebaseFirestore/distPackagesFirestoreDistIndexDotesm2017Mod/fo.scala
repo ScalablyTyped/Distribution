@@ -22,19 +22,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */ trait fo extends StObject {
   
   @JSName("$n")
-  def $n(t: Any, e: Any): Any
+  def $n(t: Any): Any
   
   /**
     * In-place updates the provided metadata to account for values in the given
     * TargetData. Saving is done separately. Returns true if there were any
     * changes to the metadata.
-    */ def Fn(t: Any, e: Any): Boolean
+    */ def Bn(t: Any, e: Any): Boolean
   
-  def Mn(t: Any): Any
+  def Fn(t: Any, e: Any): Any
   
   def On(t: Any, e: Any): Any
   
-  def addMatchingKeys(t: Any, e: Any, n: Any): vt
+  def addMatchingKeys(t: Any, e: Any, n: Any): Rt_
   
   def addTargetData(t: Any, e: Any): Any
   
@@ -63,11 +63,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @returns The cached TargetData entry, or null if the cache has no entry for
     * the target.
     */
-  def he(t: Any, e: Any): Any
+  def le(t: Any, e: Any): Any
   
   var referenceDelegate: Any
   
-  def removeMatchingKeys(t: Any, e: Any, n: Any): vt
+  def removeMatchingKeys(t: Any, e: Any, n: Any): Rt_
   
   def removeMatchingKeysForTargetId(t: Any, e: Any): Any
   
@@ -88,11 +88,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object fo {
   
   inline def apply(
-    $n: (Any, Any) => Any,
-    Fn: (Any, Any) => Boolean,
-    Mn: Any => Any,
+    $n: Any => Any,
+    Bn: (Any, Any) => Boolean,
+    Fn: (Any, Any) => Any,
     On: (Any, Any) => Any,
-    addMatchingKeys: (Any, Any, Any) => vt,
+    addMatchingKeys: (Any, Any, Any) => Rt_,
     addTargetData: (Any, Any) => Any,
     allocateTargetId: Any => Any,
     containsKey: (Any, Any) => Any,
@@ -102,9 +102,9 @@ object fo {
     getMatchingKeysForTargetId: (Any, Any) => Any,
     getTargetCount: Any => Any,
     getTargetData: (Any, Any) => Any,
-    he: (Any, Any) => Any,
+    le: (Any, Any) => Any,
     referenceDelegate: Any,
-    removeMatchingKeys: (Any, Any, Any) => vt,
+    removeMatchingKeys: (Any, Any, Any) => Rt_,
     removeMatchingKeysForTargetId: (Any, Any) => Any,
     removeTargetData: (Any, Any) => Any,
     removeTargets: (Any, Any, Any) => Any,
@@ -112,24 +112,26 @@ object fo {
     setTargetsMetadata: (Any, Any, Any) => Any,
     updateTargetData: (Any, Any) => Any
   ): fo = {
-    val __obj = js.Dynamic.literal($n = js.Any.fromFunction2($n), Fn = js.Any.fromFunction2(Fn), Mn = js.Any.fromFunction1(Mn), On = js.Any.fromFunction2(On), addMatchingKeys = js.Any.fromFunction3(addMatchingKeys), addTargetData = js.Any.fromFunction2(addTargetData), allocateTargetId = js.Any.fromFunction1(allocateTargetId), containsKey = js.Any.fromFunction2(containsKey), forEachTarget = js.Any.fromFunction2(forEachTarget), getHighestSequenceNumber = js.Any.fromFunction1(getHighestSequenceNumber), getLastRemoteSnapshotVersion = js.Any.fromFunction1(getLastRemoteSnapshotVersion), getMatchingKeysForTargetId = js.Any.fromFunction2(getMatchingKeysForTargetId), getTargetCount = js.Any.fromFunction1(getTargetCount), getTargetData = js.Any.fromFunction2(getTargetData), he = js.Any.fromFunction2(he), referenceDelegate = referenceDelegate.asInstanceOf[js.Any], removeMatchingKeys = js.Any.fromFunction3(removeMatchingKeys), removeMatchingKeysForTargetId = js.Any.fromFunction2(removeMatchingKeysForTargetId), removeTargetData = js.Any.fromFunction2(removeTargetData), removeTargets = js.Any.fromFunction3(removeTargets), serializer = serializer.asInstanceOf[js.Any], setTargetsMetadata = js.Any.fromFunction3(setTargetsMetadata), updateTargetData = js.Any.fromFunction2(updateTargetData))
+    val __obj = js.Dynamic.literal($n = js.Any.fromFunction1($n), Bn = js.Any.fromFunction2(Bn), Fn = js.Any.fromFunction2(Fn), On = js.Any.fromFunction2(On), addMatchingKeys = js.Any.fromFunction3(addMatchingKeys), addTargetData = js.Any.fromFunction2(addTargetData), allocateTargetId = js.Any.fromFunction1(allocateTargetId), containsKey = js.Any.fromFunction2(containsKey), forEachTarget = js.Any.fromFunction2(forEachTarget), getHighestSequenceNumber = js.Any.fromFunction1(getHighestSequenceNumber), getLastRemoteSnapshotVersion = js.Any.fromFunction1(getLastRemoteSnapshotVersion), getMatchingKeysForTargetId = js.Any.fromFunction2(getMatchingKeysForTargetId), getTargetCount = js.Any.fromFunction1(getTargetCount), getTargetData = js.Any.fromFunction2(getTargetData), le = js.Any.fromFunction2(le), referenceDelegate = referenceDelegate.asInstanceOf[js.Any], removeMatchingKeys = js.Any.fromFunction3(removeMatchingKeys), removeMatchingKeysForTargetId = js.Any.fromFunction2(removeMatchingKeysForTargetId), removeTargetData = js.Any.fromFunction2(removeTargetData), removeTargets = js.Any.fromFunction3(removeTargets), serializer = serializer.asInstanceOf[js.Any], setTargetsMetadata = js.Any.fromFunction3(setTargetsMetadata), updateTargetData = js.Any.fromFunction2(updateTargetData))
     __obj.asInstanceOf[fo]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: fo] (val x: Self) extends AnyVal {
     
-    inline def set$n(value: (Any, Any) => Any): Self = StObject.set(x, "$n", js.Any.fromFunction2(value))
+    inline def set$n(value: Any => Any): Self = StObject.set(x, "$n", js.Any.fromFunction1(value))
     
-    inline def setAddMatchingKeys(value: (Any, Any, Any) => vt): Self = StObject.set(x, "addMatchingKeys", js.Any.fromFunction3(value))
+    inline def setAddMatchingKeys(value: (Any, Any, Any) => Rt_): Self = StObject.set(x, "addMatchingKeys", js.Any.fromFunction3(value))
     
     inline def setAddTargetData(value: (Any, Any) => Any): Self = StObject.set(x, "addTargetData", js.Any.fromFunction2(value))
     
     inline def setAllocateTargetId(value: Any => Any): Self = StObject.set(x, "allocateTargetId", js.Any.fromFunction1(value))
     
+    inline def setBn(value: (Any, Any) => Boolean): Self = StObject.set(x, "Bn", js.Any.fromFunction2(value))
+    
     inline def setContainsKey(value: (Any, Any) => Any): Self = StObject.set(x, "containsKey", js.Any.fromFunction2(value))
     
-    inline def setFn(value: (Any, Any) => Boolean): Self = StObject.set(x, "Fn", js.Any.fromFunction2(value))
+    inline def setFn(value: (Any, Any) => Any): Self = StObject.set(x, "Fn", js.Any.fromFunction2(value))
     
     inline def setForEachTarget(value: (Any, Any) => Any): Self = StObject.set(x, "forEachTarget", js.Any.fromFunction2(value))
     
@@ -143,15 +145,13 @@ object fo {
     
     inline def setGetTargetData(value: (Any, Any) => Any): Self = StObject.set(x, "getTargetData", js.Any.fromFunction2(value))
     
-    inline def setHe(value: (Any, Any) => Any): Self = StObject.set(x, "he", js.Any.fromFunction2(value))
-    
-    inline def setMn(value: Any => Any): Self = StObject.set(x, "Mn", js.Any.fromFunction1(value))
+    inline def setLe(value: (Any, Any) => Any): Self = StObject.set(x, "le", js.Any.fromFunction2(value))
     
     inline def setOn(value: (Any, Any) => Any): Self = StObject.set(x, "On", js.Any.fromFunction2(value))
     
     inline def setReferenceDelegate(value: Any): Self = StObject.set(x, "referenceDelegate", value.asInstanceOf[js.Any])
     
-    inline def setRemoveMatchingKeys(value: (Any, Any, Any) => vt): Self = StObject.set(x, "removeMatchingKeys", js.Any.fromFunction3(value))
+    inline def setRemoveMatchingKeys(value: (Any, Any, Any) => Rt_): Self = StObject.set(x, "removeMatchingKeys", js.Any.fromFunction3(value))
     
     inline def setRemoveMatchingKeysForTargetId(value: (Any, Any) => Any): Self = StObject.set(x, "removeMatchingKeysForTargetId", js.Any.fromFunction2(value))
     

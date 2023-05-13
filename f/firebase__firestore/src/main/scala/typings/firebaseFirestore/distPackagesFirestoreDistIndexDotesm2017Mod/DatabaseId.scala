@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class DatabaseId protected ()
   extends StObject
-     with typings.firebaseFirestore.distPackagesFirestoreDistIndexDotesm2017Mod.e {
+     with Oe {
   def this(t: Any, e: Any) = this()
 }
 object DatabaseId {
@@ -23,5 +23,5 @@ object DatabaseId {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def empty(): e = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[e]
+  inline def empty(): Oe = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Oe]
 }

@@ -119,6 +119,7 @@ trait TracerOptions extends StObject {
   /**
     * If false, require a parent in order to trace.
     * @default true
+    * @deprecated since version 4.0
     */
   var orphanable: js.UndefOr[Boolean] = js.undefined
   

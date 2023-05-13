@@ -50,6 +50,7 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.PassThroughType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -67,6 +68,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -129,6 +131,95 @@ object scrollpanelScrollpanelMod {
       * @return {HTMLDivElement} Vertical bar element
       */
     def getYBar(): HTMLDivElement = js.native
+  }
+  
+  trait ScrollPanelPassThroughOptions extends StObject {
+    
+    /**
+      * Uses to pass attributes to the horizontal panel's DOM element.
+      */
+    var barX: js.UndefOr[ScrollPanelThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the vertical panel's DOM element.
+      */
+    var barY: js.UndefOr[ScrollPanelThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the content's DOM element.
+      */
+    var content: js.UndefOr[ScrollPanelThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the root's DOM element.
+      */
+    var root: js.UndefOr[ScrollPanelThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+    
+    /**
+      * Uses to pass attributes to the wrapper's DOM element.
+      */
+    var wrapper: js.UndefOr[ScrollPanelThroughType[HTMLAttributes[HTMLDivElement]]] = js.undefined
+  }
+  object ScrollPanelPassThroughOptions {
+    
+    inline def apply(): ScrollPanelPassThroughOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ScrollPanelPassThroughOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollPanelPassThroughOptions] (val x: Self) extends AnyVal {
+      
+      inline def setBarX(value: ScrollPanelThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "barX", value.asInstanceOf[js.Any])
+      
+      inline def setBarXFunction1(
+        value: /* options */ js.UndefOr[ScrollPanelThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "barX", js.Any.fromFunction1(value))
+      
+      inline def setBarXNull: Self = StObject.set(x, "barX", null)
+      
+      inline def setBarXUndefined: Self = StObject.set(x, "barX", js.undefined)
+      
+      inline def setBarY(value: ScrollPanelThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "barY", value.asInstanceOf[js.Any])
+      
+      inline def setBarYFunction1(
+        value: /* options */ js.UndefOr[ScrollPanelThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "barY", js.Any.fromFunction1(value))
+      
+      inline def setBarYNull: Self = StObject.set(x, "barY", null)
+      
+      inline def setBarYUndefined: Self = StObject.set(x, "barY", js.undefined)
+      
+      inline def setContent(value: ScrollPanelThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentFunction1(
+        value: /* options */ js.UndefOr[ScrollPanelThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+      
+      inline def setContentNull: Self = StObject.set(x, "content", null)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setRoot(value: ScrollPanelThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootFunction1(
+        value: /* options */ js.UndefOr[ScrollPanelThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+      
+      inline def setRootNull: Self = StObject.set(x, "root", null)
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      
+      inline def setWrapper(value: ScrollPanelThroughType[HTMLAttributes[HTMLDivElement]]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      
+      inline def setWrapperFunction1(
+        value: /* options */ js.UndefOr[ScrollPanelThroughMethodOptions] => HTMLAttributes[HTMLDivElement] | Unit
+      ): Self = StObject.set(x, "wrapper", js.Any.fromFunction1(value))
+      
+      inline def setWrapperNull: Self = StObject.set(x, "wrapper", null)
+      
+      inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+    }
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
@@ -463,6 +554,12 @@ object scrollpanelScrollpanelMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Uses to pass attributes to DOM elements inside the component.
+      * @type {ScrollPanelPassThroughOptions}
+      */
+    var pt: js.UndefOr[ScrollPanelPassThroughOptions] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
@@ -1164,6 +1261,10 @@ object scrollpanelScrollpanelMod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
+      inline def setPt(value: ScrollPanelPassThroughOptions): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      
+      inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+      
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
@@ -1237,4 +1338,24 @@ object scrollpanelScrollpanelMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
+  
+  trait ScrollPanelThroughMethodOptions extends StObject {
+    
+    var props: ScrollPanelProps
+  }
+  object ScrollPanelThroughMethodOptions {
+    
+    inline def apply(props: ScrollPanelProps): ScrollPanelThroughMethodOptions = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ScrollPanelThroughMethodOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollPanelThroughMethodOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProps(value: ScrollPanelProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type ScrollPanelThroughType[T] = PassThroughType[T, ScrollPanelThroughMethodOptions]
 }
