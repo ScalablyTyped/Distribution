@@ -968,7 +968,6 @@
 | [big-integer](./b/big-integer) | An arbitrary length integer library for Javascript | math, big, bignum, bigint, biginteger, integer, arbitrary, precision, arithmetic |
 | [big-rat](./b/big-rat) | A big integer rational number | big, rat, huge, rational, number, big, integer, arithmetic, exact, geometry |
 | [big_dot_js](./b/big_dot_js) | A small, fast, easy-to-use library for arbitrary-p | arbitrary, precision, arithmetic, big, number, decimal, float, biginteger, bigdecimal, bignumber, bigint, bignum |
-| [bigbite__wp-cypress](./b/bigbite__wp-cypress) | WordPress end to end testing with Cypress.io | - |
 | [bigbluebutton-js](./b/bigbluebutton-js) | JavaScript wrapper for BigBlueButton API | bigbluebutton, bbb, api |
 | [bigi](./b/bigi) | Big integers. | cryptography, math, bitcoin, arbitrary, precision, arithmetic, big, integer, int, number, biginteger, bigint, bignumber, decimal, float |
 | [bigint](./b/bigint) | Arbitrary-precision integer arithmetic using libgm | gmp, libgmp, big, bignum, bigint, integer, arithmetic, precision |
@@ -1975,7 +1974,6 @@
 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot | cypress, plugin, dotenv, cypress-plugin, env |
 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot. | - |
 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate | cypress, cypress-plugin |
-| [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t | cypress, istanbul, cypress-plugin, code, coverage |
 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm | cytoscape, cytoscape-extension |
 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u | cytoscape, cytoscape.js, cytoscapejs, cytoscape-canvas, canvas, extension |
@@ -4605,7 +4603,6 @@
 | [indefinite-observable](./i/indefinite-observable) |   | - |
 | [indent-string](./i/indent-string) | Indent each line in a string | indent, string, pad, align, line, text, each, every |
 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria | index, array, helper |
-| [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy | - |
 | [inert](./i/inert) | Static file and directory handlers plugin for hapi | file, directory, handler, hapi, plugin |
 | [ineum](./i/ineum) | - | - |
 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f | inferno, performance, framework, interfaces, user interfaces, html, renderToString, server, dom, browser, rollup, vdom |
@@ -9901,7 +9898,6 @@
 | [safe-regex2](./s/safe-regex2) | detect possibly catastrophic, exponential-time reg | catastrophic, exponential, regex, safe, sandbox |
 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly | stable, stringify, JSON, JSON.stringify, safe, serialize, deterministic, circular, object, predicable, repeatable, fast, bigint |
 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support | setTimeout, setInterval, timer, timeout, interval, timers, timeouts, intervals |
-| [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns | - |
 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server | sails, sdk, sails.io.js, socket.io, browser, javascript |
 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API | - |
 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli | sales, tax, salestax, money, billing, invoice, vat, gst, vatmoss |
@@ -10928,7 +10924,6 @@
 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin. | testcafe, reporter, plugin |
 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets | - |
 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y | chrome, version |
-| [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut | testing, cypress, ui, dom, integration, functional, end-to-end, e2e |
 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc | testing, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements | testing, dom, jasmine, matchers, jsdom |
 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th | testing, react, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
@@ -12197,7 +12192,6 @@
 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises | yauzl, unzip, zip, promise, async, await |
 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling | yaml |
 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta | json-api, json, api, response, format, serialization, deserialization, yay, wow, omg |
-| [yazl](./y/yazl) | yet another zip library for node | zip, stream, archive, file |
 | [ydn-db](./y/ydn-db) | - | - |
 | [year-days](./y/year-days) | Get the number of days in a year | year, days, date, number, count |
 | [yeast](./y/yeast) | Tiny but linear growing unique id generator | yeast, id, generator, unique |

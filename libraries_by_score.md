@@ -251,7 +251,6 @@
 | 0.8529164502151902 | [aws-sdk__config-resolver](./a/aws-sdk__config-resolver) | -
 | 0.8528927432178816 | [filesize](./f/filesize) | JavaScript library to generate a human readable St
 | 0.852814126516628 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-node) | AWS credential provider that sources credentials f
-| 0.8527595067556228 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns
 | 0.8527388358803386 | [accepts](./a/accepts) | Higher-level content negotiation
 | 0.8527324580863276 | [aws-sdk__util-hex-encodin](./a/aws-sdk__util-hex-encoding) | Converts binary buffers to and from lowercase hexa
 | 0.8527153835100215 | [dir-glob](./d/dir-glob) | Convert directories to glob compatible strings
@@ -1044,7 +1043,6 @@
 | 0.7952394428611238 | [ts-loader](./t/ts-loader) | TypeScript loader for webpack
 | 0.7950396467035569 | [es6-weak-map](./e/es6-weak-map) | ECMAScript6 WeakMap polyfill
 | 0.794934036005181 | [ant-design__colors](./a/ant-design__colors) | Color palettes calculator of Ant Design
-| 0.7949218612985449 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0.7949194505276331 | [csstools__postcss-is-pseu](./c/csstools__postcss-is-pseudo-class) | A pseudo-class for matching elements in a selector
 | 0.7948766041407689 | [jotai](./j/jotai) | 👻 Next gen state management that will spook you
 | 0.7947344538866984 | [file-uri-to-path](./f/file-uri-to-path) | Convert a file: URI to a file path
@@ -2782,7 +2780,6 @@
 | 0.7176712388781245 | [stream-to-array](./s/stream-to-array) | Concatenate a readable stream's data into a single
 | 0.7176433510462157 | [detect-passive-events](./d/detect-passive-events) | Detect if the browser supports passive events
 | 0.7176198342961569 | [grpc__proto-loader](./g/grpc__proto-loader) | gRPC utility library for loading .proto files
-| 0.7176004435070695 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.7175881284103192 | [react-ace](./r/react-ace) | A react component for Ace Editor
 | 0.7175787601224826 | [vfile-sort](./v/vfile-sort) | vfile utility to sort messages by line/column
 | 0.7175523728015658 | [react-swipe](./r/react-swipe) | Brad Birdsall's Swipe.js as a React component
@@ -4519,7 +4516,6 @@
 | 0.6715263933221988 | [react-dnd__shallowequal](./r/react-dnd__shallowequal) | Like lodash isEqualWith but for shallow equal.
 | 0.6715028593119714 | [moddle](./m/moddle) | A library for importing meta-model based file form
 | 0.6714925649878302 | [cassanknex](./c/cassanknex) | An Apache Cassandra CQL query builder with support
-| 0.6714853737212092 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.6714584335377032 | [jss-plugin-global](./j/jss-plugin-global) | Global styles for JSS
 | 0.6714458699011386 | [progress-stream](./p/progress-stream) | Read the progress of a stream
 | 0.6714229772885696 | [totp-generator](./t/totp-generator) | Generate TOTP tokens from key
@@ -6468,7 +6464,6 @@
 | 0.615485950116848 | [deferred-async-iterator](./d/deferred-async-iterator) | Create a deferred async iterator.
 | 0.6153603940379252 | [randexp](./r/randexp) | Create random strings that match a given regular e
 | 0.6153560379623948 | [gsheets](./g/gsheets) | Get public Google Spreadsheets as plain JavaScript
-| 0.6152816327284444 | [yazl](./y/yazl) | yet another zip library for node
 | 0.6152394529489089 | [utf8](./u/utf8) | A well-tested UTF-8 encoder/decoder written in Jav
 | 0.6152362174951483 | [barnard59-core](./b/barnard59-core) | Core component of Barnard59 Linked Data pipelines
 | 0.6151520405779876 | [csscolorparser-ts](./c/csscolorparser-ts) | Parser for CSS color strings written in TypeScript
@@ -8110,7 +8105,6 @@
 | 0.5239977776650723 | [tslint](./t/tslint) | An extensible static analysis linter for the TypeS
 | 0.52392042538791 | [rc-swipeout](./r/rc-swipeout) | swipe out ui component for react(web and react-nat
 | 0.5238501023310315 | [redis-mock](./r/redis-mock) | Redis client mock object for unit testing
-| 0.5238479026606435 | [bigbite__wp-cypress](./b/bigbite__wp-cypress) | WordPress end to end testing with Cypress.io
 | 0.5238164067865376 | [combokeys](./c/combokeys) | Handles keyboard shortcuts in the browser
 | 0.5237274991389178 | [graphviz](./g/graphviz) | Node.js interface to the GraphViz graphing tool
 | 0.5236475379747046 | [chai-oequal](./c/chai-oequal) | Chai oequal() that uses object's equality method.
