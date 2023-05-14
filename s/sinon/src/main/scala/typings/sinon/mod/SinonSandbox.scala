@@ -96,11 +96,7 @@ trait SinonSandbox extends StObject {
     * replacement can be any value, including spies, stubs and fakes.
     * This method only works on non-accessor properties, for replacing accessors, use sandbox.replaceGetter() and sandbox.replaceSetter().
     */
-  def replace[T, TKey /* <: /* keyof T */ String */](
-    obj: T,
-    prop: TKey,
-    replacement: /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
-  ): /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any = js.native
+  def replace[T, TKey /* <: /* keyof T */ String */, R /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any */](obj: T, prop: TKey, replacement: R): R = js.native
   
   /**
     * Replaces getter for property on object with replacement argument. Attempts to replace an already replaced getter cause an exception.

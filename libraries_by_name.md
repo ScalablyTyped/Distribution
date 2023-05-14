@@ -4605,7 +4605,6 @@
 | [indefinite-observable](./i/indefinite-observable) |   | - |
 | [indent-string](./i/indent-string) | Indent each line in a string | indent, string, pad, align, line, text, each, every |
 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria | index, array, helper |
-| [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy | - |
 | [inert](./i/inert) | Static file and directory handlers plugin for hapi | file, directory, handler, hapi, plugin |
 | [ineum](./i/ineum) | - | - |
 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f | inferno, performance, framework, interfaces, user interfaces, html, renderToString, server, dom, browser, rollup, vdom |
@@ -6750,6 +6749,7 @@
 | [mem-fs-editor](./m/mem-fs-editor) | File edition helpers working on top of mem-fs | - |
 | [memcached](./m/memcached) | A fully featured Memcached API client, supporting  | InnoDB memcached API, cache, client, cluster, failover, hashing, membase, memcache, memcached, nMemcached, nosql |
 | [memdown](./m/memdown) | An drop-in replacement for LevelDOWN that works in | level, leveldb, leveldown, levelup, memory |
+| [memfs](./m/memfs) | In-memory file-system with Node's fs API. | fs, filesystem, fs.js, memory-fs, memfs, file, file system, mount, memory, in-memory, virtual, test, testing, mock |
 | [memize](./m/memize) | Unabashedly-barebones memoization library with an  | memoize, memoization, memoisation, cache |
 | [memjs](./m/memjs) | A memcache client for node using the binary protoc | cache, memcache, memcached, MemCachier |
 | [memmonit](./m/memmonit) | Library to help monitor operating system memory | memory, monitoring, lib |
@@ -11724,6 +11724,7 @@
 | [vue__reactivity-transform](./v/vue__reactivity-transform) | @vue/reactivity-transform | vue |
 | [vue__runtime-core](./v/vue__runtime-core) | @vue/runtime-core | vue |
 | [vue__runtime-dom](./v/vue__runtime-dom) | @vue/runtime-dom | vue |
+| [vue__server-renderer](./v/vue__server-renderer) | @vue/server-renderer | vue |
 | [vue__shared](./v/vue__shared) | internal utils shared across @vue packages | vue |
 | [vue__test-utils](./v/vue__test-utils) | Component testing utils for Vue 3. | - |
 | [vuedraggable](./v/vuedraggable) | draggable component for vue | vue, vuejs, drag, and, drop, list, Sortable.js, component, nested |

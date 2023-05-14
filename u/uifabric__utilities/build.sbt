@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uifabric__utilities"
-version := "7.38.2-fe6e06"
+version := "7.38.2-ff186a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "18.2-dt-20230506Z-14ab9d",
   "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20221230Z-086cc6",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20230322Z-da1b40",
-  "org.scalablytyped" %%% "sinon" % "10.0-dt-20230417Z-66be90",
+  "org.scalablytyped" %%% "sinon" % "10.0-dt-20230514Z-db3041",
   "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-bc3c2e",
   "org.scalablytyped" %%% "std" % "5.0-e63739",
   "org.scalablytyped" %%% "uifabric__merge-styles" % "7.20.2-4f2ebe")

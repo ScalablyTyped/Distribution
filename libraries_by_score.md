@@ -183,6 +183,7 @@
 | 0.8632317643497559 | [react-error-boundary](./r/react-error-boundary) | Simple reusable React error boundary component
 | 0.8631020492971274 | [luxon](./l/luxon) | Immutable date wrapper
 | 0.8630891073613675 | [cssesc](./c/cssesc) | A JavaScript library for escaping CSS strings and 
+| 0.8628669599103143 | [memfs](./m/memfs) | In-memory file-system with Node's fs API.
 | 0.8628417528444216 | [lodash_dot_camelcase](./l/lodash_dot_camelcase) | The lodash method _.camelCase exported as a module
 | 0.8625558227204242 | [statuses](./s/statuses) | HTTP status utility
 | 0.8625536796567048 | [encodeurl](./e/encodeurl) | Encode a URL to a percent-encoded form, excluding 
@@ -402,6 +403,7 @@
 | 0.840455460414824 | [opentelemetry__core](./o/opentelemetry__core) | OpenTelemetry Core provides constants and utilitie
 | 0.8403088016156286 | [react-spring__rafz](./r/react-spring__rafz) | react-spring's fork of rafz one frameloop to rule 
 | 0.8399517683916281 | [rollup__plugin-babel](./r/rollup__plugin-babel) | Seamless integration between Rollup and Babel.
+| 0.8397810961565887 | [vue__server-renderer](./v/vue__server-renderer) | @vue/server-renderer
 | 0.839719519901774 | [flux](./f/flux) | An application architecture based on a unidirectio
 | 0.8396723202567046 | [mobx](./m/mobx) | Simple, scalable state management.
 | 0.839620197594885 | [aws-sdk__util-config-prov](./a/aws-sdk__util-config-provider) | Utilities package for configuration providers
@@ -4515,7 +4517,6 @@
 | 0.6715263933221988 | [react-dnd__shallowequal](./r/react-dnd__shallowequal) | Like lodash isEqualWith but for shallow equal.
 | 0.6715028593119714 | [moddle](./m/moddle) | A library for importing meta-model based file form
 | 0.6714925649878302 | [cassanknex](./c/cassanknex) | An Apache Cassandra CQL query builder with support
-| 0.6714853737212092 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.6714584335377032 | [jss-plugin-global](./j/jss-plugin-global) | Global styles for JSS
 | 0.6714458699011386 | [progress-stream](./p/progress-stream) | Read the progress of a stream
 | 0.6714229772885696 | [totp-generator](./t/totp-generator) | Generate TOTP tokens from key

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase"
-version := "9.22.0-7fea91"
+version := "9.22.0-f90b13"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__functions" % "0.9.4-67a12d",
   "org.scalablytyped" %%% "firebase__installations" % "0.6.4-264e43",
   "org.scalablytyped" %%% "firebase__logger" % "0.4.0-5ce190",
-  "org.scalablytyped" %%% "firebase__messaging" % "0.12.4-a8cfb0",
+  "org.scalablytyped" %%% "firebase__messaging" % "0.12.4-2a3618",
   "org.scalablytyped" %%% "firebase__messaging-interop-types" % "0.2.0-507fef",
   "org.scalablytyped" %%% "firebase__performance" % "0.6.4-a7890e",
   "org.scalablytyped" %%% "firebase__remote-config" % "0.4.4-6854cc",
@@ -35,7 +35,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "protobufjs" % "7.2.3-99c136",
   "org.scalablytyped" %%% "rollup" % "3.21.7-e69163",
   "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20230429Z-65c886",
-  "org.scalablytyped" %%% "sinon" % "10.0-dt-20230417Z-66be90",
+  "org.scalablytyped" %%% "sinon" % "10.0-dt-20230514Z-db3041",
   "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-bc3c2e",
   "org.scalablytyped" %%% "std" % "5.0-e63739",
   "org.scalablytyped" %%% "trusted-types" % "2.0-dt-20230214Z-8c8094",

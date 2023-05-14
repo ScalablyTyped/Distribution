@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__messaging"
-version := "0.12.4-a8cfb0"
+version := "0.12.4-2a3618"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__component" % "0.6.4-b93592",
   "org.scalablytyped" %%% "firebase__logger" % "0.4.0-5ce190",
   "org.scalablytyped" %%% "firebase__util" % "1.9.3-ed4cef",
-  "org.scalablytyped" %%% "sinon" % "10.0-dt-20230417Z-66be90",
+  "org.scalablytyped" %%% "sinon" % "10.0-dt-20230514Z-db3041",
   "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-bc3c2e",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

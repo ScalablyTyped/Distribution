@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "karma-chai-sinon"
-version := "0.1.5-dt-20220818Z-dd81df"
+version := "0.1.5-dt-20220818Z-f3b289"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "chai" % "4.3-dt-20230429Z-6db631",
-  "org.scalablytyped" %%% "sinon" % "10.0-dt-20230417Z-66be90",
+  "org.scalablytyped" %%% "sinon" % "10.0-dt-20230514Z-db3041",
   "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-bc3c2e",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

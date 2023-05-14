@@ -3840,7 +3840,6 @@
 | 0.0 | [indefinite-observable](./i/indefinite-observable) |  
 | 0.0 | [indent-string](./i/indent-string) | Indent each line in a string
 | 0.0 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria
-| 0.0 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.0 | [inert](./i/inert) | Static file and directory handlers plugin for hapi
 | 0.0 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f
 | 0.0 | [inferno-clone-vnode](./i/inferno-clone-vnode) | provides helper function to clone Inferno's vNodes
@@ -5855,6 +5854,7 @@
 | 0.0 | [mem-fs-editor](./m/mem-fs-editor) | File edition helpers working on top of mem-fs
 | 0.0 | [memcached](./m/memcached) | A fully featured Memcached API client, supporting 
 | 0.0 | [memdown](./m/memdown) | An drop-in replacement for LevelDOWN that works in
+| 0.0 | [memfs](./m/memfs) | In-memory file-system with Node's fs API.
 | 0.0 | [memize](./m/memize) | Unabashedly-barebones memoization library with an 
 | 0.0 | [memjs](./m/memjs) | A memcache client for node using the binary protoc
 | 0.0 | [memmonit](./m/memmonit) | Library to help monitor operating system memory
@@ -10649,6 +10649,7 @@
 | 0.0 | [vue__reactivity-transform](./v/vue__reactivity-transform) | @vue/reactivity-transform
 | 0.0 | [vue__runtime-core](./v/vue__runtime-core) | @vue/runtime-core
 | 0.0 | [vue__runtime-dom](./v/vue__runtime-dom) | @vue/runtime-dom
+| 0.0 | [vue__server-renderer](./v/vue__server-renderer) | @vue/server-renderer
 | 0.0 | [vue__shared](./v/vue__shared) | internal utils shared across @vue packages
 | 0.0 | [vue__test-utils](./v/vue__test-utils) | Component testing utils for Vue 3.
 | 0.0 | [vuedraggable](./v/vuedraggable) | draggable component for vue
