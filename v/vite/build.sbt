@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "vite"
-version := "4.3.5-f5a6ab"
+version := "4.3.5-82e001"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "esbuild" % "0.17.19-caf655",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "postcss" % "8.4.23-a62f41",
-  "org.scalablytyped" %%% "rollup" % "3.21.6-dbf5a5",
+  "org.scalablytyped" %%% "rollup" % "3.21.7-e69163",
   "org.scalablytyped" %%% "source-map-js" % "1.0.2-781ad1",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

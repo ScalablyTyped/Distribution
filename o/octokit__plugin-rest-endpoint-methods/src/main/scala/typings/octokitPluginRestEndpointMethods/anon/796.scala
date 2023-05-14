@@ -23,15 +23,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `796` extends StObject {
   
   def apply(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/ssh_signing_keys']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}']['response'] */ js.Any
   ] = js.native
   def apply(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/ssh_signing_keys']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/ssh_signing_keys']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}']['response'] */ js.Any
   ] = js.native
   
   def defaults[O /* <: RequestParameters */](newDefaults: O): RequestInterface[O] = js.native

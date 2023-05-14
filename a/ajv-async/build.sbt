@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ajv-async"
-version := "1.0-dt-20211202Z-83e402"
+version := "1.0-dt-20211202Z-eba5f9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.12.0-6bf940",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
-  "org.scalablytyped" %%% "re2" % "1.18.0-0ff8d6",
+  "org.scalablytyped" %%% "ajv" % "8.12.0-aebde1",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
+  "org.scalablytyped" %%% "re2" % "1.18.0-6019fb",
   "org.scalablytyped" %%% "std" % "5.0-e63739",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-347272")
 publishArtifact in packageDoc := false

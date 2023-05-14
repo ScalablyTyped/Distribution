@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "soap"
-version := "1.0.0-e2f4d3"
+version := "1.0.0-816456"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "axios" % "1.4.0-2899cc",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
-  "org.scalablytyped" %%% "sax" % "1.2-dt-20220329Z-fd2eb3",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
+  "org.scalablytyped" %%% "sax" % "1.2-dt-20220329Z-3ac886",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

@@ -1,7 +1,7 @@
 
 # Scala.js typings for gridstack
 
-Typings are for version 8.1.0
+Typings are for version 8.1.1
 
 ## Library description:
 TypeScript/JS lib for dashboard layout and creation, responsive, mobile support, no external dependencies, with many wrappers (React, Angular, Vue, Ember, knockout...)

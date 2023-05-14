@@ -1,7 +1,7 @@
 
 # Scala.js typings for cross-platform-terminal-characters
 
-Typings are for version 3.3.0
+Typings are for version 4.0.0
 
 ## Library description:
 All the characters that work on most terminals

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "redis__search"
-version := "1.1.2-be1b94"
+version := "1.1.2-34cac6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "generic-pool" % "3.9.0-8a7ed5",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
-  "org.scalablytyped" %%% "redis__client" % "1.5.7-cb7314",
+  "org.scalablytyped" %%% "generic-pool" % "3.9.0-62ade9",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
+  "org.scalablytyped" %%% "redis__client" % "1.5.7-761cf5",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

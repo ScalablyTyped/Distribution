@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "set-error-message" : "1.5.0"
+      "set-error-message" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "set-error-message" : "1.5.0"
+      "set-error-message" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

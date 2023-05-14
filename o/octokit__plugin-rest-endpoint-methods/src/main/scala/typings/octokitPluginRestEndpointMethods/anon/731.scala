@@ -23,15 +23,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `731` extends StObject {
   
   def apply(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /enterprises/{enterprise}/code_security_and_analysis']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['response'] */ js.Any
   ] = js.native
   def apply(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /enterprises/{enterprise}/code_security_and_analysis']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /enterprises/{enterprise}/code_security_and_analysis']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['response'] */ js.Any
   ] = js.native
   
   def defaults[O /* <: RequestParameters */](newDefaults: O): RequestInterface[O] = js.native

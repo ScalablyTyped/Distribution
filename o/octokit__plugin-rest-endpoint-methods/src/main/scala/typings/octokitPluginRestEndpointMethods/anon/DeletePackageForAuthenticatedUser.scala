@@ -35,7 +35,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("deletePackageForAuthenticatedUser")
-  var deletePackageForAuthenticatedUser_Original: `449`
+  var deletePackageForAuthenticatedUser_Original: `464`
   
   /**
     * Deletes an entire package in an organization. You cannot delete a public package if any version of the package has more than 5,000 downloads. In this scenario, contact GitHub support for further assistance.
@@ -63,7 +63,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * - If the `package_type` belongs to a GitHub Packages registry that supports granular permissions, you must have admin permissions to the package you want to delete. For the list of these registries, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#granular-permissions-for-userorganization-scoped-packages)."
     */
   @JSName("deletePackageForOrg")
-  var deletePackageForOrg_Original: `450`
+  var deletePackageForOrg_Original: `465`
   
   /**
     * Deletes an entire package for a user. You cannot delete a public package if any version of the package has more than 5,000 downloads. In this scenario, contact GitHub support for further assistance.
@@ -91,7 +91,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * - If the `package_type` belongs to a GitHub Packages registry that supports granular permissions, you must have admin permissions to the package you want to delete. For the list of these registries, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#granular-permissions-for-userorganization-scoped-packages)."
     */
   @JSName("deletePackageForUser")
-  var deletePackageForUser_Original: `451`
+  var deletePackageForUser_Original: `466`
   
   /**
     * Deletes a specific package version for a package owned by the authenticated user.  If the package is public and the package version has more than 5,000 downloads, you cannot delete the package version. In this scenario, contact GitHub support for further assistance.
@@ -117,7 +117,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("deletePackageVersionForAuthenticatedUser")
-  var deletePackageVersionForAuthenticatedUser_Original: `452`
+  var deletePackageVersionForAuthenticatedUser_Original: `467`
   
   /**
     * Deletes a specific package version in an organization. If the package is public and the package version has more than 5,000 downloads, you cannot delete the package version. In this scenario, contact GitHub support for further assistance.
@@ -145,7 +145,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * - If the `package_type` belongs to a GitHub Packages registry that supports granular permissions, you must have admin permissions to the package whose version you want to delete. For the list of these registries, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#granular-permissions-for-userorganization-scoped-packages)."
     */
   @JSName("deletePackageVersionForOrg")
-  var deletePackageVersionForOrg_Original: `453`
+  var deletePackageVersionForOrg_Original: `468`
   
   /**
     * Deletes a specific package version for a user. If the package is public and the package version has more than 5,000 downloads, you cannot delete the package version. In this scenario, contact GitHub support for further assistance.
@@ -173,7 +173,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * - If the `package_type` belongs to a GitHub Packages registry that supports granular permissions, you must have admin permissions to the package whose version you want to delete. For the list of these registries, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#granular-permissions-for-userorganization-scoped-packages)."
     */
   @JSName("deletePackageVersionForUser")
-  var deletePackageVersionForUser_Original: `454`
+  var deletePackageVersionForUser_Original: `469`
   
   /**
     * Lists package versions for a package owned by an organization.
@@ -199,7 +199,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * @deprecated octokit.rest.packages.getAllPackageVersionsForAPackageOwnedByAnOrg() has been renamed to octokit.rest.packages.getAllPackageVersionsForPackageOwnedByOrg() (2021-03-24)
     */
   @JSName("getAllPackageVersionsForAPackageOwnedByAnOrg")
-  var getAllPackageVersionsForAPackageOwnedByAnOrg_Original: `455`
+  var getAllPackageVersionsForAPackageOwnedByAnOrg_Original: `470`
   
   /**
     * Lists package versions for a package owned by the authenticated user.
@@ -225,7 +225,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * @deprecated octokit.rest.packages.getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser() has been renamed to octokit.rest.packages.getAllPackageVersionsForPackageOwnedByAuthenticatedUser() (2021-03-24)
     */
   @JSName("getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser")
-  var getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser_Original: `456`
+  var getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser_Original: `471`
   
   /**
     * Lists package versions for a package owned by the authenticated user.
@@ -249,7 +249,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * To use this endpoint, you must authenticate using an access token with the `read:packages` scope. If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("getAllPackageVersionsForPackageOwnedByAuthenticatedUser")
-  var getAllPackageVersionsForPackageOwnedByAuthenticatedUser_Original: `456`
+  var getAllPackageVersionsForPackageOwnedByAuthenticatedUser_Original: `471`
   
   /**
     * Lists package versions for a package owned by an organization.
@@ -273,7 +273,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("getAllPackageVersionsForPackageOwnedByOrg")
-  var getAllPackageVersionsForPackageOwnedByOrg_Original: `455`
+  var getAllPackageVersionsForPackageOwnedByOrg_Original: `470`
   
   /**
     * Lists package versions for a public package owned by a specified user.
@@ -297,7 +297,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * To use this endpoint, you must authenticate using an access token with the `read:packages` scope. If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("getAllPackageVersionsForPackageOwnedByUser")
-  var getAllPackageVersionsForPackageOwnedByUser_Original: `457`
+  var getAllPackageVersionsForPackageOwnedByUser_Original: `472`
   
   /**
     * Gets a specific package for a package owned by the authenticated user.
@@ -321,7 +321,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * To use this endpoint, you must authenticate using an access token with the `read:packages` scope. If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("getPackageForAuthenticatedUser")
-  var getPackageForAuthenticatedUser_Original: `458`
+  var getPackageForAuthenticatedUser_Original: `473`
   
   /**
     * Gets a specific package in an organization.
@@ -345,7 +345,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * To use this endpoint, you must authenticate using an access token with the `read:packages` scope. If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("getPackageForOrganization")
-  var getPackageForOrganization_Original: `459`
+  var getPackageForOrganization_Original: `474`
   
   /**
     * Gets a specific package metadata for a public package owned by a user.
@@ -369,7 +369,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * To use this endpoint, you must authenticate using an access token with the `read:packages` scope. If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("getPackageForUser")
-  var getPackageForUser_Original: `460`
+  var getPackageForUser_Original: `475`
   
   /**
     * Gets a specific package version for a package owned by the authenticated user.
@@ -393,7 +393,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * To use this endpoint, you must authenticate using an access token with the `read:packages` scope. If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("getPackageVersionForAuthenticatedUser")
-  var getPackageVersionForAuthenticatedUser_Original: `461`
+  var getPackageVersionForAuthenticatedUser_Original: `476`
   
   /**
     * Gets a specific package version in an organization.
@@ -417,7 +417,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * You must authenticate using an access token with the `read:packages` scope. If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("getPackageVersionForOrganization")
-  var getPackageVersionForOrganization_Original: `462`
+  var getPackageVersionForOrganization_Original: `477`
   
   /**
     * Gets a specific package version for a public package owned by a specified user.
@@ -441,7 +441,73 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * At this time, to use this endpoint, you must authenticate using an access token with the `read:packages` scope. If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("getPackageVersionForUser")
-  var getPackageVersionForUser_Original: `463`
+  var getPackageVersionForUser_Original: `478`
+  
+  /**
+    * Lists all packages that are owned by the authenticated user within the user's namespace, and that encountered a conflict during a Docker migration.
+    * To use this endpoint, you must authenticate using an access token with the `read:packages` scope.
+    */
+  def listDockerMigrationConflictingPackagesForAuthenticatedUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/docker/conflicts']['response'] */ js.Any
+  ]
+  def listDockerMigrationConflictingPackagesForAuthenticatedUser(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/docker/conflicts']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/docker/conflicts']['response'] */ js.Any
+  ]
+  /**
+    * Lists all packages that are owned by the authenticated user within the user's namespace, and that encountered a conflict during a Docker migration.
+    * To use this endpoint, you must authenticate using an access token with the `read:packages` scope.
+    */
+  @JSName("listDockerMigrationConflictingPackagesForAuthenticatedUser")
+  var listDockerMigrationConflictingPackagesForAuthenticatedUser_Original: `479`
+  
+  /**
+    * Lists all packages that are in a specific organization, are readable by the requesting user, and that encountered a conflict during a Docker migration.
+    * To use this endpoint, you must authenticate using an access token with the `read:packages` scope.
+    */
+  def listDockerMigrationConflictingPackagesForOrganization(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/docker/conflicts']['response'] */ js.Any
+  ]
+  def listDockerMigrationConflictingPackagesForOrganization(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/docker/conflicts']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/docker/conflicts']['response'] */ js.Any
+  ]
+  /**
+    * Lists all packages that are in a specific organization, are readable by the requesting user, and that encountered a conflict during a Docker migration.
+    * To use this endpoint, you must authenticate using an access token with the `read:packages` scope.
+    */
+  @JSName("listDockerMigrationConflictingPackagesForOrganization")
+  var listDockerMigrationConflictingPackagesForOrganization_Original: `480`
+  
+  /**
+    * Lists all packages that are in a specific user's namespace, that the requesting user has access to, and that encountered a conflict during Docker migration.
+    * To use this endpoint, you must authenticate using an access token with the `read:packages` scope.
+    */
+  def listDockerMigrationConflictingPackagesForUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/docker/conflicts']['response'] */ js.Any
+  ]
+  def listDockerMigrationConflictingPackagesForUser(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/docker/conflicts']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/docker/conflicts']['response'] */ js.Any
+  ]
+  /**
+    * Lists all packages that are in a specific user's namespace, that the requesting user has access to, and that encountered a conflict during Docker migration.
+    * To use this endpoint, you must authenticate using an access token with the `read:packages` scope.
+    */
+  @JSName("listDockerMigrationConflictingPackagesForUser")
+  var listDockerMigrationConflictingPackagesForUser_Original: `481`
   
   /**
     * Lists packages owned by the authenticated user within the user's namespace.
@@ -465,10 +531,10 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * To use this endpoint, you must authenticate using an access token with the `read:packages` scope. If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("listPackagesForAuthenticatedUser")
-  var listPackagesForAuthenticatedUser_Original: `464`
+  var listPackagesForAuthenticatedUser_Original: `482`
   
   /**
-    * Lists all packages in an organization readable by the user.
+    * Lists packages in an organization readable by the user.
     *
     * To use this endpoint, you must authenticate using an access token with the `read:packages` scope. If the `package_type` belongs to a registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
@@ -484,12 +550,12 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/packages']['response'] */ js.Any
   ]
   /**
-    * Lists all packages in an organization readable by the user.
+    * Lists packages in an organization readable by the user.
     *
     * To use this endpoint, you must authenticate using an access token with the `read:packages` scope. If the `package_type` belongs to a registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("listPackagesForOrganization")
-  var listPackagesForOrganization_Original: `465`
+  var listPackagesForOrganization_Original: `483`
   
   /**
     * Lists all packages in a user's namespace for which the requesting user has access.
@@ -513,7 +579,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * To use this endpoint, you must authenticate using an access token with the `read:packages` scope. If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("listPackagesForUser")
-  var listPackagesForUser_Original: `466`
+  var listPackagesForUser_Original: `484`
   
   /**
     * Restores a package owned by the authenticated user.
@@ -545,7 +611,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * To use this endpoint, you must authenticate using an access token with the `read:packages` and `write:packages` scopes. If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("restorePackageForAuthenticatedUser")
-  var restorePackageForAuthenticatedUser_Original: `467`
+  var restorePackageForAuthenticatedUser_Original: `485`
   
   /**
     * Restores an entire package in an organization.
@@ -581,7 +647,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * - If the `package_type` belongs to a GitHub Packages registry that supports granular permissions, you must have admin permissions to the package you want to restore. For the list of these registries, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#granular-permissions-for-userorganization-scoped-packages)."
     */
   @JSName("restorePackageForOrg")
-  var restorePackageForOrg_Original: `468`
+  var restorePackageForOrg_Original: `486`
   
   /**
     * Restores an entire package for a user.
@@ -617,7 +683,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * - If the `package_type` belongs to a GitHub Packages registry that supports granular permissions, you must have admin permissions to the package you want to restore. For the list of these registries, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#granular-permissions-for-userorganization-scoped-packages)."
     */
   @JSName("restorePackageForUser")
-  var restorePackageForUser_Original: `469`
+  var restorePackageForUser_Original: `487`
   
   /**
     * Restores a package version owned by the authenticated user.
@@ -649,7 +715,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * To use this endpoint, you must authenticate using an access token with the `read:packages` and `write:packages` scopes. If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   @JSName("restorePackageVersionForAuthenticatedUser")
-  var restorePackageVersionForAuthenticatedUser_Original: `470`
+  var restorePackageVersionForAuthenticatedUser_Original: `488`
   
   /**
     * Restores a specific package version in an organization.
@@ -685,7 +751,7 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * - If the `package_type` belongs to a GitHub Packages registry that supports granular permissions, you must have admin permissions to the package whose version you want to restore. For the list of these registries, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#granular-permissions-for-userorganization-scoped-packages)."
     */
   @JSName("restorePackageVersionForOrg")
-  var restorePackageVersionForOrg_Original: `471`
+  var restorePackageVersionForOrg_Original: `489`
   
   /**
     * Restores a specific package version for a user.
@@ -721,95 +787,104 @@ trait DeletePackageForAuthenticatedUser extends StObject {
     * - If the `package_type` belongs to a GitHub Packages registry that supports granular permissions, you must have admin permissions to the package whose version you want to restore. For the list of these registries, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#granular-permissions-for-userorganization-scoped-packages)."
     */
   @JSName("restorePackageVersionForUser")
-  var restorePackageVersionForUser_Original: `472`
+  var restorePackageVersionForUser_Original: `490`
 }
 object DeletePackageForAuthenticatedUser {
   
   inline def apply(
-    deletePackageForAuthenticatedUser: `449`,
-    deletePackageForOrg: `450`,
-    deletePackageForUser: `451`,
-    deletePackageVersionForAuthenticatedUser: `452`,
-    deletePackageVersionForOrg: `453`,
-    deletePackageVersionForUser: `454`,
-    getAllPackageVersionsForAPackageOwnedByAnOrg: `455`,
-    getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser: `456`,
-    getAllPackageVersionsForPackageOwnedByAuthenticatedUser: `456`,
-    getAllPackageVersionsForPackageOwnedByOrg: `455`,
-    getAllPackageVersionsForPackageOwnedByUser: `457`,
-    getPackageForAuthenticatedUser: `458`,
-    getPackageForOrganization: `459`,
-    getPackageForUser: `460`,
-    getPackageVersionForAuthenticatedUser: `461`,
-    getPackageVersionForOrganization: `462`,
-    getPackageVersionForUser: `463`,
-    listPackagesForAuthenticatedUser: `464`,
-    listPackagesForOrganization: `465`,
-    listPackagesForUser: `466`,
-    restorePackageForAuthenticatedUser: `467`,
-    restorePackageForOrg: `468`,
-    restorePackageForUser: `469`,
-    restorePackageVersionForAuthenticatedUser: `470`,
-    restorePackageVersionForOrg: `471`,
-    restorePackageVersionForUser: `472`
+    deletePackageForAuthenticatedUser: `464`,
+    deletePackageForOrg: `465`,
+    deletePackageForUser: `466`,
+    deletePackageVersionForAuthenticatedUser: `467`,
+    deletePackageVersionForOrg: `468`,
+    deletePackageVersionForUser: `469`,
+    getAllPackageVersionsForAPackageOwnedByAnOrg: `470`,
+    getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser: `471`,
+    getAllPackageVersionsForPackageOwnedByAuthenticatedUser: `471`,
+    getAllPackageVersionsForPackageOwnedByOrg: `470`,
+    getAllPackageVersionsForPackageOwnedByUser: `472`,
+    getPackageForAuthenticatedUser: `473`,
+    getPackageForOrganization: `474`,
+    getPackageForUser: `475`,
+    getPackageVersionForAuthenticatedUser: `476`,
+    getPackageVersionForOrganization: `477`,
+    getPackageVersionForUser: `478`,
+    listDockerMigrationConflictingPackagesForAuthenticatedUser: `479`,
+    listDockerMigrationConflictingPackagesForOrganization: `480`,
+    listDockerMigrationConflictingPackagesForUser: `481`,
+    listPackagesForAuthenticatedUser: `482`,
+    listPackagesForOrganization: `483`,
+    listPackagesForUser: `484`,
+    restorePackageForAuthenticatedUser: `485`,
+    restorePackageForOrg: `486`,
+    restorePackageForUser: `487`,
+    restorePackageVersionForAuthenticatedUser: `488`,
+    restorePackageVersionForOrg: `489`,
+    restorePackageVersionForUser: `490`
   ): DeletePackageForAuthenticatedUser = {
-    val __obj = js.Dynamic.literal(deletePackageForAuthenticatedUser = deletePackageForAuthenticatedUser.asInstanceOf[js.Any], deletePackageForOrg = deletePackageForOrg.asInstanceOf[js.Any], deletePackageForUser = deletePackageForUser.asInstanceOf[js.Any], deletePackageVersionForAuthenticatedUser = deletePackageVersionForAuthenticatedUser.asInstanceOf[js.Any], deletePackageVersionForOrg = deletePackageVersionForOrg.asInstanceOf[js.Any], deletePackageVersionForUser = deletePackageVersionForUser.asInstanceOf[js.Any], getAllPackageVersionsForAPackageOwnedByAnOrg = getAllPackageVersionsForAPackageOwnedByAnOrg.asInstanceOf[js.Any], getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser = getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser.asInstanceOf[js.Any], getAllPackageVersionsForPackageOwnedByAuthenticatedUser = getAllPackageVersionsForPackageOwnedByAuthenticatedUser.asInstanceOf[js.Any], getAllPackageVersionsForPackageOwnedByOrg = getAllPackageVersionsForPackageOwnedByOrg.asInstanceOf[js.Any], getAllPackageVersionsForPackageOwnedByUser = getAllPackageVersionsForPackageOwnedByUser.asInstanceOf[js.Any], getPackageForAuthenticatedUser = getPackageForAuthenticatedUser.asInstanceOf[js.Any], getPackageForOrganization = getPackageForOrganization.asInstanceOf[js.Any], getPackageForUser = getPackageForUser.asInstanceOf[js.Any], getPackageVersionForAuthenticatedUser = getPackageVersionForAuthenticatedUser.asInstanceOf[js.Any], getPackageVersionForOrganization = getPackageVersionForOrganization.asInstanceOf[js.Any], getPackageVersionForUser = getPackageVersionForUser.asInstanceOf[js.Any], listPackagesForAuthenticatedUser = listPackagesForAuthenticatedUser.asInstanceOf[js.Any], listPackagesForOrganization = listPackagesForOrganization.asInstanceOf[js.Any], listPackagesForUser = listPackagesForUser.asInstanceOf[js.Any], restorePackageForAuthenticatedUser = restorePackageForAuthenticatedUser.asInstanceOf[js.Any], restorePackageForOrg = restorePackageForOrg.asInstanceOf[js.Any], restorePackageForUser = restorePackageForUser.asInstanceOf[js.Any], restorePackageVersionForAuthenticatedUser = restorePackageVersionForAuthenticatedUser.asInstanceOf[js.Any], restorePackageVersionForOrg = restorePackageVersionForOrg.asInstanceOf[js.Any], restorePackageVersionForUser = restorePackageVersionForUser.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deletePackageForAuthenticatedUser = deletePackageForAuthenticatedUser.asInstanceOf[js.Any], deletePackageForOrg = deletePackageForOrg.asInstanceOf[js.Any], deletePackageForUser = deletePackageForUser.asInstanceOf[js.Any], deletePackageVersionForAuthenticatedUser = deletePackageVersionForAuthenticatedUser.asInstanceOf[js.Any], deletePackageVersionForOrg = deletePackageVersionForOrg.asInstanceOf[js.Any], deletePackageVersionForUser = deletePackageVersionForUser.asInstanceOf[js.Any], getAllPackageVersionsForAPackageOwnedByAnOrg = getAllPackageVersionsForAPackageOwnedByAnOrg.asInstanceOf[js.Any], getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser = getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser.asInstanceOf[js.Any], getAllPackageVersionsForPackageOwnedByAuthenticatedUser = getAllPackageVersionsForPackageOwnedByAuthenticatedUser.asInstanceOf[js.Any], getAllPackageVersionsForPackageOwnedByOrg = getAllPackageVersionsForPackageOwnedByOrg.asInstanceOf[js.Any], getAllPackageVersionsForPackageOwnedByUser = getAllPackageVersionsForPackageOwnedByUser.asInstanceOf[js.Any], getPackageForAuthenticatedUser = getPackageForAuthenticatedUser.asInstanceOf[js.Any], getPackageForOrganization = getPackageForOrganization.asInstanceOf[js.Any], getPackageForUser = getPackageForUser.asInstanceOf[js.Any], getPackageVersionForAuthenticatedUser = getPackageVersionForAuthenticatedUser.asInstanceOf[js.Any], getPackageVersionForOrganization = getPackageVersionForOrganization.asInstanceOf[js.Any], getPackageVersionForUser = getPackageVersionForUser.asInstanceOf[js.Any], listDockerMigrationConflictingPackagesForAuthenticatedUser = listDockerMigrationConflictingPackagesForAuthenticatedUser.asInstanceOf[js.Any], listDockerMigrationConflictingPackagesForOrganization = listDockerMigrationConflictingPackagesForOrganization.asInstanceOf[js.Any], listDockerMigrationConflictingPackagesForUser = listDockerMigrationConflictingPackagesForUser.asInstanceOf[js.Any], listPackagesForAuthenticatedUser = listPackagesForAuthenticatedUser.asInstanceOf[js.Any], listPackagesForOrganization = listPackagesForOrganization.asInstanceOf[js.Any], listPackagesForUser = listPackagesForUser.asInstanceOf[js.Any], restorePackageForAuthenticatedUser = restorePackageForAuthenticatedUser.asInstanceOf[js.Any], restorePackageForOrg = restorePackageForOrg.asInstanceOf[js.Any], restorePackageForUser = restorePackageForUser.asInstanceOf[js.Any], restorePackageVersionForAuthenticatedUser = restorePackageVersionForAuthenticatedUser.asInstanceOf[js.Any], restorePackageVersionForOrg = restorePackageVersionForOrg.asInstanceOf[js.Any], restorePackageVersionForUser = restorePackageVersionForUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePackageForAuthenticatedUser]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: DeletePackageForAuthenticatedUser] (val x: Self) extends AnyVal {
     
-    inline def setDeletePackageForAuthenticatedUser(value: `449`): Self = StObject.set(x, "deletePackageForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setDeletePackageForAuthenticatedUser(value: `464`): Self = StObject.set(x, "deletePackageForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setDeletePackageForOrg(value: `450`): Self = StObject.set(x, "deletePackageForOrg", value.asInstanceOf[js.Any])
+    inline def setDeletePackageForOrg(value: `465`): Self = StObject.set(x, "deletePackageForOrg", value.asInstanceOf[js.Any])
     
-    inline def setDeletePackageForUser(value: `451`): Self = StObject.set(x, "deletePackageForUser", value.asInstanceOf[js.Any])
+    inline def setDeletePackageForUser(value: `466`): Self = StObject.set(x, "deletePackageForUser", value.asInstanceOf[js.Any])
     
-    inline def setDeletePackageVersionForAuthenticatedUser(value: `452`): Self = StObject.set(x, "deletePackageVersionForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setDeletePackageVersionForAuthenticatedUser(value: `467`): Self = StObject.set(x, "deletePackageVersionForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setDeletePackageVersionForOrg(value: `453`): Self = StObject.set(x, "deletePackageVersionForOrg", value.asInstanceOf[js.Any])
+    inline def setDeletePackageVersionForOrg(value: `468`): Self = StObject.set(x, "deletePackageVersionForOrg", value.asInstanceOf[js.Any])
     
-    inline def setDeletePackageVersionForUser(value: `454`): Self = StObject.set(x, "deletePackageVersionForUser", value.asInstanceOf[js.Any])
+    inline def setDeletePackageVersionForUser(value: `469`): Self = StObject.set(x, "deletePackageVersionForUser", value.asInstanceOf[js.Any])
     
-    inline def setGetAllPackageVersionsForAPackageOwnedByAnOrg(value: `455`): Self = StObject.set(x, "getAllPackageVersionsForAPackageOwnedByAnOrg", value.asInstanceOf[js.Any])
+    inline def setGetAllPackageVersionsForAPackageOwnedByAnOrg(value: `470`): Self = StObject.set(x, "getAllPackageVersionsForAPackageOwnedByAnOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser(value: `456`): Self = StObject.set(x, "getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser(value: `471`): Self = StObject.set(x, "getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetAllPackageVersionsForPackageOwnedByAuthenticatedUser(value: `456`): Self = StObject.set(x, "getAllPackageVersionsForPackageOwnedByAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetAllPackageVersionsForPackageOwnedByAuthenticatedUser(value: `471`): Self = StObject.set(x, "getAllPackageVersionsForPackageOwnedByAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetAllPackageVersionsForPackageOwnedByOrg(value: `455`): Self = StObject.set(x, "getAllPackageVersionsForPackageOwnedByOrg", value.asInstanceOf[js.Any])
+    inline def setGetAllPackageVersionsForPackageOwnedByOrg(value: `470`): Self = StObject.set(x, "getAllPackageVersionsForPackageOwnedByOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetAllPackageVersionsForPackageOwnedByUser(value: `457`): Self = StObject.set(x, "getAllPackageVersionsForPackageOwnedByUser", value.asInstanceOf[js.Any])
+    inline def setGetAllPackageVersionsForPackageOwnedByUser(value: `472`): Self = StObject.set(x, "getAllPackageVersionsForPackageOwnedByUser", value.asInstanceOf[js.Any])
     
-    inline def setGetPackageForAuthenticatedUser(value: `458`): Self = StObject.set(x, "getPackageForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetPackageForAuthenticatedUser(value: `473`): Self = StObject.set(x, "getPackageForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetPackageForOrganization(value: `459`): Self = StObject.set(x, "getPackageForOrganization", value.asInstanceOf[js.Any])
+    inline def setGetPackageForOrganization(value: `474`): Self = StObject.set(x, "getPackageForOrganization", value.asInstanceOf[js.Any])
     
-    inline def setGetPackageForUser(value: `460`): Self = StObject.set(x, "getPackageForUser", value.asInstanceOf[js.Any])
+    inline def setGetPackageForUser(value: `475`): Self = StObject.set(x, "getPackageForUser", value.asInstanceOf[js.Any])
     
-    inline def setGetPackageVersionForAuthenticatedUser(value: `461`): Self = StObject.set(x, "getPackageVersionForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetPackageVersionForAuthenticatedUser(value: `476`): Self = StObject.set(x, "getPackageVersionForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetPackageVersionForOrganization(value: `462`): Self = StObject.set(x, "getPackageVersionForOrganization", value.asInstanceOf[js.Any])
+    inline def setGetPackageVersionForOrganization(value: `477`): Self = StObject.set(x, "getPackageVersionForOrganization", value.asInstanceOf[js.Any])
     
-    inline def setGetPackageVersionForUser(value: `463`): Self = StObject.set(x, "getPackageVersionForUser", value.asInstanceOf[js.Any])
+    inline def setGetPackageVersionForUser(value: `478`): Self = StObject.set(x, "getPackageVersionForUser", value.asInstanceOf[js.Any])
     
-    inline def setListPackagesForAuthenticatedUser(value: `464`): Self = StObject.set(x, "listPackagesForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListDockerMigrationConflictingPackagesForAuthenticatedUser(value: `479`): Self = StObject.set(x, "listDockerMigrationConflictingPackagesForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListPackagesForOrganization(value: `465`): Self = StObject.set(x, "listPackagesForOrganization", value.asInstanceOf[js.Any])
+    inline def setListDockerMigrationConflictingPackagesForOrganization(value: `480`): Self = StObject.set(x, "listDockerMigrationConflictingPackagesForOrganization", value.asInstanceOf[js.Any])
     
-    inline def setListPackagesForUser(value: `466`): Self = StObject.set(x, "listPackagesForUser", value.asInstanceOf[js.Any])
+    inline def setListDockerMigrationConflictingPackagesForUser(value: `481`): Self = StObject.set(x, "listDockerMigrationConflictingPackagesForUser", value.asInstanceOf[js.Any])
     
-    inline def setRestorePackageForAuthenticatedUser(value: `467`): Self = StObject.set(x, "restorePackageForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListPackagesForAuthenticatedUser(value: `482`): Self = StObject.set(x, "listPackagesForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setRestorePackageForOrg(value: `468`): Self = StObject.set(x, "restorePackageForOrg", value.asInstanceOf[js.Any])
+    inline def setListPackagesForOrganization(value: `483`): Self = StObject.set(x, "listPackagesForOrganization", value.asInstanceOf[js.Any])
     
-    inline def setRestorePackageForUser(value: `469`): Self = StObject.set(x, "restorePackageForUser", value.asInstanceOf[js.Any])
+    inline def setListPackagesForUser(value: `484`): Self = StObject.set(x, "listPackagesForUser", value.asInstanceOf[js.Any])
     
-    inline def setRestorePackageVersionForAuthenticatedUser(value: `470`): Self = StObject.set(x, "restorePackageVersionForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setRestorePackageForAuthenticatedUser(value: `485`): Self = StObject.set(x, "restorePackageForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setRestorePackageVersionForOrg(value: `471`): Self = StObject.set(x, "restorePackageVersionForOrg", value.asInstanceOf[js.Any])
+    inline def setRestorePackageForOrg(value: `486`): Self = StObject.set(x, "restorePackageForOrg", value.asInstanceOf[js.Any])
     
-    inline def setRestorePackageVersionForUser(value: `472`): Self = StObject.set(x, "restorePackageVersionForUser", value.asInstanceOf[js.Any])
+    inline def setRestorePackageForUser(value: `487`): Self = StObject.set(x, "restorePackageForUser", value.asInstanceOf[js.Any])
+    
+    inline def setRestorePackageVersionForAuthenticatedUser(value: `488`): Self = StObject.set(x, "restorePackageVersionForAuthenticatedUser", value.asInstanceOf[js.Any])
+    
+    inline def setRestorePackageVersionForOrg(value: `489`): Self = StObject.set(x, "restorePackageVersionForOrg", value.asInstanceOf[js.Any])
+    
+    inline def setRestorePackageVersionForUser(value: `490`): Self = StObject.set(x, "restorePackageVersionForUser", value.asInstanceOf[js.Any])
   }
 }

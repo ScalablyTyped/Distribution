@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "string-left-right" : "6.0.11"
+      "string-left-right" : "6.0.12"
     }
   ],
   "test-dependencies" : [
     {
-      "string-left-right" : "6.0.11"
+      "string-left-right" : "6.0.12"
     }
   ],
   "compile-devDependencies" : [

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "sass-true"
-version := "6.0-dt-20230303Z-248ea8"
+version := "6.0-dt-20230303Z-c3c34a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "immutable" % "4.3.0-1850ed",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
-  "org.scalablytyped" %%% "sass" % "1.62.1-032242",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
+  "org.scalablytyped" %%% "sass" % "1.62.1-71632a",
   "org.scalablytyped" %%% "source-map-js" % "1.0.2-781ad1",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

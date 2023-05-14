@@ -1,7 +1,7 @@
 
 # Scala.js typings for ranges-push
 
-Typings are for version 7.0.8
+Typings are for version 7.0.9
 
 ## Library description:
 Gather string index ranges

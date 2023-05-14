@@ -9,7 +9,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Get525 extends StObject {
+trait Get543 extends StObject {
   
   /**
     * **Note:** Accessing this endpoint does not count against your REST API rate limit.
@@ -33,18 +33,18 @@ trait Get525 extends StObject {
     * **Note:** The `rate` object is deprecated. If you're writing new API client code or updating existing code, you should use the `core` object instead of the `rate` object. The `core` object contains the same information that is present in the `rate` object.
     */
   @JSName("get")
-  var get_Original: `525`
+  var get_Original: `543`
 }
-object Get525 {
+object Get543 {
   
-  inline def apply(get: `525`): Get525 = {
+  inline def apply(get: `543`): Get543 = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Get525]
+    __obj.asInstanceOf[Get543]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: Get525] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: Get543] (val x: Self) extends AnyVal {
     
-    inline def setGet(value: `525`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `543`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }
 }

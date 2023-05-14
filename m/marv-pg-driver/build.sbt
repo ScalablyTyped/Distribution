@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "marv-pg-driver"
-version := "4.0-dt-20220606Z-af0a50"
+version := "4.0-dt-20220606Z-c4dd41"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "marv" % "6.0-dt-20220810Z-58b30c",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
-  "org.scalablytyped" %%% "pg" % "8.6-dt-20230328Z-26cecc",
-  "org.scalablytyped" %%% "pg-protocol" % "1.6.0-b52dad",
-  "org.scalablytyped" %%% "pg-types" % "4.0.1-1d8a95",
+  "org.scalablytyped" %%% "marv" % "6.0-dt-20220810Z-72c18e",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
+  "org.scalablytyped" %%% "pg" % "8.6-dt-20230328Z-2ab960",
+  "org.scalablytyped" %%% "pg-protocol" % "1.6.0-de8ce2",
+  "org.scalablytyped" %%% "pg-types" % "4.0.1-ebd2c8",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

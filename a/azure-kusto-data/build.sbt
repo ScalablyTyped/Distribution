@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "azure-kusto-data"
-version := "5.0.4-005fd7"
+version := "5.0.4-756901"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,12 +8,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "axios" % "1.4.0-2899cc",
   "org.scalablytyped" %%% "azure__abort-controller" % "1.1.0-13e53f",
   "org.scalablytyped" %%% "azure__core-auth" % "1.4.0-049513",
-  "org.scalablytyped" %%% "azure__core-client" % "1.7.2-9bdb95",
-  "org.scalablytyped" %%% "azure__core-rest-pipeline" % "1.10.3-6aa772",
+  "org.scalablytyped" %%% "azure__core-client" % "1.7.2-e0438f",
+  "org.scalablytyped" %%% "azure__core-rest-pipeline" % "1.10.3-dbda5e",
   "org.scalablytyped" %%% "azure__core-tracing" % "1.0.1-5b30d4",
-  "org.scalablytyped" %%% "azure__identity" % "3.2.0-b0d9b7",
+  "org.scalablytyped" %%% "azure__identity" % "3.2.0-f0c586",
   "org.scalablytyped" %%% "azure__logger" % "1.0.4-2ccd1b",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

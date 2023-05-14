@@ -49,7 +49,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PUT /organizations/{org_id}/team/{team_id}/memberships/{username}`.
     */
   @JSName("addOrUpdateMembershipForUserInOrg")
-  var addOrUpdateMembershipForUserInOrg_Original: `734`
+  var addOrUpdateMembershipForUserInOrg_Original: `770`
   
   /**
     * Adds an organization project to a team. To add a project to a team or update the team's permission on a project, the authenticated user must have `admin` permissions for the project. The project and team must be part of the same organization.
@@ -73,7 +73,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PUT /organizations/{org_id}/team/{team_id}/projects/{project_id}`.
     */
   @JSName("addOrUpdateProjectPermissionsInOrg")
-  var addOrUpdateProjectPermissionsInOrg_Original: `735`
+  var addOrUpdateProjectPermissionsInOrg_Original: `771`
   
   /**
     * To add a repository to a team or update the team's permission on a repository, the authenticated user must have admin access to the repository, and must be able to see the team. The repository must be owned by the organization, or a direct fork of a repository owned by the organization. You will get a `422 Unprocessable Entity` status if you attempt to add a repository to a team that is not owned by the organization. Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
@@ -101,7 +101,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * For more information about the permission levels, see "[Repository permission levels for an organization](https://docs.github.com/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization)".
     */
   @JSName("addOrUpdateRepoPermissionsInOrg")
-  var addOrUpdateRepoPermissionsInOrg_Original: `736`
+  var addOrUpdateRepoPermissionsInOrg_Original: `772`
   
   /**
     * Checks whether a team has `read`, `write`, or `admin` permissions for an organization project. The response includes projects inherited from a parent team.
@@ -125,7 +125,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/projects/{project_id}`.
     */
   @JSName("checkPermissionsForProjectInOrg")
-  var checkPermissionsForProjectInOrg_Original: `737`
+  var checkPermissionsForProjectInOrg_Original: `773`
   
   /**
     * Checks whether a team has `admin`, `push`, `maintain`, `triage`, or `pull` permission for a repository. Repositories inherited through a parent team will also be checked.
@@ -157,7 +157,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/repos/{owner}/{repo}`.
     */
   @JSName("checkPermissionsForRepoInOrg")
-  var checkPermissionsForRepoInOrg_Original: `738`
+  var checkPermissionsForRepoInOrg_Original: `774`
   
   /**
     * To create a team, the authenticated user must be a member or owner of `{org}`. By default, organization members can create teams. Organization owners can limit team creation to organization owners. For more information, see "[Setting team creation permissions](https://docs.github.com/articles/setting-team-creation-permissions-in-your-organization)."
@@ -202,7 +202,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `POST /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments`.
     */
   @JSName("createDiscussionCommentInOrg")
-  var createDiscussionCommentInOrg_Original: `740`
+  var createDiscussionCommentInOrg_Original: `776`
   
   /**
     * Creates a new discussion post on a team's page. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
@@ -230,7 +230,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `POST /organizations/{org_id}/team/{team_id}/discussions`.
     */
   @JSName("createDiscussionInOrg")
-  var createDiscussionInOrg_Original: `741`
+  var createDiscussionInOrg_Original: `777`
   
   /**
     * To create a team, the authenticated user must be a member or owner of `{org}`. By default, organization members can create teams. Organization owners can limit team creation to organization owners. For more information, see "[Setting team creation permissions](https://docs.github.com/articles/setting-team-creation-permissions-in-your-organization)."
@@ -238,7 +238,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * When you create a new team, you automatically become a team maintainer without explicitly adding yourself to the optional array of `maintainers`. For more information, see "[About teams](https://docs.github.com/github/setting-up-and-managing-organizations-and-teams/about-teams)".
     */
   @JSName("create")
-  var create_Original: `739`
+  var create_Original: `775`
   
   /**
     * Deletes a comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
@@ -262,7 +262,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments/{comment_number}`.
     */
   @JSName("deleteDiscussionCommentInOrg")
-  var deleteDiscussionCommentInOrg_Original: `742`
+  var deleteDiscussionCommentInOrg_Original: `778`
   
   /**
     * Delete a discussion from a team's page. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
@@ -286,7 +286,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}`.
     */
   @JSName("deleteDiscussionInOrg")
-  var deleteDiscussionInOrg_Original: `743`
+  var deleteDiscussionInOrg_Original: `779`
   
   /**
     * To delete a team, the authenticated user must be an organization owner or team maintainer.
@@ -314,10 +314,10 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}`.
     */
   @JSName("deleteInOrg")
-  var deleteInOrg_Original: `744`
+  var deleteInOrg_Original: `780`
   
   /**
-    * Gets a team using the team's `slug`. GitHub generates the `slug` from the team `name`.
+    * Gets a team using the team's `slug`. To create the `slug`, GitHub replaces special characters in the `name` string, changes all words to lowercase, and replaces spaces with a `-` separator. For example, `"My TEam Näme"` would become `my-team-name`.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}`.
     */
@@ -333,12 +333,12 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/teams/{team_slug}']['response'] */ js.Any
   ]
   /**
-    * Gets a team using the team's `slug`. GitHub generates the `slug` from the team `name`.
+    * Gets a team using the team's `slug`. To create the `slug`, GitHub replaces special characters in the `name` string, changes all words to lowercase, and replaces spaces with a `-` separator. For example, `"My TEam Näme"` would become `my-team-name`.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}`.
     */
   @JSName("getByName")
-  var getByName_Original: `745`
+  var getByName_Original: `781`
   
   /**
     * Get a specific comment on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
@@ -362,7 +362,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments/{comment_number}`.
     */
   @JSName("getDiscussionCommentInOrg")
-  var getDiscussionCommentInOrg_Original: `746`
+  var getDiscussionCommentInOrg_Original: `782`
   
   /**
     * Get a specific discussion on a team's page. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
@@ -386,7 +386,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}`.
     */
   @JSName("getDiscussionInOrg")
-  var getDiscussionInOrg_Original: `747`
+  var getDiscussionInOrg_Original: `783`
   
   /**
     * Team members will include the members of child teams.
@@ -424,7 +424,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * The `role` for organization owners is set to `maintainer`. For more information about `maintainer` roles, see see [Create a team](https://docs.github.com/rest/reference/teams#create-a-team).
     */
   @JSName("getMembershipForUserInOrg")
-  var getMembershipForUserInOrg_Original: `748`
+  var getMembershipForUserInOrg_Original: `784`
   
   /**
     * Lists all teams in an organization that are visible to the authenticated user.
@@ -463,7 +463,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/teams`.
     */
   @JSName("listChildInOrg")
-  var listChildInOrg_Original: `750`
+  var listChildInOrg_Original: `786`
   
   /**
     * List all comments on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
@@ -487,7 +487,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments`.
     */
   @JSName("listDiscussionCommentsInOrg")
-  var listDiscussionCommentsInOrg_Original: `751`
+  var listDiscussionCommentsInOrg_Original: `787`
   
   /**
     * List all discussions on a team's page. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
@@ -511,10 +511,10 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions`.
     */
   @JSName("listDiscussionsInOrg")
-  var listDiscussionsInOrg_Original: `752`
+  var listDiscussionsInOrg_Original: `788`
   
   /**
-    * List all of the teams across all of the organizations to which the authenticated user belongs. This method requires `user`, `repo`, or `read:org` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/) when authenticating via [OAuth](https://docs.github.com/apps/building-oauth-apps/).
+    * List all of the teams across all of the organizations to which the authenticated user belongs. This method requires `user`, `repo`, or `read:org` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/) when authenticating via [OAuth](https://docs.github.com/apps/building-oauth-apps/). When using a fine-grained personal access token, the resource owner of the token [must be a single organization](https://docs.github.com/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#fine-grained-personal-access-tokens), and have at least read-only member organization permissions. The response payload only contains the teams from a single organization when using a fine-grained personal access token.
     */
   def listForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/teams']['response'] */ js.Any
@@ -528,10 +528,10 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/teams']['response'] */ js.Any
   ]
   /**
-    * List all of the teams across all of the organizations to which the authenticated user belongs. This method requires `user`, `repo`, or `read:org` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/) when authenticating via [OAuth](https://docs.github.com/apps/building-oauth-apps/).
+    * List all of the teams across all of the organizations to which the authenticated user belongs. This method requires `user`, `repo`, or `read:org` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/) when authenticating via [OAuth](https://docs.github.com/apps/building-oauth-apps/). When using a fine-grained personal access token, the resource owner of the token [must be a single organization](https://docs.github.com/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#fine-grained-personal-access-tokens), and have at least read-only member organization permissions. The response payload only contains the teams from a single organization when using a fine-grained personal access token.
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: `753`
+  var listForAuthenticatedUser_Original: `789`
   
   /**
     * Team members will include the members of child teams.
@@ -555,7 +555,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * To list members in a team, the team must be visible to the authenticated user.
     */
   @JSName("listMembersInOrg")
-  var listMembersInOrg_Original: `754`
+  var listMembersInOrg_Original: `790`
   
   /**
     * The return hash contains a `role` field which refers to the Organization Invitation role and will be one of the following values: `direct_member`, `admin`, `billing_manager`, `hiring_manager`, or `reinstate`. If the invitee is not a GitHub member, the `login` field in the return hash will be `null`.
@@ -579,7 +579,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/invitations`.
     */
   @JSName("listPendingInvitationsInOrg")
-  var listPendingInvitationsInOrg_Original: `755`
+  var listPendingInvitationsInOrg_Original: `791`
   
   /**
     * Lists the organization projects for a team.
@@ -603,7 +603,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/projects`.
     */
   @JSName("listProjectsInOrg")
-  var listProjectsInOrg_Original: `756`
+  var listProjectsInOrg_Original: `792`
   
   /**
     * Lists a team's repositories visible to the authenticated user.
@@ -627,13 +627,13 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/repos`.
     */
   @JSName("listReposInOrg")
-  var listReposInOrg_Original: `757`
+  var listReposInOrg_Original: `793`
   
   /**
     * Lists all teams in an organization that are visible to the authenticated user.
     */
   @JSName("list")
-  var list_Original: `749`
+  var list_Original: `785`
   
   /**
     * To remove a membership between a user and a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with. Removing team membership does not delete the user, it just removes their membership from the team.
@@ -665,7 +665,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/memberships/{username}`.
     */
   @JSName("removeMembershipForUserInOrg")
-  var removeMembershipForUserInOrg_Original: `758`
+  var removeMembershipForUserInOrg_Original: `794`
   
   /**
     * Removes an organization project from a team. An organization owner or a team maintainer can remove any project from the team. To remove a project from a team as an organization member, the authenticated user must have `read` access to both the team and project, or `admin` access to the team or project. This endpoint removes the project from the team, but does not delete the project.
@@ -689,7 +689,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/projects/{project_id}`.
     */
   @JSName("removeProjectInOrg")
-  var removeProjectInOrg_Original: `759`
+  var removeProjectInOrg_Original: `795`
   
   /**
     * If the authenticated user is an organization owner or a team maintainer, they can remove any repositories from the team. To remove a repository from a team as an organization member, the authenticated user must have admin access to the repository and must be able to see the team. This does not delete the repository, it just removes it from the team.
@@ -713,7 +713,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}/repos/{owner}/{repo}`.
     */
   @JSName("removeRepoInOrg")
-  var removeRepoInOrg_Original: `760`
+  var removeRepoInOrg_Original: `796`
   
   /**
     * Edits the body text of a discussion comment. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
@@ -737,7 +737,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments/{comment_number}`.
     */
   @JSName("updateDiscussionCommentInOrg")
-  var updateDiscussionCommentInOrg_Original: `761`
+  var updateDiscussionCommentInOrg_Original: `797`
   
   /**
     * Edits the title and body text of a discussion post. Only the parameters you provide are updated. OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
@@ -761,7 +761,7 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}`.
     */
   @JSName("updateDiscussionInOrg")
-  var updateDiscussionInOrg_Original: `762`
+  var updateDiscussionInOrg_Original: `798`
   
   /**
     * To edit a team, the authenticated user must either be an organization owner or a team maintainer.
@@ -785,41 +785,41 @@ trait AddOrUpdateMembershipForUserInOrg extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/{org_id}/team/{team_id}`.
     */
   @JSName("updateInOrg")
-  var updateInOrg_Original: `763`
+  var updateInOrg_Original: `799`
 }
 object AddOrUpdateMembershipForUserInOrg {
   
   inline def apply(
-    addOrUpdateMembershipForUserInOrg: `734`,
-    addOrUpdateProjectPermissionsInOrg: `735`,
-    addOrUpdateRepoPermissionsInOrg: `736`,
-    checkPermissionsForProjectInOrg: `737`,
-    checkPermissionsForRepoInOrg: `738`,
-    create: `739`,
-    createDiscussionCommentInOrg: `740`,
-    createDiscussionInOrg: `741`,
-    deleteDiscussionCommentInOrg: `742`,
-    deleteDiscussionInOrg: `743`,
-    deleteInOrg: `744`,
-    getByName: `745`,
-    getDiscussionCommentInOrg: `746`,
-    getDiscussionInOrg: `747`,
-    getMembershipForUserInOrg: `748`,
-    list: `749`,
-    listChildInOrg: `750`,
-    listDiscussionCommentsInOrg: `751`,
-    listDiscussionsInOrg: `752`,
-    listForAuthenticatedUser: `753`,
-    listMembersInOrg: `754`,
-    listPendingInvitationsInOrg: `755`,
-    listProjectsInOrg: `756`,
-    listReposInOrg: `757`,
-    removeMembershipForUserInOrg: `758`,
-    removeProjectInOrg: `759`,
-    removeRepoInOrg: `760`,
-    updateDiscussionCommentInOrg: `761`,
-    updateDiscussionInOrg: `762`,
-    updateInOrg: `763`
+    addOrUpdateMembershipForUserInOrg: `770`,
+    addOrUpdateProjectPermissionsInOrg: `771`,
+    addOrUpdateRepoPermissionsInOrg: `772`,
+    checkPermissionsForProjectInOrg: `773`,
+    checkPermissionsForRepoInOrg: `774`,
+    create: `775`,
+    createDiscussionCommentInOrg: `776`,
+    createDiscussionInOrg: `777`,
+    deleteDiscussionCommentInOrg: `778`,
+    deleteDiscussionInOrg: `779`,
+    deleteInOrg: `780`,
+    getByName: `781`,
+    getDiscussionCommentInOrg: `782`,
+    getDiscussionInOrg: `783`,
+    getMembershipForUserInOrg: `784`,
+    list: `785`,
+    listChildInOrg: `786`,
+    listDiscussionCommentsInOrg: `787`,
+    listDiscussionsInOrg: `788`,
+    listForAuthenticatedUser: `789`,
+    listMembersInOrg: `790`,
+    listPendingInvitationsInOrg: `791`,
+    listProjectsInOrg: `792`,
+    listReposInOrg: `793`,
+    removeMembershipForUserInOrg: `794`,
+    removeProjectInOrg: `795`,
+    removeRepoInOrg: `796`,
+    updateDiscussionCommentInOrg: `797`,
+    updateDiscussionInOrg: `798`,
+    updateInOrg: `799`
   ): AddOrUpdateMembershipForUserInOrg = {
     val __obj = js.Dynamic.literal(addOrUpdateMembershipForUserInOrg = addOrUpdateMembershipForUserInOrg.asInstanceOf[js.Any], addOrUpdateProjectPermissionsInOrg = addOrUpdateProjectPermissionsInOrg.asInstanceOf[js.Any], addOrUpdateRepoPermissionsInOrg = addOrUpdateRepoPermissionsInOrg.asInstanceOf[js.Any], checkPermissionsForProjectInOrg = checkPermissionsForProjectInOrg.asInstanceOf[js.Any], checkPermissionsForRepoInOrg = checkPermissionsForRepoInOrg.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], createDiscussionCommentInOrg = createDiscussionCommentInOrg.asInstanceOf[js.Any], createDiscussionInOrg = createDiscussionInOrg.asInstanceOf[js.Any], deleteDiscussionCommentInOrg = deleteDiscussionCommentInOrg.asInstanceOf[js.Any], deleteDiscussionInOrg = deleteDiscussionInOrg.asInstanceOf[js.Any], deleteInOrg = deleteInOrg.asInstanceOf[js.Any], getByName = getByName.asInstanceOf[js.Any], getDiscussionCommentInOrg = getDiscussionCommentInOrg.asInstanceOf[js.Any], getDiscussionInOrg = getDiscussionInOrg.asInstanceOf[js.Any], getMembershipForUserInOrg = getMembershipForUserInOrg.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], listChildInOrg = listChildInOrg.asInstanceOf[js.Any], listDiscussionCommentsInOrg = listDiscussionCommentsInOrg.asInstanceOf[js.Any], listDiscussionsInOrg = listDiscussionsInOrg.asInstanceOf[js.Any], listForAuthenticatedUser = listForAuthenticatedUser.asInstanceOf[js.Any], listMembersInOrg = listMembersInOrg.asInstanceOf[js.Any], listPendingInvitationsInOrg = listPendingInvitationsInOrg.asInstanceOf[js.Any], listProjectsInOrg = listProjectsInOrg.asInstanceOf[js.Any], listReposInOrg = listReposInOrg.asInstanceOf[js.Any], removeMembershipForUserInOrg = removeMembershipForUserInOrg.asInstanceOf[js.Any], removeProjectInOrg = removeProjectInOrg.asInstanceOf[js.Any], removeRepoInOrg = removeRepoInOrg.asInstanceOf[js.Any], updateDiscussionCommentInOrg = updateDiscussionCommentInOrg.asInstanceOf[js.Any], updateDiscussionInOrg = updateDiscussionInOrg.asInstanceOf[js.Any], updateInOrg = updateInOrg.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOrUpdateMembershipForUserInOrg]
@@ -828,64 +828,64 @@ object AddOrUpdateMembershipForUserInOrg {
   @scala.inline
   implicit open class MutableBuilder[Self <: AddOrUpdateMembershipForUserInOrg] (val x: Self) extends AnyVal {
     
-    inline def setAddOrUpdateMembershipForUserInOrg(value: `734`): Self = StObject.set(x, "addOrUpdateMembershipForUserInOrg", value.asInstanceOf[js.Any])
+    inline def setAddOrUpdateMembershipForUserInOrg(value: `770`): Self = StObject.set(x, "addOrUpdateMembershipForUserInOrg", value.asInstanceOf[js.Any])
     
-    inline def setAddOrUpdateProjectPermissionsInOrg(value: `735`): Self = StObject.set(x, "addOrUpdateProjectPermissionsInOrg", value.asInstanceOf[js.Any])
+    inline def setAddOrUpdateProjectPermissionsInOrg(value: `771`): Self = StObject.set(x, "addOrUpdateProjectPermissionsInOrg", value.asInstanceOf[js.Any])
     
-    inline def setAddOrUpdateRepoPermissionsInOrg(value: `736`): Self = StObject.set(x, "addOrUpdateRepoPermissionsInOrg", value.asInstanceOf[js.Any])
+    inline def setAddOrUpdateRepoPermissionsInOrg(value: `772`): Self = StObject.set(x, "addOrUpdateRepoPermissionsInOrg", value.asInstanceOf[js.Any])
     
-    inline def setCheckPermissionsForProjectInOrg(value: `737`): Self = StObject.set(x, "checkPermissionsForProjectInOrg", value.asInstanceOf[js.Any])
+    inline def setCheckPermissionsForProjectInOrg(value: `773`): Self = StObject.set(x, "checkPermissionsForProjectInOrg", value.asInstanceOf[js.Any])
     
-    inline def setCheckPermissionsForRepoInOrg(value: `738`): Self = StObject.set(x, "checkPermissionsForRepoInOrg", value.asInstanceOf[js.Any])
+    inline def setCheckPermissionsForRepoInOrg(value: `774`): Self = StObject.set(x, "checkPermissionsForRepoInOrg", value.asInstanceOf[js.Any])
     
-    inline def setCreate(value: `739`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: `775`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    inline def setCreateDiscussionCommentInOrg(value: `740`): Self = StObject.set(x, "createDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setCreateDiscussionCommentInOrg(value: `776`): Self = StObject.set(x, "createDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    inline def setCreateDiscussionInOrg(value: `741`): Self = StObject.set(x, "createDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setCreateDiscussionInOrg(value: `777`): Self = StObject.set(x, "createDiscussionInOrg", value.asInstanceOf[js.Any])
     
-    inline def setDeleteDiscussionCommentInOrg(value: `742`): Self = StObject.set(x, "deleteDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setDeleteDiscussionCommentInOrg(value: `778`): Self = StObject.set(x, "deleteDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    inline def setDeleteDiscussionInOrg(value: `743`): Self = StObject.set(x, "deleteDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setDeleteDiscussionInOrg(value: `779`): Self = StObject.set(x, "deleteDiscussionInOrg", value.asInstanceOf[js.Any])
     
-    inline def setDeleteInOrg(value: `744`): Self = StObject.set(x, "deleteInOrg", value.asInstanceOf[js.Any])
+    inline def setDeleteInOrg(value: `780`): Self = StObject.set(x, "deleteInOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetByName(value: `745`): Self = StObject.set(x, "getByName", value.asInstanceOf[js.Any])
+    inline def setGetByName(value: `781`): Self = StObject.set(x, "getByName", value.asInstanceOf[js.Any])
     
-    inline def setGetDiscussionCommentInOrg(value: `746`): Self = StObject.set(x, "getDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setGetDiscussionCommentInOrg(value: `782`): Self = StObject.set(x, "getDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetDiscussionInOrg(value: `747`): Self = StObject.set(x, "getDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setGetDiscussionInOrg(value: `783`): Self = StObject.set(x, "getDiscussionInOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetMembershipForUserInOrg(value: `748`): Self = StObject.set(x, "getMembershipForUserInOrg", value.asInstanceOf[js.Any])
+    inline def setGetMembershipForUserInOrg(value: `784`): Self = StObject.set(x, "getMembershipForUserInOrg", value.asInstanceOf[js.Any])
     
-    inline def setList(value: `749`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: `785`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    inline def setListChildInOrg(value: `750`): Self = StObject.set(x, "listChildInOrg", value.asInstanceOf[js.Any])
+    inline def setListChildInOrg(value: `786`): Self = StObject.set(x, "listChildInOrg", value.asInstanceOf[js.Any])
     
-    inline def setListDiscussionCommentsInOrg(value: `751`): Self = StObject.set(x, "listDiscussionCommentsInOrg", value.asInstanceOf[js.Any])
+    inline def setListDiscussionCommentsInOrg(value: `787`): Self = StObject.set(x, "listDiscussionCommentsInOrg", value.asInstanceOf[js.Any])
     
-    inline def setListDiscussionsInOrg(value: `752`): Self = StObject.set(x, "listDiscussionsInOrg", value.asInstanceOf[js.Any])
+    inline def setListDiscussionsInOrg(value: `788`): Self = StObject.set(x, "listDiscussionsInOrg", value.asInstanceOf[js.Any])
     
-    inline def setListForAuthenticatedUser(value: `753`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListForAuthenticatedUser(value: `789`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListMembersInOrg(value: `754`): Self = StObject.set(x, "listMembersInOrg", value.asInstanceOf[js.Any])
+    inline def setListMembersInOrg(value: `790`): Self = StObject.set(x, "listMembersInOrg", value.asInstanceOf[js.Any])
     
-    inline def setListPendingInvitationsInOrg(value: `755`): Self = StObject.set(x, "listPendingInvitationsInOrg", value.asInstanceOf[js.Any])
+    inline def setListPendingInvitationsInOrg(value: `791`): Self = StObject.set(x, "listPendingInvitationsInOrg", value.asInstanceOf[js.Any])
     
-    inline def setListProjectsInOrg(value: `756`): Self = StObject.set(x, "listProjectsInOrg", value.asInstanceOf[js.Any])
+    inline def setListProjectsInOrg(value: `792`): Self = StObject.set(x, "listProjectsInOrg", value.asInstanceOf[js.Any])
     
-    inline def setListReposInOrg(value: `757`): Self = StObject.set(x, "listReposInOrg", value.asInstanceOf[js.Any])
+    inline def setListReposInOrg(value: `793`): Self = StObject.set(x, "listReposInOrg", value.asInstanceOf[js.Any])
     
-    inline def setRemoveMembershipForUserInOrg(value: `758`): Self = StObject.set(x, "removeMembershipForUserInOrg", value.asInstanceOf[js.Any])
+    inline def setRemoveMembershipForUserInOrg(value: `794`): Self = StObject.set(x, "removeMembershipForUserInOrg", value.asInstanceOf[js.Any])
     
-    inline def setRemoveProjectInOrg(value: `759`): Self = StObject.set(x, "removeProjectInOrg", value.asInstanceOf[js.Any])
+    inline def setRemoveProjectInOrg(value: `795`): Self = StObject.set(x, "removeProjectInOrg", value.asInstanceOf[js.Any])
     
-    inline def setRemoveRepoInOrg(value: `760`): Self = StObject.set(x, "removeRepoInOrg", value.asInstanceOf[js.Any])
+    inline def setRemoveRepoInOrg(value: `796`): Self = StObject.set(x, "removeRepoInOrg", value.asInstanceOf[js.Any])
     
-    inline def setUpdateDiscussionCommentInOrg(value: `761`): Self = StObject.set(x, "updateDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setUpdateDiscussionCommentInOrg(value: `797`): Self = StObject.set(x, "updateDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    inline def setUpdateDiscussionInOrg(value: `762`): Self = StObject.set(x, "updateDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setUpdateDiscussionInOrg(value: `798`): Self = StObject.set(x, "updateDiscussionInOrg", value.asInstanceOf[js.Any])
     
-    inline def setUpdateInOrg(value: `763`): Self = StObject.set(x, "updateInOrg", value.asInstanceOf[js.Any])
+    inline def setUpdateInOrg(value: `799`): Self = StObject.set(x, "updateInOrg", value.asInstanceOf[js.Any])
   }
 }

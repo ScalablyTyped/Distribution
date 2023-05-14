@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "yodasws__gulp-pattern-replace"
-version := "1.1-dt-20230510Z-4d9571"
+version := "1.1-dt-20230510Z-fce4b8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "replacestream" % "4.0-dt-20211202Z-709664",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

@@ -3,7 +3,6 @@ package typings.octokitPluginRestEndpointMethods
 import typings.octokitPluginRestEndpointMethods.anon.AcceptInvitation
 import typings.octokitPluginRestEndpointMethods.anon.AddAssignees
 import typings.octokitPluginRestEndpointMethods.anon.AddCollaborator
-import typings.octokitPluginRestEndpointMethods.anon.AddCustomLabelsToSelfHostedRunnerForEnterprise
 import typings.octokitPluginRestEndpointMethods.anon.AddCustomLabelsToSelfHostedRunnerForOrg
 import typings.octokitPluginRestEndpointMethods.anon.AddEmailForAuthenticated
 import typings.octokitPluginRestEndpointMethods.anon.AddOrUpdateMembershipForUserInOrg
@@ -19,11 +18,12 @@ import typings.octokitPluginRestEndpointMethods.anon.Code
 import typings.octokitPluginRestEndpointMethods.anon.Create
 import typings.octokitPluginRestEndpointMethods.anon.CreateBlob
 import typings.octokitPluginRestEndpointMethods.anon.CreateForCommitComment
+import typings.octokitPluginRestEndpointMethods.anon.CreatePrivateVulnerabilityReport
 import typings.octokitPluginRestEndpointMethods.anon.CreateRepositorySnapshot
 import typings.octokitPluginRestEndpointMethods.anon.DeleteAnalysis
 import typings.octokitPluginRestEndpointMethods.anon.DeletePackageForAuthenticatedUser
 import typings.octokitPluginRestEndpointMethods.anon.Get
-import typings.octokitPluginRestEndpointMethods.anon.Get525
+import typings.octokitPluginRestEndpointMethods.anon.Get543
 import typings.octokitPluginRestEndpointMethods.anon.GetAlert
 import typings.octokitPluginRestEndpointMethods.anon.GetAllCodesOfConduct
 import typings.octokitPluginRestEndpointMethods.anon.GetAllCommonlyUsed
@@ -62,8 +62,6 @@ object distTypesGeneratedMethodTypesMod {
     
     var emojis: Get
     
-    var enterpriseAdmin: AddCustomLabelsToSelfHostedRunnerForEnterprise
-    
     var gists: CheckIsStarred
     
     var git: CreateBlob
@@ -90,7 +88,7 @@ object distTypesGeneratedMethodTypesMod {
     
     var pulls: CheckIfMerged
     
-    var rateLimit: Get525
+    var rateLimit: Get543
     
     var reactions: CreateForCommitComment
     
@@ -99,6 +97,8 @@ object distTypesGeneratedMethodTypesMod {
     var search: Code
     
     var secretScanning: GetAlert
+    
+    var securityAdvisories: CreatePrivateVulnerabilityReport
     
     var teams: AddOrUpdateMembershipForUserInOrg
     
@@ -118,7 +118,6 @@ object distTypesGeneratedMethodTypesMod {
       dependabot: AddSelectedRepoToOrgSecret,
       dependencyGraph: CreateRepositorySnapshot,
       emojis: Get,
-      enterpriseAdmin: AddCustomLabelsToSelfHostedRunnerForEnterprise,
       gists: CheckIsStarred,
       git: CreateBlob,
       gitignore: GetAllTemplates,
@@ -132,15 +131,16 @@ object distTypesGeneratedMethodTypesMod {
       packages: DeletePackageForAuthenticatedUser,
       projects: AddCollaborator,
       pulls: CheckIfMerged,
-      rateLimit: Get525,
+      rateLimit: Get543,
       reactions: CreateForCommitComment,
       repos: AcceptInvitation,
       search: Code,
       secretScanning: GetAlert,
+      securityAdvisories: CreatePrivateVulnerabilityReport,
       teams: AddOrUpdateMembershipForUserInOrg,
       users: AddEmailForAuthenticated
     ): RestEndpointMethods = {
-      val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], activity = activity.asInstanceOf[js.Any], apps = apps.asInstanceOf[js.Any], billing = billing.asInstanceOf[js.Any], checks = checks.asInstanceOf[js.Any], codeScanning = codeScanning.asInstanceOf[js.Any], codesOfConduct = codesOfConduct.asInstanceOf[js.Any], codespaces = codespaces.asInstanceOf[js.Any], dependabot = dependabot.asInstanceOf[js.Any], dependencyGraph = dependencyGraph.asInstanceOf[js.Any], emojis = emojis.asInstanceOf[js.Any], enterpriseAdmin = enterpriseAdmin.asInstanceOf[js.Any], gists = gists.asInstanceOf[js.Any], git = git.asInstanceOf[js.Any], gitignore = gitignore.asInstanceOf[js.Any], interactions = interactions.asInstanceOf[js.Any], issues = issues.asInstanceOf[js.Any], licenses = licenses.asInstanceOf[js.Any], markdown = markdown.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], migrations = migrations.asInstanceOf[js.Any], orgs = orgs.asInstanceOf[js.Any], packages = packages.asInstanceOf[js.Any], projects = projects.asInstanceOf[js.Any], pulls = pulls.asInstanceOf[js.Any], rateLimit = rateLimit.asInstanceOf[js.Any], reactions = reactions.asInstanceOf[js.Any], repos = repos.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], secretScanning = secretScanning.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], activity = activity.asInstanceOf[js.Any], apps = apps.asInstanceOf[js.Any], billing = billing.asInstanceOf[js.Any], checks = checks.asInstanceOf[js.Any], codeScanning = codeScanning.asInstanceOf[js.Any], codesOfConduct = codesOfConduct.asInstanceOf[js.Any], codespaces = codespaces.asInstanceOf[js.Any], dependabot = dependabot.asInstanceOf[js.Any], dependencyGraph = dependencyGraph.asInstanceOf[js.Any], emojis = emojis.asInstanceOf[js.Any], gists = gists.asInstanceOf[js.Any], git = git.asInstanceOf[js.Any], gitignore = gitignore.asInstanceOf[js.Any], interactions = interactions.asInstanceOf[js.Any], issues = issues.asInstanceOf[js.Any], licenses = licenses.asInstanceOf[js.Any], markdown = markdown.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], migrations = migrations.asInstanceOf[js.Any], orgs = orgs.asInstanceOf[js.Any], packages = packages.asInstanceOf[js.Any], projects = projects.asInstanceOf[js.Any], pulls = pulls.asInstanceOf[js.Any], rateLimit = rateLimit.asInstanceOf[js.Any], reactions = reactions.asInstanceOf[js.Any], repos = repos.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], secretScanning = secretScanning.asInstanceOf[js.Any], securityAdvisories = securityAdvisories.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestEndpointMethods]
     }
     
@@ -169,8 +169,6 @@ object distTypesGeneratedMethodTypesMod {
       
       inline def setEmojis(value: Get): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
       
-      inline def setEnterpriseAdmin(value: AddCustomLabelsToSelfHostedRunnerForEnterprise): Self = StObject.set(x, "enterpriseAdmin", value.asInstanceOf[js.Any])
-      
       inline def setGists(value: CheckIsStarred): Self = StObject.set(x, "gists", value.asInstanceOf[js.Any])
       
       inline def setGit(value: CreateBlob): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
@@ -197,7 +195,7 @@ object distTypesGeneratedMethodTypesMod {
       
       inline def setPulls(value: CheckIfMerged): Self = StObject.set(x, "pulls", value.asInstanceOf[js.Any])
       
-      inline def setRateLimit(value: Get525): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Get543): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
       inline def setReactions(value: CreateForCommitComment): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
       
@@ -206,6 +204,8 @@ object distTypesGeneratedMethodTypesMod {
       inline def setSearch(value: Code): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
       inline def setSecretScanning(value: GetAlert): Self = StObject.set(x, "secretScanning", value.asInstanceOf[js.Any])
+      
+      inline def setSecurityAdvisories(value: CreatePrivateVulnerabilityReport): Self = StObject.set(x, "securityAdvisories", value.asInstanceOf[js.Any])
       
       inline def setTeams(value: AddOrUpdateMembershipForUserInOrg): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       

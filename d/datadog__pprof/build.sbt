@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "datadog__pprof"
-version := "2.2.1-0c7f1b"
+version := "2.2.1-5bfcee"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
-  "org.scalablytyped" %%% "pprof-format" % "2.0.7-2d6524",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
+  "org.scalablytyped" %%% "pprof-format" % "2.0.7-cef861",
   "org.scalablytyped" %%% "source-map" % "0.7.4-e1e422",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babel-jest"
-version := "29.5.0-83a709"
+version := "29.5.0-eac78f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,9 +15,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-b22ccd",
   "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-8104f2",
   "org.scalablytyped" %%% "jest__schemas" % "29.4.3-7a81bb",
-  "org.scalablytyped" %%% "jest__transform" % "29.5.0-03b4f4",
-  "org.scalablytyped" %%% "jest__types" % "29.5.0-2b1d28",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "jest__transform" % "29.5.0-f3ef43",
+  "org.scalablytyped" %%% "jest__types" % "29.5.0-5cfbb9",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "sinclair__typebox" % "0.28.9-55f540",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

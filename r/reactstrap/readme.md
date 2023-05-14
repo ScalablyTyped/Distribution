@@ -1,7 +1,7 @@
 
 # Scala.js typings for reactstrap
 
-Typings are for version 9.1.9
+Typings are for version 9.1.10
 
 ## Library description:
 React Bootstrap components

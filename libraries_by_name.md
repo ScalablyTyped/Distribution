@@ -968,6 +968,7 @@
 | [big-integer](./b/big-integer) | An arbitrary length integer library for Javascript | math, big, bignum, bigint, biginteger, integer, arbitrary, precision, arithmetic |
 | [big-rat](./b/big-rat) | A big integer rational number | big, rat, huge, rational, number, big, integer, arithmetic, exact, geometry |
 | [big_dot_js](./b/big_dot_js) | A small, fast, easy-to-use library for arbitrary-p | arbitrary, precision, arithmetic, big, number, decimal, float, biginteger, bigdecimal, bignumber, bigint, bignum |
+| [bigbite__wp-cypress](./b/bigbite__wp-cypress) | WordPress end to end testing with Cypress.io | - |
 | [bigbluebutton-js](./b/bigbluebutton-js) | JavaScript wrapper for BigBlueButton API | bigbluebutton, bbb, api |
 | [bigi](./b/bigi) | Big integers. | cryptography, math, bitcoin, arbitrary, precision, arithmetic, big, integer, int, number, biginteger, bigint, bignumber, decimal, float |
 | [bigint](./b/bigint) | Arbitrary-precision integer arithmetic using libgm | gmp, libgmp, big, bignum, bigint, integer, arithmetic, precision |
@@ -1974,6 +1975,7 @@
 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot | cypress, plugin, dotenv, cypress-plugin, env |
 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot. | - |
 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate | cypress, cypress-plugin |
+| [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t | cypress, istanbul, cypress-plugin, code, coverage |
 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm | cytoscape, cytoscape-extension |
 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u | cytoscape, cytoscape.js, cytoscapejs, cytoscape-canvas, canvas, extension |
@@ -4603,6 +4605,7 @@
 | [indefinite-observable](./i/indefinite-observable) |   | - |
 | [indent-string](./i/indent-string) | Indent each line in a string | indent, string, pad, align, line, text, each, every |
 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria | index, array, helper |
+| [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy | - |
 | [inert](./i/inert) | Static file and directory handlers plugin for hapi | file, directory, handler, hapi, plugin |
 | [ineum](./i/ineum) | - | - |
 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f | inferno, performance, framework, interfaces, user interfaces, html, renderToString, server, dom, browser, rollup, vdom |
@@ -6747,7 +6750,6 @@
 | [mem-fs-editor](./m/mem-fs-editor) | File edition helpers working on top of mem-fs | - |
 | [memcached](./m/memcached) | A fully featured Memcached API client, supporting  | InnoDB memcached API, cache, client, cluster, failover, hashing, membase, memcache, memcached, nMemcached, nosql |
 | [memdown](./m/memdown) | An drop-in replacement for LevelDOWN that works in | level, leveldb, leveldown, levelup, memory |
-| [memfs](./m/memfs) | In-memory file-system with Node's fs API. | fs, filesystem, fs.js, memory-fs, memfs, file, file system, mount, memory, in-memory, virtual, test, testing, mock |
 | [memize](./m/memize) | Unabashedly-barebones memoization library with an  | memoize, memoization, memoisation, cache |
 | [memjs](./m/memjs) | A memcache client for node using the binary protoc | cache, memcache, memcached, MemCachier |
 | [memmonit](./m/memmonit) | Library to help monitor operating system memory | memory, monitoring, lib |
@@ -9639,7 +9641,6 @@
 | [remote-origin-url](./r/remote-origin-url) | Get the git remote origin URL from your local git  | git, git remote, git remote origin, node, node.js, origin, remote, remote origin, remote origin url, url |
 | [remote-redux-devtools](./r/remote-redux-devtools) | Relay Redux actions to remote Redux DevTools. | redux, devtools, flux, react, hot reloading, time travel, live edit |
 | [remotedev-serialize](./r/remotedev-serialize) | Serialize unserializable data and parse it back. | redux, devtools |
-| [remotedev-server](./r/remotedev-server) | Run the RemoteDev monitor on your local server. | devtools, remotedev |
 | [remove-accents](./r/remove-accents) | Converting the accented characters to their corres | accent, accents, remove, diacritic, clean, formatting, umlaut, grave, circumflex, tilde, acute |
 | [remove-file-safe](./r/remove-file-safe) | Remove files without try catch | remove, file, files, safe, without, try, catch, fs-safe, rm, del, delete, trash |
 | [remove-markdown](./r/remove-markdown) | Remove Markdown formatting from text | markdown |
@@ -9949,14 +9950,11 @@
 | [sbd](./s/sbd) | Split text into sentences with Sentence Boundary D | sentence, detection, boundary |
 | [sc-auth](./s/sc-auth) | Auth module for SocketCluster | Auth, SocketCluster, JWT |
 | [sc-broker](./s/sc-broker) | sc-broker key-value and message broker | store, broker, message broker, key value server, session, socketcluster |
-| [sc-broker-cluster](./s/sc-broker-cluster) | Realtime clustering engine | broker, cluster, realtime, socket, engine, socketcluster |
 | [sc-channel](./s/sc-channel) | Channel object for SocketCluster | channel, socketcluster, pubsub, publish, subscribe |
 | [sc-errors](./s/sc-errors) | Error types for use throughout SocketCluster | errors, socketcluster |
-| [sc-hot-reboot](./s/sc-hot-reboot) | Automatically reboot workers when code changes. | socketcluter, reboot, reload, monitor, debugging |
 | [scaleway-functions](./s/scaleway-functions) | - | - |
 | [scalike](./s/scalike) | - | immutable, data, datastructure, functional, collection, stateless, scala, monad, option, maybe, either, future |
 | [scanf](./s/scanf) | C like scanf/sscanf module for node.js. | scanf, sscanf, readSync from stdin, shell input |
-| [scc-broker-client](./s/scc-broker-client) | Client for SCC - For SocketCluster horizontal scal | socketcluster, cluster, scc, client, horizontal, scalability |
 | [schedule](./s/schedule) | Cooperative scheduler for the browser environment. | react |
 | [scheduler](./s/scheduler) | Cooperative scheduler for the browser environment. | react |
 | [schema-registry](./s/schema-registry) | json & avro schema registry | schema, registry, avro, json, rest, kafka, living, version, etl, avsc, ajv, format, type |
@@ -10347,8 +10345,6 @@
 | [socket_dot_io-parser](./s/socket_dot_io-parser) | socket.io protocol parser | - |
 | [socket_dot_io-redis](./s/socket_dot_io-redis) | - | - |
 | [socket_dot_io__component-](./s/socket_dot_io__component-emitter) | Event emitter | - |
-| [socketcluster](./s/socketcluster) | Highly scalable realtime framework with support fo | socketcluster, async, await, realtime |
-| [socketcluster-client](./s/socketcluster-client) | SocketCluster JavaScript client | websocket, realtime, client, socketcluster |
 | [socketcluster-server](./s/socketcluster-server) | Server module for SocketCluster | websocket, realtime, socketcluster |
 | [socketio-jwt](./s/socketio-jwt) | authenticate socket.io connections using JWTs | socket, socket.io, jwt |
 | [socketio-jwt-auth](./s/socketio-jwt-auth) | Socket.io authentication middleware using Json Web | socket.io, socket.io middleware, authenticate, authentication, authorize, authorization, auth, jwt, Json Web Token, Socket.io JWT Auth |
@@ -11728,7 +11724,6 @@
 | [vue__reactivity-transform](./v/vue__reactivity-transform) | @vue/reactivity-transform | vue |
 | [vue__runtime-core](./v/vue__runtime-core) | @vue/runtime-core | vue |
 | [vue__runtime-dom](./v/vue__runtime-dom) | @vue/runtime-dom | vue |
-| [vue__server-renderer](./v/vue__server-renderer) | @vue/server-renderer | vue |
 | [vue__shared](./v/vue__shared) | internal utils shared across @vue packages | vue |
 | [vue__test-utils](./v/vue__test-utils) | Component testing utils for Vue 3. | - |
 | [vuedraggable](./v/vuedraggable) | draggable component for vue | vue, vuejs, drag, and, drop, list, Sortable.js, component, nested |
@@ -12164,6 +12159,7 @@
 | [xxhash-wasm](./x/xxhash-wasm) | A WebAssembly implementation of xxHash | xxhash, hash, wasm, webassembly |
 | [xxhashjs](./x/xxhashjs) | xxHash in Javascript | xxhash, xxh |
 | [y-codemirror](./y/y-codemirror) | CodeMirror binding for Yjs | Yjs |
+| [y-leveldb](./y/y-leveldb) | LevelDb database adapter for Yjs | Yjs, CRDT, offline, shared editing, collaboration, concurrency |
 | [y-protocols](./y/y-protocols) | Yjs encoding protocols | Yjs |
 | [y-websocket](./y/y-websocket) | Websockets provider for Yjs | Yjs |
 | [ya-disk](./y/ya-disk) | Yandex Disk API Library | yandex, disk, api |

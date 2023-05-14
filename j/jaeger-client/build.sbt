@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jaeger-client"
-version := "3.18-dt-20221107Z-ebbc3c"
+version := "3.18-dt-20221107Z-bdcb44"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "opentracing" % "0.14.7-8b4081",
   "org.scalablytyped" %%% "prom-client" % "14.2.0-cfc1a7",
   "org.scalablytyped" %%% "std" % "5.0-e63739")

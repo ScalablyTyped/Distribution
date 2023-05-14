@@ -37,29 +37,7 @@ trait GetAlert extends StObject {
     * GitHub Apps must have the `secret_scanning_alerts` read permission to use this endpoint.
     */
   @JSName("getAlert")
-  var getAlert_Original: `725`
-  
-  /**
-    * Gets code security and analysis settings for the specified enterprise.
-    * To use this endpoint, you must be an administrator of the enterprise, and you must use an access token with the `admin:enterprise` scope.
-    */
-  def getSecurityAnalysisSettingsForEnterprise(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /enterprises/{enterprise}/code_security_and_analysis']['response'] */ js.Any
-  ]
-  def getSecurityAnalysisSettingsForEnterprise(
-    params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /enterprises/{enterprise}/code_security_and_analysis']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /enterprises/{enterprise}/code_security_and_analysis']['response'] */ js.Any
-  ]
-  /**
-    * Gets code security and analysis settings for the specified enterprise.
-    * To use this endpoint, you must be an administrator of the enterprise, and you must use an access token with the `admin:enterprise` scope.
-    */
-  @JSName("getSecurityAnalysisSettingsForEnterprise")
-  var getSecurityAnalysisSettingsForEnterprise_Original: `726`
+  var getAlert_Original: `759`
   
   /**
     * Lists secret scanning alerts for eligible repositories in an enterprise, from newest to oldest.
@@ -81,7 +59,7 @@ trait GetAlert extends StObject {
     * To use this endpoint, you must be a member of the enterprise, and you must use an access token with the `repo` scope or `security_events` scope. Alerts are only returned for organizations in the enterprise for which you are an organization owner or a [security manager](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization).
     */
   @JSName("listAlertsForEnterprise")
-  var listAlertsForEnterprise_Original: `727`
+  var listAlertsForEnterprise_Original: `760`
   
   /**
     * Lists secret scanning alerts for eligible repositories in an organization, from newest to oldest.
@@ -109,7 +87,7 @@ trait GetAlert extends StObject {
     * GitHub Apps must have the `secret_scanning_alerts` read permission to use this endpoint.
     */
   @JSName("listAlertsForOrg")
-  var listAlertsForOrg_Original: `728`
+  var listAlertsForOrg_Original: `761`
   
   /**
     * Lists secret scanning alerts for an eligible repository, from newest to oldest.
@@ -137,7 +115,7 @@ trait GetAlert extends StObject {
     * GitHub Apps must have the `secret_scanning_alerts` read permission to use this endpoint.
     */
   @JSName("listAlertsForRepo")
-  var listAlertsForRepo_Original: `729`
+  var listAlertsForRepo_Original: `762`
   
   /**
     * Lists all locations for a given secret scanning alert for an eligible repository.
@@ -165,53 +143,7 @@ trait GetAlert extends StObject {
     * GitHub Apps must have the `secret_scanning_alerts` read permission to use this endpoint.
     */
   @JSName("listLocationsForAlert")
-  var listLocationsForAlert_Original: `730`
-  
-  /**
-    * Updates the settings for advanced security, secret scanning, and push protection for new repositories in an enterprise.
-    * To use this endpoint, you must be an administrator of the enterprise, and you must use an access token with the `admin:enterprise` scope.
-    */
-  def patchSecurityAnalysisSettingsForEnterprise(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /enterprises/{enterprise}/code_security_and_analysis']['response'] */ js.Any
-  ]
-  def patchSecurityAnalysisSettingsForEnterprise(
-    params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /enterprises/{enterprise}/code_security_and_analysis']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /enterprises/{enterprise}/code_security_and_analysis']['response'] */ js.Any
-  ]
-  /**
-    * Updates the settings for advanced security, secret scanning, and push protection for new repositories in an enterprise.
-    * To use this endpoint, you must be an administrator of the enterprise, and you must use an access token with the `admin:enterprise` scope.
-    */
-  @JSName("patchSecurityAnalysisSettingsForEnterprise")
-  var patchSecurityAnalysisSettingsForEnterprise_Original: `731`
-  
-  /**
-    * Enables or disables the specified security feature for all repositories in an enterprise.
-    *
-    * To use this endpoint, you must be an administrator of the enterprise, and you must use an access token with the `admin:enterprise` scope.
-    */
-  def postSecurityProductEnablementForEnterprise(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /enterprises/{enterprise}/{security_product}/{enablement}']['response'] */ js.Any
-  ]
-  def postSecurityProductEnablementForEnterprise(
-    params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /enterprises/{enterprise}/{security_product}/{enablement}']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /enterprises/{enterprise}/{security_product}/{enablement}']['response'] */ js.Any
-  ]
-  /**
-    * Enables or disables the specified security feature for all repositories in an enterprise.
-    *
-    * To use this endpoint, you must be an administrator of the enterprise, and you must use an access token with the `admin:enterprise` scope.
-    */
-  @JSName("postSecurityProductEnablementForEnterprise")
-  var postSecurityProductEnablementForEnterprise_Original: `732`
+  var listLocationsForAlert_Original: `763`
   
   /**
     * Updates the status of a secret scanning alert in an eligible repository.
@@ -239,44 +171,35 @@ trait GetAlert extends StObject {
     * GitHub Apps must have the `secret_scanning_alerts` write permission to use this endpoint.
     */
   @JSName("updateAlert")
-  var updateAlert_Original: `733`
+  var updateAlert_Original: `764`
 }
 object GetAlert {
   
   inline def apply(
-    getAlert: `725`,
-    getSecurityAnalysisSettingsForEnterprise: `726`,
-    listAlertsForEnterprise: `727`,
-    listAlertsForOrg: `728`,
-    listAlertsForRepo: `729`,
-    listLocationsForAlert: `730`,
-    patchSecurityAnalysisSettingsForEnterprise: `731`,
-    postSecurityProductEnablementForEnterprise: `732`,
-    updateAlert: `733`
+    getAlert: `759`,
+    listAlertsForEnterprise: `760`,
+    listAlertsForOrg: `761`,
+    listAlertsForRepo: `762`,
+    listLocationsForAlert: `763`,
+    updateAlert: `764`
   ): GetAlert = {
-    val __obj = js.Dynamic.literal(getAlert = getAlert.asInstanceOf[js.Any], getSecurityAnalysisSettingsForEnterprise = getSecurityAnalysisSettingsForEnterprise.asInstanceOf[js.Any], listAlertsForEnterprise = listAlertsForEnterprise.asInstanceOf[js.Any], listAlertsForOrg = listAlertsForOrg.asInstanceOf[js.Any], listAlertsForRepo = listAlertsForRepo.asInstanceOf[js.Any], listLocationsForAlert = listLocationsForAlert.asInstanceOf[js.Any], patchSecurityAnalysisSettingsForEnterprise = patchSecurityAnalysisSettingsForEnterprise.asInstanceOf[js.Any], postSecurityProductEnablementForEnterprise = postSecurityProductEnablementForEnterprise.asInstanceOf[js.Any], updateAlert = updateAlert.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getAlert = getAlert.asInstanceOf[js.Any], listAlertsForEnterprise = listAlertsForEnterprise.asInstanceOf[js.Any], listAlertsForOrg = listAlertsForOrg.asInstanceOf[js.Any], listAlertsForRepo = listAlertsForRepo.asInstanceOf[js.Any], listLocationsForAlert = listLocationsForAlert.asInstanceOf[js.Any], updateAlert = updateAlert.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAlert]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetAlert] (val x: Self) extends AnyVal {
     
-    inline def setGetAlert(value: `725`): Self = StObject.set(x, "getAlert", value.asInstanceOf[js.Any])
+    inline def setGetAlert(value: `759`): Self = StObject.set(x, "getAlert", value.asInstanceOf[js.Any])
     
-    inline def setGetSecurityAnalysisSettingsForEnterprise(value: `726`): Self = StObject.set(x, "getSecurityAnalysisSettingsForEnterprise", value.asInstanceOf[js.Any])
+    inline def setListAlertsForEnterprise(value: `760`): Self = StObject.set(x, "listAlertsForEnterprise", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForEnterprise(value: `727`): Self = StObject.set(x, "listAlertsForEnterprise", value.asInstanceOf[js.Any])
+    inline def setListAlertsForOrg(value: `761`): Self = StObject.set(x, "listAlertsForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForOrg(value: `728`): Self = StObject.set(x, "listAlertsForOrg", value.asInstanceOf[js.Any])
+    inline def setListAlertsForRepo(value: `762`): Self = StObject.set(x, "listAlertsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForRepo(value: `729`): Self = StObject.set(x, "listAlertsForRepo", value.asInstanceOf[js.Any])
+    inline def setListLocationsForAlert(value: `763`): Self = StObject.set(x, "listLocationsForAlert", value.asInstanceOf[js.Any])
     
-    inline def setListLocationsForAlert(value: `730`): Self = StObject.set(x, "listLocationsForAlert", value.asInstanceOf[js.Any])
-    
-    inline def setPatchSecurityAnalysisSettingsForEnterprise(value: `731`): Self = StObject.set(x, "patchSecurityAnalysisSettingsForEnterprise", value.asInstanceOf[js.Any])
-    
-    inline def setPostSecurityProductEnablementForEnterprise(value: `732`): Self = StObject.set(x, "postSecurityProductEnablementForEnterprise", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateAlert(value: `733`): Self = StObject.set(x, "updateAlert", value.asInstanceOf[js.Any])
+    inline def setUpdateAlert(value: `764`): Self = StObject.set(x, "updateAlert", value.asInstanceOf[js.Any])
   }
 }

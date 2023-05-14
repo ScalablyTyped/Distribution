@@ -20,6 +20,11 @@ object mod {
   @js.native
   val backtick: /* "`" */ String = js.native
   
+  /**
+    * Related to @typescript-eslint/require-array-sort-compare lint error
+    */
+  inline def compareFn(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareFn")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   inline def detectEol(str: String): js.UndefOr[EolChar] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectEol")(str.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[EolChar]]
   inline def detectEol(str: Any): js.UndefOr[EolChar] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectEol")(str.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[EolChar]]
   
@@ -49,6 +54,16 @@ object mod {
   val hairspace: /* "\\u200A" */ String = js.native
   
   inline def hasOwnProp(obj: Any, prop: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProp")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  /**
+    * Like Array.prototype.includes() but it takes a mix of strings and/or
+    * regex'es, and matches that against a string. It's also a friendly API,
+    * it will not throw if the inputs are wrong.
+    * @param arr - array of zero or more strings or regex'es
+    * @param whatToMatch - string to match
+    * @returns boolean
+    */
+  inline def includes(arr: js.Array[String | js.RegExp], whatToMatch: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(arr.asInstanceOf[js.Any], whatToMatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("codsen-utils", "inlineTags")
   @js.native
@@ -80,9 +95,11 @@ object mod {
     * @param value unknown
     * @returns boolean
     */
-  inline def isPlainObject(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPlainObject(value: Any): /* is codsen-utils.codsen-utils.JSONObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is codsen-utils.codsen-utils.JSONObject */ Boolean]
   
   inline def isQuote(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQuote")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isRegExp(something: Any): /* is std.RegExp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegExp")(something.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ Boolean]
   
   inline def isStr(something: Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStr")(something.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
@@ -230,5 +247,50 @@ object mod {
     inline def lf: typings.codsenUtils.codsenUtilsStrings.lf = "lf".asInstanceOf[typings.codsenUtils.codsenUtilsStrings.lf]
   }
   
-  type Obj = StringDictionary[Any]
+  type JSONArray = js.Array[JSONValue]
+  
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONObject = {[key: string] : codsen-utils.codsen-utils.JSONValue}
+  }}}
+  to avoid circular code involving: 
+  - codsen-utils.codsen-utils.JSONArray
+  - codsen-utils.codsen-utils.JSONObject
+  - codsen-utils.codsen-utils.JSONValue
+  - codsen-utils.codsen-utils.Obj
+  */
+  trait JSONObject_
+    extends StObject
+       with /* key */ StringDictionary[JSONValue]
+  object JSONObject_ {
+    
+    inline def apply(): JSONObject_ = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[JSONObject_]
+    }
+  }
+  
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONValue = string | number | boolean | null | codsen-utils.codsen-utils.JSONObject | codsen-utils.codsen-utils.JSONArray
+  }}}
+  to avoid circular code involving: 
+  - codsen-utils.codsen-utils.JSONArray
+  - codsen-utils.codsen-utils.JSONValue
+  */
+  type JSONValue = String | Double | Boolean | Null | JSONObject_ | Any
+  
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ Key in string ]:? codsen-utils.codsen-utils.JSONValue}
+    }}}
+    */
+  @js.native
+  trait JsonObject extends StObject
+  
+  type Obj = JSONObject_
 }

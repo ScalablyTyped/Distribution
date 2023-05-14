@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "html-react-parser"
-version := "3.0.4-1d0bd0"
+version := "3.0.4-41faa1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "domelementtype" % "2.3.0-6dc867",
   "org.scalablytyped" %%% "domhandler" % "5.0.3-24eaa1",
   "org.scalablytyped" %%% "domutils" % "3.1.0-4de6ef",
-  "org.scalablytyped" %%% "htmlparser2" % "9.0.0-420692",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "htmlparser2" % "9.0.0-0ec163",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4446ee",
   "org.scalablytyped" %%% "react" % "18.2-dt-20230506Z-14ab9d",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20230322Z-da1b40",

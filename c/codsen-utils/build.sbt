@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "codsen-utils"
-version := "1.4.0-21e38c"
+version := "1.5.0-8f9177"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

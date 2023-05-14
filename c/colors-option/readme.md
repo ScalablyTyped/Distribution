@@ -1,7 +1,7 @@
 
 # Scala.js typings for colors-option
 
-Typings are for version 4.5.0
+Typings are for version 5.0.0
 
 ## Library description:
 Let users toggle colors

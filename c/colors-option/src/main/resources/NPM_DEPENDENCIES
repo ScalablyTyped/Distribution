@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "colors-option" : "4.5.0"
+      "colors-option" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "colors-option" : "4.5.0"
+      "colors-option" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

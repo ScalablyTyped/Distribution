@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo__metro-config"
-version := "0.7.1-62694c"
+version := "0.7.1-274388"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-a71ff4",
   "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20230426Z-96f2d9",
   "org.scalablytyped" %%% "babel__types" % "7.21.5-fbdd8a",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

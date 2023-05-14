@@ -29,7 +29,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * Adds a repository to an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/dependabot#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
     */
   @JSName("addSelectedRepoToOrgSecret")
-  var addSelectedRepoToOrgSecret_Original: `262`
+  var addSelectedRepoToOrgSecret_Original: `270`
   
   /**
     * Creates or updates an organization secret with an encrypted value. Encrypt your secret using
@@ -197,7 +197,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * ```
     */
   @JSName("createOrUpdateOrgSecret")
-  var createOrUpdateOrgSecret_Original: `263`
+  var createOrUpdateOrgSecret_Original: `271`
   
   /**
     * Creates or updates a repository secret with an encrypted value. Encrypt your secret using
@@ -367,7 +367,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * ```
     */
   @JSName("createOrUpdateRepoSecret")
-  var createOrUpdateRepoSecret_Original: `264`
+  var createOrUpdateRepoSecret_Original: `272`
   
   /**
     * Deletes a secret in an organization using the secret name. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
@@ -387,7 +387,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * Deletes a secret in an organization using the secret name. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
     */
   @JSName("deleteOrgSecret")
-  var deleteOrgSecret_Original: `265`
+  var deleteOrgSecret_Original: `273`
   
   /**
     * Deletes a secret in a repository using the secret name. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` repository permission to use this endpoint.
@@ -407,7 +407,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * Deletes a secret in a repository using the secret name. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` repository permission to use this endpoint.
     */
   @JSName("deleteRepoSecret")
-  var deleteRepoSecret_Original: `266`
+  var deleteRepoSecret_Original: `274`
   
   /**
     * You must use an access token with the `security_events` scope to use this endpoint with private repositories.
@@ -431,7 +431,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * GitHub Apps must have **Dependabot alerts** read permission to use this endpoint.
     */
   @JSName("getAlert")
-  var getAlert_Original: `267`
+  var getAlert_Original: `275`
   
   /**
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
@@ -451,7 +451,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
     */
   @JSName("getOrgPublicKey")
-  var getOrgPublicKey_Original: `268`
+  var getOrgPublicKey_Original: `276`
   
   /**
     * Gets a single organization secret without revealing its encrypted value. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
@@ -471,7 +471,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * Gets a single organization secret without revealing its encrypted value. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
     */
   @JSName("getOrgSecret")
-  var getOrgSecret_Original: `269`
+  var getOrgSecret_Original: `277`
   
   /**
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `dependabot_secrets` repository permission to use this endpoint.
@@ -491,7 +491,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `dependabot_secrets` repository permission to use this endpoint.
     */
   @JSName("getRepoPublicKey")
-  var getRepoPublicKey_Original: `270`
+  var getRepoPublicKey_Original: `278`
   
   /**
     * Gets a single repository secret without revealing its encrypted value. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` repository permission to use this endpoint.
@@ -511,7 +511,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * Gets a single repository secret without revealing its encrypted value. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` repository permission to use this endpoint.
     */
   @JSName("getRepoSecret")
-  var getRepoSecret_Original: `271`
+  var getRepoSecret_Original: `279`
   
   /**
     * Lists Dependabot alerts for repositories that are owned by the specified enterprise.
@@ -537,7 +537,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * Alerts are only returned for organizations in the enterprise for which you are an organization owner or a security manager. For more information about security managers, see "[Managing security managers in your organization](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization)."
     */
   @JSName("listAlertsForEnterprise")
-  var listAlertsForEnterprise_Original: `272`
+  var listAlertsForEnterprise_Original: `280`
   
   /**
     * Lists Dependabot alerts for an organization.
@@ -569,7 +569,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * GitHub Apps must have **Dependabot alerts** read permission to use this endpoint.
     */
   @JSName("listAlertsForOrg")
-  var listAlertsForOrg_Original: `273`
+  var listAlertsForOrg_Original: `281`
   
   /**
     * You must use an access token with the `security_events` scope to use this endpoint with private repositories.
@@ -593,7 +593,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * GitHub Apps must have **Dependabot alerts** read permission to use this endpoint.
     */
   @JSName("listAlertsForRepo")
-  var listAlertsForRepo_Original: `274`
+  var listAlertsForRepo_Original: `282`
   
   /**
     * Lists all secrets available in an organization without revealing their encrypted values. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
@@ -613,7 +613,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * Lists all secrets available in an organization without revealing their encrypted values. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
     */
   @JSName("listOrgSecrets")
-  var listOrgSecrets_Original: `275`
+  var listOrgSecrets_Original: `283`
   
   /**
     * Lists all secrets available in a repository without revealing their encrypted values. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` repository permission to use this endpoint.
@@ -633,7 +633,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * Lists all secrets available in a repository without revealing their encrypted values. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` repository permission to use this endpoint.
     */
   @JSName("listRepoSecrets")
-  var listRepoSecrets_Original: `276`
+  var listRepoSecrets_Original: `284`
   
   /**
     * Lists all repositories that have been selected when the `visibility` for repository access to a secret is set to `selected`. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
@@ -653,7 +653,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * Lists all repositories that have been selected when the `visibility` for repository access to a secret is set to `selected`. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
     */
   @JSName("listSelectedReposForOrgSecret")
-  var listSelectedReposForOrgSecret_Original: `277`
+  var listSelectedReposForOrgSecret_Original: `285`
   
   /**
     * Removes a repository from an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/dependabot#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
@@ -673,7 +673,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * Removes a repository from an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/dependabot#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
     */
   @JSName("removeSelectedRepoFromOrgSecret")
-  var removeSelectedRepoFromOrgSecret_Original: `278`
+  var removeSelectedRepoFromOrgSecret_Original: `286`
   
   /**
     * Replaces all repositories for an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/dependabot#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
@@ -693,7 +693,7 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * Replaces all repositories for an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/dependabot#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint.
     */
   @JSName("setSelectedReposForOrgSecret")
-  var setSelectedReposForOrgSecret_Original: `279`
+  var setSelectedReposForOrgSecret_Original: `287`
   
   /**
     * You must use an access token with the `security_events` scope to use this endpoint with private repositories.
@@ -717,30 +717,30 @@ trait AddSelectedRepoToOrgSecret extends StObject {
     * GitHub Apps must have **Dependabot alerts** write permission to use this endpoint.
     */
   @JSName("updateAlert")
-  var updateAlert_Original: `280`
+  var updateAlert_Original: `288`
 }
 object AddSelectedRepoToOrgSecret {
   
   inline def apply(
-    addSelectedRepoToOrgSecret: `262`,
-    createOrUpdateOrgSecret: `263`,
-    createOrUpdateRepoSecret: `264`,
-    deleteOrgSecret: `265`,
-    deleteRepoSecret: `266`,
-    getAlert: `267`,
-    getOrgPublicKey: `268`,
-    getOrgSecret: `269`,
-    getRepoPublicKey: `270`,
-    getRepoSecret: `271`,
-    listAlertsForEnterprise: `272`,
-    listAlertsForOrg: `273`,
-    listAlertsForRepo: `274`,
-    listOrgSecrets: `275`,
-    listRepoSecrets: `276`,
-    listSelectedReposForOrgSecret: `277`,
-    removeSelectedRepoFromOrgSecret: `278`,
-    setSelectedReposForOrgSecret: `279`,
-    updateAlert: `280`
+    addSelectedRepoToOrgSecret: `270`,
+    createOrUpdateOrgSecret: `271`,
+    createOrUpdateRepoSecret: `272`,
+    deleteOrgSecret: `273`,
+    deleteRepoSecret: `274`,
+    getAlert: `275`,
+    getOrgPublicKey: `276`,
+    getOrgSecret: `277`,
+    getRepoPublicKey: `278`,
+    getRepoSecret: `279`,
+    listAlertsForEnterprise: `280`,
+    listAlertsForOrg: `281`,
+    listAlertsForRepo: `282`,
+    listOrgSecrets: `283`,
+    listRepoSecrets: `284`,
+    listSelectedReposForOrgSecret: `285`,
+    removeSelectedRepoFromOrgSecret: `286`,
+    setSelectedReposForOrgSecret: `287`,
+    updateAlert: `288`
   ): AddSelectedRepoToOrgSecret = {
     val __obj = js.Dynamic.literal(addSelectedRepoToOrgSecret = addSelectedRepoToOrgSecret.asInstanceOf[js.Any], createOrUpdateOrgSecret = createOrUpdateOrgSecret.asInstanceOf[js.Any], createOrUpdateRepoSecret = createOrUpdateRepoSecret.asInstanceOf[js.Any], deleteOrgSecret = deleteOrgSecret.asInstanceOf[js.Any], deleteRepoSecret = deleteRepoSecret.asInstanceOf[js.Any], getAlert = getAlert.asInstanceOf[js.Any], getOrgPublicKey = getOrgPublicKey.asInstanceOf[js.Any], getOrgSecret = getOrgSecret.asInstanceOf[js.Any], getRepoPublicKey = getRepoPublicKey.asInstanceOf[js.Any], getRepoSecret = getRepoSecret.asInstanceOf[js.Any], listAlertsForEnterprise = listAlertsForEnterprise.asInstanceOf[js.Any], listAlertsForOrg = listAlertsForOrg.asInstanceOf[js.Any], listAlertsForRepo = listAlertsForRepo.asInstanceOf[js.Any], listOrgSecrets = listOrgSecrets.asInstanceOf[js.Any], listRepoSecrets = listRepoSecrets.asInstanceOf[js.Any], listSelectedReposForOrgSecret = listSelectedReposForOrgSecret.asInstanceOf[js.Any], removeSelectedRepoFromOrgSecret = removeSelectedRepoFromOrgSecret.asInstanceOf[js.Any], setSelectedReposForOrgSecret = setSelectedReposForOrgSecret.asInstanceOf[js.Any], updateAlert = updateAlert.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddSelectedRepoToOrgSecret]
@@ -749,42 +749,42 @@ object AddSelectedRepoToOrgSecret {
   @scala.inline
   implicit open class MutableBuilder[Self <: AddSelectedRepoToOrgSecret] (val x: Self) extends AnyVal {
     
-    inline def setAddSelectedRepoToOrgSecret(value: `262`): Self = StObject.set(x, "addSelectedRepoToOrgSecret", value.asInstanceOf[js.Any])
+    inline def setAddSelectedRepoToOrgSecret(value: `270`): Self = StObject.set(x, "addSelectedRepoToOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setCreateOrUpdateOrgSecret(value: `263`): Self = StObject.set(x, "createOrUpdateOrgSecret", value.asInstanceOf[js.Any])
+    inline def setCreateOrUpdateOrgSecret(value: `271`): Self = StObject.set(x, "createOrUpdateOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setCreateOrUpdateRepoSecret(value: `264`): Self = StObject.set(x, "createOrUpdateRepoSecret", value.asInstanceOf[js.Any])
+    inline def setCreateOrUpdateRepoSecret(value: `272`): Self = StObject.set(x, "createOrUpdateRepoSecret", value.asInstanceOf[js.Any])
     
-    inline def setDeleteOrgSecret(value: `265`): Self = StObject.set(x, "deleteOrgSecret", value.asInstanceOf[js.Any])
+    inline def setDeleteOrgSecret(value: `273`): Self = StObject.set(x, "deleteOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setDeleteRepoSecret(value: `266`): Self = StObject.set(x, "deleteRepoSecret", value.asInstanceOf[js.Any])
+    inline def setDeleteRepoSecret(value: `274`): Self = StObject.set(x, "deleteRepoSecret", value.asInstanceOf[js.Any])
     
-    inline def setGetAlert(value: `267`): Self = StObject.set(x, "getAlert", value.asInstanceOf[js.Any])
+    inline def setGetAlert(value: `275`): Self = StObject.set(x, "getAlert", value.asInstanceOf[js.Any])
     
-    inline def setGetOrgPublicKey(value: `268`): Self = StObject.set(x, "getOrgPublicKey", value.asInstanceOf[js.Any])
+    inline def setGetOrgPublicKey(value: `276`): Self = StObject.set(x, "getOrgPublicKey", value.asInstanceOf[js.Any])
     
-    inline def setGetOrgSecret(value: `269`): Self = StObject.set(x, "getOrgSecret", value.asInstanceOf[js.Any])
+    inline def setGetOrgSecret(value: `277`): Self = StObject.set(x, "getOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoPublicKey(value: `270`): Self = StObject.set(x, "getRepoPublicKey", value.asInstanceOf[js.Any])
+    inline def setGetRepoPublicKey(value: `278`): Self = StObject.set(x, "getRepoPublicKey", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoSecret(value: `271`): Self = StObject.set(x, "getRepoSecret", value.asInstanceOf[js.Any])
+    inline def setGetRepoSecret(value: `279`): Self = StObject.set(x, "getRepoSecret", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForEnterprise(value: `272`): Self = StObject.set(x, "listAlertsForEnterprise", value.asInstanceOf[js.Any])
+    inline def setListAlertsForEnterprise(value: `280`): Self = StObject.set(x, "listAlertsForEnterprise", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForOrg(value: `273`): Self = StObject.set(x, "listAlertsForOrg", value.asInstanceOf[js.Any])
+    inline def setListAlertsForOrg(value: `281`): Self = StObject.set(x, "listAlertsForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForRepo(value: `274`): Self = StObject.set(x, "listAlertsForRepo", value.asInstanceOf[js.Any])
+    inline def setListAlertsForRepo(value: `282`): Self = StObject.set(x, "listAlertsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListOrgSecrets(value: `275`): Self = StObject.set(x, "listOrgSecrets", value.asInstanceOf[js.Any])
+    inline def setListOrgSecrets(value: `283`): Self = StObject.set(x, "listOrgSecrets", value.asInstanceOf[js.Any])
     
-    inline def setListRepoSecrets(value: `276`): Self = StObject.set(x, "listRepoSecrets", value.asInstanceOf[js.Any])
+    inline def setListRepoSecrets(value: `284`): Self = StObject.set(x, "listRepoSecrets", value.asInstanceOf[js.Any])
     
-    inline def setListSelectedReposForOrgSecret(value: `277`): Self = StObject.set(x, "listSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
+    inline def setListSelectedReposForOrgSecret(value: `285`): Self = StObject.set(x, "listSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setRemoveSelectedRepoFromOrgSecret(value: `278`): Self = StObject.set(x, "removeSelectedRepoFromOrgSecret", value.asInstanceOf[js.Any])
+    inline def setRemoveSelectedRepoFromOrgSecret(value: `286`): Self = StObject.set(x, "removeSelectedRepoFromOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setSetSelectedReposForOrgSecret(value: `279`): Self = StObject.set(x, "setSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
+    inline def setSetSelectedReposForOrgSecret(value: `287`): Self = StObject.set(x, "setSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setUpdateAlert(value: `280`): Self = StObject.set(x, "updateAlert", value.asInstanceOf[js.Any])
+    inline def setUpdateAlert(value: `288`): Self = StObject.set(x, "updateAlert", value.asInstanceOf[js.Any])
   }
 }

@@ -13,6 +13,10 @@ trait CancelImport extends StObject {
   
   /**
     * Stop an import for a repository.
+    *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   def cancelImport(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/import']['response'] */ js.Any
@@ -27,12 +31,16 @@ trait CancelImport extends StObject {
   ]
   /**
     * Stop an import for a repository.
+    *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("cancelImport")
-  var cancelImport_Original: `381`
+  var cancelImport_Original: `387`
   
   /**
-    * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [List user migrations](https://docs.github.com/rest/reference/migrations#list-user-migrations) and [Get a user migration status](https://docs.github.com/rest/reference/migrations#get-a-user-migration-status) endpoints, will continue to be available even after an archive is deleted.
+    * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [List user migrations](https://docs.github.com/rest/migrations/users#list-user-migrations) and [Get a user migration status](https://docs.github.com/rest/migrations/users#get-a-user-migration-status) endpoints, will continue to be available even after an archive is deleted.
     */
   def deleteArchiveForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/migrations/{migration_id}/archive']['response'] */ js.Any
@@ -46,10 +54,10 @@ trait CancelImport extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/migrations/{migration_id}/archive']['response'] */ js.Any
   ]
   /**
-    * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [List user migrations](https://docs.github.com/rest/reference/migrations#list-user-migrations) and [Get a user migration status](https://docs.github.com/rest/reference/migrations#get-a-user-migration-status) endpoints, will continue to be available even after an archive is deleted.
+    * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [List user migrations](https://docs.github.com/rest/migrations/users#list-user-migrations) and [Get a user migration status](https://docs.github.com/rest/migrations/users#get-a-user-migration-status) endpoints, will continue to be available even after an archive is deleted.
     */
   @JSName("deleteArchiveForAuthenticatedUser")
-  var deleteArchiveForAuthenticatedUser_Original: `382`
+  var deleteArchiveForAuthenticatedUser_Original: `388`
   
   /**
     * Deletes a previous migration archive. Migration archives are automatically deleted after seven days.
@@ -69,7 +77,7 @@ trait CancelImport extends StObject {
     * Deletes a previous migration archive. Migration archives are automatically deleted after seven days.
     */
   @JSName("deleteArchiveForOrg")
-  var deleteArchiveForOrg_Original: `383`
+  var deleteArchiveForOrg_Original: `389`
   
   /**
     * Fetches the URL to a migration archive.
@@ -89,7 +97,7 @@ trait CancelImport extends StObject {
     * Fetches the URL to a migration archive.
     */
   @JSName("downloadArchiveForOrg")
-  var downloadArchiveForOrg_Original: `384`
+  var downloadArchiveForOrg_Original: `390`
   
   /**
     * Fetches the URL to download the migration archive as a `tar.gz` file. Depending on the resources your repository uses, the migration archive can contain JSON files with data for these objects:
@@ -149,12 +157,16 @@ trait CancelImport extends StObject {
     * The archive will also contain an `attachments` directory that includes all attachment files uploaded to GitHub.com and a `repositories` directory that contains the repository's Git data.
     */
   @JSName("getArchiveForAuthenticatedUser")
-  var getArchiveForAuthenticatedUser_Original: `385`
+  var getArchiveForAuthenticatedUser_Original: `391`
   
   /**
     * Each type of source control system represents authors in a different way. For example, a Git commit author has a display name and an email address, but a Subversion commit author just has a username. The GitHub Importer will make the author information valid, but the author might not be correct. For example, it will change the bare Subversion username `hubot` into something like `hubot <hubot@12341234-abab-fefe-8787-fedcba987654>`.
     *
-    * This endpoint and the [Map a commit author](https://docs.github.com/rest/reference/migrations#map-a-commit-author) endpoint allow you to provide correct Git author information.
+    * This endpoint and the [Map a commit author](https://docs.github.com/rest/migrations/source-imports#map-a-commit-author) endpoint allow you to provide correct Git author information.
+    *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   def getCommitAuthors(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/import/authors']['response'] */ js.Any
@@ -170,13 +182,21 @@ trait CancelImport extends StObject {
   /**
     * Each type of source control system represents authors in a different way. For example, a Git commit author has a display name and an email address, but a Subversion commit author just has a username. The GitHub Importer will make the author information valid, but the author might not be correct. For example, it will change the bare Subversion username `hubot` into something like `hubot <hubot@12341234-abab-fefe-8787-fedcba987654>`.
     *
-    * This endpoint and the [Map a commit author](https://docs.github.com/rest/reference/migrations#map-a-commit-author) endpoint allow you to provide correct Git author information.
+    * This endpoint and the [Map a commit author](https://docs.github.com/rest/migrations/source-imports#map-a-commit-author) endpoint allow you to provide correct Git author information.
+    *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("getCommitAuthors")
-  var getCommitAuthors_Original: `386`
+  var getCommitAuthors_Original: `392`
   
   /**
     * View the progress of an import.
+    *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     *
     * **Import status**
     *
@@ -192,11 +212,11 @@ trait CancelImport extends StObject {
     *
     * If there are problems, you will see one of these in the `status` field:
     *
-    * *   `auth_failed` - the import requires authentication in order to connect to the original repository. To update authentication for the import, please see the [Update an import](https://docs.github.com/rest/reference/migrations#update-an-import) section.
+    * *   `auth_failed` - the import requires authentication in order to connect to the original repository. To update authentication for the import, please see the [Update an import](https://docs.github.com/rest/migrations/source-imports#update-an-import) section.
     * *   `error` - the import encountered an error. The import progress response will include the `failed_step` and an error message. Contact [GitHub Support](https://support.github.com/contact?tags=dotcom-rest-api) for more information.
-    * *   `detection_needs_auth` - the importer requires authentication for the originating repository to continue detection. To update authentication for the import, please see the [Update an import](https://docs.github.com/rest/reference/migrations#update-an-import) section.
-    * *   `detection_found_nothing` - the importer didn't recognize any source control at the URL. To resolve, [Cancel the import](https://docs.github.com/rest/reference/migrations#cancel-an-import) and [retry](https://docs.github.com/rest/reference/migrations#start-an-import) with the correct URL.
-    * *   `detection_found_multiple` - the importer found several projects or repositories at the provided URL. When this is the case, the Import Progress response will also include a `project_choices` field with the possible project choices as values. To update project choice, please see the [Update an import](https://docs.github.com/rest/reference/migrations#update-an-import) section.
+    * *   `detection_needs_auth` - the importer requires authentication for the originating repository to continue detection. To update authentication for the import, please see the [Update an import](https://docs.github.com/rest/migrations/source-imports#update-an-import) section.
+    * *   `detection_found_nothing` - the importer didn't recognize any source control at the URL. To resolve, [Cancel the import](https://docs.github.com/rest/migrations/source-imports#cancel-an-import) and [retry](https://docs.github.com/rest/migrations/source-imports#start-an-import) with the correct URL.
+    * *   `detection_found_multiple` - the importer found several projects or repositories at the provided URL. When this is the case, the Import Progress response will also include a `project_choices` field with the possible project choices as values. To update project choice, please see the [Update an import](https://docs.github.com/rest/migrations/source-imports#update-an-import) section.
     *
     * **The project_choices field**
     *
@@ -225,6 +245,10 @@ trait CancelImport extends StObject {
   /**
     * View the progress of an import.
     *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
+    *
     * **Import status**
     *
     * This section includes details about the possible values of the `status` field of the Import Progress response.
@@ -239,11 +263,11 @@ trait CancelImport extends StObject {
     *
     * If there are problems, you will see one of these in the `status` field:
     *
-    * *   `auth_failed` - the import requires authentication in order to connect to the original repository. To update authentication for the import, please see the [Update an import](https://docs.github.com/rest/reference/migrations#update-an-import) section.
+    * *   `auth_failed` - the import requires authentication in order to connect to the original repository. To update authentication for the import, please see the [Update an import](https://docs.github.com/rest/migrations/source-imports#update-an-import) section.
     * *   `error` - the import encountered an error. The import progress response will include the `failed_step` and an error message. Contact [GitHub Support](https://support.github.com/contact?tags=dotcom-rest-api) for more information.
-    * *   `detection_needs_auth` - the importer requires authentication for the originating repository to continue detection. To update authentication for the import, please see the [Update an import](https://docs.github.com/rest/reference/migrations#update-an-import) section.
-    * *   `detection_found_nothing` - the importer didn't recognize any source control at the URL. To resolve, [Cancel the import](https://docs.github.com/rest/reference/migrations#cancel-an-import) and [retry](https://docs.github.com/rest/reference/migrations#start-an-import) with the correct URL.
-    * *   `detection_found_multiple` - the importer found several projects or repositories at the provided URL. When this is the case, the Import Progress response will also include a `project_choices` field with the possible project choices as values. To update project choice, please see the [Update an import](https://docs.github.com/rest/reference/migrations#update-an-import) section.
+    * *   `detection_needs_auth` - the importer requires authentication for the originating repository to continue detection. To update authentication for the import, please see the [Update an import](https://docs.github.com/rest/migrations/source-imports#update-an-import) section.
+    * *   `detection_found_nothing` - the importer didn't recognize any source control at the URL. To resolve, [Cancel the import](https://docs.github.com/rest/migrations/source-imports#cancel-an-import) and [retry](https://docs.github.com/rest/migrations/source-imports#start-an-import) with the correct URL.
+    * *   `detection_found_multiple` - the importer found several projects or repositories at the provided URL. When this is the case, the Import Progress response will also include a `project_choices` field with the possible project choices as values. To update project choice, please see the [Update an import](https://docs.github.com/rest/migrations/source-imports#update-an-import) section.
     *
     * **The project_choices field**
     *
@@ -259,10 +283,14 @@ trait CancelImport extends StObject {
     * *   `large_files_count` - the total number of files larger than 100MB found in the originating repository. To see a list of these files, make a "Get Large Files" request.
     */
   @JSName("getImportStatus")
-  var getImportStatus_Original: `387`
+  var getImportStatus_Original: `393`
   
   /**
     * List files larger than 100MB found during the import
+    *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   def getLargeFiles(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/import/large_files']['response'] */ js.Any
@@ -277,9 +305,13 @@ trait CancelImport extends StObject {
   ]
   /**
     * List files larger than 100MB found during the import
+    *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("getLargeFiles")
-  var getLargeFiles_Original: `388`
+  var getLargeFiles_Original: `394`
   
   /**
     * Fetches a single user migration. The response includes the `state` of the migration, which can be one of the following values:
@@ -289,7 +321,7 @@ trait CancelImport extends StObject {
     * *   `exported` - the migration finished successfully.
     * *   `failed` - the migration failed.
     *
-    * Once the migration has been `exported` you can [download the migration archive](https://docs.github.com/rest/reference/migrations#download-a-user-migration-archive).
+    * Once the migration has been `exported` you can [download the migration archive](https://docs.github.com/rest/migrations/users#download-a-user-migration-archive).
     */
   def getStatusForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/migrations/{migration_id}']['response'] */ js.Any
@@ -310,10 +342,10 @@ trait CancelImport extends StObject {
     * *   `exported` - the migration finished successfully.
     * *   `failed` - the migration failed.
     *
-    * Once the migration has been `exported` you can [download the migration archive](https://docs.github.com/rest/reference/migrations#download-a-user-migration-archive).
+    * Once the migration has been `exported` you can [download the migration archive](https://docs.github.com/rest/migrations/users#download-a-user-migration-archive).
     */
   @JSName("getStatusForAuthenticatedUser")
-  var getStatusForAuthenticatedUser_Original: `389`
+  var getStatusForAuthenticatedUser_Original: `395`
   
   /**
     * Fetches the status of a migration.
@@ -347,7 +379,7 @@ trait CancelImport extends StObject {
     * *   `failed`, which means the migration failed.
     */
   @JSName("getStatusForOrg")
-  var getStatusForOrg_Original: `390`
+  var getStatusForOrg_Original: `396`
   
   /**
     * Lists all migrations a user has started.
@@ -367,10 +399,12 @@ trait CancelImport extends StObject {
     * Lists all migrations a user has started.
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: `391`
+  var listForAuthenticatedUser_Original: `397`
   
   /**
-    * Lists the most recent migrations.
+    * Lists the most recent migrations, including both exports (which can be started through the REST API) and imports (which cannot be started using the REST API).
+    *
+    * A list of `repositories` is only returned for export migrations.
     */
   def listForOrg(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/migrations']['response'] */ js.Any
@@ -384,10 +418,12 @@ trait CancelImport extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/migrations']['response'] */ js.Any
   ]
   /**
-    * Lists the most recent migrations.
+    * Lists the most recent migrations, including both exports (which can be started through the REST API) and imports (which cannot be started using the REST API).
+    *
+    * A list of `repositories` is only returned for export migrations.
     */
   @JSName("listForOrg")
-  var listForOrg_Original: `392`
+  var listForOrg_Original: `398`
   
   /**
     * Lists all the repositories for this user migration.
@@ -407,7 +443,7 @@ trait CancelImport extends StObject {
     * Lists all the repositories for this user migration.
     */
   @JSName("listReposForAuthenticatedUser")
-  var listReposForAuthenticatedUser_Original: `393`
+  var listReposForAuthenticatedUser_Original: `399`
   
   /**
     * List all the repositories for this organization migration.
@@ -427,7 +463,7 @@ trait CancelImport extends StObject {
     * List all the repositories for this organization migration.
     */
   @JSName("listReposForOrg")
-  var listReposForOrg_Original: `394`
+  var listReposForOrg_Original: `400`
   
   /**
     * Lists all the repositories for this user migration.
@@ -449,10 +485,15 @@ trait CancelImport extends StObject {
     * @deprecated octokit.rest.migrations.listReposForUser() has been renamed to octokit.rest.migrations.listReposForAuthenticatedUser() (2021-10-05)
     */
   @JSName("listReposForUser")
-  var listReposForUser_Original: `393`
+  var listReposForUser_Original: `399`
   
   /**
-    * Update an author's identity for the import. Your application can continue updating authors any time before you push new commits to the repository.
+    * Update an author's identity for the import. Your application can continue updating authors any time before you push
+    * new commits to the repository.
+    *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   def mapCommitAuthor(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/import/authors/{author_id}']['response'] */ js.Any
@@ -466,13 +507,26 @@ trait CancelImport extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/import/authors/{author_id}']['response'] */ js.Any
   ]
   /**
-    * Update an author's identity for the import. Your application can continue updating authors any time before you push new commits to the repository.
+    * Update an author's identity for the import. Your application can continue updating authors any time before you push
+    * new commits to the repository.
+    *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("mapCommitAuthor")
-  var mapCommitAuthor_Original: `395`
+  var mapCommitAuthor_Original: `401`
   
   /**
-    * You can import repositories from Subversion, Mercurial, and TFS that include files larger than 100MB. This ability is powered by [Git LFS](https://git-lfs.github.com). You can learn more about our LFS feature and working with large files [on our help site](https://docs.github.com/articles/versioning-large-files/).
+    * You can import repositories from Subversion, Mercurial, and TFS that include files larger than 100MB. This ability
+    * is powered by [Git LFS](https://git-lfs.com).
+    *
+    * You can learn more about our LFS feature and working with large files [on our help
+    * site](https://docs.github.com/repositories/working-with-files/managing-large-files).
+    *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   def setLfsPreference(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/import/lfs']['response'] */ js.Any
@@ -486,10 +540,18 @@ trait CancelImport extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/import/lfs']['response'] */ js.Any
   ]
   /**
-    * You can import repositories from Subversion, Mercurial, and TFS that include files larger than 100MB. This ability is powered by [Git LFS](https://git-lfs.github.com). You can learn more about our LFS feature and working with large files [on our help site](https://docs.github.com/articles/versioning-large-files/).
+    * You can import repositories from Subversion, Mercurial, and TFS that include files larger than 100MB. This ability
+    * is powered by [Git LFS](https://git-lfs.com).
+    *
+    * You can learn more about our LFS feature and working with large files [on our help
+    * site](https://docs.github.com/repositories/working-with-files/managing-large-files).
+    *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("setLfsPreference")
-  var setLfsPreference_Original: `396`
+  var setLfsPreference_Original: `402`
   
   /**
     * Initiates the generation of a user migration archive.
@@ -509,7 +571,7 @@ trait CancelImport extends StObject {
     * Initiates the generation of a user migration archive.
     */
   @JSName("startForAuthenticatedUser")
-  var startForAuthenticatedUser_Original: `397`
+  var startForAuthenticatedUser_Original: `403`
   
   /**
     * Initiates the generation of a migration archive.
@@ -529,10 +591,11 @@ trait CancelImport extends StObject {
     * Initiates the generation of a migration archive.
     */
   @JSName("startForOrg")
-  var startForOrg_Original: `398`
+  var startForOrg_Original: `404`
   
   /**
-    * Start a source import to a GitHub repository using GitHub Importer.
+    * Start a source import to a GitHub repository using GitHub Importer. Importing into a GitHub repository with GitHub Actions enabled is not supported and will return a status `422 Unprocessable Entity` response.
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   def startImport(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/import']['response'] */ js.Any
@@ -546,13 +609,14 @@ trait CancelImport extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/import']['response'] */ js.Any
   ]
   /**
-    * Start a source import to a GitHub repository using GitHub Importer.
+    * Start a source import to a GitHub repository using GitHub Importer. Importing into a GitHub repository with GitHub Actions enabled is not supported and will return a status `422 Unprocessable Entity` response.
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("startImport")
-  var startImport_Original: `399`
+  var startImport_Original: `405`
   
   /**
-    * Unlocks a repository. You can lock repositories when you [start a user migration](https://docs.github.com/rest/reference/migrations#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://docs.github.com/rest/reference/repos#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
+    * Unlocks a repository. You can lock repositories when you [start a user migration](https://docs.github.com/rest/migrations/users#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://docs.github.com/rest/repos/repos#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
     */
   def unlockRepoForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/migrations/{migration_id}/repos/{repo_name}/lock']['response'] */ js.Any
@@ -566,13 +630,13 @@ trait CancelImport extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/migrations/{migration_id}/repos/{repo_name}/lock']['response'] */ js.Any
   ]
   /**
-    * Unlocks a repository. You can lock repositories when you [start a user migration](https://docs.github.com/rest/reference/migrations#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://docs.github.com/rest/reference/repos#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
+    * Unlocks a repository. You can lock repositories when you [start a user migration](https://docs.github.com/rest/migrations/users#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://docs.github.com/rest/repos/repos#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
     */
   @JSName("unlockRepoForAuthenticatedUser")
-  var unlockRepoForAuthenticatedUser_Original: `400`
+  var unlockRepoForAuthenticatedUser_Original: `406`
   
   /**
-    * Unlocks a repository that was locked for migration. You should unlock each migrated repository and [delete them](https://docs.github.com/rest/reference/repos#delete-a-repository) when the migration is complete and you no longer need the source data.
+    * Unlocks a repository that was locked for migration. You should unlock each migrated repository and [delete them](https://docs.github.com/rest/repos/repos#delete-a-repository) when the migration is complete and you no longer need the source data.
     */
   def unlockRepoForOrg(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/migrations/{migration_id}/repos/{repo_name}/lock']['response'] */ js.Any
@@ -586,10 +650,10 @@ trait CancelImport extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/migrations/{migration_id}/repos/{repo_name}/lock']['response'] */ js.Any
   ]
   /**
-    * Unlocks a repository that was locked for migration. You should unlock each migrated repository and [delete them](https://docs.github.com/rest/reference/repos#delete-a-repository) when the migration is complete and you no longer need the source data.
+    * Unlocks a repository that was locked for migration. You should unlock each migrated repository and [delete them](https://docs.github.com/rest/repos/repos#delete-a-repository) when the migration is complete and you no longer need the source data.
     */
   @JSName("unlockRepoForOrg")
-  var unlockRepoForOrg_Original: `401`
+  var unlockRepoForOrg_Original: `407`
   
   /**
     * An import can be updated with credentials or a project choice by passing in the appropriate parameters in this API
@@ -598,6 +662,10 @@ trait CancelImport extends StObject {
     * Some servers (e.g. TFS servers) can have several projects at a single URL. In those cases the import progress will
     * have the status `detection_found_multiple` and the Import Progress response will include a `project_choices` array.
     * You can select the project to import by providing one of the objects in the `project_choices` array in the update request.
+    *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   def updateImport(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/import']['response'] */ js.Any
@@ -617,36 +685,40 @@ trait CancelImport extends StObject {
     * Some servers (e.g. TFS servers) can have several projects at a single URL. In those cases the import progress will
     * have the status `detection_found_multiple` and the Import Progress response will include a `project_choices` array.
     * You can select the project to import by providing one of the objects in the `project_choices` array in the update request.
+    *
+    * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end
+    * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
+    * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("updateImport")
-  var updateImport_Original: `402`
+  var updateImport_Original: `408`
 }
 object CancelImport {
   
   inline def apply(
-    cancelImport: `381`,
-    deleteArchiveForAuthenticatedUser: `382`,
-    deleteArchiveForOrg: `383`,
-    downloadArchiveForOrg: `384`,
-    getArchiveForAuthenticatedUser: `385`,
-    getCommitAuthors: `386`,
-    getImportStatus: `387`,
-    getLargeFiles: `388`,
-    getStatusForAuthenticatedUser: `389`,
-    getStatusForOrg: `390`,
-    listForAuthenticatedUser: `391`,
-    listForOrg: `392`,
-    listReposForAuthenticatedUser: `393`,
-    listReposForOrg: `394`,
-    listReposForUser: `393`,
-    mapCommitAuthor: `395`,
-    setLfsPreference: `396`,
-    startForAuthenticatedUser: `397`,
-    startForOrg: `398`,
-    startImport: `399`,
-    unlockRepoForAuthenticatedUser: `400`,
-    unlockRepoForOrg: `401`,
-    updateImport: `402`
+    cancelImport: `387`,
+    deleteArchiveForAuthenticatedUser: `388`,
+    deleteArchiveForOrg: `389`,
+    downloadArchiveForOrg: `390`,
+    getArchiveForAuthenticatedUser: `391`,
+    getCommitAuthors: `392`,
+    getImportStatus: `393`,
+    getLargeFiles: `394`,
+    getStatusForAuthenticatedUser: `395`,
+    getStatusForOrg: `396`,
+    listForAuthenticatedUser: `397`,
+    listForOrg: `398`,
+    listReposForAuthenticatedUser: `399`,
+    listReposForOrg: `400`,
+    listReposForUser: `399`,
+    mapCommitAuthor: `401`,
+    setLfsPreference: `402`,
+    startForAuthenticatedUser: `403`,
+    startForOrg: `404`,
+    startImport: `405`,
+    unlockRepoForAuthenticatedUser: `406`,
+    unlockRepoForOrg: `407`,
+    updateImport: `408`
   ): CancelImport = {
     val __obj = js.Dynamic.literal(cancelImport = cancelImport.asInstanceOf[js.Any], deleteArchiveForAuthenticatedUser = deleteArchiveForAuthenticatedUser.asInstanceOf[js.Any], deleteArchiveForOrg = deleteArchiveForOrg.asInstanceOf[js.Any], downloadArchiveForOrg = downloadArchiveForOrg.asInstanceOf[js.Any], getArchiveForAuthenticatedUser = getArchiveForAuthenticatedUser.asInstanceOf[js.Any], getCommitAuthors = getCommitAuthors.asInstanceOf[js.Any], getImportStatus = getImportStatus.asInstanceOf[js.Any], getLargeFiles = getLargeFiles.asInstanceOf[js.Any], getStatusForAuthenticatedUser = getStatusForAuthenticatedUser.asInstanceOf[js.Any], getStatusForOrg = getStatusForOrg.asInstanceOf[js.Any], listForAuthenticatedUser = listForAuthenticatedUser.asInstanceOf[js.Any], listForOrg = listForOrg.asInstanceOf[js.Any], listReposForAuthenticatedUser = listReposForAuthenticatedUser.asInstanceOf[js.Any], listReposForOrg = listReposForOrg.asInstanceOf[js.Any], listReposForUser = listReposForUser.asInstanceOf[js.Any], mapCommitAuthor = mapCommitAuthor.asInstanceOf[js.Any], setLfsPreference = setLfsPreference.asInstanceOf[js.Any], startForAuthenticatedUser = startForAuthenticatedUser.asInstanceOf[js.Any], startForOrg = startForOrg.asInstanceOf[js.Any], startImport = startImport.asInstanceOf[js.Any], unlockRepoForAuthenticatedUser = unlockRepoForAuthenticatedUser.asInstanceOf[js.Any], unlockRepoForOrg = unlockRepoForOrg.asInstanceOf[js.Any], updateImport = updateImport.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelImport]
@@ -655,50 +727,50 @@ object CancelImport {
   @scala.inline
   implicit open class MutableBuilder[Self <: CancelImport] (val x: Self) extends AnyVal {
     
-    inline def setCancelImport(value: `381`): Self = StObject.set(x, "cancelImport", value.asInstanceOf[js.Any])
+    inline def setCancelImport(value: `387`): Self = StObject.set(x, "cancelImport", value.asInstanceOf[js.Any])
     
-    inline def setDeleteArchiveForAuthenticatedUser(value: `382`): Self = StObject.set(x, "deleteArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setDeleteArchiveForAuthenticatedUser(value: `388`): Self = StObject.set(x, "deleteArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setDeleteArchiveForOrg(value: `383`): Self = StObject.set(x, "deleteArchiveForOrg", value.asInstanceOf[js.Any])
+    inline def setDeleteArchiveForOrg(value: `389`): Self = StObject.set(x, "deleteArchiveForOrg", value.asInstanceOf[js.Any])
     
-    inline def setDownloadArchiveForOrg(value: `384`): Self = StObject.set(x, "downloadArchiveForOrg", value.asInstanceOf[js.Any])
+    inline def setDownloadArchiveForOrg(value: `390`): Self = StObject.set(x, "downloadArchiveForOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetArchiveForAuthenticatedUser(value: `385`): Self = StObject.set(x, "getArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetArchiveForAuthenticatedUser(value: `391`): Self = StObject.set(x, "getArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetCommitAuthors(value: `386`): Self = StObject.set(x, "getCommitAuthors", value.asInstanceOf[js.Any])
+    inline def setGetCommitAuthors(value: `392`): Self = StObject.set(x, "getCommitAuthors", value.asInstanceOf[js.Any])
     
-    inline def setGetImportStatus(value: `387`): Self = StObject.set(x, "getImportStatus", value.asInstanceOf[js.Any])
+    inline def setGetImportStatus(value: `393`): Self = StObject.set(x, "getImportStatus", value.asInstanceOf[js.Any])
     
-    inline def setGetLargeFiles(value: `388`): Self = StObject.set(x, "getLargeFiles", value.asInstanceOf[js.Any])
+    inline def setGetLargeFiles(value: `394`): Self = StObject.set(x, "getLargeFiles", value.asInstanceOf[js.Any])
     
-    inline def setGetStatusForAuthenticatedUser(value: `389`): Self = StObject.set(x, "getStatusForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetStatusForAuthenticatedUser(value: `395`): Self = StObject.set(x, "getStatusForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetStatusForOrg(value: `390`): Self = StObject.set(x, "getStatusForOrg", value.asInstanceOf[js.Any])
+    inline def setGetStatusForOrg(value: `396`): Self = StObject.set(x, "getStatusForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListForAuthenticatedUser(value: `391`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListForAuthenticatedUser(value: `397`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListForOrg(value: `392`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
+    inline def setListForOrg(value: `398`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListReposForAuthenticatedUser(value: `393`): Self = StObject.set(x, "listReposForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListReposForAuthenticatedUser(value: `399`): Self = StObject.set(x, "listReposForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListReposForOrg(value: `394`): Self = StObject.set(x, "listReposForOrg", value.asInstanceOf[js.Any])
+    inline def setListReposForOrg(value: `400`): Self = StObject.set(x, "listReposForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListReposForUser(value: `393`): Self = StObject.set(x, "listReposForUser", value.asInstanceOf[js.Any])
+    inline def setListReposForUser(value: `399`): Self = StObject.set(x, "listReposForUser", value.asInstanceOf[js.Any])
     
-    inline def setMapCommitAuthor(value: `395`): Self = StObject.set(x, "mapCommitAuthor", value.asInstanceOf[js.Any])
+    inline def setMapCommitAuthor(value: `401`): Self = StObject.set(x, "mapCommitAuthor", value.asInstanceOf[js.Any])
     
-    inline def setSetLfsPreference(value: `396`): Self = StObject.set(x, "setLfsPreference", value.asInstanceOf[js.Any])
+    inline def setSetLfsPreference(value: `402`): Self = StObject.set(x, "setLfsPreference", value.asInstanceOf[js.Any])
     
-    inline def setStartForAuthenticatedUser(value: `397`): Self = StObject.set(x, "startForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setStartForAuthenticatedUser(value: `403`): Self = StObject.set(x, "startForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setStartForOrg(value: `398`): Self = StObject.set(x, "startForOrg", value.asInstanceOf[js.Any])
+    inline def setStartForOrg(value: `404`): Self = StObject.set(x, "startForOrg", value.asInstanceOf[js.Any])
     
-    inline def setStartImport(value: `399`): Self = StObject.set(x, "startImport", value.asInstanceOf[js.Any])
+    inline def setStartImport(value: `405`): Self = StObject.set(x, "startImport", value.asInstanceOf[js.Any])
     
-    inline def setUnlockRepoForAuthenticatedUser(value: `400`): Self = StObject.set(x, "unlockRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setUnlockRepoForAuthenticatedUser(value: `406`): Self = StObject.set(x, "unlockRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setUnlockRepoForOrg(value: `401`): Self = StObject.set(x, "unlockRepoForOrg", value.asInstanceOf[js.Any])
+    inline def setUnlockRepoForOrg(value: `407`): Self = StObject.set(x, "unlockRepoForOrg", value.asInstanceOf[js.Any])
     
-    inline def setUpdateImport(value: `402`): Self = StObject.set(x, "updateImport", value.asInstanceOf[js.Any])
+    inline def setUpdateImport(value: `408`): Self = StObject.set(x, "updateImport", value.asInstanceOf[js.Any])
   }
 }

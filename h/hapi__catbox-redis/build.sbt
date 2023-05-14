@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hapi__catbox-redis"
-version := "5.0-dt-20221026Z-9bdc5c"
+version := "5.0-dt-20221026Z-04f8bc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "denque" % "2.1.0-beb622",
   "org.scalablytyped" %%% "hapi__catbox" % "12.1.1-59ddc5",
   "org.scalablytyped" %%% "hapi__podium" % "5.0.1-a01759",
-  "org.scalablytyped" %%% "ioredis" % "5.3.2-262f0b",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "ioredis" % "5.3.2-9138e5",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "redis-errors" % "1.2-dt-20211202Z-764393",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

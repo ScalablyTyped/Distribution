@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "elastic__ecs-pino-format"
-version := "1.3.0-56ecd6"
+version := "1.3.0-2be8a6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
-  "org.scalablytyped" %%% "pino" % "8.14.1-54c019",
-  "org.scalablytyped" %%% "pino-std-serializers" % "6.2.1-43fe8d",
-  "org.scalablytyped" %%% "sonic-boom" % "3.3.0-b907b3",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
+  "org.scalablytyped" %%% "pino" % "8.14.1-57e6e7",
+  "org.scalablytyped" %%% "pino-std-serializers" % "6.2.1-cf6f71",
+  "org.scalablytyped" %%% "sonic-boom" % "3.3.0-92e00d",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

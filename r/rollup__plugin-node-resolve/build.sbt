@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "rollup__plugin-node-resolve"
-version := "15.0.2-3c8ffe"
+version := "15.0.2-c521fd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "rollup" % "3.21.6-dbf5a5",
+  "org.scalablytyped" %%% "rollup" % "3.21.7-e69163",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

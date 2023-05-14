@@ -183,7 +183,6 @@
 | 0.8632317643497559 | [react-error-boundary](./r/react-error-boundary) | Simple reusable React error boundary component
 | 0.8631020492971274 | [luxon](./l/luxon) | Immutable date wrapper
 | 0.8630891073613675 | [cssesc](./c/cssesc) | A JavaScript library for escaping CSS strings and 
-| 0.8628669599103143 | [memfs](./m/memfs) | In-memory file-system with Node's fs API.
 | 0.8628417528444216 | [lodash_dot_camelcase](./l/lodash_dot_camelcase) | The lodash method _.camelCase exported as a module
 | 0.8625558227204242 | [statuses](./s/statuses) | HTTP status utility
 | 0.8625536796567048 | [encodeurl](./e/encodeurl) | Encode a URL to a percent-encoded form, excluding 
@@ -403,7 +402,6 @@
 | 0.840455460414824 | [opentelemetry__core](./o/opentelemetry__core) | OpenTelemetry Core provides constants and utilitie
 | 0.8403088016156286 | [react-spring__rafz](./r/react-spring__rafz) | react-spring's fork of rafz one frameloop to rule 
 | 0.8399517683916281 | [rollup__plugin-babel](./r/rollup__plugin-babel) | Seamless integration between Rollup and Babel.
-| 0.8397810961565887 | [vue__server-renderer](./v/vue__server-renderer) | @vue/server-renderer
 | 0.839719519901774 | [flux](./f/flux) | An application architecture based on a unidirectio
 | 0.8396723202567046 | [mobx](./m/mobx) | Simple, scalable state management.
 | 0.839620197594885 | [aws-sdk__util-config-prov](./a/aws-sdk__util-config-provider) | Utilities package for configuration providers
@@ -2780,6 +2778,7 @@
 | 0.7176712388781245 | [stream-to-array](./s/stream-to-array) | Concatenate a readable stream's data into a single
 | 0.7176433510462157 | [detect-passive-events](./d/detect-passive-events) | Detect if the browser supports passive events
 | 0.7176198342961569 | [grpc__proto-loader](./g/grpc__proto-loader) | gRPC utility library for loading .proto files
+| 0.7176004435070695 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.7175881284103192 | [react-ace](./r/react-ace) | A react component for Ace Editor
 | 0.7175787601224826 | [vfile-sort](./v/vfile-sort) | vfile utility to sort messages by line/column
 | 0.7175523728015658 | [react-swipe](./r/react-swipe) | Brad Birdsall's Swipe.js as a React component
@@ -4516,6 +4515,7 @@
 | 0.6715263933221988 | [react-dnd__shallowequal](./r/react-dnd__shallowequal) | Like lodash isEqualWith but for shallow equal.
 | 0.6715028593119714 | [moddle](./m/moddle) | A library for importing meta-model based file form
 | 0.6714925649878302 | [cassanknex](./c/cassanknex) | An Apache Cassandra CQL query builder with support
+| 0.6714853737212092 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.6714584335377032 | [jss-plugin-global](./j/jss-plugin-global) | Global styles for JSS
 | 0.6714458699011386 | [progress-stream](./p/progress-stream) | Read the progress of a stream
 | 0.6714229772885696 | [totp-generator](./t/totp-generator) | Generate TOTP tokens from key
@@ -7383,7 +7383,6 @@
 | 0.5649572777593966 | [styletron-standard](./s/styletron-standard) | Standard interfaces for Styletron
 | 0.5649255810945488 | [qrcode-generator](./q/qrcode-generator) | QR Code Generator implementation in JavaScript.
 | 0.5649102788916088 | [hermes-profile-transforme](./h/hermes-profile-transformer) | The Hermes runtime, used by React Native for Andro
-| 0.5649086515565599 | [socketcluster-client](./s/socketcluster-client) | SocketCluster JavaScript client
 | 0.5649070342625453 | [node-windows](./n/node-windows) | Support for Windows services, event logging, UAC, 
 | 0.5648793272291952 | [object-diff](./o/object-diff) | Get the diff from objectA to objectB
 | 0.5648607262379741 | [bayes-classifier](./b/bayes-classifier) | Naive Bayes classifier
@@ -8105,6 +8104,7 @@
 | 0.5239977776650723 | [tslint](./t/tslint) | An extensible static analysis linter for the TypeS
 | 0.52392042538791 | [rc-swipeout](./r/rc-swipeout) | swipe out ui component for react(web and react-nat
 | 0.5238501023310315 | [redis-mock](./r/redis-mock) | Redis client mock object for unit testing
+| 0.5238479026606435 | [bigbite__wp-cypress](./b/bigbite__wp-cypress) | WordPress end to end testing with Cypress.io
 | 0.5238164067865376 | [combokeys](./c/combokeys) | Handles keyboard shortcuts in the browser
 | 0.5237274991389178 | [graphviz](./g/graphviz) | Node.js interface to the GraphViz graphing tool
 | 0.5236475379747046 | [chai-oequal](./c/chai-oequal) | Chai oequal() that uses object's equality method.
@@ -8166,6 +8166,7 @@
 | 0.521022813406997 | [node-static](./n/node-static) | simple, compliant file streaming module for node
 | 0.5209657449388245 | [ip1sms__is-disposable-pho](./i/ip1sms__is-disposable-phone-number) | Determine if a phone number is a disposable phone 
 | 0.5209347255211918 | [angulartics](./a/angulartics) | Vendor-agnostic web analytics for AngularJS applic
+| 0.5209193518675125 | [y-leveldb](./y/y-leveldb) | LevelDb database adapter for Yjs
 | 0.5207384856180444 | [dts-generator](./d/dts-generator) | .d.ts generator. Generates a single d.ts bundle co
 | 0.5207371309362647 | [wu](./w/wu) | Combinators for ECMAScript 6 iterators.
 | 0.520702987559894 | [stremio-addon-sdk](./s/stremio-addon-sdk) | An SDK for making and publishing Stremio add-ons
@@ -8298,7 +8299,6 @@
 | 0.5125474192662031 | [protoo-server](./p/protoo-server) | protoo Node.js server module
 | 0.5125177055839564 | [friendly-errors-webpack-p](./f/friendly-errors-webpack-plugin) | Recognizes certain classes of webpack errors and c
 | 0.5125025740669654 | [react-highlight](./r/react-highlight) | React component for syntax highlighting
-| 0.5122503603103694 | [socketcluster](./s/socketcluster) | Highly scalable realtime framework with support fo
 | 0.5122293179455145 | [srtparsejs](./s/srtparsejs) | A javascript srt text parser and player.
 | 0.5121931457564102 | [graphlib-dot](./g/graphlib-dot) | A DOT language parser / writer for graphlib
 | 0.5121926615306799 | [gulp-shell](./g/gulp-shell) | A handy command line interface for gulp
@@ -9447,7 +9447,6 @@
 | 0.428280993962978 | [firebase__analytics](./f/firebase__analytics) | A analytics package for new firebase packages
 | 0.42794642208274203 | [react-hint](./r/react-hint) | Tooltip component for React, Preact, Inferno
 | 0.4279039010411938 | [react-native-app-link](./r/react-native-app-link) | Easily link to other apps with React Native.
-| 0.4278215035579169 | [remotedev-server](./r/remotedev-server) | Run the RemoteDev monitor on your local server.
 | 0.42773874523844563 | [antd-mobile-icons](./a/antd-mobile-icons) | The icon set for antd-mobile.
 | 0.42767373041792234 | [exif](./e/exif) | A node.js library to extract Exif metadata from im
 | 0.4275914281086396 | [vue-barcode-reader](./v/vue-barcode-reader) | Vue barcodes and QR codes scanner
@@ -9906,7 +9905,6 @@
 | 0.3745865481903553 | [react-native-base64](./r/react-native-base64) | Base64 encoding and decoding helping util. Created
 | 0.37452196042163644 | [material__banner](./m/material__banner) | The Material Components Web banner component.
 | 0.37445247357345435 | [natural-sort](./n/natural-sort) | Sorting with support for numbers, dates, unicode a
-| 0.37438395221516724 | [scc-broker-client](./s/scc-broker-client) | Client for SCC - For SocketCluster horizontal scal
 | 0.3743713933722608 | [rx_dot_wamp](./r/rx_dot_wamp) | A wrapper library for the autobahn wamp v1/v2 libr
 | 0.3740807026321362 | [google-fonts](./g/google-fonts) | A small helper library for embedding Google Fonts 
 | 0.3740772504684491 | [coinbase](./c/coinbase) | The Coinbase API for Node.js
@@ -10459,7 +10457,6 @@
 | 0.2600224027503371 | [triangle-wasm](./t/triangle-wasm) | Javascript wrapper around Triangle - A Two-Dimensi
 | 0.2599265870653049 | [raspi-pwm](./r/raspi-pwm) | Provides access to PWM on the Raspberry Pi as part
 | 0.25980207272617445 | [babel-jsx-utils](./b/babel-jsx-utils) | Utilities for working with Babel and JSX
-| 0.25910314314561234 | [sc-hot-reboot](./s/sc-hot-reboot) | Automatically reboot workers when code changes.
 | 0.25898387866676 | [amazon-dax-client](./a/amazon-dax-client) | Amazon DAX Client for JavaScript
 | 0.25898024935316444 | [webix](./w/webix) | Webix UI
 | 0.25887185654653105 | [paho-mqtt](./p/paho-mqtt) | Eclipse Paho JavaScript MQTT client for Browsers
@@ -10541,7 +10538,6 @@
 | 0.2436484533527392 | [cucumber__tag-expressions](./c/cucumber__tag-expressions) | Cucumber Tag Expression parser
 | 0.24359190281812493 | [react-copy-write](./r/react-copy-write) |  react-copy-write
 | 0.2434490919245575 | [firebase__auth-compat](./f/firebase__auth-compat) | FirebaseAuth compatibility package that uses API s
-| 0.2433021419126932 | [sc-broker-cluster](./s/sc-broker-cluster) | Realtime clustering engine
 | 0.24324440707172904 | [rwlock](./r/rwlock) | A read/write lock implementation for Node.
 | 0.2431813621470964 | [firebase__firestore-compa](./f/firebase__firestore-compat) | The Cloud Firestore component of the Firebase JS S
 | 0.24281599652789587 | [is-running](./i/is-running) | Test if a process with a given pid is running

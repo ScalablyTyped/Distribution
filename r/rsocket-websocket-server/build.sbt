@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "rsocket-websocket-server"
-version := "0.0-dt-20211202Z-91a6e0"
+version := "0.0-dt-20211202Z-f5ce18"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
-  "org.scalablytyped" %%% "rsocket-core" % "0.0-dt-20211202Z-34c090",
-  "org.scalablytyped" %%% "rsocket-flowable" % "0.0-dt-20211202Z-9b0144",
-  "org.scalablytyped" %%% "rsocket-types" % "0.0-dt-20211202Z-caeaa3",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
+  "org.scalablytyped" %%% "rsocket-core" % "0.0-dt-20211202Z-2eb8e3",
+  "org.scalablytyped" %%% "rsocket-flowable" % "0.0-dt-20211202Z-80ad53",
+  "org.scalablytyped" %%% "rsocket-types" % "0.0-dt-20211202Z-34298f",
   "org.scalablytyped" %%% "std" % "5.0-e63739",
-  "org.scalablytyped" %%% "ws" % "8.5-dt-20221230Z-106f12")
+  "org.scalablytyped" %%% "ws" % "8.5-dt-20221230Z-6a0345")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

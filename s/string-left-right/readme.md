@@ -1,7 +1,7 @@
 
 # Scala.js typings for string-left-right
 
-Typings are for version 6.0.11
+Typings are for version 6.0.12
 
 ## Library description:
 Looks up the first non-whitespace character to the left/right of a given index

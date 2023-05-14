@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "svg-to-pdfkit"
-version := "0.1-dt-20211202Z-36cb83"
+version := "0.1-dt-20211202Z-5acffe"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
-  "org.scalablytyped" %%% "pdfkit" % "v0.12.3-dt-20230330Z-e3125c",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
+  "org.scalablytyped" %%% "pdfkit" % "v0.12.3-dt-20230330Z-84b51b",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

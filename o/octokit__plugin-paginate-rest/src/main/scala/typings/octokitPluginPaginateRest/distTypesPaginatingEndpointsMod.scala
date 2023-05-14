@@ -15,6 +15,6 @@ object distTypesPaginatingEndpointsMod {
   @JSImport("@octokit/plugin-paginate-rest/dist-types/paginating-endpoints", "paginatingEndpoints")
   @js.native
   val paginatingEndpoints: js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 190, starting with typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashappSlashhookSlashdeliveries`, typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashappSlashinstallations`, typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunner-groups` */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 196, starting with typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashappSlashhookSlashdeliveries`, typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashappSlashinstallation-requests`, typings.octokitPluginPaginateRest.octokitPluginPaginateRestStrings.`GET SlashappSlashinstallations` */ Any
   ] = js.native
 }

@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "jest-runner"
-version := "29.5.0-a06b14"
+version := "29.5.0-26a67a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "collect-v8-coverage" % "1.0.1-1eac02",
-  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20230108Z-149e58",
+  "org.scalablytyped" %%% "collect-v8-coverage" % "1.0.1-2030dc",
+  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20230108Z-cd38cc",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20211223Z-5d8c07",
   "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-b22ccd",
   "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-8104f2",
-  "org.scalablytyped" %%% "jest-haste-map" % "29.5.0-590685",
-  "org.scalablytyped" %%% "jest-message-util" % "29.5.0-0f7bb4",
-  "org.scalablytyped" %%% "jest-resolve" % "29.5.0-d6ac3b",
-  "org.scalablytyped" %%% "jest-watcher" % "29.5.0-aa72c3",
-  "org.scalablytyped" %%% "jest__console" % "29.5.0-bf3444",
+  "org.scalablytyped" %%% "jest-haste-map" % "29.5.0-983de2",
+  "org.scalablytyped" %%% "jest-message-util" % "29.5.0-cdf39c",
+  "org.scalablytyped" %%% "jest-resolve" % "29.5.0-ee87ae",
+  "org.scalablytyped" %%% "jest-watcher" % "29.5.0-f22b5a",
+  "org.scalablytyped" %%% "jest__console" % "29.5.0-c8efea",
   "org.scalablytyped" %%% "jest__schemas" % "29.4.3-7a81bb",
-  "org.scalablytyped" %%% "jest__test-result" % "29.5.0-e1b822",
-  "org.scalablytyped" %%% "jest__types" % "29.5.0-2b1d28",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "jest__test-result" % "29.5.0-e921f8",
+  "org.scalablytyped" %%% "jest__types" % "29.5.0-5cfbb9",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "sinclair__typebox" % "0.28.9-55f540",
   "org.scalablytyped" %%% "stack-utils" % "2.0-dt-20211202Z-45e697",
   "org.scalablytyped" %%% "std" % "5.0-e63739")

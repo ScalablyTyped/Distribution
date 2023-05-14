@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "native-fetch"
-version := "4.0.2-557454"
+version := "4.0.2-414618"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "std" % "5.0-e63739",
-  "org.scalablytyped" %%% "undici" % "5.22.0-c04cf3")
+  "org.scalablytyped" %%% "undici" % "5.22.0-760f24")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -23,7 +23,7 @@ trait CreateBlob extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/git/blobs']['response'] */ js.Any
   ]
   @JSName("createBlob")
-  var createBlob_Original: `307`
+  var createBlob_Original: `313`
   
   /**
     * Creates a new Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).
@@ -50,7 +50,7 @@ trait CreateBlob extends StObject {
     * | `unsigned` | The object does not include a signature. |
     * | `unknown_signature_type` | A non-PGP signature was found in the commit. |
     * | `no_user` | No user was associated with the `committer` email address in the commit. |
-    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on their account. |
     * | `bad_email` | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature. |
     * | `unknown_key` | The key that made the signature has not been registered with any user's account. |
     * | `malformed_signature` | There was an error parsing the signature. |
@@ -93,7 +93,7 @@ trait CreateBlob extends StObject {
     * | `unsigned` | The object does not include a signature. |
     * | `unknown_signature_type` | A non-PGP signature was found in the commit. |
     * | `no_user` | No user was associated with the `committer` email address in the commit. |
-    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on their account. |
     * | `bad_email` | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature. |
     * | `unknown_key` | The key that made the signature has not been registered with any user's account. |
     * | `malformed_signature` | There was an error parsing the signature. |
@@ -101,7 +101,7 @@ trait CreateBlob extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("createCommit")
-  var createCommit_Original: `308`
+  var createCommit_Original: `314`
   
   /**
     * Creates a reference for your repository. You are unable to create new references for empty repositories, even if the commit SHA-1 hash used exists. Empty repositories are repositories without branches.
@@ -121,7 +121,7 @@ trait CreateBlob extends StObject {
     * Creates a reference for your repository. You are unable to create new references for empty repositories, even if the commit SHA-1 hash used exists. Empty repositories are repositories without branches.
     */
   @JSName("createRef")
-  var createRef_Original: `309`
+  var createRef_Original: `315`
   
   /**
     * Note that creating a tag object does not create the reference that makes a tag in Git. If you want to create an annotated tag in Git, you have to do this call to create the tag object, and then [create](https://docs.github.com/rest/reference/git#create-a-reference) the `refs/tags/[tag]` reference. If you want to create a lightweight tag, you only have to [create](https://docs.github.com/rest/reference/git#create-a-reference) the tag reference - this call would be unnecessary.
@@ -148,7 +148,7 @@ trait CreateBlob extends StObject {
     * | `unsigned` | The object does not include a signature. |
     * | `unknown_signature_type` | A non-PGP signature was found in the commit. |
     * | `no_user` | No user was associated with the `committer` email address in the commit. |
-    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on their account. |
     * | `bad_email` | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature. |
     * | `unknown_key` | The key that made the signature has not been registered with any user's account. |
     * | `malformed_signature` | There was an error parsing the signature. |
@@ -191,7 +191,7 @@ trait CreateBlob extends StObject {
     * | `unsigned` | The object does not include a signature. |
     * | `unknown_signature_type` | A non-PGP signature was found in the commit. |
     * | `no_user` | No user was associated with the `committer` email address in the commit. |
-    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on their account. |
     * | `bad_email` | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature. |
     * | `unknown_key` | The key that made the signature has not been registered with any user's account. |
     * | `malformed_signature` | There was an error parsing the signature. |
@@ -199,7 +199,7 @@ trait CreateBlob extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("createTag")
-  var createTag_Original: `310`
+  var createTag_Original: `316`
   
   /**
     * The tree creation API accepts nested entries. If you specify both a tree and a nested path modifying that tree, this endpoint will overwrite the contents of the tree with the new path contents, and create a new tree structure.
@@ -227,7 +227,7 @@ trait CreateBlob extends StObject {
     * Returns an error if you try to delete a file that does not exist.
     */
   @JSName("createTree")
-  var createTree_Original: `311`
+  var createTree_Original: `317`
   
   def deleteRef(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/git/refs/{ref}']['response'] */ js.Any
@@ -241,7 +241,7 @@ trait CreateBlob extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/git/refs/{ref}']['response'] */ js.Any
   ]
   @JSName("deleteRef")
-  var deleteRef_Original: `312`
+  var deleteRef_Original: `318`
   
   /**
     * The `content` in the response will always be Base64 encoded.
@@ -265,7 +265,7 @@ trait CreateBlob extends StObject {
     * _Note_: This API supports blobs up to 100 megabytes in size.
     */
   @JSName("getBlob")
-  var getBlob_Original: `313`
+  var getBlob_Original: `319`
   
   /**
     * Gets a Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).
@@ -292,7 +292,7 @@ trait CreateBlob extends StObject {
     * | `unsigned` | The object does not include a signature. |
     * | `unknown_signature_type` | A non-PGP signature was found in the commit. |
     * | `no_user` | No user was associated with the `committer` email address in the commit. |
-    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on their account. |
     * | `bad_email` | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature. |
     * | `unknown_key` | The key that made the signature has not been registered with any user's account. |
     * | `malformed_signature` | There was an error parsing the signature. |
@@ -335,7 +335,7 @@ trait CreateBlob extends StObject {
     * | `unsigned` | The object does not include a signature. |
     * | `unknown_signature_type` | A non-PGP signature was found in the commit. |
     * | `no_user` | No user was associated with the `committer` email address in the commit. |
-    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on their account. |
     * | `bad_email` | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature. |
     * | `unknown_key` | The key that made the signature has not been registered with any user's account. |
     * | `malformed_signature` | There was an error parsing the signature. |
@@ -343,7 +343,7 @@ trait CreateBlob extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("getCommit")
-  var getCommit_Original: `314`
+  var getCommit_Original: `320`
   
   /**
     * Returns a single reference from your Git database. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't match an existing ref, a `404` is returned.
@@ -367,7 +367,7 @@ trait CreateBlob extends StObject {
     * **Note:** You need to explicitly [request a pull request](https://docs.github.com/rest/reference/pulls#get-a-pull-request) to trigger a test merge commit, which checks the mergeability of pull requests. For more information, see "[Checking mergeability of pull requests](https://docs.github.com/rest/guides/getting-started-with-the-git-database-api#checking-mergeability-of-pull-requests)".
     */
   @JSName("getRef")
-  var getRef_Original: `315`
+  var getRef_Original: `321`
   
   /**
     * **Signature verification object**
@@ -392,7 +392,7 @@ trait CreateBlob extends StObject {
     * | `unsigned` | The object does not include a signature. |
     * | `unknown_signature_type` | A non-PGP signature was found in the commit. |
     * | `no_user` | No user was associated with the `committer` email address in the commit. |
-    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on their account. |
     * | `bad_email` | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature. |
     * | `unknown_key` | The key that made the signature has not been registered with any user's account. |
     * | `malformed_signature` | There was an error parsing the signature. |
@@ -433,7 +433,7 @@ trait CreateBlob extends StObject {
     * | `unsigned` | The object does not include a signature. |
     * | `unknown_signature_type` | A non-PGP signature was found in the commit. |
     * | `no_user` | No user was associated with the `committer` email address in the commit. |
-    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on their account. |
     * | `bad_email` | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature. |
     * | `unknown_key` | The key that made the signature has not been registered with any user's account. |
     * | `malformed_signature` | There was an error parsing the signature. |
@@ -441,7 +441,7 @@ trait CreateBlob extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("getTag")
-  var getTag_Original: `316`
+  var getTag_Original: `322`
   
   /**
     * Returns a single tree using the SHA1 value for that tree.
@@ -471,7 +471,7 @@ trait CreateBlob extends StObject {
     * **Note**: The limit for the `tree` array is 100,000 entries with a maximum size of 7 MB when using the `recursive` parameter.
     */
   @JSName("getTree")
-  var getTree_Original: `317`
+  var getTree_Original: `323`
   
   /**
     * Returns an array of references from your Git database that match the supplied name. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't exist in the repository, but existing refs start with `:ref`, they will be returned as an array.
@@ -503,7 +503,7 @@ trait CreateBlob extends StObject {
     * If you request matching references for a branch named `feature` but the branch `feature` doesn't exist, the response can still include other matching head refs that start with the word `feature`, such as `featureA` and `featureB`.
     */
   @JSName("listMatchingRefs")
-  var listMatchingRefs_Original: `318`
+  var listMatchingRefs_Original: `324`
   
   def updateRef(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/git/refs/{ref}']['response'] */ js.Any
@@ -517,24 +517,24 @@ trait CreateBlob extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/git/refs/{ref}']['response'] */ js.Any
   ]
   @JSName("updateRef")
-  var updateRef_Original: `319`
+  var updateRef_Original: `325`
 }
 object CreateBlob {
   
   inline def apply(
-    createBlob: `307`,
-    createCommit: `308`,
-    createRef: `309`,
-    createTag: `310`,
-    createTree: `311`,
-    deleteRef: `312`,
-    getBlob: `313`,
-    getCommit: `314`,
-    getRef: `315`,
-    getTag: `316`,
-    getTree: `317`,
-    listMatchingRefs: `318`,
-    updateRef: `319`
+    createBlob: `313`,
+    createCommit: `314`,
+    createRef: `315`,
+    createTag: `316`,
+    createTree: `317`,
+    deleteRef: `318`,
+    getBlob: `319`,
+    getCommit: `320`,
+    getRef: `321`,
+    getTag: `322`,
+    getTree: `323`,
+    listMatchingRefs: `324`,
+    updateRef: `325`
   ): CreateBlob = {
     val __obj = js.Dynamic.literal(createBlob = createBlob.asInstanceOf[js.Any], createCommit = createCommit.asInstanceOf[js.Any], createRef = createRef.asInstanceOf[js.Any], createTag = createTag.asInstanceOf[js.Any], createTree = createTree.asInstanceOf[js.Any], deleteRef = deleteRef.asInstanceOf[js.Any], getBlob = getBlob.asInstanceOf[js.Any], getCommit = getCommit.asInstanceOf[js.Any], getRef = getRef.asInstanceOf[js.Any], getTag = getTag.asInstanceOf[js.Any], getTree = getTree.asInstanceOf[js.Any], listMatchingRefs = listMatchingRefs.asInstanceOf[js.Any], updateRef = updateRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBlob]
@@ -543,30 +543,30 @@ object CreateBlob {
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateBlob] (val x: Self) extends AnyVal {
     
-    inline def setCreateBlob(value: `307`): Self = StObject.set(x, "createBlob", value.asInstanceOf[js.Any])
+    inline def setCreateBlob(value: `313`): Self = StObject.set(x, "createBlob", value.asInstanceOf[js.Any])
     
-    inline def setCreateCommit(value: `308`): Self = StObject.set(x, "createCommit", value.asInstanceOf[js.Any])
+    inline def setCreateCommit(value: `314`): Self = StObject.set(x, "createCommit", value.asInstanceOf[js.Any])
     
-    inline def setCreateRef(value: `309`): Self = StObject.set(x, "createRef", value.asInstanceOf[js.Any])
+    inline def setCreateRef(value: `315`): Self = StObject.set(x, "createRef", value.asInstanceOf[js.Any])
     
-    inline def setCreateTag(value: `310`): Self = StObject.set(x, "createTag", value.asInstanceOf[js.Any])
+    inline def setCreateTag(value: `316`): Self = StObject.set(x, "createTag", value.asInstanceOf[js.Any])
     
-    inline def setCreateTree(value: `311`): Self = StObject.set(x, "createTree", value.asInstanceOf[js.Any])
+    inline def setCreateTree(value: `317`): Self = StObject.set(x, "createTree", value.asInstanceOf[js.Any])
     
-    inline def setDeleteRef(value: `312`): Self = StObject.set(x, "deleteRef", value.asInstanceOf[js.Any])
+    inline def setDeleteRef(value: `318`): Self = StObject.set(x, "deleteRef", value.asInstanceOf[js.Any])
     
-    inline def setGetBlob(value: `313`): Self = StObject.set(x, "getBlob", value.asInstanceOf[js.Any])
+    inline def setGetBlob(value: `319`): Self = StObject.set(x, "getBlob", value.asInstanceOf[js.Any])
     
-    inline def setGetCommit(value: `314`): Self = StObject.set(x, "getCommit", value.asInstanceOf[js.Any])
+    inline def setGetCommit(value: `320`): Self = StObject.set(x, "getCommit", value.asInstanceOf[js.Any])
     
-    inline def setGetRef(value: `315`): Self = StObject.set(x, "getRef", value.asInstanceOf[js.Any])
+    inline def setGetRef(value: `321`): Self = StObject.set(x, "getRef", value.asInstanceOf[js.Any])
     
-    inline def setGetTag(value: `316`): Self = StObject.set(x, "getTag", value.asInstanceOf[js.Any])
+    inline def setGetTag(value: `322`): Self = StObject.set(x, "getTag", value.asInstanceOf[js.Any])
     
-    inline def setGetTree(value: `317`): Self = StObject.set(x, "getTree", value.asInstanceOf[js.Any])
+    inline def setGetTree(value: `323`): Self = StObject.set(x, "getTree", value.asInstanceOf[js.Any])
     
-    inline def setListMatchingRefs(value: `318`): Self = StObject.set(x, "listMatchingRefs", value.asInstanceOf[js.Any])
+    inline def setListMatchingRefs(value: `324`): Self = StObject.set(x, "listMatchingRefs", value.asInstanceOf[js.Any])
     
-    inline def setUpdateRef(value: `319`): Self = StObject.set(x, "updateRef", value.asInstanceOf[js.Any])
+    inline def setUpdateRef(value: `325`): Self = StObject.set(x, "updateRef", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "human-signals"
-version := "4.3.1-54a374"
+version := "5.0.0-9e8aaf"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "hexo-fs"
-version := "0.2-dt-20211202Z-1d7cb4"
+version := "0.2-dt-20211202Z-eacc97"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "anymatch" % "3.1.3-0a75c9",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20230328Z-ea1cbb",
-  "org.scalablytyped" %%% "chokidar" % "3.5.3-83a7b5",
-  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20230108Z-149e58",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "chokidar" % "3.5.3-b89d67",
+  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20230108Z-cd38cc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

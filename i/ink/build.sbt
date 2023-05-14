@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ink"
-version := "4.2.0-2b3a08"
+version := "4.2.0-66a5af"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "chalk" % "5.2.0-9bd557",
   "org.scalablytyped" %%% "cli-boxes" % "3.0.0-f5839a",
   "org.scalablytyped" %%% "csstype" % "3.1.2-5927f3",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4446ee",
   "org.scalablytyped" %%% "react" % "18.2-dt-20230506Z-14ab9d",
   "org.scalablytyped" %%% "react-reconciler" % "0.28-dt-20230112Z-404cd2",

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cross-platform-terminal-characters" : "3.3.0"
+      "cross-platform-terminal-characters" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cross-platform-terminal-characters" : "3.3.0"
+      "cross-platform-terminal-characters" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

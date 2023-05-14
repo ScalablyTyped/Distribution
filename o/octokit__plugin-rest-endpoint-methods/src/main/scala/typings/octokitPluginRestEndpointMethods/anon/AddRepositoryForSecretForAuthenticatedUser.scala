@@ -33,7 +33,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces_user_secrets` user permission and write access to the `codespaces_secrets` repository permission on the referenced repository to use this endpoint.
     */
   @JSName("addRepositoryForSecretForAuthenticatedUser")
-  var addRepositoryForSecretForAuthenticatedUser_Original: `217`
+  var addRepositoryForSecretForAuthenticatedUser_Original: `223`
   
   /**
     * Adds a repository to an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/codespaces#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint.
@@ -53,7 +53,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * Adds a repository to an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/codespaces#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("addSelectedRepoToOrgSecret")
-  var addSelectedRepoToOrgSecret_Original: `218`
+  var addSelectedRepoToOrgSecret_Original: `224`
   
   /**
     * List the machine types a codespace can transition to use.
@@ -81,7 +81,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have read access to the `codespaces_metadata` repository permission to use this endpoint.
     */
   @JSName("codespaceMachinesForAuthenticatedUser")
-  var codespaceMachinesForAuthenticatedUser_Original: `219`
+  var codespaceMachinesForAuthenticatedUser_Original: `225`
   
   /**
     * Creates a new codespace, owned by the authenticated user.
@@ -113,7 +113,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces` repository permission to use this endpoint.
     */
   @JSName("createForAuthenticatedUser")
-  var createForAuthenticatedUser_Original: `220`
+  var createForAuthenticatedUser_Original: `226`
   
   /**
     * Creates or updates an organization secret with an encrypted value. Encrypt your secret using
@@ -281,7 +281,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * ```
     */
   @JSName("createOrUpdateOrgSecret")
-  var createOrUpdateOrgSecret_Original: `221`
+  var createOrUpdateOrgSecret_Original: `227`
   
   /**
     * Creates or updates a repository secret with an encrypted value. Encrypt your secret using
@@ -451,7 +451,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * ```
     */
   @JSName("createOrUpdateRepoSecret")
-  var createOrUpdateRepoSecret_Original: `222`
+  var createOrUpdateRepoSecret_Original: `228`
   
   /**
     * Creates or updates a secret for a user's codespace with an encrypted value. Encrypt your secret using
@@ -625,7 +625,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * ```
     */
   @JSName("createOrUpdateSecretForAuthenticatedUser")
-  var createOrUpdateSecretForAuthenticatedUser_Original: `223`
+  var createOrUpdateSecretForAuthenticatedUser_Original: `229`
   
   /**
     * Creates a codespace owned by the authenticated user for the specified pull request.
@@ -653,7 +653,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces` repository permission to use this endpoint.
     */
   @JSName("createWithPrForAuthenticatedUser")
-  var createWithPrForAuthenticatedUser_Original: `224`
+  var createWithPrForAuthenticatedUser_Original: `230`
   
   /**
     * Creates a codespace owned by the authenticated user in the specified repository.
@@ -681,7 +681,29 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces` repository permission to use this endpoint.
     */
   @JSName("createWithRepoForAuthenticatedUser")
-  var createWithRepoForAuthenticatedUser_Original: `225`
+  var createWithRepoForAuthenticatedUser_Original: `231`
+  
+  /**
+    * Codespaces for the specified users will no longer be billed to the organization.
+    * To use this endpoint, the billing settings for the organization must be set to `selected_members`. For information on how to change this setting please see [these docs].(https://docs.github.com/rest/codespaces/organizations#manage-access-control-for-organization-codespaces) You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    */
+  def deleteCodespacesBillingUsers(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/codespaces/billing/selected_users']['response'] */ js.Any
+  ]
+  def deleteCodespacesBillingUsers(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/codespaces/billing/selected_users']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/codespaces/billing/selected_users']['response'] */ js.Any
+  ]
+  /**
+    * Codespaces for the specified users will no longer be billed to the organization.
+    * To use this endpoint, the billing settings for the organization must be set to `selected_members`. For information on how to change this setting please see [these docs].(https://docs.github.com/rest/codespaces/organizations#manage-access-control-for-organization-codespaces) You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    */
+  @JSName("deleteCodespacesBillingUsers")
+  var deleteCodespacesBillingUsers_Original: `232`
   
   /**
     * Deletes a user's codespace.
@@ -709,7 +731,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces` repository permission to use this endpoint.
     */
   @JSName("deleteForAuthenticatedUser")
-  var deleteForAuthenticatedUser_Original: `226`
+  var deleteForAuthenticatedUser_Original: `233`
   
   /**
     * Deletes a user's codespace.
@@ -733,7 +755,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("deleteFromOrganization")
-  var deleteFromOrganization_Original: `227`
+  var deleteFromOrganization_Original: `234`
   
   /**
     * Deletes an organization secret using the secret name. You must authenticate using an access token with the `admin:org` scope to use this endpoint.
@@ -753,7 +775,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * Deletes an organization secret using the secret name. You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("deleteOrgSecret")
-  var deleteOrgSecret_Original: `228`
+  var deleteOrgSecret_Original: `235`
   
   /**
     * Deletes a secret in a repository using the secret name. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have write access to the `codespaces_secrets` repository permission to use this endpoint.
@@ -773,7 +795,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * Deletes a secret in a repository using the secret name. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have write access to the `codespaces_secrets` repository permission to use this endpoint.
     */
   @JSName("deleteRepoSecret")
-  var deleteRepoSecret_Original: `229`
+  var deleteRepoSecret_Original: `236`
   
   /**
     * Deletes a secret from a user's codespaces using the secret name. Deleting the secret will remove access from all codespaces that were allowed to access the secret.
@@ -801,7 +823,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces_user_secrets` user permission to use this endpoint.
     */
   @JSName("deleteSecretForAuthenticatedUser")
-  var deleteSecretForAuthenticatedUser_Original: `230`
+  var deleteSecretForAuthenticatedUser_Original: `237`
   
   /**
     * Triggers an export of the specified codespace and returns a URL and ID where the status of the export can be monitored.
@@ -833,7 +855,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces_lifecycle_admin` repository permission to use this endpoint.
     */
   @JSName("exportForAuthenticatedUser")
-  var exportForAuthenticatedUser_Original: `231`
+  var exportForAuthenticatedUser_Original: `238`
   
   /**
     * Lists the codespaces that a member of an organization has for repositories in that organization.
@@ -857,7 +879,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("getCodespacesForUserInOrg")
-  var getCodespacesForUserInOrg_Original: `232`
+  var getCodespacesForUserInOrg_Original: `239`
   
   /**
     * Gets information about an export of a codespace.
@@ -885,7 +907,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have read access to the `codespaces_lifecycle_admin` repository permission to use this endpoint.
     */
   @JSName("getExportDetailsForAuthenticatedUser")
-  var getExportDetailsForAuthenticatedUser_Original: `233`
+  var getExportDetailsForAuthenticatedUser_Original: `240`
   
   /**
     * Gets information about a user's codespace.
@@ -913,7 +935,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have read access to the `codespaces` repository permission to use this endpoint.
     */
   @JSName("getForAuthenticatedUser")
-  var getForAuthenticatedUser_Original: `234`
+  var getForAuthenticatedUser_Original: `241`
   
   /**
     * Gets a public key for an organization, which is required in order to encrypt secrets. You need to encrypt the value of a secret before you can create or update secrets. You must authenticate using an access token with the `admin:org` scope to use this endpoint.
@@ -933,7 +955,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * Gets a public key for an organization, which is required in order to encrypt secrets. You need to encrypt the value of a secret before you can create or update secrets. You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("getOrgPublicKey")
-  var getOrgPublicKey_Original: `235`
+  var getOrgPublicKey_Original: `242`
   
   /**
     * Gets an organization secret without revealing its encrypted value.
@@ -955,7 +977,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("getOrgSecret")
-  var getOrgSecret_Original: `236`
+  var getOrgSecret_Original: `243`
   
   /**
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets.
@@ -983,7 +1005,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have read access to the `codespaces_user_secrets` user permission to use this endpoint.
     */
   @JSName("getPublicKeyForAuthenticatedUser")
-  var getPublicKeyForAuthenticatedUser_Original: `237`
+  var getPublicKeyForAuthenticatedUser_Original: `244`
   
   /**
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have write access to the `codespaces_secrets` repository permission to use this endpoint.
@@ -1003,7 +1025,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have write access to the `codespaces_secrets` repository permission to use this endpoint.
     */
   @JSName("getRepoPublicKey")
-  var getRepoPublicKey_Original: `238`
+  var getRepoPublicKey_Original: `245`
   
   /**
     * Gets a single repository secret without revealing its encrypted value. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have write access to the `codespaces_secrets` repository permission to use this endpoint.
@@ -1023,7 +1045,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * Gets a single repository secret without revealing its encrypted value. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have write access to the `codespaces_secrets` repository permission to use this endpoint.
     */
   @JSName("getRepoSecret")
-  var getRepoSecret_Original: `239`
+  var getRepoSecret_Original: `246`
   
   /**
     * Gets a secret available to a user's codespaces without revealing its encrypted value.
@@ -1051,7 +1073,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have read access to the `codespaces_user_secrets` user permission to use this endpoint.
     */
   @JSName("getSecretForAuthenticatedUser")
-  var getSecretForAuthenticatedUser_Original: `240`
+  var getSecretForAuthenticatedUser_Original: `247`
   
   /**
     * Lists the devcontainer.json files associated with a specified repository and the authenticated user. These files
@@ -1081,7 +1103,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have read access to the `codespaces_metadata` repository permission to use this endpoint.
     */
   @JSName("listDevcontainersInRepositoryForAuthenticatedUser")
-  var listDevcontainersInRepositoryForAuthenticatedUser_Original: `241`
+  var listDevcontainersInRepositoryForAuthenticatedUser_Original: `248`
   
   /**
     * Lists the authenticated user's codespaces.
@@ -1109,7 +1131,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have read access to the `codespaces` repository permission to use this endpoint.
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: `242`
+  var listForAuthenticatedUser_Original: `249`
   
   /**
     * Lists the codespaces associated to a specified organization.
@@ -1133,7 +1155,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("listInOrganization")
-  var listInOrganization_Original: `243`
+  var listInOrganization_Original: `250`
   
   /**
     * Lists the codespaces associated to a specified repository and the authenticated user.
@@ -1161,7 +1183,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have read access to the `codespaces` repository permission to use this endpoint.
     */
   @JSName("listInRepositoryForAuthenticatedUser")
-  var listInRepositoryForAuthenticatedUser_Original: `244`
+  var listInRepositoryForAuthenticatedUser_Original: `251`
   
   /**
     * Lists all Codespaces secrets available at the organization-level without revealing their encrypted values.
@@ -1183,7 +1205,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("listOrgSecrets")
-  var listOrgSecrets_Original: `245`
+  var listOrgSecrets_Original: `252`
   
   /**
     * Lists all secrets available in a repository without revealing their encrypted values. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have write access to the `codespaces_secrets` repository permission to use this endpoint.
@@ -1203,7 +1225,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * Lists all secrets available in a repository without revealing their encrypted values. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have write access to the `codespaces_secrets` repository permission to use this endpoint.
     */
   @JSName("listRepoSecrets")
-  var listRepoSecrets_Original: `246`
+  var listRepoSecrets_Original: `253`
   
   /**
     * List the repositories that have been granted the ability to use a user's codespace secret.
@@ -1231,7 +1253,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have read access to the `codespaces_user_secrets` user permission and write access to the `codespaces_secrets` repository permission on all referenced repositories to use this endpoint.
     */
   @JSName("listRepositoriesForSecretForAuthenticatedUser")
-  var listRepositoriesForSecretForAuthenticatedUser_Original: `247`
+  var listRepositoriesForSecretForAuthenticatedUser_Original: `254`
   
   /**
     * Lists all secrets available for a user's Codespaces without revealing their
@@ -1261,7 +1283,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have read access to the `codespaces_user_secrets` user permission to use this endpoint.
     */
   @JSName("listSecretsForAuthenticatedUser")
-  var listSecretsForAuthenticatedUser_Original: `248`
+  var listSecretsForAuthenticatedUser_Original: `255`
   
   /**
     * Lists all repositories that have been selected when the `visibility` for repository access to a secret is set to `selected`. You must authenticate using an access token with the `admin:org` scope to use this endpoint.
@@ -1281,7 +1303,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * Lists all repositories that have been selected when the `visibility` for repository access to a secret is set to `selected`. You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("listSelectedReposForOrgSecret")
-  var listSelectedReposForOrgSecret_Original: `249`
+  var listSelectedReposForOrgSecret_Original: `256`
   
   /**
     * Gets the default attributes for codespaces created by the user with the repository.
@@ -1309,7 +1331,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces` repository permission to use this endpoint.
     */
   @JSName("preFlightWithRepoForAuthenticatedUser")
-  var preFlightWithRepoForAuthenticatedUser_Original: `250`
+  var preFlightWithRepoForAuthenticatedUser_Original: `257`
   
   /**
     * Publishes an unpublished codespace, creating a new repository and assigning it to the codespace.
@@ -1345,7 +1367,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces` repository permission to use this endpoint.
     */
   @JSName("publishForAuthenticatedUser")
-  var publishForAuthenticatedUser_Original: `251`
+  var publishForAuthenticatedUser_Original: `258`
   
   /**
     * Removes a repository from the selected repositories for a user's codespace secret.
@@ -1369,7 +1391,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces_user_secrets` user permission to use this endpoint.
     */
   @JSName("removeRepositoryForSecretForAuthenticatedUser")
-  var removeRepositoryForSecretForAuthenticatedUser_Original: `252`
+  var removeRepositoryForSecretForAuthenticatedUser_Original: `259`
   
   /**
     * Removes a repository from an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/codespaces#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint.
@@ -1389,7 +1411,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * Removes a repository from an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/codespaces#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("removeSelectedRepoFromOrgSecret")
-  var removeSelectedRepoFromOrgSecret_Original: `253`
+  var removeSelectedRepoFromOrgSecret_Original: `260`
   
   /**
     * List the machine types available for a given repository based on its configuration.
@@ -1417,7 +1439,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces_metadata` repository permission to use this endpoint.
     */
   @JSName("repoMachinesForAuthenticatedUser")
-  var repoMachinesForAuthenticatedUser_Original: `254`
+  var repoMachinesForAuthenticatedUser_Original: `261`
   
   /**
     * Sets which users can access codespaces in an organization. This is synonymous with granting or revoking codespaces billing permissions for users according to the visibility.
@@ -1434,12 +1456,35 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/{org}/codespaces/billing']['response'] */ js.Any
   ]
+  
+  /**
+    * Codespaces for the specified users will be billed to the organization.
+    * To use this endpoint, the billing settings for the organization must be set to `selected_members`. For information on how to change this setting please see [these docs].(https://docs.github.com/rest/codespaces/organizations#manage-access-control-for-organization-codespaces) You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    */
+  def setCodespacesBillingUsers(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/codespaces/billing/selected_users']['response'] */ js.Any
+  ]
+  def setCodespacesBillingUsers(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/codespaces/billing/selected_users']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/codespaces/billing/selected_users']['response'] */ js.Any
+  ]
+  /**
+    * Codespaces for the specified users will be billed to the organization.
+    * To use this endpoint, the billing settings for the organization must be set to `selected_members`. For information on how to change this setting please see [these docs].(https://docs.github.com/rest/codespaces/organizations#manage-access-control-for-organization-codespaces) You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    */
+  @JSName("setCodespacesBillingUsers")
+  var setCodespacesBillingUsers_Original: `263`
+  
   /**
     * Sets which users can access codespaces in an organization. This is synonymous with granting or revoking codespaces billing permissions for users according to the visibility.
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("setCodespacesBilling")
-  var setCodespacesBilling_Original: `255`
+  var setCodespacesBilling_Original: `262`
   
   /**
     * Select the repositories that will use a user's codespace secret.
@@ -1467,7 +1512,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces_user_secrets` user permission and write access to the `codespaces_secrets` repository permission on all referenced repositories to use this endpoint.
     */
   @JSName("setRepositoriesForSecretForAuthenticatedUser")
-  var setRepositoriesForSecretForAuthenticatedUser_Original: `256`
+  var setRepositoriesForSecretForAuthenticatedUser_Original: `264`
   
   /**
     * Replaces all repositories for an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/codespaces#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint.
@@ -1487,7 +1532,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * Replaces all repositories for an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/codespaces#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("setSelectedReposForOrgSecret")
-  var setSelectedReposForOrgSecret_Original: `257`
+  var setSelectedReposForOrgSecret_Original: `265`
   
   /**
     * Starts a user's codespace.
@@ -1515,7 +1560,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces_lifecycle_admin` repository permission to use this endpoint.
     */
   @JSName("startForAuthenticatedUser")
-  var startForAuthenticatedUser_Original: `258`
+  var startForAuthenticatedUser_Original: `266`
   
   /**
     * Stops a user's codespace.
@@ -1543,7 +1588,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces_lifecycle_admin` repository permission to use this endpoint.
     */
   @JSName("stopForAuthenticatedUser")
-  var stopForAuthenticatedUser_Original: `259`
+  var stopForAuthenticatedUser_Original: `267`
   
   /**
     * Stops a user's codespace.
@@ -1567,7 +1612,7 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("stopInOrganization")
-  var stopInOrganization_Original: `260`
+  var stopInOrganization_Original: `268`
   
   /**
     * Updates a codespace owned by the authenticated user. Currently only the codespace's machine type and recent folders can be modified using this endpoint.
@@ -1599,152 +1644,158 @@ trait AddRepositoryForSecretForAuthenticatedUser extends StObject {
     * GitHub Apps must have write access to the `codespaces` repository permission to use this endpoint.
     */
   @JSName("updateForAuthenticatedUser")
-  var updateForAuthenticatedUser_Original: `261`
+  var updateForAuthenticatedUser_Original: `269`
 }
 object AddRepositoryForSecretForAuthenticatedUser {
   
   inline def apply(
-    addRepositoryForSecretForAuthenticatedUser: `217`,
-    addSelectedRepoToOrgSecret: `218`,
-    codespaceMachinesForAuthenticatedUser: `219`,
-    createForAuthenticatedUser: `220`,
-    createOrUpdateOrgSecret: `221`,
-    createOrUpdateRepoSecret: `222`,
-    createOrUpdateSecretForAuthenticatedUser: `223`,
-    createWithPrForAuthenticatedUser: `224`,
-    createWithRepoForAuthenticatedUser: `225`,
-    deleteForAuthenticatedUser: `226`,
-    deleteFromOrganization: `227`,
-    deleteOrgSecret: `228`,
-    deleteRepoSecret: `229`,
-    deleteSecretForAuthenticatedUser: `230`,
-    exportForAuthenticatedUser: `231`,
-    getCodespacesForUserInOrg: `232`,
-    getExportDetailsForAuthenticatedUser: `233`,
-    getForAuthenticatedUser: `234`,
-    getOrgPublicKey: `235`,
-    getOrgSecret: `236`,
-    getPublicKeyForAuthenticatedUser: `237`,
-    getRepoPublicKey: `238`,
-    getRepoSecret: `239`,
-    getSecretForAuthenticatedUser: `240`,
-    listDevcontainersInRepositoryForAuthenticatedUser: `241`,
-    listForAuthenticatedUser: `242`,
-    listInOrganization: `243`,
-    listInRepositoryForAuthenticatedUser: `244`,
-    listOrgSecrets: `245`,
-    listRepoSecrets: `246`,
-    listRepositoriesForSecretForAuthenticatedUser: `247`,
-    listSecretsForAuthenticatedUser: `248`,
-    listSelectedReposForOrgSecret: `249`,
-    preFlightWithRepoForAuthenticatedUser: `250`,
-    publishForAuthenticatedUser: `251`,
-    removeRepositoryForSecretForAuthenticatedUser: `252`,
-    removeSelectedRepoFromOrgSecret: `253`,
-    repoMachinesForAuthenticatedUser: `254`,
-    setCodespacesBilling: `255`,
-    setRepositoriesForSecretForAuthenticatedUser: `256`,
-    setSelectedReposForOrgSecret: `257`,
-    startForAuthenticatedUser: `258`,
-    stopForAuthenticatedUser: `259`,
-    stopInOrganization: `260`,
-    updateForAuthenticatedUser: `261`
+    addRepositoryForSecretForAuthenticatedUser: `223`,
+    addSelectedRepoToOrgSecret: `224`,
+    codespaceMachinesForAuthenticatedUser: `225`,
+    createForAuthenticatedUser: `226`,
+    createOrUpdateOrgSecret: `227`,
+    createOrUpdateRepoSecret: `228`,
+    createOrUpdateSecretForAuthenticatedUser: `229`,
+    createWithPrForAuthenticatedUser: `230`,
+    createWithRepoForAuthenticatedUser: `231`,
+    deleteCodespacesBillingUsers: `232`,
+    deleteForAuthenticatedUser: `233`,
+    deleteFromOrganization: `234`,
+    deleteOrgSecret: `235`,
+    deleteRepoSecret: `236`,
+    deleteSecretForAuthenticatedUser: `237`,
+    exportForAuthenticatedUser: `238`,
+    getCodespacesForUserInOrg: `239`,
+    getExportDetailsForAuthenticatedUser: `240`,
+    getForAuthenticatedUser: `241`,
+    getOrgPublicKey: `242`,
+    getOrgSecret: `243`,
+    getPublicKeyForAuthenticatedUser: `244`,
+    getRepoPublicKey: `245`,
+    getRepoSecret: `246`,
+    getSecretForAuthenticatedUser: `247`,
+    listDevcontainersInRepositoryForAuthenticatedUser: `248`,
+    listForAuthenticatedUser: `249`,
+    listInOrganization: `250`,
+    listInRepositoryForAuthenticatedUser: `251`,
+    listOrgSecrets: `252`,
+    listRepoSecrets: `253`,
+    listRepositoriesForSecretForAuthenticatedUser: `254`,
+    listSecretsForAuthenticatedUser: `255`,
+    listSelectedReposForOrgSecret: `256`,
+    preFlightWithRepoForAuthenticatedUser: `257`,
+    publishForAuthenticatedUser: `258`,
+    removeRepositoryForSecretForAuthenticatedUser: `259`,
+    removeSelectedRepoFromOrgSecret: `260`,
+    repoMachinesForAuthenticatedUser: `261`,
+    setCodespacesBilling: `262`,
+    setCodespacesBillingUsers: `263`,
+    setRepositoriesForSecretForAuthenticatedUser: `264`,
+    setSelectedReposForOrgSecret: `265`,
+    startForAuthenticatedUser: `266`,
+    stopForAuthenticatedUser: `267`,
+    stopInOrganization: `268`,
+    updateForAuthenticatedUser: `269`
   ): AddRepositoryForSecretForAuthenticatedUser = {
-    val __obj = js.Dynamic.literal(addRepositoryForSecretForAuthenticatedUser = addRepositoryForSecretForAuthenticatedUser.asInstanceOf[js.Any], addSelectedRepoToOrgSecret = addSelectedRepoToOrgSecret.asInstanceOf[js.Any], codespaceMachinesForAuthenticatedUser = codespaceMachinesForAuthenticatedUser.asInstanceOf[js.Any], createForAuthenticatedUser = createForAuthenticatedUser.asInstanceOf[js.Any], createOrUpdateOrgSecret = createOrUpdateOrgSecret.asInstanceOf[js.Any], createOrUpdateRepoSecret = createOrUpdateRepoSecret.asInstanceOf[js.Any], createOrUpdateSecretForAuthenticatedUser = createOrUpdateSecretForAuthenticatedUser.asInstanceOf[js.Any], createWithPrForAuthenticatedUser = createWithPrForAuthenticatedUser.asInstanceOf[js.Any], createWithRepoForAuthenticatedUser = createWithRepoForAuthenticatedUser.asInstanceOf[js.Any], deleteForAuthenticatedUser = deleteForAuthenticatedUser.asInstanceOf[js.Any], deleteFromOrganization = deleteFromOrganization.asInstanceOf[js.Any], deleteOrgSecret = deleteOrgSecret.asInstanceOf[js.Any], deleteRepoSecret = deleteRepoSecret.asInstanceOf[js.Any], deleteSecretForAuthenticatedUser = deleteSecretForAuthenticatedUser.asInstanceOf[js.Any], exportForAuthenticatedUser = exportForAuthenticatedUser.asInstanceOf[js.Any], getCodespacesForUserInOrg = getCodespacesForUserInOrg.asInstanceOf[js.Any], getExportDetailsForAuthenticatedUser = getExportDetailsForAuthenticatedUser.asInstanceOf[js.Any], getForAuthenticatedUser = getForAuthenticatedUser.asInstanceOf[js.Any], getOrgPublicKey = getOrgPublicKey.asInstanceOf[js.Any], getOrgSecret = getOrgSecret.asInstanceOf[js.Any], getPublicKeyForAuthenticatedUser = getPublicKeyForAuthenticatedUser.asInstanceOf[js.Any], getRepoPublicKey = getRepoPublicKey.asInstanceOf[js.Any], getRepoSecret = getRepoSecret.asInstanceOf[js.Any], getSecretForAuthenticatedUser = getSecretForAuthenticatedUser.asInstanceOf[js.Any], listDevcontainersInRepositoryForAuthenticatedUser = listDevcontainersInRepositoryForAuthenticatedUser.asInstanceOf[js.Any], listForAuthenticatedUser = listForAuthenticatedUser.asInstanceOf[js.Any], listInOrganization = listInOrganization.asInstanceOf[js.Any], listInRepositoryForAuthenticatedUser = listInRepositoryForAuthenticatedUser.asInstanceOf[js.Any], listOrgSecrets = listOrgSecrets.asInstanceOf[js.Any], listRepoSecrets = listRepoSecrets.asInstanceOf[js.Any], listRepositoriesForSecretForAuthenticatedUser = listRepositoriesForSecretForAuthenticatedUser.asInstanceOf[js.Any], listSecretsForAuthenticatedUser = listSecretsForAuthenticatedUser.asInstanceOf[js.Any], listSelectedReposForOrgSecret = listSelectedReposForOrgSecret.asInstanceOf[js.Any], preFlightWithRepoForAuthenticatedUser = preFlightWithRepoForAuthenticatedUser.asInstanceOf[js.Any], publishForAuthenticatedUser = publishForAuthenticatedUser.asInstanceOf[js.Any], removeRepositoryForSecretForAuthenticatedUser = removeRepositoryForSecretForAuthenticatedUser.asInstanceOf[js.Any], removeSelectedRepoFromOrgSecret = removeSelectedRepoFromOrgSecret.asInstanceOf[js.Any], repoMachinesForAuthenticatedUser = repoMachinesForAuthenticatedUser.asInstanceOf[js.Any], setCodespacesBilling = setCodespacesBilling.asInstanceOf[js.Any], setRepositoriesForSecretForAuthenticatedUser = setRepositoriesForSecretForAuthenticatedUser.asInstanceOf[js.Any], setSelectedReposForOrgSecret = setSelectedReposForOrgSecret.asInstanceOf[js.Any], startForAuthenticatedUser = startForAuthenticatedUser.asInstanceOf[js.Any], stopForAuthenticatedUser = stopForAuthenticatedUser.asInstanceOf[js.Any], stopInOrganization = stopInOrganization.asInstanceOf[js.Any], updateForAuthenticatedUser = updateForAuthenticatedUser.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addRepositoryForSecretForAuthenticatedUser = addRepositoryForSecretForAuthenticatedUser.asInstanceOf[js.Any], addSelectedRepoToOrgSecret = addSelectedRepoToOrgSecret.asInstanceOf[js.Any], codespaceMachinesForAuthenticatedUser = codespaceMachinesForAuthenticatedUser.asInstanceOf[js.Any], createForAuthenticatedUser = createForAuthenticatedUser.asInstanceOf[js.Any], createOrUpdateOrgSecret = createOrUpdateOrgSecret.asInstanceOf[js.Any], createOrUpdateRepoSecret = createOrUpdateRepoSecret.asInstanceOf[js.Any], createOrUpdateSecretForAuthenticatedUser = createOrUpdateSecretForAuthenticatedUser.asInstanceOf[js.Any], createWithPrForAuthenticatedUser = createWithPrForAuthenticatedUser.asInstanceOf[js.Any], createWithRepoForAuthenticatedUser = createWithRepoForAuthenticatedUser.asInstanceOf[js.Any], deleteCodespacesBillingUsers = deleteCodespacesBillingUsers.asInstanceOf[js.Any], deleteForAuthenticatedUser = deleteForAuthenticatedUser.asInstanceOf[js.Any], deleteFromOrganization = deleteFromOrganization.asInstanceOf[js.Any], deleteOrgSecret = deleteOrgSecret.asInstanceOf[js.Any], deleteRepoSecret = deleteRepoSecret.asInstanceOf[js.Any], deleteSecretForAuthenticatedUser = deleteSecretForAuthenticatedUser.asInstanceOf[js.Any], exportForAuthenticatedUser = exportForAuthenticatedUser.asInstanceOf[js.Any], getCodespacesForUserInOrg = getCodespacesForUserInOrg.asInstanceOf[js.Any], getExportDetailsForAuthenticatedUser = getExportDetailsForAuthenticatedUser.asInstanceOf[js.Any], getForAuthenticatedUser = getForAuthenticatedUser.asInstanceOf[js.Any], getOrgPublicKey = getOrgPublicKey.asInstanceOf[js.Any], getOrgSecret = getOrgSecret.asInstanceOf[js.Any], getPublicKeyForAuthenticatedUser = getPublicKeyForAuthenticatedUser.asInstanceOf[js.Any], getRepoPublicKey = getRepoPublicKey.asInstanceOf[js.Any], getRepoSecret = getRepoSecret.asInstanceOf[js.Any], getSecretForAuthenticatedUser = getSecretForAuthenticatedUser.asInstanceOf[js.Any], listDevcontainersInRepositoryForAuthenticatedUser = listDevcontainersInRepositoryForAuthenticatedUser.asInstanceOf[js.Any], listForAuthenticatedUser = listForAuthenticatedUser.asInstanceOf[js.Any], listInOrganization = listInOrganization.asInstanceOf[js.Any], listInRepositoryForAuthenticatedUser = listInRepositoryForAuthenticatedUser.asInstanceOf[js.Any], listOrgSecrets = listOrgSecrets.asInstanceOf[js.Any], listRepoSecrets = listRepoSecrets.asInstanceOf[js.Any], listRepositoriesForSecretForAuthenticatedUser = listRepositoriesForSecretForAuthenticatedUser.asInstanceOf[js.Any], listSecretsForAuthenticatedUser = listSecretsForAuthenticatedUser.asInstanceOf[js.Any], listSelectedReposForOrgSecret = listSelectedReposForOrgSecret.asInstanceOf[js.Any], preFlightWithRepoForAuthenticatedUser = preFlightWithRepoForAuthenticatedUser.asInstanceOf[js.Any], publishForAuthenticatedUser = publishForAuthenticatedUser.asInstanceOf[js.Any], removeRepositoryForSecretForAuthenticatedUser = removeRepositoryForSecretForAuthenticatedUser.asInstanceOf[js.Any], removeSelectedRepoFromOrgSecret = removeSelectedRepoFromOrgSecret.asInstanceOf[js.Any], repoMachinesForAuthenticatedUser = repoMachinesForAuthenticatedUser.asInstanceOf[js.Any], setCodespacesBilling = setCodespacesBilling.asInstanceOf[js.Any], setCodespacesBillingUsers = setCodespacesBillingUsers.asInstanceOf[js.Any], setRepositoriesForSecretForAuthenticatedUser = setRepositoriesForSecretForAuthenticatedUser.asInstanceOf[js.Any], setSelectedReposForOrgSecret = setSelectedReposForOrgSecret.asInstanceOf[js.Any], startForAuthenticatedUser = startForAuthenticatedUser.asInstanceOf[js.Any], stopForAuthenticatedUser = stopForAuthenticatedUser.asInstanceOf[js.Any], stopInOrganization = stopInOrganization.asInstanceOf[js.Any], updateForAuthenticatedUser = updateForAuthenticatedUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddRepositoryForSecretForAuthenticatedUser]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: AddRepositoryForSecretForAuthenticatedUser] (val x: Self) extends AnyVal {
     
-    inline def setAddRepositoryForSecretForAuthenticatedUser(value: `217`): Self = StObject.set(x, "addRepositoryForSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setAddRepositoryForSecretForAuthenticatedUser(value: `223`): Self = StObject.set(x, "addRepositoryForSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setAddSelectedRepoToOrgSecret(value: `218`): Self = StObject.set(x, "addSelectedRepoToOrgSecret", value.asInstanceOf[js.Any])
+    inline def setAddSelectedRepoToOrgSecret(value: `224`): Self = StObject.set(x, "addSelectedRepoToOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setCodespaceMachinesForAuthenticatedUser(value: `219`): Self = StObject.set(x, "codespaceMachinesForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setCodespaceMachinesForAuthenticatedUser(value: `225`): Self = StObject.set(x, "codespaceMachinesForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setCreateForAuthenticatedUser(value: `220`): Self = StObject.set(x, "createForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setCreateForAuthenticatedUser(value: `226`): Self = StObject.set(x, "createForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setCreateOrUpdateOrgSecret(value: `221`): Self = StObject.set(x, "createOrUpdateOrgSecret", value.asInstanceOf[js.Any])
+    inline def setCreateOrUpdateOrgSecret(value: `227`): Self = StObject.set(x, "createOrUpdateOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setCreateOrUpdateRepoSecret(value: `222`): Self = StObject.set(x, "createOrUpdateRepoSecret", value.asInstanceOf[js.Any])
+    inline def setCreateOrUpdateRepoSecret(value: `228`): Self = StObject.set(x, "createOrUpdateRepoSecret", value.asInstanceOf[js.Any])
     
-    inline def setCreateOrUpdateSecretForAuthenticatedUser(value: `223`): Self = StObject.set(x, "createOrUpdateSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setCreateOrUpdateSecretForAuthenticatedUser(value: `229`): Self = StObject.set(x, "createOrUpdateSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setCreateWithPrForAuthenticatedUser(value: `224`): Self = StObject.set(x, "createWithPrForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setCreateWithPrForAuthenticatedUser(value: `230`): Self = StObject.set(x, "createWithPrForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setCreateWithRepoForAuthenticatedUser(value: `225`): Self = StObject.set(x, "createWithRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setCreateWithRepoForAuthenticatedUser(value: `231`): Self = StObject.set(x, "createWithRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setDeleteForAuthenticatedUser(value: `226`): Self = StObject.set(x, "deleteForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setDeleteCodespacesBillingUsers(value: `232`): Self = StObject.set(x, "deleteCodespacesBillingUsers", value.asInstanceOf[js.Any])
     
-    inline def setDeleteFromOrganization(value: `227`): Self = StObject.set(x, "deleteFromOrganization", value.asInstanceOf[js.Any])
+    inline def setDeleteForAuthenticatedUser(value: `233`): Self = StObject.set(x, "deleteForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setDeleteOrgSecret(value: `228`): Self = StObject.set(x, "deleteOrgSecret", value.asInstanceOf[js.Any])
+    inline def setDeleteFromOrganization(value: `234`): Self = StObject.set(x, "deleteFromOrganization", value.asInstanceOf[js.Any])
     
-    inline def setDeleteRepoSecret(value: `229`): Self = StObject.set(x, "deleteRepoSecret", value.asInstanceOf[js.Any])
+    inline def setDeleteOrgSecret(value: `235`): Self = StObject.set(x, "deleteOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setDeleteSecretForAuthenticatedUser(value: `230`): Self = StObject.set(x, "deleteSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setDeleteRepoSecret(value: `236`): Self = StObject.set(x, "deleteRepoSecret", value.asInstanceOf[js.Any])
     
-    inline def setExportForAuthenticatedUser(value: `231`): Self = StObject.set(x, "exportForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setDeleteSecretForAuthenticatedUser(value: `237`): Self = StObject.set(x, "deleteSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetCodespacesForUserInOrg(value: `232`): Self = StObject.set(x, "getCodespacesForUserInOrg", value.asInstanceOf[js.Any])
+    inline def setExportForAuthenticatedUser(value: `238`): Self = StObject.set(x, "exportForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetExportDetailsForAuthenticatedUser(value: `233`): Self = StObject.set(x, "getExportDetailsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetCodespacesForUserInOrg(value: `239`): Self = StObject.set(x, "getCodespacesForUserInOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetForAuthenticatedUser(value: `234`): Self = StObject.set(x, "getForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetExportDetailsForAuthenticatedUser(value: `240`): Self = StObject.set(x, "getExportDetailsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetOrgPublicKey(value: `235`): Self = StObject.set(x, "getOrgPublicKey", value.asInstanceOf[js.Any])
+    inline def setGetForAuthenticatedUser(value: `241`): Self = StObject.set(x, "getForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetOrgSecret(value: `236`): Self = StObject.set(x, "getOrgSecret", value.asInstanceOf[js.Any])
+    inline def setGetOrgPublicKey(value: `242`): Self = StObject.set(x, "getOrgPublicKey", value.asInstanceOf[js.Any])
     
-    inline def setGetPublicKeyForAuthenticatedUser(value: `237`): Self = StObject.set(x, "getPublicKeyForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetOrgSecret(value: `243`): Self = StObject.set(x, "getOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoPublicKey(value: `238`): Self = StObject.set(x, "getRepoPublicKey", value.asInstanceOf[js.Any])
+    inline def setGetPublicKeyForAuthenticatedUser(value: `244`): Self = StObject.set(x, "getPublicKeyForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoSecret(value: `239`): Self = StObject.set(x, "getRepoSecret", value.asInstanceOf[js.Any])
+    inline def setGetRepoPublicKey(value: `245`): Self = StObject.set(x, "getRepoPublicKey", value.asInstanceOf[js.Any])
     
-    inline def setGetSecretForAuthenticatedUser(value: `240`): Self = StObject.set(x, "getSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetRepoSecret(value: `246`): Self = StObject.set(x, "getRepoSecret", value.asInstanceOf[js.Any])
     
-    inline def setListDevcontainersInRepositoryForAuthenticatedUser(value: `241`): Self = StObject.set(x, "listDevcontainersInRepositoryForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetSecretForAuthenticatedUser(value: `247`): Self = StObject.set(x, "getSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListForAuthenticatedUser(value: `242`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListDevcontainersInRepositoryForAuthenticatedUser(value: `248`): Self = StObject.set(x, "listDevcontainersInRepositoryForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListInOrganization(value: `243`): Self = StObject.set(x, "listInOrganization", value.asInstanceOf[js.Any])
+    inline def setListForAuthenticatedUser(value: `249`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListInRepositoryForAuthenticatedUser(value: `244`): Self = StObject.set(x, "listInRepositoryForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListInOrganization(value: `250`): Self = StObject.set(x, "listInOrganization", value.asInstanceOf[js.Any])
     
-    inline def setListOrgSecrets(value: `245`): Self = StObject.set(x, "listOrgSecrets", value.asInstanceOf[js.Any])
+    inline def setListInRepositoryForAuthenticatedUser(value: `251`): Self = StObject.set(x, "listInRepositoryForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListRepoSecrets(value: `246`): Self = StObject.set(x, "listRepoSecrets", value.asInstanceOf[js.Any])
+    inline def setListOrgSecrets(value: `252`): Self = StObject.set(x, "listOrgSecrets", value.asInstanceOf[js.Any])
     
-    inline def setListRepositoriesForSecretForAuthenticatedUser(value: `247`): Self = StObject.set(x, "listRepositoriesForSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListRepoSecrets(value: `253`): Self = StObject.set(x, "listRepoSecrets", value.asInstanceOf[js.Any])
     
-    inline def setListSecretsForAuthenticatedUser(value: `248`): Self = StObject.set(x, "listSecretsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListRepositoriesForSecretForAuthenticatedUser(value: `254`): Self = StObject.set(x, "listRepositoriesForSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListSelectedReposForOrgSecret(value: `249`): Self = StObject.set(x, "listSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
+    inline def setListSecretsForAuthenticatedUser(value: `255`): Self = StObject.set(x, "listSecretsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setPreFlightWithRepoForAuthenticatedUser(value: `250`): Self = StObject.set(x, "preFlightWithRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListSelectedReposForOrgSecret(value: `256`): Self = StObject.set(x, "listSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setPublishForAuthenticatedUser(value: `251`): Self = StObject.set(x, "publishForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setPreFlightWithRepoForAuthenticatedUser(value: `257`): Self = StObject.set(x, "preFlightWithRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setRemoveRepositoryForSecretForAuthenticatedUser(value: `252`): Self = StObject.set(x, "removeRepositoryForSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setPublishForAuthenticatedUser(value: `258`): Self = StObject.set(x, "publishForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setRemoveSelectedRepoFromOrgSecret(value: `253`): Self = StObject.set(x, "removeSelectedRepoFromOrgSecret", value.asInstanceOf[js.Any])
+    inline def setRemoveRepositoryForSecretForAuthenticatedUser(value: `259`): Self = StObject.set(x, "removeRepositoryForSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setRepoMachinesForAuthenticatedUser(value: `254`): Self = StObject.set(x, "repoMachinesForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setRemoveSelectedRepoFromOrgSecret(value: `260`): Self = StObject.set(x, "removeSelectedRepoFromOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setSetCodespacesBilling(value: `255`): Self = StObject.set(x, "setCodespacesBilling", value.asInstanceOf[js.Any])
+    inline def setRepoMachinesForAuthenticatedUser(value: `261`): Self = StObject.set(x, "repoMachinesForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setSetRepositoriesForSecretForAuthenticatedUser(value: `256`): Self = StObject.set(x, "setRepositoriesForSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setSetCodespacesBilling(value: `262`): Self = StObject.set(x, "setCodespacesBilling", value.asInstanceOf[js.Any])
     
-    inline def setSetSelectedReposForOrgSecret(value: `257`): Self = StObject.set(x, "setSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
+    inline def setSetCodespacesBillingUsers(value: `263`): Self = StObject.set(x, "setCodespacesBillingUsers", value.asInstanceOf[js.Any])
     
-    inline def setStartForAuthenticatedUser(value: `258`): Self = StObject.set(x, "startForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setSetRepositoriesForSecretForAuthenticatedUser(value: `264`): Self = StObject.set(x, "setRepositoriesForSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setStopForAuthenticatedUser(value: `259`): Self = StObject.set(x, "stopForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setSetSelectedReposForOrgSecret(value: `265`): Self = StObject.set(x, "setSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setStopInOrganization(value: `260`): Self = StObject.set(x, "stopInOrganization", value.asInstanceOf[js.Any])
+    inline def setStartForAuthenticatedUser(value: `266`): Self = StObject.set(x, "startForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setUpdateForAuthenticatedUser(value: `261`): Self = StObject.set(x, "updateForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setStopForAuthenticatedUser(value: `267`): Self = StObject.set(x, "stopForAuthenticatedUser", value.asInstanceOf[js.Any])
+    
+    inline def setStopInOrganization(value: `268`): Self = StObject.set(x, "stopInOrganization", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateForAuthenticatedUser(value: `269`): Self = StObject.set(x, "updateForAuthenticatedUser", value.asInstanceOf[js.Any])
   }
 }

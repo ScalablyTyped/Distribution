@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "prompt"
-version := "1.1-dt-20230125Z-ace4d9"
+version := "1.1-dt-20230125Z-b0bac9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "revalidator" % "0.3.1-dt-20230322Z-879e23",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

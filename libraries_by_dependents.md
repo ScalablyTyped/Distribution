@@ -813,6 +813,7 @@
 | 0.0 | [big-integer](./b/big-integer) | An arbitrary length integer library for Javascript
 | 0.0 | [big-rat](./b/big-rat) | A big integer rational number
 | 0.0 | [big_dot_js](./b/big_dot_js) | A small, fast, easy-to-use library for arbitrary-p
+| 0.0 | [bigbite__wp-cypress](./b/bigbite__wp-cypress) | WordPress end to end testing with Cypress.io
 | 0.0 | [bigbluebutton-js](./b/bigbluebutton-js) | JavaScript wrapper for BigBlueButton API
 | 0.0 | [bigi](./b/bigi) | Big integers.
 | 0.0 | [bigint](./b/bigint) | Arbitrary-precision integer arithmetic using libgm
@@ -1764,6 +1765,7 @@
 | 0.0 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot
 | 0.0 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot.
 | 0.0 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate
+| 0.0 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.0 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis
 | 0.0 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm
 | 0.0 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u
@@ -3838,6 +3840,7 @@
 | 0.0 | [indefinite-observable](./i/indefinite-observable) |  
 | 0.0 | [indent-string](./i/indent-string) | Indent each line in a string
 | 0.0 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria
+| 0.0 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.0 | [inert](./i/inert) | Static file and directory handlers plugin for hapi
 | 0.0 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f
 | 0.0 | [inferno-clone-vnode](./i/inferno-clone-vnode) | provides helper function to clone Inferno's vNodes
@@ -5852,7 +5855,6 @@
 | 0.0 | [mem-fs-editor](./m/mem-fs-editor) | File edition helpers working on top of mem-fs
 | 0.0 | [memcached](./m/memcached) | A fully featured Memcached API client, supporting 
 | 0.0 | [memdown](./m/memdown) | An drop-in replacement for LevelDOWN that works in
-| 0.0 | [memfs](./m/memfs) | In-memory file-system with Node's fs API.
 | 0.0 | [memize](./m/memize) | Unabashedly-barebones memoization library with an 
 | 0.0 | [memjs](./m/memjs) | A memcache client for node using the binary protoc
 | 0.0 | [memmonit](./m/memmonit) | Library to help monitor operating system memory
@@ -8641,7 +8643,6 @@
 | 0.0 | [remote-origin-url](./r/remote-origin-url) | Get the git remote origin URL from your local git 
 | 0.0 | [remote-redux-devtools](./r/remote-redux-devtools) | Relay Redux actions to remote Redux DevTools.
 | 0.0 | [remotedev-serialize](./r/remotedev-serialize) | Serialize unserializable data and parse it back.
-| 0.0 | [remotedev-server](./r/remotedev-server) | Run the RemoteDev monitor on your local server.
 | 0.0 | [remove-accents](./r/remove-accents) | Converting the accented characters to their corres
 | 0.0 | [remove-file-safe](./r/remove-file-safe) | Remove files without try catch
 | 0.0 | [remove-markdown](./r/remove-markdown) | Remove Markdown formatting from text
@@ -8943,13 +8944,10 @@
 | 0.0 | [sbd](./s/sbd) | Split text into sentences with Sentence Boundary D
 | 0.0 | [sc-auth](./s/sc-auth) | Auth module for SocketCluster
 | 0.0 | [sc-broker](./s/sc-broker) | sc-broker key-value and message broker
-| 0.0 | [sc-broker-cluster](./s/sc-broker-cluster) | Realtime clustering engine
 | 0.0 | [sc-channel](./s/sc-channel) | Channel object for SocketCluster
 | 0.0 | [sc-errors](./s/sc-errors) | Error types for use throughout SocketCluster
-| 0.0 | [sc-hot-reboot](./s/sc-hot-reboot) | Automatically reboot workers when code changes.
 | 0.0 | [scalike](./s/scalike) | -
 | 0.0 | [scanf](./s/scanf) | C like scanf/sscanf module for node.js.
-| 0.0 | [scc-broker-client](./s/scc-broker-client) | Client for SCC - For SocketCluster horizontal scal
 | 0.0 | [schedule](./s/schedule) | Cooperative scheduler for the browser environment.
 | 0.0 | [scheduler](./s/scheduler) | Cooperative scheduler for the browser environment.
 | 0.0 | [schema-registry](./s/schema-registry) | json & avro schema registry
@@ -9324,8 +9322,6 @@
 | 0.0 | [socket_dot_io-parser](./s/socket_dot_io-parser) | socket.io protocol parser
 | 0.0 | [socket_dot_io-redis](./s/socket_dot_io-redis) | -
 | 0.0 | [socket_dot_io__component-](./s/socket_dot_io__component-emitter) | Event emitter
-| 0.0 | [socketcluster](./s/socketcluster) | Highly scalable realtime framework with support fo
-| 0.0 | [socketcluster-client](./s/socketcluster-client) | SocketCluster JavaScript client
 | 0.0 | [socketcluster-server](./s/socketcluster-server) | Server module for SocketCluster
 | 0.0 | [socketio-jwt](./s/socketio-jwt) | authenticate socket.io connections using JWTs
 | 0.0 | [socketio-jwt-auth](./s/socketio-jwt-auth) | Socket.io authentication middleware using Json Web
@@ -10653,7 +10649,6 @@
 | 0.0 | [vue__reactivity-transform](./v/vue__reactivity-transform) | @vue/reactivity-transform
 | 0.0 | [vue__runtime-core](./v/vue__runtime-core) | @vue/runtime-core
 | 0.0 | [vue__runtime-dom](./v/vue__runtime-dom) | @vue/runtime-dom
-| 0.0 | [vue__server-renderer](./v/vue__server-renderer) | @vue/server-renderer
 | 0.0 | [vue__shared](./v/vue__shared) | internal utils shared across @vue packages
 | 0.0 | [vue__test-utils](./v/vue__test-utils) | Component testing utils for Vue 3.
 | 0.0 | [vuedraggable](./v/vuedraggable) | draggable component for vue
@@ -11047,6 +11042,7 @@
 | 0.0 | [xxhash-wasm](./x/xxhash-wasm) | A WebAssembly implementation of xxHash
 | 0.0 | [xxhashjs](./x/xxhashjs) | xxHash in Javascript
 | 0.0 | [y-codemirror](./y/y-codemirror) | CodeMirror binding for Yjs
+| 0.0 | [y-leveldb](./y/y-leveldb) | LevelDb database adapter for Yjs
 | 0.0 | [y-protocols](./y/y-protocols) | Yjs encoding protocols
 | 0.0 | [y-websocket](./y/y-websocket) | Websockets provider for Yjs
 | 0.0 | [ya-disk](./y/ya-disk) | Yandex Disk API Library

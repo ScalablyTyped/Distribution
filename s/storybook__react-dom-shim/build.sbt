@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__react-dom-shim"
-version := "7.0.11-a6c821"
+version := "7.0.11-1cce72"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20230426Z-96f2d9",
   "org.scalablytyped" %%% "babel__types" % "7.21.5-fbdd8a",
   "org.scalablytyped" %%% "csstype" % "3.1.2-5927f3",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4446ee",
   "org.scalablytyped" %%% "react" % "18.2-dt-20230506Z-14ab9d",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20230322Z-da1b40",

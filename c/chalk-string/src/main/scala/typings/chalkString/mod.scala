@@ -1,6 +1,5 @@
 package typings.chalkString
 
-import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,7 +100,9 @@ object mod {
       *
       * @default process.stdout
       */
-    val stream: js.UndefOr[Stream] = js.undefined
+    val stream: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stream */ Any
+      ] = js.undefined
   }
   object Options {
     
@@ -117,7 +118,9 @@ object mod {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stream */ Any
+      ): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     }

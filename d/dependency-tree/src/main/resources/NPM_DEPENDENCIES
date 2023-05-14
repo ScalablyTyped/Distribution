@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dependency-tree" : "10.0.6"
+      "dependency-tree" : "10.0.7"
     }
   ],
   "test-dependencies" : [
     {
-      "dependency-tree" : "10.0.6"
+      "dependency-tree" : "10.0.7"
     }
   ],
   "compile-devDependencies" : [

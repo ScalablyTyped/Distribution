@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ref-struct-di"
-version := "1.1-dt-20230429Z-a7a23f"
+version := "1.1-dt-20230429Z-7ef632"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
-  "org.scalablytyped" %%% "ref-napi" % "3.0-dt-20230328Z-fdcddc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
+  "org.scalablytyped" %%% "ref-napi" % "3.0-dt-20230328Z-196484",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

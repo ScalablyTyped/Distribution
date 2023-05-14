@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "atlaskit__popper"
-version := "5.5.1-ab35fd"
+version := "5.5.1-74df95"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "atlaskit__in-product-testing" % "0.2.0-e83990",
+  "org.scalablytyped" %%% "atlaskit__in-product-testing" % "0.2.0-bdd880",
   "org.scalablytyped" %%% "buffer" % "6.0.3-acbfae",
   "org.scalablytyped" %%% "csstype" % "3.1.2-5927f3",
-  "org.scalablytyped" %%% "cypress" % "12.12.0-afdc7b",
+  "org.scalablytyped" %%% "cypress" % "12.12.0-4ad2d2",
   "org.scalablytyped" %%% "eventemitter2" % "6.4.9-a4982c",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "popperjs__core" % "2.11.7-5886e9",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4446ee",
   "org.scalablytyped" %%% "react" % "18.2-dt-20230506Z-14ab9d",

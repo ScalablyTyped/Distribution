@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-live" : "4.1.0"
+      "react-live" : "4.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-live" : "4.1.0"
+      "react-live" : "4.1.1"
     }
   ],
   "compile-devDependencies" : [

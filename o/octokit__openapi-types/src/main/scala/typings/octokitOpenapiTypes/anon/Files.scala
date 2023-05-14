@@ -1,8 +1,6 @@
 package typings.octokitOpenapiTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.octokitOpenapiTypes.mod.OneOf
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +25,7 @@ trait Files extends StObject {
     *   }
     * }
     */
-  var files: js.UndefOr[
-    StringDictionary[js.UndefOr[OneOf[js.Tuple2[Filename, Record[String, scala.Nothing]]]]]
-  ] = js.undefined
+  var files: js.UndefOr[StringDictionary[js.UndefOr[Filename]]] = js.undefined
 }
 object Files {
   
@@ -45,7 +41,7 @@ object Files {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setFiles(value: StringDictionary[js.UndefOr[OneOf[js.Tuple2[Filename, Record[String, scala.Nothing]]]]]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: StringDictionary[js.UndefOr[Filename]]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
   }

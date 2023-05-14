@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "sawtooth-sdk"
-version := "1.1-dt-20220624Z-ed44b7"
+version := "1.1-dt-20220624Z-514936"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "protobufjs" % "7.2.3-99c136",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

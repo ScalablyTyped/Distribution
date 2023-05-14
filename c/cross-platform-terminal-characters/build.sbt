@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cross-platform-terminal-characters"
-version := "3.3.0-a739fb"
+version := "4.0.0-3d5e4a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

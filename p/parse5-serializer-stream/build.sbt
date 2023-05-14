@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "parse5-serializer-stream"
-version := "5.0-dt-20220720Z-e58324"
+version := "5.0-dt-20220720Z-9ee4fc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "parse5" % "7.1.2-b99116",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

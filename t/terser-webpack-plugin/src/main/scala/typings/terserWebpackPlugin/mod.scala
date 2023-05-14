@@ -229,7 +229,7 @@ object mod {
     inline def getMinimizerVersion(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMinimizerVersion")().asInstanceOf[js.UndefOr[String]]
   }
   
-  type Asset = typings.webpack.mod.Asset
+  type Asset = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Asset */ Any
   
   trait BasePluginOptions extends StObject {
     
@@ -291,9 +291,9 @@ object mod {
     js.Promise[MinimizedResult]
   ]
   
-  type Compilation = typings.webpack.mod.Compilation
+  type Compilation = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compilation */ Any
   
-  type Compiler = typings.webpack.mod.Compiler
+  type Compiler = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ Any
   
   type CustomOptions = StringDictionary[Any]
   
@@ -619,7 +619,7 @@ object mod {
   
   type TraceMap = typings.jridgewellTraceMapping.mod.TraceMap
   
-  type WebpackError = typings.webpack.mod.WebpackError
+  type WebpackError = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.WebpackError */ Any
   
   trait _ExtractCommentsCondition
     extends StObject

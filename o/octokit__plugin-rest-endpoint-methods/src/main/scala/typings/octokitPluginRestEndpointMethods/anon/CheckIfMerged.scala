@@ -23,7 +23,7 @@ trait CheckIfMerged extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pulls/{pull_number}/merge']['response'] */ js.Any
   ]
   @JSName("checkIfMerged")
-  var checkIfMerged_Original: `498`
+  var checkIfMerged_Original: `516`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -66,7 +66,7 @@ trait CheckIfMerged extends StObject {
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     */
   @JSName("createReplyForReviewComment")
-  var createReplyForReviewComment_Original: `500`
+  var createReplyForReviewComment_Original: `518`
   
   /**
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
@@ -119,7 +119,7 @@ trait CheckIfMerged extends StObject {
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     */
   @JSName("createReviewComment")
-  var createReviewComment_Original: `502`
+  var createReviewComment_Original: `520`
   
   /**
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
@@ -131,7 +131,7 @@ trait CheckIfMerged extends StObject {
     * The `position` value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
     */
   @JSName("createReview")
-  var createReview_Original: `501`
+  var createReview_Original: `519`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -141,7 +141,7 @@ trait CheckIfMerged extends StObject {
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-rate-limits)" for details.
     */
   @JSName("create")
-  var create_Original: `499`
+  var create_Original: `517`
   
   def deletePendingReview(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}']['response'] */ js.Any
@@ -155,7 +155,7 @@ trait CheckIfMerged extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}']['response'] */ js.Any
   ]
   @JSName("deletePendingReview")
-  var deletePendingReview_Original: `503`
+  var deletePendingReview_Original: `521`
   
   /**
     * Deletes a review comment.
@@ -175,7 +175,7 @@ trait CheckIfMerged extends StObject {
     * Deletes a review comment.
     */
   @JSName("deleteReviewComment")
-  var deleteReviewComment_Original: `504`
+  var deleteReviewComment_Original: `522`
   
   /**
     * **Note:** To dismiss a pull request review on a [protected branch](https://docs.github.com/rest/reference/repos#branches), you must be a repository administrator or be included in the list of people or teams who can dismiss pull request reviews.
@@ -195,7 +195,7 @@ trait CheckIfMerged extends StObject {
     * **Note:** To dismiss a pull request review on a [protected branch](https://docs.github.com/rest/reference/repos#branches), you must be a repository administrator or be included in the list of people or teams who can dismiss pull request reviews.
     */
   @JSName("dismissReview")
-  var dismissReview_Original: `505`
+  var dismissReview_Original: `523`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -256,10 +256,10 @@ trait CheckIfMerged extends StObject {
     * Provides details for a review comment.
     */
   @JSName("getReviewComment")
-  var getReviewComment_Original: `508`
+  var getReviewComment_Original: `526`
   
   @JSName("getReview")
-  var getReview_Original: `507`
+  var getReview_Original: `525`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -279,7 +279,7 @@ trait CheckIfMerged extends StObject {
     * Pass the appropriate [media type](https://docs.github.com/rest/overview/media-types/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
     */
   @JSName("get")
-  var get_Original: `506`
+  var get_Original: `524`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -314,7 +314,7 @@ trait CheckIfMerged extends StObject {
     * List comments for a specific pull request review.
     */
   @JSName("listCommentsForReview")
-  var listCommentsForReview_Original: `510`
+  var listCommentsForReview_Original: `528`
   
   /**
     * Lists a maximum of 250 commits for a pull request. To receive a complete commit list for pull requests with more than 250 commits, use the [List commits](https://docs.github.com/rest/reference/repos#list-commits) endpoint.
@@ -334,7 +334,7 @@ trait CheckIfMerged extends StObject {
     * Lists a maximum of 250 commits for a pull request. To receive a complete commit list for pull requests with more than 250 commits, use the [List commits](https://docs.github.com/rest/reference/repos#list-commits) endpoint.
     */
   @JSName("listCommits")
-  var listCommits_Original: `511`
+  var listCommits_Original: `529`
   
   /**
     * **Note:** Responses include a maximum of 3000 files. The paginated response returns 30 files per page by default.
@@ -354,7 +354,7 @@ trait CheckIfMerged extends StObject {
     * **Note:** Responses include a maximum of 3000 files. The paginated response returns 30 files per page by default.
     */
   @JSName("listFiles")
-  var listFiles_Original: `512`
+  var listFiles_Original: `530`
   
   /**
     * Gets the users or teams whose review is requested for a pull request. Once a requested reviewer submits a review, they are no longer considered a requested reviewer. Their review will instead be returned by the [List reviews for a pull request](https://docs.github.com/rest/pulls/reviews#list-reviews-for-a-pull-request) operation.
@@ -374,7 +374,7 @@ trait CheckIfMerged extends StObject {
     * Gets the users or teams whose review is requested for a pull request. Once a requested reviewer submits a review, they are no longer considered a requested reviewer. Their review will instead be returned by the [List reviews for a pull request](https://docs.github.com/rest/pulls/reviews#list-reviews-for-a-pull-request) operation.
     */
   @JSName("listRequestedReviewers")
-  var listRequestedReviewers_Original: `513`
+  var listRequestedReviewers_Original: `531`
   
   /**
     * Lists all review comments for a pull request. By default, review comments are in ascending order by ID.
@@ -409,13 +409,13 @@ trait CheckIfMerged extends StObject {
     * Lists review comments for all pull requests in a repository. By default, review comments are in ascending order by ID.
     */
   @JSName("listReviewCommentsForRepo")
-  var listReviewCommentsForRepo_Original: `515`
+  var listReviewCommentsForRepo_Original: `533`
   
   /**
     * Lists all review comments for a pull request. By default, review comments are in ascending order by ID.
     */
   @JSName("listReviewComments")
-  var listReviewComments_Original: `514`
+  var listReviewComments_Original: `532`
   
   /**
     * The list of reviews returns in chronological order.
@@ -435,13 +435,13 @@ trait CheckIfMerged extends StObject {
     * The list of reviews returns in chronological order.
     */
   @JSName("listReviews")
-  var listReviews_Original: `516`
+  var listReviews_Original: `534`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("list")
-  var list_Original: `509`
+  var list_Original: `527`
   
   /**
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
@@ -461,7 +461,7 @@ trait CheckIfMerged extends StObject {
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     */
   @JSName("merge")
-  var merge_Original: `517`
+  var merge_Original: `535`
   
   def removeRequestedReviewers(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers']['response'] */ js.Any
@@ -475,7 +475,7 @@ trait CheckIfMerged extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers']['response'] */ js.Any
   ]
   @JSName("removeRequestedReviewers")
-  var removeRequestedReviewers_Original: `518`
+  var removeRequestedReviewers_Original: `536`
   
   /**
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
@@ -495,7 +495,7 @@ trait CheckIfMerged extends StObject {
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     */
   @JSName("requestReviewers")
-  var requestReviewers_Original: `519`
+  var requestReviewers_Original: `537`
   
   /**
     * Submits a pending review for a pull request. For more information about creating a pending review for a pull request, see "[Create a review for a pull request](https://docs.github.com/rest/pulls#create-a-review-for-a-pull-request)."
@@ -515,7 +515,7 @@ trait CheckIfMerged extends StObject {
     * Submits a pending review for a pull request. For more information about creating a pending review for a pull request, see "[Create a review for a pull request](https://docs.github.com/rest/pulls#create-a-review-for-a-pull-request)."
     */
   @JSName("submitReview")
-  var submitReview_Original: `520`
+  var submitReview_Original: `538`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -552,7 +552,7 @@ trait CheckIfMerged extends StObject {
     * Updates the pull request branch with the latest upstream changes by merging HEAD from the base branch into the pull request branch.
     */
   @JSName("updateBranch")
-  var updateBranch_Original: `522`
+  var updateBranch_Original: `540`
   
   /**
     * Update the review summary comment with new text.
@@ -587,13 +587,13 @@ trait CheckIfMerged extends StObject {
     * Enables you to edit a review comment.
     */
   @JSName("updateReviewComment")
-  var updateReviewComment_Original: `524`
+  var updateReviewComment_Original: `542`
   
   /**
     * Update the review summary comment with new text.
     */
   @JSName("updateReview")
-  var updateReview_Original: `523`
+  var updateReview_Original: `541`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -601,38 +601,38 @@ trait CheckIfMerged extends StObject {
     * To open or update a pull request in a public repository, you must have write access to the head or the source branch. For organization-owned repositories, you must be a member of the organization that owns the repository to open or update a pull request.
     */
   @JSName("update")
-  var update_Original: `521`
+  var update_Original: `539`
 }
 object CheckIfMerged {
   
   inline def apply(
-    checkIfMerged: `498`,
-    create: `499`,
-    createReplyForReviewComment: `500`,
-    createReview: `501`,
-    createReviewComment: `502`,
-    deletePendingReview: `503`,
-    deleteReviewComment: `504`,
-    dismissReview: `505`,
-    get: `506`,
-    getReview: `507`,
-    getReviewComment: `508`,
-    list: `509`,
-    listCommentsForReview: `510`,
-    listCommits: `511`,
-    listFiles: `512`,
-    listRequestedReviewers: `513`,
-    listReviewComments: `514`,
-    listReviewCommentsForRepo: `515`,
-    listReviews: `516`,
-    merge: `517`,
-    removeRequestedReviewers: `518`,
-    requestReviewers: `519`,
-    submitReview: `520`,
-    update: `521`,
-    updateBranch: `522`,
-    updateReview: `523`,
-    updateReviewComment: `524`
+    checkIfMerged: `516`,
+    create: `517`,
+    createReplyForReviewComment: `518`,
+    createReview: `519`,
+    createReviewComment: `520`,
+    deletePendingReview: `521`,
+    deleteReviewComment: `522`,
+    dismissReview: `523`,
+    get: `524`,
+    getReview: `525`,
+    getReviewComment: `526`,
+    list: `527`,
+    listCommentsForReview: `528`,
+    listCommits: `529`,
+    listFiles: `530`,
+    listRequestedReviewers: `531`,
+    listReviewComments: `532`,
+    listReviewCommentsForRepo: `533`,
+    listReviews: `534`,
+    merge: `535`,
+    removeRequestedReviewers: `536`,
+    requestReviewers: `537`,
+    submitReview: `538`,
+    update: `539`,
+    updateBranch: `540`,
+    updateReview: `541`,
+    updateReviewComment: `542`
   ): CheckIfMerged = {
     val __obj = js.Dynamic.literal(checkIfMerged = checkIfMerged.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], createReplyForReviewComment = createReplyForReviewComment.asInstanceOf[js.Any], createReview = createReview.asInstanceOf[js.Any], createReviewComment = createReviewComment.asInstanceOf[js.Any], deletePendingReview = deletePendingReview.asInstanceOf[js.Any], deleteReviewComment = deleteReviewComment.asInstanceOf[js.Any], dismissReview = dismissReview.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getReview = getReview.asInstanceOf[js.Any], getReviewComment = getReviewComment.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], listCommentsForReview = listCommentsForReview.asInstanceOf[js.Any], listCommits = listCommits.asInstanceOf[js.Any], listFiles = listFiles.asInstanceOf[js.Any], listRequestedReviewers = listRequestedReviewers.asInstanceOf[js.Any], listReviewComments = listReviewComments.asInstanceOf[js.Any], listReviewCommentsForRepo = listReviewCommentsForRepo.asInstanceOf[js.Any], listReviews = listReviews.asInstanceOf[js.Any], merge = merge.asInstanceOf[js.Any], removeRequestedReviewers = removeRequestedReviewers.asInstanceOf[js.Any], requestReviewers = requestReviewers.asInstanceOf[js.Any], submitReview = submitReview.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], updateBranch = updateBranch.asInstanceOf[js.Any], updateReview = updateReview.asInstanceOf[js.Any], updateReviewComment = updateReviewComment.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckIfMerged]
@@ -641,58 +641,58 @@ object CheckIfMerged {
   @scala.inline
   implicit open class MutableBuilder[Self <: CheckIfMerged] (val x: Self) extends AnyVal {
     
-    inline def setCheckIfMerged(value: `498`): Self = StObject.set(x, "checkIfMerged", value.asInstanceOf[js.Any])
+    inline def setCheckIfMerged(value: `516`): Self = StObject.set(x, "checkIfMerged", value.asInstanceOf[js.Any])
     
-    inline def setCreate(value: `499`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: `517`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    inline def setCreateReplyForReviewComment(value: `500`): Self = StObject.set(x, "createReplyForReviewComment", value.asInstanceOf[js.Any])
+    inline def setCreateReplyForReviewComment(value: `518`): Self = StObject.set(x, "createReplyForReviewComment", value.asInstanceOf[js.Any])
     
-    inline def setCreateReview(value: `501`): Self = StObject.set(x, "createReview", value.asInstanceOf[js.Any])
+    inline def setCreateReview(value: `519`): Self = StObject.set(x, "createReview", value.asInstanceOf[js.Any])
     
-    inline def setCreateReviewComment(value: `502`): Self = StObject.set(x, "createReviewComment", value.asInstanceOf[js.Any])
+    inline def setCreateReviewComment(value: `520`): Self = StObject.set(x, "createReviewComment", value.asInstanceOf[js.Any])
     
-    inline def setDeletePendingReview(value: `503`): Self = StObject.set(x, "deletePendingReview", value.asInstanceOf[js.Any])
+    inline def setDeletePendingReview(value: `521`): Self = StObject.set(x, "deletePendingReview", value.asInstanceOf[js.Any])
     
-    inline def setDeleteReviewComment(value: `504`): Self = StObject.set(x, "deleteReviewComment", value.asInstanceOf[js.Any])
+    inline def setDeleteReviewComment(value: `522`): Self = StObject.set(x, "deleteReviewComment", value.asInstanceOf[js.Any])
     
-    inline def setDismissReview(value: `505`): Self = StObject.set(x, "dismissReview", value.asInstanceOf[js.Any])
+    inline def setDismissReview(value: `523`): Self = StObject.set(x, "dismissReview", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: `506`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `524`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setGetReview(value: `507`): Self = StObject.set(x, "getReview", value.asInstanceOf[js.Any])
+    inline def setGetReview(value: `525`): Self = StObject.set(x, "getReview", value.asInstanceOf[js.Any])
     
-    inline def setGetReviewComment(value: `508`): Self = StObject.set(x, "getReviewComment", value.asInstanceOf[js.Any])
+    inline def setGetReviewComment(value: `526`): Self = StObject.set(x, "getReviewComment", value.asInstanceOf[js.Any])
     
-    inline def setList(value: `509`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: `527`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    inline def setListCommentsForReview(value: `510`): Self = StObject.set(x, "listCommentsForReview", value.asInstanceOf[js.Any])
+    inline def setListCommentsForReview(value: `528`): Self = StObject.set(x, "listCommentsForReview", value.asInstanceOf[js.Any])
     
-    inline def setListCommits(value: `511`): Self = StObject.set(x, "listCommits", value.asInstanceOf[js.Any])
+    inline def setListCommits(value: `529`): Self = StObject.set(x, "listCommits", value.asInstanceOf[js.Any])
     
-    inline def setListFiles(value: `512`): Self = StObject.set(x, "listFiles", value.asInstanceOf[js.Any])
+    inline def setListFiles(value: `530`): Self = StObject.set(x, "listFiles", value.asInstanceOf[js.Any])
     
-    inline def setListRequestedReviewers(value: `513`): Self = StObject.set(x, "listRequestedReviewers", value.asInstanceOf[js.Any])
+    inline def setListRequestedReviewers(value: `531`): Self = StObject.set(x, "listRequestedReviewers", value.asInstanceOf[js.Any])
     
-    inline def setListReviewComments(value: `514`): Self = StObject.set(x, "listReviewComments", value.asInstanceOf[js.Any])
+    inline def setListReviewComments(value: `532`): Self = StObject.set(x, "listReviewComments", value.asInstanceOf[js.Any])
     
-    inline def setListReviewCommentsForRepo(value: `515`): Self = StObject.set(x, "listReviewCommentsForRepo", value.asInstanceOf[js.Any])
+    inline def setListReviewCommentsForRepo(value: `533`): Self = StObject.set(x, "listReviewCommentsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListReviews(value: `516`): Self = StObject.set(x, "listReviews", value.asInstanceOf[js.Any])
+    inline def setListReviews(value: `534`): Self = StObject.set(x, "listReviews", value.asInstanceOf[js.Any])
     
-    inline def setMerge(value: `517`): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: `535`): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    inline def setRemoveRequestedReviewers(value: `518`): Self = StObject.set(x, "removeRequestedReviewers", value.asInstanceOf[js.Any])
+    inline def setRemoveRequestedReviewers(value: `536`): Self = StObject.set(x, "removeRequestedReviewers", value.asInstanceOf[js.Any])
     
-    inline def setRequestReviewers(value: `519`): Self = StObject.set(x, "requestReviewers", value.asInstanceOf[js.Any])
+    inline def setRequestReviewers(value: `537`): Self = StObject.set(x, "requestReviewers", value.asInstanceOf[js.Any])
     
-    inline def setSubmitReview(value: `520`): Self = StObject.set(x, "submitReview", value.asInstanceOf[js.Any])
+    inline def setSubmitReview(value: `538`): Self = StObject.set(x, "submitReview", value.asInstanceOf[js.Any])
     
-    inline def setUpdate(value: `521`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: `539`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    inline def setUpdateBranch(value: `522`): Self = StObject.set(x, "updateBranch", value.asInstanceOf[js.Any])
+    inline def setUpdateBranch(value: `540`): Self = StObject.set(x, "updateBranch", value.asInstanceOf[js.Any])
     
-    inline def setUpdateReview(value: `523`): Self = StObject.set(x, "updateReview", value.asInstanceOf[js.Any])
+    inline def setUpdateReview(value: `541`): Self = StObject.set(x, "updateReview", value.asInstanceOf[js.Any])
     
-    inline def setUpdateReviewComment(value: `524`): Self = StObject.set(x, "updateReviewComment", value.asInstanceOf[js.Any])
+    inline def setUpdateReviewComment(value: `542`): Self = StObject.set(x, "updateReviewComment", value.asInstanceOf[js.Any])
   }
 }

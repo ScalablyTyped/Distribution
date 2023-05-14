@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "normalize-exception"
-version := "2.11.0-76da48"
+version := "3.0.0-c16de7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

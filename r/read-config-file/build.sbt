@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "read-config-file"
-version := "6.2.0-1f3f8c"
+version := "6.2.0-110bac"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "dotenv" % "16.0.3-bf8f83",
+  "org.scalablytyped" %%% "dotenv" % "16.0.3-da33dd",
   "org.scalablytyped" %%% "lazy-val" % "1.0.5-834e76",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

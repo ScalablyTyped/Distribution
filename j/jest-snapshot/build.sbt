@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-snapshot"
-version := "29.5.0-406c40"
+version := "29.5.0-9db388"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,8 +13,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jest-matcher-utils" % "29.5.0-862b1a",
   "org.scalablytyped" %%% "jest__expect-utils" % "29.5.0-4b9159",
   "org.scalablytyped" %%% "jest__schemas" % "29.4.3-7a81bb",
-  "org.scalablytyped" %%% "jest__types" % "29.5.0-2b1d28",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "jest__types" % "29.5.0-5cfbb9",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "pretty-format" % "29.5.0-e0482b",
   "org.scalablytyped" %%% "sinclair__typebox" % "0.28.9-55f540",
   "org.scalablytyped" %%% "std" % "5.0-e63739")

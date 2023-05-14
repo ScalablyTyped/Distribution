@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "swagger-parser"
-version := "10.0.3-ac7d8c"
+version := "10.0.3-b8ce4f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "apidevtools__swagger-parser" % "10.1.0-6fec9d",
-  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "apidevtools__swagger-parser" % "10.1.0-2eafe2",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "openapi-types" % "12.1.0-1f62e2",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

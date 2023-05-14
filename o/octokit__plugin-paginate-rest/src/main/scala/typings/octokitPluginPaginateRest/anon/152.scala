@@ -10,22 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `152` extends StObject {
   
   var parameters: (ToOctokitParameters[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/hooks']['get'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/apps']['get'] */ js.Any
   ]) & RequiredPreview[Any]
   
-  var response: ExtractOctokitResponse[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/hooks']['get'] */ js.Any
-  ]
+  var response: (ExtractOctokitResponse[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/apps']['get'] */ js.Any
+  ]) & `151`
 }
 object `152` {
   
   inline def apply(
     parameters: (ToOctokitParameters[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/hooks']['get'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/apps']['get'] */ js.Any
     ]) & RequiredPreview[Any],
-    response: ExtractOctokitResponse[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/hooks']['get'] */ js.Any
-    ]
+    response: (ExtractOctokitResponse[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/apps']['get'] */ js.Any
+    ]) & `151`
   ): `152` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`152`]
@@ -36,14 +36,14 @@ object `152` {
     
     inline def setParameters(
       value: (ToOctokitParameters[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/hooks']['get'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/apps']['get'] */ js.Any
         ]) & RequiredPreview[Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setResponse(
-      value: ExtractOctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/hooks']['get'] */ js.Any
-        ]
+      value: (ExtractOctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/apps']['get'] */ js.Any
+        ]) & `151`
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }
