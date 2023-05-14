@@ -3840,6 +3840,7 @@
 | 0.0 | [indefinite-observable](./i/indefinite-observable) |  
 | 0.0 | [indent-string](./i/indent-string) | Indent each line in a string
 | 0.0 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria
+| 0.0 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.0 | [inert](./i/inert) | Static file and directory handlers plugin for hapi
 | 0.0 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f
 | 0.0 | [inferno-clone-vnode](./i/inferno-clone-vnode) | provides helper function to clone Inferno's vNodes
@@ -8643,6 +8644,7 @@
 | 0.0 | [remote-origin-url](./r/remote-origin-url) | Get the git remote origin URL from your local git 
 | 0.0 | [remote-redux-devtools](./r/remote-redux-devtools) | Relay Redux actions to remote Redux DevTools.
 | 0.0 | [remotedev-serialize](./r/remotedev-serialize) | Serialize unserializable data and parse it back.
+| 0.0 | [remotedev-server](./r/remotedev-server) | Run the RemoteDev monitor on your local server.
 | 0.0 | [remove-accents](./r/remove-accents) | Converting the accented characters to their corres
 | 0.0 | [remove-file-safe](./r/remove-file-safe) | Remove files without try catch
 | 0.0 | [remove-markdown](./r/remove-markdown) | Remove Markdown formatting from text
@@ -8944,10 +8946,13 @@
 | 0.0 | [sbd](./s/sbd) | Split text into sentences with Sentence Boundary D
 | 0.0 | [sc-auth](./s/sc-auth) | Auth module for SocketCluster
 | 0.0 | [sc-broker](./s/sc-broker) | sc-broker key-value and message broker
+| 0.0 | [sc-broker-cluster](./s/sc-broker-cluster) | Realtime clustering engine
 | 0.0 | [sc-channel](./s/sc-channel) | Channel object for SocketCluster
 | 0.0 | [sc-errors](./s/sc-errors) | Error types for use throughout SocketCluster
+| 0.0 | [sc-hot-reboot](./s/sc-hot-reboot) | Automatically reboot workers when code changes.
 | 0.0 | [scalike](./s/scalike) | -
 | 0.0 | [scanf](./s/scanf) | C like scanf/sscanf module for node.js.
+| 0.0 | [scc-broker-client](./s/scc-broker-client) | Client for SCC - For SocketCluster horizontal scal
 | 0.0 | [schedule](./s/schedule) | Cooperative scheduler for the browser environment.
 | 0.0 | [scheduler](./s/scheduler) | Cooperative scheduler for the browser environment.
 | 0.0 | [schema-registry](./s/schema-registry) | json & avro schema registry
@@ -9322,6 +9327,8 @@
 | 0.0 | [socket_dot_io-parser](./s/socket_dot_io-parser) | socket.io protocol parser
 | 0.0 | [socket_dot_io-redis](./s/socket_dot_io-redis) | -
 | 0.0 | [socket_dot_io__component-](./s/socket_dot_io__component-emitter) | Event emitter
+| 0.0 | [socketcluster](./s/socketcluster) | Highly scalable realtime framework with support fo
+| 0.0 | [socketcluster-client](./s/socketcluster-client) | SocketCluster JavaScript client
 | 0.0 | [socketcluster-server](./s/socketcluster-server) | Server module for SocketCluster
 | 0.0 | [socketio-jwt](./s/socketio-jwt) | authenticate socket.io connections using JWTs
 | 0.0 | [socketio-jwt-auth](./s/socketio-jwt-auth) | Socket.io authentication middleware using Json Web
