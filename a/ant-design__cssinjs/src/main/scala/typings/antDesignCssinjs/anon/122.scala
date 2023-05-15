@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextDecorationSkipInk
-import typings.std.Extract
+import typings.csstype.mod.Property.PaintOrder
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `122` extends StObject {
   
   var value: js.UndefOr[
-    TextDecorationSkipInk | (js.Array[
-      (Extract[
-        js.UndefOr[TextDecorationSkipInk | js.Array[NonNullable[js.UndefOr[TextDecorationSkipInk]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[TextDecorationSkipInk]]
+    PaintOrder | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[PaintOrder]]] | NonNullable[js.UndefOr[PaintOrder]] | PaintOrder
+      ]
     ])
   ] = js.native
 }

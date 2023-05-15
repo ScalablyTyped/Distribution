@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsWrapThrough
-import typings.std.Extract
+import typings.csstype.mod.Property.ImageResolution
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `270` extends StObject {
   
   var value: js.UndefOr[
-    MsWrapThrough | (js.Array[
-      (Extract[
-        js.UndefOr[MsWrapThrough | js.Array[NonNullable[js.UndefOr[MsWrapThrough]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[MsWrapThrough]]
+    ImageResolution | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[ImageResolution]]] | ImageResolution | NonNullable[js.UndefOr[ImageResolution]]
+      ]
     ])
   ] = js.native
 }

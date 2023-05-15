@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MaskOrigin
-import typings.std.Extract
+import typings.csstype.mod.Property.ScrollbarWidth
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `367` extends StObject {
   
   var value: js.UndefOr[
-    MaskOrigin | (js.Array[
-      (Extract[js.UndefOr[MaskOrigin | js.Array[NonNullable[js.UndefOr[MaskOrigin]]]], String]) | NonNullable[js.UndefOr[MaskOrigin]]
+    ScrollbarWidth | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[ScrollbarWidth]]] | NonNullable[js.UndefOr[ScrollbarWidth]] | ScrollbarWidth
+      ]
     ])
   ] = js.native
 }

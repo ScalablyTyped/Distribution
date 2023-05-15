@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BoxAlign
-import typings.std.Extract
+import typings.csstype.mod.Property.BackgroundOrigin
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `83` extends StObject {
   
   var value: js.UndefOr[
-    BoxAlign | (js.Array[
-      (Extract[js.UndefOr[BoxAlign | js.Array[NonNullable[js.UndefOr[BoxAlign]]]], String]) | NonNullable[js.UndefOr[BoxAlign]]
+    BackgroundOrigin | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[BackgroundOrigin]]] | BackgroundOrigin | NonNullable[js.UndefOr[BackgroundOrigin]]
+      ]
     ])
   ] = js.native
 }

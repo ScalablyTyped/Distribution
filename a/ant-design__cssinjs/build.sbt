@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__cssinjs"
-version := "0.0.0-alpha.60-dbb619"
+version := "1.9.1-91582f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

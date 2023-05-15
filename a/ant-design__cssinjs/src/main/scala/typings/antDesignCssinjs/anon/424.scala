@@ -1,7 +1,7 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AlignItems
-import typings.std.Extract
+import typings.antDesignCssinjs.esKeyframesMod.default
+import typings.csstype.mod.Property.AnimationName
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `424` extends StObject {
   
   var value: js.UndefOr[
-    AlignItems | (js.Array[
-      (Extract[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]], String]) | NonNullable[js.UndefOr[AlignItems]]
-    ])
+    AnimationName | (js.Array[
+      js.UndefOr[
+        AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]] | NonNullable[js.UndefOr[AnimationName]] | default
+      ]
+    ]) | default
   ] = js.native
 }

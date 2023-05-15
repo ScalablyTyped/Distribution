@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsScrollRails
-import typings.std.Extract
+import typings.csstype.mod.Property.BorderBlockStart
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `527` extends StObject {
   
   var value: js.UndefOr[
-    MsScrollRails | (js.Array[
-      (Extract[
-        js.UndefOr[MsScrollRails | js.Array[NonNullable[js.UndefOr[MsScrollRails]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[MsScrollRails]]
+    (BorderBlockStart[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[BorderBlockStart[Double | String]]]]) | (BorderBlockStart[Double | String]) | (NonNullable[js.UndefOr[BorderBlockStart[Double | String]]])
+      ]
     ])
   ] = js.native
 }

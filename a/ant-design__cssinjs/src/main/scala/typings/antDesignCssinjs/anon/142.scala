@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BackgroundClip
-import typings.std.Extract
+import typings.csstype.mod.Property.PageBreakInside
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `142` extends StObject {
   
   var value: js.UndefOr[
-    BackgroundClip | (js.Array[
-      (Extract[
-        js.UndefOr[BackgroundClip | js.Array[NonNullable[js.UndefOr[BackgroundClip]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BackgroundClip]]
+    PageBreakInside | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[PageBreakInside]]] | NonNullable[js.UndefOr[PageBreakInside]] | PageBreakInside
+      ]
     ])
   ] = js.native
 }

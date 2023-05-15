@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Rotate
-import typings.std.Extract
+import typings.csstype.mod.Property.BlockOverflow
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `519` extends StObject {
   
   var value: js.UndefOr[
-    Rotate | (js.Array[
-      (Extract[js.UndefOr[Rotate | js.Array[NonNullable[js.UndefOr[Rotate]]]], String]) | NonNullable[js.UndefOr[Rotate]]
+    BlockOverflow | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[BlockOverflow]]] | BlockOverflow | NonNullable[js.UndefOr[BlockOverflow]]
+      ]
     ])
   ] = js.native
 }

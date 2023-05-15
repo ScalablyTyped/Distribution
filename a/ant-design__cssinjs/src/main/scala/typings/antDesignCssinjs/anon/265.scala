@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TransformBox
-import typings.std.Extract
+import typings.csstype.mod.Property.WhiteSpace
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `265` extends StObject {
   
   var value: js.UndefOr[
-    TransformBox | (js.Array[
-      (Extract[js.UndefOr[TransformBox | js.Array[NonNullable[js.UndefOr[TransformBox]]]], String]) | NonNullable[js.UndefOr[TransformBox]]
+    WhiteSpace | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[WhiteSpace]]] | NonNullable[js.UndefOr[WhiteSpace]] | WhiteSpace
+      ]
     ])
   ] = js.native
 }

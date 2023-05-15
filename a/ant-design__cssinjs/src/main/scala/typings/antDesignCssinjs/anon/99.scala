@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AnimationDuration
-import typings.std.Extract
+import typings.csstype.mod.Property.ShapeMargin
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `99` extends StObject {
   
   var value: js.UndefOr[
-    AnimationDuration[String] | (js.Array[
-      (Extract[
-        js.UndefOr[
-          AnimationDuration[String] | js.Array[NonNullable[js.UndefOr[AnimationDuration[String]]]]
-        ], 
-        String
-      ]) | NonNullable[js.UndefOr[AnimationDuration[String]]]
+    (ShapeMargin[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[ShapeMargin[Double | String]]]]) | (NonNullable[js.UndefOr[ShapeMargin[Double | String]]]) | (ShapeMargin[Double | String])
+      ]
     ])
   ] = js.native
 }

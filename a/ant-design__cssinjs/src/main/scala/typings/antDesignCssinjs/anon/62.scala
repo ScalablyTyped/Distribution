@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.LineHeight
-import typings.std.Extract
+import typings.csstype.mod.Property.FontVariantEastAsian
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `62` extends StObject {
   
   var value: js.UndefOr[
-    (LineHeight[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (LineHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[LineHeight[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[LineHeight[Double | String]]])
+    FontVariantEastAsian | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[FontVariantEastAsian]]] | FontVariantEastAsian | NonNullable[js.UndefOr[FontVariantEastAsian]]
+      ]
     ])
   ] = js.native
 }

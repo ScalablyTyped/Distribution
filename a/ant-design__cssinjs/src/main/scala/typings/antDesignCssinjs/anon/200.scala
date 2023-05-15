@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OutlineOffset
-import typings.std.Extract
+import typings.csstype.mod.Property.BorderCollapse
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `200` extends StObject {
   
   var value: js.UndefOr[
-    (OutlineOffset[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (OutlineOffset[Double | String]) | (js.Array[NonNullable[js.UndefOr[OutlineOffset[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[OutlineOffset[Double | String]]])
+    BorderCollapse | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[BorderCollapse]]] | BorderCollapse | NonNullable[js.UndefOr[BorderCollapse]]
+      ]
     ])
   ] = js.native
 }

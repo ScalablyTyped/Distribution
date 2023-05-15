@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AlignSelf
-import typings.std.Extract
+import typings.csstype.mod.Property.ContainerType
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `461` extends StObject {
   
   var value: js.UndefOr[
-    AlignSelf | (js.Array[
-      (Extract[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]], String]) | NonNullable[js.UndefOr[AlignSelf]]
+    ContainerType | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[ContainerType]]] | ContainerType | NonNullable[js.UndefOr[ContainerType]]
+      ]
     ])
   ] = js.native
 }

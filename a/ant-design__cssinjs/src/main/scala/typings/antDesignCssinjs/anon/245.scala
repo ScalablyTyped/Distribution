@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Resize
-import typings.std.Extract
+import typings.csstype.mod.Property.StrokeLinecap
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `245` extends StObject {
   
   var value: js.UndefOr[
-    Resize | (js.Array[
-      (Extract[js.UndefOr[Resize | js.Array[NonNullable[js.UndefOr[Resize]]]], String]) | NonNullable[js.UndefOr[Resize]]
+    StrokeLinecap | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[StrokeLinecap]]] | NonNullable[js.UndefOr[StrokeLinecap]] | StrokeLinecap
+      ]
     ])
   ] = js.native
 }

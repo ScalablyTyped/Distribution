@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozWindowShadow
-import typings.std.Extract
+import typings.csstype.mod.Property.ScrollMarginBottom
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `280` extends StObject {
   
   var value: js.UndefOr[
-    MozWindowShadow | (js.Array[
-      (Extract[
-        js.UndefOr[MozWindowShadow | js.Array[NonNullable[js.UndefOr[MozWindowShadow]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[MozWindowShadow]]
+    (ScrollMarginBottom[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[ScrollMarginBottom[Double | String]]]]) | (NonNullable[js.UndefOr[ScrollMarginBottom[Double | String]]]) | (ScrollMarginBottom[Double | String])
+      ]
     ])
   ] = js.native
 }

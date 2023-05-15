@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ColumnCount
-import typings.std.Extract
+import typings.csstype.mod.Property.Direction
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `357` extends StObject {
   
   var value: js.UndefOr[
-    ColumnCount | (js.Array[
-      (Extract[js.UndefOr[ColumnCount | js.Array[NonNullable[js.UndefOr[ColumnCount]]]], String]) | NonNullable[js.UndefOr[ColumnCount]]
+    Direction | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[Direction]]] | Direction | NonNullable[js.UndefOr[Direction]]
+      ]
     ])
   ] = js.native
 }

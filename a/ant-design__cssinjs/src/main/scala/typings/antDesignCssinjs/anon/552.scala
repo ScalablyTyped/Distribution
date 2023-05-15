@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.GridRowEnd
-import typings.std.Extract
+import typings.csstype.mod.Property.BorderTopStyle
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `552` extends StObject {
   
   var value: js.UndefOr[
-    GridRowEnd | (js.Array[
-      (Extract[js.UndefOr[GridRowEnd | js.Array[NonNullable[js.UndefOr[GridRowEnd]]]], String]) | NonNullable[js.UndefOr[GridRowEnd]]
+    BorderTopStyle | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[BorderTopStyle]]] | BorderTopStyle | NonNullable[js.UndefOr[BorderTopStyle]]
+      ]
     ])
   ] = js.native
 }

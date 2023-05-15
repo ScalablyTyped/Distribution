@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OffsetRotate
-import typings.std.Extract
+import typings.csstype.mod.Property.AnimationIterationCount
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `86` extends StObject {
   
   var value: js.UndefOr[
-    OffsetRotate | (js.Array[
-      (Extract[js.UndefOr[OffsetRotate | js.Array[NonNullable[js.UndefOr[OffsetRotate]]]], String]) | NonNullable[js.UndefOr[OffsetRotate]]
+    AnimationIterationCount | (js.Array[
+      js.UndefOr[
+        AnimationIterationCount | js.Array[NonNullable[js.UndefOr[AnimationIterationCount]]] | NonNullable[js.UndefOr[AnimationIterationCount]]
+      ]
     ])
   ] = js.native
 }

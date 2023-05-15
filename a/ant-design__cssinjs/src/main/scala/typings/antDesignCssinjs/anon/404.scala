@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozBorderBottomColors
-import typings.std.Extract
+import typings.csstype.mod.Property.ScrollPaddingBlock
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `404` extends StObject {
   
   var value: js.UndefOr[
-    MozBorderBottomColors | (js.Array[
-      (Extract[
-        js.UndefOr[MozBorderBottomColors | js.Array[NonNullable[js.UndefOr[MozBorderBottomColors]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[MozBorderBottomColors]]
+    (ScrollPaddingBlock[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[ScrollPaddingBlock[Double | String]]]]) | (NonNullable[js.UndefOr[ScrollPaddingBlock[Double | String]]]) | (ScrollPaddingBlock[Double | String])
+      ]
     ])
   ] = js.native
 }

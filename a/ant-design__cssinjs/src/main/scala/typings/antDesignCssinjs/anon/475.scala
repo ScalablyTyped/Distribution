@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozBinding
-import typings.std.Extract
+import typings.csstype.mod.Property.BorderInlineStyle
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `475` extends StObject {
   
   var value: js.UndefOr[
-    MozBinding | (js.Array[
-      (Extract[js.UndefOr[MozBinding | js.Array[NonNullable[js.UndefOr[MozBinding]]]], String]) | NonNullable[js.UndefOr[MozBinding]]
+    BorderInlineStyle | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[BorderInlineStyle]]] | BorderInlineStyle | NonNullable[js.UndefOr[BorderInlineStyle]]
+      ]
     ])
   ] = js.native
 }

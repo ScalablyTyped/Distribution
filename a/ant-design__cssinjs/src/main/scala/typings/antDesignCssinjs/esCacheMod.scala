@@ -9,9 +9,10 @@ object esCacheMod {
   
   @JSImport("@ant-design/cssinjs/es/Cache", JSImport.Default)
   @js.native
-  open class default ()
+  open class default protected ()
     extends StObject
        with Entity {
+    def this(instanceId: String) = this()
     
     /** @private Internal cache map. Do not access this directly */
     /* CompleteClass */
@@ -19,6 +20,9 @@ object esCacheMod {
     
     /* CompleteClass */
     override def get(keys: js.Array[KeyType]): ValueType | Null = js.native
+    
+    /* CompleteClass */
+    var instanceId: String = js.native
     
     /* CompleteClass */
     override def update(keys: js.Array[KeyType], valueFn: js.Function1[/* origin */ ValueType | Null, ValueType | Null]): Unit = js.native
@@ -31,6 +35,8 @@ object esCacheMod {
     
     def get(keys: js.Array[KeyType]): ValueType | Null
     
+    var instanceId: String
+    
     def update(keys: js.Array[KeyType], valueFn: js.Function1[/* origin */ ValueType | Null, ValueType | Null]): Unit
   }
   object Entity {
@@ -38,9 +44,10 @@ object esCacheMod {
     inline def apply(
       cache: Map[String, ValueType],
       get: js.Array[KeyType] => ValueType | Null,
+      instanceId: String,
       update: (js.Array[KeyType], js.Function1[/* origin */ ValueType | Null, ValueType | Null]) => Unit
     ): Entity = {
-      val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), update = js.Any.fromFunction2(update))
+      val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), instanceId = instanceId.asInstanceOf[js.Any], update = js.Any.fromFunction2(update))
       __obj.asInstanceOf[Entity]
     }
     
@@ -50,6 +57,8 @@ object esCacheMod {
       inline def setCache(value: Map[String, ValueType]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
       inline def setGet(value: js.Array[KeyType] => ValueType | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      
+      inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
       inline def setUpdate(value: (js.Array[KeyType], js.Function1[/* origin */ ValueType | Null, ValueType | Null]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     }

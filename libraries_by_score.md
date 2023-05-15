@@ -829,6 +829,7 @@
 | 0.808397558153292 | [angular__cli](./a/angular__cli) | CLI tool for Angular
 | 0.8083883443556319 | [sourcemap-codec](./s/sourcemap-codec) | Encode/decode sourcemap mappings
 | 0.8083051631706806 | [proper-lockfile](./p/proper-lockfile) | A inter-process and inter-machine lockfile utility
+| 0.8080856965007011 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de
 | 0.8080507144396566 | [react-element-to-jsx-stri](./r/react-element-to-jsx-string) | Turn a ReactElement into the corresponding JSX str
 | 0.8080489415201968 | [proxyquire](./p/proxyquire) | Proxies nodejs require in order to allow overridin
 | 0.8079365743204434 | [is-alphabetical](./i/is-alphabetical) | Check if a character is alphabetical
@@ -2779,7 +2780,6 @@
 | 0.7176712388781245 | [stream-to-array](./s/stream-to-array) | Concatenate a readable stream's data into a single
 | 0.7176433510462157 | [detect-passive-events](./d/detect-passive-events) | Detect if the browser supports passive events
 | 0.7176198342961569 | [grpc__proto-loader](./g/grpc__proto-loader) | gRPC utility library for loading .proto files
-| 0.7176004435070695 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.7175881284103192 | [react-ace](./r/react-ace) | A react component for Ace Editor
 | 0.7175787601224826 | [vfile-sort](./v/vfile-sort) | vfile utility to sort messages by line/column
 | 0.7175523728015658 | [react-swipe](./r/react-swipe) | Brad Birdsall's Swipe.js as a React component
@@ -8105,7 +8105,6 @@
 | 0.5239977776650723 | [tslint](./t/tslint) | An extensible static analysis linter for the TypeS
 | 0.52392042538791 | [rc-swipeout](./r/rc-swipeout) | swipe out ui component for react(web and react-nat
 | 0.5238501023310315 | [redis-mock](./r/redis-mock) | Redis client mock object for unit testing
-| 0.5238479026606435 | [bigbite__wp-cypress](./b/bigbite__wp-cypress) | WordPress end to end testing with Cypress.io
 | 0.5238164067865376 | [combokeys](./c/combokeys) | Handles keyboard shortcuts in the browser
 | 0.5237274991389178 | [graphviz](./g/graphviz) | Node.js interface to the GraphViz graphing tool
 | 0.5236475379747046 | [chai-oequal](./c/chai-oequal) | Chai oequal() that uses object's equality method.

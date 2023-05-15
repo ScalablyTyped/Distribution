@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MathStyle
-import typings.std.Extract
+import typings.csstype.mod.Property.LineClamp
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `485` extends StObject {
   
   var value: js.UndefOr[
-    MathStyle | (js.Array[
-      (Extract[js.UndefOr[MathStyle | js.Array[NonNullable[js.UndefOr[MathStyle]]]], String]) | NonNullable[js.UndefOr[MathStyle]]
+    LineClamp | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[LineClamp]]] | LineClamp | NonNullable[js.UndefOr[LineClamp]]
+      ]
     ])
   ] = js.native
 }

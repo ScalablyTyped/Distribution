@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozAppearance
-import typings.std.Extract
+import typings.csstype.mod.Property.ScrollSnapCoordinate
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `231` extends StObject {
   
   var value: js.UndefOr[
-    MozAppearance | (js.Array[
-      (Extract[
-        js.UndefOr[MozAppearance | js.Array[NonNullable[js.UndefOr[MozAppearance]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[MozAppearance]]
+    (ScrollSnapCoordinate[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[ScrollSnapCoordinate[Double | String]]]]) | (NonNullable[js.UndefOr[ScrollSnapCoordinate[Double | String]]]) | (ScrollSnapCoordinate[Double | String])
+      ]
     ])
   ] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ImageRendering
-import typings.std.Extract
+import typings.csstype.mod.Property.MarginLeft
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `482` extends StObject {
   
   var value: js.UndefOr[
-    ImageRendering | (js.Array[
-      (Extract[
-        js.UndefOr[ImageRendering | js.Array[NonNullable[js.UndefOr[ImageRendering]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[ImageRendering]]
+    (MarginLeft[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]]) | (MarginLeft[Double | String]) | (NonNullable[js.UndefOr[MarginLeft[Double | String]]])
+      ]
     ])
   ] = js.native
 }

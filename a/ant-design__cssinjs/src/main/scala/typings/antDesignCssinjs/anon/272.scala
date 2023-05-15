@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TransitionTimingFunction
-import typings.std.Extract
+import typings.csstype.mod.Property.MaxWidth
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `272` extends StObject {
   
   var value: js.UndefOr[
-    TransitionTimingFunction | (js.Array[
-      (Extract[
-        js.UndefOr[
-          TransitionTimingFunction | js.Array[NonNullable[js.UndefOr[TransitionTimingFunction]]]
-        ], 
-        String
-      ]) | NonNullable[js.UndefOr[TransitionTimingFunction]]
+    (MaxWidth[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[MaxWidth[Double | String]]]]) | (MaxWidth[Double | String]) | (NonNullable[js.UndefOr[MaxWidth[Double | String]]])
+      ]
     ])
   ] = js.native
 }

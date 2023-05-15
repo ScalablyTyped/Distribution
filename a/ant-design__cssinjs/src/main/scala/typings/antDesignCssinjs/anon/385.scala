@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BackgroundBlendMode
-import typings.std.Extract
+import typings.csstype.mod.Property.TextJustify
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `385` extends StObject {
   
   var value: js.UndefOr[
-    BackgroundBlendMode | (js.Array[
-      (Extract[
-        js.UndefOr[BackgroundBlendMode | js.Array[NonNullable[js.UndefOr[BackgroundBlendMode]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BackgroundBlendMode]]
+    TextJustify | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[TextJustify]]] | NonNullable[js.UndefOr[TextJustify]] | TextJustify
+      ]
     ])
   ] = js.native
 }

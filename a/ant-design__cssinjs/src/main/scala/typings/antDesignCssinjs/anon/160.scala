@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderInlineStartColor
-import typings.std.Extract
+import typings.csstype.mod.Property.AnimationTimingFunction
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `160` extends StObject {
   
   var value: js.UndefOr[
-    BorderInlineStartColor | (js.Array[
-      (Extract[
-        js.UndefOr[
-          BorderInlineStartColor | js.Array[NonNullable[js.UndefOr[BorderInlineStartColor]]]
-        ], 
-        String
-      ]) | NonNullable[js.UndefOr[BorderInlineStartColor]]
+    AnimationTimingFunction | (js.Array[
+      js.UndefOr[
+        AnimationTimingFunction | js.Array[NonNullable[js.UndefOr[AnimationTimingFunction]]] | NonNullable[js.UndefOr[AnimationTimingFunction]]
+      ]
     ])
   ] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextDecorationColor
-import typings.std.Extract
+import typings.csstype.mod.Property.MsHighContrastAdjust
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `53` extends StObject {
   
   var value: js.UndefOr[
-    TextDecorationColor | (js.Array[
-      (Extract[
-        js.UndefOr[TextDecorationColor | js.Array[NonNullable[js.UndefOr[TextDecorationColor]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[TextDecorationColor]]
+    MsHighContrastAdjust | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MsHighContrastAdjust]]] | MsHighContrastAdjust | NonNullable[js.UndefOr[MsHighContrastAdjust]]
+      ]
     ])
   ] = js.native
 }

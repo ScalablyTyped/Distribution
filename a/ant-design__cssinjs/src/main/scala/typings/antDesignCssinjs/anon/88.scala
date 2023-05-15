@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.GridTemplateColumns
-import typings.std.Extract
+import typings.csstype.mod.Property.MsContentZoomLimitMax
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `88` extends StObject {
   
   var value: js.UndefOr[
-    (GridTemplateColumns[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (GridTemplateColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]])
+    MsContentZoomLimitMax | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MsContentZoomLimitMax]]] | MsContentZoomLimitMax | NonNullable[js.UndefOr[MsContentZoomLimitMax]]
+      ]
     ])
   ] = js.native
 }

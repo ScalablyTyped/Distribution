@@ -16,6 +16,7 @@ import typings.glob.distMjsGlobMod.GlobOptionsWithFileTypesTrue
 import typings.glob.distMjsGlobMod.GlobOptionsWithFileTypesUnset
 import typings.glob.mod.Glob_
 import typings.minipass.mod.Minipass
+import typings.minipass.mod.Minipass.Events
 import typings.std.AsyncGenerator
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
@@ -158,49 +159,73 @@ object anon {
     @JSName("globIterate")
     var globIterate_Original: Fn3 = js.native
     
-    def globStream(pattern: String): Minipass[String, String] = js.native
+    def globStream(pattern: String): Minipass[String, String, Events[String]] = js.native
     def globStream(pattern: String, options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def globStream(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def globStream(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def globStream(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def globStream(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
-    def globStream(pattern: js.Array[String]): Minipass[String, String] = js.native
+    def globStream(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
+    def globStream(pattern: js.Array[String]): Minipass[String, String, Events[String]] = js.native
     def globStream(pattern: js.Array[String], options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     
     def globStreamSync(pattern: String, options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     def globStreamSync(pattern: js.Array[String], options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     @JSName("globStreamSync")
     var globStreamSync_Original: typings.glob.anon.FnCall = js.native
     
@@ -295,49 +320,73 @@ object anon {
     @JSName("iterate")
     var iterate_Original: NonepatternstringArraystrSync = js.native
     
-    def stream(pattern: String): Minipass[String, String] = js.native
+    def stream(pattern: String): Minipass[String, String, Events[String]] = js.native
     def stream(pattern: String, options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def stream(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def stream(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def stream(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def stream(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
-    def stream(pattern: js.Array[String]): Minipass[String, String] = js.native
+    def stream(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
+    def stream(pattern: js.Array[String]): Minipass[String, String, Events[String]] = js.native
     def stream(pattern: js.Array[String], options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     
     def streamSync(pattern: String, options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def streamSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def streamSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def streamSync(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def streamSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def streamSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     def streamSync(pattern: js.Array[String], options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def streamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def streamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def streamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def streamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def streamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     @JSName("streamSync")
     var streamSync_Original: typings.glob.anon.FnCall = js.native
     
@@ -442,49 +491,73 @@ object anon {
       ] = js.native
     def globIterateSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Generator[String, Unit, Unit] = js.native
     
-    def globStream(pattern: String): Minipass[String, String] = js.native
+    def globStream(pattern: String): Minipass[String, String, Events[String]] = js.native
     def globStream(pattern: String, options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def globStream(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def globStream(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def globStream(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def globStream(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
-    def globStream(pattern: js.Array[String]): Minipass[String, String] = js.native
+    def globStream(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
+    def globStream(pattern: js.Array[String]): Minipass[String, String, Events[String]] = js.native
     def globStream(pattern: js.Array[String], options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     
     def globStreamSync(pattern: String, options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     def globStreamSync(pattern: js.Array[String], options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     
     def globSync(pattern: String): js.Array[String] = js.native
     def globSync(pattern: String, options: GlobOptions): js.Array[
@@ -515,12 +588,12 @@ object anon {
     
     val iterateSync: TypeofiterateSync = js.native
     
-    /* Inlined {None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string>} & {  sync :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>}} */
+    /* Inlined {None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, minipass.minipass.Minipass.Events</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>> | minipass.minipass.Minipass<string, string, minipass.minipass.Minipass.Events<string>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): minipass.minipass.Minipass<string, string, minipass.minipass.Minipass.Events<string>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, minipass.minipass.Minipass.Events</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string, minipass.minipass.Minipass.Events<string>>} & {  sync :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, minipass.minipass.Minipass.Events</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>> | minipass.minipass.Minipass<string, string, minipass.minipass.Minipass.Events<string>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset): minipass.minipass.Minipass<string, string, minipass.minipass.Minipass.Events<string>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string, minipass.minipass.Minipass.Events<string>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, minipass.minipass.Minipass.Events</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>>}} */
     val stream: Typeofstream = js.native
     
     val streamSync: TypeofstreamSync = js.native
     
-    /* Inlined {None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | std.Array<string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Array<string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Array<string>} & {  stream :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>},   iterate :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void> | std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Generator<string, void, void>}} */
+    /* Inlined {None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | std.Array<string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Array<string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Array<string>} & {  stream :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, minipass.minipass.Minipass.Events</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>> | minipass.minipass.Minipass<string, string, minipass.minipass.Minipass.Events<string>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset): minipass.minipass.Minipass<string, string, minipass.minipass.Minipass.Events<string>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string, minipass.minipass.Minipass.Events<string>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, minipass.minipass.Minipass.Events</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>>},   iterate :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void> | std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Generator<string, void, void>}} */
     val sync: Typeofsync = js.native
     
     def unescape(s: String): String = js.native
@@ -621,49 +694,73 @@ object anon {
   @js.native
   trait Typeofstream extends StObject {
     
-    def apply(pattern: String): Minipass[String, String] = js.native
+    def apply(pattern: String): Minipass[String, String, Events[String]] = js.native
     def apply(pattern: String, options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def apply(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def apply(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def apply(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def apply(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
-    def apply(pattern: js.Array[String]): Minipass[String, String] = js.native
+    def apply(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
+    def apply(pattern: js.Array[String]): Minipass[String, String, Events[String]] = js.native
     def apply(pattern: js.Array[String], options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     
     def sync(pattern: String, options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def sync(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def sync(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def sync(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def sync(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def sync(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     def sync(pattern: js.Array[String], options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     @JSName("sync")
     var sync_Original: typings.glob.anon.FnCall = js.native
   }
@@ -673,24 +770,36 @@ object anon {
     
     def apply(pattern: String, options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def apply(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def apply(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def apply(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def apply(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def apply(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     def apply(pattern: js.Array[String], options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
   }
   
   @js.native
@@ -746,24 +855,36 @@ object anon {
     
     def stream(pattern: String, options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def stream(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def stream(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def stream(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def stream(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def stream(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     def stream(pattern: js.Array[String], options: GlobOptions): Minipass[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Events[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
       ] = js.native
-    def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = js.native
+    def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String, Events[String]] = js.native
     def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Events[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
       ] = js.native
-    def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = js.native
+    def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String, Events[String]] = js.native
     @JSName("stream")
     var stream_Original: typings.glob.anon.FnCall = js.native
   }

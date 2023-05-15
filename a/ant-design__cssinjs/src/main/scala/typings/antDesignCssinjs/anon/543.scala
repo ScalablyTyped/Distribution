@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozBorderRightColors
-import typings.std.Extract
+import typings.csstype.mod.Property.BorderBlockEnd
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `543` extends StObject {
   
   var value: js.UndefOr[
-    MozBorderRightColors | (js.Array[
-      (Extract[
-        js.UndefOr[MozBorderRightColors | js.Array[NonNullable[js.UndefOr[MozBorderRightColors]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[MozBorderRightColors]]
+    (BorderBlockEnd[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[BorderBlockEnd[Double | String]]]]) | (BorderBlockEnd[Double | String]) | (NonNullable[js.UndefOr[BorderBlockEnd[Double | String]]])
+      ]
     ])
   ] = js.native
 }

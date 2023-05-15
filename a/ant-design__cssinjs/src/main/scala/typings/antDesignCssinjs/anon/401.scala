@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsBlockProgression
-import typings.std.Extract
+import typings.csstype.mod.Property.MsScrollLimitXMax
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `401` extends StObject {
   
   var value: js.UndefOr[
-    MsBlockProgression | (js.Array[
-      (Extract[
-        js.UndefOr[MsBlockProgression | js.Array[NonNullable[js.UndefOr[MsBlockProgression]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[MsBlockProgression]]
+    (MsScrollLimitXMax[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[MsScrollLimitXMax[Double | String]]]]) | (MsScrollLimitXMax[Double | String]) | (NonNullable[js.UndefOr[MsScrollLimitXMax[Double | String]]])
+      ]
     ])
   ] = js.native
 }

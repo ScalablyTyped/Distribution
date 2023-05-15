@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ObjectFit
-import typings.std.Extract
+import typings.csstype.mod.Property.MarginTop
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `339` extends StObject {
   
   var value: js.UndefOr[
-    ObjectFit | (js.Array[
-      (Extract[js.UndefOr[ObjectFit | js.Array[NonNullable[js.UndefOr[ObjectFit]]]], String]) | NonNullable[js.UndefOr[ObjectFit]]
+    (MarginTop[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]]) | (MarginTop[Double | String]) | (NonNullable[js.UndefOr[MarginTop[Double | String]]])
+      ]
     ])
   ] = js.native
 }

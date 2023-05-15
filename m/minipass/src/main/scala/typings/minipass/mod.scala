@@ -1,15 +1,8 @@
 package typings.minipass
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.minipass.minipassBooleans.`true`
 import typings.minipass.minipassStrings.buffer
-import typings.minipass.minipassStrings.close
-import typings.minipass.minipassStrings.data
-import typings.minipass.minipassStrings.drain
-import typings.minipass.minipassStrings.end
-import typings.minipass.minipassStrings.error
-import typings.minipass.minipassStrings.finish
-import typings.minipass.minipassStrings.prefinish
-import typings.minipass.minipassStrings.resume
 import typings.minipass.mod.Minipass.DualIterable
 import typings.minipass.mod.Minipass.Encoding
 import typings.minipass.mod.Minipass.PipeOptions
@@ -31,7 +24,7 @@ object mod {
   
   @JSImport("minipass", "Minipass")
   @js.native
-  open class Minipass[RType /* <: Any */, WType /* <: Any */] protected ()
+  open class Minipass[RType /* <: Any */, WType /* <: Any */, Events /* <: typings.minipass.mod.Minipass.Events[RType] */] protected ()
     extends Stream
        with DualIterable[RType] {
     // setEncoding(encoding: Encoding): void
@@ -40,10 +33,13 @@ object mod {
     
     val aborted: Boolean = js.native
     
-    /**
-      * alias for on()
-      */
-    def addEventHandler(event: String, listener: js.Function1[/* repeated */ Any, Any]): this.type = js.native
+    def addListener[Event /* <: /* keyof Events */ String */](
+      ev: Event,
+      handler: js.Function1[
+          /* import warning: importer.ImportType#apply Failed type conversion: Events[Event] */ /* args */ js.Any, 
+          Any
+        ]
+    ): this.type = js.native
     
     var async: Boolean = js.native
     
@@ -57,6 +53,11 @@ object mod {
     def destroy(er: Any): Unit = js.native
     
     val destroyed: Boolean = js.native
+    
+    def emit[Event /* <: /* keyof Events */ String */](
+      ev: Event,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type Events[Event] is not an array type */ data: /* import warning: importer.ImportType#apply Failed type conversion: Events[Event] */ js.Any
+    ): Boolean = js.native
     
     val emittedEnd: Boolean = js.native
     
@@ -94,15 +95,21 @@ object mod {
       */
     val objectMode: Boolean = js.native
     
-    def on(
-      event: typings.minipass.minipassStrings.readable | drain | resume | end | prefinish | finish | close,
-      listener: js.Function0[Any]
+    def on[Event /* <: /* keyof Events */ String */](
+      ev: Event,
+      handler: js.Function1[
+          /* import warning: importer.ImportType#apply Failed type conversion: Events[Event] */ /* args */ js.Any, 
+          Any
+        ]
     ): this.type = js.native
-    def on(event: String, listener: js.Function1[/* repeated */ Any, Any]): this.type = js.native
-    @JSName("on")
-    def on_data(event: data, listener: js.Function1[/* chunk */ RType, Any]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* error */ Any, Any]): this.type = js.native
+    
+    def once[Event /* <: /* keyof Events */ String */](
+      ev: Event,
+      handler: js.Function1[
+          /* import warning: importer.ImportType#apply Failed type conversion: Events[Event] */ /* args */ js.Any, 
+          Any
+        ]
+    ): this.type = js.native
     
     def pause(): Unit = js.native
     
@@ -180,6 +187,95 @@ object mod {
          with AsyncIterable[T]
     
     type Encoding = BufferEncoding | buffer | Null
+    
+    type EventArguments = StringDictionary[js.Array[Any]]
+    
+    trait Events[RType /* <: Any */]
+      extends StObject
+         with EventArguments {
+      
+      var abort: js.Array[/* reason */ Any]
+      
+      var close: js.Array[Any]
+      
+      var data: js.Array[/* chunk */ RType]
+      
+      var drain: js.Array[Any]
+      
+      var end: js.Array[Any]
+      
+      var error: js.Array[/* er */ Any]
+      
+      var finish: js.Array[Any]
+      
+      var prefinish: js.Array[Any]
+      
+      var readable: js.Array[Any]
+      
+      var resume: js.Array[Any]
+    }
+    object Events {
+      
+      inline def apply[RType /* <: Any */](
+        abort: js.Array[/* reason */ Any],
+        close: js.Array[Any],
+        data: js.Array[/* chunk */ RType],
+        drain: js.Array[Any],
+        end: js.Array[Any],
+        error: js.Array[/* er */ Any],
+        finish: js.Array[Any],
+        prefinish: js.Array[Any],
+        readable: js.Array[Any],
+        resume: js.Array[Any]
+      ): Events[RType] = {
+        val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], drain = drain.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], finish = finish.asInstanceOf[js.Any], prefinish = prefinish.asInstanceOf[js.Any], readable = readable.asInstanceOf[js.Any], resume = resume.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Events[RType]]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Events[?], RType /* <: Any */] (val x: Self & Events[RType]) extends AnyVal {
+        
+        inline def setAbort(value: js.Array[/* reason */ Any]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
+        
+        inline def setAbortVarargs(value: (/* reason */ Any)*): Self = StObject.set(x, "abort", js.Array(value*))
+        
+        inline def setClose(value: js.Array[Any]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+        
+        inline def setCloseVarargs(value: Any*): Self = StObject.set(x, "close", js.Array(value*))
+        
+        inline def setData(value: js.Array[/* chunk */ RType]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        
+        inline def setDataVarargs(value: (/* chunk */ RType)*): Self = StObject.set(x, "data", js.Array(value*))
+        
+        inline def setDrain(value: js.Array[Any]): Self = StObject.set(x, "drain", value.asInstanceOf[js.Any])
+        
+        inline def setDrainVarargs(value: Any*): Self = StObject.set(x, "drain", js.Array(value*))
+        
+        inline def setEnd(value: js.Array[Any]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        
+        inline def setEndVarargs(value: Any*): Self = StObject.set(x, "end", js.Array(value*))
+        
+        inline def setError(value: js.Array[/* er */ Any]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        
+        inline def setErrorVarargs(value: (/* er */ Any)*): Self = StObject.set(x, "error", js.Array(value*))
+        
+        inline def setFinish(value: js.Array[Any]): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
+        
+        inline def setFinishVarargs(value: Any*): Self = StObject.set(x, "finish", js.Array(value*))
+        
+        inline def setPrefinish(value: js.Array[Any]): Self = StObject.set(x, "prefinish", value.asInstanceOf[js.Any])
+        
+        inline def setPrefinishVarargs(value: Any*): Self = StObject.set(x, "prefinish", js.Array(value*))
+        
+        inline def setReadable(value: js.Array[Any]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+        
+        inline def setReadableVarargs(value: Any*): Self = StObject.set(x, "readable", js.Array(value*))
+        
+        inline def setResume(value: js.Array[Any]): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
+        
+        inline def setResumeVarargs(value: Any*): Self = StObject.set(x, "resume", js.Array(value*))
+      }
+    }
     
     trait ObjectModeOptions
       extends StObject

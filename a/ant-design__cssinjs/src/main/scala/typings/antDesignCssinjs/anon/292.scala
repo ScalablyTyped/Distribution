@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollbarColor
-import typings.std.Extract
+import typings.csstype.mod.Property.TextUnderlinePosition
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `292` extends StObject {
   
   var value: js.UndefOr[
-    ScrollbarColor | (js.Array[
-      (Extract[
-        js.UndefOr[ScrollbarColor | js.Array[NonNullable[js.UndefOr[ScrollbarColor]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[ScrollbarColor]]
+    TextUnderlinePosition | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[TextUnderlinePosition]]] | NonNullable[js.UndefOr[TextUnderlinePosition]] | TextUnderlinePosition
+      ]
     ])
   ] = js.native
 }

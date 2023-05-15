@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PageBreakInside
-import typings.std.Extract
+import typings.csstype.mod.Property.OverflowY
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `143` extends StObject {
   
   var value: js.UndefOr[
-    PageBreakInside | (js.Array[
-      (Extract[
-        js.UndefOr[PageBreakInside | js.Array[NonNullable[js.UndefOr[PageBreakInside]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[PageBreakInside]]
+    OverflowY | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[OverflowY]]] | NonNullable[js.UndefOr[OverflowY]] | OverflowY
+      ]
     ])
   ] = js.native
 }

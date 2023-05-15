@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Grid
-import typings.std.Extract
+import typings.csstype.mod.Property.AspectRatio
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `505` extends StObject {
   
   var value: js.UndefOr[
-    Grid | (js.Array[
-      (Extract[js.UndefOr[Grid | js.Array[NonNullable[js.UndefOr[Grid]]]], String]) | NonNullable[js.UndefOr[Grid]]
+    AspectRatio | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[AspectRatio]]] | AspectRatio | NonNullable[js.UndefOr[AspectRatio]]
+      ]
     ])
   ] = js.native
 }

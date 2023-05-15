@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBottomLeftRadius
-import typings.std.Extract
+import typings.csstype.mod.Property.Fill
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `103` extends StObject {
   
   var value: js.UndefOr[
-    (BorderBottomLeftRadius[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (BorderBottomLeftRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBottomLeftRadius[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[BorderBottomLeftRadius[Double | String]]])
+    Fill | (js.Array[
+      js.UndefOr[js.Array[NonNullable[js.UndefOr[Fill]]] | Fill | NonNullable[js.UndefOr[Fill]]]
     ])
   ] = js.native
 }

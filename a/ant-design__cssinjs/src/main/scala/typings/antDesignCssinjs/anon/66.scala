@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextEmphasis
-import typings.std.Extract
+import typings.csstype.mod.Property.MsAccelerator
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `66` extends StObject {
   
   var value: js.UndefOr[
-    TextEmphasis | (js.Array[
-      (Extract[js.UndefOr[TextEmphasis | js.Array[NonNullable[js.UndefOr[TextEmphasis]]]], String]) | NonNullable[js.UndefOr[TextEmphasis]]
+    MsAccelerator | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MsAccelerator]]] | MsAccelerator | NonNullable[js.UndefOr[MsAccelerator]]
+      ]
     ])
   ] = js.native
 }

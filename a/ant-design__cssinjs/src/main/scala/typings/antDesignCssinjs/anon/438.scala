@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsScrollbarHighlightColor
-import typings.std.Extract
+import typings.csstype.mod.Property.ScrollMarginBlockEnd
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `438` extends StObject {
   
   var value: js.UndefOr[
-    MsScrollbarHighlightColor | (js.Array[
-      (Extract[
-        js.UndefOr[
-          MsScrollbarHighlightColor | js.Array[NonNullable[js.UndefOr[MsScrollbarHighlightColor]]]
-        ], 
-        String
-      ]) | NonNullable[js.UndefOr[MsScrollbarHighlightColor]]
+    (ScrollMarginBlockEnd[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[ScrollMarginBlockEnd[Double | String]]]]) | (NonNullable[js.UndefOr[ScrollMarginBlockEnd[Double | String]]]) | (ScrollMarginBlockEnd[Double | String])
+      ]
     ])
   ] = js.native
 }

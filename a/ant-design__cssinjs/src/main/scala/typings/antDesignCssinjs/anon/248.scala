@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Opacity
-import typings.std.Extract
+import typings.csstype.mod.Property.ContainIntrinsicInlineSize
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `248` extends StObject {
   
   var value: js.UndefOr[
-    Opacity | (js.Array[
-      (Extract[js.UndefOr[Opacity | js.Array[NonNullable[js.UndefOr[Opacity]]]], String]) | NonNullable[js.UndefOr[Opacity]]
+    (ContainIntrinsicInlineSize[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]]) | (ContainIntrinsicInlineSize[Double | String]) | (NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]])
+      ]
     ])
   ] = js.native
 }

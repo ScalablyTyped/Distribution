@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AnimationName
-import typings.std.Extract
+import typings.csstype.mod.Property.TabSize
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `168` extends StObject {
   
   var value: js.UndefOr[
-    AnimationName | (js.Array[
-      (Extract[
-        js.UndefOr[AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[AnimationName]]
+    (TabSize[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[TabSize[Double | String]]]]) | (NonNullable[js.UndefOr[TabSize[Double | String]]]) | (TabSize[Double | String])
+      ]
     ])
   ] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitTextStroke
-import typings.std.Extract
+import typings.csstype.mod.Property.ImageOrientation
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Value extends StObject {
   
   var value: js.UndefOr[
-    (WebkitTextStroke[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (WebkitTextStroke[Double | String]) | (js.Array[NonNullable[js.UndefOr[WebkitTextStroke[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[WebkitTextStroke[Double | String]]])
+    ImageOrientation | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[ImageOrientation]]] | ImageOrientation | NonNullable[js.UndefOr[ImageOrientation]]
+      ]
     ])
   ] = js.native
 }

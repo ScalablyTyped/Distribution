@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AnimationFillMode
-import typings.std.Extract
+import typings.csstype.mod.Property.MozImageRegion
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `114` extends StObject {
   
   var value: js.UndefOr[
-    AnimationFillMode | (js.Array[
-      (Extract[
-        js.UndefOr[AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[AnimationFillMode]]
+    MozImageRegion | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MozImageRegion]]] | MozImageRegion | NonNullable[js.UndefOr[MozImageRegion]]
+      ]
     ])
   ] = js.native
 }

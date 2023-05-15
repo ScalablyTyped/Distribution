@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AnimationIterationCount
-import typings.std.Extract
+import typings.csstype.mod.Property.GridTemplateColumns
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `87` extends StObject {
   
   var value: js.UndefOr[
-    AnimationIterationCount | (js.Array[
-      (Extract[
-        js.UndefOr[
-          AnimationIterationCount | js.Array[NonNullable[js.UndefOr[AnimationIterationCount]]]
-        ], 
-        String
-      ]) | NonNullable[js.UndefOr[AnimationIterationCount]]
+    (GridTemplateColumns[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]]]) | (GridTemplateColumns[Double | String]) | (NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]])
+      ]
     ])
   ] = js.native
 }

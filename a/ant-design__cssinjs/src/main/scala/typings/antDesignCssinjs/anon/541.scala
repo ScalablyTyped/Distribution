@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Orphans
-import typings.std.Extract
+import typings.csstype.mod.Property.BackgroundPositionY
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `541` extends StObject {
   
   var value: js.UndefOr[
-    Orphans | (js.Array[
-      (Extract[js.UndefOr[Orphans | js.Array[NonNullable[js.UndefOr[Orphans]]]], String]) | NonNullable[js.UndefOr[Orphans]]
+    (BackgroundPositionY[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[BackgroundPositionY[Double | String]]]]) | (BackgroundPositionY[Double | String]) | (NonNullable[js.UndefOr[BackgroundPositionY[Double | String]]])
+      ]
     ])
   ] = js.native
 }

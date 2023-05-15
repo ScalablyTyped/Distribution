@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TransitionDelay
-import typings.std.Extract
+import typings.csstype.mod.Property.PerspectiveOrigin
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `212` extends StObject {
   
   var value: js.UndefOr[
-    TransitionDelay[String] | (js.Array[
-      (Extract[
-        js.UndefOr[
-          TransitionDelay[String] | js.Array[NonNullable[js.UndefOr[TransitionDelay[String]]]]
-        ], 
-        String
-      ]) | NonNullable[js.UndefOr[TransitionDelay[String]]]
+    (PerspectiveOrigin[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[PerspectiveOrigin[Double | String]]]]) | (NonNullable[js.UndefOr[PerspectiveOrigin[Double | String]]]) | (PerspectiveOrigin[Double | String])
+      ]
     ])
   ] = js.native
 }

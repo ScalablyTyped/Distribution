@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Inset
-import typings.std.Extract
+import typings.csstype.mod.Property.BorderImageSource
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `548` extends StObject {
   
   var value: js.UndefOr[
-    (Inset[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (Inset[Double | String]) | (js.Array[NonNullable[js.UndefOr[Inset[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[Inset[Double | String]]])
+    BorderImageSource | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[BorderImageSource]]] | BorderImageSource | NonNullable[js.UndefOr[BorderImageSource]]
+      ]
     ])
   ] = js.native
 }

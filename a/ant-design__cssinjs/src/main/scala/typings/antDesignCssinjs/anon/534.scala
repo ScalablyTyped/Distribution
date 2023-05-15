@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBottomColor
-import typings.std.Extract
+import typings.csstype.mod.Property.MsTouchSelect
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `534` extends StObject {
   
   var value: js.UndefOr[
-    BorderBottomColor | (js.Array[
-      (Extract[
-        js.UndefOr[BorderBottomColor | js.Array[NonNullable[js.UndefOr[BorderBottomColor]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BorderBottomColor]]
+    MsTouchSelect | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MsTouchSelect]]] | MsTouchSelect | NonNullable[js.UndefOr[MsTouchSelect]]
+      ]
     ])
   ] = js.native
 }

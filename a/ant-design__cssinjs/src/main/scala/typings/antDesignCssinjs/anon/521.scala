@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozUserInput
-import typings.std.Extract
+import typings.csstype.mod.Property.MsImeAlign
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `521` extends StObject {
   
   var value: js.UndefOr[
-    MozUserInput | (js.Array[
-      (Extract[js.UndefOr[MozUserInput | js.Array[NonNullable[js.UndefOr[MozUserInput]]]], String]) | NonNullable[js.UndefOr[MozUserInput]]
+    MsImeAlign | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MsImeAlign]]] | MsImeAlign | NonNullable[js.UndefOr[MsImeAlign]]
+      ]
     ])
   ] = js.native
 }

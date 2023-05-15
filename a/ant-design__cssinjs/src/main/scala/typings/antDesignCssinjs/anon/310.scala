@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Flex
-import typings.std.Extract
+import typings.csstype.mod.Property.ContentVisibility
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `310` extends StObject {
   
   var value: js.UndefOr[
-    (Flex[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (Flex[Double | String]) | (js.Array[NonNullable[js.UndefOr[Flex[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[Flex[Double | String]]])
+    ContentVisibility | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[ContentVisibility]]] | ContentVisibility | NonNullable[js.UndefOr[ContentVisibility]]
+      ]
     ])
   ] = js.native
 }

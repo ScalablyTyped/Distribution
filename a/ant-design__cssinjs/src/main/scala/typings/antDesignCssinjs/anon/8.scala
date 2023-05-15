@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderColor
-import typings.std.Extract
+import typings.csstype.mod.Property.MsScrollChaining
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `8` extends StObject {
   
   var value: js.UndefOr[
-    BorderColor | (js.Array[
-      (Extract[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]], String]) | NonNullable[js.UndefOr[BorderColor]]
+    MsScrollChaining | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MsScrollChaining]]] | MsScrollChaining | NonNullable[js.UndefOr[MsScrollChaining]]
+      ]
     ])
   ] = js.native
 }

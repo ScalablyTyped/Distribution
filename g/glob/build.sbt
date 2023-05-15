@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "glob"
-version := "10.2.3-1751b4"
+version := "10.2.3-7995fd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "minimatch" % "9.0.0-cb80cd",
-  "org.scalablytyped" %%% "minipass" % "5.0.0-110cf0",
+  "org.scalablytyped" %%% "minipass" % "6.0.0-e18c2e",
   "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

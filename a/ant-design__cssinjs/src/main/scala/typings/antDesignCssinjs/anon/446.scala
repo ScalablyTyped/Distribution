@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PlaceContent
-import typings.std.Extract
+import typings.csstype.mod.Property.Bottom
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `446` extends StObject {
   
   var value: js.UndefOr[
-    PlaceContent | (js.Array[
-      (Extract[js.UndefOr[PlaceContent | js.Array[NonNullable[js.UndefOr[PlaceContent]]]], String]) | NonNullable[js.UndefOr[PlaceContent]]
+    (Bottom[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[Bottom[Double | String]]]]) | (Bottom[Double | String]) | (NonNullable[js.UndefOr[Bottom[Double | String]]])
+      ]
     ])
   ] = js.native
 }

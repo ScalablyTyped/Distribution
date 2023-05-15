@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ColumnFill
-import typings.std.Extract
+import typings.csstype.mod.Property.InsetInlineStart
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `274` extends StObject {
   
   var value: js.UndefOr[
-    ColumnFill | (js.Array[
-      (Extract[js.UndefOr[ColumnFill | js.Array[NonNullable[js.UndefOr[ColumnFill]]]], String]) | NonNullable[js.UndefOr[ColumnFill]]
+    (InsetInlineStart[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[InsetInlineStart[Double | String]]]]) | (InsetInlineStart[Double | String]) | (NonNullable[js.UndefOr[InsetInlineStart[Double | String]]])
+      ]
     ])
   ] = js.native
 }

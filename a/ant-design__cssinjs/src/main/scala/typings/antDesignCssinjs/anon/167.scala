@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FlexFlow
-import typings.std.Extract
+import typings.csstype.mod.Property.AnimationName
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `167` extends StObject {
   
   var value: js.UndefOr[
-    FlexFlow | (js.Array[
-      (Extract[js.UndefOr[FlexFlow | js.Array[NonNullable[js.UndefOr[FlexFlow]]]], String]) | NonNullable[js.UndefOr[FlexFlow]]
+    AnimationName | (js.Array[
+      js.UndefOr[
+        AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]] | NonNullable[js.UndefOr[AnimationName]]
+      ]
     ])
   ] = js.native
 }

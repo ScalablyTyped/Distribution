@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OverscrollBehaviorBlock
-import typings.std.Extract
+import typings.csstype.mod.Property.VectorEffect
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `50` extends StObject {
   
   var value: js.UndefOr[
-    OverscrollBehaviorBlock | (js.Array[
-      (Extract[
-        js.UndefOr[
-          OverscrollBehaviorBlock | js.Array[NonNullable[js.UndefOr[OverscrollBehaviorBlock]]]
-        ], 
-        String
-      ]) | NonNullable[js.UndefOr[OverscrollBehaviorBlock]]
+    VectorEffect | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[VectorEffect]]] | NonNullable[js.UndefOr[VectorEffect]] | VectorEffect
+      ]
     ])
   ] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextRendering
-import typings.std.Extract
+import typings.csstype.mod.Property.ShapeOutside
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `381` extends StObject {
   
   var value: js.UndefOr[
-    TextRendering | (js.Array[
-      (Extract[
-        js.UndefOr[TextRendering | js.Array[NonNullable[js.UndefOr[TextRendering]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[TextRendering]]
+    ShapeOutside | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[ShapeOutside]]] | NonNullable[js.UndefOr[ShapeOutside]] | ShapeOutside
+      ]
     ])
   ] = js.native
 }

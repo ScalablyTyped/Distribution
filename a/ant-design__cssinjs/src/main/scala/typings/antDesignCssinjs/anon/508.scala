@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitTextStrokeColor
-import typings.std.Extract
+import typings.csstype.mod.Property.WebkitMaskAttachment
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `508` extends StObject {
   
   var value: js.UndefOr[
-    WebkitTextStrokeColor | (js.Array[
-      (Extract[
-        js.UndefOr[WebkitTextStrokeColor | js.Array[NonNullable[js.UndefOr[WebkitTextStrokeColor]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[WebkitTextStrokeColor]]
+    WebkitMaskAttachment | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[WebkitMaskAttachment]]] | NonNullable[js.UndefOr[WebkitMaskAttachment]] | WebkitMaskAttachment
+      ]
     ])
   ] = js.native
 }

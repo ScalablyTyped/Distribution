@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FontOpticalSizing
-import typings.std.Extract
+import typings.csstype.mod.Property.WebkitBoxReflect
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `317` extends StObject {
   
   var value: js.UndefOr[
-    FontOpticalSizing | (js.Array[
-      (Extract[
-        js.UndefOr[FontOpticalSizing | js.Array[NonNullable[js.UndefOr[FontOpticalSizing]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[FontOpticalSizing]]
+    (WebkitBoxReflect[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[WebkitBoxReflect[Double | String]]]]) | (NonNullable[js.UndefOr[WebkitBoxReflect[Double | String]]]) | (WebkitBoxReflect[Double | String])
+      ]
     ])
   ] = js.native
 }

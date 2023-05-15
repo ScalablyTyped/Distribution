@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MarkerEnd
-import typings.std.Extract
+import typings.csstype.mod.Property.WebkitBorderBeforeWidth
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `434` extends StObject {
   
   var value: js.UndefOr[
-    MarkerEnd | (js.Array[
-      (Extract[js.UndefOr[MarkerEnd | js.Array[NonNullable[js.UndefOr[MarkerEnd]]]], String]) | NonNullable[js.UndefOr[MarkerEnd]]
+    (WebkitBorderBeforeWidth[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[WebkitBorderBeforeWidth[Double | String]]]]) | (NonNullable[js.UndefOr[WebkitBorderBeforeWidth[Double | String]]]) | (WebkitBorderBeforeWidth[Double | String])
+      ]
     ])
   ] = js.native
 }

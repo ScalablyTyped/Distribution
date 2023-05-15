@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.StrokeDasharray
-import typings.std.Extract
+import typings.csstype.mod.Property.ContainerName
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `514` extends StObject {
   
   var value: js.UndefOr[
-    (StrokeDasharray[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (StrokeDasharray[Double | String]) | (js.Array[NonNullable[js.UndefOr[StrokeDasharray[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[StrokeDasharray[Double | String]]])
+    ContainerName | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[ContainerName]]] | ContainerName | NonNullable[js.UndefOr[ContainerName]]
+      ]
     ])
   ] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BackdropFilter
-import typings.std.Extract
+import typings.csstype.mod.Property.TextAlign
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `42` extends StObject {
   
   var value: js.UndefOr[
-    BackdropFilter | (js.Array[
-      (Extract[
-        js.UndefOr[BackdropFilter | js.Array[NonNullable[js.UndefOr[BackdropFilter]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BackdropFilter]]
+    TextAlign | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[TextAlign]]] | NonNullable[js.UndefOr[TextAlign]] | TextAlign
+      ]
     ])
   ] = js.native
 }

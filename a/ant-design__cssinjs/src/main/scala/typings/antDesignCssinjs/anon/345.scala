@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.StrokeLinejoin
-import typings.std.Extract
+import typings.csstype.mod.Property.ScrollTimelineAxis
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `345` extends StObject {
   
   var value: js.UndefOr[
-    StrokeLinejoin | (js.Array[
-      (Extract[
-        js.UndefOr[StrokeLinejoin | js.Array[NonNullable[js.UndefOr[StrokeLinejoin]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[StrokeLinejoin]]
+    ScrollTimelineAxis | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[ScrollTimelineAxis]]] | NonNullable[js.UndefOr[ScrollTimelineAxis]] | ScrollTimelineAxis
+      ]
     ])
   ] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BoxFlex
-import typings.std.Extract
+import typings.csstype.mod.Property.BorderBottomWidth
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `140` extends StObject {
   
   var value: js.UndefOr[
-    BoxFlex | (js.Array[
-      (Extract[js.UndefOr[BoxFlex | js.Array[NonNullable[js.UndefOr[BoxFlex]]]], String]) | NonNullable[js.UndefOr[BoxFlex]]
+    (BorderBottomWidth[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[BorderBottomWidth[Double | String]]]]) | (BorderBottomWidth[Double | String]) | (NonNullable[js.UndefOr[BorderBottomWidth[Double | String]]])
+      ]
     ])
   ] = js.native
 }

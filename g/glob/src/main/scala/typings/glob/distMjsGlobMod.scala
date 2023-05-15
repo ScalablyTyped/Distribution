@@ -5,6 +5,7 @@ import typings.glob.distMjsPatternMod.Pattern
 import typings.glob.globBooleans.`false`
 import typings.glob.globBooleans.`true`
 import typings.minipass.mod.Minipass
+import typings.minipass.mod.Minipass.Events
 import typings.node.processMod.global.NodeJS.Platform
 import typings.std.AbortSignal
 import typings.std.AsyncGenerator
@@ -112,12 +113,12 @@ object distMjsGlobMod {
     /**
       * Stream results asynchronously.
       */
-    def stream(): Minipass[Result[Opts], Result[Opts]] = js.native
+    def stream(): Minipass[Result[Opts], Result[Opts], Events[Result[Opts]]] = js.native
     
     /**
       * Stream results synchronously.
       */
-    def streamSync(): Minipass[Result[Opts], Result[Opts]] = js.native
+    def streamSync(): Minipass[Result[Opts], Result[Opts], Events[Result[Opts]]] = js.native
     
     /**
       * Returns a Promise that resolves to the results array.

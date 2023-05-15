@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ColumnSpan
-import typings.std.Extract
+import typings.csstype.mod.Property.LineBreak
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `133` extends StObject {
   
   var value: js.UndefOr[
-    ColumnSpan | (js.Array[
-      (Extract[js.UndefOr[ColumnSpan | js.Array[NonNullable[js.UndefOr[ColumnSpan]]]], String]) | NonNullable[js.UndefOr[ColumnSpan]]
+    LineBreak | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[LineBreak]]] | LineBreak | NonNullable[js.UndefOr[LineBreak]]
+      ]
     ])
   ] = js.native
 }

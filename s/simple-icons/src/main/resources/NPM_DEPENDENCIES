@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "simple-icons" : "8.13.0"
+      "simple-icons" : "8.14.0"
     }
   ],
   "test-dependencies" : [
     {
-      "simple-icons" : "8.13.0"
+      "simple-icons" : "8.14.0"
     }
   ],
   "compile-devDependencies" : [

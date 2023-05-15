@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AnimationDelay
-import typings.std.Extract
+import typings.csstype.mod.Property.BorderImage
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `241` extends StObject {
   
   var value: js.UndefOr[
-    AnimationDelay[String] | (js.Array[
-      (Extract[
-        js.UndefOr[
-          AnimationDelay[String] | js.Array[NonNullable[js.UndefOr[AnimationDelay[String]]]]
-        ], 
-        String
-      ]) | NonNullable[js.UndefOr[AnimationDelay[String]]]
+    BorderImage | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[BorderImage]]] | BorderImage | NonNullable[js.UndefOr[BorderImage]]
+      ]
     ])
   ] = js.native
 }

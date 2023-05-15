@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WritingMode
-import typings.std.Extract
+import typings.csstype.mod.Property.MsScrollSnapType
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `181` extends StObject {
   
   var value: js.UndefOr[
-    WritingMode | (js.Array[
-      (Extract[js.UndefOr[WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]], String]) | NonNullable[js.UndefOr[WritingMode]]
+    MsScrollSnapType | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MsScrollSnapType]]] | MsScrollSnapType | NonNullable[js.UndefOr[MsScrollSnapType]]
+      ]
     ])
   ] = js.native
 }

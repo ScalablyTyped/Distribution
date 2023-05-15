@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderImageSource
-import typings.std.Extract
+import typings.csstype.mod.Property.PaddingLeft
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `549` extends StObject {
   
   var value: js.UndefOr[
-    BorderImageSource | (js.Array[
-      (Extract[
-        js.UndefOr[BorderImageSource | js.Array[NonNullable[js.UndefOr[BorderImageSource]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BorderImageSource]]
+    (PaddingLeft[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]]) | (NonNullable[js.UndefOr[PaddingLeft[Double | String]]]) | (PaddingLeft[Double | String])
+      ]
     ])
   ] = js.native
 }

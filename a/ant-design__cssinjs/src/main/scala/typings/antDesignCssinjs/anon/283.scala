@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBlockStartWidth
-import typings.std.Extract
+import typings.csstype.mod.Property.PrintColorAdjust
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `283` extends StObject {
   
   var value: js.UndefOr[
-    (BorderBlockStartWidth[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (BorderBlockStartWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBlockStartWidth[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[BorderBlockStartWidth[Double | String]]])
+    PrintColorAdjust | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[PrintColorAdjust]]] | NonNullable[js.UndefOr[PrintColorAdjust]] | PrintColorAdjust
+      ]
     ])
   ] = js.native
 }

@@ -5,9 +5,12 @@ import typings.antDesignCssinjs.anon.TokenKey
 import typings.antDesignCssinjs.esHooksUseCacheTokenMod.Option
 import typings.antDesignCssinjs.esHooksUseStyleRegisterMod.CSSInterpolation
 import typings.antDesignCssinjs.esKeyframesMod.default
+import typings.antDesignCssinjs.esLintersInterfaceMod.Linter
 import typings.antDesignCssinjs.esStyleContextMod.StyleProviderProps
 import typings.antDesignCssinjs.esThemeInterfaceMod.DerivativeFunc
 import typings.antDesignCssinjs.esThemeInterfaceMod.TokenType
+import typings.antDesignCssinjs.esTransformersInterfaceMod.Transformer
+import typings.antDesignCssinjs.esTransformersPx2remMod.Options
 import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
@@ -42,16 +45,39 @@ object mod {
   
   inline def createCache(): typings.antDesignCssinjs.esCacheMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("createCache")().asInstanceOf[typings.antDesignCssinjs.esCacheMod.default]
   
-  inline def createTheme[DesignToken /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TokenType */ Any */, DerivativeToken /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TokenType */ Any */](
-    derivatives: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DerivativeFunc<DesignToken, DerivativeToken> */ Any
-    ]
-  ): typings.antDesignCssinjs.esThemeThemeMod.default[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(derivatives.asInstanceOf[js.Any]).asInstanceOf[typings.antDesignCssinjs.esThemeThemeMod.default[Any, Any]]
-  inline def createTheme[DesignToken /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TokenType */ Any */, DerivativeToken /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TokenType */ Any */](
-    derivatives: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DerivativeFunc<DesignToken, DerivativeToken> */ Any
-  ): typings.antDesignCssinjs.esThemeThemeMod.default[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(derivatives.asInstanceOf[js.Any]).asInstanceOf[typings.antDesignCssinjs.esThemeThemeMod.default[Any, Any]]
+  inline def createTheme[DesignToken /* <: TokenType */, DerivativeToken /* <: TokenType */](derivatives: js.Array[DerivativeFunc[DesignToken, DerivativeToken]]): typings.antDesignCssinjs.esThemeThemeMod.default[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(derivatives.asInstanceOf[js.Any]).asInstanceOf[typings.antDesignCssinjs.esThemeThemeMod.default[Any, Any]]
+  inline def createTheme[DesignToken /* <: TokenType */, DerivativeToken /* <: TokenType */](derivatives: DerivativeFunc[DesignToken, DerivativeToken]): typings.antDesignCssinjs.esThemeThemeMod.default[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(derivatives.asInstanceOf[js.Any]).asInstanceOf[typings.antDesignCssinjs.esThemeThemeMod.default[Any, Any]]
   
   inline def extractStyle(cache: typings.antDesignCssinjs.esCacheMod.default): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractStyle")(cache.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def extractStyle(cache: typings.antDesignCssinjs.esCacheMod.default, plain: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("extractStyle")(cache.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /**
+    * Convert css logical properties to legacy properties.
+    * Such as: `margin-block-start` to `margin-top`.
+    * Transform list:
+    * - inset
+    * - margin
+    * - padding
+    * - border
+    */
+  @JSImport("@ant-design/cssinjs", "legacyLogicalPropertiesTransformer")
+  @js.native
+  val legacyLogicalPropertiesTransformer: Transformer = js.native
+  
+  @JSImport("@ant-design/cssinjs", "legacyNotSelectorLinter")
+  @js.native
+  val legacyNotSelectorLinter: Linter = js.native
+  
+  @JSImport("@ant-design/cssinjs", "logicalPropertiesLinter")
+  @js.native
+  val logicalPropertiesLinter: Linter = js.native
+  
+  @JSImport("@ant-design/cssinjs", "parentSelectorLinter")
+  @js.native
+  val parentSelectorLinter: Linter = js.native
+  
+  inline def px2remTransformer(): Transformer = ^.asInstanceOf[js.Dynamic].applyDynamic("px2remTransformer")().asInstanceOf[Transformer]
+  inline def px2remTransformer(options: Options): Transformer = ^.asInstanceOf[js.Dynamic].applyDynamic("px2remTransformer")(options.asInstanceOf[js.Any]).asInstanceOf[Transformer]
   
   inline def useCacheToken[DerivativeToken, DesignToken](
     theme: typings.antDesignCssinjs.esThemeThemeMod.default[Any, Any],

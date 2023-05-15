@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BaselineShift
-import typings.std.Extract
+import typings.csstype.mod.Property.JustifyContent
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `202` extends StObject {
   
   var value: js.UndefOr[
-    (BaselineShift[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (BaselineShift[Double | String]) | (js.Array[NonNullable[js.UndefOr[BaselineShift[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[BaselineShift[Double | String]]])
+    JustifyContent | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[JustifyContent]]] | JustifyContent | NonNullable[js.UndefOr[JustifyContent]]
+      ]
     ])
   ] = js.native
 }

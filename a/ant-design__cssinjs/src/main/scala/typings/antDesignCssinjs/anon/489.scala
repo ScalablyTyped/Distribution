@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBlockColor
-import typings.std.Extract
+import typings.csstype.mod.Property.GridRowStart
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `489` extends StObject {
   
   var value: js.UndefOr[
-    BorderBlockColor | (js.Array[
-      (Extract[
-        js.UndefOr[BorderBlockColor | js.Array[NonNullable[js.UndefOr[BorderBlockColor]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BorderBlockColor]]
+    GridRowStart | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[GridRowStart]]] | GridRowStart | NonNullable[js.UndefOr[GridRowStart]]
+      ]
     ])
   ] = js.native
 }

@@ -968,7 +968,6 @@
 | [big-integer](./b/big-integer) | An arbitrary length integer library for Javascript | math, big, bignum, bigint, biginteger, integer, arbitrary, precision, arithmetic |
 | [big-rat](./b/big-rat) | A big integer rational number | big, rat, huge, rational, number, big, integer, arithmetic, exact, geometry |
 | [big_dot_js](./b/big_dot_js) | A small, fast, easy-to-use library for arbitrary-p | arbitrary, precision, arithmetic, big, number, decimal, float, biginteger, bigdecimal, bignumber, bigint, bignum |
-| [bigbite__wp-cypress](./b/bigbite__wp-cypress) | WordPress end to end testing with Cypress.io | - |
 | [bigbluebutton-js](./b/bigbluebutton-js) | JavaScript wrapper for BigBlueButton API | bigbluebutton, bbb, api |
 | [bigi](./b/bigi) | Big integers. | cryptography, math, bitcoin, arbitrary, precision, arithmetic, big, integer, int, number, biginteger, bigint, bignumber, decimal, float |
 | [bigint](./b/bigint) | Arbitrary-precision integer arithmetic using libgm | gmp, libgmp, big, bignum, bigint, integer, arithmetic, precision |
@@ -1975,7 +1974,6 @@
 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot | cypress, plugin, dotenv, cypress-plugin, env |
 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot. | - |
 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate | cypress, cypress-plugin |
-| [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t | cypress, istanbul, cypress-plugin, code, coverage |
 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm | cytoscape, cytoscape-extension |
 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u | cytoscape, cytoscape.js, cytoscapejs, cytoscape-canvas, canvas, extension |
@@ -2809,6 +2807,8 @@
 | [expired](./e/expired) | Calculate when HTTP responses expire from the cach | calculate, HTTP, response, expires, expire, expirey, cache, headers, pure |
 | [expired-storage](./e/expired-storage) | Micro JS lib that provide local & session storage  | localStorage, sessionStorage, storage, expiration, expired, temporary |
 | [expirymanager](./e/expirymanager) | An object for efficiently managing key expiries | expiry, expire, expirymanager, timeout, volatile, key |
+| [expo-constants](./e/expo-constants) | - | - |
+| [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de | react-native, expo, file-system, file |
 | [expo-mixpanel-analytics](./e/expo-mixpanel-analytics) | Mixpanel integration for use with React Native app | react, native, expo, mixpanel, analytics |
 | [expo-modules-autolinking](./e/expo-modules-autolinking) | - | - |
 | [expo__bunyan](./e/expo__bunyan) | a JSON logging library for node.js services | log, logging, log4j, json, bunyan |

@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AccentColor
-import typings.std.Extract
+import typings.csstype.mod.Property.ContainIntrinsicBlockSize
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `347` extends StObject {
   
   var value: js.UndefOr[
-    AccentColor | (js.Array[
-      (Extract[js.UndefOr[AccentColor | js.Array[NonNullable[js.UndefOr[AccentColor]]]], String]) | NonNullable[js.UndefOr[AccentColor]]
+    (ContainIntrinsicBlockSize[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]]]) | (ContainIntrinsicBlockSize[Double | String]) | (NonNullable[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]])
+      ]
     ])
   ] = js.native
 }

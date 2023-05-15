@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TouchAction
-import typings.std.Extract
+import typings.csstype.mod.Property.TextShadow
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `177` extends StObject {
   
   var value: js.UndefOr[
-    TouchAction | (js.Array[
-      (Extract[js.UndefOr[TouchAction | js.Array[NonNullable[js.UndefOr[TouchAction]]]], String]) | NonNullable[js.UndefOr[TouchAction]]
+    TextShadow | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[TextShadow]]] | NonNullable[js.UndefOr[TextShadow]] | TextShadow
+      ]
     ])
   ] = js.native
 }

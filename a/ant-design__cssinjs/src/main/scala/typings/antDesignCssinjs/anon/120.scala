@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TableLayout
-import typings.std.Extract
+import typings.csstype.mod.Property.FlexDirection
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `120` extends StObject {
   
   var value: js.UndefOr[
-    TableLayout | (js.Array[
-      (Extract[js.UndefOr[TableLayout | js.Array[NonNullable[js.UndefOr[TableLayout]]]], String]) | NonNullable[js.UndefOr[TableLayout]]
+    FlexDirection | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[FlexDirection]]] | FlexDirection | NonNullable[js.UndefOr[FlexDirection]]
+      ]
     ])
   ] = js.native
 }

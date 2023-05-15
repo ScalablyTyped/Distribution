@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ZIndex
-import typings.std.Extract
+import typings.csstype.mod.Property.MsContentZoomSnapType
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `218` extends StObject {
   
   var value: js.UndefOr[
-    ZIndex | (js.Array[
-      (Extract[js.UndefOr[ZIndex | js.Array[NonNullable[js.UndefOr[ZIndex]]]], String]) | NonNullable[js.UndefOr[ZIndex]]
+    MsContentZoomSnapType | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MsContentZoomSnapType]]] | MsContentZoomSnapType | NonNullable[js.UndefOr[MsContentZoomSnapType]]
+      ]
     ])
   ] = js.native
 }

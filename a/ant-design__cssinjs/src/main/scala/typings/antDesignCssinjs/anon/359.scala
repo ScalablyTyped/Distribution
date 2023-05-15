@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextEmphasisColor
-import typings.std.Extract
+import typings.csstype.mod.Property.MsContentZoomChaining
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `359` extends StObject {
   
   var value: js.UndefOr[
-    TextEmphasisColor | (js.Array[
-      (Extract[
-        js.UndefOr[TextEmphasisColor | js.Array[NonNullable[js.UndefOr[TextEmphasisColor]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[TextEmphasisColor]]
+    MsContentZoomChaining | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MsContentZoomChaining]]] | MsContentZoomChaining | NonNullable[js.UndefOr[MsContentZoomChaining]]
+      ]
     ])
   ] = js.native
 }

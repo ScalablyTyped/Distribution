@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.LetterSpacing
-import typings.std.Extract
+import typings.csstype.mod.Property.ListStyleImage
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `235` extends StObject {
   
   var value: js.UndefOr[
-    (LetterSpacing[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (LetterSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[LetterSpacing[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[LetterSpacing[Double | String]]])
+    ListStyleImage | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[ListStyleImage]]] | ListStyleImage | NonNullable[js.UndefOr[ListStyleImage]]
+      ]
     ])
   ] = js.native
 }

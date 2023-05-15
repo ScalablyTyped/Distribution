@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.InsetInlineEnd
-import typings.std.Extract
+import typings.csstype.mod.Property.BreakAfter
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `428` extends StObject {
   
   var value: js.UndefOr[
-    (InsetInlineEnd[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (InsetInlineEnd[Double | String]) | (js.Array[NonNullable[js.UndefOr[InsetInlineEnd[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[InsetInlineEnd[Double | String]]])
+    BreakAfter | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[BreakAfter]]] | BreakAfter | NonNullable[js.UndefOr[BreakAfter]]
+      ]
     ])
   ] = js.native
 }

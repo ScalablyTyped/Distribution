@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.GridGap
-import typings.std.Extract
+import typings.csstype.mod.Property.BorderImageRepeat
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `525` extends StObject {
   
   var value: js.UndefOr[
-    (GridGap[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (GridGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridGap[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[GridGap[Double | String]]])
+    BorderImageRepeat | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[BorderImageRepeat]]] | BorderImageRepeat | NonNullable[js.UndefOr[BorderImageRepeat]]
+      ]
     ])
   ] = js.native
 }

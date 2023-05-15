@@ -1,9 +1,10 @@
 package typings.antDesignCssinjs
 
 import typings.antDesignCssinjs.anon.HashId
+import typings.antDesignCssinjs.anon.MULTIVALUE
+import typings.antDesignCssinjs.anon.MULTIVALUESKIPCHECK
+import typings.antDesignCssinjs.anon.MULTIVALUESKIPCHECKValue
 import typings.antDesignCssinjs.anon.SKIPCHECK
-import typings.antDesignCssinjs.anon.SKIPCHECKBoolean
-import typings.antDesignCssinjs.anon.SKIPCHECKBooleanValue
 import typings.antDesignCssinjs.anon.SKIPCHECKValue
 import typings.antDesignCssinjs.anon.Value
 import typings.antDesignCssinjs.anon.`0`
@@ -514,7 +515,6 @@ import typings.antDesignCssinjs.anon.`554`
 import typings.antDesignCssinjs.anon.`555`
 import typings.antDesignCssinjs.anon.`556`
 import typings.antDesignCssinjs.anon.`557`
-import typings.antDesignCssinjs.anon.`558`
 import typings.antDesignCssinjs.anon.`55`
 import typings.antDesignCssinjs.anon.`56`
 import typings.antDesignCssinjs.anon.`57`
@@ -566,7 +566,9 @@ import typings.antDesignCssinjs.anon.`98`
 import typings.antDesignCssinjs.anon.`99`
 import typings.antDesignCssinjs.anon.`9`
 import typings.antDesignCssinjs.esCacheMod.default
+import typings.antDesignCssinjs.esLintersInterfaceMod.Linter
 import typings.antDesignCssinjs.esStyleContextMod.HashPriority
+import typings.antDesignCssinjs.esTransformersInterfaceMod.Transformer
 import typings.csstype.mod.Property.AccentColor
 import typings.csstype.mod.Property.AlignContent
 import typings.csstype.mod.Property.AlignItems
@@ -1147,19 +1149,15 @@ object esHooksUseStyleRegisterMod {
   
   inline def default(info: HashId, styleFn: js.Function0[CSSInterpolation]): js.Function1[/* node */ ReactElement, Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(info.asInstanceOf[js.Any], styleFn.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* node */ ReactElement, Element]]
   
-  @JSImport("@ant-design/cssinjs/es/hooks/useStyleRegister", "animationStatistics")
-  @js.native
-  def animationStatistics: Record[String, Boolean] = js.native
-  inline def animationStatistics_=(x: Record[String, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animationStatistics")(x.asInstanceOf[js.Any])
-  
   inline def extractStyle(cache: default): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractStyle")(cache.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def extractStyle(cache: default, plain: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("extractStyle")(cache.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def normalizeStyle(styleStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeStyle")(styleStr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def parseStyle(interpolation: CSSInterpolation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def parseStyle(interpolation: CSSInterpolation, config: Unit, param2: ParseInfo): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any], config.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def parseStyle(interpolation: CSSInterpolation, config: ParseConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def parseStyle(interpolation: CSSInterpolation, config: ParseConfig, param2: ParseInfo): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any], config.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseStyle(interpolation: CSSInterpolation): js.Tuple2[/* parsedStr */ String, /* effectStyle */ Record[String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[/* parsedStr */ String, /* effectStyle */ Record[String, String]]]
+  inline def parseStyle(interpolation: CSSInterpolation, config: Unit, param2: ParseInfo): js.Tuple2[/* parsedStr */ String, /* effectStyle */ Record[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any], config.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[/* parsedStr */ String, /* effectStyle */ Record[String, String]]]
+  inline def parseStyle(interpolation: CSSInterpolation, config: ParseConfig): js.Tuple2[/* parsedStr */ String, /* effectStyle */ Record[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[/* parsedStr */ String, /* effectStyle */ Record[String, String]]]
+  inline def parseStyle(interpolation: CSSInterpolation, config: ParseConfig, param2: ParseInfo): js.Tuple2[/* parsedStr */ String, /* effectStyle */ Record[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any], config.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[/* parsedStr */ String, /* effectStyle */ Record[String, String]]]
   
   type ArrayCSSInterpolation = js.Array[CSSInterpolation]
   
@@ -8829,37 +8827,37 @@ object esHooksUseStyleRegisterMod {
     }
   }
   
-  /* Inlined {[ K in keyof @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSProperties ]: @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSProperties[K] | std.Array<std.Extract<@ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSProperties[K], string>> | {[SKIP_CHECK] : boolean,   value :@ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSProperties[K] | std.Array<std.Extract<@ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSProperties[K], string>>}} */
+  /* Inlined {[ K in keyof @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSProperties ]: @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSProperties[K] | std.Array<std.Extract<@ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSProperties[K], string>> | {[SKIP_CHECK] : boolean | undefined, [MULTI_VALUE] : boolean | undefined,   value :@ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSProperties[K] | std.Array<@ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSProperties[K]>}} */
   trait CSSPropertiesWithMultiValues extends StObject {
     
     var KhtmlBoxAlign: js.UndefOr[
         BoxAlign | (js.Array[
           (Extract[js.UndefOr[BoxAlign | js.Array[NonNullable[js.UndefOr[BoxAlign]]]], String]) | NonNullable[js.UndefOr[BoxAlign]]
-        ]) | `83`
+        ]) | `82`
       ] = js.undefined
     
     var KhtmlBoxDirection: js.UndefOr[
         BoxDirection | (js.Array[
           (Extract[js.UndefOr[BoxDirection | js.Array[NonNullable[js.UndefOr[BoxDirection]]]], String]) | NonNullable[js.UndefOr[BoxDirection]]
-        ]) | `59`
+        ]) | `58`
       ] = js.undefined
     
     var KhtmlBoxFlex: js.UndefOr[
         BoxFlex | (js.Array[
           (Extract[js.UndefOr[BoxFlex | js.Array[NonNullable[js.UndefOr[BoxFlex]]]], String]) | NonNullable[js.UndefOr[BoxFlex]]
-        ]) | `140`
+        ]) | `139`
       ] = js.undefined
     
     var KhtmlBoxFlexGroup: js.UndefOr[
         BoxFlexGroup | (js.Array[
           (Extract[js.UndefOr[BoxFlexGroup | js.Array[NonNullable[js.UndefOr[BoxFlexGroup]]]], String]) | NonNullable[js.UndefOr[BoxFlexGroup]]
-        ]) | `152`
+        ]) | `151`
       ] = js.undefined
     
     var KhtmlBoxLines: js.UndefOr[
         BoxLines | (js.Array[
           (Extract[js.UndefOr[BoxLines | js.Array[NonNullable[js.UndefOr[BoxLines]]]], String]) | NonNullable[js.UndefOr[BoxLines]]
-        ]) | `199`
+        ]) | `198`
       ] = js.undefined
     
     var KhtmlBoxOrdinalGroup: js.UndefOr[
@@ -8868,37 +8866,37 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BoxOrdinalGroup | js.Array[NonNullable[js.UndefOr[BoxOrdinalGroup]]]], 
             String
           ]) | NonNullable[js.UndefOr[BoxOrdinalGroup]]
-        ]) | `190`
+        ]) | `189`
       ] = js.undefined
     
     var KhtmlBoxOrient: js.UndefOr[
         BoxOrient | (js.Array[
           (Extract[js.UndefOr[BoxOrient | js.Array[NonNullable[js.UndefOr[BoxOrient]]]], String]) | NonNullable[js.UndefOr[BoxOrient]]
-        ]) | `22`
+        ]) | `21`
       ] = js.undefined
     
     var KhtmlBoxPack: js.UndefOr[
         BoxPack | (js.Array[
           (Extract[js.UndefOr[BoxPack | js.Array[NonNullable[js.UndefOr[BoxPack]]]], String]) | NonNullable[js.UndefOr[BoxPack]]
-        ]) | `119`
+        ]) | `118`
       ] = js.undefined
     
     var KhtmlLineBreak: js.UndefOr[
         LineBreak | (js.Array[
           (Extract[js.UndefOr[LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]], String]) | NonNullable[js.UndefOr[LineBreak]]
-        ]) | `134`
+        ]) | `133`
       ] = js.undefined
     
     var KhtmlOpacity: js.UndefOr[
         Opacity | (js.Array[
           (Extract[js.UndefOr[Opacity | js.Array[NonNullable[js.UndefOr[Opacity]]]], String]) | NonNullable[js.UndefOr[Opacity]]
-        ]) | `248`
+        ]) | `247`
       ] = js.undefined
     
     var KhtmlUserSelect: js.UndefOr[
         UserSelect | (js.Array[
           (Extract[js.UndefOr[UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]], String]) | NonNullable[js.UndefOr[UserSelect]]
-        ]) | `47`
+        ]) | `46`
       ] = js.undefined
     
     var MozAnimation: js.UndefOr[
@@ -8907,7 +8905,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[Animation[String] | js.Array[NonNullable[js.UndefOr[Animation[String]]]]], 
             String
           ]) | NonNullable[js.UndefOr[Animation[String]]]
-        ]) | `28`
+        ]) | `27`
       ] = js.undefined
     
     var MozAnimationDelay: js.UndefOr[
@@ -8918,7 +8916,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationDelay[String]]]
-        ]) | `241`
+        ]) | `240`
       ] = js.undefined
     
     var MozAnimationDirection: js.UndefOr[
@@ -8927,7 +8925,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationDirection]]
-        ]) | `111`
+        ]) | `110`
       ] = js.undefined
     
     var MozAnimationDuration: js.UndefOr[
@@ -8938,7 +8936,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationDuration[String]]]
-        ]) | `99`
+        ]) | `98`
       ] = js.undefined
     
     var MozAnimationFillMode: js.UndefOr[
@@ -8947,7 +8945,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationFillMode]]
-        ]) | `114`
+        ]) | `113`
       ] = js.undefined
     
     var MozAnimationIterationCount: js.UndefOr[
@@ -8958,7 +8956,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationIterationCount]]
-        ]) | `87`
+        ]) | `86`
       ] = js.undefined
     
     var MozAnimationName: js.UndefOr[
@@ -8967,7 +8965,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationName]]
-        ]) | `168`
+        ]) | `167`
       ] = js.undefined
     
     var MozAnimationPlayState: js.UndefOr[
@@ -8976,7 +8974,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationPlayState]]
-        ]) | `159`
+        ]) | `158`
       ] = js.undefined
     
     var MozAnimationTimingFunction: js.UndefOr[
@@ -8987,7 +8985,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationTimingFunction]]
-        ]) | `161`
+        ]) | `160`
       ] = js.undefined
     
     var MozAppearance: js.UndefOr[
@@ -8998,7 +8996,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozAppearance]]
-        ]) | `231`
+        ]) | `230`
       ] = js.undefined
     
     var MozBackfaceVisibility: js.UndefOr[
@@ -9007,7 +9005,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackfaceVisibility | js.Array[NonNullable[js.UndefOr[BackfaceVisibility]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackfaceVisibility]]
-        ]) | `130`
+        ]) | `129`
       ] = js.undefined
     
     var MozBackgroundClip: js.UndefOr[
@@ -9016,7 +9014,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackgroundClip | js.Array[NonNullable[js.UndefOr[BackgroundClip]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackgroundClip]]
-        ]) | `142`
+        ]) | `141`
       ] = js.undefined
     
     var MozBackgroundInlinePolicy: js.UndefOr[
@@ -9025,7 +9023,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BoxDecorationBreak | js.Array[NonNullable[js.UndefOr[BoxDecorationBreak]]]], 
             String
           ]) | NonNullable[js.UndefOr[BoxDecorationBreak]]
-        ]) | `158`
+        ]) | `157`
       ] = js.undefined
     
     var MozBackgroundOrigin: js.UndefOr[
@@ -9034,7 +9032,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackgroundOrigin | js.Array[NonNullable[js.UndefOr[BackgroundOrigin]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackgroundOrigin]]
-        ]) | `84`
+        ]) | `83`
       ] = js.undefined
     
     var MozBackgroundSize: js.UndefOr[
@@ -9045,7 +9043,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BackgroundSize[Double | String]]])
-        ]) | `55`
+        ]) | `54`
       ] = js.undefined
     
     var MozBinding: js.UndefOr[
@@ -9056,7 +9054,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozBinding]]
-        ]) | `475`
+        ]) | `474`
       ] = js.undefined
     
     var MozBorderBottomColors: js.UndefOr[
@@ -9067,7 +9065,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozBorderBottomColors]]
-        ]) | `404`
+        ]) | `403`
       ] = js.undefined
     
     var MozBorderEndColor: js.UndefOr[
@@ -9076,7 +9074,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderInlineEndColor | js.Array[NonNullable[js.UndefOr[BorderInlineEndColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderInlineEndColor]]
-        ]) | `29`
+        ]) | `28`
       ] = js.undefined
     
     var MozBorderEndStyle: js.UndefOr[
@@ -9085,7 +9083,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderInlineEndStyle | js.Array[NonNullable[js.UndefOr[BorderInlineEndStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderInlineEndStyle]]
-        ]) | `37`
+        ]) | `36`
       ] = js.undefined
     
     var MozBorderEndWidth: js.UndefOr[
@@ -9096,13 +9094,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderInlineEndWidth[Double | String]]])
-        ]) | `3`
+        ]) | `2`
       ] = js.undefined
     
     var MozBorderImage: js.UndefOr[
         BorderImage | (js.Array[
           (Extract[js.UndefOr[BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]], String]) | NonNullable[js.UndefOr[BorderImage]]
-        ]) | `242`
+        ]) | `241`
       ] = js.undefined
     
     var MozBorderLeftColors: js.UndefOr[
@@ -9113,7 +9111,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozBorderLeftColors]]
-        ]) | `35`
+        ]) | `34`
       ] = js.undefined
     
     var MozBorderRadius: js.UndefOr[
@@ -9124,7 +9122,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderRadius[Double | String]]])
-        ]) | `400`
+        ]) | `399`
       ] = js.undefined
     
     var MozBorderRadiusBottomleft: js.UndefOr[
@@ -9135,7 +9133,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBottomLeftRadius[Double | String]]])
-        ]) | `103`
+        ]) | `102`
       ] = js.undefined
     
     var MozBorderRadiusBottomright: js.UndefOr[
@@ -9146,7 +9144,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBottomRightRadius[Double | String]]])
-        ]) | `136`
+        ]) | `135`
       ] = js.undefined
     
     var MozBorderRadiusTopleft: js.UndefOr[
@@ -9157,7 +9155,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderTopLeftRadius[Double | String]]])
-        ]) | `221`
+        ]) | `220`
       ] = js.undefined
     
     var MozBorderRadiusTopright: js.UndefOr[
@@ -9168,7 +9166,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderTopRightRadius[Double | String]]])
-        ]) | `77`
+        ]) | `76`
       ] = js.undefined
     
     var MozBorderRightColors: js.UndefOr[
@@ -9179,7 +9177,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozBorderRightColors]]
-        ]) | `543`
+        ]) | `542`
       ] = js.undefined
     
     var MozBorderStartColor: js.UndefOr[
@@ -9190,7 +9188,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[BorderInlineStartColor]]
-        ]) | `160`
+        ]) | `159`
       ] = js.undefined
     
     var MozBorderStartStyle: js.UndefOr[
@@ -9201,7 +9199,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[BorderInlineStartStyle]]
-        ]) | `395`
+        ]) | `394`
       ] = js.undefined
     
     var MozBorderTopColors: js.UndefOr[
@@ -9212,25 +9210,25 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozBorderTopColors]]
-        ]) | `64`
+        ]) | `63`
       ] = js.undefined
     
     var MozBoxAlign: js.UndefOr[
         BoxAlign | (js.Array[
           (Extract[js.UndefOr[BoxAlign | js.Array[NonNullable[js.UndefOr[BoxAlign]]]], String]) | NonNullable[js.UndefOr[BoxAlign]]
-        ]) | `83`
+        ]) | `82`
       ] = js.undefined
     
     var MozBoxDirection: js.UndefOr[
         BoxDirection | (js.Array[
           (Extract[js.UndefOr[BoxDirection | js.Array[NonNullable[js.UndefOr[BoxDirection]]]], String]) | NonNullable[js.UndefOr[BoxDirection]]
-        ]) | `59`
+        ]) | `58`
       ] = js.undefined
     
     var MozBoxFlex: js.UndefOr[
         BoxFlex | (js.Array[
           (Extract[js.UndefOr[BoxFlex | js.Array[NonNullable[js.UndefOr[BoxFlex]]]], String]) | NonNullable[js.UndefOr[BoxFlex]]
-        ]) | `140`
+        ]) | `139`
       ] = js.undefined
     
     var MozBoxOrdinalGroup: js.UndefOr[
@@ -9239,43 +9237,43 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BoxOrdinalGroup | js.Array[NonNullable[js.UndefOr[BoxOrdinalGroup]]]], 
             String
           ]) | NonNullable[js.UndefOr[BoxOrdinalGroup]]
-        ]) | `190`
+        ]) | `189`
       ] = js.undefined
     
     var MozBoxOrient: js.UndefOr[
         BoxOrient | (js.Array[
           (Extract[js.UndefOr[BoxOrient | js.Array[NonNullable[js.UndefOr[BoxOrient]]]], String]) | NonNullable[js.UndefOr[BoxOrient]]
-        ]) | `22`
+        ]) | `21`
       ] = js.undefined
     
     var MozBoxPack: js.UndefOr[
         BoxPack | (js.Array[
           (Extract[js.UndefOr[BoxPack | js.Array[NonNullable[js.UndefOr[BoxPack]]]], String]) | NonNullable[js.UndefOr[BoxPack]]
-        ]) | `119`
+        ]) | `118`
       ] = js.undefined
     
     var MozBoxShadow: js.UndefOr[
         BoxShadow | (js.Array[
           (Extract[js.UndefOr[BoxShadow | js.Array[NonNullable[js.UndefOr[BoxShadow]]]], String]) | NonNullable[js.UndefOr[BoxShadow]]
-        ]) | `108`
+        ]) | `107`
       ] = js.undefined
     
     var MozBoxSizing: js.UndefOr[
         BoxSizing | (js.Array[
           (Extract[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]], String]) | NonNullable[js.UndefOr[BoxSizing]]
-        ]) | `14`
+        ]) | `13`
       ] = js.undefined
     
     var MozColumnCount: js.UndefOr[
         ColumnCount | (js.Array[
           (Extract[js.UndefOr[ColumnCount | js.Array[NonNullable[js.UndefOr[ColumnCount]]]], String]) | NonNullable[js.UndefOr[ColumnCount]]
-        ]) | `357`
+        ]) | `356`
       ] = js.undefined
     
     var MozColumnFill: js.UndefOr[
         ColumnFill | (js.Array[
           (Extract[js.UndefOr[ColumnFill | js.Array[NonNullable[js.UndefOr[ColumnFill]]]], String]) | NonNullable[js.UndefOr[ColumnFill]]
-        ]) | `274`
+        ]) | `273`
       ] = js.undefined
     
     var MozColumnRule: js.UndefOr[
@@ -9286,7 +9284,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ColumnRule[Double | String]]])
-        ]) | `260`
+        ]) | `259`
       ] = js.undefined
     
     var MozColumnRuleColor: js.UndefOr[
@@ -9295,7 +9293,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ColumnRuleColor | js.Array[NonNullable[js.UndefOr[ColumnRuleColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[ColumnRuleColor]]
-        ]) | `153`
+        ]) | `152`
       ] = js.undefined
     
     var MozColumnRuleStyle: js.UndefOr[
@@ -9304,7 +9302,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ColumnRuleStyle | js.Array[NonNullable[js.UndefOr[ColumnRuleStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[ColumnRuleStyle]]
-        ]) | `6`
+        ]) | `5`
       ] = js.undefined
     
     var MozColumnRuleWidth: js.UndefOr[
@@ -9315,7 +9313,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ColumnRuleWidth[Double | String]]])
-        ]) | `95`
+        ]) | `94`
       ] = js.undefined
     
     var MozColumnWidth: js.UndefOr[
@@ -9326,7 +9324,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ColumnWidth[Double | String]]])
-        ]) | `220`
+        ]) | `219`
       ] = js.undefined
     
     var MozColumns: js.UndefOr[
@@ -9337,7 +9335,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Columns[Double | String]]])
-        ]) | `98`
+        ]) | `97`
       ] = js.undefined
     
     var MozContextProperties: js.UndefOr[
@@ -9348,7 +9346,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozContextProperties]]
-        ]) | `391`
+        ]) | `390`
       ] = js.undefined
     
     var MozFloatEdge: js.UndefOr[
@@ -9359,7 +9357,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozFloatEdge]]
-        ]) | `361`
+        ]) | `360`
       ] = js.undefined
     
     var MozFontFeatureSettings: js.UndefOr[
@@ -9368,7 +9366,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontFeatureSettings | js.Array[NonNullable[js.UndefOr[FontFeatureSettings]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontFeatureSettings]]
-        ]) | `101`
+        ]) | `100`
       ] = js.undefined
     
     var MozFontLanguageOverride: js.UndefOr[
@@ -9377,7 +9375,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontLanguageOverride | js.Array[NonNullable[js.UndefOr[FontLanguageOverride]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontLanguageOverride]]
-        ]) | `186`
+        ]) | `185`
       ] = js.undefined
     
     var MozForceBrokenImageIcon: js.UndefOr[
@@ -9388,13 +9386,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozForceBrokenImageIcon]]
-        ]) | `92`
+        ]) | `91`
       ] = js.undefined
     
     var MozHyphens: js.UndefOr[
         Hyphens | (js.Array[
           (Extract[js.UndefOr[Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]], String]) | NonNullable[js.UndefOr[Hyphens]]
-        ]) | `289`
+        ]) | `288`
       ] = js.undefined
     
     var MozImageRegion: js.UndefOr[
@@ -9405,7 +9403,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozImageRegion]]
-        ]) | `115`
+        ]) | `114`
       ] = js.undefined
     
     var MozMarginEnd: js.UndefOr[
@@ -9416,7 +9414,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginInlineEnd[Double | String]]])
-        ]) | `5`
+        ]) | `4`
       ] = js.undefined
     
     var MozMarginStart: js.UndefOr[
@@ -9427,13 +9425,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginInlineStart[Double | String]]])
-        ]) | `240`
+        ]) | `239`
       ] = js.undefined
     
     var MozOpacity: js.UndefOr[
         Opacity | (js.Array[
           (Extract[js.UndefOr[Opacity | js.Array[NonNullable[js.UndefOr[Opacity]]]], String]) | NonNullable[js.UndefOr[Opacity]]
-        ]) | `248`
+        ]) | `247`
       ] = js.undefined
     
     var MozOrient: js.UndefOr[
@@ -9444,7 +9442,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozOrient]]
-        ]) | `291`
+        ]) | `290`
       ] = js.undefined
     
     var MozOsxFontSmoothing: js.UndefOr[
@@ -9455,7 +9453,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[FontSmooth[Double | String]]])
-        ]) | `229`
+        ]) | `228`
       ] = js.undefined
     
     var MozOutline: js.UndefOr[
@@ -9466,13 +9464,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Outline[Double | String]]])
-        ]) | `331`
+        ]) | `330`
       ] = js.undefined
     
     var MozOutlineColor: js.UndefOr[
         OutlineColor | (js.Array[
           (Extract[js.UndefOr[OutlineColor | js.Array[NonNullable[js.UndefOr[OutlineColor]]]], String]) | NonNullable[js.UndefOr[OutlineColor]]
-        ]) | `222`
+        ]) | `221`
       ] = js.undefined
     
     var MozOutlineRadius: js.UndefOr[
@@ -9485,7 +9483,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[typings.csstype.mod.Property.MozOutlineRadius[Double | String]]])
-        ]) | `11`
+        ]) | `10`
       ] = js.undefined
     
     var MozOutlineRadiusBottomleft: js.UndefOr[
@@ -9502,7 +9500,7 @@ object esHooksUseStyleRegisterMod {
           ]) | (NonNullable[
             js.UndefOr[typings.csstype.mod.Property.MozOutlineRadiusBottomleft[Double | String]]
           ])
-        ]) | `72`
+        ]) | `71`
       ] = js.undefined
     
     var MozOutlineRadiusBottomright: js.UndefOr[
@@ -9519,7 +9517,7 @@ object esHooksUseStyleRegisterMod {
           ]) | (NonNullable[
             js.UndefOr[typings.csstype.mod.Property.MozOutlineRadiusBottomright[Double | String]]
           ])
-        ]) | `479`
+        ]) | `478`
       ] = js.undefined
     
     var MozOutlineRadiusTopleft: js.UndefOr[
@@ -9536,7 +9534,7 @@ object esHooksUseStyleRegisterMod {
           ]) | (NonNullable[
             js.UndefOr[typings.csstype.mod.Property.MozOutlineRadiusTopleft[Double | String]]
           ])
-        ]) | `23`
+        ]) | `22`
       ] = js.undefined
     
     var MozOutlineRadiusTopright: js.UndefOr[
@@ -9553,13 +9551,13 @@ object esHooksUseStyleRegisterMod {
           ]) | (NonNullable[
             js.UndefOr[typings.csstype.mod.Property.MozOutlineRadiusTopright[Double | String]]
           ])
-        ]) | `206`
+        ]) | `205`
       ] = js.undefined
     
     var MozOutlineStyle: js.UndefOr[
         OutlineStyle | (js.Array[
           (Extract[js.UndefOr[OutlineStyle | js.Array[NonNullable[js.UndefOr[OutlineStyle]]]], String]) | NonNullable[js.UndefOr[OutlineStyle]]
-        ]) | `344`
+        ]) | `343`
       ] = js.undefined
     
     var MozOutlineWidth: js.UndefOr[
@@ -9570,7 +9568,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[OutlineWidth[Double | String]]])
-        ]) | `162`
+        ]) | `161`
       ] = js.undefined
     
     var MozPaddingEnd: js.UndefOr[
@@ -9581,7 +9579,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingInlineEnd[Double | String]]])
-        ]) | `185`
+        ]) | `184`
       ] = js.undefined
     
     var MozPaddingStart: js.UndefOr[
@@ -9592,7 +9590,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingInlineStart[Double | String]]])
-        ]) | `102`
+        ]) | `101`
       ] = js.undefined
     
     var MozPerspective: js.UndefOr[
@@ -9603,7 +9601,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Perspective[Double | String]]])
-        ]) | `294`
+        ]) | `293`
       ] = js.undefined
     
     var MozPerspectiveOrigin: js.UndefOr[
@@ -9614,7 +9612,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PerspectiveOrigin[Double | String]]])
-        ]) | `213`
+        ]) | `212`
       ] = js.undefined
     
     var MozStackSizing: js.UndefOr[
@@ -9625,7 +9623,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozStackSizing]]
-        ]) | `555`
+        ]) | `554`
       ] = js.undefined
     
     var MozTabSize: js.UndefOr[
@@ -9636,7 +9634,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[TabSize[Double | String]]])
-        ]) | `169`
+        ]) | `168`
       ] = js.undefined
     
     var MozTextAlignLast: js.UndefOr[
@@ -9645,7 +9643,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextAlignLast | js.Array[NonNullable[js.UndefOr[TextAlignLast]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextAlignLast]]
-        ]) | `267`
+        ]) | `266`
       ] = js.undefined
     
     var MozTextBlink: js.UndefOr[
@@ -9656,7 +9654,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozTextBlink]]
-        ]) | `255`
+        ]) | `254`
       ] = js.undefined
     
     var MozTextDecorationColor: js.UndefOr[
@@ -9665,7 +9663,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextDecorationColor | js.Array[NonNullable[js.UndefOr[TextDecorationColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextDecorationColor]]
-        ]) | `53`
+        ]) | `52`
       ] = js.undefined
     
     var MozTextDecorationLine: js.UndefOr[
@@ -9674,7 +9672,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextDecorationLine | js.Array[NonNullable[js.UndefOr[TextDecorationLine]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextDecorationLine]]
-        ]) | `21`
+        ]) | `20`
       ] = js.undefined
     
     var MozTextDecorationStyle: js.UndefOr[
@@ -9683,7 +9681,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextDecorationStyle | js.Array[NonNullable[js.UndefOr[TextDecorationStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextDecorationStyle]]
-        ]) | `254`
+        ]) | `253`
       ] = js.undefined
     
     var MozTextSizeAdjust: js.UndefOr[
@@ -9692,7 +9690,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextSizeAdjust | js.Array[NonNullable[js.UndefOr[TextSizeAdjust]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextSizeAdjust]]
-        ]) | `1`
+        ]) | `0`
       ] = js.undefined
     
     var MozTransformOrigin: js.UndefOr[
@@ -9703,7 +9701,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[TransformOrigin[Double | String]]])
-        ]) | `65`
+        ]) | `64`
       ] = js.undefined
     
     var MozTransformStyle: js.UndefOr[
@@ -9712,7 +9710,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TransformStyle | js.Array[NonNullable[js.UndefOr[TransformStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[TransformStyle]]
-        ]) | `154`
+        ]) | `153`
       ] = js.undefined
     
     var MozTransition: js.UndefOr[
@@ -9721,7 +9719,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[Transition[String] | js.Array[NonNullable[js.UndefOr[Transition[String]]]]], 
             String
           ]) | NonNullable[js.UndefOr[Transition[String]]]
-        ]) | `68`
+        ]) | `67`
       ] = js.undefined
     
     var MozTransitionDelay: js.UndefOr[
@@ -9732,7 +9730,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionDelay[String]]]
-        ]) | `212`
+        ]) | `211`
       ] = js.undefined
     
     var MozTransitionDuration: js.UndefOr[
@@ -9743,7 +9741,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionDuration[String]]]
-        ]) | `78`
+        ]) | `77`
       ] = js.undefined
     
     var MozTransitionProperty: js.UndefOr[
@@ -9752,7 +9750,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]], 
             String
           ]) | NonNullable[js.UndefOr[TransitionProperty]]
-        ]) | `228`
+        ]) | `227`
       ] = js.undefined
     
     var MozTransitionTimingFunction: js.UndefOr[
@@ -9763,7 +9761,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionTimingFunction]]
-        ]) | `272`
+        ]) | `271`
       ] = js.undefined
     
     var MozUserFocus: js.UndefOr[
@@ -9774,7 +9772,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozUserFocus]]
-        ]) | SKIPCHECKBoolean
+        ]) | MULTIVALUESKIPCHECK
       ] = js.undefined
     
     var MozUserInput: js.UndefOr[
@@ -9785,7 +9783,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozUserInput]]
-        ]) | `521`
+        ]) | `520`
       ] = js.undefined
     
     var MozUserModify: js.UndefOr[
@@ -9796,13 +9794,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozUserModify]]
-        ]) | `459`
+        ]) | `458`
       ] = js.undefined
     
     var MozUserSelect: js.UndefOr[
         UserSelect | (js.Array[
           (Extract[js.UndefOr[UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]], String]) | NonNullable[js.UndefOr[UserSelect]]
-        ]) | `47`
+        ]) | `46`
       ] = js.undefined
     
     var MozWindowDragging: js.UndefOr[
@@ -9813,7 +9811,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozWindowDragging]]
-        ]) | `180`
+        ]) | `179`
       ] = js.undefined
     
     var MozWindowShadow: js.UndefOr[
@@ -9824,7 +9822,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.MozWindowShadow]]
-        ]) | `280`
+        ]) | `279`
       ] = js.undefined
     
     var OAnimation: js.UndefOr[
@@ -9833,7 +9831,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[Animation[String] | js.Array[NonNullable[js.UndefOr[Animation[String]]]]], 
             String
           ]) | NonNullable[js.UndefOr[Animation[String]]]
-        ]) | `28`
+        ]) | `27`
       ] = js.undefined
     
     var OAnimationDelay: js.UndefOr[
@@ -9844,7 +9842,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationDelay[String]]]
-        ]) | `241`
+        ]) | `240`
       ] = js.undefined
     
     var OAnimationDirection: js.UndefOr[
@@ -9853,7 +9851,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationDirection]]
-        ]) | `111`
+        ]) | `110`
       ] = js.undefined
     
     var OAnimationDuration: js.UndefOr[
@@ -9864,7 +9862,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationDuration[String]]]
-        ]) | `99`
+        ]) | `98`
       ] = js.undefined
     
     var OAnimationFillMode: js.UndefOr[
@@ -9873,7 +9871,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationFillMode]]
-        ]) | `114`
+        ]) | `113`
       ] = js.undefined
     
     var OAnimationIterationCount: js.UndefOr[
@@ -9884,7 +9882,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationIterationCount]]
-        ]) | `87`
+        ]) | `86`
       ] = js.undefined
     
     var OAnimationName: js.UndefOr[
@@ -9893,7 +9891,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationName]]
-        ]) | `168`
+        ]) | `167`
       ] = js.undefined
     
     var OAnimationPlayState: js.UndefOr[
@@ -9902,7 +9900,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationPlayState]]
-        ]) | `159`
+        ]) | `158`
       ] = js.undefined
     
     var OAnimationTimingFunction: js.UndefOr[
@@ -9913,7 +9911,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationTimingFunction]]
-        ]) | `161`
+        ]) | `160`
       ] = js.undefined
     
     var OBackgroundSize: js.UndefOr[
@@ -9924,19 +9922,19 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BackgroundSize[Double | String]]])
-        ]) | `55`
+        ]) | `54`
       ] = js.undefined
     
     var OBorderImage: js.UndefOr[
         BorderImage | (js.Array[
           (Extract[js.UndefOr[BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]], String]) | NonNullable[js.UndefOr[BorderImage]]
-        ]) | `242`
+        ]) | `241`
       ] = js.undefined
     
     var OObjectFit: js.UndefOr[
         ObjectFit | (js.Array[
           (Extract[js.UndefOr[ObjectFit | js.Array[NonNullable[js.UndefOr[ObjectFit]]]], String]) | NonNullable[js.UndefOr[ObjectFit]]
-        ]) | `339`
+        ]) | `338`
       ] = js.undefined
     
     var OObjectPosition: js.UndefOr[
@@ -9947,7 +9945,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ObjectPosition[Double | String]]])
-        ]) | `17`
+        ]) | `16`
       ] = js.undefined
     
     var OTabSize: js.UndefOr[
@@ -9958,19 +9956,19 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[TabSize[Double | String]]])
-        ]) | `169`
+        ]) | `168`
       ] = js.undefined
     
     var OTextOverflow: js.UndefOr[
         TextOverflow | (js.Array[
           (Extract[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]], String]) | NonNullable[js.UndefOr[TextOverflow]]
-        ]) | `112`
+        ]) | `111`
       ] = js.undefined
     
     var OTransform: js.UndefOr[
         Transform | (js.Array[
           (Extract[js.UndefOr[Transform | js.Array[NonNullable[js.UndefOr[Transform]]]], String]) | NonNullable[js.UndefOr[Transform]]
-        ]) | `125`
+        ]) | `124`
       ] = js.undefined
     
     var OTransformOrigin: js.UndefOr[
@@ -9981,7 +9979,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[TransformOrigin[Double | String]]])
-        ]) | `65`
+        ]) | `64`
       ] = js.undefined
     
     var OTransition: js.UndefOr[
@@ -9990,7 +9988,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[Transition[String] | js.Array[NonNullable[js.UndefOr[Transition[String]]]]], 
             String
           ]) | NonNullable[js.UndefOr[Transition[String]]]
-        ]) | `68`
+        ]) | `67`
       ] = js.undefined
     
     var OTransitionDelay: js.UndefOr[
@@ -10001,7 +9999,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionDelay[String]]]
-        ]) | `212`
+        ]) | `211`
       ] = js.undefined
     
     var OTransitionDuration: js.UndefOr[
@@ -10012,7 +10010,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionDuration[String]]]
-        ]) | `78`
+        ]) | `77`
       ] = js.undefined
     
     var OTransitionProperty: js.UndefOr[
@@ -10021,7 +10019,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]], 
             String
           ]) | NonNullable[js.UndefOr[TransitionProperty]]
-        ]) | `228`
+        ]) | `227`
       ] = js.undefined
     
     var OTransitionTimingFunction: js.UndefOr[
@@ -10032,25 +10030,25 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionTimingFunction]]
-        ]) | `272`
+        ]) | `271`
       ] = js.undefined
     
     var WebkitAlignContent: js.UndefOr[
         AlignContent | (js.Array[
           (Extract[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]], String]) | NonNullable[js.UndefOr[AlignContent]]
-        ]) | `244`
+        ]) | `243`
       ] = js.undefined
     
     var WebkitAlignItems: js.UndefOr[
         AlignItems | (js.Array[
           (Extract[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]], String]) | NonNullable[js.UndefOr[AlignItems]]
-        ]) | `424`
+        ]) | `423`
       ] = js.undefined
     
     var WebkitAlignSelf: js.UndefOr[
         AlignSelf | (js.Array[
           (Extract[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]], String]) | NonNullable[js.UndefOr[AlignSelf]]
-        ]) | `461`
+        ]) | `460`
       ] = js.undefined
     
     var WebkitAnimation: js.UndefOr[
@@ -10059,7 +10057,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[Animation[String] | js.Array[NonNullable[js.UndefOr[Animation[String]]]]], 
             String
           ]) | NonNullable[js.UndefOr[Animation[String]]]
-        ]) | `28`
+        ]) | `27`
       ] = js.undefined
     
     var WebkitAnimationDelay: js.UndefOr[
@@ -10070,7 +10068,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationDelay[String]]]
-        ]) | `241`
+        ]) | `240`
       ] = js.undefined
     
     var WebkitAnimationDirection: js.UndefOr[
@@ -10079,7 +10077,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationDirection]]
-        ]) | `111`
+        ]) | `110`
       ] = js.undefined
     
     var WebkitAnimationDuration: js.UndefOr[
@@ -10090,7 +10088,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationDuration[String]]]
-        ]) | `99`
+        ]) | `98`
       ] = js.undefined
     
     var WebkitAnimationFillMode: js.UndefOr[
@@ -10099,7 +10097,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationFillMode]]
-        ]) | `114`
+        ]) | `113`
       ] = js.undefined
     
     var WebkitAnimationIterationCount: js.UndefOr[
@@ -10110,7 +10108,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationIterationCount]]
-        ]) | `87`
+        ]) | `86`
       ] = js.undefined
     
     var WebkitAnimationName: js.UndefOr[
@@ -10119,7 +10117,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationName]]
-        ]) | `168`
+        ]) | `167`
       ] = js.undefined
     
     var WebkitAnimationPlayState: js.UndefOr[
@@ -10128,7 +10126,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationPlayState]]
-        ]) | `159`
+        ]) | `158`
       ] = js.undefined
     
     var WebkitAnimationTimingFunction: js.UndefOr[
@@ -10139,7 +10137,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationTimingFunction]]
-        ]) | `161`
+        ]) | `160`
       ] = js.undefined
     
     var WebkitAppearance: js.UndefOr[
@@ -10150,7 +10148,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitAppearance]]
-        ]) | `335`
+        ]) | `334`
       ] = js.undefined
     
     var WebkitBackdropFilter: js.UndefOr[
@@ -10159,7 +10157,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackdropFilter | js.Array[NonNullable[js.UndefOr[BackdropFilter]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackdropFilter]]
-        ]) | `42`
+        ]) | `41`
       ] = js.undefined
     
     var WebkitBackfaceVisibility: js.UndefOr[
@@ -10168,7 +10166,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackfaceVisibility | js.Array[NonNullable[js.UndefOr[BackfaceVisibility]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackfaceVisibility]]
-        ]) | `130`
+        ]) | `129`
       ] = js.undefined
     
     var WebkitBackgroundClip: js.UndefOr[
@@ -10177,7 +10175,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackgroundClip | js.Array[NonNullable[js.UndefOr[BackgroundClip]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackgroundClip]]
-        ]) | `142`
+        ]) | `141`
       ] = js.undefined
     
     var WebkitBackgroundOrigin: js.UndefOr[
@@ -10186,7 +10184,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackgroundOrigin | js.Array[NonNullable[js.UndefOr[BackgroundOrigin]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackgroundOrigin]]
-        ]) | `84`
+        ]) | `83`
       ] = js.undefined
     
     var WebkitBackgroundSize: js.UndefOr[
@@ -10197,7 +10195,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BackgroundSize[Double | String]]])
-        ]) | `55`
+        ]) | `54`
       ] = js.undefined
     
     var WebkitBorderBefore: js.UndefOr[
@@ -10210,7 +10208,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitBorderBefore[Double | String]]])
-        ]) | `39`
+        ]) | `38`
       ] = js.undefined
     
     var WebkitBorderBeforeColor: js.UndefOr[
@@ -10221,7 +10219,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitBorderBeforeColor]]
-        ]) | `113`
+        ]) | `112`
       ] = js.undefined
     
     var WebkitBorderBeforeStyle: js.UndefOr[
@@ -10232,7 +10230,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitBorderBeforeStyle]]
-        ]) | `253`
+        ]) | `252`
       ] = js.undefined
     
     var WebkitBorderBeforeWidth: js.UndefOr[
@@ -10249,7 +10247,7 @@ object esHooksUseStyleRegisterMod {
           ]) | (NonNullable[
             js.UndefOr[typings.csstype.mod.Property.WebkitBorderBeforeWidth[Double | String]]
           ])
-        ]) | `435`
+        ]) | `434`
       ] = js.undefined
     
     var WebkitBorderBottomLeftRadius: js.UndefOr[
@@ -10260,7 +10258,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBottomLeftRadius[Double | String]]])
-        ]) | `103`
+        ]) | `102`
       ] = js.undefined
     
     var WebkitBorderBottomRightRadius: js.UndefOr[
@@ -10271,13 +10269,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBottomRightRadius[Double | String]]])
-        ]) | `136`
+        ]) | `135`
       ] = js.undefined
     
     var WebkitBorderImage: js.UndefOr[
         BorderImage | (js.Array[
           (Extract[js.UndefOr[BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]], String]) | NonNullable[js.UndefOr[BorderImage]]
-        ]) | `242`
+        ]) | `241`
       ] = js.undefined
     
     var WebkitBorderImageSlice: js.UndefOr[
@@ -10286,7 +10284,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderImageSlice | js.Array[NonNullable[js.UndefOr[BorderImageSlice]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderImageSlice]]
-        ]) | `135`
+        ]) | `134`
       ] = js.undefined
     
     var WebkitBorderRadius: js.UndefOr[
@@ -10297,7 +10295,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderRadius[Double | String]]])
-        ]) | `400`
+        ]) | `399`
       ] = js.undefined
     
     var WebkitBorderTopLeftRadius: js.UndefOr[
@@ -10308,7 +10306,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderTopLeftRadius[Double | String]]])
-        ]) | `221`
+        ]) | `220`
       ] = js.undefined
     
     var WebkitBorderTopRightRadius: js.UndefOr[
@@ -10319,13 +10317,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderTopRightRadius[Double | String]]])
-        ]) | `77`
+        ]) | `76`
       ] = js.undefined
     
     var WebkitBoxAlign: js.UndefOr[
         BoxAlign | (js.Array[
           (Extract[js.UndefOr[BoxAlign | js.Array[NonNullable[js.UndefOr[BoxAlign]]]], String]) | NonNullable[js.UndefOr[BoxAlign]]
-        ]) | `83`
+        ]) | `82`
       ] = js.undefined
     
     var WebkitBoxDecorationBreak: js.UndefOr[
@@ -10334,31 +10332,31 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BoxDecorationBreak | js.Array[NonNullable[js.UndefOr[BoxDecorationBreak]]]], 
             String
           ]) | NonNullable[js.UndefOr[BoxDecorationBreak]]
-        ]) | `158`
+        ]) | `157`
       ] = js.undefined
     
     var WebkitBoxDirection: js.UndefOr[
         BoxDirection | (js.Array[
           (Extract[js.UndefOr[BoxDirection | js.Array[NonNullable[js.UndefOr[BoxDirection]]]], String]) | NonNullable[js.UndefOr[BoxDirection]]
-        ]) | `59`
+        ]) | `58`
       ] = js.undefined
     
     var WebkitBoxFlex: js.UndefOr[
         BoxFlex | (js.Array[
           (Extract[js.UndefOr[BoxFlex | js.Array[NonNullable[js.UndefOr[BoxFlex]]]], String]) | NonNullable[js.UndefOr[BoxFlex]]
-        ]) | `140`
+        ]) | `139`
       ] = js.undefined
     
     var WebkitBoxFlexGroup: js.UndefOr[
         BoxFlexGroup | (js.Array[
           (Extract[js.UndefOr[BoxFlexGroup | js.Array[NonNullable[js.UndefOr[BoxFlexGroup]]]], String]) | NonNullable[js.UndefOr[BoxFlexGroup]]
-        ]) | `152`
+        ]) | `151`
       ] = js.undefined
     
     var WebkitBoxLines: js.UndefOr[
         BoxLines | (js.Array[
           (Extract[js.UndefOr[BoxLines | js.Array[NonNullable[js.UndefOr[BoxLines]]]], String]) | NonNullable[js.UndefOr[BoxLines]]
-        ]) | `199`
+        ]) | `198`
       ] = js.undefined
     
     var WebkitBoxOrdinalGroup: js.UndefOr[
@@ -10367,19 +10365,19 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BoxOrdinalGroup | js.Array[NonNullable[js.UndefOr[BoxOrdinalGroup]]]], 
             String
           ]) | NonNullable[js.UndefOr[BoxOrdinalGroup]]
-        ]) | `190`
+        ]) | `189`
       ] = js.undefined
     
     var WebkitBoxOrient: js.UndefOr[
         BoxOrient | (js.Array[
           (Extract[js.UndefOr[BoxOrient | js.Array[NonNullable[js.UndefOr[BoxOrient]]]], String]) | NonNullable[js.UndefOr[BoxOrient]]
-        ]) | `22`
+        ]) | `21`
       ] = js.undefined
     
     var WebkitBoxPack: js.UndefOr[
         BoxPack | (js.Array[
           (Extract[js.UndefOr[BoxPack | js.Array[NonNullable[js.UndefOr[BoxPack]]]], String]) | NonNullable[js.UndefOr[BoxPack]]
-        ]) | `119`
+        ]) | `118`
       ] = js.undefined
     
     var WebkitBoxReflect: js.UndefOr[
@@ -10392,37 +10390,37 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitBoxReflect[Double | String]]])
-        ]) | `318`
+        ]) | `317`
       ] = js.undefined
     
     var WebkitBoxShadow: js.UndefOr[
         BoxShadow | (js.Array[
           (Extract[js.UndefOr[BoxShadow | js.Array[NonNullable[js.UndefOr[BoxShadow]]]], String]) | NonNullable[js.UndefOr[BoxShadow]]
-        ]) | `108`
+        ]) | `107`
       ] = js.undefined
     
     var WebkitBoxSizing: js.UndefOr[
         BoxSizing | (js.Array[
           (Extract[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]], String]) | NonNullable[js.UndefOr[BoxSizing]]
-        ]) | `14`
+        ]) | `13`
       ] = js.undefined
     
     var WebkitClipPath: js.UndefOr[
         ClipPath | (js.Array[
           (Extract[js.UndefOr[ClipPath | js.Array[NonNullable[js.UndefOr[ClipPath]]]], String]) | NonNullable[js.UndefOr[ClipPath]]
-        ]) | `129`
+        ]) | `128`
       ] = js.undefined
     
     var WebkitColumnCount: js.UndefOr[
         ColumnCount | (js.Array[
           (Extract[js.UndefOr[ColumnCount | js.Array[NonNullable[js.UndefOr[ColumnCount]]]], String]) | NonNullable[js.UndefOr[ColumnCount]]
-        ]) | `357`
+        ]) | `356`
       ] = js.undefined
     
     var WebkitColumnFill: js.UndefOr[
         ColumnFill | (js.Array[
           (Extract[js.UndefOr[ColumnFill | js.Array[NonNullable[js.UndefOr[ColumnFill]]]], String]) | NonNullable[js.UndefOr[ColumnFill]]
-        ]) | `274`
+        ]) | `273`
       ] = js.undefined
     
     var WebkitColumnRule: js.UndefOr[
@@ -10433,7 +10431,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ColumnRule[Double | String]]])
-        ]) | `260`
+        ]) | `259`
       ] = js.undefined
     
     var WebkitColumnRuleColor: js.UndefOr[
@@ -10442,7 +10440,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ColumnRuleColor | js.Array[NonNullable[js.UndefOr[ColumnRuleColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[ColumnRuleColor]]
-        ]) | `153`
+        ]) | `152`
       ] = js.undefined
     
     var WebkitColumnRuleStyle: js.UndefOr[
@@ -10451,7 +10449,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ColumnRuleStyle | js.Array[NonNullable[js.UndefOr[ColumnRuleStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[ColumnRuleStyle]]
-        ]) | `6`
+        ]) | `5`
       ] = js.undefined
     
     var WebkitColumnRuleWidth: js.UndefOr[
@@ -10462,13 +10460,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ColumnRuleWidth[Double | String]]])
-        ]) | `95`
+        ]) | `94`
       ] = js.undefined
     
     var WebkitColumnSpan: js.UndefOr[
         ColumnSpan | (js.Array[
           (Extract[js.UndefOr[ColumnSpan | js.Array[NonNullable[js.UndefOr[ColumnSpan]]]], String]) | NonNullable[js.UndefOr[ColumnSpan]]
-        ]) | `133`
+        ]) | `132`
       ] = js.undefined
     
     var WebkitColumnWidth: js.UndefOr[
@@ -10479,7 +10477,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ColumnWidth[Double | String]]])
-        ]) | `220`
+        ]) | `219`
       ] = js.undefined
     
     var WebkitColumns: js.UndefOr[
@@ -10490,13 +10488,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Columns[Double | String]]])
-        ]) | `98`
+        ]) | `97`
       ] = js.undefined
     
     var WebkitFilter: js.UndefOr[
         Filter | (js.Array[
           (Extract[js.UndefOr[Filter | js.Array[NonNullable[js.UndefOr[Filter]]]], String]) | NonNullable[js.UndefOr[Filter]]
-        ]) | `397`
+        ]) | `396`
       ] = js.undefined
     
     var WebkitFlex: js.UndefOr[
@@ -10507,7 +10505,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Flex[Double | String]]])
-        ]) | `310`
+        ]) | `309`
       ] = js.undefined
     
     var WebkitFlexBasis: js.UndefOr[
@@ -10518,7 +10516,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[FlexBasis[Double | String]]])
-        ]) | `19`
+        ]) | `18`
       ] = js.undefined
     
     var WebkitFlexDirection: js.UndefOr[
@@ -10527,31 +10525,31 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]], 
             String
           ]) | NonNullable[js.UndefOr[FlexDirection]]
-        ]) | `121`
+        ]) | `120`
       ] = js.undefined
     
     var WebkitFlexFlow: js.UndefOr[
         FlexFlow | (js.Array[
           (Extract[js.UndefOr[FlexFlow | js.Array[NonNullable[js.UndefOr[FlexFlow]]]], String]) | NonNullable[js.UndefOr[FlexFlow]]
-        ]) | `167`
+        ]) | `166`
       ] = js.undefined
     
     var WebkitFlexGrow: js.UndefOr[
         FlexGrow | (js.Array[
           (Extract[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]], String]) | NonNullable[js.UndefOr[FlexGrow]]
-        ]) | `97`
+        ]) | `96`
       ] = js.undefined
     
     var WebkitFlexShrink: js.UndefOr[
         FlexShrink | (js.Array[
           (Extract[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]], String]) | NonNullable[js.UndefOr[FlexShrink]]
-        ]) | `198`
+        ]) | `197`
       ] = js.undefined
     
     var WebkitFlexWrap: js.UndefOr[
         FlexWrap | (js.Array[
           (Extract[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]], String]) | NonNullable[js.UndefOr[FlexWrap]]
-        ]) | `15`
+        ]) | `14`
       ] = js.undefined
     
     var WebkitFontFeatureSettings: js.UndefOr[
@@ -10560,13 +10558,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontFeatureSettings | js.Array[NonNullable[js.UndefOr[FontFeatureSettings]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontFeatureSettings]]
-        ]) | `101`
+        ]) | `100`
       ] = js.undefined
     
     var WebkitFontKerning: js.UndefOr[
         FontKerning | (js.Array[
           (Extract[js.UndefOr[FontKerning | js.Array[NonNullable[js.UndefOr[FontKerning]]]], String]) | NonNullable[js.UndefOr[FontKerning]]
-        ]) | `179`
+        ]) | `178`
       ] = js.undefined
     
     var WebkitFontSmoothing: js.UndefOr[
@@ -10577,7 +10575,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[FontSmooth[Double | String]]])
-        ]) | `229`
+        ]) | `228`
       ] = js.undefined
     
     var WebkitFontVariantLigatures: js.UndefOr[
@@ -10586,7 +10584,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontVariantLigatures | js.Array[NonNullable[js.UndefOr[FontVariantLigatures]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontVariantLigatures]]
-        ]) | `79`
+        ]) | `78`
       ] = js.undefined
     
     var WebkitHyphenateCharacter: js.UndefOr[
@@ -10595,13 +10593,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[HyphenateCharacter | js.Array[NonNullable[js.UndefOr[HyphenateCharacter]]]], 
             String
           ]) | NonNullable[js.UndefOr[HyphenateCharacter]]
-        ]) | `396`
+        ]) | `395`
       ] = js.undefined
     
     var WebkitHyphens: js.UndefOr[
         Hyphens | (js.Array[
           (Extract[js.UndefOr[Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]], String]) | NonNullable[js.UndefOr[Hyphens]]
-        ]) | `289`
+        ]) | `288`
       ] = js.undefined
     
     var WebkitInitialLetter: js.UndefOr[
@@ -10610,7 +10608,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[InitialLetter | js.Array[NonNullable[js.UndefOr[InitialLetter]]]], 
             String
           ]) | NonNullable[js.UndefOr[InitialLetter]]
-        ]) | `176`
+        ]) | `175`
       ] = js.undefined
     
     var WebkitJustifyContent: js.UndefOr[
@@ -10619,13 +10617,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]], 
             String
           ]) | NonNullable[js.UndefOr[JustifyContent]]
-        ]) | `203`
+        ]) | `202`
       ] = js.undefined
     
     var WebkitLineBreak: js.UndefOr[
         LineBreak | (js.Array[
           (Extract[js.UndefOr[LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]], String]) | NonNullable[js.UndefOr[LineBreak]]
-        ]) | `134`
+        ]) | `133`
       ] = js.undefined
     
     var WebkitLineClamp: js.UndefOr[
@@ -10636,7 +10634,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitLineClamp]]
-        ]) | `516`
+        ]) | `515`
       ] = js.undefined
     
     var WebkitMarginEnd: js.UndefOr[
@@ -10647,7 +10645,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginInlineEnd[Double | String]]])
-        ]) | `5`
+        ]) | `4`
       ] = js.undefined
     
     var WebkitMarginStart: js.UndefOr[
@@ -10658,7 +10656,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginInlineStart[Double | String]]])
-        ]) | `240`
+        ]) | `239`
       ] = js.undefined
     
     var WebkitMask: js.UndefOr[
@@ -10671,7 +10669,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitMask[Double | String]]])
-        ]) | `197`
+        ]) | `196`
       ] = js.undefined
     
     var WebkitMaskAttachment: js.UndefOr[
@@ -10682,13 +10680,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitMaskAttachment]]
-        ]) | `509`
+        ]) | `508`
       ] = js.undefined
     
     var WebkitMaskBoxImage: js.UndefOr[
         MaskBorder | (js.Array[
           (Extract[js.UndefOr[MaskBorder | js.Array[NonNullable[js.UndefOr[MaskBorder]]]], String]) | NonNullable[js.UndefOr[MaskBorder]]
-        ]) | SKIPCHECK
+        ]) | MULTIVALUE
       ] = js.undefined
     
     var WebkitMaskBoxImageOutset: js.UndefOr[
@@ -10699,7 +10697,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MaskBorderOutset[Double | String]]])
-        ]) | `227`
+        ]) | `226`
       ] = js.undefined
     
     var WebkitMaskBoxImageRepeat: js.UndefOr[
@@ -10708,7 +10706,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MaskBorderRepeat | js.Array[NonNullable[js.UndefOr[MaskBorderRepeat]]]], 
             String
           ]) | NonNullable[js.UndefOr[MaskBorderRepeat]]
-        ]) | `215`
+        ]) | `214`
       ] = js.undefined
     
     var WebkitMaskBoxImageSlice: js.UndefOr[
@@ -10717,7 +10715,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MaskBorderSlice | js.Array[NonNullable[js.UndefOr[MaskBorderSlice]]]], 
             String
           ]) | NonNullable[js.UndefOr[MaskBorderSlice]]
-        ]) | `188`
+        ]) | `187`
       ] = js.undefined
     
     var WebkitMaskBoxImageSource: js.UndefOr[
@@ -10726,7 +10724,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MaskBorderSource | js.Array[NonNullable[js.UndefOr[MaskBorderSource]]]], 
             String
           ]) | NonNullable[js.UndefOr[MaskBorderSource]]
-        ]) | `407`
+        ]) | `406`
       ] = js.undefined
     
     var WebkitMaskBoxImageWidth: js.UndefOr[
@@ -10737,7 +10735,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MaskBorderWidth[Double | String]]])
-        ]) | `494`
+        ]) | `493`
       ] = js.undefined
     
     var WebkitMaskClip: js.UndefOr[
@@ -10748,7 +10746,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitMaskClip]]
-        ]) | `437`
+        ]) | `436`
       ] = js.undefined
     
     var WebkitMaskComposite: js.UndefOr[
@@ -10759,7 +10757,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitMaskComposite]]
-        ]) | `466`
+        ]) | `465`
       ] = js.undefined
     
     var WebkitMaskImage: js.UndefOr[
@@ -10770,7 +10768,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitMaskImage]]
-        ]) | `536`
+        ]) | `535`
       ] = js.undefined
     
     var WebkitMaskOrigin: js.UndefOr[
@@ -10781,7 +10779,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitMaskOrigin]]
-        ]) | `76`
+        ]) | `75`
       ] = js.undefined
     
     var WebkitMaskPosition: js.UndefOr[
@@ -10794,7 +10792,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitMaskPosition[Double | String]]])
-        ]) | `238`
+        ]) | `237`
       ] = js.undefined
     
     var WebkitMaskPositionX: js.UndefOr[
@@ -10807,7 +10805,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitMaskPositionX[Double | String]]])
-        ]) | `418`
+        ]) | `417`
       ] = js.undefined
     
     var WebkitMaskPositionY: js.UndefOr[
@@ -10820,7 +10818,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitMaskPositionY[Double | String]]])
-        ]) | `137`
+        ]) | `136`
       ] = js.undefined
     
     var WebkitMaskRepeat: js.UndefOr[
@@ -10831,7 +10829,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitMaskRepeat]]
-        ]) | `126`
+        ]) | `125`
       ] = js.undefined
     
     var WebkitMaskRepeatX: js.UndefOr[
@@ -10842,7 +10840,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitMaskRepeatX]]
-        ]) | `464`
+        ]) | `463`
       ] = js.undefined
     
     var WebkitMaskRepeatY: js.UndefOr[
@@ -10853,7 +10851,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitMaskRepeatY]]
-        ]) | `491`
+        ]) | `490`
       ] = js.undefined
     
     var WebkitMaskSize: js.UndefOr[
@@ -10866,7 +10864,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitMaskSize[Double | String]]])
-        ]) | `214`
+        ]) | `213`
       ] = js.undefined
     
     var WebkitMaxInlineSize: js.UndefOr[
@@ -10877,13 +10875,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MaxInlineSize[Double | String]]])
-        ]) | `69`
+        ]) | `68`
       ] = js.undefined
     
     var WebkitOrder: js.UndefOr[
         Order | (js.Array[
           (Extract[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]], String]) | NonNullable[js.UndefOr[Order]]
-        ]) | `174`
+        ]) | `173`
       ] = js.undefined
     
     var WebkitOverflowScrolling: js.UndefOr[
@@ -10894,7 +10892,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitOverflowScrolling]]
-        ]) | `319`
+        ]) | `318`
       ] = js.undefined
     
     var WebkitPaddingEnd: js.UndefOr[
@@ -10905,7 +10903,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingInlineEnd[Double | String]]])
-        ]) | `185`
+        ]) | `184`
       ] = js.undefined
     
     var WebkitPaddingStart: js.UndefOr[
@@ -10916,7 +10914,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingInlineStart[Double | String]]])
-        ]) | `102`
+        ]) | `101`
       ] = js.undefined
     
     var WebkitPerspective: js.UndefOr[
@@ -10927,7 +10925,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Perspective[Double | String]]])
-        ]) | `294`
+        ]) | `293`
       ] = js.undefined
     
     var WebkitPerspectiveOrigin: js.UndefOr[
@@ -10938,7 +10936,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PerspectiveOrigin[Double | String]]])
-        ]) | `213`
+        ]) | `212`
       ] = js.undefined
     
     var WebkitPrintColorAdjust: js.UndefOr[
@@ -10947,13 +10945,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[PrintColorAdjust | js.Array[NonNullable[js.UndefOr[PrintColorAdjust]]]], 
             String
           ]) | NonNullable[js.UndefOr[PrintColorAdjust]]
-        ]) | `284`
+        ]) | `283`
       ] = js.undefined
     
     var WebkitRubyPosition: js.UndefOr[
         RubyPosition | (js.Array[
           (Extract[js.UndefOr[RubyPosition | js.Array[NonNullable[js.UndefOr[RubyPosition]]]], String]) | NonNullable[js.UndefOr[RubyPosition]]
-        ]) | `327`
+        ]) | `326`
       ] = js.undefined
     
     var WebkitScrollSnapPointsX: js.UndefOr[
@@ -10962,7 +10960,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollSnapPointsX | js.Array[NonNullable[js.UndefOr[ScrollSnapPointsX]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollSnapPointsX]]
-        ]) | `303`
+        ]) | `302`
       ] = js.undefined
     
     var WebkitScrollSnapPointsY: js.UndefOr[
@@ -10971,7 +10969,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollSnapPointsY | js.Array[NonNullable[js.UndefOr[ScrollSnapPointsY]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollSnapPointsY]]
-        ]) | `261`
+        ]) | `260`
       ] = js.undefined
     
     var WebkitScrollSnapType: js.UndefOr[
@@ -10980,7 +10978,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollSnapType | js.Array[NonNullable[js.UndefOr[ScrollSnapType]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollSnapType]]
-        ]) | `70`
+        ]) | `69`
       ] = js.undefined
     
     var WebkitShapeMargin: js.UndefOr[
@@ -10991,7 +10989,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ShapeMargin[Double | String]]])
-        ]) | `100`
+        ]) | `99`
       ] = js.undefined
     
     var WebkitTapHighlightColor: js.UndefOr[
@@ -11002,7 +11000,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitTapHighlightColor]]
-        ]) | `216`
+        ]) | `215`
       ] = js.undefined
     
     var WebkitTextCombine: js.UndefOr[
@@ -11011,7 +11009,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextCombineUpright | js.Array[NonNullable[js.UndefOr[TextCombineUpright]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextCombineUpright]]
-        ]) | `20`
+        ]) | `19`
       ] = js.undefined
     
     var WebkitTextDecorationColor: js.UndefOr[
@@ -11020,7 +11018,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextDecorationColor | js.Array[NonNullable[js.UndefOr[TextDecorationColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextDecorationColor]]
-        ]) | `53`
+        ]) | `52`
       ] = js.undefined
     
     var WebkitTextDecorationLine: js.UndefOr[
@@ -11029,7 +11027,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextDecorationLine | js.Array[NonNullable[js.UndefOr[TextDecorationLine]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextDecorationLine]]
-        ]) | `21`
+        ]) | `20`
       ] = js.undefined
     
     var WebkitTextDecorationSkip: js.UndefOr[
@@ -11038,7 +11036,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextDecorationSkip | js.Array[NonNullable[js.UndefOr[TextDecorationSkip]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextDecorationSkip]]
-        ]) | `164`
+        ]) | `163`
       ] = js.undefined
     
     var WebkitTextDecorationStyle: js.UndefOr[
@@ -11047,13 +11045,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextDecorationStyle | js.Array[NonNullable[js.UndefOr[TextDecorationStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextDecorationStyle]]
-        ]) | `254`
+        ]) | `253`
       ] = js.undefined
     
     var WebkitTextEmphasis: js.UndefOr[
         TextEmphasis | (js.Array[
           (Extract[js.UndefOr[TextEmphasis | js.Array[NonNullable[js.UndefOr[TextEmphasis]]]], String]) | NonNullable[js.UndefOr[TextEmphasis]]
-        ]) | `66`
+        ]) | `65`
       ] = js.undefined
     
     var WebkitTextEmphasisColor: js.UndefOr[
@@ -11062,7 +11060,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextEmphasisColor | js.Array[NonNullable[js.UndefOr[TextEmphasisColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextEmphasisColor]]
-        ]) | `359`
+        ]) | `358`
       ] = js.undefined
     
     var WebkitTextEmphasisPosition: js.UndefOr[
@@ -11071,7 +11069,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextEmphasisPosition | js.Array[NonNullable[js.UndefOr[TextEmphasisPosition]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextEmphasisPosition]]
-        ]) | `366`
+        ]) | `365`
       ] = js.undefined
     
     var WebkitTextEmphasisStyle: js.UndefOr[
@@ -11080,7 +11078,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextEmphasisStyle | js.Array[NonNullable[js.UndefOr[TextEmphasisStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextEmphasisStyle]]
-        ]) | `384`
+        ]) | `383`
       ] = js.undefined
     
     var WebkitTextFillColor: js.UndefOr[
@@ -11091,7 +11089,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitTextFillColor]]
-        ]) | `533`
+        ]) | `532`
       ] = js.undefined
     
     var WebkitTextOrientation: js.UndefOr[
@@ -11100,7 +11098,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextOrientation | js.Array[NonNullable[js.UndefOr[TextOrientation]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextOrientation]]
-        ]) | `308`
+        ]) | `307`
       ] = js.undefined
     
     var WebkitTextSizeAdjust: js.UndefOr[
@@ -11109,7 +11107,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextSizeAdjust | js.Array[NonNullable[js.UndefOr[TextSizeAdjust]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextSizeAdjust]]
-        ]) | `1`
+        ]) | `0`
       ] = js.undefined
     
     var WebkitTextStroke: js.UndefOr[
@@ -11122,7 +11120,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitTextStroke[Double | String]]])
-        ]) | Value
+        ]) | SKIPCHECK
       ] = js.undefined
     
     var WebkitTextStrokeColor: js.UndefOr[
@@ -11133,7 +11131,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitTextStrokeColor]]
-        ]) | `508`
+        ]) | `507`
       ] = js.undefined
     
     var WebkitTextStrokeWidth: js.UndefOr[
@@ -11146,7 +11144,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitTextStrokeWidth[Double | String]]])
-        ]) | `513`
+        ]) | `512`
       ] = js.undefined
     
     var WebkitTextUnderlinePosition: js.UndefOr[
@@ -11155,7 +11153,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextUnderlinePosition | js.Array[NonNullable[js.UndefOr[TextUnderlinePosition]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextUnderlinePosition]]
-        ]) | `293`
+        ]) | `292`
       ] = js.undefined
     
     var WebkitTouchCallout: js.UndefOr[
@@ -11166,13 +11164,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitTouchCallout]]
-        ]) | `398`
+        ]) | `397`
       ] = js.undefined
     
     var WebkitTransform: js.UndefOr[
         Transform | (js.Array[
           (Extract[js.UndefOr[Transform | js.Array[NonNullable[js.UndefOr[Transform]]]], String]) | NonNullable[js.UndefOr[Transform]]
-        ]) | `125`
+        ]) | `124`
       ] = js.undefined
     
     var WebkitTransformOrigin: js.UndefOr[
@@ -11183,7 +11181,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[TransformOrigin[Double | String]]])
-        ]) | `65`
+        ]) | `64`
       ] = js.undefined
     
     var WebkitTransformStyle: js.UndefOr[
@@ -11192,7 +11190,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TransformStyle | js.Array[NonNullable[js.UndefOr[TransformStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[TransformStyle]]
-        ]) | `154`
+        ]) | `153`
       ] = js.undefined
     
     var WebkitTransition: js.UndefOr[
@@ -11201,7 +11199,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[Transition[String] | js.Array[NonNullable[js.UndefOr[Transition[String]]]]], 
             String
           ]) | NonNullable[js.UndefOr[Transition[String]]]
-        ]) | `68`
+        ]) | `67`
       ] = js.undefined
     
     var WebkitTransitionDelay: js.UndefOr[
@@ -11212,7 +11210,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionDelay[String]]]
-        ]) | `212`
+        ]) | `211`
       ] = js.undefined
     
     var WebkitTransitionDuration: js.UndefOr[
@@ -11223,7 +11221,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionDuration[String]]]
-        ]) | `78`
+        ]) | `77`
       ] = js.undefined
     
     var WebkitTransitionProperty: js.UndefOr[
@@ -11232,7 +11230,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]], 
             String
           ]) | NonNullable[js.UndefOr[TransitionProperty]]
-        ]) | `228`
+        ]) | `227`
       ] = js.undefined
     
     var WebkitTransitionTimingFunction: js.UndefOr[
@@ -11243,7 +11241,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionTimingFunction]]
-        ]) | `272`
+        ]) | `271`
       ] = js.undefined
     
     var WebkitUserModify: js.UndefOr[
@@ -11254,49 +11252,49 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[typings.csstype.mod.Property.WebkitUserModify]]
-        ]) | `257`
+        ]) | `256`
       ] = js.undefined
     
     var WebkitUserSelect: js.UndefOr[
         UserSelect | (js.Array[
           (Extract[js.UndefOr[UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]], String]) | NonNullable[js.UndefOr[UserSelect]]
-        ]) | `47`
+        ]) | `46`
       ] = js.undefined
     
     var WebkitWritingMode: js.UndefOr[
         WritingMode | (js.Array[
           (Extract[js.UndefOr[WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]], String]) | NonNullable[js.UndefOr[WritingMode]]
-        ]) | `181`
+        ]) | `180`
       ] = js.undefined
     
     var accentColor: js.UndefOr[
         AccentColor | (js.Array[
           (Extract[js.UndefOr[AccentColor | js.Array[NonNullable[js.UndefOr[AccentColor]]]], String]) | NonNullable[js.UndefOr[AccentColor]]
-        ]) | `347`
+        ]) | `346`
       ] = js.undefined
     
     var alignContent: js.UndefOr[
         AlignContent | (js.Array[
           (Extract[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]], String]) | NonNullable[js.UndefOr[AlignContent]]
-        ]) | `244`
+        ]) | `243`
       ] = js.undefined
     
     var alignItems: js.UndefOr[
         AlignItems | (js.Array[
           (Extract[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]], String]) | NonNullable[js.UndefOr[AlignItems]]
-        ]) | `424`
+        ]) | `423`
       ] = js.undefined
     
     var alignSelf: js.UndefOr[
         AlignSelf | (js.Array[
           (Extract[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]], String]) | NonNullable[js.UndefOr[AlignSelf]]
-        ]) | `461`
+        ]) | `460`
       ] = js.undefined
     
     var alignTracks: js.UndefOr[
         AlignTracks | (js.Array[
           (Extract[js.UndefOr[AlignTracks | js.Array[NonNullable[js.UndefOr[AlignTracks]]]], String]) | NonNullable[js.UndefOr[AlignTracks]]
-        ]) | `556`
+        ]) | `555`
       ] = js.undefined
     
     var alignmentBaseline: js.UndefOr[
@@ -11305,13 +11303,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AlignmentBaseline | js.Array[NonNullable[js.UndefOr[AlignmentBaseline]]]], 
             String
           ]) | NonNullable[js.UndefOr[AlignmentBaseline]]
-        ]) | `278`
+        ]) | `277`
       ] = js.undefined
     
     var all: js.UndefOr[
         All | (js.Array[
           (Extract[js.UndefOr[All | js.Array[NonNullable[js.UndefOr[All]]]], String]) | NonNullable[js.UndefOr[All]]
-        ]) | `488`
+        ]) | `487`
       ] = js.undefined
     
     var animation: js.UndefOr[
@@ -11320,7 +11318,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[Animation[String] | js.Array[NonNullable[js.UndefOr[Animation[String]]]]], 
             String
           ]) | NonNullable[js.UndefOr[Animation[String]]]
-        ]) | `28`
+        ]) | `27`
       ] = js.undefined
     
     var animationComposition: js.UndefOr[
@@ -11329,7 +11327,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationComposition | js.Array[NonNullable[js.UndefOr[AnimationComposition]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationComposition]]
-        ]) | `49`
+        ]) | `48`
       ] = js.undefined
     
     var animationDelay: js.UndefOr[
@@ -11340,7 +11338,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationDelay[String]]]
-        ]) | `241`
+        ]) | `240`
       ] = js.undefined
     
     var animationDirection: js.UndefOr[
@@ -11349,7 +11347,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationDirection]]
-        ]) | `111`
+        ]) | `110`
       ] = js.undefined
     
     var animationDuration: js.UndefOr[
@@ -11360,7 +11358,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationDuration[String]]]
-        ]) | `99`
+        ]) | `98`
       ] = js.undefined
     
     var animationFillMode: js.UndefOr[
@@ -11369,7 +11367,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationFillMode]]
-        ]) | `114`
+        ]) | `113`
       ] = js.undefined
     
     var animationIterationCount: js.UndefOr[
@@ -11380,7 +11378,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationIterationCount]]
-        ]) | `87`
+        ]) | `86`
       ] = js.undefined
     
     var animationName: js.UndefOr[
@@ -11391,7 +11389,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationName]]
-        ]) | typings.antDesignCssinjs.esKeyframesMod.default | `425`
+        ]) | typings.antDesignCssinjs.esKeyframesMod.default | `424`
       ] = js.undefined
     
     var animationPlayState: js.UndefOr[
@@ -11400,7 +11398,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationPlayState]]
-        ]) | `159`
+        ]) | `158`
       ] = js.undefined
     
     var animationTimeline: js.UndefOr[
@@ -11409,7 +11407,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[AnimationTimeline | js.Array[NonNullable[js.UndefOr[AnimationTimeline]]]], 
             String
           ]) | NonNullable[js.UndefOr[AnimationTimeline]]
-        ]) | `225`
+        ]) | `224`
       ] = js.undefined
     
     var animationTimingFunction: js.UndefOr[
@@ -11420,25 +11418,25 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[AnimationTimingFunction]]
-        ]) | `161`
+        ]) | `160`
       ] = js.undefined
     
     var appearance: js.UndefOr[
         Appearance | (js.Array[
           (Extract[js.UndefOr[Appearance | js.Array[NonNullable[js.UndefOr[Appearance]]]], String]) | NonNullable[js.UndefOr[Appearance]]
-        ]) | `208`
+        ]) | `207`
       ] = js.undefined
     
     var aspectRatio: js.UndefOr[
         AspectRatio | (js.Array[
           (Extract[js.UndefOr[AspectRatio | js.Array[NonNullable[js.UndefOr[AspectRatio]]]], String]) | NonNullable[js.UndefOr[AspectRatio]]
-        ]) | `506`
+        ]) | `505`
       ] = js.undefined
     
     var azimuth: js.UndefOr[
         Azimuth | (js.Array[
           (Extract[js.UndefOr[Azimuth | js.Array[NonNullable[js.UndefOr[Azimuth]]]], String]) | NonNullable[js.UndefOr[Azimuth]]
-        ]) | `480`
+        ]) | `479`
       ] = js.undefined
     
     var backdropFilter: js.UndefOr[
@@ -11447,7 +11445,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackdropFilter | js.Array[NonNullable[js.UndefOr[BackdropFilter]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackdropFilter]]
-        ]) | `42`
+        ]) | `41`
       ] = js.undefined
     
     var backfaceVisibility: js.UndefOr[
@@ -11456,7 +11454,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackfaceVisibility | js.Array[NonNullable[js.UndefOr[BackfaceVisibility]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackfaceVisibility]]
-        ]) | `130`
+        ]) | `129`
       ] = js.undefined
     
     var background: js.UndefOr[
@@ -11467,7 +11465,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Background[Double | String]]])
-        ]) | `45`
+        ]) | `44`
       ] = js.undefined
     
     var backgroundAttachment: js.UndefOr[
@@ -11476,7 +11474,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackgroundAttachment | js.Array[NonNullable[js.UndefOr[BackgroundAttachment]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackgroundAttachment]]
-        ]) | `234`
+        ]) | `233`
       ] = js.undefined
     
     var backgroundBlendMode: js.UndefOr[
@@ -11485,7 +11483,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackgroundBlendMode | js.Array[NonNullable[js.UndefOr[BackgroundBlendMode]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackgroundBlendMode]]
-        ]) | `385`
+        ]) | `384`
       ] = js.undefined
     
     var backgroundClip: js.UndefOr[
@@ -11494,7 +11492,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackgroundClip | js.Array[NonNullable[js.UndefOr[BackgroundClip]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackgroundClip]]
-        ]) | `142`
+        ]) | `141`
       ] = js.undefined
     
     var backgroundColor: js.UndefOr[
@@ -11503,7 +11501,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackgroundColor | js.Array[NonNullable[js.UndefOr[BackgroundColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackgroundColor]]
-        ]) | `116`
+        ]) | `115`
       ] = js.undefined
     
     var backgroundImage: js.UndefOr[
@@ -11512,7 +11510,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackgroundImage | js.Array[NonNullable[js.UndefOr[BackgroundImage]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackgroundImage]]
-        ]) | `13`
+        ]) | `12`
       ] = js.undefined
     
     var backgroundOrigin: js.UndefOr[
@@ -11521,7 +11519,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackgroundOrigin | js.Array[NonNullable[js.UndefOr[BackgroundOrigin]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackgroundOrigin]]
-        ]) | `84`
+        ]) | `83`
       ] = js.undefined
     
     var backgroundPosition: js.UndefOr[
@@ -11532,7 +11530,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BackgroundPosition[Double | String]]])
-        ]) | `326`
+        ]) | `325`
       ] = js.undefined
     
     var backgroundPositionX: js.UndefOr[
@@ -11543,7 +11541,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BackgroundPositionX[Double | String]]])
-        ]) | `85`
+        ]) | `84`
       ] = js.undefined
     
     var backgroundPositionY: js.UndefOr[
@@ -11554,7 +11552,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BackgroundPositionY[Double | String]]])
-        ]) | `542`
+        ]) | `541`
       ] = js.undefined
     
     var backgroundRepeat: js.UndefOr[
@@ -11563,7 +11561,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BackgroundRepeat | js.Array[NonNullable[js.UndefOr[BackgroundRepeat]]]], 
             String
           ]) | NonNullable[js.UndefOr[BackgroundRepeat]]
-        ]) | `458`
+        ]) | `457`
       ] = js.undefined
     
     var backgroundSize: js.UndefOr[
@@ -11574,7 +11572,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BackgroundSize[Double | String]]])
-        ]) | `55`
+        ]) | `54`
       ] = js.undefined
     
     var baselineShift: js.UndefOr[
@@ -11585,7 +11583,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BaselineShift[Double | String]]])
-        ]) | `202`
+        ]) | `201`
       ] = js.undefined
     
     var blockOverflow: js.UndefOr[
@@ -11594,7 +11592,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BlockOverflow | js.Array[NonNullable[js.UndefOr[BlockOverflow]]]], 
             String
           ]) | NonNullable[js.UndefOr[BlockOverflow]]
-        ]) | `520`
+        ]) | `519`
       ] = js.undefined
     
     var blockSize: js.UndefOr[
@@ -11605,7 +11603,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BlockSize[Double | String]]])
-        ]) | `75`
+        ]) | `74`
       ] = js.undefined
     
     var border: js.UndefOr[
@@ -11616,7 +11614,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Border[Double | String]]])
-        ]) | `128`
+        ]) | `127`
       ] = js.undefined
     
     var borderBlock: js.UndefOr[
@@ -11627,7 +11625,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBlock[Double | String]]])
-        ]) | `306`
+        ]) | `305`
       ] = js.undefined
     
     var borderBlockColor: js.UndefOr[
@@ -11636,7 +11634,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderBlockColor | js.Array[NonNullable[js.UndefOr[BorderBlockColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderBlockColor]]
-        ]) | `489`
+        ]) | `488`
       ] = js.undefined
     
     var borderBlockEnd: js.UndefOr[
@@ -11647,7 +11645,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBlockEnd[Double | String]]])
-        ]) | `544`
+        ]) | `543`
       ] = js.undefined
     
     var borderBlockEndColor: js.UndefOr[
@@ -11656,7 +11654,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderBlockEndColor | js.Array[NonNullable[js.UndefOr[BorderBlockEndColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderBlockEndColor]]
-        ]) | `355`
+        ]) | `354`
       ] = js.undefined
     
     var borderBlockEndStyle: js.UndefOr[
@@ -11665,7 +11663,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderBlockEndStyle | js.Array[NonNullable[js.UndefOr[BorderBlockEndStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderBlockEndStyle]]
-        ]) | `413`
+        ]) | `412`
       ] = js.undefined
     
     var borderBlockEndWidth: js.UndefOr[
@@ -11676,7 +11674,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBlockEndWidth[Double | String]]])
-        ]) | `370`
+        ]) | `369`
       ] = js.undefined
     
     var borderBlockStart: js.UndefOr[
@@ -11687,7 +11685,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBlockStart[Double | String]]])
-        ]) | `528`
+        ]) | `527`
       ] = js.undefined
     
     var borderBlockStartColor: js.UndefOr[
@@ -11696,7 +11694,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderBlockStartColor | js.Array[NonNullable[js.UndefOr[BorderBlockStartColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderBlockStartColor]]
-        ]) | `96`
+        ]) | `95`
       ] = js.undefined
     
     var borderBlockStartStyle: js.UndefOr[
@@ -11705,7 +11703,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderBlockStartStyle | js.Array[NonNullable[js.UndefOr[BorderBlockStartStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderBlockStartStyle]]
-        ]) | `204`
+        ]) | `203`
       ] = js.undefined
     
     var borderBlockStartWidth: js.UndefOr[
@@ -11716,7 +11714,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBlockStartWidth[Double | String]]])
-        ]) | `283`
+        ]) | `282`
       ] = js.undefined
     
     var borderBlockStyle: js.UndefOr[
@@ -11725,7 +11723,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderBlockStyle | js.Array[NonNullable[js.UndefOr[BorderBlockStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderBlockStyle]]
-        ]) | `237`
+        ]) | `236`
       ] = js.undefined
     
     var borderBlockWidth: js.UndefOr[
@@ -11736,7 +11734,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBlockWidth[Double | String]]])
-        ]) | `312`
+        ]) | `311`
       ] = js.undefined
     
     var borderBottom: js.UndefOr[
@@ -11747,7 +11745,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBottom[Double | String]]])
-        ]) | `230`
+        ]) | `229`
       ] = js.undefined
     
     var borderBottomColor: js.UndefOr[
@@ -11756,7 +11754,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderBottomColor | js.Array[NonNullable[js.UndefOr[BorderBottomColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderBottomColor]]
-        ]) | `534`
+        ]) | `533`
       ] = js.undefined
     
     var borderBottomLeftRadius: js.UndefOr[
@@ -11767,7 +11765,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBottomLeftRadius[Double | String]]])
-        ]) | `103`
+        ]) | `102`
       ] = js.undefined
     
     var borderBottomRightRadius: js.UndefOr[
@@ -11778,7 +11776,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBottomRightRadius[Double | String]]])
-        ]) | `136`
+        ]) | `135`
       ] = js.undefined
     
     var borderBottomStyle: js.UndefOr[
@@ -11787,7 +11785,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderBottomStyle | js.Array[NonNullable[js.UndefOr[BorderBottomStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderBottomStyle]]
-        ]) | `187`
+        ]) | `186`
       ] = js.undefined
     
     var borderBottomWidth: js.UndefOr[
@@ -11798,7 +11796,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderBottomWidth[Double | String]]])
-        ]) | `141`
+        ]) | `140`
       ] = js.undefined
     
     var borderCollapse: js.UndefOr[
@@ -11807,13 +11805,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderCollapse | js.Array[NonNullable[js.UndefOr[BorderCollapse]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderCollapse]]
-        ]) | `201`
+        ]) | `200`
       ] = js.undefined
     
     var borderColor: js.UndefOr[
         BorderColor | (js.Array[
           (Extract[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]], String]) | NonNullable[js.UndefOr[BorderColor]]
-        ]) | `8`
+        ]) | `7`
       ] = js.undefined
     
     var borderEndEndRadius: js.UndefOr[
@@ -11824,7 +11822,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderEndEndRadius[Double | String]]])
-        ]) | `431`
+        ]) | `430`
       ] = js.undefined
     
     var borderEndStartRadius: js.UndefOr[
@@ -11835,13 +11833,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderEndStartRadius[Double | String]]])
-        ]) | `469`
+        ]) | `468`
       ] = js.undefined
     
     var borderImage: js.UndefOr[
         BorderImage | (js.Array[
           (Extract[js.UndefOr[BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]], String]) | NonNullable[js.UndefOr[BorderImage]]
-        ]) | `242`
+        ]) | `241`
       ] = js.undefined
     
     var borderImageOutset: js.UndefOr[
@@ -11852,7 +11850,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderImageOutset[Double | String]]])
-        ]) | `297`
+        ]) | `296`
       ] = js.undefined
     
     var borderImageRepeat: js.UndefOr[
@@ -11861,7 +11859,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderImageRepeat | js.Array[NonNullable[js.UndefOr[BorderImageRepeat]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderImageRepeat]]
-        ]) | `526`
+        ]) | `525`
       ] = js.undefined
     
     var borderImageSlice: js.UndefOr[
@@ -11870,7 +11868,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderImageSlice | js.Array[NonNullable[js.UndefOr[BorderImageSlice]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderImageSlice]]
-        ]) | `135`
+        ]) | `134`
       ] = js.undefined
     
     var borderImageSource: js.UndefOr[
@@ -11879,7 +11877,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderImageSource | js.Array[NonNullable[js.UndefOr[BorderImageSource]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderImageSource]]
-        ]) | `549`
+        ]) | `548`
       ] = js.undefined
     
     var borderImageWidth: js.UndefOr[
@@ -11890,7 +11888,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderImageWidth[Double | String]]])
-        ]) | `27`
+        ]) | `26`
       ] = js.undefined
     
     var borderInline: js.UndefOr[
@@ -11901,7 +11899,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderInline[Double | String]]])
-        ]) | `30`
+        ]) | `29`
       ] = js.undefined
     
     var borderInlineColor: js.UndefOr[
@@ -11910,7 +11908,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderInlineColor | js.Array[NonNullable[js.UndefOr[BorderInlineColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderInlineColor]]
-        ]) | `224`
+        ]) | `223`
       ] = js.undefined
     
     var borderInlineEnd: js.UndefOr[
@@ -11921,7 +11919,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderInlineEnd[Double | String]]])
-        ]) | `369`
+        ]) | `368`
       ] = js.undefined
     
     var borderInlineEndColor: js.UndefOr[
@@ -11930,7 +11928,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderInlineEndColor | js.Array[NonNullable[js.UndefOr[BorderInlineEndColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderInlineEndColor]]
-        ]) | `29`
+        ]) | `28`
       ] = js.undefined
     
     var borderInlineEndStyle: js.UndefOr[
@@ -11939,7 +11937,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderInlineEndStyle | js.Array[NonNullable[js.UndefOr[BorderInlineEndStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderInlineEndStyle]]
-        ]) | `37`
+        ]) | `36`
       ] = js.undefined
     
     var borderInlineEndWidth: js.UndefOr[
@@ -11950,7 +11948,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderInlineEndWidth[Double | String]]])
-        ]) | `3`
+        ]) | `2`
       ] = js.undefined
     
     var borderInlineStart: js.UndefOr[
@@ -11961,7 +11959,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderInlineStart[Double | String]]])
-        ]) | `426`
+        ]) | `425`
       ] = js.undefined
     
     var borderInlineStartColor: js.UndefOr[
@@ -11972,7 +11970,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[BorderInlineStartColor]]
-        ]) | `160`
+        ]) | `159`
       ] = js.undefined
     
     var borderInlineStartStyle: js.UndefOr[
@@ -11983,7 +11981,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[BorderInlineStartStyle]]
-        ]) | `395`
+        ]) | `394`
       ] = js.undefined
     
     var borderInlineStartWidth: js.UndefOr[
@@ -11994,7 +11992,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderInlineStartWidth[Double | String]]])
-        ]) | `94`
+        ]) | `93`
       ] = js.undefined
     
     var borderInlineStyle: js.UndefOr[
@@ -12003,7 +12001,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderInlineStyle | js.Array[NonNullable[js.UndefOr[BorderInlineStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderInlineStyle]]
-        ]) | `476`
+        ]) | `475`
       ] = js.undefined
     
     var borderInlineWidth: js.UndefOr[
@@ -12014,7 +12012,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderInlineWidth[Double | String]]])
-        ]) | `256`
+        ]) | `255`
       ] = js.undefined
     
     var borderLeft: js.UndefOr[
@@ -12025,7 +12023,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderLeft[Double | String]]])
-        ]) | `195`
+        ]) | `194`
       ] = js.undefined
     
     var borderLeftColor: js.UndefOr[
@@ -12034,7 +12032,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderLeftColor | js.Array[NonNullable[js.UndefOr[BorderLeftColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderLeftColor]]
-        ]) | `393`
+        ]) | `392`
       ] = js.undefined
     
     var borderLeftStyle: js.UndefOr[
@@ -12043,7 +12041,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderLeftStyle | js.Array[NonNullable[js.UndefOr[BorderLeftStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderLeftStyle]]
-        ]) | `80`
+        ]) | `79`
       ] = js.undefined
     
     var borderLeftWidth: js.UndefOr[
@@ -12054,7 +12052,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderLeftWidth[Double | String]]])
-        ]) | `263`
+        ]) | `262`
       ] = js.undefined
     
     var borderRadius: js.UndefOr[
@@ -12065,7 +12063,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderRadius[Double | String]]])
-        ]) | `400`
+        ]) | `399`
       ] = js.undefined
     
     var borderRight: js.UndefOr[
@@ -12076,7 +12074,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderRight[Double | String]]])
-        ]) | `350`
+        ]) | `349`
       ] = js.undefined
     
     var borderRightColor: js.UndefOr[
@@ -12085,7 +12083,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderRightColor | js.Array[NonNullable[js.UndefOr[BorderRightColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderRightColor]]
-        ]) | `166`
+        ]) | `165`
       ] = js.undefined
     
     var borderRightStyle: js.UndefOr[
@@ -12094,7 +12092,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderRightStyle | js.Array[NonNullable[js.UndefOr[BorderRightStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderRightStyle]]
-        ]) | `501`
+        ]) | `500`
       ] = js.undefined
     
     var borderRightWidth: js.UndefOr[
@@ -12105,7 +12103,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderRightWidth[Double | String]]])
-        ]) | `322`
+        ]) | `321`
       ] = js.undefined
     
     var borderSpacing: js.UndefOr[
@@ -12116,7 +12114,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderSpacing[Double | String]]])
-        ]) | `363`
+        ]) | `362`
       ] = js.undefined
     
     var borderStartEndRadius: js.UndefOr[
@@ -12127,7 +12125,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderStartEndRadius[Double | String]]])
-        ]) | `372`
+        ]) | `371`
       ] = js.undefined
     
     var borderStartStartRadius: js.UndefOr[
@@ -12138,13 +12136,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderStartStartRadius[Double | String]]])
-        ]) | `117`
+        ]) | `116`
       ] = js.undefined
     
     var borderStyle: js.UndefOr[
         BorderStyle | (js.Array[
           (Extract[js.UndefOr[BorderStyle | js.Array[NonNullable[js.UndefOr[BorderStyle]]]], String]) | NonNullable[js.UndefOr[BorderStyle]]
-        ]) | `184`
+        ]) | `183`
       ] = js.undefined
     
     var borderTop: js.UndefOr[
@@ -12155,7 +12153,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderTop[Double | String]]])
-        ]) | `478`
+        ]) | `477`
       ] = js.undefined
     
     var borderTopColor: js.UndefOr[
@@ -12164,7 +12162,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderTopColor | js.Array[NonNullable[js.UndefOr[BorderTopColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderTopColor]]
-        ]) | `337`
+        ]) | `336`
       ] = js.undefined
     
     var borderTopLeftRadius: js.UndefOr[
@@ -12175,7 +12173,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderTopLeftRadius[Double | String]]])
-        ]) | `221`
+        ]) | `220`
       ] = js.undefined
     
     var borderTopRightRadius: js.UndefOr[
@@ -12186,7 +12184,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderTopRightRadius[Double | String]]])
-        ]) | `77`
+        ]) | `76`
       ] = js.undefined
     
     var borderTopStyle: js.UndefOr[
@@ -12195,7 +12193,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BorderTopStyle | js.Array[NonNullable[js.UndefOr[BorderTopStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[BorderTopStyle]]
-        ]) | `553`
+        ]) | `552`
       ] = js.undefined
     
     var borderTopWidth: js.UndefOr[
@@ -12206,7 +12204,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderTopWidth[Double | String]]])
-        ]) | `38`
+        ]) | `37`
       ] = js.undefined
     
     var borderWidth: js.UndefOr[
@@ -12217,7 +12215,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[BorderWidth[Double | String]]])
-        ]) | `441`
+        ]) | `440`
       ] = js.undefined
     
     var bottom: js.UndefOr[
@@ -12228,13 +12226,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Bottom[Double | String]]])
-        ]) | `447`
+        ]) | `446`
       ] = js.undefined
     
     var boxAlign: js.UndefOr[
         BoxAlign | (js.Array[
           (Extract[js.UndefOr[BoxAlign | js.Array[NonNullable[js.UndefOr[BoxAlign]]]], String]) | NonNullable[js.UndefOr[BoxAlign]]
-        ]) | `83`
+        ]) | `82`
       ] = js.undefined
     
     var boxDecorationBreak: js.UndefOr[
@@ -12243,31 +12241,31 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BoxDecorationBreak | js.Array[NonNullable[js.UndefOr[BoxDecorationBreak]]]], 
             String
           ]) | NonNullable[js.UndefOr[BoxDecorationBreak]]
-        ]) | `158`
+        ]) | `157`
       ] = js.undefined
     
     var boxDirection: js.UndefOr[
         BoxDirection | (js.Array[
           (Extract[js.UndefOr[BoxDirection | js.Array[NonNullable[js.UndefOr[BoxDirection]]]], String]) | NonNullable[js.UndefOr[BoxDirection]]
-        ]) | `59`
+        ]) | `58`
       ] = js.undefined
     
     var boxFlex: js.UndefOr[
         BoxFlex | (js.Array[
           (Extract[js.UndefOr[BoxFlex | js.Array[NonNullable[js.UndefOr[BoxFlex]]]], String]) | NonNullable[js.UndefOr[BoxFlex]]
-        ]) | `140`
+        ]) | `139`
       ] = js.undefined
     
     var boxFlexGroup: js.UndefOr[
         BoxFlexGroup | (js.Array[
           (Extract[js.UndefOr[BoxFlexGroup | js.Array[NonNullable[js.UndefOr[BoxFlexGroup]]]], String]) | NonNullable[js.UndefOr[BoxFlexGroup]]
-        ]) | `152`
+        ]) | `151`
       ] = js.undefined
     
     var boxLines: js.UndefOr[
         BoxLines | (js.Array[
           (Extract[js.UndefOr[BoxLines | js.Array[NonNullable[js.UndefOr[BoxLines]]]], String]) | NonNullable[js.UndefOr[BoxLines]]
-        ]) | `199`
+        ]) | `198`
       ] = js.undefined
     
     var boxOrdinalGroup: js.UndefOr[
@@ -12276,103 +12274,103 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[BoxOrdinalGroup | js.Array[NonNullable[js.UndefOr[BoxOrdinalGroup]]]], 
             String
           ]) | NonNullable[js.UndefOr[BoxOrdinalGroup]]
-        ]) | `190`
+        ]) | `189`
       ] = js.undefined
     
     var boxOrient: js.UndefOr[
         BoxOrient | (js.Array[
           (Extract[js.UndefOr[BoxOrient | js.Array[NonNullable[js.UndefOr[BoxOrient]]]], String]) | NonNullable[js.UndefOr[BoxOrient]]
-        ]) | `22`
+        ]) | `21`
       ] = js.undefined
     
     var boxPack: js.UndefOr[
         BoxPack | (js.Array[
           (Extract[js.UndefOr[BoxPack | js.Array[NonNullable[js.UndefOr[BoxPack]]]], String]) | NonNullable[js.UndefOr[BoxPack]]
-        ]) | `119`
+        ]) | `118`
       ] = js.undefined
     
     var boxShadow: js.UndefOr[
         BoxShadow | (js.Array[
           (Extract[js.UndefOr[BoxShadow | js.Array[NonNullable[js.UndefOr[BoxShadow]]]], String]) | NonNullable[js.UndefOr[BoxShadow]]
-        ]) | `108`
+        ]) | `107`
       ] = js.undefined
     
     var boxSizing: js.UndefOr[
         BoxSizing | (js.Array[
           (Extract[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]], String]) | NonNullable[js.UndefOr[BoxSizing]]
-        ]) | `14`
+        ]) | `13`
       ] = js.undefined
     
     var breakAfter: js.UndefOr[
         BreakAfter | (js.Array[
           (Extract[js.UndefOr[BreakAfter | js.Array[NonNullable[js.UndefOr[BreakAfter]]]], String]) | NonNullable[js.UndefOr[BreakAfter]]
-        ]) | `429`
+        ]) | `428`
       ] = js.undefined
     
     var breakBefore: js.UndefOr[
         BreakBefore | (js.Array[
           (Extract[js.UndefOr[BreakBefore | js.Array[NonNullable[js.UndefOr[BreakBefore]]]], String]) | NonNullable[js.UndefOr[BreakBefore]]
-        ]) | `539`
+        ]) | `538`
       ] = js.undefined
     
     var breakInside: js.UndefOr[
         BreakInside | (js.Array[
           (Extract[js.UndefOr[BreakInside | js.Array[NonNullable[js.UndefOr[BreakInside]]]], String]) | NonNullable[js.UndefOr[BreakInside]]
-        ]) | `472`
+        ]) | `471`
       ] = js.undefined
     
     var captionSide: js.UndefOr[
         CaptionSide | (js.Array[
           (Extract[js.UndefOr[CaptionSide | js.Array[NonNullable[js.UndefOr[CaptionSide]]]], String]) | NonNullable[js.UndefOr[CaptionSide]]
-        ]) | `223`
+        ]) | `222`
       ] = js.undefined
     
     var caret: js.UndefOr[
         Caret | (js.Array[
           (Extract[js.UndefOr[Caret | js.Array[NonNullable[js.UndefOr[Caret]]]], String]) | NonNullable[js.UndefOr[Caret]]
-        ]) | `470`
+        ]) | `469`
       ] = js.undefined
     
     var caretColor: js.UndefOr[
         CaretColor | (js.Array[
           (Extract[js.UndefOr[CaretColor | js.Array[NonNullable[js.UndefOr[CaretColor]]]], String]) | NonNullable[js.UndefOr[CaretColor]]
-        ]) | `420`
+        ]) | `419`
       ] = js.undefined
     
     var caretShape: js.UndefOr[
         CaretShape | (js.Array[
           (Extract[js.UndefOr[CaretShape | js.Array[NonNullable[js.UndefOr[CaretShape]]]], String]) | NonNullable[js.UndefOr[CaretShape]]
-        ]) | `151`
+        ]) | `150`
       ] = js.undefined
     
     var clear: js.UndefOr[
         Clear | (js.Array[
           (Extract[js.UndefOr[Clear | js.Array[NonNullable[js.UndefOr[Clear]]]], String]) | NonNullable[js.UndefOr[Clear]]
-        ]) | `547`
+        ]) | `546`
       ] = js.undefined
     
     var clip: js.UndefOr[
         Clip | (js.Array[
           (Extract[js.UndefOr[Clip | js.Array[NonNullable[js.UndefOr[Clip]]]], String]) | NonNullable[js.UndefOr[Clip]]
-        ]) | `517`
+        ]) | `516`
       ] = js.undefined
     
     var clipPath: js.UndefOr[
         ClipPath | (js.Array[
           (Extract[js.UndefOr[ClipPath | js.Array[NonNullable[js.UndefOr[ClipPath]]]], String]) | NonNullable[js.UndefOr[ClipPath]]
-        ]) | `129`
+        ]) | `128`
       ] = js.undefined
     
     var clipRule: js.UndefOr[
         ClipRule | (js.Array[
           (Extract[js.UndefOr[ClipRule | js.Array[NonNullable[js.UndefOr[ClipRule]]]], String]) | NonNullable[js.UndefOr[ClipRule]]
-        ]) | `149`
+        ]) | `148`
       ] = js.undefined
     
     var color: js.UndefOr[
         Color | (js.Array[
           (Extract[js.UndefOr[Color | js.Array[NonNullable[js.UndefOr[Color]]]], String]) | NonNullable[js.UndefOr[Color]]
-        ]) | `118`
+        ]) | `117`
       ] = js.undefined
     
     var colorAdjust: js.UndefOr[
@@ -12381,7 +12379,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[PrintColorAdjust | js.Array[NonNullable[js.UndefOr[PrintColorAdjust]]]], 
             String
           ]) | NonNullable[js.UndefOr[PrintColorAdjust]]
-        ]) | `284`
+        ]) | `283`
       ] = js.undefined
     
     var colorInterpolation: js.UndefOr[
@@ -12390,7 +12388,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ColorInterpolation | js.Array[NonNullable[js.UndefOr[ColorInterpolation]]]], 
             String
           ]) | NonNullable[js.UndefOr[ColorInterpolation]]
-        ]) | `427`
+        ]) | `426`
       ] = js.undefined
     
     var colorRendering: js.UndefOr[
@@ -12399,25 +12397,25 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ColorRendering | js.Array[NonNullable[js.UndefOr[ColorRendering]]]], 
             String
           ]) | NonNullable[js.UndefOr[ColorRendering]]
-        ]) | `467`
+        ]) | `466`
       ] = js.undefined
     
     var colorScheme: js.UndefOr[
         ColorScheme | (js.Array[
           (Extract[js.UndefOr[ColorScheme | js.Array[NonNullable[js.UndefOr[ColorScheme]]]], String]) | NonNullable[js.UndefOr[ColorScheme]]
-        ]) | `498`
+        ]) | `497`
       ] = js.undefined
     
     var columnCount: js.UndefOr[
         ColumnCount | (js.Array[
           (Extract[js.UndefOr[ColumnCount | js.Array[NonNullable[js.UndefOr[ColumnCount]]]], String]) | NonNullable[js.UndefOr[ColumnCount]]
-        ]) | `357`
+        ]) | `356`
       ] = js.undefined
     
     var columnFill: js.UndefOr[
         ColumnFill | (js.Array[
           (Extract[js.UndefOr[ColumnFill | js.Array[NonNullable[js.UndefOr[ColumnFill]]]], String]) | NonNullable[js.UndefOr[ColumnFill]]
-        ]) | `274`
+        ]) | `273`
       ] = js.undefined
     
     var columnGap: js.UndefOr[
@@ -12428,7 +12426,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ColumnGap[Double | String]]])
-        ]) | `290`
+        ]) | `289`
       ] = js.undefined
     
     var columnRule: js.UndefOr[
@@ -12439,7 +12437,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ColumnRule[Double | String]]])
-        ]) | `260`
+        ]) | `259`
       ] = js.undefined
     
     var columnRuleColor: js.UndefOr[
@@ -12448,7 +12446,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ColumnRuleColor | js.Array[NonNullable[js.UndefOr[ColumnRuleColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[ColumnRuleColor]]
-        ]) | `153`
+        ]) | `152`
       ] = js.undefined
     
     var columnRuleStyle: js.UndefOr[
@@ -12457,7 +12455,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ColumnRuleStyle | js.Array[NonNullable[js.UndefOr[ColumnRuleStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[ColumnRuleStyle]]
-        ]) | `6`
+        ]) | `5`
       ] = js.undefined
     
     var columnRuleWidth: js.UndefOr[
@@ -12468,13 +12466,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ColumnRuleWidth[Double | String]]])
-        ]) | `95`
+        ]) | `94`
       ] = js.undefined
     
     var columnSpan: js.UndefOr[
         ColumnSpan | (js.Array[
           (Extract[js.UndefOr[ColumnSpan | js.Array[NonNullable[js.UndefOr[ColumnSpan]]]], String]) | NonNullable[js.UndefOr[ColumnSpan]]
-        ]) | `133`
+        ]) | `132`
       ] = js.undefined
     
     var columnWidth: js.UndefOr[
@@ -12485,7 +12483,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ColumnWidth[Double | String]]])
-        ]) | `220`
+        ]) | `219`
       ] = js.undefined
     
     var columns: js.UndefOr[
@@ -12496,13 +12494,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Columns[Double | String]]])
-        ]) | `98`
+        ]) | `97`
       ] = js.undefined
     
     var contain: js.UndefOr[
         Contain | (js.Array[
           (Extract[js.UndefOr[Contain | js.Array[NonNullable[js.UndefOr[Contain]]]], String]) | NonNullable[js.UndefOr[Contain]]
-        ]) | `455`
+        ]) | `454`
       ] = js.undefined
     
     var containIntrinsicBlockSize: js.UndefOr[
@@ -12513,7 +12511,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]])
-        ]) | `348`
+        ]) | `347`
       ] = js.undefined
     
     var containIntrinsicHeight: js.UndefOr[
@@ -12524,7 +12522,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ContainIntrinsicHeight[Double | String]]])
-        ]) | `406`
+        ]) | `405`
       ] = js.undefined
     
     var containIntrinsicInlineSize: js.UndefOr[
@@ -12535,7 +12533,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]])
-        ]) | `249`
+        ]) | `248`
       ] = js.undefined
     
     var containIntrinsicSize: js.UndefOr[
@@ -12546,7 +12544,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ContainIntrinsicSize[Double | String]]])
-        ]) | `414`
+        ]) | `413`
       ] = js.undefined
     
     var containIntrinsicWidth: js.UndefOr[
@@ -12557,13 +12555,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ContainIntrinsicWidth[Double | String]]])
-        ]) | `205`
+        ]) | `204`
       ] = js.undefined
     
     var container: js.UndefOr[
         Container | (js.Array[
           (Extract[js.UndefOr[Container | js.Array[NonNullable[js.UndefOr[Container]]]], String]) | NonNullable[js.UndefOr[Container]]
-        ]) | `106`
+        ]) | `105`
       ] = js.undefined
     
     var containerName: js.UndefOr[
@@ -12572,7 +12570,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ContainerName | js.Array[NonNullable[js.UndefOr[ContainerName]]]], 
             String
           ]) | NonNullable[js.UndefOr[ContainerName]]
-        ]) | `515`
+        ]) | `514`
       ] = js.undefined
     
     var containerType: js.UndefOr[
@@ -12581,13 +12579,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ContainerType | js.Array[NonNullable[js.UndefOr[ContainerType]]]], 
             String
           ]) | NonNullable[js.UndefOr[ContainerType]]
-        ]) | `462`
+        ]) | `461`
       ] = js.undefined
     
     var content: js.UndefOr[
         Content | (js.Array[
           (Extract[js.UndefOr[Content | js.Array[NonNullable[js.UndefOr[Content]]]], String]) | NonNullable[js.UndefOr[Content]]
-        ]) | `377`
+        ]) | `376`
       ] = js.undefined
     
     var contentVisibility: js.UndefOr[
@@ -12596,7 +12594,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ContentVisibility | js.Array[NonNullable[js.UndefOr[ContentVisibility]]]], 
             String
           ]) | NonNullable[js.UndefOr[ContentVisibility]]
-        ]) | `311`
+        ]) | `310`
       ] = js.undefined
     
     var counterIncrement: js.UndefOr[
@@ -12605,37 +12603,37 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[CounterIncrement | js.Array[NonNullable[js.UndefOr[CounterIncrement]]]], 
             String
           ]) | NonNullable[js.UndefOr[CounterIncrement]]
-        ]) | `105`
+        ]) | `104`
       ] = js.undefined
     
     var counterReset: js.UndefOr[
         CounterReset | (js.Array[
           (Extract[js.UndefOr[CounterReset | js.Array[NonNullable[js.UndefOr[CounterReset]]]], String]) | NonNullable[js.UndefOr[CounterReset]]
-        ]) | `305`
+        ]) | `304`
       ] = js.undefined
     
     var counterSet: js.UndefOr[
         CounterSet | (js.Array[
           (Extract[js.UndefOr[CounterSet | js.Array[NonNullable[js.UndefOr[CounterSet]]]], String]) | NonNullable[js.UndefOr[CounterSet]]
-        ]) | `146`
+        ]) | `145`
       ] = js.undefined
     
     var cursor: js.UndefOr[
         Cursor | (js.Array[
           (Extract[js.UndefOr[Cursor | js.Array[NonNullable[js.UndefOr[Cursor]]]], String]) | NonNullable[js.UndefOr[Cursor]]
-        ]) | `211`
+        ]) | `210`
       ] = js.undefined
     
     var direction: js.UndefOr[
         Direction | (js.Array[
           (Extract[js.UndefOr[Direction | js.Array[NonNullable[js.UndefOr[Direction]]]], String]) | NonNullable[js.UndefOr[Direction]]
-        ]) | `358`
+        ]) | `357`
       ] = js.undefined
     
     var display: js.UndefOr[
         Display | (js.Array[
           (Extract[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]], String]) | NonNullable[js.UndefOr[Display]]
-        ]) | `320`
+        ]) | `319`
       ] = js.undefined
     
     var dominantBaseline: js.UndefOr[
@@ -12644,37 +12642,37 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[DominantBaseline | js.Array[NonNullable[js.UndefOr[DominantBaseline]]]], 
             String
           ]) | NonNullable[js.UndefOr[DominantBaseline]]
-        ]) | `353`
+        ]) | `352`
       ] = js.undefined
     
     var emptyCells: js.UndefOr[
         EmptyCells | (js.Array[
           (Extract[js.UndefOr[EmptyCells | js.Array[NonNullable[js.UndefOr[EmptyCells]]]], String]) | NonNullable[js.UndefOr[EmptyCells]]
-        ]) | `341`
+        ]) | `340`
       ] = js.undefined
     
     var fill: js.UndefOr[
         Fill | (js.Array[
           (Extract[js.UndefOr[Fill | js.Array[NonNullable[js.UndefOr[Fill]]]], String]) | NonNullable[js.UndefOr[Fill]]
-        ]) | `104`
+        ]) | `103`
       ] = js.undefined
     
     var fillOpacity: js.UndefOr[
         FillOpacity | (js.Array[
           (Extract[js.UndefOr[FillOpacity | js.Array[NonNullable[js.UndefOr[FillOpacity]]]], String]) | NonNullable[js.UndefOr[FillOpacity]]
-        ]) | `24`
+        ]) | `23`
       ] = js.undefined
     
     var fillRule: js.UndefOr[
         FillRule | (js.Array[
           (Extract[js.UndefOr[FillRule | js.Array[NonNullable[js.UndefOr[FillRule]]]], String]) | NonNullable[js.UndefOr[FillRule]]
-        ]) | `450`
+        ]) | `449`
       ] = js.undefined
     
     var filter: js.UndefOr[
         Filter | (js.Array[
           (Extract[js.UndefOr[Filter | js.Array[NonNullable[js.UndefOr[Filter]]]], String]) | NonNullable[js.UndefOr[Filter]]
-        ]) | `397`
+        ]) | `396`
       ] = js.undefined
     
     var flex: js.UndefOr[
@@ -12685,7 +12683,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Flex[Double | String]]])
-        ]) | `310`
+        ]) | `309`
       ] = js.undefined
     
     var flexBasis: js.UndefOr[
@@ -12696,7 +12694,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[FlexBasis[Double | String]]])
-        ]) | `19`
+        ]) | `18`
       ] = js.undefined
     
     var flexDirection: js.UndefOr[
@@ -12705,61 +12703,61 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]], 
             String
           ]) | NonNullable[js.UndefOr[FlexDirection]]
-        ]) | `121`
+        ]) | `120`
       ] = js.undefined
     
     var flexFlow: js.UndefOr[
         FlexFlow | (js.Array[
           (Extract[js.UndefOr[FlexFlow | js.Array[NonNullable[js.UndefOr[FlexFlow]]]], String]) | NonNullable[js.UndefOr[FlexFlow]]
-        ]) | `167`
+        ]) | `166`
       ] = js.undefined
     
     var flexGrow: js.UndefOr[
         FlexGrow | (js.Array[
           (Extract[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]], String]) | NonNullable[js.UndefOr[FlexGrow]]
-        ]) | `97`
+        ]) | `96`
       ] = js.undefined
     
     var flexShrink: js.UndefOr[
         FlexShrink | (js.Array[
           (Extract[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]], String]) | NonNullable[js.UndefOr[FlexShrink]]
-        ]) | `198`
+        ]) | `197`
       ] = js.undefined
     
     var flexWrap: js.UndefOr[
         FlexWrap | (js.Array[
           (Extract[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]], String]) | NonNullable[js.UndefOr[FlexWrap]]
-        ]) | `15`
+        ]) | `14`
       ] = js.undefined
     
     var float: js.UndefOr[
         Float | (js.Array[
           (Extract[js.UndefOr[Float | js.Array[NonNullable[js.UndefOr[Float]]]], String]) | NonNullable[js.UndefOr[Float]]
-        ]) | `175`
+        ]) | `174`
       ] = js.undefined
     
     var floodColor: js.UndefOr[
         FloodColor | (js.Array[
           (Extract[js.UndefOr[FloodColor | js.Array[NonNullable[js.UndefOr[FloodColor]]]], String]) | NonNullable[js.UndefOr[FloodColor]]
-        ]) | `511`
+        ]) | `510`
       ] = js.undefined
     
     var floodOpacity: js.UndefOr[
         FloodOpacity | (js.Array[
           (Extract[js.UndefOr[FloodOpacity | js.Array[NonNullable[js.UndefOr[FloodOpacity]]]], String]) | NonNullable[js.UndefOr[FloodOpacity]]
-        ]) | `18`
+        ]) | `17`
       ] = js.undefined
     
     var font: js.UndefOr[
         Font | (js.Array[
           (Extract[js.UndefOr[Font | js.Array[NonNullable[js.UndefOr[Font]]]], String]) | NonNullable[js.UndefOr[Font]]
-        ]) | `330`
+        ]) | `329`
       ] = js.undefined
     
     var fontFamily: js.UndefOr[
         FontFamily | (js.Array[
           (Extract[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]], String]) | NonNullable[js.UndefOr[FontFamily]]
-        ]) | `558`
+        ]) | `557`
       ] = js.undefined
     
     var fontFeatureSettings: js.UndefOr[
@@ -12768,13 +12766,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontFeatureSettings | js.Array[NonNullable[js.UndefOr[FontFeatureSettings]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontFeatureSettings]]
-        ]) | `101`
+        ]) | `100`
       ] = js.undefined
     
     var fontKerning: js.UndefOr[
         FontKerning | (js.Array[
           (Extract[js.UndefOr[FontKerning | js.Array[NonNullable[js.UndefOr[FontKerning]]]], String]) | NonNullable[js.UndefOr[FontKerning]]
-        ]) | `179`
+        ]) | `178`
       ] = js.undefined
     
     var fontLanguageOverride: js.UndefOr[
@@ -12783,7 +12781,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontLanguageOverride | js.Array[NonNullable[js.UndefOr[FontLanguageOverride]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontLanguageOverride]]
-        ]) | `186`
+        ]) | `185`
       ] = js.undefined
     
     var fontOpticalSizing: js.UndefOr[
@@ -12792,13 +12790,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontOpticalSizing | js.Array[NonNullable[js.UndefOr[FontOpticalSizing]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontOpticalSizing]]
-        ]) | `317`
+        ]) | `316`
       ] = js.undefined
     
     var fontPalette: js.UndefOr[
         FontPalette | (js.Array[
           (Extract[js.UndefOr[FontPalette | js.Array[NonNullable[js.UndefOr[FontPalette]]]], String]) | NonNullable[js.UndefOr[FontPalette]]
-        ]) | `196`
+        ]) | `195`
       ] = js.undefined
     
     var fontSize: js.UndefOr[
@@ -12809,7 +12807,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[FontSize[Double | String]]])
-        ]) | `416`
+        ]) | `415`
       ] = js.undefined
     
     var fontSizeAdjust: js.UndefOr[
@@ -12818,7 +12816,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontSizeAdjust | js.Array[NonNullable[js.UndefOr[FontSizeAdjust]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontSizeAdjust]]
-        ]) | `32`
+        ]) | `31`
       ] = js.undefined
     
     var fontSmooth: js.UndefOr[
@@ -12829,19 +12827,19 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[FontSmooth[Double | String]]])
-        ]) | `229`
+        ]) | `228`
       ] = js.undefined
     
     var fontStretch: js.UndefOr[
         FontStretch | (js.Array[
           (Extract[js.UndefOr[FontStretch | js.Array[NonNullable[js.UndefOr[FontStretch]]]], String]) | NonNullable[js.UndefOr[FontStretch]]
-        ]) | `518`
+        ]) | `517`
       ] = js.undefined
     
     var fontStyle: js.UndefOr[
         FontStyle | (js.Array[
           (Extract[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]], String]) | NonNullable[js.UndefOr[FontStyle]]
-        ]) | `298`
+        ]) | `297`
       ] = js.undefined
     
     var fontSynthesis: js.UndefOr[
@@ -12850,13 +12848,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontSynthesis | js.Array[NonNullable[js.UndefOr[FontSynthesis]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontSynthesis]]
-        ]) | `259`
+        ]) | `258`
       ] = js.undefined
     
     var fontVariant: js.UndefOr[
         FontVariant | (js.Array[
           (Extract[js.UndefOr[FontVariant | js.Array[NonNullable[js.UndefOr[FontVariant]]]], String]) | NonNullable[js.UndefOr[FontVariant]]
-        ]) | `40`
+        ]) | `39`
       ] = js.undefined
     
     var fontVariantAlternates: js.UndefOr[
@@ -12865,7 +12863,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontVariantAlternates | js.Array[NonNullable[js.UndefOr[FontVariantAlternates]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontVariantAlternates]]
-        ]) | `423`
+        ]) | `422`
       ] = js.undefined
     
     var fontVariantCaps: js.UndefOr[
@@ -12874,7 +12872,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontVariantCaps | js.Array[NonNullable[js.UndefOr[FontVariantCaps]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontVariantCaps]]
-        ]) | `191`
+        ]) | `190`
       ] = js.undefined
     
     var fontVariantEastAsian: js.UndefOr[
@@ -12883,7 +12881,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontVariantEastAsian | js.Array[NonNullable[js.UndefOr[FontVariantEastAsian]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontVariantEastAsian]]
-        ]) | `63`
+        ]) | `62`
       ] = js.undefined
     
     var fontVariantEmoji: js.UndefOr[
@@ -12892,7 +12890,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontVariantEmoji | js.Array[NonNullable[js.UndefOr[FontVariantEmoji]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontVariantEmoji]]
-        ]) | `503`
+        ]) | `502`
       ] = js.undefined
     
     var fontVariantLigatures: js.UndefOr[
@@ -12901,7 +12899,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontVariantLigatures | js.Array[NonNullable[js.UndefOr[FontVariantLigatures]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontVariantLigatures]]
-        ]) | `79`
+        ]) | `78`
       ] = js.undefined
     
     var fontVariantNumeric: js.UndefOr[
@@ -12910,7 +12908,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontVariantNumeric | js.Array[NonNullable[js.UndefOr[FontVariantNumeric]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontVariantNumeric]]
-        ]) | `403`
+        ]) | `402`
       ] = js.undefined
     
     var fontVariantPosition: js.UndefOr[
@@ -12919,7 +12917,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontVariantPosition | js.Array[NonNullable[js.UndefOr[FontVariantPosition]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontVariantPosition]]
-        ]) | `388`
+        ]) | `387`
       ] = js.undefined
     
     var fontVariationSettings: js.UndefOr[
@@ -12928,13 +12926,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FontVariationSettings | js.Array[NonNullable[js.UndefOr[FontVariationSettings]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontVariationSettings]]
-        ]) | `532`
+        ]) | `531`
       ] = js.undefined
     
     var fontWeight: js.UndefOr[
         FontWeight | (js.Array[
           (Extract[js.UndefOr[FontWeight | js.Array[NonNullable[js.UndefOr[FontWeight]]]], String]) | NonNullable[js.UndefOr[FontWeight]]
-        ]) | `57`
+        ]) | `56`
       ] = js.undefined
     
     var forcedColorAdjust: js.UndefOr[
@@ -12943,7 +12941,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ForcedColorAdjust | js.Array[NonNullable[js.UndefOr[ForcedColorAdjust]]]], 
             String
           ]) | NonNullable[js.UndefOr[ForcedColorAdjust]]
-        ]) | `409`
+        ]) | `408`
       ] = js.undefined
     
     var gap: js.UndefOr[
@@ -12954,7 +12952,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Gap[Double | String]]])
-        ]) | `529`
+        ]) | `528`
       ] = js.undefined
     
     var glyphOrientationVertical: js.UndefOr[
@@ -12965,19 +12963,19 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[GlyphOrientationVertical]]
-        ]) | `321`
+        ]) | `320`
       ] = js.undefined
     
     var grid: js.UndefOr[
         Grid | (js.Array[
           (Extract[js.UndefOr[Grid | js.Array[NonNullable[js.UndefOr[Grid]]]], String]) | NonNullable[js.UndefOr[Grid]]
-        ]) | `505`
+        ]) | `504`
       ] = js.undefined
     
     var gridArea: js.UndefOr[
         GridArea | (js.Array[
           (Extract[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]], String]) | NonNullable[js.UndefOr[GridArea]]
-        ]) | `484`
+        ]) | `483`
       ] = js.undefined
     
     var gridAutoColumns: js.UndefOr[
@@ -12988,13 +12986,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[GridAutoColumns[Double | String]]])
-        ]) | `44`
+        ]) | `43`
       ] = js.undefined
     
     var gridAutoFlow: js.UndefOr[
         GridAutoFlow | (js.Array[
           (Extract[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]], String]) | NonNullable[js.UndefOr[GridAutoFlow]]
-        ]) | `46`
+        ]) | `45`
       ] = js.undefined
     
     var gridAutoRows: js.UndefOr[
@@ -13005,13 +13003,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[GridAutoRows[Double | String]]])
-        ]) | `538`
+        ]) | `537`
       ] = js.undefined
     
     var gridColumn: js.UndefOr[
         GridColumn | (js.Array[
           (Extract[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]], String]) | NonNullable[js.UndefOr[GridColumn]]
-        ]) | `394`
+        ]) | `393`
       ] = js.undefined
     
     var gridColumnEnd: js.UndefOr[
@@ -13020,7 +13018,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[GridColumnEnd | js.Array[NonNullable[js.UndefOr[GridColumnEnd]]]], 
             String
           ]) | NonNullable[js.UndefOr[GridColumnEnd]]
-        ]) | `492`
+        ]) | `491`
       ] = js.undefined
     
     var gridColumnGap: js.UndefOr[
@@ -13031,7 +13029,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[GridColumnGap[Double | String]]])
-        ]) | `74`
+        ]) | `73`
       ] = js.undefined
     
     var gridColumnStart: js.UndefOr[
@@ -13040,7 +13038,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[GridColumnStart | js.Array[NonNullable[js.UndefOr[GridColumnStart]]]], 
             String
           ]) | NonNullable[js.UndefOr[GridColumnStart]]
-        ]) | `408`
+        ]) | `407`
       ] = js.undefined
     
     var gridGap: js.UndefOr[
@@ -13051,19 +13049,19 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[GridGap[Double | String]]])
-        ]) | `525`
+        ]) | `524`
       ] = js.undefined
     
     var gridRow: js.UndefOr[
         GridRow | (js.Array[
           (Extract[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]], String]) | NonNullable[js.UndefOr[GridRow]]
-        ]) | `233`
+        ]) | `232`
       ] = js.undefined
     
     var gridRowEnd: js.UndefOr[
         GridRowEnd | (js.Array[
           (Extract[js.UndefOr[GridRowEnd | js.Array[NonNullable[js.UndefOr[GridRowEnd]]]], String]) | NonNullable[js.UndefOr[GridRowEnd]]
-        ]) | `552`
+        ]) | `551`
       ] = js.undefined
     
     var gridRowGap: js.UndefOr[
@@ -13074,19 +13072,19 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[GridRowGap[Double | String]]])
-        ]) | `440`
+        ]) | `439`
       ] = js.undefined
     
     var gridRowStart: js.UndefOr[
         GridRowStart | (js.Array[
           (Extract[js.UndefOr[GridRowStart | js.Array[NonNullable[js.UndefOr[GridRowStart]]]], String]) | NonNullable[js.UndefOr[GridRowStart]]
-        ]) | `490`
+        ]) | `489`
       ] = js.undefined
     
     var gridTemplate: js.UndefOr[
         GridTemplate | (js.Array[
           (Extract[js.UndefOr[GridTemplate | js.Array[NonNullable[js.UndefOr[GridTemplate]]]], String]) | NonNullable[js.UndefOr[GridTemplate]]
-        ]) | `10`
+        ]) | `9`
       ] = js.undefined
     
     var gridTemplateAreas: js.UndefOr[
@@ -13095,7 +13093,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]], 
             String
           ]) | NonNullable[js.UndefOr[GridTemplateAreas]]
-        ]) | `48`
+        ]) | `47`
       ] = js.undefined
     
     var gridTemplateColumns: js.UndefOr[
@@ -13106,7 +13104,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]])
-        ]) | `88`
+        ]) | `87`
       ] = js.undefined
     
     var gridTemplateRows: js.UndefOr[
@@ -13117,7 +13115,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[GridTemplateRows[Double | String]]])
-        ]) | `279`
+        ]) | `278`
       ] = js.undefined
     
     var hangingPunctuation: js.UndefOr[
@@ -13126,7 +13124,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[HangingPunctuation | js.Array[NonNullable[js.UndefOr[HangingPunctuation]]]], 
             String
           ]) | NonNullable[js.UndefOr[HangingPunctuation]]
-        ]) | `378`
+        ]) | `377`
       ] = js.undefined
     
     var height: js.UndefOr[
@@ -13137,7 +13135,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Height[Double | String]]])
-        ]) | `81`
+        ]) | `80`
       ] = js.undefined
     
     var hyphenateCharacter: js.UndefOr[
@@ -13146,7 +13144,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[HyphenateCharacter | js.Array[NonNullable[js.UndefOr[HyphenateCharacter]]]], 
             String
           ]) | NonNullable[js.UndefOr[HyphenateCharacter]]
-        ]) | `396`
+        ]) | `395`
       ] = js.undefined
     
     var hyphenateLimitChars: js.UndefOr[
@@ -13155,13 +13153,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[HyphenateLimitChars | js.Array[NonNullable[js.UndefOr[HyphenateLimitChars]]]], 
             String
           ]) | NonNullable[js.UndefOr[HyphenateLimitChars]]
-        ]) | `471`
+        ]) | `470`
       ] = js.undefined
     
     var hyphens: js.UndefOr[
         Hyphens | (js.Array[
           (Extract[js.UndefOr[Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]], String]) | NonNullable[js.UndefOr[Hyphens]]
-        ]) | `289`
+        ]) | `288`
       ] = js.undefined
     
     var imageOrientation: js.UndefOr[
@@ -13170,7 +13168,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ImageOrientation | js.Array[NonNullable[js.UndefOr[ImageOrientation]]]], 
             String
           ]) | NonNullable[js.UndefOr[ImageOrientation]]
-        ]) | SKIPCHECKValue
+        ]) | Value
       ] = js.undefined
     
     var imageRendering: js.UndefOr[
@@ -13179,7 +13177,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ImageRendering | js.Array[NonNullable[js.UndefOr[ImageRendering]]]], 
             String
           ]) | NonNullable[js.UndefOr[ImageRendering]]
-        ]) | `482`
+        ]) | `481`
       ] = js.undefined
     
     var imageResolution: js.UndefOr[
@@ -13188,13 +13186,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ImageResolution | js.Array[NonNullable[js.UndefOr[ImageResolution]]]], 
             String
           ]) | NonNullable[js.UndefOr[ImageResolution]]
-        ]) | `271`
+        ]) | `270`
       ] = js.undefined
     
     var imeMode: js.UndefOr[
         ImeMode | (js.Array[
           (Extract[js.UndefOr[ImeMode | js.Array[NonNullable[js.UndefOr[ImeMode]]]], String]) | NonNullable[js.UndefOr[ImeMode]]
-        ]) | `172`
+        ]) | `171`
       ] = js.undefined
     
     var initialLetter: js.UndefOr[
@@ -13203,7 +13201,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[InitialLetter | js.Array[NonNullable[js.UndefOr[InitialLetter]]]], 
             String
           ]) | NonNullable[js.UndefOr[InitialLetter]]
-        ]) | `176`
+        ]) | `175`
       ] = js.undefined
     
     var inlineSize: js.UndefOr[
@@ -13214,7 +13212,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[InlineSize[Double | String]]])
-        ]) | `504`
+        ]) | `503`
       ] = js.undefined
     
     var inputSecurity: js.UndefOr[
@@ -13223,7 +13221,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[InputSecurity | js.Array[NonNullable[js.UndefOr[InputSecurity]]]], 
             String
           ]) | NonNullable[js.UndefOr[InputSecurity]]
-        ]) | `415`
+        ]) | `414`
       ] = js.undefined
     
     var inset: js.UndefOr[
@@ -13234,7 +13232,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Inset[Double | String]]])
-        ]) | `548`
+        ]) | `547`
       ] = js.undefined
     
     var insetBlock: js.UndefOr[
@@ -13245,7 +13243,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[InsetBlock[Double | String]]])
-        ]) | `268`
+        ]) | `267`
       ] = js.undefined
     
     var insetBlockEnd: js.UndefOr[
@@ -13256,7 +13254,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[InsetBlockEnd[Double | String]]])
-        ]) | `157`
+        ]) | `156`
       ] = js.undefined
     
     var insetBlockStart: js.UndefOr[
@@ -13267,7 +13265,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[InsetBlockStart[Double | String]]])
-        ]) | `226`
+        ]) | `225`
       ] = js.undefined
     
     var insetInline: js.UndefOr[
@@ -13278,7 +13276,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[InsetInline[Double | String]]])
-        ]) | `217`
+        ]) | `216`
       ] = js.undefined
     
     var insetInlineEnd: js.UndefOr[
@@ -13289,7 +13287,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[InsetInlineEnd[Double | String]]])
-        ]) | `428`
+        ]) | `427`
       ] = js.undefined
     
     var insetInlineStart: js.UndefOr[
@@ -13300,13 +13298,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[InsetInlineStart[Double | String]]])
-        ]) | `275`
+        ]) | `274`
       ] = js.undefined
     
     var isolation: js.UndefOr[
         Isolation | (js.Array[
           (Extract[js.UndefOr[Isolation | js.Array[NonNullable[js.UndefOr[Isolation]]]], String]) | NonNullable[js.UndefOr[Isolation]]
-        ]) | `277`
+        ]) | `276`
       ] = js.undefined
     
     var justifyContent: js.UndefOr[
@@ -13315,19 +13313,19 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]], 
             String
           ]) | NonNullable[js.UndefOr[JustifyContent]]
-        ]) | `203`
+        ]) | `202`
       ] = js.undefined
     
     var justifyItems: js.UndefOr[
         JustifyItems | (js.Array[
           (Extract[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]], String]) | NonNullable[js.UndefOr[JustifyItems]]
-        ]) | `373`
+        ]) | `372`
       ] = js.undefined
     
     var justifySelf: js.UndefOr[
         JustifySelf | (js.Array[
           (Extract[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]], String]) | NonNullable[js.UndefOr[JustifySelf]]
-        ]) | `389`
+        ]) | `388`
       ] = js.undefined
     
     var justifyTracks: js.UndefOr[
@@ -13336,7 +13334,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[JustifyTracks | js.Array[NonNullable[js.UndefOr[JustifyTracks]]]], 
             String
           ]) | NonNullable[js.UndefOr[JustifyTracks]]
-        ]) | `342`
+        ]) | `341`
       ] = js.undefined
     
     var left: js.UndefOr[
@@ -13347,7 +13345,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Left[Double | String]]])
-        ]) | `442`
+        ]) | `441`
       ] = js.undefined
     
     var letterSpacing: js.UndefOr[
@@ -13358,7 +13356,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[LetterSpacing[Double | String]]])
-        ]) | `235`
+        ]) | `234`
       ] = js.undefined
     
     var lightingColor: js.UndefOr[
@@ -13367,19 +13365,19 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[LightingColor | js.Array[NonNullable[js.UndefOr[LightingColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[LightingColor]]
-        ]) | `163`
+        ]) | `162`
       ] = js.undefined
     
     var lineBreak: js.UndefOr[
         LineBreak | (js.Array[
           (Extract[js.UndefOr[LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]], String]) | NonNullable[js.UndefOr[LineBreak]]
-        ]) | `134`
+        ]) | `133`
       ] = js.undefined
     
     var lineClamp: js.UndefOr[
         LineClamp | (js.Array[
           (Extract[js.UndefOr[LineClamp | js.Array[NonNullable[js.UndefOr[LineClamp]]]], String]) | NonNullable[js.UndefOr[LineClamp]]
-        ]) | `486`
+        ]) | `485`
       ] = js.undefined
     
     var lineHeight: js.UndefOr[
@@ -13390,7 +13388,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[LineHeight[Double | String]]])
-        ]) | `62`
+        ]) | `61`
       ] = js.undefined
     
     var lineHeightStep: js.UndefOr[
@@ -13401,13 +13399,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[LineHeightStep[Double | String]]])
-        ]) | `301`
+        ]) | `300`
       ] = js.undefined
     
     var listStyle: js.UndefOr[
         ListStyle | (js.Array[
           (Extract[js.UndefOr[ListStyle | js.Array[NonNullable[js.UndefOr[ListStyle]]]], String]) | NonNullable[js.UndefOr[ListStyle]]
-        ]) | `332`
+        ]) | `331`
       ] = js.undefined
     
     var listStyleImage: js.UndefOr[
@@ -13416,7 +13414,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ListStyleImage | js.Array[NonNullable[js.UndefOr[ListStyleImage]]]], 
             String
           ]) | NonNullable[js.UndefOr[ListStyleImage]]
-        ]) | `236`
+        ]) | `235`
       ] = js.undefined
     
     var listStylePosition: js.UndefOr[
@@ -13425,7 +13423,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ListStylePosition | js.Array[NonNullable[js.UndefOr[ListStylePosition]]]], 
             String
           ]) | NonNullable[js.UndefOr[ListStylePosition]]
-        ]) | `351`
+        ]) | `350`
       ] = js.undefined
     
     var listStyleType: js.UndefOr[
@@ -13434,7 +13432,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ListStyleType | js.Array[NonNullable[js.UndefOr[ListStyleType]]]], 
             String
           ]) | NonNullable[js.UndefOr[ListStyleType]]
-        ]) | `433`
+        ]) | `432`
       ] = js.undefined
     
     var margin: js.UndefOr[
@@ -13445,7 +13443,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Margin[Double | String]]])
-        ]) | `313`
+        ]) | `312`
       ] = js.undefined
     
     var marginBlock: js.UndefOr[
@@ -13456,7 +13454,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginBlock[Double | String]]])
-        ]) | `507`
+        ]) | `506`
       ] = js.undefined
     
     var marginBlockEnd: js.UndefOr[
@@ -13467,7 +13465,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginBlockEnd[Double | String]]])
-        ]) | `110`
+        ]) | `109`
       ] = js.undefined
     
     var marginBlockStart: js.UndefOr[
@@ -13478,7 +13476,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginBlockStart[Double | String]]])
-        ]) | `376`
+        ]) | `375`
       ] = js.undefined
     
     var marginBottom: js.UndefOr[
@@ -13489,7 +13487,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginBottom[Double | String]]])
-        ]) | `444`
+        ]) | `443`
       ] = js.undefined
     
     var marginInline: js.UndefOr[
@@ -13500,7 +13498,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginInline[Double | String]]])
-        ]) | `477`
+        ]) | `476`
       ] = js.undefined
     
     var marginInlineEnd: js.UndefOr[
@@ -13511,7 +13509,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginInlineEnd[Double | String]]])
-        ]) | `5`
+        ]) | `4`
       ] = js.undefined
     
     var marginInlineStart: js.UndefOr[
@@ -13522,7 +13520,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginInlineStart[Double | String]]])
-        ]) | `240`
+        ]) | `239`
       ] = js.undefined
     
     var marginLeft: js.UndefOr[
@@ -13533,7 +13531,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginLeft[Double | String]]])
-        ]) | `483`
+        ]) | `482`
       ] = js.undefined
     
     var marginRight: js.UndefOr[
@@ -13544,7 +13542,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginRight[Double | String]]])
-        ]) | `147`
+        ]) | `146`
       ] = js.undefined
     
     var marginTop: js.UndefOr[
@@ -13555,37 +13553,37 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginTop[Double | String]]])
-        ]) | `340`
+        ]) | `339`
       ] = js.undefined
     
     var marginTrim: js.UndefOr[
         MarginTrim | (js.Array[
           (Extract[js.UndefOr[MarginTrim | js.Array[NonNullable[js.UndefOr[MarginTrim]]]], String]) | NonNullable[js.UndefOr[MarginTrim]]
-        ]) | `493`
+        ]) | `492`
       ] = js.undefined
     
     var marker: js.UndefOr[
         Marker | (js.Array[
           (Extract[js.UndefOr[Marker | js.Array[NonNullable[js.UndefOr[Marker]]]], String]) | NonNullable[js.UndefOr[Marker]]
-        ]) | `512`
+        ]) | `511`
       ] = js.undefined
     
     var markerEnd: js.UndefOr[
         MarkerEnd | (js.Array[
           (Extract[js.UndefOr[MarkerEnd | js.Array[NonNullable[js.UndefOr[MarkerEnd]]]], String]) | NonNullable[js.UndefOr[MarkerEnd]]
-        ]) | `434`
+        ]) | `433`
       ] = js.undefined
     
     var markerMid: js.UndefOr[
         MarkerMid | (js.Array[
           (Extract[js.UndefOr[MarkerMid | js.Array[NonNullable[js.UndefOr[MarkerMid]]]], String]) | NonNullable[js.UndefOr[MarkerMid]]
-        ]) | `487`
+        ]) | `486`
       ] = js.undefined
     
     var markerStart: js.UndefOr[
         MarkerStart | (js.Array[
           (Extract[js.UndefOr[MarkerStart | js.Array[NonNullable[js.UndefOr[MarkerStart]]]], String]) | NonNullable[js.UndefOr[MarkerStart]]
-        ]) | `554`
+        ]) | `553`
       ] = js.undefined
     
     var mask: js.UndefOr[
@@ -13596,13 +13594,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Mask[Double | String]]])
-        ]) | `250`
+        ]) | `249`
       ] = js.undefined
     
     var maskBorder: js.UndefOr[
         MaskBorder | (js.Array[
           (Extract[js.UndefOr[MaskBorder | js.Array[NonNullable[js.UndefOr[MaskBorder]]]], String]) | NonNullable[js.UndefOr[MaskBorder]]
-        ]) | SKIPCHECK
+        ]) | MULTIVALUE
       ] = js.undefined
     
     var maskBorderMode: js.UndefOr[
@@ -13611,7 +13609,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MaskBorderMode | js.Array[NonNullable[js.UndefOr[MaskBorderMode]]]], 
             String
           ]) | NonNullable[js.UndefOr[MaskBorderMode]]
-        ]) | `58`
+        ]) | `57`
       ] = js.undefined
     
     var maskBorderOutset: js.UndefOr[
@@ -13622,7 +13620,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MaskBorderOutset[Double | String]]])
-        ]) | `227`
+        ]) | `226`
       ] = js.undefined
     
     var maskBorderRepeat: js.UndefOr[
@@ -13631,7 +13629,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MaskBorderRepeat | js.Array[NonNullable[js.UndefOr[MaskBorderRepeat]]]], 
             String
           ]) | NonNullable[js.UndefOr[MaskBorderRepeat]]
-        ]) | `215`
+        ]) | `214`
       ] = js.undefined
     
     var maskBorderSlice: js.UndefOr[
@@ -13640,7 +13638,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MaskBorderSlice | js.Array[NonNullable[js.UndefOr[MaskBorderSlice]]]], 
             String
           ]) | NonNullable[js.UndefOr[MaskBorderSlice]]
-        ]) | `188`
+        ]) | `187`
       ] = js.undefined
     
     var maskBorderSource: js.UndefOr[
@@ -13649,7 +13647,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MaskBorderSource | js.Array[NonNullable[js.UndefOr[MaskBorderSource]]]], 
             String
           ]) | NonNullable[js.UndefOr[MaskBorderSource]]
-        ]) | `407`
+        ]) | `406`
       ] = js.undefined
     
     var maskBorderWidth: js.UndefOr[
@@ -13660,13 +13658,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MaskBorderWidth[Double | String]]])
-        ]) | `494`
+        ]) | `493`
       ] = js.undefined
     
     var maskClip: js.UndefOr[
         MaskClip | (js.Array[
           (Extract[js.UndefOr[MaskClip | js.Array[NonNullable[js.UndefOr[MaskClip]]]], String]) | NonNullable[js.UndefOr[MaskClip]]
-        ]) | `545`
+        ]) | `544`
       ] = js.undefined
     
     var maskComposite: js.UndefOr[
@@ -13675,25 +13673,25 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MaskComposite | js.Array[NonNullable[js.UndefOr[MaskComposite]]]], 
             String
           ]) | NonNullable[js.UndefOr[MaskComposite]]
-        ]) | `324`
+        ]) | `323`
       ] = js.undefined
     
     var maskImage: js.UndefOr[
         MaskImage | (js.Array[
           (Extract[js.UndefOr[MaskImage | js.Array[NonNullable[js.UndefOr[MaskImage]]]], String]) | NonNullable[js.UndefOr[MaskImage]]
-        ]) | `333`
+        ]) | `332`
       ] = js.undefined
     
     var maskMode: js.UndefOr[
         MaskMode | (js.Array[
           (Extract[js.UndefOr[MaskMode | js.Array[NonNullable[js.UndefOr[MaskMode]]]], String]) | NonNullable[js.UndefOr[MaskMode]]
-        ]) | `41`
+        ]) | `40`
       ] = js.undefined
     
     var maskOrigin: js.UndefOr[
         MaskOrigin | (js.Array[
           (Extract[js.UndefOr[MaskOrigin | js.Array[NonNullable[js.UndefOr[MaskOrigin]]]], String]) | NonNullable[js.UndefOr[MaskOrigin]]
-        ]) | `367`
+        ]) | `366`
       ] = js.undefined
     
     var maskPosition: js.UndefOr[
@@ -13704,13 +13702,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MaskPosition[Double | String]]])
-        ]) | `210`
+        ]) | `209`
       ] = js.undefined
     
     var maskRepeat: js.UndefOr[
         MaskRepeat | (js.Array[
           (Extract[js.UndefOr[MaskRepeat | js.Array[NonNullable[js.UndefOr[MaskRepeat]]]], String]) | NonNullable[js.UndefOr[MaskRepeat]]
-        ]) | `194`
+        ]) | `193`
       ] = js.undefined
     
     var maskSize: js.UndefOr[
@@ -13721,31 +13719,31 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MaskSize[Double | String]]])
-        ]) | `282`
+        ]) | `281`
       ] = js.undefined
     
     var maskType: js.UndefOr[
         MaskType | (js.Array[
           (Extract[js.UndefOr[MaskType | js.Array[NonNullable[js.UndefOr[MaskType]]]], String]) | NonNullable[js.UndefOr[MaskType]]
-        ]) | `183`
+        ]) | `182`
       ] = js.undefined
     
     var mathDepth: js.UndefOr[
         MathDepth | (js.Array[
           (Extract[js.UndefOr[MathDepth | js.Array[NonNullable[js.UndefOr[MathDepth]]]], String]) | NonNullable[js.UndefOr[MathDepth]]
-        ]) | `138`
+        ]) | `137`
       ] = js.undefined
     
     var mathShift: js.UndefOr[
         MathShift | (js.Array[
           (Extract[js.UndefOr[MathShift | js.Array[NonNullable[js.UndefOr[MathShift]]]], String]) | NonNullable[js.UndefOr[MathShift]]
-        ]) | `155`
+        ]) | `154`
       ] = js.undefined
     
     var mathStyle: js.UndefOr[
         MathStyle | (js.Array[
           (Extract[js.UndefOr[MathStyle | js.Array[NonNullable[js.UndefOr[MathStyle]]]], String]) | NonNullable[js.UndefOr[MathStyle]]
-        ]) | `485`
+        ]) | `484`
       ] = js.undefined
     
     var maxBlockSize: js.UndefOr[
@@ -13756,7 +13754,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MaxBlockSize[Double | String]]])
-        ]) | `156`
+        ]) | `155`
       ] = js.undefined
     
     var maxHeight: js.UndefOr[
@@ -13767,7 +13765,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MaxHeight[Double | String]]])
-        ]) | `338`
+        ]) | `337`
       ] = js.undefined
     
     var maxInlineSize: js.UndefOr[
@@ -13778,13 +13776,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MaxInlineSize[Double | String]]])
-        ]) | `69`
+        ]) | `68`
       ] = js.undefined
     
     var maxLines: js.UndefOr[
         MaxLines | (js.Array[
           (Extract[js.UndefOr[MaxLines | js.Array[NonNullable[js.UndefOr[MaxLines]]]], String]) | NonNullable[js.UndefOr[MaxLines]]
-        ]) | `7`
+        ]) | `6`
       ] = js.undefined
     
     var maxWidth: js.UndefOr[
@@ -13795,7 +13793,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MaxWidth[Double | String]]])
-        ]) | `273`
+        ]) | `272`
       ] = js.undefined
     
     var minBlockSize: js.UndefOr[
@@ -13806,7 +13804,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MinBlockSize[Double | String]]])
-        ]) | `390`
+        ]) | `389`
       ] = js.undefined
     
     var minHeight: js.UndefOr[
@@ -13817,7 +13815,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MinHeight[Double | String]]])
-        ]) | `264`
+        ]) | `263`
       ] = js.undefined
     
     var minInlineSize: js.UndefOr[
@@ -13828,7 +13826,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MinInlineSize[Double | String]]])
-        ]) | `239`
+        ]) | `238`
       ] = js.undefined
     
     var minWidth: js.UndefOr[
@@ -13839,13 +13837,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MinWidth[Double | String]]])
-        ]) | `481`
+        ]) | `480`
       ] = js.undefined
     
     var mixBlendMode: js.UndefOr[
         MixBlendMode | (js.Array[
           (Extract[js.UndefOr[MixBlendMode | js.Array[NonNullable[js.UndefOr[MixBlendMode]]]], String]) | NonNullable[js.UndefOr[MixBlendMode]]
-        ]) | `374`
+        ]) | `373`
       ] = js.undefined
     
     var motion: js.UndefOr[
@@ -13856,7 +13854,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Offset[Double | String]]])
-        ]) | `285`
+        ]) | `284`
       ] = js.undefined
     
     var motionDistance: js.UndefOr[
@@ -13867,19 +13865,19 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[OffsetDistance[Double | String]]])
-        ]) | `258`
+        ]) | `257`
       ] = js.undefined
     
     var motionPath: js.UndefOr[
         OffsetPath | (js.Array[
           (Extract[js.UndefOr[OffsetPath | js.Array[NonNullable[js.UndefOr[OffsetPath]]]], String]) | NonNullable[js.UndefOr[OffsetPath]]
-        ]) | `107`
+        ]) | `106`
       ] = js.undefined
     
     var motionRotation: js.UndefOr[
         OffsetRotate | (js.Array[
           (Extract[js.UndefOr[OffsetRotate | js.Array[NonNullable[js.UndefOr[OffsetRotate]]]], String]) | NonNullable[js.UndefOr[OffsetRotate]]
-        ]) | `86`
+        ]) | `85`
       ] = js.undefined
     
     var msAccelerator: js.UndefOr[
@@ -13888,7 +13886,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsAccelerator | js.Array[NonNullable[js.UndefOr[MsAccelerator]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsAccelerator]]
-        ]) | `67`
+        ]) | `66`
       ] = js.undefined
     
     var msBlockProgression: js.UndefOr[
@@ -13897,7 +13895,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsBlockProgression | js.Array[NonNullable[js.UndefOr[MsBlockProgression]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsBlockProgression]]
-        ]) | `401`
+        ]) | `400`
       ] = js.undefined
     
     var msContentZoomChaining: js.UndefOr[
@@ -13906,7 +13904,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsContentZoomChaining | js.Array[NonNullable[js.UndefOr[MsContentZoomChaining]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsContentZoomChaining]]
-        ]) | `360`
+        ]) | `359`
       ] = js.undefined
     
     var msContentZoomLimit: js.UndefOr[
@@ -13915,7 +13913,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsContentZoomLimit | js.Array[NonNullable[js.UndefOr[MsContentZoomLimit]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsContentZoomLimit]]
-        ]) | `309`
+        ]) | `308`
       ] = js.undefined
     
     var msContentZoomLimitMax: js.UndefOr[
@@ -13924,7 +13922,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsContentZoomLimitMax | js.Array[NonNullable[js.UndefOr[MsContentZoomLimitMax]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsContentZoomLimitMax]]
-        ]) | `89`
+        ]) | `88`
       ] = js.undefined
     
     var msContentZoomLimitMin: js.UndefOr[
@@ -13933,7 +13931,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsContentZoomLimitMin | js.Array[NonNullable[js.UndefOr[MsContentZoomLimitMin]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsContentZoomLimitMin]]
-        ]) | `356`
+        ]) | `355`
       ] = js.undefined
     
     var msContentZoomSnap: js.UndefOr[
@@ -13942,7 +13940,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsContentZoomSnap | js.Array[NonNullable[js.UndefOr[MsContentZoomSnap]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsContentZoomSnap]]
-        ]) | `287`
+        ]) | `286`
       ] = js.undefined
     
     var msContentZoomSnapPoints: js.UndefOr[
@@ -13953,7 +13951,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[MsContentZoomSnapPoints]]
-        ]) | `496`
+        ]) | `495`
       ] = js.undefined
     
     var msContentZoomSnapType: js.UndefOr[
@@ -13962,7 +13960,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsContentZoomSnapType | js.Array[NonNullable[js.UndefOr[MsContentZoomSnapType]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsContentZoomSnapType]]
-        ]) | `219`
+        ]) | `218`
       ] = js.undefined
     
     var msContentZooming: js.UndefOr[
@@ -13971,13 +13969,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsContentZooming | js.Array[NonNullable[js.UndefOr[MsContentZooming]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsContentZooming]]
-        ]) | `25`
+        ]) | `24`
       ] = js.undefined
     
     var msFilter: js.UndefOr[
         MsFilter | (js.Array[
           (Extract[js.UndefOr[MsFilter | js.Array[NonNullable[js.UndefOr[MsFilter]]]], String]) | NonNullable[js.UndefOr[MsFilter]]
-        ]) | `328`
+        ]) | `327`
       ] = js.undefined
     
     var msFlex: js.UndefOr[
@@ -13988,7 +13986,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Flex[Double | String]]])
-        ]) | `310`
+        ]) | `309`
       ] = js.undefined
     
     var msFlexDirection: js.UndefOr[
@@ -13997,25 +13995,25 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]], 
             String
           ]) | NonNullable[js.UndefOr[FlexDirection]]
-        ]) | `121`
+        ]) | `120`
       ] = js.undefined
     
     var msFlexPositive: js.UndefOr[
         FlexGrow | (js.Array[
           (Extract[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]], String]) | NonNullable[js.UndefOr[FlexGrow]]
-        ]) | `97`
+        ]) | `96`
       ] = js.undefined
     
     var msFlowFrom: js.UndefOr[
         MsFlowFrom | (js.Array[
           (Extract[js.UndefOr[MsFlowFrom | js.Array[NonNullable[js.UndefOr[MsFlowFrom]]]], String]) | NonNullable[js.UndefOr[MsFlowFrom]]
-        ]) | `531`
+        ]) | `530`
       ] = js.undefined
     
     var msFlowInto: js.UndefOr[
         MsFlowInto | (js.Array[
           (Extract[js.UndefOr[MsFlowInto | js.Array[NonNullable[js.UndefOr[MsFlowInto]]]], String]) | NonNullable[js.UndefOr[MsFlowInto]]
-        ]) | `192`
+        ]) | `191`
       ] = js.undefined
     
     var msGridColumns: js.UndefOr[
@@ -14026,7 +14024,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MsGridColumns[Double | String]]])
-        ]) | `150`
+        ]) | `149`
       ] = js.undefined
     
     var msGridRows: js.UndefOr[
@@ -14037,7 +14035,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MsGridRows[Double | String]]])
-        ]) | `551`
+        ]) | `550`
       ] = js.undefined
     
     var msHighContrastAdjust: js.UndefOr[
@@ -14046,7 +14044,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsHighContrastAdjust | js.Array[NonNullable[js.UndefOr[MsHighContrastAdjust]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsHighContrastAdjust]]
-        ]) | `54`
+        ]) | `53`
       ] = js.undefined
     
     var msHyphenateLimitChars: js.UndefOr[
@@ -14055,7 +14053,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsHyphenateLimitChars | js.Array[NonNullable[js.UndefOr[MsHyphenateLimitChars]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsHyphenateLimitChars]]
-        ]) | `124`
+        ]) | `123`
       ] = js.undefined
     
     var msHyphenateLimitLines: js.UndefOr[
@@ -14064,7 +14062,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsHyphenateLimitLines | js.Array[NonNullable[js.UndefOr[MsHyphenateLimitLines]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsHyphenateLimitLines]]
-        ]) | `299`
+        ]) | `298`
       ] = js.undefined
     
     var msHyphenateLimitZone: js.UndefOr[
@@ -14075,37 +14073,37 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MsHyphenateLimitZone[Double | String]]])
-        ]) | `145`
+        ]) | `144`
       ] = js.undefined
     
     var msHyphens: js.UndefOr[
         Hyphens | (js.Array[
           (Extract[js.UndefOr[Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]], String]) | NonNullable[js.UndefOr[Hyphens]]
-        ]) | `289`
+        ]) | `288`
       ] = js.undefined
     
     var msImeAlign: js.UndefOr[
         MsImeAlign | (js.Array[
           (Extract[js.UndefOr[MsImeAlign | js.Array[NonNullable[js.UndefOr[MsImeAlign]]]], String]) | NonNullable[js.UndefOr[MsImeAlign]]
-        ]) | `522`
+        ]) | `521`
       ] = js.undefined
     
     var msImeMode: js.UndefOr[
         ImeMode | (js.Array[
           (Extract[js.UndefOr[ImeMode | js.Array[NonNullable[js.UndefOr[ImeMode]]]], String]) | NonNullable[js.UndefOr[ImeMode]]
-        ]) | `172`
+        ]) | `171`
       ] = js.undefined
     
     var msLineBreak: js.UndefOr[
         LineBreak | (js.Array[
           (Extract[js.UndefOr[LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]], String]) | NonNullable[js.UndefOr[LineBreak]]
-        ]) | `134`
+        ]) | `133`
       ] = js.undefined
     
     var msOrder: js.UndefOr[
         Order | (js.Array[
           (Extract[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]], String]) | NonNullable[js.UndefOr[Order]]
-        ]) | `174`
+        ]) | `173`
       ] = js.undefined
     
     var msOverflowStyle: js.UndefOr[
@@ -14114,19 +14112,19 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsOverflowStyle | js.Array[NonNullable[js.UndefOr[MsOverflowStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsOverflowStyle]]
-        ]) | `411`
+        ]) | `410`
       ] = js.undefined
     
     var msOverflowX: js.UndefOr[
         OverflowX | (js.Array[
           (Extract[js.UndefOr[OverflowX | js.Array[NonNullable[js.UndefOr[OverflowX]]]], String]) | NonNullable[js.UndefOr[OverflowX]]
-        ]) | `276`
+        ]) | `275`
       ] = js.undefined
     
     var msOverflowY: js.UndefOr[
         OverflowY | (js.Array[
           (Extract[js.UndefOr[OverflowY | js.Array[NonNullable[js.UndefOr[OverflowY]]]], String]) | NonNullable[js.UndefOr[OverflowY]]
-        ]) | `144`
+        ]) | `143`
       ] = js.undefined
     
     var msScrollChaining: js.UndefOr[
@@ -14135,7 +14133,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsScrollChaining | js.Array[NonNullable[js.UndefOr[MsScrollChaining]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollChaining]]
-        ]) | `9`
+        ]) | `8`
       ] = js.undefined
     
     var msScrollLimit: js.UndefOr[
@@ -14144,7 +14142,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsScrollLimit | js.Array[NonNullable[js.UndefOr[MsScrollLimit]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollLimit]]
-        ]) | `31`
+        ]) | `30`
       ] = js.undefined
     
     var msScrollLimitXMax: js.UndefOr[
@@ -14155,7 +14153,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MsScrollLimitXMax[Double | String]]])
-        ]) | `402`
+        ]) | `401`
       ] = js.undefined
     
     var msScrollLimitXMin: js.UndefOr[
@@ -14166,7 +14164,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MsScrollLimitXMin[Double | String]]])
-        ]) | `452`
+        ]) | `451`
       ] = js.undefined
     
     var msScrollLimitYMax: js.UndefOr[
@@ -14177,7 +14175,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MsScrollLimitYMax[Double | String]]])
-        ]) | `448`
+        ]) | `447`
       ] = js.undefined
     
     var msScrollLimitYMin: js.UndefOr[
@@ -14188,7 +14186,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MsScrollLimitYMin[Double | String]]])
-        ]) | `502`
+        ]) | `501`
       ] = js.undefined
     
     var msScrollRails: js.UndefOr[
@@ -14197,7 +14195,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsScrollRails | js.Array[NonNullable[js.UndefOr[MsScrollRails]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollRails]]
-        ]) | `527`
+        ]) | `526`
       ] = js.undefined
     
     var msScrollSnapPointsX: js.UndefOr[
@@ -14206,7 +14204,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsScrollSnapPointsX | js.Array[NonNullable[js.UndefOr[MsScrollSnapPointsX]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollSnapPointsX]]
-        ]) | `148`
+        ]) | `147`
       ] = js.undefined
     
     var msScrollSnapPointsY: js.UndefOr[
@@ -14215,7 +14213,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsScrollSnapPointsY | js.Array[NonNullable[js.UndefOr[MsScrollSnapPointsY]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollSnapPointsY]]
-        ]) | `432`
+        ]) | `431`
       ] = js.undefined
     
     var msScrollSnapType: js.UndefOr[
@@ -14224,7 +14222,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsScrollSnapType | js.Array[NonNullable[js.UndefOr[MsScrollSnapType]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollSnapType]]
-        ]) | `182`
+        ]) | `181`
       ] = js.undefined
     
     var msScrollSnapX: js.UndefOr[
@@ -14233,7 +14231,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsScrollSnapX | js.Array[NonNullable[js.UndefOr[MsScrollSnapX]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollSnapX]]
-        ]) | `316`
+        ]) | `315`
       ] = js.undefined
     
     var msScrollSnapY: js.UndefOr[
@@ -14242,7 +14240,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsScrollSnapY | js.Array[NonNullable[js.UndefOr[MsScrollSnapY]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollSnapY]]
-        ]) | `243`
+        ]) | `242`
       ] = js.undefined
     
     var msScrollTranslation: js.UndefOr[
@@ -14251,7 +14249,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsScrollTranslation | js.Array[NonNullable[js.UndefOr[MsScrollTranslation]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollTranslation]]
-        ]) | `453`
+        ]) | `452`
       ] = js.undefined
     
     var msScrollbar3dlightColor: js.UndefOr[
@@ -14262,7 +14260,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollbar3dlightColor]]
-        ]) | `60`
+        ]) | `59`
       ] = js.undefined
     
     var msScrollbarArrowColor: js.UndefOr[
@@ -14271,7 +14269,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsScrollbarArrowColor | js.Array[NonNullable[js.UndefOr[MsScrollbarArrowColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollbarArrowColor]]
-        ]) | `302`
+        ]) | `301`
       ] = js.undefined
     
     var msScrollbarBaseColor: js.UndefOr[
@@ -14280,7 +14278,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsScrollbarBaseColor | js.Array[NonNullable[js.UndefOr[MsScrollbarBaseColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollbarBaseColor]]
-        ]) | `540`
+        ]) | `539`
       ] = js.undefined
     
     var msScrollbarDarkshadowColor: js.UndefOr[
@@ -14291,7 +14289,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollbarDarkshadowColor]]
-        ]) | `412`
+        ]) | `411`
       ] = js.undefined
     
     var msScrollbarFaceColor: js.UndefOr[
@@ -14300,7 +14298,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsScrollbarFaceColor | js.Array[NonNullable[js.UndefOr[MsScrollbarFaceColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollbarFaceColor]]
-        ]) | `537`
+        ]) | `536`
       ] = js.undefined
     
     var msScrollbarHighlightColor: js.UndefOr[
@@ -14311,7 +14309,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollbarHighlightColor]]
-        ]) | `438`
+        ]) | `437`
       ] = js.undefined
     
     var msScrollbarShadowColor: js.UndefOr[
@@ -14322,7 +14320,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollbarShadowColor]]
-        ]) | `252`
+        ]) | `251`
       ] = js.undefined
     
     var msScrollbarTrackColor: js.UndefOr[
@@ -14331,7 +14329,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsScrollbarTrackColor | js.Array[NonNullable[js.UndefOr[MsScrollbarTrackColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsScrollbarTrackColor]]
-        ]) | `4`
+        ]) | `3`
       ] = js.undefined
     
     var msTextAutospace: js.UndefOr[
@@ -14340,7 +14338,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsTextAutospace | js.Array[NonNullable[js.UndefOr[MsTextAutospace]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsTextAutospace]]
-        ]) | `165`
+        ]) | `164`
       ] = js.undefined
     
     var msTextCombineHorizontal: js.UndefOr[
@@ -14349,19 +14347,19 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextCombineUpright | js.Array[NonNullable[js.UndefOr[TextCombineUpright]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextCombineUpright]]
-        ]) | `20`
+        ]) | `19`
       ] = js.undefined
     
     var msTextOverflow: js.UndefOr[
         TextOverflow | (js.Array[
           (Extract[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]], String]) | NonNullable[js.UndefOr[TextOverflow]]
-        ]) | `112`
+        ]) | `111`
       ] = js.undefined
     
     var msTouchAction: js.UndefOr[
         TouchAction | (js.Array[
           (Extract[js.UndefOr[TouchAction | js.Array[NonNullable[js.UndefOr[TouchAction]]]], String]) | NonNullable[js.UndefOr[TouchAction]]
-        ]) | `177`
+        ]) | `176`
       ] = js.undefined
     
     var msTouchSelect: js.UndefOr[
@@ -14370,13 +14368,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsTouchSelect | js.Array[NonNullable[js.UndefOr[MsTouchSelect]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsTouchSelect]]
-        ]) | `535`
+        ]) | `534`
       ] = js.undefined
     
     var msTransform: js.UndefOr[
         Transform | (js.Array[
           (Extract[js.UndefOr[Transform | js.Array[NonNullable[js.UndefOr[Transform]]]], String]) | NonNullable[js.UndefOr[Transform]]
-        ]) | `125`
+        ]) | `124`
       ] = js.undefined
     
     var msTransformOrigin: js.UndefOr[
@@ -14387,7 +14385,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[TransformOrigin[Double | String]]])
-        ]) | `65`
+        ]) | `64`
       ] = js.undefined
     
     var msTransition: js.UndefOr[
@@ -14396,7 +14394,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[Transition[String] | js.Array[NonNullable[js.UndefOr[Transition[String]]]]], 
             String
           ]) | NonNullable[js.UndefOr[Transition[String]]]
-        ]) | `68`
+        ]) | `67`
       ] = js.undefined
     
     var msTransitionDelay: js.UndefOr[
@@ -14407,7 +14405,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionDelay[String]]]
-        ]) | `212`
+        ]) | `211`
       ] = js.undefined
     
     var msTransitionDuration: js.UndefOr[
@@ -14418,7 +14416,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionDuration[String]]]
-        ]) | `78`
+        ]) | `77`
       ] = js.undefined
     
     var msTransitionProperty: js.UndefOr[
@@ -14427,7 +14425,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]], 
             String
           ]) | NonNullable[js.UndefOr[TransitionProperty]]
-        ]) | `228`
+        ]) | `227`
       ] = js.undefined
     
     var msTransitionTimingFunction: js.UndefOr[
@@ -14438,25 +14436,25 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionTimingFunction]]
-        ]) | `272`
+        ]) | `271`
       ] = js.undefined
     
     var msUserSelect: js.UndefOr[
         MsUserSelect | (js.Array[
           (Extract[js.UndefOr[MsUserSelect | js.Array[NonNullable[js.UndefOr[MsUserSelect]]]], String]) | NonNullable[js.UndefOr[MsUserSelect]]
-        ]) | `296`
+        ]) | `295`
       ] = js.undefined
     
     var msWordBreak: js.UndefOr[
         WordBreak | (js.Array[
           (Extract[js.UndefOr[WordBreak | js.Array[NonNullable[js.UndefOr[WordBreak]]]], String]) | NonNullable[js.UndefOr[WordBreak]]
-        ]) | `90`
+        ]) | `89`
       ] = js.undefined
     
     var msWrapFlow: js.UndefOr[
         MsWrapFlow | (js.Array[
           (Extract[js.UndefOr[MsWrapFlow | js.Array[NonNullable[js.UndefOr[MsWrapFlow]]]], String]) | NonNullable[js.UndefOr[MsWrapFlow]]
-        ]) | `286`
+        ]) | `285`
       ] = js.undefined
     
     var msWrapMargin: js.UndefOr[
@@ -14467,7 +14465,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MsWrapMargin[Double | String]]])
-        ]) | `343`
+        ]) | `342`
       ] = js.undefined
     
     var msWrapThrough: js.UndefOr[
@@ -14476,19 +14474,19 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[MsWrapThrough | js.Array[NonNullable[js.UndefOr[MsWrapThrough]]]], 
             String
           ]) | NonNullable[js.UndefOr[MsWrapThrough]]
-        ]) | `270`
+        ]) | `269`
       ] = js.undefined
     
     var msWritingMode: js.UndefOr[
         WritingMode | (js.Array[
           (Extract[js.UndefOr[WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]], String]) | NonNullable[js.UndefOr[WritingMode]]
-        ]) | `181`
+        ]) | `180`
       ] = js.undefined
     
     var objectFit: js.UndefOr[
         ObjectFit | (js.Array[
           (Extract[js.UndefOr[ObjectFit | js.Array[NonNullable[js.UndefOr[ObjectFit]]]], String]) | NonNullable[js.UndefOr[ObjectFit]]
-        ]) | `339`
+        ]) | `338`
       ] = js.undefined
     
     var objectPosition: js.UndefOr[
@@ -14499,7 +14497,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ObjectPosition[Double | String]]])
-        ]) | `17`
+        ]) | `16`
       ] = js.undefined
     
     var offset: js.UndefOr[
@@ -14510,7 +14508,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Offset[Double | String]]])
-        ]) | `285`
+        ]) | `284`
       ] = js.undefined
     
     var offsetAnchor: js.UndefOr[
@@ -14521,7 +14519,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[OffsetAnchor[Double | String]]])
-        ]) | `12`
+        ]) | `11`
       ] = js.undefined
     
     var offsetBlock: js.UndefOr[
@@ -14532,7 +14530,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[InsetBlock[Double | String]]])
-        ]) | `268`
+        ]) | `267`
       ] = js.undefined
     
     var offsetBlockEnd: js.UndefOr[
@@ -14543,7 +14541,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[InsetBlockEnd[Double | String]]])
-        ]) | `157`
+        ]) | `156`
       ] = js.undefined
     
     var offsetBlockStart: js.UndefOr[
@@ -14554,7 +14552,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[InsetBlockStart[Double | String]]])
-        ]) | `226`
+        ]) | `225`
       ] = js.undefined
     
     var offsetDistance: js.UndefOr[
@@ -14565,7 +14563,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[OffsetDistance[Double | String]]])
-        ]) | `258`
+        ]) | `257`
       ] = js.undefined
     
     var offsetInline: js.UndefOr[
@@ -14576,7 +14574,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[InsetInline[Double | String]]])
-        ]) | `217`
+        ]) | `216`
       ] = js.undefined
     
     var offsetInlineEnd: js.UndefOr[
@@ -14587,7 +14585,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[InsetInlineEnd[Double | String]]])
-        ]) | `428`
+        ]) | `427`
       ] = js.undefined
     
     var offsetInlineStart: js.UndefOr[
@@ -14598,13 +14596,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[InsetInlineStart[Double | String]]])
-        ]) | `275`
+        ]) | `274`
       ] = js.undefined
     
     var offsetPath: js.UndefOr[
         OffsetPath | (js.Array[
           (Extract[js.UndefOr[OffsetPath | js.Array[NonNullable[js.UndefOr[OffsetPath]]]], String]) | NonNullable[js.UndefOr[OffsetPath]]
-        ]) | `107`
+        ]) | `106`
       ] = js.undefined
     
     var offsetPosition: js.UndefOr[
@@ -14615,37 +14613,37 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[OffsetPosition[Double | String]]])
-        ]) | `251`
+        ]) | `250`
       ] = js.undefined
     
     var offsetRotate: js.UndefOr[
         OffsetRotate | (js.Array[
           (Extract[js.UndefOr[OffsetRotate | js.Array[NonNullable[js.UndefOr[OffsetRotate]]]], String]) | NonNullable[js.UndefOr[OffsetRotate]]
-        ]) | `86`
+        ]) | `85`
       ] = js.undefined
     
     var offsetRotation: js.UndefOr[
         OffsetRotate | (js.Array[
           (Extract[js.UndefOr[OffsetRotate | js.Array[NonNullable[js.UndefOr[OffsetRotate]]]], String]) | NonNullable[js.UndefOr[OffsetRotate]]
-        ]) | `86`
+        ]) | `85`
       ] = js.undefined
     
     var opacity: js.UndefOr[
         Opacity | (js.Array[
           (Extract[js.UndefOr[Opacity | js.Array[NonNullable[js.UndefOr[Opacity]]]], String]) | NonNullable[js.UndefOr[Opacity]]
-        ]) | `248`
+        ]) | `247`
       ] = js.undefined
     
     var order: js.UndefOr[
         Order | (js.Array[
           (Extract[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]], String]) | NonNullable[js.UndefOr[Order]]
-        ]) | `174`
+        ]) | `173`
       ] = js.undefined
     
     var orphans: js.UndefOr[
         Orphans | (js.Array[
           (Extract[js.UndefOr[Orphans | js.Array[NonNullable[js.UndefOr[Orphans]]]], String]) | NonNullable[js.UndefOr[Orphans]]
-        ]) | `541`
+        ]) | `540`
       ] = js.undefined
     
     var outline: js.UndefOr[
@@ -14656,13 +14654,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Outline[Double | String]]])
-        ]) | `331`
+        ]) | `330`
       ] = js.undefined
     
     var outlineColor: js.UndefOr[
         OutlineColor | (js.Array[
           (Extract[js.UndefOr[OutlineColor | js.Array[NonNullable[js.UndefOr[OutlineColor]]]], String]) | NonNullable[js.UndefOr[OutlineColor]]
-        ]) | `222`
+        ]) | `221`
       ] = js.undefined
     
     var outlineOffset: js.UndefOr[
@@ -14673,13 +14671,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[OutlineOffset[Double | String]]])
-        ]) | `200`
+        ]) | `199`
       ] = js.undefined
     
     var outlineStyle: js.UndefOr[
         OutlineStyle | (js.Array[
           (Extract[js.UndefOr[OutlineStyle | js.Array[NonNullable[js.UndefOr[OutlineStyle]]]], String]) | NonNullable[js.UndefOr[OutlineStyle]]
-        ]) | `344`
+        ]) | `343`
       ] = js.undefined
     
     var outlineWidth: js.UndefOr[
@@ -14690,13 +14688,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[OutlineWidth[Double | String]]])
-        ]) | `162`
+        ]) | `161`
       ] = js.undefined
     
     var overflow: js.UndefOr[
         Overflow | (js.Array[
           (Extract[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]], String]) | NonNullable[js.UndefOr[Overflow]]
-        ]) | `399`
+        ]) | `398`
       ] = js.undefined
     
     var overflowAnchor: js.UndefOr[
@@ -14705,7 +14703,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[OverflowAnchor | js.Array[NonNullable[js.UndefOr[OverflowAnchor]]]], 
             String
           ]) | NonNullable[js.UndefOr[OverflowAnchor]]
-        ]) | `131`
+        ]) | `130`
       ] = js.undefined
     
     var overflowBlock: js.UndefOr[
@@ -14714,7 +14712,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[OverflowBlock | js.Array[NonNullable[js.UndefOr[OverflowBlock]]]], 
             String
           ]) | NonNullable[js.UndefOr[OverflowBlock]]
-        ]) | `421`
+        ]) | `420`
       ] = js.undefined
     
     var overflowClipBox: js.UndefOr[
@@ -14723,7 +14721,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[OverflowClipBox | js.Array[NonNullable[js.UndefOr[OverflowClipBox]]]], 
             String
           ]) | NonNullable[js.UndefOr[OverflowClipBox]]
-        ]) | `524`
+        ]) | `523`
       ] = js.undefined
     
     var overflowClipMargin: js.UndefOr[
@@ -14734,7 +14732,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[OverflowClipMargin[Double | String]]])
-        ]) | `325`
+        ]) | `324`
       ] = js.undefined
     
     var overflowInline: js.UndefOr[
@@ -14743,25 +14741,25 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[OverflowInline | js.Array[NonNullable[js.UndefOr[OverflowInline]]]], 
             String
           ]) | NonNullable[js.UndefOr[OverflowInline]]
-        ]) | `193`
+        ]) | `192`
       ] = js.undefined
     
     var overflowWrap: js.UndefOr[
         OverflowWrap | (js.Array[
           (Extract[js.UndefOr[OverflowWrap | js.Array[NonNullable[js.UndefOr[OverflowWrap]]]], String]) | NonNullable[js.UndefOr[OverflowWrap]]
-        ]) | `365`
+        ]) | `364`
       ] = js.undefined
     
     var overflowX: js.UndefOr[
         OverflowX | (js.Array[
           (Extract[js.UndefOr[OverflowX | js.Array[NonNullable[js.UndefOr[OverflowX]]]], String]) | NonNullable[js.UndefOr[OverflowX]]
-        ]) | `276`
+        ]) | `275`
       ] = js.undefined
     
     var overflowY: js.UndefOr[
         OverflowY | (js.Array[
           (Extract[js.UndefOr[OverflowY | js.Array[NonNullable[js.UndefOr[OverflowY]]]], String]) | NonNullable[js.UndefOr[OverflowY]]
-        ]) | `144`
+        ]) | `143`
       ] = js.undefined
     
     var overscrollBehavior: js.UndefOr[
@@ -14770,7 +14768,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[OverscrollBehavior | js.Array[NonNullable[js.UndefOr[OverscrollBehavior]]]], 
             String
           ]) | NonNullable[js.UndefOr[OverscrollBehavior]]
-        ]) | SKIPCHECKBooleanValue
+        ]) | SKIPCHECKValue
       ] = js.undefined
     
     var overscrollBehaviorBlock: js.UndefOr[
@@ -14781,7 +14779,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[OverscrollBehaviorBlock]]
-        ]) | `50`
+        ]) | `49`
       ] = js.undefined
     
     var overscrollBehaviorInline: js.UndefOr[
@@ -14792,7 +14790,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[OverscrollBehaviorInline]]
-        ]) | `132`
+        ]) | `131`
       ] = js.undefined
     
     var overscrollBehaviorX: js.UndefOr[
@@ -14801,7 +14799,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[OverscrollBehaviorX | js.Array[NonNullable[js.UndefOr[OverscrollBehaviorX]]]], 
             String
           ]) | NonNullable[js.UndefOr[OverscrollBehaviorX]]
-        ]) | `456`
+        ]) | `455`
       ] = js.undefined
     
     var overscrollBehaviorY: js.UndefOr[
@@ -14810,7 +14808,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[OverscrollBehaviorY | js.Array[NonNullable[js.UndefOr[OverscrollBehaviorY]]]], 
             String
           ]) | NonNullable[js.UndefOr[OverscrollBehaviorY]]
-        ]) | `73`
+        ]) | `72`
       ] = js.undefined
     
     var padding: js.UndefOr[
@@ -14821,7 +14819,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Padding[Double | String]]])
-        ]) | `334`
+        ]) | `333`
       ] = js.undefined
     
     var paddingBlock: js.UndefOr[
@@ -14832,7 +14830,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingBlock[Double | String]]])
-        ]) | `171`
+        ]) | `170`
       ] = js.undefined
     
     var paddingBlockEnd: js.UndefOr[
@@ -14843,7 +14841,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingBlockEnd[Double | String]]])
-        ]) | `546`
+        ]) | `545`
       ] = js.undefined
     
     var paddingBlockStart: js.UndefOr[
@@ -14854,7 +14852,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingBlockStart[Double | String]]])
-        ]) | `336`
+        ]) | `335`
       ] = js.undefined
     
     var paddingBottom: js.UndefOr[
@@ -14865,7 +14863,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingBottom[Double | String]]])
-        ]) | `410`
+        ]) | `409`
       ] = js.undefined
     
     var paddingInline: js.UndefOr[
@@ -14876,7 +14874,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingInline[Double | String]]])
-        ]) | `209`
+        ]) | `208`
       ] = js.undefined
     
     var paddingInlineEnd: js.UndefOr[
@@ -14887,7 +14885,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingInlineEnd[Double | String]]])
-        ]) | `185`
+        ]) | `184`
       ] = js.undefined
     
     var paddingInlineStart: js.UndefOr[
@@ -14898,7 +14896,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingInlineStart[Double | String]]])
-        ]) | `102`
+        ]) | `101`
       ] = js.undefined
     
     var paddingLeft: js.UndefOr[
@@ -14909,7 +14907,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingLeft[Double | String]]])
-        ]) | `550`
+        ]) | `549`
       ] = js.undefined
     
     var paddingRight: js.UndefOr[
@@ -14920,7 +14918,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingRight[Double | String]]])
-        ]) | `93`
+        ]) | `92`
       ] = js.undefined
     
     var paddingTop: js.UndefOr[
@@ -14931,13 +14929,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingTop[Double | String]]])
-        ]) | `417`
+        ]) | `416`
       ] = js.undefined
     
     var page: js.UndefOr[
         Page | (js.Array[
           (Extract[js.UndefOr[Page | js.Array[NonNullable[js.UndefOr[Page]]]], String]) | NonNullable[js.UndefOr[Page]]
-        ]) | `430`
+        ]) | `429`
       ] = js.undefined
     
     var pageBreakAfter: js.UndefOr[
@@ -14946,7 +14944,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[PageBreakAfter | js.Array[NonNullable[js.UndefOr[PageBreakAfter]]]], 
             String
           ]) | NonNullable[js.UndefOr[PageBreakAfter]]
-        ]) | `91`
+        ]) | `90`
       ] = js.undefined
     
     var pageBreakBefore: js.UndefOr[
@@ -14955,7 +14953,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[PageBreakBefore | js.Array[NonNullable[js.UndefOr[PageBreakBefore]]]], 
             String
           ]) | NonNullable[js.UndefOr[PageBreakBefore]]
-        ]) | `523`
+        ]) | `522`
       ] = js.undefined
     
     var pageBreakInside: js.UndefOr[
@@ -14964,13 +14962,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[PageBreakInside | js.Array[NonNullable[js.UndefOr[PageBreakInside]]]], 
             String
           ]) | NonNullable[js.UndefOr[PageBreakInside]]
-        ]) | `143`
+        ]) | `142`
       ] = js.undefined
     
     var paintOrder: js.UndefOr[
         PaintOrder | (js.Array[
           (Extract[js.UndefOr[PaintOrder | js.Array[NonNullable[js.UndefOr[PaintOrder]]]], String]) | NonNullable[js.UndefOr[PaintOrder]]
-        ]) | `123`
+        ]) | `122`
       ] = js.undefined
     
     var perspective: js.UndefOr[
@@ -14981,7 +14979,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Perspective[Double | String]]])
-        ]) | `294`
+        ]) | `293`
       ] = js.undefined
     
     var perspectiveOrigin: js.UndefOr[
@@ -14992,25 +14990,25 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PerspectiveOrigin[Double | String]]])
-        ]) | `213`
+        ]) | `212`
       ] = js.undefined
     
     var placeContent: js.UndefOr[
         PlaceContent | (js.Array[
           (Extract[js.UndefOr[PlaceContent | js.Array[NonNullable[js.UndefOr[PlaceContent]]]], String]) | NonNullable[js.UndefOr[PlaceContent]]
-        ]) | `446`
+        ]) | `445`
       ] = js.undefined
     
     var placeItems: js.UndefOr[
         PlaceItems | (js.Array[
           (Extract[js.UndefOr[PlaceItems | js.Array[NonNullable[js.UndefOr[PlaceItems]]]], String]) | NonNullable[js.UndefOr[PlaceItems]]
-        ]) | `392`
+        ]) | `391`
       ] = js.undefined
     
     var placeSelf: js.UndefOr[
         PlaceSelf | (js.Array[
           (Extract[js.UndefOr[PlaceSelf | js.Array[NonNullable[js.UndefOr[PlaceSelf]]]], String]) | NonNullable[js.UndefOr[PlaceSelf]]
-        ]) | `497`
+        ]) | `496`
       ] = js.undefined
     
     var pointerEvents: js.UndefOr[
@@ -15019,13 +15017,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[PointerEvents | js.Array[NonNullable[js.UndefOr[PointerEvents]]]], 
             String
           ]) | NonNullable[js.UndefOr[PointerEvents]]
-        ]) | `262`
+        ]) | `261`
       ] = js.undefined
     
     var position: js.UndefOr[
         Position | (js.Array[
           (Extract[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]], String]) | NonNullable[js.UndefOr[Position]]
-        ]) | `269`
+        ]) | `268`
       ] = js.undefined
     
     var printColorAdjust: js.UndefOr[
@@ -15034,19 +15032,19 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[PrintColorAdjust | js.Array[NonNullable[js.UndefOr[PrintColorAdjust]]]], 
             String
           ]) | NonNullable[js.UndefOr[PrintColorAdjust]]
-        ]) | `284`
+        ]) | `283`
       ] = js.undefined
     
     var quotes: js.UndefOr[
         Quotes | (js.Array[
           (Extract[js.UndefOr[Quotes | js.Array[NonNullable[js.UndefOr[Quotes]]]], String]) | NonNullable[js.UndefOr[Quotes]]
-        ]) | `288`
+        ]) | `287`
       ] = js.undefined
     
     var resize: js.UndefOr[
         Resize | (js.Array[
           (Extract[js.UndefOr[Resize | js.Array[NonNullable[js.UndefOr[Resize]]]], String]) | NonNullable[js.UndefOr[Resize]]
-        ]) | `245`
+        ]) | `244`
       ] = js.undefined
     
     var right: js.UndefOr[
@@ -15057,13 +15055,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Right[Double | String]]])
-        ]) | `315`
+        ]) | `314`
       ] = js.undefined
     
     var rotate: js.UndefOr[
         Rotate | (js.Array[
           (Extract[js.UndefOr[Rotate | js.Array[NonNullable[js.UndefOr[Rotate]]]], String]) | NonNullable[js.UndefOr[Rotate]]
-        ]) | `519`
+        ]) | `518`
       ] = js.undefined
     
     var rowGap: js.UndefOr[
@@ -15074,31 +15072,31 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[RowGap[Double | String]]])
-        ]) | `352`
+        ]) | `351`
       ] = js.undefined
     
     var rubyAlign: js.UndefOr[
         RubyAlign | (js.Array[
           (Extract[js.UndefOr[RubyAlign | js.Array[NonNullable[js.UndefOr[RubyAlign]]]], String]) | NonNullable[js.UndefOr[RubyAlign]]
-        ]) | `530`
+        ]) | `529`
       ] = js.undefined
     
     var rubyMerge: js.UndefOr[
         RubyMerge | (js.Array[
           (Extract[js.UndefOr[RubyMerge | js.Array[NonNullable[js.UndefOr[RubyMerge]]]], String]) | NonNullable[js.UndefOr[RubyMerge]]
-        ]) | `82`
+        ]) | `81`
       ] = js.undefined
     
     var rubyPosition: js.UndefOr[
         RubyPosition | (js.Array[
           (Extract[js.UndefOr[RubyPosition | js.Array[NonNullable[js.UndefOr[RubyPosition]]]], String]) | NonNullable[js.UndefOr[RubyPosition]]
-        ]) | `327`
+        ]) | `326`
       ] = js.undefined
     
     var scale: js.UndefOr[
         Scale | (js.Array[
           (Extract[js.UndefOr[Scale | js.Array[NonNullable[js.UndefOr[Scale]]]], String]) | NonNullable[js.UndefOr[Scale]]
-        ]) | `139`
+        ]) | `138`
       ] = js.undefined
     
     var scrollBehavior: js.UndefOr[
@@ -15107,7 +15105,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollBehavior | js.Array[NonNullable[js.UndefOr[ScrollBehavior]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollBehavior]]
-        ]) | `465`
+        ]) | `464`
       ] = js.undefined
     
     var scrollMargin: js.UndefOr[
@@ -15118,7 +15116,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMargin[Double | String]]])
-        ]) | `109`
+        ]) | `108`
       ] = js.undefined
     
     var scrollMarginBlock: js.UndefOr[
@@ -15129,7 +15127,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginBlock[Double | String]]])
-        ]) | `468`
+        ]) | `467`
       ] = js.undefined
     
     var scrollMarginBlockEnd: js.UndefOr[
@@ -15140,7 +15138,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginBlockEnd[Double | String]]])
-        ]) | `439`
+        ]) | `438`
       ] = js.undefined
     
     var scrollMarginBlockStart: js.UndefOr[
@@ -15151,7 +15149,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginBlockStart[Double | String]]])
-        ]) | `557`
+        ]) | `556`
       ] = js.undefined
     
     var scrollMarginBottom: js.UndefOr[
@@ -15162,7 +15160,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginBottom[Double | String]]])
-        ]) | `281`
+        ]) | `280`
       ] = js.undefined
     
     var scrollMarginInline: js.UndefOr[
@@ -15173,7 +15171,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginInline[Double | String]]])
-        ]) | `364`
+        ]) | `363`
       ] = js.undefined
     
     var scrollMarginInlineEnd: js.UndefOr[
@@ -15184,7 +15182,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginInlineEnd[Double | String]]])
-        ]) | `422`
+        ]) | `421`
       ] = js.undefined
     
     var scrollMarginInlineStart: js.UndefOr[
@@ -15195,7 +15193,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginInlineStart[Double | String]]])
-        ]) | `329`
+        ]) | `328`
       ] = js.undefined
     
     var scrollMarginLeft: js.UndefOr[
@@ -15206,7 +15204,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginLeft[Double | String]]])
-        ]) | `2`
+        ]) | `1`
       ] = js.undefined
     
     var scrollMarginRight: js.UndefOr[
@@ -15217,7 +15215,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginRight[Double | String]]])
-        ]) | `127`
+        ]) | `126`
       ] = js.undefined
     
     var scrollMarginTop: js.UndefOr[
@@ -15228,7 +15226,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginTop[Double | String]]])
-        ]) | `26`
+        ]) | `25`
       ] = js.undefined
     
     var scrollPadding: js.UndefOr[
@@ -15239,7 +15237,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollPadding[Double | String]]])
-        ]) | `375`
+        ]) | `374`
       ] = js.undefined
     
     var scrollPaddingBlock: js.UndefOr[
@@ -15250,7 +15248,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollPaddingBlock[Double | String]]])
-        ]) | `405`
+        ]) | `404`
       ] = js.undefined
     
     var scrollPaddingBlockEnd: js.UndefOr[
@@ -15261,7 +15259,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollPaddingBlockEnd[Double | String]]])
-        ]) | `443`
+        ]) | `442`
       ] = js.undefined
     
     var scrollPaddingBlockStart: js.UndefOr[
@@ -15272,7 +15270,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollPaddingBlockStart[Double | String]]])
-        ]) | `454`
+        ]) | `453`
       ] = js.undefined
     
     var scrollPaddingBottom: js.UndefOr[
@@ -15283,7 +15281,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollPaddingBottom[Double | String]]])
-        ]) | `173`
+        ]) | `172`
       ] = js.undefined
     
     var scrollPaddingInline: js.UndefOr[
@@ -15294,7 +15292,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollPaddingInline[Double | String]]])
-        ]) | `473`
+        ]) | `472`
       ] = js.undefined
     
     var scrollPaddingInlineEnd: js.UndefOr[
@@ -15305,7 +15303,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollPaddingInlineEnd[Double | String]]])
-        ]) | `380`
+        ]) | `379`
       ] = js.undefined
     
     var scrollPaddingInlineStart: js.UndefOr[
@@ -15316,7 +15314,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollPaddingInlineStart[Double | String]]])
-        ]) | `300`
+        ]) | `299`
       ] = js.undefined
     
     var scrollPaddingLeft: js.UndefOr[
@@ -15327,7 +15325,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollPaddingLeft[Double | String]]])
-        ]) | `247`
+        ]) | `246`
       ] = js.undefined
     
     var scrollPaddingRight: js.UndefOr[
@@ -15338,7 +15336,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollPaddingRight[Double | String]]])
-        ]) | `16`
+        ]) | `15`
       ] = js.undefined
     
     var scrollPaddingTop: js.UndefOr[
@@ -15349,7 +15347,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollPaddingTop[Double | String]]])
-        ]) | `445`
+        ]) | `444`
       ] = js.undefined
     
     var scrollSnapAlign: js.UndefOr[
@@ -15358,7 +15356,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollSnapAlign | js.Array[NonNullable[js.UndefOr[ScrollSnapAlign]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollSnapAlign]]
-        ]) | `474`
+        ]) | `473`
       ] = js.undefined
     
     var scrollSnapCoordinate: js.UndefOr[
@@ -15369,7 +15367,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollSnapCoordinate[Double | String]]])
-        ]) | `232`
+        ]) | `231`
       ] = js.undefined
     
     var scrollSnapDestination: js.UndefOr[
@@ -15380,7 +15378,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollSnapDestination[Double | String]]])
-        ]) | `170`
+        ]) | `169`
       ] = js.undefined
     
     var scrollSnapMargin: js.UndefOr[
@@ -15391,7 +15389,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMargin[Double | String]]])
-        ]) | `109`
+        ]) | `108`
       ] = js.undefined
     
     var scrollSnapMarginBottom: js.UndefOr[
@@ -15402,7 +15400,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginBottom[Double | String]]])
-        ]) | `281`
+        ]) | `280`
       ] = js.undefined
     
     var scrollSnapMarginLeft: js.UndefOr[
@@ -15413,7 +15411,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginLeft[Double | String]]])
-        ]) | `2`
+        ]) | `1`
       ] = js.undefined
     
     var scrollSnapMarginRight: js.UndefOr[
@@ -15424,7 +15422,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginRight[Double | String]]])
-        ]) | `127`
+        ]) | `126`
       ] = js.undefined
     
     var scrollSnapMarginTop: js.UndefOr[
@@ -15435,7 +15433,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ScrollMarginTop[Double | String]]])
-        ]) | `26`
+        ]) | `25`
       ] = js.undefined
     
     var scrollSnapPointsX: js.UndefOr[
@@ -15444,7 +15442,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollSnapPointsX | js.Array[NonNullable[js.UndefOr[ScrollSnapPointsX]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollSnapPointsX]]
-        ]) | `303`
+        ]) | `302`
       ] = js.undefined
     
     var scrollSnapPointsY: js.UndefOr[
@@ -15453,7 +15451,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollSnapPointsY | js.Array[NonNullable[js.UndefOr[ScrollSnapPointsY]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollSnapPointsY]]
-        ]) | `261`
+        ]) | `260`
       ] = js.undefined
     
     var scrollSnapStop: js.UndefOr[
@@ -15462,7 +15460,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollSnapStop | js.Array[NonNullable[js.UndefOr[ScrollSnapStop]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollSnapStop]]
-        ]) | `189`
+        ]) | `188`
       ] = js.undefined
     
     var scrollSnapType: js.UndefOr[
@@ -15471,7 +15469,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollSnapType | js.Array[NonNullable[js.UndefOr[ScrollSnapType]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollSnapType]]
-        ]) | `70`
+        ]) | `69`
       ] = js.undefined
     
     var scrollSnapTypeX: js.UndefOr[
@@ -15480,7 +15478,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollSnapTypeX | js.Array[NonNullable[js.UndefOr[ScrollSnapTypeX]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollSnapTypeX]]
-        ]) | `495`
+        ]) | `494`
       ] = js.undefined
     
     var scrollSnapTypeY: js.UndefOr[
@@ -15489,7 +15487,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollSnapTypeY | js.Array[NonNullable[js.UndefOr[ScrollSnapTypeY]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollSnapTypeY]]
-        ]) | `419`
+        ]) | `418`
       ] = js.undefined
     
     var scrollTimeline: js.UndefOr[
@@ -15498,7 +15496,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollTimeline | js.Array[NonNullable[js.UndefOr[ScrollTimeline]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollTimeline]]
-        ]) | `34`
+        ]) | `33`
       ] = js.undefined
     
     var scrollTimelineAxis: js.UndefOr[
@@ -15507,7 +15505,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollTimelineAxis | js.Array[NonNullable[js.UndefOr[ScrollTimelineAxis]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollTimelineAxis]]
-        ]) | `346`
+        ]) | `345`
       ] = js.undefined
     
     var scrollTimelineName: js.UndefOr[
@@ -15516,7 +15514,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollTimelineName | js.Array[NonNullable[js.UndefOr[ScrollTimelineName]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollTimelineName]]
-        ]) | `61`
+        ]) | `60`
       ] = js.undefined
     
     var scrollbarColor: js.UndefOr[
@@ -15525,7 +15523,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollbarColor | js.Array[NonNullable[js.UndefOr[ScrollbarColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollbarColor]]
-        ]) | `292`
+        ]) | `291`
       ] = js.undefined
     
     var scrollbarGutter: js.UndefOr[
@@ -15534,7 +15532,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollbarGutter | js.Array[NonNullable[js.UndefOr[ScrollbarGutter]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollbarGutter]]
-        ]) | `510`
+        ]) | `509`
       ] = js.undefined
     
     var scrollbarWidth: js.UndefOr[
@@ -15543,7 +15541,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ScrollbarWidth | js.Array[NonNullable[js.UndefOr[ScrollbarWidth]]]], 
             String
           ]) | NonNullable[js.UndefOr[ScrollbarWidth]]
-        ]) | `368`
+        ]) | `367`
       ] = js.undefined
     
     var shapeImageThreshold: js.UndefOr[
@@ -15552,7 +15550,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ShapeImageThreshold | js.Array[NonNullable[js.UndefOr[ShapeImageThreshold]]]], 
             String
           ]) | NonNullable[js.UndefOr[ShapeImageThreshold]]
-        ]) | `307`
+        ]) | `306`
       ] = js.undefined
     
     var shapeMargin: js.UndefOr[
@@ -15563,13 +15561,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[ShapeMargin[Double | String]]])
-        ]) | `100`
+        ]) | `99`
       ] = js.undefined
     
     var shapeOutside: js.UndefOr[
         ShapeOutside | (js.Array[
           (Extract[js.UndefOr[ShapeOutside | js.Array[NonNullable[js.UndefOr[ShapeOutside]]]], String]) | NonNullable[js.UndefOr[ShapeOutside]]
-        ]) | `382`
+        ]) | `381`
       ] = js.undefined
     
     var shapeRendering: js.UndefOr[
@@ -15578,25 +15576,25 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ShapeRendering | js.Array[NonNullable[js.UndefOr[ShapeRendering]]]], 
             String
           ]) | NonNullable[js.UndefOr[ShapeRendering]]
-        ]) | `33`
+        ]) | `32`
       ] = js.undefined
     
     var stopColor: js.UndefOr[
         StopColor | (js.Array[
           (Extract[js.UndefOr[StopColor | js.Array[NonNullable[js.UndefOr[StopColor]]]], String]) | NonNullable[js.UndefOr[StopColor]]
-        ]) | `457`
+        ]) | `456`
       ] = js.undefined
     
     var stopOpacity: js.UndefOr[
         StopOpacity | (js.Array[
           (Extract[js.UndefOr[StopOpacity | js.Array[NonNullable[js.UndefOr[StopOpacity]]]], String]) | NonNullable[js.UndefOr[StopOpacity]]
-        ]) | `436`
+        ]) | `435`
       ] = js.undefined
     
     var stroke: js.UndefOr[
         Stroke | (js.Array[
           (Extract[js.UndefOr[Stroke | js.Array[NonNullable[js.UndefOr[Stroke]]]], String]) | NonNullable[js.UndefOr[Stroke]]
-        ]) | `449`
+        ]) | `448`
       ] = js.undefined
     
     var strokeDasharray: js.UndefOr[
@@ -15607,7 +15605,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[StrokeDasharray[Double | String]]])
-        ]) | `514`
+        ]) | `513`
       ] = js.undefined
     
     var strokeDashoffset: js.UndefOr[
@@ -15618,7 +15616,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[StrokeDashoffset[Double | String]]])
-        ]) | `349`
+        ]) | `348`
       ] = js.undefined
     
     var strokeLinecap: js.UndefOr[
@@ -15627,7 +15625,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[StrokeLinecap | js.Array[NonNullable[js.UndefOr[StrokeLinecap]]]], 
             String
           ]) | NonNullable[js.UndefOr[StrokeLinecap]]
-        ]) | `246`
+        ]) | `245`
       ] = js.undefined
     
     var strokeLinejoin: js.UndefOr[
@@ -15636,7 +15634,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[StrokeLinejoin | js.Array[NonNullable[js.UndefOr[StrokeLinejoin]]]], 
             String
           ]) | NonNullable[js.UndefOr[StrokeLinejoin]]
-        ]) | `345`
+        ]) | `344`
       ] = js.undefined
     
     var strokeMiterlimit: js.UndefOr[
@@ -15645,7 +15643,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[StrokeMiterlimit | js.Array[NonNullable[js.UndefOr[StrokeMiterlimit]]]], 
             String
           ]) | NonNullable[js.UndefOr[StrokeMiterlimit]]
-        ]) | `52`
+        ]) | `51`
       ] = js.undefined
     
     var strokeOpacity: js.UndefOr[
@@ -15654,7 +15652,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[StrokeOpacity | js.Array[NonNullable[js.UndefOr[StrokeOpacity]]]], 
             String
           ]) | NonNullable[js.UndefOr[StrokeOpacity]]
-        ]) | `314`
+        ]) | `313`
       ] = js.undefined
     
     var strokeWidth: js.UndefOr[
@@ -15665,7 +15663,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[StrokeWidth[Double | String]]])
-        ]) | `323`
+        ]) | `322`
       ] = js.undefined
     
     var tabSize: js.UndefOr[
@@ -15676,19 +15674,19 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[TabSize[Double | String]]])
-        ]) | `169`
+        ]) | `168`
       ] = js.undefined
     
     var tableLayout: js.UndefOr[
         TableLayout | (js.Array[
           (Extract[js.UndefOr[TableLayout | js.Array[NonNullable[js.UndefOr[TableLayout]]]], String]) | NonNullable[js.UndefOr[TableLayout]]
-        ]) | `120`
+        ]) | `119`
       ] = js.undefined
     
     var textAlign: js.UndefOr[
         TextAlign | (js.Array[
           (Extract[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]], String]) | NonNullable[js.UndefOr[TextAlign]]
-        ]) | `43`
+        ]) | `42`
       ] = js.undefined
     
     var textAlignLast: js.UndefOr[
@@ -15697,13 +15695,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextAlignLast | js.Array[NonNullable[js.UndefOr[TextAlignLast]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextAlignLast]]
-        ]) | `267`
+        ]) | `266`
       ] = js.undefined
     
     var textAnchor: js.UndefOr[
         TextAnchor | (js.Array[
           (Extract[js.UndefOr[TextAnchor | js.Array[NonNullable[js.UndefOr[TextAnchor]]]], String]) | NonNullable[js.UndefOr[TextAnchor]]
-        ]) | `304`
+        ]) | `303`
       ] = js.undefined
     
     var textCombineUpright: js.UndefOr[
@@ -15712,7 +15710,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextCombineUpright | js.Array[NonNullable[js.UndefOr[TextCombineUpright]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextCombineUpright]]
-        ]) | `20`
+        ]) | `19`
       ] = js.undefined
     
     var textDecoration: js.UndefOr[
@@ -15723,7 +15721,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[TextDecoration[Double | String]]])
-        ]) | `500`
+        ]) | `499`
       ] = js.undefined
     
     var textDecorationColor: js.UndefOr[
@@ -15732,7 +15730,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextDecorationColor | js.Array[NonNullable[js.UndefOr[TextDecorationColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextDecorationColor]]
-        ]) | `53`
+        ]) | `52`
       ] = js.undefined
     
     var textDecorationLine: js.UndefOr[
@@ -15741,7 +15739,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextDecorationLine | js.Array[NonNullable[js.UndefOr[TextDecorationLine]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextDecorationLine]]
-        ]) | `21`
+        ]) | `20`
       ] = js.undefined
     
     var textDecorationSkip: js.UndefOr[
@@ -15750,7 +15748,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextDecorationSkip | js.Array[NonNullable[js.UndefOr[TextDecorationSkip]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextDecorationSkip]]
-        ]) | `164`
+        ]) | `163`
       ] = js.undefined
     
     var textDecorationSkipInk: js.UndefOr[
@@ -15759,7 +15757,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextDecorationSkipInk | js.Array[NonNullable[js.UndefOr[TextDecorationSkipInk]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextDecorationSkipInk]]
-        ]) | `122`
+        ]) | `121`
       ] = js.undefined
     
     var textDecorationStyle: js.UndefOr[
@@ -15768,7 +15766,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextDecorationStyle | js.Array[NonNullable[js.UndefOr[TextDecorationStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextDecorationStyle]]
-        ]) | `254`
+        ]) | `253`
       ] = js.undefined
     
     var textDecorationThickness: js.UndefOr[
@@ -15779,13 +15777,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[TextDecorationThickness[Double | String]]])
-        ]) | `207`
+        ]) | `206`
       ] = js.undefined
     
     var textEmphasis: js.UndefOr[
         TextEmphasis | (js.Array[
           (Extract[js.UndefOr[TextEmphasis | js.Array[NonNullable[js.UndefOr[TextEmphasis]]]], String]) | NonNullable[js.UndefOr[TextEmphasis]]
-        ]) | `66`
+        ]) | `65`
       ] = js.undefined
     
     var textEmphasisColor: js.UndefOr[
@@ -15794,7 +15792,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextEmphasisColor | js.Array[NonNullable[js.UndefOr[TextEmphasisColor]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextEmphasisColor]]
-        ]) | `359`
+        ]) | `358`
       ] = js.undefined
     
     var textEmphasisPosition: js.UndefOr[
@@ -15803,7 +15801,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextEmphasisPosition | js.Array[NonNullable[js.UndefOr[TextEmphasisPosition]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextEmphasisPosition]]
-        ]) | `366`
+        ]) | `365`
       ] = js.undefined
     
     var textEmphasisStyle: js.UndefOr[
@@ -15812,7 +15810,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextEmphasisStyle | js.Array[NonNullable[js.UndefOr[TextEmphasisStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextEmphasisStyle]]
-        ]) | `384`
+        ]) | `383`
       ] = js.undefined
     
     var textIndent: js.UndefOr[
@@ -15823,13 +15821,13 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[TextIndent[Double | String]]])
-        ]) | `451`
+        ]) | `450`
       ] = js.undefined
     
     var textJustify: js.UndefOr[
         TextJustify | (js.Array[
           (Extract[js.UndefOr[TextJustify | js.Array[NonNullable[js.UndefOr[TextJustify]]]], String]) | NonNullable[js.UndefOr[TextJustify]]
-        ]) | `386`
+        ]) | `385`
       ] = js.undefined
     
     var textOrientation: js.UndefOr[
@@ -15838,13 +15836,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextOrientation | js.Array[NonNullable[js.UndefOr[TextOrientation]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextOrientation]]
-        ]) | `308`
+        ]) | `307`
       ] = js.undefined
     
     var textOverflow: js.UndefOr[
         TextOverflow | (js.Array[
           (Extract[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]], String]) | NonNullable[js.UndefOr[TextOverflow]]
-        ]) | `112`
+        ]) | `111`
       ] = js.undefined
     
     var textRendering: js.UndefOr[
@@ -15853,13 +15851,13 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextRendering | js.Array[NonNullable[js.UndefOr[TextRendering]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextRendering]]
-        ]) | `381`
+        ]) | `380`
       ] = js.undefined
     
     var textShadow: js.UndefOr[
         TextShadow | (js.Array[
           (Extract[js.UndefOr[TextShadow | js.Array[NonNullable[js.UndefOr[TextShadow]]]], String]) | NonNullable[js.UndefOr[TextShadow]]
-        ]) | `178`
+        ]) | `177`
       ] = js.undefined
     
     var textSizeAdjust: js.UndefOr[
@@ -15868,7 +15866,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextSizeAdjust | js.Array[NonNullable[js.UndefOr[TextSizeAdjust]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextSizeAdjust]]
-        ]) | `1`
+        ]) | `0`
       ] = js.undefined
     
     var textTransform: js.UndefOr[
@@ -15877,7 +15875,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextTransform | js.Array[NonNullable[js.UndefOr[TextTransform]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextTransform]]
-        ]) | `379`
+        ]) | `378`
       ] = js.undefined
     
     var textUnderlineOffset: js.UndefOr[
@@ -15888,7 +15886,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[TextUnderlineOffset[Double | String]]])
-        ]) | `460`
+        ]) | `459`
       ] = js.undefined
     
     var textUnderlinePosition: js.UndefOr[
@@ -15897,7 +15895,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TextUnderlinePosition | js.Array[NonNullable[js.UndefOr[TextUnderlinePosition]]]], 
             String
           ]) | NonNullable[js.UndefOr[TextUnderlinePosition]]
-        ]) | `293`
+        ]) | `292`
       ] = js.undefined
     
     var top: js.UndefOr[
@@ -15908,25 +15906,25 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Top[Double | String]]])
-        ]) | `499`
+        ]) | `498`
       ] = js.undefined
     
     var touchAction: js.UndefOr[
         TouchAction | (js.Array[
           (Extract[js.UndefOr[TouchAction | js.Array[NonNullable[js.UndefOr[TouchAction]]]], String]) | NonNullable[js.UndefOr[TouchAction]]
-        ]) | `177`
+        ]) | `176`
       ] = js.undefined
     
     var transform: js.UndefOr[
         Transform | (js.Array[
           (Extract[js.UndefOr[Transform | js.Array[NonNullable[js.UndefOr[Transform]]]], String]) | NonNullable[js.UndefOr[Transform]]
-        ]) | `125`
+        ]) | `124`
       ] = js.undefined
     
     var transformBox: js.UndefOr[
         TransformBox | (js.Array[
           (Extract[js.UndefOr[TransformBox | js.Array[NonNullable[js.UndefOr[TransformBox]]]], String]) | NonNullable[js.UndefOr[TransformBox]]
-        ]) | `265`
+        ]) | `264`
       ] = js.undefined
     
     var transformOrigin: js.UndefOr[
@@ -15937,7 +15935,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[TransformOrigin[Double | String]]])
-        ]) | `65`
+        ]) | `64`
       ] = js.undefined
     
     var transformStyle: js.UndefOr[
@@ -15946,7 +15944,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TransformStyle | js.Array[NonNullable[js.UndefOr[TransformStyle]]]], 
             String
           ]) | NonNullable[js.UndefOr[TransformStyle]]
-        ]) | `154`
+        ]) | `153`
       ] = js.undefined
     
     var transition: js.UndefOr[
@@ -15955,7 +15953,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[Transition[String] | js.Array[NonNullable[js.UndefOr[Transition[String]]]]], 
             String
           ]) | NonNullable[js.UndefOr[Transition[String]]]
-        ]) | `68`
+        ]) | `67`
       ] = js.undefined
     
     var transitionDelay: js.UndefOr[
@@ -15966,7 +15964,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionDelay[String]]]
-        ]) | `212`
+        ]) | `211`
       ] = js.undefined
     
     var transitionDuration: js.UndefOr[
@@ -15977,7 +15975,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionDuration[String]]]
-        ]) | `78`
+        ]) | `77`
       ] = js.undefined
     
     var transitionProperty: js.UndefOr[
@@ -15986,7 +15984,7 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]], 
             String
           ]) | NonNullable[js.UndefOr[TransitionProperty]]
-        ]) | `228`
+        ]) | `227`
       ] = js.undefined
     
     var transitionTimingFunction: js.UndefOr[
@@ -15997,7 +15995,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | NonNullable[js.UndefOr[TransitionTimingFunction]]
-        ]) | `272`
+        ]) | `271`
       ] = js.undefined
     
     var translate: js.UndefOr[
@@ -16008,25 +16006,25 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Translate[Double | String]]])
-        ]) | `0`
+        ]) | MULTIVALUESKIPCHECKValue
       ] = js.undefined
     
     var unicodeBidi: js.UndefOr[
         UnicodeBidi | (js.Array[
           (Extract[js.UndefOr[UnicodeBidi | js.Array[NonNullable[js.UndefOr[UnicodeBidi]]]], String]) | NonNullable[js.UndefOr[UnicodeBidi]]
-        ]) | `362`
+        ]) | `361`
       ] = js.undefined
     
     var userSelect: js.UndefOr[
         UserSelect | (js.Array[
           (Extract[js.UndefOr[UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]], String]) | NonNullable[js.UndefOr[UserSelect]]
-        ]) | `47`
+        ]) | `46`
       ] = js.undefined
     
     var vectorEffect: js.UndefOr[
         VectorEffect | (js.Array[
           (Extract[js.UndefOr[VectorEffect | js.Array[NonNullable[js.UndefOr[VectorEffect]]]], String]) | NonNullable[js.UndefOr[VectorEffect]]
-        ]) | `51`
+        ]) | `50`
       ] = js.undefined
     
     var verticalAlign: js.UndefOr[
@@ -16037,7 +16035,7 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[VerticalAlign[Double | String]]])
-        ]) | `56`
+        ]) | `55`
       ] = js.undefined
     
     var viewTransitionName: js.UndefOr[
@@ -16046,25 +16044,25 @@ object esHooksUseStyleRegisterMod {
             js.UndefOr[ViewTransitionName | js.Array[NonNullable[js.UndefOr[ViewTransitionName]]]], 
             String
           ]) | NonNullable[js.UndefOr[ViewTransitionName]]
-        ]) | `463`
+        ]) | `462`
       ] = js.undefined
     
     var visibility: js.UndefOr[
         Visibility | (js.Array[
           (Extract[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]], String]) | NonNullable[js.UndefOr[Visibility]]
-        ]) | `71`
+        ]) | `70`
       ] = js.undefined
     
     var whiteSpace: js.UndefOr[
         WhiteSpace | (js.Array[
           (Extract[js.UndefOr[WhiteSpace | js.Array[NonNullable[js.UndefOr[WhiteSpace]]]], String]) | NonNullable[js.UndefOr[WhiteSpace]]
-        ]) | `266`
+        ]) | `265`
       ] = js.undefined
     
     var widows: js.UndefOr[
         Widows | (js.Array[
           (Extract[js.UndefOr[Widows | js.Array[NonNullable[js.UndefOr[Widows]]]], String]) | NonNullable[js.UndefOr[Widows]]
-        ]) | `354`
+        ]) | `353`
       ] = js.undefined
     
     var width: js.UndefOr[
@@ -16075,19 +16073,19 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[Width[Double | String]]])
-        ]) | `36`
+        ]) | `35`
       ] = js.undefined
     
     var willChange: js.UndefOr[
         WillChange | (js.Array[
           (Extract[js.UndefOr[WillChange | js.Array[NonNullable[js.UndefOr[WillChange]]]], String]) | NonNullable[js.UndefOr[WillChange]]
-        ]) | `371`
+        ]) | `370`
       ] = js.undefined
     
     var wordBreak: js.UndefOr[
         WordBreak | (js.Array[
           (Extract[js.UndefOr[WordBreak | js.Array[NonNullable[js.UndefOr[WordBreak]]]], String]) | NonNullable[js.UndefOr[WordBreak]]
-        ]) | `90`
+        ]) | `89`
       ] = js.undefined
     
     var wordSpacing: js.UndefOr[
@@ -16098,31 +16096,31 @@ object esHooksUseStyleRegisterMod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[WordSpacing[Double | String]]])
-        ]) | `383`
+        ]) | `382`
       ] = js.undefined
     
     var wordWrap: js.UndefOr[
         WordWrap | (js.Array[
           (Extract[js.UndefOr[WordWrap | js.Array[NonNullable[js.UndefOr[WordWrap]]]], String]) | NonNullable[js.UndefOr[WordWrap]]
-        ]) | `295`
+        ]) | `294`
       ] = js.undefined
     
     var writingMode: js.UndefOr[
         WritingMode | (js.Array[
           (Extract[js.UndefOr[WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]], String]) | NonNullable[js.UndefOr[WritingMode]]
-        ]) | `181`
+        ]) | `180`
       ] = js.undefined
     
     var zIndex: js.UndefOr[
         ZIndex | (js.Array[
           (Extract[js.UndefOr[ZIndex | js.Array[NonNullable[js.UndefOr[ZIndex]]]], String]) | NonNullable[js.UndefOr[ZIndex]]
-        ]) | `218`
+        ]) | `217`
       ] = js.undefined
     
     var zoom: js.UndefOr[
         Zoom | (js.Array[
           (Extract[js.UndefOr[Zoom | js.Array[NonNullable[js.UndefOr[Zoom]]]], String]) | NonNullable[js.UndefOr[Zoom]]
-        ]) | `387`
+        ]) | `386`
       ] = js.undefined
   }
   object CSSPropertiesWithMultiValues {
@@ -16138,7 +16136,7 @@ object esHooksUseStyleRegisterMod {
       inline def setAccentColor(
         value: AccentColor | (js.Array[
               (Extract[js.UndefOr[AccentColor | js.Array[NonNullable[js.UndefOr[AccentColor]]]], String]) | NonNullable[js.UndefOr[AccentColor]]
-            ]) | `347`
+            ]) | `346`
       ): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
       inline def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
@@ -16150,7 +16148,7 @@ object esHooksUseStyleRegisterMod {
       inline def setAlignContent(
         value: AlignContent | (js.Array[
               (Extract[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]], String]) | NonNullable[js.UndefOr[AlignContent]]
-            ]) | `244`
+            ]) | `243`
       ): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
       inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
@@ -16162,7 +16160,7 @@ object esHooksUseStyleRegisterMod {
       inline def setAlignItems(
         value: AlignItems | (js.Array[
               (Extract[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]], String]) | NonNullable[js.UndefOr[AlignItems]]
-            ]) | `424`
+            ]) | `423`
       ): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
       
       inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
@@ -16174,7 +16172,7 @@ object esHooksUseStyleRegisterMod {
       inline def setAlignSelf(
         value: AlignSelf | (js.Array[
               (Extract[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]], String]) | NonNullable[js.UndefOr[AlignSelf]]
-            ]) | `461`
+            ]) | `460`
       ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
@@ -16186,7 +16184,7 @@ object esHooksUseStyleRegisterMod {
       inline def setAlignTracks(
         value: AlignTracks | (js.Array[
               (Extract[js.UndefOr[AlignTracks | js.Array[NonNullable[js.UndefOr[AlignTracks]]]], String]) | NonNullable[js.UndefOr[AlignTracks]]
-            ]) | `556`
+            ]) | `555`
       ): Self = StObject.set(x, "alignTracks", value.asInstanceOf[js.Any])
       
       inline def setAlignTracksUndefined: Self = StObject.set(x, "alignTracks", js.undefined)
@@ -16201,7 +16199,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AlignmentBaseline | js.Array[NonNullable[js.UndefOr[AlignmentBaseline]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AlignmentBaseline]]
-            ]) | `278`
+            ]) | `277`
       ): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
       
       inline def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
@@ -16216,7 +16214,7 @@ object esHooksUseStyleRegisterMod {
       inline def setAll(
         value: All | (js.Array[
               (Extract[js.UndefOr[All | js.Array[NonNullable[js.UndefOr[All]]]], String]) | NonNullable[js.UndefOr[All]]
-            ]) | `488`
+            ]) | `487`
       ): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
       inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
@@ -16231,7 +16229,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[Animation[String] | js.Array[NonNullable[js.UndefOr[Animation[String]]]]], 
                 String
               ]) | NonNullable[js.UndefOr[Animation[String]]]
-            ]) | `28`
+            ]) | `27`
       ): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       inline def setAnimationComposition(
@@ -16240,7 +16238,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationComposition | js.Array[NonNullable[js.UndefOr[AnimationComposition]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationComposition]]
-            ]) | `49`
+            ]) | `48`
       ): Self = StObject.set(x, "animationComposition", value.asInstanceOf[js.Any])
       
       inline def setAnimationCompositionUndefined: Self = StObject.set(x, "animationComposition", js.undefined)
@@ -16260,7 +16258,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationDelay[String]]]
-            ]) | `241`
+            ]) | `240`
       ): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
       
       inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
@@ -16280,7 +16278,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationDirection]]
-            ]) | `111`
+            ]) | `110`
       ): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
       
       inline def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
@@ -16300,7 +16298,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationDuration[String]]]
-            ]) | `99`
+            ]) | `98`
       ): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
       inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
@@ -16320,7 +16318,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationFillMode]]
-            ]) | `114`
+            ]) | `113`
       ): Self = StObject.set(x, "animationFillMode", value.asInstanceOf[js.Any])
       
       inline def setAnimationFillModeUndefined: Self = StObject.set(x, "animationFillMode", js.undefined)
@@ -16340,7 +16338,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationIterationCount]]
-            ]) | `87`
+            ]) | `86`
       ): Self = StObject.set(x, "animationIterationCount", value.asInstanceOf[js.Any])
       
       inline def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
@@ -16362,7 +16360,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationName]]
-            ]) | typings.antDesignCssinjs.esKeyframesMod.default | `425`
+            ]) | typings.antDesignCssinjs.esKeyframesMod.default | `424`
       ): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
       
       inline def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
@@ -16382,7 +16380,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationPlayState]]
-            ]) | `159`
+            ]) | `158`
       ): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
       
       inline def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
@@ -16400,7 +16398,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationTimeline | js.Array[NonNullable[js.UndefOr[AnimationTimeline]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationTimeline]]
-            ]) | `225`
+            ]) | `224`
       ): Self = StObject.set(x, "animationTimeline", value.asInstanceOf[js.Any])
       
       inline def setAnimationTimelineUndefined: Self = StObject.set(x, "animationTimeline", js.undefined)
@@ -16420,7 +16418,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationTimingFunction]]
-            ]) | `161`
+            ]) | `160`
       ): Self = StObject.set(x, "animationTimingFunction", value.asInstanceOf[js.Any])
       
       inline def setAnimationTimingFunctionUndefined: Self = StObject.set(x, "animationTimingFunction", js.undefined)
@@ -16446,7 +16444,7 @@ object esHooksUseStyleRegisterMod {
       inline def setAppearance(
         value: Appearance | (js.Array[
               (Extract[js.UndefOr[Appearance | js.Array[NonNullable[js.UndefOr[Appearance]]]], String]) | NonNullable[js.UndefOr[Appearance]]
-            ]) | `208`
+            ]) | `207`
       ): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
       
       inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
@@ -16458,7 +16456,7 @@ object esHooksUseStyleRegisterMod {
       inline def setAspectRatio(
         value: AspectRatio | (js.Array[
               (Extract[js.UndefOr[AspectRatio | js.Array[NonNullable[js.UndefOr[AspectRatio]]]], String]) | NonNullable[js.UndefOr[AspectRatio]]
-            ]) | `506`
+            ]) | `505`
       ): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
       inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
@@ -16470,7 +16468,7 @@ object esHooksUseStyleRegisterMod {
       inline def setAzimuth(
         value: Azimuth | (js.Array[
               (Extract[js.UndefOr[Azimuth | js.Array[NonNullable[js.UndefOr[Azimuth]]]], String]) | NonNullable[js.UndefOr[Azimuth]]
-            ]) | `480`
+            ]) | `479`
       ): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
       
       inline def setAzimuthUndefined: Self = StObject.set(x, "azimuth", js.undefined)
@@ -16485,7 +16483,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackdropFilter | js.Array[NonNullable[js.UndefOr[BackdropFilter]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackdropFilter]]
-            ]) | `42`
+            ]) | `41`
       ): Self = StObject.set(x, "backdropFilter", value.asInstanceOf[js.Any])
       
       inline def setBackdropFilterUndefined: Self = StObject.set(x, "backdropFilter", js.undefined)
@@ -16503,7 +16501,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackfaceVisibility | js.Array[NonNullable[js.UndefOr[BackfaceVisibility]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackfaceVisibility]]
-            ]) | `130`
+            ]) | `129`
       ): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
       
       inline def setBackfaceVisibilityUndefined: Self = StObject.set(x, "backfaceVisibility", js.undefined)
@@ -16523,7 +16521,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Background[Double | String]]])
-            ]) | `45`
+            ]) | `44`
       ): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundAttachment(
@@ -16532,7 +16530,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackgroundAttachment | js.Array[NonNullable[js.UndefOr[BackgroundAttachment]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackgroundAttachment]]
-            ]) | `234`
+            ]) | `233`
       ): Self = StObject.set(x, "backgroundAttachment", value.asInstanceOf[js.Any])
       
       inline def setBackgroundAttachmentUndefined: Self = StObject.set(x, "backgroundAttachment", js.undefined)
@@ -16550,7 +16548,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackgroundBlendMode | js.Array[NonNullable[js.UndefOr[BackgroundBlendMode]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackgroundBlendMode]]
-            ]) | `385`
+            ]) | `384`
       ): Self = StObject.set(x, "backgroundBlendMode", value.asInstanceOf[js.Any])
       
       inline def setBackgroundBlendModeUndefined: Self = StObject.set(x, "backgroundBlendMode", js.undefined)
@@ -16568,7 +16566,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackgroundClip | js.Array[NonNullable[js.UndefOr[BackgroundClip]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackgroundClip]]
-            ]) | `142`
+            ]) | `141`
       ): Self = StObject.set(x, "backgroundClip", value.asInstanceOf[js.Any])
       
       inline def setBackgroundClipUndefined: Self = StObject.set(x, "backgroundClip", js.undefined)
@@ -16586,7 +16584,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackgroundColor | js.Array[NonNullable[js.UndefOr[BackgroundColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackgroundColor]]
-            ]) | `116`
+            ]) | `115`
       ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
@@ -16604,7 +16602,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackgroundImage | js.Array[NonNullable[js.UndefOr[BackgroundImage]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackgroundImage]]
-            ]) | `13`
+            ]) | `12`
       ): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
       
       inline def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
@@ -16622,7 +16620,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackgroundOrigin | js.Array[NonNullable[js.UndefOr[BackgroundOrigin]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackgroundOrigin]]
-            ]) | `84`
+            ]) | `83`
       ): Self = StObject.set(x, "backgroundOrigin", value.asInstanceOf[js.Any])
       
       inline def setBackgroundOriginUndefined: Self = StObject.set(x, "backgroundOrigin", js.undefined)
@@ -16642,7 +16640,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BackgroundPosition[Double | String]]])
-            ]) | `326`
+            ]) | `325`
       ): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
       
       inline def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
@@ -16664,7 +16662,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BackgroundPositionX[Double | String]]])
-            ]) | `85`
+            ]) | `84`
       ): Self = StObject.set(x, "backgroundPositionX", value.asInstanceOf[js.Any])
       
       inline def setBackgroundPositionXUndefined: Self = StObject.set(x, "backgroundPositionX", js.undefined)
@@ -16686,7 +16684,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BackgroundPositionY[Double | String]]])
-            ]) | `542`
+            ]) | `541`
       ): Self = StObject.set(x, "backgroundPositionY", value.asInstanceOf[js.Any])
       
       inline def setBackgroundPositionYUndefined: Self = StObject.set(x, "backgroundPositionY", js.undefined)
@@ -16706,7 +16704,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackgroundRepeat | js.Array[NonNullable[js.UndefOr[BackgroundRepeat]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackgroundRepeat]]
-            ]) | `458`
+            ]) | `457`
       ): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
       
       inline def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
@@ -16726,7 +16724,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BackgroundSize[Double | String]]])
-            ]) | `55`
+            ]) | `54`
       ): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
       
       inline def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
@@ -16759,7 +16757,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BaselineShift[Double | String]]])
-            ]) | `202`
+            ]) | `201`
       ): Self = StObject.set(x, "baselineShift", value.asInstanceOf[js.Any])
       
       inline def setBaselineShiftUndefined: Self = StObject.set(x, "baselineShift", js.undefined)
@@ -16779,7 +16777,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BlockOverflow | js.Array[NonNullable[js.UndefOr[BlockOverflow]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BlockOverflow]]
-            ]) | `520`
+            ]) | `519`
       ): Self = StObject.set(x, "blockOverflow", value.asInstanceOf[js.Any])
       
       inline def setBlockOverflowUndefined: Self = StObject.set(x, "blockOverflow", js.undefined)
@@ -16799,7 +16797,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BlockSize[Double | String]]])
-            ]) | `75`
+            ]) | `74`
       ): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
       inline def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
@@ -16821,7 +16819,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Border[Double | String]]])
-            ]) | `128`
+            ]) | `127`
       ): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
       inline def setBorderBlock(
@@ -16832,7 +16830,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBlock[Double | String]]])
-            ]) | `306`
+            ]) | `305`
       ): Self = StObject.set(x, "borderBlock", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockColor(
@@ -16841,7 +16839,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderBlockColor | js.Array[NonNullable[js.UndefOr[BorderBlockColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderBlockColor]]
-            ]) | `489`
+            ]) | `488`
       ): Self = StObject.set(x, "borderBlockColor", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockColorUndefined: Self = StObject.set(x, "borderBlockColor", js.undefined)
@@ -16861,7 +16859,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBlockEnd[Double | String]]])
-            ]) | `544`
+            ]) | `543`
       ): Self = StObject.set(x, "borderBlockEnd", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockEndColor(
@@ -16870,7 +16868,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderBlockEndColor | js.Array[NonNullable[js.UndefOr[BorderBlockEndColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderBlockEndColor]]
-            ]) | `355`
+            ]) | `354`
       ): Self = StObject.set(x, "borderBlockEndColor", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockEndColorUndefined: Self = StObject.set(x, "borderBlockEndColor", js.undefined)
@@ -16888,7 +16886,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderBlockEndStyle | js.Array[NonNullable[js.UndefOr[BorderBlockEndStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderBlockEndStyle]]
-            ]) | `413`
+            ]) | `412`
       ): Self = StObject.set(x, "borderBlockEndStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockEndStyleUndefined: Self = StObject.set(x, "borderBlockEndStyle", js.undefined)
@@ -16919,7 +16917,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBlockEndWidth[Double | String]]])
-            ]) | `370`
+            ]) | `369`
       ): Self = StObject.set(x, "borderBlockEndWidth", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockEndWidthUndefined: Self = StObject.set(x, "borderBlockEndWidth", js.undefined)
@@ -16941,7 +16939,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBlockStart[Double | String]]])
-            ]) | `528`
+            ]) | `527`
       ): Self = StObject.set(x, "borderBlockStart", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockStartColor(
@@ -16950,7 +16948,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderBlockStartColor | js.Array[NonNullable[js.UndefOr[BorderBlockStartColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderBlockStartColor]]
-            ]) | `96`
+            ]) | `95`
       ): Self = StObject.set(x, "borderBlockStartColor", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockStartColorUndefined: Self = StObject.set(x, "borderBlockStartColor", js.undefined)
@@ -16968,7 +16966,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderBlockStartStyle | js.Array[NonNullable[js.UndefOr[BorderBlockStartStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderBlockStartStyle]]
-            ]) | `204`
+            ]) | `203`
       ): Self = StObject.set(x, "borderBlockStartStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockStartStyleUndefined: Self = StObject.set(x, "borderBlockStartStyle", js.undefined)
@@ -16999,7 +16997,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBlockStartWidth[Double | String]]])
-            ]) | `283`
+            ]) | `282`
       ): Self = StObject.set(x, "borderBlockStartWidth", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockStartWidthUndefined: Self = StObject.set(x, "borderBlockStartWidth", js.undefined)
@@ -17019,7 +17017,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderBlockStyle | js.Array[NonNullable[js.UndefOr[BorderBlockStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderBlockStyle]]
-            ]) | `237`
+            ]) | `236`
       ): Self = StObject.set(x, "borderBlockStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockStyleUndefined: Self = StObject.set(x, "borderBlockStyle", js.undefined)
@@ -17050,7 +17048,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBlockWidth[Double | String]]])
-            ]) | `312`
+            ]) | `311`
       ): Self = StObject.set(x, "borderBlockWidth", value.asInstanceOf[js.Any])
       
       inline def setBorderBlockWidthUndefined: Self = StObject.set(x, "borderBlockWidth", js.undefined)
@@ -17072,7 +17070,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBottom[Double | String]]])
-            ]) | `230`
+            ]) | `229`
       ): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
       
       inline def setBorderBottomColor(
@@ -17081,7 +17079,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderBottomColor | js.Array[NonNullable[js.UndefOr[BorderBottomColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderBottomColor]]
-            ]) | `534`
+            ]) | `533`
       ): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
       
       inline def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
@@ -17101,7 +17099,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBottomLeftRadius[Double | String]]])
-            ]) | `103`
+            ]) | `102`
       ): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
       
       inline def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
@@ -17123,7 +17121,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBottomRightRadius[Double | String]]])
-            ]) | `136`
+            ]) | `135`
       ): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
       
       inline def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
@@ -17143,7 +17141,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderBottomStyle | js.Array[NonNullable[js.UndefOr[BorderBottomStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderBottomStyle]]
-            ]) | `187`
+            ]) | `186`
       ): Self = StObject.set(x, "borderBottomStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
@@ -17174,7 +17172,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBottomWidth[Double | String]]])
-            ]) | `141`
+            ]) | `140`
       ): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
       
       inline def setBorderBottomWidthUndefined: Self = StObject.set(x, "borderBottomWidth", js.undefined)
@@ -17194,7 +17192,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderCollapse | js.Array[NonNullable[js.UndefOr[BorderCollapse]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderCollapse]]
-            ]) | `201`
+            ]) | `200`
       ): Self = StObject.set(x, "borderCollapse", value.asInstanceOf[js.Any])
       
       inline def setBorderCollapseUndefined: Self = StObject.set(x, "borderCollapse", js.undefined)
@@ -17209,7 +17207,7 @@ object esHooksUseStyleRegisterMod {
       inline def setBorderColor(
         value: BorderColor | (js.Array[
               (Extract[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]], String]) | NonNullable[js.UndefOr[BorderColor]]
-            ]) | `8`
+            ]) | `7`
       ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
@@ -17226,7 +17224,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderEndEndRadius[Double | String]]])
-            ]) | `431`
+            ]) | `430`
       ): Self = StObject.set(x, "borderEndEndRadius", value.asInstanceOf[js.Any])
       
       inline def setBorderEndEndRadiusUndefined: Self = StObject.set(x, "borderEndEndRadius", js.undefined)
@@ -17248,7 +17246,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderEndStartRadius[Double | String]]])
-            ]) | `469`
+            ]) | `468`
       ): Self = StObject.set(x, "borderEndStartRadius", value.asInstanceOf[js.Any])
       
       inline def setBorderEndStartRadiusUndefined: Self = StObject.set(x, "borderEndStartRadius", js.undefined)
@@ -17265,7 +17263,7 @@ object esHooksUseStyleRegisterMod {
       inline def setBorderImage(
         value: BorderImage | (js.Array[
               (Extract[js.UndefOr[BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]], String]) | NonNullable[js.UndefOr[BorderImage]]
-            ]) | `242`
+            ]) | `241`
       ): Self = StObject.set(x, "borderImage", value.asInstanceOf[js.Any])
       
       inline def setBorderImageOutset(
@@ -17276,7 +17274,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderImageOutset[Double | String]]])
-            ]) | `297`
+            ]) | `296`
       ): Self = StObject.set(x, "borderImageOutset", value.asInstanceOf[js.Any])
       
       inline def setBorderImageOutsetUndefined: Self = StObject.set(x, "borderImageOutset", js.undefined)
@@ -17296,7 +17294,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderImageRepeat | js.Array[NonNullable[js.UndefOr[BorderImageRepeat]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderImageRepeat]]
-            ]) | `526`
+            ]) | `525`
       ): Self = StObject.set(x, "borderImageRepeat", value.asInstanceOf[js.Any])
       
       inline def setBorderImageRepeatUndefined: Self = StObject.set(x, "borderImageRepeat", js.undefined)
@@ -17314,7 +17312,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderImageSlice | js.Array[NonNullable[js.UndefOr[BorderImageSlice]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderImageSlice]]
-            ]) | `135`
+            ]) | `134`
       ): Self = StObject.set(x, "borderImageSlice", value.asInstanceOf[js.Any])
       
       inline def setBorderImageSliceUndefined: Self = StObject.set(x, "borderImageSlice", js.undefined)
@@ -17332,7 +17330,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderImageSource | js.Array[NonNullable[js.UndefOr[BorderImageSource]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderImageSource]]
-            ]) | `549`
+            ]) | `548`
       ): Self = StObject.set(x, "borderImageSource", value.asInstanceOf[js.Any])
       
       inline def setBorderImageSourceUndefined: Self = StObject.set(x, "borderImageSource", js.undefined)
@@ -17358,7 +17356,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderImageWidth[Double | String]]])
-            ]) | `27`
+            ]) | `26`
       ): Self = StObject.set(x, "borderImageWidth", value.asInstanceOf[js.Any])
       
       inline def setBorderImageWidthUndefined: Self = StObject.set(x, "borderImageWidth", js.undefined)
@@ -17380,7 +17378,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderInline[Double | String]]])
-            ]) | `30`
+            ]) | `29`
       ): Self = StObject.set(x, "borderInline", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineColor(
@@ -17389,7 +17387,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderInlineColor | js.Array[NonNullable[js.UndefOr[BorderInlineColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderInlineColor]]
-            ]) | `224`
+            ]) | `223`
       ): Self = StObject.set(x, "borderInlineColor", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineColorUndefined: Self = StObject.set(x, "borderInlineColor", js.undefined)
@@ -17409,7 +17407,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderInlineEnd[Double | String]]])
-            ]) | `369`
+            ]) | `368`
       ): Self = StObject.set(x, "borderInlineEnd", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineEndColor(
@@ -17418,7 +17416,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderInlineEndColor | js.Array[NonNullable[js.UndefOr[BorderInlineEndColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderInlineEndColor]]
-            ]) | `29`
+            ]) | `28`
       ): Self = StObject.set(x, "borderInlineEndColor", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineEndColorUndefined: Self = StObject.set(x, "borderInlineEndColor", js.undefined)
@@ -17436,7 +17434,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderInlineEndStyle | js.Array[NonNullable[js.UndefOr[BorderInlineEndStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderInlineEndStyle]]
-            ]) | `37`
+            ]) | `36`
       ): Self = StObject.set(x, "borderInlineEndStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineEndStyleUndefined: Self = StObject.set(x, "borderInlineEndStyle", js.undefined)
@@ -17467,7 +17465,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderInlineEndWidth[Double | String]]])
-            ]) | `3`
+            ]) | `2`
       ): Self = StObject.set(x, "borderInlineEndWidth", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineEndWidthUndefined: Self = StObject.set(x, "borderInlineEndWidth", js.undefined)
@@ -17489,7 +17487,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderInlineStart[Double | String]]])
-            ]) | `426`
+            ]) | `425`
       ): Self = StObject.set(x, "borderInlineStart", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineStartColor(
@@ -17500,7 +17498,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[BorderInlineStartColor]]
-            ]) | `160`
+            ]) | `159`
       ): Self = StObject.set(x, "borderInlineStartColor", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineStartColorUndefined: Self = StObject.set(x, "borderInlineStartColor", js.undefined)
@@ -17522,7 +17520,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[BorderInlineStartStyle]]
-            ]) | `395`
+            ]) | `394`
       ): Self = StObject.set(x, "borderInlineStartStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineStartStyleUndefined: Self = StObject.set(x, "borderInlineStartStyle", js.undefined)
@@ -17555,7 +17553,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderInlineStartWidth[Double | String]]])
-            ]) | `94`
+            ]) | `93`
       ): Self = StObject.set(x, "borderInlineStartWidth", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineStartWidthUndefined: Self = StObject.set(x, "borderInlineStartWidth", js.undefined)
@@ -17575,7 +17573,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderInlineStyle | js.Array[NonNullable[js.UndefOr[BorderInlineStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderInlineStyle]]
-            ]) | `476`
+            ]) | `475`
       ): Self = StObject.set(x, "borderInlineStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineStyleUndefined: Self = StObject.set(x, "borderInlineStyle", js.undefined)
@@ -17606,7 +17604,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderInlineWidth[Double | String]]])
-            ]) | `256`
+            ]) | `255`
       ): Self = StObject.set(x, "borderInlineWidth", value.asInstanceOf[js.Any])
       
       inline def setBorderInlineWidthUndefined: Self = StObject.set(x, "borderInlineWidth", js.undefined)
@@ -17628,7 +17626,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderLeft[Double | String]]])
-            ]) | `195`
+            ]) | `194`
       ): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
       
       inline def setBorderLeftColor(
@@ -17637,7 +17635,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderLeftColor | js.Array[NonNullable[js.UndefOr[BorderLeftColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderLeftColor]]
-            ]) | `393`
+            ]) | `392`
       ): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
       
       inline def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
@@ -17655,7 +17653,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderLeftStyle | js.Array[NonNullable[js.UndefOr[BorderLeftStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderLeftStyle]]
-            ]) | `80`
+            ]) | `79`
       ): Self = StObject.set(x, "borderLeftStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
@@ -17686,7 +17684,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderLeftWidth[Double | String]]])
-            ]) | `263`
+            ]) | `262`
       ): Self = StObject.set(x, "borderLeftWidth", value.asInstanceOf[js.Any])
       
       inline def setBorderLeftWidthUndefined: Self = StObject.set(x, "borderLeftWidth", js.undefined)
@@ -17708,7 +17706,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderRadius[Double | String]]])
-            ]) | `400`
+            ]) | `399`
       ): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
       
       inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
@@ -17730,7 +17728,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderRight[Double | String]]])
-            ]) | `350`
+            ]) | `349`
       ): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
       
       inline def setBorderRightColor(
@@ -17739,7 +17737,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderRightColor | js.Array[NonNullable[js.UndefOr[BorderRightColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderRightColor]]
-            ]) | `166`
+            ]) | `165`
       ): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
       
       inline def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
@@ -17757,7 +17755,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderRightStyle | js.Array[NonNullable[js.UndefOr[BorderRightStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderRightStyle]]
-            ]) | `501`
+            ]) | `500`
       ): Self = StObject.set(x, "borderRightStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
@@ -17788,7 +17786,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderRightWidth[Double | String]]])
-            ]) | `322`
+            ]) | `321`
       ): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
       
       inline def setBorderRightWidthUndefined: Self = StObject.set(x, "borderRightWidth", js.undefined)
@@ -17810,7 +17808,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderSpacing[Double | String]]])
-            ]) | `363`
+            ]) | `362`
       ): Self = StObject.set(x, "borderSpacing", value.asInstanceOf[js.Any])
       
       inline def setBorderSpacingUndefined: Self = StObject.set(x, "borderSpacing", js.undefined)
@@ -17832,7 +17830,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderStartEndRadius[Double | String]]])
-            ]) | `372`
+            ]) | `371`
       ): Self = StObject.set(x, "borderStartEndRadius", value.asInstanceOf[js.Any])
       
       inline def setBorderStartEndRadiusUndefined: Self = StObject.set(x, "borderStartEndRadius", js.undefined)
@@ -17854,7 +17852,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderStartStartRadius[Double | String]]])
-            ]) | `117`
+            ]) | `116`
       ): Self = StObject.set(x, "borderStartStartRadius", value.asInstanceOf[js.Any])
       
       inline def setBorderStartStartRadiusUndefined: Self = StObject.set(x, "borderStartStartRadius", js.undefined)
@@ -17871,7 +17869,7 @@ object esHooksUseStyleRegisterMod {
       inline def setBorderStyle(
         value: BorderStyle | (js.Array[
               (Extract[js.UndefOr[BorderStyle | js.Array[NonNullable[js.UndefOr[BorderStyle]]]], String]) | NonNullable[js.UndefOr[BorderStyle]]
-            ]) | `184`
+            ]) | `183`
       ): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
@@ -17888,7 +17886,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderTop[Double | String]]])
-            ]) | `478`
+            ]) | `477`
       ): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
       
       inline def setBorderTopColor(
@@ -17897,7 +17895,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderTopColor | js.Array[NonNullable[js.UndefOr[BorderTopColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderTopColor]]
-            ]) | `337`
+            ]) | `336`
       ): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
       
       inline def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
@@ -17917,7 +17915,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderTopLeftRadius[Double | String]]])
-            ]) | `221`
+            ]) | `220`
       ): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
       
       inline def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
@@ -17939,7 +17937,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderTopRightRadius[Double | String]]])
-            ]) | `77`
+            ]) | `76`
       ): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
       
       inline def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
@@ -17959,7 +17957,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderTopStyle | js.Array[NonNullable[js.UndefOr[BorderTopStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderTopStyle]]
-            ]) | `553`
+            ]) | `552`
       ): Self = StObject.set(x, "borderTopStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
@@ -17990,7 +17988,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderTopWidth[Double | String]]])
-            ]) | `38`
+            ]) | `37`
       ): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
       
       inline def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
@@ -18023,7 +18021,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderWidth[Double | String]]])
-            ]) | `441`
+            ]) | `440`
       ): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       
       inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
@@ -18045,7 +18043,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Bottom[Double | String]]])
-            ]) | `447`
+            ]) | `446`
       ): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
       inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
@@ -18062,7 +18060,7 @@ object esHooksUseStyleRegisterMod {
       inline def setBoxAlign(
         value: BoxAlign | (js.Array[
               (Extract[js.UndefOr[BoxAlign | js.Array[NonNullable[js.UndefOr[BoxAlign]]]], String]) | NonNullable[js.UndefOr[BoxAlign]]
-            ]) | `83`
+            ]) | `82`
       ): Self = StObject.set(x, "boxAlign", value.asInstanceOf[js.Any])
       
       inline def setBoxAlignUndefined: Self = StObject.set(x, "boxAlign", js.undefined)
@@ -18077,7 +18075,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BoxDecorationBreak | js.Array[NonNullable[js.UndefOr[BoxDecorationBreak]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BoxDecorationBreak]]
-            ]) | `158`
+            ]) | `157`
       ): Self = StObject.set(x, "boxDecorationBreak", value.asInstanceOf[js.Any])
       
       inline def setBoxDecorationBreakUndefined: Self = StObject.set(x, "boxDecorationBreak", js.undefined)
@@ -18092,7 +18090,7 @@ object esHooksUseStyleRegisterMod {
       inline def setBoxDirection(
         value: BoxDirection | (js.Array[
               (Extract[js.UndefOr[BoxDirection | js.Array[NonNullable[js.UndefOr[BoxDirection]]]], String]) | NonNullable[js.UndefOr[BoxDirection]]
-            ]) | `59`
+            ]) | `58`
       ): Self = StObject.set(x, "boxDirection", value.asInstanceOf[js.Any])
       
       inline def setBoxDirectionUndefined: Self = StObject.set(x, "boxDirection", js.undefined)
@@ -18104,13 +18102,13 @@ object esHooksUseStyleRegisterMod {
       inline def setBoxFlex(
         value: BoxFlex | (js.Array[
               (Extract[js.UndefOr[BoxFlex | js.Array[NonNullable[js.UndefOr[BoxFlex]]]], String]) | NonNullable[js.UndefOr[BoxFlex]]
-            ]) | `140`
+            ]) | `139`
       ): Self = StObject.set(x, "boxFlex", value.asInstanceOf[js.Any])
       
       inline def setBoxFlexGroup(
         value: BoxFlexGroup | (js.Array[
               (Extract[js.UndefOr[BoxFlexGroup | js.Array[NonNullable[js.UndefOr[BoxFlexGroup]]]], String]) | NonNullable[js.UndefOr[BoxFlexGroup]]
-            ]) | `152`
+            ]) | `151`
       ): Self = StObject.set(x, "boxFlexGroup", value.asInstanceOf[js.Any])
       
       inline def setBoxFlexGroupUndefined: Self = StObject.set(x, "boxFlexGroup", js.undefined)
@@ -18128,7 +18126,7 @@ object esHooksUseStyleRegisterMod {
       inline def setBoxLines(
         value: BoxLines | (js.Array[
               (Extract[js.UndefOr[BoxLines | js.Array[NonNullable[js.UndefOr[BoxLines]]]], String]) | NonNullable[js.UndefOr[BoxLines]]
-            ]) | `199`
+            ]) | `198`
       ): Self = StObject.set(x, "boxLines", value.asInstanceOf[js.Any])
       
       inline def setBoxLinesUndefined: Self = StObject.set(x, "boxLines", js.undefined)
@@ -18143,7 +18141,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BoxOrdinalGroup | js.Array[NonNullable[js.UndefOr[BoxOrdinalGroup]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BoxOrdinalGroup]]
-            ]) | `190`
+            ]) | `189`
       ): Self = StObject.set(x, "boxOrdinalGroup", value.asInstanceOf[js.Any])
       
       inline def setBoxOrdinalGroupUndefined: Self = StObject.set(x, "boxOrdinalGroup", js.undefined)
@@ -18158,7 +18156,7 @@ object esHooksUseStyleRegisterMod {
       inline def setBoxOrient(
         value: BoxOrient | (js.Array[
               (Extract[js.UndefOr[BoxOrient | js.Array[NonNullable[js.UndefOr[BoxOrient]]]], String]) | NonNullable[js.UndefOr[BoxOrient]]
-            ]) | `22`
+            ]) | `21`
       ): Self = StObject.set(x, "boxOrient", value.asInstanceOf[js.Any])
       
       inline def setBoxOrientUndefined: Self = StObject.set(x, "boxOrient", js.undefined)
@@ -18170,7 +18168,7 @@ object esHooksUseStyleRegisterMod {
       inline def setBoxPack(
         value: BoxPack | (js.Array[
               (Extract[js.UndefOr[BoxPack | js.Array[NonNullable[js.UndefOr[BoxPack]]]], String]) | NonNullable[js.UndefOr[BoxPack]]
-            ]) | `119`
+            ]) | `118`
       ): Self = StObject.set(x, "boxPack", value.asInstanceOf[js.Any])
       
       inline def setBoxPackUndefined: Self = StObject.set(x, "boxPack", js.undefined)
@@ -18182,7 +18180,7 @@ object esHooksUseStyleRegisterMod {
       inline def setBoxShadow(
         value: BoxShadow | (js.Array[
               (Extract[js.UndefOr[BoxShadow | js.Array[NonNullable[js.UndefOr[BoxShadow]]]], String]) | NonNullable[js.UndefOr[BoxShadow]]
-            ]) | `108`
+            ]) | `107`
       ): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
       
       inline def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
@@ -18194,7 +18192,7 @@ object esHooksUseStyleRegisterMod {
       inline def setBoxSizing(
         value: BoxSizing | (js.Array[
               (Extract[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]], String]) | NonNullable[js.UndefOr[BoxSizing]]
-            ]) | `14`
+            ]) | `13`
       ): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
       
       inline def setBoxSizingUndefined: Self = StObject.set(x, "boxSizing", js.undefined)
@@ -18206,7 +18204,7 @@ object esHooksUseStyleRegisterMod {
       inline def setBreakAfter(
         value: BreakAfter | (js.Array[
               (Extract[js.UndefOr[BreakAfter | js.Array[NonNullable[js.UndefOr[BreakAfter]]]], String]) | NonNullable[js.UndefOr[BreakAfter]]
-            ]) | `429`
+            ]) | `428`
       ): Self = StObject.set(x, "breakAfter", value.asInstanceOf[js.Any])
       
       inline def setBreakAfterUndefined: Self = StObject.set(x, "breakAfter", js.undefined)
@@ -18218,7 +18216,7 @@ object esHooksUseStyleRegisterMod {
       inline def setBreakBefore(
         value: BreakBefore | (js.Array[
               (Extract[js.UndefOr[BreakBefore | js.Array[NonNullable[js.UndefOr[BreakBefore]]]], String]) | NonNullable[js.UndefOr[BreakBefore]]
-            ]) | `539`
+            ]) | `538`
       ): Self = StObject.set(x, "breakBefore", value.asInstanceOf[js.Any])
       
       inline def setBreakBeforeUndefined: Self = StObject.set(x, "breakBefore", js.undefined)
@@ -18230,7 +18228,7 @@ object esHooksUseStyleRegisterMod {
       inline def setBreakInside(
         value: BreakInside | (js.Array[
               (Extract[js.UndefOr[BreakInside | js.Array[NonNullable[js.UndefOr[BreakInside]]]], String]) | NonNullable[js.UndefOr[BreakInside]]
-            ]) | `472`
+            ]) | `471`
       ): Self = StObject.set(x, "breakInside", value.asInstanceOf[js.Any])
       
       inline def setBreakInsideUndefined: Self = StObject.set(x, "breakInside", js.undefined)
@@ -18242,7 +18240,7 @@ object esHooksUseStyleRegisterMod {
       inline def setCaptionSide(
         value: CaptionSide | (js.Array[
               (Extract[js.UndefOr[CaptionSide | js.Array[NonNullable[js.UndefOr[CaptionSide]]]], String]) | NonNullable[js.UndefOr[CaptionSide]]
-            ]) | `223`
+            ]) | `222`
       ): Self = StObject.set(x, "captionSide", value.asInstanceOf[js.Any])
       
       inline def setCaptionSideUndefined: Self = StObject.set(x, "captionSide", js.undefined)
@@ -18254,13 +18252,13 @@ object esHooksUseStyleRegisterMod {
       inline def setCaret(
         value: Caret | (js.Array[
               (Extract[js.UndefOr[Caret | js.Array[NonNullable[js.UndefOr[Caret]]]], String]) | NonNullable[js.UndefOr[Caret]]
-            ]) | `470`
+            ]) | `469`
       ): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
       
       inline def setCaretColor(
         value: CaretColor | (js.Array[
               (Extract[js.UndefOr[CaretColor | js.Array[NonNullable[js.UndefOr[CaretColor]]]], String]) | NonNullable[js.UndefOr[CaretColor]]
-            ]) | `420`
+            ]) | `419`
       ): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
       
       inline def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
@@ -18272,7 +18270,7 @@ object esHooksUseStyleRegisterMod {
       inline def setCaretShape(
         value: CaretShape | (js.Array[
               (Extract[js.UndefOr[CaretShape | js.Array[NonNullable[js.UndefOr[CaretShape]]]], String]) | NonNullable[js.UndefOr[CaretShape]]
-            ]) | `151`
+            ]) | `150`
       ): Self = StObject.set(x, "caretShape", value.asInstanceOf[js.Any])
       
       inline def setCaretShapeUndefined: Self = StObject.set(x, "caretShape", js.undefined)
@@ -18290,7 +18288,7 @@ object esHooksUseStyleRegisterMod {
       inline def setClear(
         value: Clear | (js.Array[
               (Extract[js.UndefOr[Clear | js.Array[NonNullable[js.UndefOr[Clear]]]], String]) | NonNullable[js.UndefOr[Clear]]
-            ]) | `547`
+            ]) | `546`
       ): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
       inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
@@ -18302,13 +18300,13 @@ object esHooksUseStyleRegisterMod {
       inline def setClip(
         value: Clip | (js.Array[
               (Extract[js.UndefOr[Clip | js.Array[NonNullable[js.UndefOr[Clip]]]], String]) | NonNullable[js.UndefOr[Clip]]
-            ]) | `517`
+            ]) | `516`
       ): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       
       inline def setClipPath(
         value: ClipPath | (js.Array[
               (Extract[js.UndefOr[ClipPath | js.Array[NonNullable[js.UndefOr[ClipPath]]]], String]) | NonNullable[js.UndefOr[ClipPath]]
-            ]) | `129`
+            ]) | `128`
       ): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
       
       inline def setClipPathUndefined: Self = StObject.set(x, "clipPath", js.undefined)
@@ -18320,7 +18318,7 @@ object esHooksUseStyleRegisterMod {
       inline def setClipRule(
         value: ClipRule | (js.Array[
               (Extract[js.UndefOr[ClipRule | js.Array[NonNullable[js.UndefOr[ClipRule]]]], String]) | NonNullable[js.UndefOr[ClipRule]]
-            ]) | `149`
+            ]) | `148`
       ): Self = StObject.set(x, "clipRule", value.asInstanceOf[js.Any])
       
       inline def setClipRuleUndefined: Self = StObject.set(x, "clipRule", js.undefined)
@@ -18338,7 +18336,7 @@ object esHooksUseStyleRegisterMod {
       inline def setColor(
         value: Color | (js.Array[
               (Extract[js.UndefOr[Color | js.Array[NonNullable[js.UndefOr[Color]]]], String]) | NonNullable[js.UndefOr[Color]]
-            ]) | `118`
+            ]) | `117`
       ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorAdjust(
@@ -18347,7 +18345,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[PrintColorAdjust | js.Array[NonNullable[js.UndefOr[PrintColorAdjust]]]], 
                 String
               ]) | NonNullable[js.UndefOr[PrintColorAdjust]]
-            ]) | `284`
+            ]) | `283`
       ): Self = StObject.set(x, "colorAdjust", value.asInstanceOf[js.Any])
       
       inline def setColorAdjustUndefined: Self = StObject.set(x, "colorAdjust", js.undefined)
@@ -18365,7 +18363,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ColorInterpolation | js.Array[NonNullable[js.UndefOr[ColorInterpolation]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ColorInterpolation]]
-            ]) | `427`
+            ]) | `426`
       ): Self = StObject.set(x, "colorInterpolation", value.asInstanceOf[js.Any])
       
       inline def setColorInterpolationUndefined: Self = StObject.set(x, "colorInterpolation", js.undefined)
@@ -18383,7 +18381,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ColorRendering | js.Array[NonNullable[js.UndefOr[ColorRendering]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ColorRendering]]
-            ]) | `467`
+            ]) | `466`
       ): Self = StObject.set(x, "colorRendering", value.asInstanceOf[js.Any])
       
       inline def setColorRenderingUndefined: Self = StObject.set(x, "colorRendering", js.undefined)
@@ -18398,7 +18396,7 @@ object esHooksUseStyleRegisterMod {
       inline def setColorScheme(
         value: ColorScheme | (js.Array[
               (Extract[js.UndefOr[ColorScheme | js.Array[NonNullable[js.UndefOr[ColorScheme]]]], String]) | NonNullable[js.UndefOr[ColorScheme]]
-            ]) | `498`
+            ]) | `497`
       ): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
       
       inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
@@ -18416,7 +18414,7 @@ object esHooksUseStyleRegisterMod {
       inline def setColumnCount(
         value: ColumnCount | (js.Array[
               (Extract[js.UndefOr[ColumnCount | js.Array[NonNullable[js.UndefOr[ColumnCount]]]], String]) | NonNullable[js.UndefOr[ColumnCount]]
-            ]) | `357`
+            ]) | `356`
       ): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
       
       inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
@@ -18428,7 +18426,7 @@ object esHooksUseStyleRegisterMod {
       inline def setColumnFill(
         value: ColumnFill | (js.Array[
               (Extract[js.UndefOr[ColumnFill | js.Array[NonNullable[js.UndefOr[ColumnFill]]]], String]) | NonNullable[js.UndefOr[ColumnFill]]
-            ]) | `274`
+            ]) | `273`
       ): Self = StObject.set(x, "columnFill", value.asInstanceOf[js.Any])
       
       inline def setColumnFillUndefined: Self = StObject.set(x, "columnFill", js.undefined)
@@ -18445,7 +18443,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ColumnGap[Double | String]]])
-            ]) | `290`
+            ]) | `289`
       ): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
       
       inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
@@ -18467,7 +18465,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ColumnRule[Double | String]]])
-            ]) | `260`
+            ]) | `259`
       ): Self = StObject.set(x, "columnRule", value.asInstanceOf[js.Any])
       
       inline def setColumnRuleColor(
@@ -18476,7 +18474,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ColumnRuleColor | js.Array[NonNullable[js.UndefOr[ColumnRuleColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ColumnRuleColor]]
-            ]) | `153`
+            ]) | `152`
       ): Self = StObject.set(x, "columnRuleColor", value.asInstanceOf[js.Any])
       
       inline def setColumnRuleColorUndefined: Self = StObject.set(x, "columnRuleColor", js.undefined)
@@ -18494,7 +18492,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ColumnRuleStyle | js.Array[NonNullable[js.UndefOr[ColumnRuleStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ColumnRuleStyle]]
-            ]) | `6`
+            ]) | `5`
       ): Self = StObject.set(x, "columnRuleStyle", value.asInstanceOf[js.Any])
       
       inline def setColumnRuleStyleUndefined: Self = StObject.set(x, "columnRuleStyle", js.undefined)
@@ -18525,7 +18523,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ColumnRuleWidth[Double | String]]])
-            ]) | `95`
+            ]) | `94`
       ): Self = StObject.set(x, "columnRuleWidth", value.asInstanceOf[js.Any])
       
       inline def setColumnRuleWidthUndefined: Self = StObject.set(x, "columnRuleWidth", js.undefined)
@@ -18542,7 +18540,7 @@ object esHooksUseStyleRegisterMod {
       inline def setColumnSpan(
         value: ColumnSpan | (js.Array[
               (Extract[js.UndefOr[ColumnSpan | js.Array[NonNullable[js.UndefOr[ColumnSpan]]]], String]) | NonNullable[js.UndefOr[ColumnSpan]]
-            ]) | `133`
+            ]) | `132`
       ): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
       
       inline def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
@@ -18559,7 +18557,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ColumnWidth[Double | String]]])
-            ]) | `220`
+            ]) | `219`
       ): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
       inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
@@ -18581,7 +18579,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Columns[Double | String]]])
-            ]) | `98`
+            ]) | `97`
       ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
@@ -18598,7 +18596,7 @@ object esHooksUseStyleRegisterMod {
       inline def setContain(
         value: Contain | (js.Array[
               (Extract[js.UndefOr[Contain | js.Array[NonNullable[js.UndefOr[Contain]]]], String]) | NonNullable[js.UndefOr[Contain]]
-            ]) | `455`
+            ]) | `454`
       ): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
       
       inline def setContainIntrinsicBlockSize(
@@ -18609,7 +18607,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]])
-            ]) | `348`
+            ]) | `347`
       ): Self = StObject.set(x, "containIntrinsicBlockSize", value.asInstanceOf[js.Any])
       
       inline def setContainIntrinsicBlockSizeUndefined: Self = StObject.set(x, "containIntrinsicBlockSize", js.undefined)
@@ -18631,7 +18629,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ContainIntrinsicHeight[Double | String]]])
-            ]) | `406`
+            ]) | `405`
       ): Self = StObject.set(x, "containIntrinsicHeight", value.asInstanceOf[js.Any])
       
       inline def setContainIntrinsicHeightUndefined: Self = StObject.set(x, "containIntrinsicHeight", js.undefined)
@@ -18653,7 +18651,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]])
-            ]) | `249`
+            ]) | `248`
       ): Self = StObject.set(x, "containIntrinsicInlineSize", value.asInstanceOf[js.Any])
       
       inline def setContainIntrinsicInlineSizeUndefined: Self = StObject.set(x, "containIntrinsicInlineSize", js.undefined)
@@ -18675,7 +18673,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ContainIntrinsicSize[Double | String]]])
-            ]) | `414`
+            ]) | `413`
       ): Self = StObject.set(x, "containIntrinsicSize", value.asInstanceOf[js.Any])
       
       inline def setContainIntrinsicSizeUndefined: Self = StObject.set(x, "containIntrinsicSize", js.undefined)
@@ -18697,7 +18695,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ContainIntrinsicWidth[Double | String]]])
-            ]) | `205`
+            ]) | `204`
       ): Self = StObject.set(x, "containIntrinsicWidth", value.asInstanceOf[js.Any])
       
       inline def setContainIntrinsicWidthUndefined: Self = StObject.set(x, "containIntrinsicWidth", js.undefined)
@@ -18720,7 +18718,7 @@ object esHooksUseStyleRegisterMod {
       inline def setContainer(
         value: Container | (js.Array[
               (Extract[js.UndefOr[Container | js.Array[NonNullable[js.UndefOr[Container]]]], String]) | NonNullable[js.UndefOr[Container]]
-            ]) | `106`
+            ]) | `105`
       ): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setContainerName(
@@ -18729,7 +18727,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ContainerName | js.Array[NonNullable[js.UndefOr[ContainerName]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ContainerName]]
-            ]) | `515`
+            ]) | `514`
       ): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
       
       inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
@@ -18747,7 +18745,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ContainerType | js.Array[NonNullable[js.UndefOr[ContainerType]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ContainerType]]
-            ]) | `462`
+            ]) | `461`
       ): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
       
       inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
@@ -18768,7 +18766,7 @@ object esHooksUseStyleRegisterMod {
       inline def setContent(
         value: Content | (js.Array[
               (Extract[js.UndefOr[Content | js.Array[NonNullable[js.UndefOr[Content]]]], String]) | NonNullable[js.UndefOr[Content]]
-            ]) | `377`
+            ]) | `376`
       ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
@@ -18783,7 +18781,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ContentVisibility | js.Array[NonNullable[js.UndefOr[ContentVisibility]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ContentVisibility]]
-            ]) | `311`
+            ]) | `310`
       ): Self = StObject.set(x, "contentVisibility", value.asInstanceOf[js.Any])
       
       inline def setContentVisibilityUndefined: Self = StObject.set(x, "contentVisibility", js.undefined)
@@ -18801,7 +18799,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[CounterIncrement | js.Array[NonNullable[js.UndefOr[CounterIncrement]]]], 
                 String
               ]) | NonNullable[js.UndefOr[CounterIncrement]]
-            ]) | `105`
+            ]) | `104`
       ): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
       
       inline def setCounterIncrementUndefined: Self = StObject.set(x, "counterIncrement", js.undefined)
@@ -18816,7 +18814,7 @@ object esHooksUseStyleRegisterMod {
       inline def setCounterReset(
         value: CounterReset | (js.Array[
               (Extract[js.UndefOr[CounterReset | js.Array[NonNullable[js.UndefOr[CounterReset]]]], String]) | NonNullable[js.UndefOr[CounterReset]]
-            ]) | `305`
+            ]) | `304`
       ): Self = StObject.set(x, "counterReset", value.asInstanceOf[js.Any])
       
       inline def setCounterResetUndefined: Self = StObject.set(x, "counterReset", js.undefined)
@@ -18828,7 +18826,7 @@ object esHooksUseStyleRegisterMod {
       inline def setCounterSet(
         value: CounterSet | (js.Array[
               (Extract[js.UndefOr[CounterSet | js.Array[NonNullable[js.UndefOr[CounterSet]]]], String]) | NonNullable[js.UndefOr[CounterSet]]
-            ]) | `146`
+            ]) | `145`
       ): Self = StObject.set(x, "counterSet", value.asInstanceOf[js.Any])
       
       inline def setCounterSetUndefined: Self = StObject.set(x, "counterSet", js.undefined)
@@ -18840,7 +18838,7 @@ object esHooksUseStyleRegisterMod {
       inline def setCursor(
         value: Cursor | (js.Array[
               (Extract[js.UndefOr[Cursor | js.Array[NonNullable[js.UndefOr[Cursor]]]], String]) | NonNullable[js.UndefOr[Cursor]]
-            ]) | `211`
+            ]) | `210`
       ): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
       inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
@@ -18852,7 +18850,7 @@ object esHooksUseStyleRegisterMod {
       inline def setDirection(
         value: Direction | (js.Array[
               (Extract[js.UndefOr[Direction | js.Array[NonNullable[js.UndefOr[Direction]]]], String]) | NonNullable[js.UndefOr[Direction]]
-            ]) | `358`
+            ]) | `357`
       ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
@@ -18864,7 +18862,7 @@ object esHooksUseStyleRegisterMod {
       inline def setDisplay(
         value: Display | (js.Array[
               (Extract[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]], String]) | NonNullable[js.UndefOr[Display]]
-            ]) | `320`
+            ]) | `319`
       ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
@@ -18879,7 +18877,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[DominantBaseline | js.Array[NonNullable[js.UndefOr[DominantBaseline]]]], 
                 String
               ]) | NonNullable[js.UndefOr[DominantBaseline]]
-            ]) | `353`
+            ]) | `352`
       ): Self = StObject.set(x, "dominantBaseline", value.asInstanceOf[js.Any])
       
       inline def setDominantBaselineUndefined: Self = StObject.set(x, "dominantBaseline", js.undefined)
@@ -18894,7 +18892,7 @@ object esHooksUseStyleRegisterMod {
       inline def setEmptyCells(
         value: EmptyCells | (js.Array[
               (Extract[js.UndefOr[EmptyCells | js.Array[NonNullable[js.UndefOr[EmptyCells]]]], String]) | NonNullable[js.UndefOr[EmptyCells]]
-            ]) | `341`
+            ]) | `340`
       ): Self = StObject.set(x, "emptyCells", value.asInstanceOf[js.Any])
       
       inline def setEmptyCellsUndefined: Self = StObject.set(x, "emptyCells", js.undefined)
@@ -18906,13 +18904,13 @@ object esHooksUseStyleRegisterMod {
       inline def setFill(
         value: Fill | (js.Array[
               (Extract[js.UndefOr[Fill | js.Array[NonNullable[js.UndefOr[Fill]]]], String]) | NonNullable[js.UndefOr[Fill]]
-            ]) | `104`
+            ]) | `103`
       ): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
       inline def setFillOpacity(
         value: FillOpacity | (js.Array[
               (Extract[js.UndefOr[FillOpacity | js.Array[NonNullable[js.UndefOr[FillOpacity]]]], String]) | NonNullable[js.UndefOr[FillOpacity]]
-            ]) | `24`
+            ]) | `23`
       ): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
       
       inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
@@ -18924,7 +18922,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFillRule(
         value: FillRule | (js.Array[
               (Extract[js.UndefOr[FillRule | js.Array[NonNullable[js.UndefOr[FillRule]]]], String]) | NonNullable[js.UndefOr[FillRule]]
-            ]) | `450`
+            ]) | `449`
       ): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
       
       inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
@@ -18942,7 +18940,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFilter(
         value: Filter | (js.Array[
               (Extract[js.UndefOr[Filter | js.Array[NonNullable[js.UndefOr[Filter]]]], String]) | NonNullable[js.UndefOr[Filter]]
-            ]) | `397`
+            ]) | `396`
       ): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
@@ -18959,7 +18957,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Flex[Double | String]]])
-            ]) | `310`
+            ]) | `309`
       ): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
       inline def setFlexBasis(
@@ -18970,7 +18968,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[FlexBasis[Double | String]]])
-            ]) | `19`
+            ]) | `18`
       ): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
       
       inline def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
@@ -18990,7 +18988,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FlexDirection]]
-            ]) | `121`
+            ]) | `120`
       ): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
       
       inline def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
@@ -19005,7 +19003,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFlexFlow(
         value: FlexFlow | (js.Array[
               (Extract[js.UndefOr[FlexFlow | js.Array[NonNullable[js.UndefOr[FlexFlow]]]], String]) | NonNullable[js.UndefOr[FlexFlow]]
-            ]) | `167`
+            ]) | `166`
       ): Self = StObject.set(x, "flexFlow", value.asInstanceOf[js.Any])
       
       inline def setFlexFlowUndefined: Self = StObject.set(x, "flexFlow", js.undefined)
@@ -19017,7 +19015,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFlexGrow(
         value: FlexGrow | (js.Array[
               (Extract[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]], String]) | NonNullable[js.UndefOr[FlexGrow]]
-            ]) | `97`
+            ]) | `96`
       ): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
       
       inline def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
@@ -19029,7 +19027,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFlexShrink(
         value: FlexShrink | (js.Array[
               (Extract[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]], String]) | NonNullable[js.UndefOr[FlexShrink]]
-            ]) | `198`
+            ]) | `197`
       ): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
       
       inline def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
@@ -19052,7 +19050,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFlexWrap(
         value: FlexWrap | (js.Array[
               (Extract[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]], String]) | NonNullable[js.UndefOr[FlexWrap]]
-            ]) | `15`
+            ]) | `14`
       ): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
       
       inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
@@ -19064,7 +19062,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFloat(
         value: Float | (js.Array[
               (Extract[js.UndefOr[Float | js.Array[NonNullable[js.UndefOr[Float]]]], String]) | NonNullable[js.UndefOr[Float]]
-            ]) | `175`
+            ]) | `174`
       ): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
       
       inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
@@ -19076,7 +19074,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFloodColor(
         value: FloodColor | (js.Array[
               (Extract[js.UndefOr[FloodColor | js.Array[NonNullable[js.UndefOr[FloodColor]]]], String]) | NonNullable[js.UndefOr[FloodColor]]
-            ]) | `511`
+            ]) | `510`
       ): Self = StObject.set(x, "floodColor", value.asInstanceOf[js.Any])
       
       inline def setFloodColorUndefined: Self = StObject.set(x, "floodColor", js.undefined)
@@ -19088,7 +19086,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFloodOpacity(
         value: FloodOpacity | (js.Array[
               (Extract[js.UndefOr[FloodOpacity | js.Array[NonNullable[js.UndefOr[FloodOpacity]]]], String]) | NonNullable[js.UndefOr[FloodOpacity]]
-            ]) | `18`
+            ]) | `17`
       ): Self = StObject.set(x, "floodOpacity", value.asInstanceOf[js.Any])
       
       inline def setFloodOpacityUndefined: Self = StObject.set(x, "floodOpacity", js.undefined)
@@ -19100,13 +19098,13 @@ object esHooksUseStyleRegisterMod {
       inline def setFont(
         value: Font | (js.Array[
               (Extract[js.UndefOr[Font | js.Array[NonNullable[js.UndefOr[Font]]]], String]) | NonNullable[js.UndefOr[Font]]
-            ]) | `330`
+            ]) | `329`
       ): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
       inline def setFontFamily(
         value: FontFamily | (js.Array[
               (Extract[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]], String]) | NonNullable[js.UndefOr[FontFamily]]
-            ]) | `558`
+            ]) | `557`
       ): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
       inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
@@ -19121,7 +19119,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontFeatureSettings | js.Array[NonNullable[js.UndefOr[FontFeatureSettings]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontFeatureSettings]]
-            ]) | `101`
+            ]) | `100`
       ): Self = StObject.set(x, "fontFeatureSettings", value.asInstanceOf[js.Any])
       
       inline def setFontFeatureSettingsUndefined: Self = StObject.set(x, "fontFeatureSettings", js.undefined)
@@ -19136,7 +19134,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFontKerning(
         value: FontKerning | (js.Array[
               (Extract[js.UndefOr[FontKerning | js.Array[NonNullable[js.UndefOr[FontKerning]]]], String]) | NonNullable[js.UndefOr[FontKerning]]
-            ]) | `179`
+            ]) | `178`
       ): Self = StObject.set(x, "fontKerning", value.asInstanceOf[js.Any])
       
       inline def setFontKerningUndefined: Self = StObject.set(x, "fontKerning", js.undefined)
@@ -19151,7 +19149,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontLanguageOverride | js.Array[NonNullable[js.UndefOr[FontLanguageOverride]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontLanguageOverride]]
-            ]) | `186`
+            ]) | `185`
       ): Self = StObject.set(x, "fontLanguageOverride", value.asInstanceOf[js.Any])
       
       inline def setFontLanguageOverrideUndefined: Self = StObject.set(x, "fontLanguageOverride", js.undefined)
@@ -19169,7 +19167,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontOpticalSizing | js.Array[NonNullable[js.UndefOr[FontOpticalSizing]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontOpticalSizing]]
-            ]) | `317`
+            ]) | `316`
       ): Self = StObject.set(x, "fontOpticalSizing", value.asInstanceOf[js.Any])
       
       inline def setFontOpticalSizingUndefined: Self = StObject.set(x, "fontOpticalSizing", js.undefined)
@@ -19184,7 +19182,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFontPalette(
         value: FontPalette | (js.Array[
               (Extract[js.UndefOr[FontPalette | js.Array[NonNullable[js.UndefOr[FontPalette]]]], String]) | NonNullable[js.UndefOr[FontPalette]]
-            ]) | `196`
+            ]) | `195`
       ): Self = StObject.set(x, "fontPalette", value.asInstanceOf[js.Any])
       
       inline def setFontPaletteUndefined: Self = StObject.set(x, "fontPalette", js.undefined)
@@ -19201,7 +19199,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[FontSize[Double | String]]])
-            ]) | `416`
+            ]) | `415`
       ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeAdjust(
@@ -19210,7 +19208,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontSizeAdjust | js.Array[NonNullable[js.UndefOr[FontSizeAdjust]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontSizeAdjust]]
-            ]) | `32`
+            ]) | `31`
       ): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
       
       inline def setFontSizeAdjustUndefined: Self = StObject.set(x, "fontSizeAdjust", js.undefined)
@@ -19241,7 +19239,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[FontSmooth[Double | String]]])
-            ]) | `229`
+            ]) | `228`
       ): Self = StObject.set(x, "fontSmooth", value.asInstanceOf[js.Any])
       
       inline def setFontSmoothUndefined: Self = StObject.set(x, "fontSmooth", js.undefined)
@@ -19258,7 +19256,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFontStretch(
         value: FontStretch | (js.Array[
               (Extract[js.UndefOr[FontStretch | js.Array[NonNullable[js.UndefOr[FontStretch]]]], String]) | NonNullable[js.UndefOr[FontStretch]]
-            ]) | `518`
+            ]) | `517`
       ): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
       
       inline def setFontStretchUndefined: Self = StObject.set(x, "fontStretch", js.undefined)
@@ -19270,7 +19268,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFontStyle(
         value: FontStyle | (js.Array[
               (Extract[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]], String]) | NonNullable[js.UndefOr[FontStyle]]
-            ]) | `298`
+            ]) | `297`
       ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
       inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
@@ -19285,7 +19283,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontSynthesis | js.Array[NonNullable[js.UndefOr[FontSynthesis]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontSynthesis]]
-            ]) | `259`
+            ]) | `258`
       ): Self = StObject.set(x, "fontSynthesis", value.asInstanceOf[js.Any])
       
       inline def setFontSynthesisUndefined: Self = StObject.set(x, "fontSynthesis", js.undefined)
@@ -19306,7 +19304,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFontVariant(
         value: FontVariant | (js.Array[
               (Extract[js.UndefOr[FontVariant | js.Array[NonNullable[js.UndefOr[FontVariant]]]], String]) | NonNullable[js.UndefOr[FontVariant]]
-            ]) | `40`
+            ]) | `39`
       ): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
       
       inline def setFontVariantAlternates(
@@ -19315,7 +19313,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontVariantAlternates | js.Array[NonNullable[js.UndefOr[FontVariantAlternates]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontVariantAlternates]]
-            ]) | `423`
+            ]) | `422`
       ): Self = StObject.set(x, "fontVariantAlternates", value.asInstanceOf[js.Any])
       
       inline def setFontVariantAlternatesUndefined: Self = StObject.set(x, "fontVariantAlternates", js.undefined)
@@ -19333,7 +19331,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontVariantCaps | js.Array[NonNullable[js.UndefOr[FontVariantCaps]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontVariantCaps]]
-            ]) | `191`
+            ]) | `190`
       ): Self = StObject.set(x, "fontVariantCaps", value.asInstanceOf[js.Any])
       
       inline def setFontVariantCapsUndefined: Self = StObject.set(x, "fontVariantCaps", js.undefined)
@@ -19351,7 +19349,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontVariantEastAsian | js.Array[NonNullable[js.UndefOr[FontVariantEastAsian]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontVariantEastAsian]]
-            ]) | `63`
+            ]) | `62`
       ): Self = StObject.set(x, "fontVariantEastAsian", value.asInstanceOf[js.Any])
       
       inline def setFontVariantEastAsianUndefined: Self = StObject.set(x, "fontVariantEastAsian", js.undefined)
@@ -19369,7 +19367,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontVariantEmoji | js.Array[NonNullable[js.UndefOr[FontVariantEmoji]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontVariantEmoji]]
-            ]) | `503`
+            ]) | `502`
       ): Self = StObject.set(x, "fontVariantEmoji", value.asInstanceOf[js.Any])
       
       inline def setFontVariantEmojiUndefined: Self = StObject.set(x, "fontVariantEmoji", js.undefined)
@@ -19387,7 +19385,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontVariantLigatures | js.Array[NonNullable[js.UndefOr[FontVariantLigatures]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontVariantLigatures]]
-            ]) | `79`
+            ]) | `78`
       ): Self = StObject.set(x, "fontVariantLigatures", value.asInstanceOf[js.Any])
       
       inline def setFontVariantLigaturesUndefined: Self = StObject.set(x, "fontVariantLigatures", js.undefined)
@@ -19405,7 +19403,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontVariantNumeric | js.Array[NonNullable[js.UndefOr[FontVariantNumeric]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontVariantNumeric]]
-            ]) | `403`
+            ]) | `402`
       ): Self = StObject.set(x, "fontVariantNumeric", value.asInstanceOf[js.Any])
       
       inline def setFontVariantNumericUndefined: Self = StObject.set(x, "fontVariantNumeric", js.undefined)
@@ -19423,7 +19421,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontVariantPosition | js.Array[NonNullable[js.UndefOr[FontVariantPosition]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontVariantPosition]]
-            ]) | `388`
+            ]) | `387`
       ): Self = StObject.set(x, "fontVariantPosition", value.asInstanceOf[js.Any])
       
       inline def setFontVariantPositionUndefined: Self = StObject.set(x, "fontVariantPosition", js.undefined)
@@ -19447,7 +19445,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontVariationSettings | js.Array[NonNullable[js.UndefOr[FontVariationSettings]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontVariationSettings]]
-            ]) | `532`
+            ]) | `531`
       ): Self = StObject.set(x, "fontVariationSettings", value.asInstanceOf[js.Any])
       
       inline def setFontVariationSettingsUndefined: Self = StObject.set(x, "fontVariationSettings", js.undefined)
@@ -19462,7 +19460,7 @@ object esHooksUseStyleRegisterMod {
       inline def setFontWeight(
         value: FontWeight | (js.Array[
               (Extract[js.UndefOr[FontWeight | js.Array[NonNullable[js.UndefOr[FontWeight]]]], String]) | NonNullable[js.UndefOr[FontWeight]]
-            ]) | `57`
+            ]) | `56`
       ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
@@ -19477,7 +19475,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ForcedColorAdjust | js.Array[NonNullable[js.UndefOr[ForcedColorAdjust]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ForcedColorAdjust]]
-            ]) | `409`
+            ]) | `408`
       ): Self = StObject.set(x, "forcedColorAdjust", value.asInstanceOf[js.Any])
       
       inline def setForcedColorAdjustUndefined: Self = StObject.set(x, "forcedColorAdjust", js.undefined)
@@ -19497,7 +19495,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Gap[Double | String]]])
-            ]) | `529`
+            ]) | `528`
       ): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
       
       inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
@@ -19519,7 +19517,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[GlyphOrientationVertical]]
-            ]) | `321`
+            ]) | `320`
       ): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
       
       inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
@@ -19536,13 +19534,13 @@ object esHooksUseStyleRegisterMod {
       inline def setGrid(
         value: Grid | (js.Array[
               (Extract[js.UndefOr[Grid | js.Array[NonNullable[js.UndefOr[Grid]]]], String]) | NonNullable[js.UndefOr[Grid]]
-            ]) | `505`
+            ]) | `504`
       ): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
       inline def setGridArea(
         value: GridArea | (js.Array[
               (Extract[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]], String]) | NonNullable[js.UndefOr[GridArea]]
-            ]) | `484`
+            ]) | `483`
       ): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
       
       inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
@@ -19559,7 +19557,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[GridAutoColumns[Double | String]]])
-            ]) | `44`
+            ]) | `43`
       ): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
       
       inline def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
@@ -19576,7 +19574,7 @@ object esHooksUseStyleRegisterMod {
       inline def setGridAutoFlow(
         value: GridAutoFlow | (js.Array[
               (Extract[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]], String]) | NonNullable[js.UndefOr[GridAutoFlow]]
-            ]) | `46`
+            ]) | `45`
       ): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
       
       inline def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
@@ -19593,7 +19591,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[GridAutoRows[Double | String]]])
-            ]) | `538`
+            ]) | `537`
       ): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
       
       inline def setGridAutoRowsUndefined: Self = StObject.set(x, "gridAutoRows", js.undefined)
@@ -19610,7 +19608,7 @@ object esHooksUseStyleRegisterMod {
       inline def setGridColumn(
         value: GridColumn | (js.Array[
               (Extract[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]], String]) | NonNullable[js.UndefOr[GridColumn]]
-            ]) | `394`
+            ]) | `393`
       ): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
       
       inline def setGridColumnEnd(
@@ -19619,7 +19617,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[GridColumnEnd | js.Array[NonNullable[js.UndefOr[GridColumnEnd]]]], 
                 String
               ]) | NonNullable[js.UndefOr[GridColumnEnd]]
-            ]) | `492`
+            ]) | `491`
       ): Self = StObject.set(x, "gridColumnEnd", value.asInstanceOf[js.Any])
       
       inline def setGridColumnEndUndefined: Self = StObject.set(x, "gridColumnEnd", js.undefined)
@@ -19639,7 +19637,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[GridColumnGap[Double | String]]])
-            ]) | `74`
+            ]) | `73`
       ): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
       
       inline def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
@@ -19659,7 +19657,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[GridColumnStart | js.Array[NonNullable[js.UndefOr[GridColumnStart]]]], 
                 String
               ]) | NonNullable[js.UndefOr[GridColumnStart]]
-            ]) | `408`
+            ]) | `407`
       ): Self = StObject.set(x, "gridColumnStart", value.asInstanceOf[js.Any])
       
       inline def setGridColumnStartUndefined: Self = StObject.set(x, "gridColumnStart", js.undefined)
@@ -19685,7 +19683,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[GridGap[Double | String]]])
-            ]) | `525`
+            ]) | `524`
       ): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
       
       inline def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
@@ -19702,13 +19700,13 @@ object esHooksUseStyleRegisterMod {
       inline def setGridRow(
         value: GridRow | (js.Array[
               (Extract[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]], String]) | NonNullable[js.UndefOr[GridRow]]
-            ]) | `233`
+            ]) | `232`
       ): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
       
       inline def setGridRowEnd(
         value: GridRowEnd | (js.Array[
               (Extract[js.UndefOr[GridRowEnd | js.Array[NonNullable[js.UndefOr[GridRowEnd]]]], String]) | NonNullable[js.UndefOr[GridRowEnd]]
-            ]) | `552`
+            ]) | `551`
       ): Self = StObject.set(x, "gridRowEnd", value.asInstanceOf[js.Any])
       
       inline def setGridRowEndUndefined: Self = StObject.set(x, "gridRowEnd", js.undefined)
@@ -19725,7 +19723,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[GridRowGap[Double | String]]])
-            ]) | `440`
+            ]) | `439`
       ): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
       
       inline def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
@@ -19742,7 +19740,7 @@ object esHooksUseStyleRegisterMod {
       inline def setGridRowStart(
         value: GridRowStart | (js.Array[
               (Extract[js.UndefOr[GridRowStart | js.Array[NonNullable[js.UndefOr[GridRowStart]]]], String]) | NonNullable[js.UndefOr[GridRowStart]]
-            ]) | `490`
+            ]) | `489`
       ): Self = StObject.set(x, "gridRowStart", value.asInstanceOf[js.Any])
       
       inline def setGridRowStartUndefined: Self = StObject.set(x, "gridRowStart", js.undefined)
@@ -19760,7 +19758,7 @@ object esHooksUseStyleRegisterMod {
       inline def setGridTemplate(
         value: GridTemplate | (js.Array[
               (Extract[js.UndefOr[GridTemplate | js.Array[NonNullable[js.UndefOr[GridTemplate]]]], String]) | NonNullable[js.UndefOr[GridTemplate]]
-            ]) | `10`
+            ]) | `9`
       ): Self = StObject.set(x, "gridTemplate", value.asInstanceOf[js.Any])
       
       inline def setGridTemplateAreas(
@@ -19769,7 +19767,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]], 
                 String
               ]) | NonNullable[js.UndefOr[GridTemplateAreas]]
-            ]) | `48`
+            ]) | `47`
       ): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
       
       inline def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
@@ -19789,7 +19787,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]])
-            ]) | `88`
+            ]) | `87`
       ): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
       
       inline def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
@@ -19811,7 +19809,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[GridTemplateRows[Double | String]]])
-            ]) | `279`
+            ]) | `278`
       ): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
       
       inline def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
@@ -19843,7 +19841,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[HangingPunctuation | js.Array[NonNullable[js.UndefOr[HangingPunctuation]]]], 
                 String
               ]) | NonNullable[js.UndefOr[HangingPunctuation]]
-            ]) | `378`
+            ]) | `377`
       ): Self = StObject.set(x, "hangingPunctuation", value.asInstanceOf[js.Any])
       
       inline def setHangingPunctuationUndefined: Self = StObject.set(x, "hangingPunctuation", js.undefined)
@@ -19863,7 +19861,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Height[Double | String]]])
-            ]) | `81`
+            ]) | `80`
       ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -19883,7 +19881,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[HyphenateCharacter | js.Array[NonNullable[js.UndefOr[HyphenateCharacter]]]], 
                 String
               ]) | NonNullable[js.UndefOr[HyphenateCharacter]]
-            ]) | `396`
+            ]) | `395`
       ): Self = StObject.set(x, "hyphenateCharacter", value.asInstanceOf[js.Any])
       
       inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
@@ -19901,7 +19899,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[HyphenateLimitChars | js.Array[NonNullable[js.UndefOr[HyphenateLimitChars]]]], 
                 String
               ]) | NonNullable[js.UndefOr[HyphenateLimitChars]]
-            ]) | `471`
+            ]) | `470`
       ): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
       
       inline def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
@@ -19916,7 +19914,7 @@ object esHooksUseStyleRegisterMod {
       inline def setHyphens(
         value: Hyphens | (js.Array[
               (Extract[js.UndefOr[Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]], String]) | NonNullable[js.UndefOr[Hyphens]]
-            ]) | `289`
+            ]) | `288`
       ): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
       
       inline def setHyphensUndefined: Self = StObject.set(x, "hyphens", js.undefined)
@@ -19931,7 +19929,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ImageOrientation | js.Array[NonNullable[js.UndefOr[ImageOrientation]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ImageOrientation]]
-            ]) | SKIPCHECKValue
+            ]) | Value
       ): Self = StObject.set(x, "imageOrientation", value.asInstanceOf[js.Any])
       
       inline def setImageOrientationUndefined: Self = StObject.set(x, "imageOrientation", js.undefined)
@@ -19949,7 +19947,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ImageRendering | js.Array[NonNullable[js.UndefOr[ImageRendering]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ImageRendering]]
-            ]) | `482`
+            ]) | `481`
       ): Self = StObject.set(x, "imageRendering", value.asInstanceOf[js.Any])
       
       inline def setImageRenderingUndefined: Self = StObject.set(x, "imageRendering", js.undefined)
@@ -19967,7 +19965,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ImageResolution | js.Array[NonNullable[js.UndefOr[ImageResolution]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ImageResolution]]
-            ]) | `271`
+            ]) | `270`
       ): Self = StObject.set(x, "imageResolution", value.asInstanceOf[js.Any])
       
       inline def setImageResolutionUndefined: Self = StObject.set(x, "imageResolution", js.undefined)
@@ -19982,7 +19980,7 @@ object esHooksUseStyleRegisterMod {
       inline def setImeMode(
         value: ImeMode | (js.Array[
               (Extract[js.UndefOr[ImeMode | js.Array[NonNullable[js.UndefOr[ImeMode]]]], String]) | NonNullable[js.UndefOr[ImeMode]]
-            ]) | `172`
+            ]) | `171`
       ): Self = StObject.set(x, "imeMode", value.asInstanceOf[js.Any])
       
       inline def setImeModeUndefined: Self = StObject.set(x, "imeMode", js.undefined)
@@ -19997,7 +19995,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[InitialLetter | js.Array[NonNullable[js.UndefOr[InitialLetter]]]], 
                 String
               ]) | NonNullable[js.UndefOr[InitialLetter]]
-            ]) | `176`
+            ]) | `175`
       ): Self = StObject.set(x, "initialLetter", value.asInstanceOf[js.Any])
       
       inline def setInitialLetterUndefined: Self = StObject.set(x, "initialLetter", js.undefined)
@@ -20017,7 +20015,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[InlineSize[Double | String]]])
-            ]) | `504`
+            ]) | `503`
       ): Self = StObject.set(x, "inlineSize", value.asInstanceOf[js.Any])
       
       inline def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
@@ -20037,7 +20035,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[InputSecurity | js.Array[NonNullable[js.UndefOr[InputSecurity]]]], 
                 String
               ]) | NonNullable[js.UndefOr[InputSecurity]]
-            ]) | `415`
+            ]) | `414`
       ): Self = StObject.set(x, "inputSecurity", value.asInstanceOf[js.Any])
       
       inline def setInputSecurityUndefined: Self = StObject.set(x, "inputSecurity", js.undefined)
@@ -20057,7 +20055,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Inset[Double | String]]])
-            ]) | `548`
+            ]) | `547`
       ): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
       
       inline def setInsetBlock(
@@ -20068,7 +20066,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[InsetBlock[Double | String]]])
-            ]) | `268`
+            ]) | `267`
       ): Self = StObject.set(x, "insetBlock", value.asInstanceOf[js.Any])
       
       inline def setInsetBlockEnd(
@@ -20079,7 +20077,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[InsetBlockEnd[Double | String]]])
-            ]) | `157`
+            ]) | `156`
       ): Self = StObject.set(x, "insetBlockEnd", value.asInstanceOf[js.Any])
       
       inline def setInsetBlockEndUndefined: Self = StObject.set(x, "insetBlockEnd", js.undefined)
@@ -20101,7 +20099,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[InsetBlockStart[Double | String]]])
-            ]) | `226`
+            ]) | `225`
       ): Self = StObject.set(x, "insetBlockStart", value.asInstanceOf[js.Any])
       
       inline def setInsetBlockStartUndefined: Self = StObject.set(x, "insetBlockStart", js.undefined)
@@ -20134,7 +20132,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[InsetInline[Double | String]]])
-            ]) | `217`
+            ]) | `216`
       ): Self = StObject.set(x, "insetInline", value.asInstanceOf[js.Any])
       
       inline def setInsetInlineEnd(
@@ -20145,7 +20143,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[InsetInlineEnd[Double | String]]])
-            ]) | `428`
+            ]) | `427`
       ): Self = StObject.set(x, "insetInlineEnd", value.asInstanceOf[js.Any])
       
       inline def setInsetInlineEndUndefined: Self = StObject.set(x, "insetInlineEnd", js.undefined)
@@ -20167,7 +20165,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[InsetInlineStart[Double | String]]])
-            ]) | `275`
+            ]) | `274`
       ): Self = StObject.set(x, "insetInlineStart", value.asInstanceOf[js.Any])
       
       inline def setInsetInlineStartUndefined: Self = StObject.set(x, "insetInlineStart", js.undefined)
@@ -20206,7 +20204,7 @@ object esHooksUseStyleRegisterMod {
       inline def setIsolation(
         value: Isolation | (js.Array[
               (Extract[js.UndefOr[Isolation | js.Array[NonNullable[js.UndefOr[Isolation]]]], String]) | NonNullable[js.UndefOr[Isolation]]
-            ]) | `277`
+            ]) | `276`
       ): Self = StObject.set(x, "isolation", value.asInstanceOf[js.Any])
       
       inline def setIsolationUndefined: Self = StObject.set(x, "isolation", js.undefined)
@@ -20221,7 +20219,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]], 
                 String
               ]) | NonNullable[js.UndefOr[JustifyContent]]
-            ]) | `203`
+            ]) | `202`
       ): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
       
       inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
@@ -20236,7 +20234,7 @@ object esHooksUseStyleRegisterMod {
       inline def setJustifyItems(
         value: JustifyItems | (js.Array[
               (Extract[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]], String]) | NonNullable[js.UndefOr[JustifyItems]]
-            ]) | `373`
+            ]) | `372`
       ): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
       
       inline def setJustifyItemsUndefined: Self = StObject.set(x, "justifyItems", js.undefined)
@@ -20248,7 +20246,7 @@ object esHooksUseStyleRegisterMod {
       inline def setJustifySelf(
         value: JustifySelf | (js.Array[
               (Extract[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]], String]) | NonNullable[js.UndefOr[JustifySelf]]
-            ]) | `389`
+            ]) | `388`
       ): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
       
       inline def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
@@ -20263,7 +20261,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[JustifyTracks | js.Array[NonNullable[js.UndefOr[JustifyTracks]]]], 
                 String
               ]) | NonNullable[js.UndefOr[JustifyTracks]]
-            ]) | `342`
+            ]) | `341`
       ): Self = StObject.set(x, "justifyTracks", value.asInstanceOf[js.Any])
       
       inline def setJustifyTracksUndefined: Self = StObject.set(x, "justifyTracks", js.undefined)
@@ -20278,7 +20276,7 @@ object esHooksUseStyleRegisterMod {
       inline def setKhtmlBoxAlign(
         value: BoxAlign | (js.Array[
               (Extract[js.UndefOr[BoxAlign | js.Array[NonNullable[js.UndefOr[BoxAlign]]]], String]) | NonNullable[js.UndefOr[BoxAlign]]
-            ]) | `83`
+            ]) | `82`
       ): Self = StObject.set(x, "KhtmlBoxAlign", value.asInstanceOf[js.Any])
       
       inline def setKhtmlBoxAlignUndefined: Self = StObject.set(x, "KhtmlBoxAlign", js.undefined)
@@ -20290,7 +20288,7 @@ object esHooksUseStyleRegisterMod {
       inline def setKhtmlBoxDirection(
         value: BoxDirection | (js.Array[
               (Extract[js.UndefOr[BoxDirection | js.Array[NonNullable[js.UndefOr[BoxDirection]]]], String]) | NonNullable[js.UndefOr[BoxDirection]]
-            ]) | `59`
+            ]) | `58`
       ): Self = StObject.set(x, "KhtmlBoxDirection", value.asInstanceOf[js.Any])
       
       inline def setKhtmlBoxDirectionUndefined: Self = StObject.set(x, "KhtmlBoxDirection", js.undefined)
@@ -20302,13 +20300,13 @@ object esHooksUseStyleRegisterMod {
       inline def setKhtmlBoxFlex(
         value: BoxFlex | (js.Array[
               (Extract[js.UndefOr[BoxFlex | js.Array[NonNullable[js.UndefOr[BoxFlex]]]], String]) | NonNullable[js.UndefOr[BoxFlex]]
-            ]) | `140`
+            ]) | `139`
       ): Self = StObject.set(x, "KhtmlBoxFlex", value.asInstanceOf[js.Any])
       
       inline def setKhtmlBoxFlexGroup(
         value: BoxFlexGroup | (js.Array[
               (Extract[js.UndefOr[BoxFlexGroup | js.Array[NonNullable[js.UndefOr[BoxFlexGroup]]]], String]) | NonNullable[js.UndefOr[BoxFlexGroup]]
-            ]) | `152`
+            ]) | `151`
       ): Self = StObject.set(x, "KhtmlBoxFlexGroup", value.asInstanceOf[js.Any])
       
       inline def setKhtmlBoxFlexGroupUndefined: Self = StObject.set(x, "KhtmlBoxFlexGroup", js.undefined)
@@ -20326,7 +20324,7 @@ object esHooksUseStyleRegisterMod {
       inline def setKhtmlBoxLines(
         value: BoxLines | (js.Array[
               (Extract[js.UndefOr[BoxLines | js.Array[NonNullable[js.UndefOr[BoxLines]]]], String]) | NonNullable[js.UndefOr[BoxLines]]
-            ]) | `199`
+            ]) | `198`
       ): Self = StObject.set(x, "KhtmlBoxLines", value.asInstanceOf[js.Any])
       
       inline def setKhtmlBoxLinesUndefined: Self = StObject.set(x, "KhtmlBoxLines", js.undefined)
@@ -20341,7 +20339,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BoxOrdinalGroup | js.Array[NonNullable[js.UndefOr[BoxOrdinalGroup]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BoxOrdinalGroup]]
-            ]) | `190`
+            ]) | `189`
       ): Self = StObject.set(x, "KhtmlBoxOrdinalGroup", value.asInstanceOf[js.Any])
       
       inline def setKhtmlBoxOrdinalGroupUndefined: Self = StObject.set(x, "KhtmlBoxOrdinalGroup", js.undefined)
@@ -20356,7 +20354,7 @@ object esHooksUseStyleRegisterMod {
       inline def setKhtmlBoxOrient(
         value: BoxOrient | (js.Array[
               (Extract[js.UndefOr[BoxOrient | js.Array[NonNullable[js.UndefOr[BoxOrient]]]], String]) | NonNullable[js.UndefOr[BoxOrient]]
-            ]) | `22`
+            ]) | `21`
       ): Self = StObject.set(x, "KhtmlBoxOrient", value.asInstanceOf[js.Any])
       
       inline def setKhtmlBoxOrientUndefined: Self = StObject.set(x, "KhtmlBoxOrient", js.undefined)
@@ -20368,7 +20366,7 @@ object esHooksUseStyleRegisterMod {
       inline def setKhtmlBoxPack(
         value: BoxPack | (js.Array[
               (Extract[js.UndefOr[BoxPack | js.Array[NonNullable[js.UndefOr[BoxPack]]]], String]) | NonNullable[js.UndefOr[BoxPack]]
-            ]) | `119`
+            ]) | `118`
       ): Self = StObject.set(x, "KhtmlBoxPack", value.asInstanceOf[js.Any])
       
       inline def setKhtmlBoxPackUndefined: Self = StObject.set(x, "KhtmlBoxPack", js.undefined)
@@ -20380,7 +20378,7 @@ object esHooksUseStyleRegisterMod {
       inline def setKhtmlLineBreak(
         value: LineBreak | (js.Array[
               (Extract[js.UndefOr[LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]], String]) | NonNullable[js.UndefOr[LineBreak]]
-            ]) | `134`
+            ]) | `133`
       ): Self = StObject.set(x, "KhtmlLineBreak", value.asInstanceOf[js.Any])
       
       inline def setKhtmlLineBreakUndefined: Self = StObject.set(x, "KhtmlLineBreak", js.undefined)
@@ -20392,7 +20390,7 @@ object esHooksUseStyleRegisterMod {
       inline def setKhtmlOpacity(
         value: Opacity | (js.Array[
               (Extract[js.UndefOr[Opacity | js.Array[NonNullable[js.UndefOr[Opacity]]]], String]) | NonNullable[js.UndefOr[Opacity]]
-            ]) | `248`
+            ]) | `247`
       ): Self = StObject.set(x, "KhtmlOpacity", value.asInstanceOf[js.Any])
       
       inline def setKhtmlOpacityUndefined: Self = StObject.set(x, "KhtmlOpacity", js.undefined)
@@ -20404,7 +20402,7 @@ object esHooksUseStyleRegisterMod {
       inline def setKhtmlUserSelect(
         value: UserSelect | (js.Array[
               (Extract[js.UndefOr[UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]], String]) | NonNullable[js.UndefOr[UserSelect]]
-            ]) | `47`
+            ]) | `46`
       ): Self = StObject.set(x, "KhtmlUserSelect", value.asInstanceOf[js.Any])
       
       inline def setKhtmlUserSelectUndefined: Self = StObject.set(x, "KhtmlUserSelect", js.undefined)
@@ -20421,7 +20419,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Left[Double | String]]])
-            ]) | `442`
+            ]) | `441`
       ): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
       inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
@@ -20443,7 +20441,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[LetterSpacing[Double | String]]])
-            ]) | `235`
+            ]) | `234`
       ): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
       
       inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
@@ -20463,7 +20461,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[LightingColor | js.Array[NonNullable[js.UndefOr[LightingColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[LightingColor]]
-            ]) | `163`
+            ]) | `162`
       ): Self = StObject.set(x, "lightingColor", value.asInstanceOf[js.Any])
       
       inline def setLightingColorUndefined: Self = StObject.set(x, "lightingColor", js.undefined)
@@ -20478,7 +20476,7 @@ object esHooksUseStyleRegisterMod {
       inline def setLineBreak(
         value: LineBreak | (js.Array[
               (Extract[js.UndefOr[LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]], String]) | NonNullable[js.UndefOr[LineBreak]]
-            ]) | `134`
+            ]) | `133`
       ): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
       
       inline def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
@@ -20490,7 +20488,7 @@ object esHooksUseStyleRegisterMod {
       inline def setLineClamp(
         value: LineClamp | (js.Array[
               (Extract[js.UndefOr[LineClamp | js.Array[NonNullable[js.UndefOr[LineClamp]]]], String]) | NonNullable[js.UndefOr[LineClamp]]
-            ]) | `486`
+            ]) | `485`
       ): Self = StObject.set(x, "lineClamp", value.asInstanceOf[js.Any])
       
       inline def setLineClampUndefined: Self = StObject.set(x, "lineClamp", js.undefined)
@@ -20507,7 +20505,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[LineHeight[Double | String]]])
-            ]) | `62`
+            ]) | `61`
       ): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
       inline def setLineHeightStep(
@@ -20518,7 +20516,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[LineHeightStep[Double | String]]])
-            ]) | `301`
+            ]) | `300`
       ): Self = StObject.set(x, "lineHeightStep", value.asInstanceOf[js.Any])
       
       inline def setLineHeightStepUndefined: Self = StObject.set(x, "lineHeightStep", js.undefined)
@@ -20546,7 +20544,7 @@ object esHooksUseStyleRegisterMod {
       inline def setListStyle(
         value: ListStyle | (js.Array[
               (Extract[js.UndefOr[ListStyle | js.Array[NonNullable[js.UndefOr[ListStyle]]]], String]) | NonNullable[js.UndefOr[ListStyle]]
-            ]) | `332`
+            ]) | `331`
       ): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
       
       inline def setListStyleImage(
@@ -20555,7 +20553,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ListStyleImage | js.Array[NonNullable[js.UndefOr[ListStyleImage]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ListStyleImage]]
-            ]) | `236`
+            ]) | `235`
       ): Self = StObject.set(x, "listStyleImage", value.asInstanceOf[js.Any])
       
       inline def setListStyleImageUndefined: Self = StObject.set(x, "listStyleImage", js.undefined)
@@ -20573,7 +20571,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ListStylePosition | js.Array[NonNullable[js.UndefOr[ListStylePosition]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ListStylePosition]]
-            ]) | `351`
+            ]) | `350`
       ): Self = StObject.set(x, "listStylePosition", value.asInstanceOf[js.Any])
       
       inline def setListStylePositionUndefined: Self = StObject.set(x, "listStylePosition", js.undefined)
@@ -20591,7 +20589,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ListStyleType | js.Array[NonNullable[js.UndefOr[ListStyleType]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ListStyleType]]
-            ]) | `433`
+            ]) | `432`
       ): Self = StObject.set(x, "listStyleType", value.asInstanceOf[js.Any])
       
       inline def setListStyleTypeUndefined: Self = StObject.set(x, "listStyleType", js.undefined)
@@ -20617,7 +20615,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Margin[Double | String]]])
-            ]) | `313`
+            ]) | `312`
       ): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginBlock(
@@ -20628,7 +20626,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginBlock[Double | String]]])
-            ]) | `507`
+            ]) | `506`
       ): Self = StObject.set(x, "marginBlock", value.asInstanceOf[js.Any])
       
       inline def setMarginBlockEnd(
@@ -20639,7 +20637,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginBlockEnd[Double | String]]])
-            ]) | `110`
+            ]) | `109`
       ): Self = StObject.set(x, "marginBlockEnd", value.asInstanceOf[js.Any])
       
       inline def setMarginBlockEndUndefined: Self = StObject.set(x, "marginBlockEnd", js.undefined)
@@ -20661,7 +20659,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginBlockStart[Double | String]]])
-            ]) | `376`
+            ]) | `375`
       ): Self = StObject.set(x, "marginBlockStart", value.asInstanceOf[js.Any])
       
       inline def setMarginBlockStartUndefined: Self = StObject.set(x, "marginBlockStart", js.undefined)
@@ -20694,7 +20692,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginBottom[Double | String]]])
-            ]) | `444`
+            ]) | `443`
       ): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
       inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
@@ -20716,7 +20714,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginInline[Double | String]]])
-            ]) | `477`
+            ]) | `476`
       ): Self = StObject.set(x, "marginInline", value.asInstanceOf[js.Any])
       
       inline def setMarginInlineEnd(
@@ -20727,7 +20725,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginInlineEnd[Double | String]]])
-            ]) | `5`
+            ]) | `4`
       ): Self = StObject.set(x, "marginInlineEnd", value.asInstanceOf[js.Any])
       
       inline def setMarginInlineEndUndefined: Self = StObject.set(x, "marginInlineEnd", js.undefined)
@@ -20749,7 +20747,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginInlineStart[Double | String]]])
-            ]) | `240`
+            ]) | `239`
       ): Self = StObject.set(x, "marginInlineStart", value.asInstanceOf[js.Any])
       
       inline def setMarginInlineStartUndefined: Self = StObject.set(x, "marginInlineStart", js.undefined)
@@ -20782,7 +20780,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginLeft[Double | String]]])
-            ]) | `483`
+            ]) | `482`
       ): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
       inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
@@ -20804,7 +20802,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginRight[Double | String]]])
-            ]) | `147`
+            ]) | `146`
       ): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
       inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
@@ -20826,7 +20824,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginTop[Double | String]]])
-            ]) | `340`
+            ]) | `339`
       ): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
@@ -20843,7 +20841,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMarginTrim(
         value: MarginTrim | (js.Array[
               (Extract[js.UndefOr[MarginTrim | js.Array[NonNullable[js.UndefOr[MarginTrim]]]], String]) | NonNullable[js.UndefOr[MarginTrim]]
-            ]) | `493`
+            ]) | `492`
       ): Self = StObject.set(x, "marginTrim", value.asInstanceOf[js.Any])
       
       inline def setMarginTrimUndefined: Self = StObject.set(x, "marginTrim", js.undefined)
@@ -20866,13 +20864,13 @@ object esHooksUseStyleRegisterMod {
       inline def setMarker(
         value: Marker | (js.Array[
               (Extract[js.UndefOr[Marker | js.Array[NonNullable[js.UndefOr[Marker]]]], String]) | NonNullable[js.UndefOr[Marker]]
-            ]) | `512`
+            ]) | `511`
       ): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
       inline def setMarkerEnd(
         value: MarkerEnd | (js.Array[
               (Extract[js.UndefOr[MarkerEnd | js.Array[NonNullable[js.UndefOr[MarkerEnd]]]], String]) | NonNullable[js.UndefOr[MarkerEnd]]
-            ]) | `434`
+            ]) | `433`
       ): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
       
       inline def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
@@ -20884,7 +20882,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMarkerMid(
         value: MarkerMid | (js.Array[
               (Extract[js.UndefOr[MarkerMid | js.Array[NonNullable[js.UndefOr[MarkerMid]]]], String]) | NonNullable[js.UndefOr[MarkerMid]]
-            ]) | `487`
+            ]) | `486`
       ): Self = StObject.set(x, "markerMid", value.asInstanceOf[js.Any])
       
       inline def setMarkerMidUndefined: Self = StObject.set(x, "markerMid", js.undefined)
@@ -20896,7 +20894,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMarkerStart(
         value: MarkerStart | (js.Array[
               (Extract[js.UndefOr[MarkerStart | js.Array[NonNullable[js.UndefOr[MarkerStart]]]], String]) | NonNullable[js.UndefOr[MarkerStart]]
-            ]) | `554`
+            ]) | `553`
       ): Self = StObject.set(x, "markerStart", value.asInstanceOf[js.Any])
       
       inline def setMarkerStartUndefined: Self = StObject.set(x, "markerStart", js.undefined)
@@ -20919,13 +20917,13 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Mask[Double | String]]])
-            ]) | `250`
+            ]) | `249`
       ): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
       inline def setMaskBorder(
         value: MaskBorder | (js.Array[
               (Extract[js.UndefOr[MaskBorder | js.Array[NonNullable[js.UndefOr[MaskBorder]]]], String]) | NonNullable[js.UndefOr[MaskBorder]]
-            ]) | SKIPCHECK
+            ]) | MULTIVALUE
       ): Self = StObject.set(x, "maskBorder", value.asInstanceOf[js.Any])
       
       inline def setMaskBorderMode(
@@ -20934,7 +20932,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MaskBorderMode | js.Array[NonNullable[js.UndefOr[MaskBorderMode]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MaskBorderMode]]
-            ]) | `58`
+            ]) | `57`
       ): Self = StObject.set(x, "maskBorderMode", value.asInstanceOf[js.Any])
       
       inline def setMaskBorderModeUndefined: Self = StObject.set(x, "maskBorderMode", js.undefined)
@@ -20954,7 +20952,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MaskBorderOutset[Double | String]]])
-            ]) | `227`
+            ]) | `226`
       ): Self = StObject.set(x, "maskBorderOutset", value.asInstanceOf[js.Any])
       
       inline def setMaskBorderOutsetUndefined: Self = StObject.set(x, "maskBorderOutset", js.undefined)
@@ -20974,7 +20972,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MaskBorderRepeat | js.Array[NonNullable[js.UndefOr[MaskBorderRepeat]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MaskBorderRepeat]]
-            ]) | `215`
+            ]) | `214`
       ): Self = StObject.set(x, "maskBorderRepeat", value.asInstanceOf[js.Any])
       
       inline def setMaskBorderRepeatUndefined: Self = StObject.set(x, "maskBorderRepeat", js.undefined)
@@ -20992,7 +20990,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MaskBorderSlice | js.Array[NonNullable[js.UndefOr[MaskBorderSlice]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MaskBorderSlice]]
-            ]) | `188`
+            ]) | `187`
       ): Self = StObject.set(x, "maskBorderSlice", value.asInstanceOf[js.Any])
       
       inline def setMaskBorderSliceUndefined: Self = StObject.set(x, "maskBorderSlice", js.undefined)
@@ -21010,7 +21008,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MaskBorderSource | js.Array[NonNullable[js.UndefOr[MaskBorderSource]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MaskBorderSource]]
-            ]) | `407`
+            ]) | `406`
       ): Self = StObject.set(x, "maskBorderSource", value.asInstanceOf[js.Any])
       
       inline def setMaskBorderSourceUndefined: Self = StObject.set(x, "maskBorderSource", js.undefined)
@@ -21036,7 +21034,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MaskBorderWidth[Double | String]]])
-            ]) | `494`
+            ]) | `493`
       ): Self = StObject.set(x, "maskBorderWidth", value.asInstanceOf[js.Any])
       
       inline def setMaskBorderWidthUndefined: Self = StObject.set(x, "maskBorderWidth", js.undefined)
@@ -21053,7 +21051,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMaskClip(
         value: MaskClip | (js.Array[
               (Extract[js.UndefOr[MaskClip | js.Array[NonNullable[js.UndefOr[MaskClip]]]], String]) | NonNullable[js.UndefOr[MaskClip]]
-            ]) | `545`
+            ]) | `544`
       ): Self = StObject.set(x, "maskClip", value.asInstanceOf[js.Any])
       
       inline def setMaskClipUndefined: Self = StObject.set(x, "maskClip", js.undefined)
@@ -21068,7 +21066,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MaskComposite | js.Array[NonNullable[js.UndefOr[MaskComposite]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MaskComposite]]
-            ]) | `324`
+            ]) | `323`
       ): Self = StObject.set(x, "maskComposite", value.asInstanceOf[js.Any])
       
       inline def setMaskCompositeUndefined: Self = StObject.set(x, "maskComposite", js.undefined)
@@ -21083,7 +21081,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMaskImage(
         value: MaskImage | (js.Array[
               (Extract[js.UndefOr[MaskImage | js.Array[NonNullable[js.UndefOr[MaskImage]]]], String]) | NonNullable[js.UndefOr[MaskImage]]
-            ]) | `333`
+            ]) | `332`
       ): Self = StObject.set(x, "maskImage", value.asInstanceOf[js.Any])
       
       inline def setMaskImageUndefined: Self = StObject.set(x, "maskImage", js.undefined)
@@ -21095,7 +21093,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMaskMode(
         value: MaskMode | (js.Array[
               (Extract[js.UndefOr[MaskMode | js.Array[NonNullable[js.UndefOr[MaskMode]]]], String]) | NonNullable[js.UndefOr[MaskMode]]
-            ]) | `41`
+            ]) | `40`
       ): Self = StObject.set(x, "maskMode", value.asInstanceOf[js.Any])
       
       inline def setMaskModeUndefined: Self = StObject.set(x, "maskMode", js.undefined)
@@ -21107,7 +21105,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMaskOrigin(
         value: MaskOrigin | (js.Array[
               (Extract[js.UndefOr[MaskOrigin | js.Array[NonNullable[js.UndefOr[MaskOrigin]]]], String]) | NonNullable[js.UndefOr[MaskOrigin]]
-            ]) | `367`
+            ]) | `366`
       ): Self = StObject.set(x, "maskOrigin", value.asInstanceOf[js.Any])
       
       inline def setMaskOriginUndefined: Self = StObject.set(x, "maskOrigin", js.undefined)
@@ -21124,7 +21122,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MaskPosition[Double | String]]])
-            ]) | `210`
+            ]) | `209`
       ): Self = StObject.set(x, "maskPosition", value.asInstanceOf[js.Any])
       
       inline def setMaskPositionUndefined: Self = StObject.set(x, "maskPosition", js.undefined)
@@ -21141,7 +21139,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMaskRepeat(
         value: MaskRepeat | (js.Array[
               (Extract[js.UndefOr[MaskRepeat | js.Array[NonNullable[js.UndefOr[MaskRepeat]]]], String]) | NonNullable[js.UndefOr[MaskRepeat]]
-            ]) | `194`
+            ]) | `193`
       ): Self = StObject.set(x, "maskRepeat", value.asInstanceOf[js.Any])
       
       inline def setMaskRepeatUndefined: Self = StObject.set(x, "maskRepeat", js.undefined)
@@ -21158,7 +21156,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MaskSize[Double | String]]])
-            ]) | `282`
+            ]) | `281`
       ): Self = StObject.set(x, "maskSize", value.asInstanceOf[js.Any])
       
       inline def setMaskSizeUndefined: Self = StObject.set(x, "maskSize", js.undefined)
@@ -21175,7 +21173,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMaskType(
         value: MaskType | (js.Array[
               (Extract[js.UndefOr[MaskType | js.Array[NonNullable[js.UndefOr[MaskType]]]], String]) | NonNullable[js.UndefOr[MaskType]]
-            ]) | `183`
+            ]) | `182`
       ): Self = StObject.set(x, "maskType", value.asInstanceOf[js.Any])
       
       inline def setMaskTypeUndefined: Self = StObject.set(x, "maskType", js.undefined)
@@ -21198,7 +21196,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMathDepth(
         value: MathDepth | (js.Array[
               (Extract[js.UndefOr[MathDepth | js.Array[NonNullable[js.UndefOr[MathDepth]]]], String]) | NonNullable[js.UndefOr[MathDepth]]
-            ]) | `138`
+            ]) | `137`
       ): Self = StObject.set(x, "mathDepth", value.asInstanceOf[js.Any])
       
       inline def setMathDepthUndefined: Self = StObject.set(x, "mathDepth", js.undefined)
@@ -21210,7 +21208,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMathShift(
         value: MathShift | (js.Array[
               (Extract[js.UndefOr[MathShift | js.Array[NonNullable[js.UndefOr[MathShift]]]], String]) | NonNullable[js.UndefOr[MathShift]]
-            ]) | `155`
+            ]) | `154`
       ): Self = StObject.set(x, "mathShift", value.asInstanceOf[js.Any])
       
       inline def setMathShiftUndefined: Self = StObject.set(x, "mathShift", js.undefined)
@@ -21222,7 +21220,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMathStyle(
         value: MathStyle | (js.Array[
               (Extract[js.UndefOr[MathStyle | js.Array[NonNullable[js.UndefOr[MathStyle]]]], String]) | NonNullable[js.UndefOr[MathStyle]]
-            ]) | `485`
+            ]) | `484`
       ): Self = StObject.set(x, "mathStyle", value.asInstanceOf[js.Any])
       
       inline def setMathStyleUndefined: Self = StObject.set(x, "mathStyle", js.undefined)
@@ -21239,7 +21237,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MaxBlockSize[Double | String]]])
-            ]) | `156`
+            ]) | `155`
       ): Self = StObject.set(x, "maxBlockSize", value.asInstanceOf[js.Any])
       
       inline def setMaxBlockSizeUndefined: Self = StObject.set(x, "maxBlockSize", js.undefined)
@@ -21261,7 +21259,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MaxHeight[Double | String]]])
-            ]) | `338`
+            ]) | `337`
       ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
       inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
@@ -21283,7 +21281,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MaxInlineSize[Double | String]]])
-            ]) | `69`
+            ]) | `68`
       ): Self = StObject.set(x, "maxInlineSize", value.asInstanceOf[js.Any])
       
       inline def setMaxInlineSizeUndefined: Self = StObject.set(x, "maxInlineSize", js.undefined)
@@ -21300,7 +21298,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMaxLines(
         value: MaxLines | (js.Array[
               (Extract[js.UndefOr[MaxLines | js.Array[NonNullable[js.UndefOr[MaxLines]]]], String]) | NonNullable[js.UndefOr[MaxLines]]
-            ]) | `7`
+            ]) | `6`
       ): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
       
       inline def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
@@ -21317,7 +21315,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MaxWidth[Double | String]]])
-            ]) | `273`
+            ]) | `272`
       ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
       inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
@@ -21339,7 +21337,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MinBlockSize[Double | String]]])
-            ]) | `390`
+            ]) | `389`
       ): Self = StObject.set(x, "minBlockSize", value.asInstanceOf[js.Any])
       
       inline def setMinBlockSizeUndefined: Self = StObject.set(x, "minBlockSize", js.undefined)
@@ -21361,7 +21359,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MinHeight[Double | String]]])
-            ]) | `264`
+            ]) | `263`
       ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
       inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
@@ -21383,7 +21381,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MinInlineSize[Double | String]]])
-            ]) | `239`
+            ]) | `238`
       ): Self = StObject.set(x, "minInlineSize", value.asInstanceOf[js.Any])
       
       inline def setMinInlineSizeUndefined: Self = StObject.set(x, "minInlineSize", js.undefined)
@@ -21405,7 +21403,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MinWidth[Double | String]]])
-            ]) | `481`
+            ]) | `480`
       ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
@@ -21422,7 +21420,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMixBlendMode(
         value: MixBlendMode | (js.Array[
               (Extract[js.UndefOr[MixBlendMode | js.Array[NonNullable[js.UndefOr[MixBlendMode]]]], String]) | NonNullable[js.UndefOr[MixBlendMode]]
-            ]) | `374`
+            ]) | `373`
       ): Self = StObject.set(x, "mixBlendMode", value.asInstanceOf[js.Any])
       
       inline def setMixBlendModeUndefined: Self = StObject.set(x, "mixBlendMode", js.undefined)
@@ -21439,7 +21437,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Offset[Double | String]]])
-            ]) | `285`
+            ]) | `284`
       ): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
       
       inline def setMotionDistance(
@@ -21450,7 +21448,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[OffsetDistance[Double | String]]])
-            ]) | `258`
+            ]) | `257`
       ): Self = StObject.set(x, "motionDistance", value.asInstanceOf[js.Any])
       
       inline def setMotionDistanceUndefined: Self = StObject.set(x, "motionDistance", js.undefined)
@@ -21467,7 +21465,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMotionPath(
         value: OffsetPath | (js.Array[
               (Extract[js.UndefOr[OffsetPath | js.Array[NonNullable[js.UndefOr[OffsetPath]]]], String]) | NonNullable[js.UndefOr[OffsetPath]]
-            ]) | `107`
+            ]) | `106`
       ): Self = StObject.set(x, "motionPath", value.asInstanceOf[js.Any])
       
       inline def setMotionPathUndefined: Self = StObject.set(x, "motionPath", js.undefined)
@@ -21479,7 +21477,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMotionRotation(
         value: OffsetRotate | (js.Array[
               (Extract[js.UndefOr[OffsetRotate | js.Array[NonNullable[js.UndefOr[OffsetRotate]]]], String]) | NonNullable[js.UndefOr[OffsetRotate]]
-            ]) | `86`
+            ]) | `85`
       ): Self = StObject.set(x, "motionRotation", value.asInstanceOf[js.Any])
       
       inline def setMotionRotationUndefined: Self = StObject.set(x, "motionRotation", js.undefined)
@@ -21505,7 +21503,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[Animation[String] | js.Array[NonNullable[js.UndefOr[Animation[String]]]]], 
                 String
               ]) | NonNullable[js.UndefOr[Animation[String]]]
-            ]) | `28`
+            ]) | `27`
       ): Self = StObject.set(x, "MozAnimation", value.asInstanceOf[js.Any])
       
       inline def setMozAnimationDelay(
@@ -21516,7 +21514,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationDelay[String]]]
-            ]) | `241`
+            ]) | `240`
       ): Self = StObject.set(x, "MozAnimationDelay", value.asInstanceOf[js.Any])
       
       inline def setMozAnimationDelayUndefined: Self = StObject.set(x, "MozAnimationDelay", js.undefined)
@@ -21536,7 +21534,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationDirection]]
-            ]) | `111`
+            ]) | `110`
       ): Self = StObject.set(x, "MozAnimationDirection", value.asInstanceOf[js.Any])
       
       inline def setMozAnimationDirectionUndefined: Self = StObject.set(x, "MozAnimationDirection", js.undefined)
@@ -21556,7 +21554,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationDuration[String]]]
-            ]) | `99`
+            ]) | `98`
       ): Self = StObject.set(x, "MozAnimationDuration", value.asInstanceOf[js.Any])
       
       inline def setMozAnimationDurationUndefined: Self = StObject.set(x, "MozAnimationDuration", js.undefined)
@@ -21576,7 +21574,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationFillMode]]
-            ]) | `114`
+            ]) | `113`
       ): Self = StObject.set(x, "MozAnimationFillMode", value.asInstanceOf[js.Any])
       
       inline def setMozAnimationFillModeUndefined: Self = StObject.set(x, "MozAnimationFillMode", js.undefined)
@@ -21596,7 +21594,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationIterationCount]]
-            ]) | `87`
+            ]) | `86`
       ): Self = StObject.set(x, "MozAnimationIterationCount", value.asInstanceOf[js.Any])
       
       inline def setMozAnimationIterationCountUndefined: Self = StObject.set(x, "MozAnimationIterationCount", js.undefined)
@@ -21616,7 +21614,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationName]]
-            ]) | `168`
+            ]) | `167`
       ): Self = StObject.set(x, "MozAnimationName", value.asInstanceOf[js.Any])
       
       inline def setMozAnimationNameUndefined: Self = StObject.set(x, "MozAnimationName", js.undefined)
@@ -21634,7 +21632,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationPlayState]]
-            ]) | `159`
+            ]) | `158`
       ): Self = StObject.set(x, "MozAnimationPlayState", value.asInstanceOf[js.Any])
       
       inline def setMozAnimationPlayStateUndefined: Self = StObject.set(x, "MozAnimationPlayState", js.undefined)
@@ -21654,7 +21652,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationTimingFunction]]
-            ]) | `161`
+            ]) | `160`
       ): Self = StObject.set(x, "MozAnimationTimingFunction", value.asInstanceOf[js.Any])
       
       inline def setMozAnimationTimingFunctionUndefined: Self = StObject.set(x, "MozAnimationTimingFunction", js.undefined)
@@ -21683,7 +21681,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MozAppearance | js.Array[NonNullable[js.UndefOr[MozAppearance]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MozAppearance]]
-            ]) | `231`
+            ]) | `230`
       ): Self = StObject.set(x, "MozAppearance", value.asInstanceOf[js.Any])
       
       inline def setMozAppearanceUndefined: Self = StObject.set(x, "MozAppearance", js.undefined)
@@ -21701,7 +21699,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackfaceVisibility | js.Array[NonNullable[js.UndefOr[BackfaceVisibility]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackfaceVisibility]]
-            ]) | `130`
+            ]) | `129`
       ): Self = StObject.set(x, "MozBackfaceVisibility", value.asInstanceOf[js.Any])
       
       inline def setMozBackfaceVisibilityUndefined: Self = StObject.set(x, "MozBackfaceVisibility", js.undefined)
@@ -21719,7 +21717,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackgroundClip | js.Array[NonNullable[js.UndefOr[BackgroundClip]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackgroundClip]]
-            ]) | `142`
+            ]) | `141`
       ): Self = StObject.set(x, "MozBackgroundClip", value.asInstanceOf[js.Any])
       
       inline def setMozBackgroundClipUndefined: Self = StObject.set(x, "MozBackgroundClip", js.undefined)
@@ -21737,7 +21735,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BoxDecorationBreak | js.Array[NonNullable[js.UndefOr[BoxDecorationBreak]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BoxDecorationBreak]]
-            ]) | `158`
+            ]) | `157`
       ): Self = StObject.set(x, "MozBackgroundInlinePolicy", value.asInstanceOf[js.Any])
       
       inline def setMozBackgroundInlinePolicyUndefined: Self = StObject.set(x, "MozBackgroundInlinePolicy", js.undefined)
@@ -21755,7 +21753,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackgroundOrigin | js.Array[NonNullable[js.UndefOr[BackgroundOrigin]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackgroundOrigin]]
-            ]) | `84`
+            ]) | `83`
       ): Self = StObject.set(x, "MozBackgroundOrigin", value.asInstanceOf[js.Any])
       
       inline def setMozBackgroundOriginUndefined: Self = StObject.set(x, "MozBackgroundOrigin", js.undefined)
@@ -21775,7 +21773,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BackgroundSize[Double | String]]])
-            ]) | `55`
+            ]) | `54`
       ): Self = StObject.set(x, "MozBackgroundSize", value.asInstanceOf[js.Any])
       
       inline def setMozBackgroundSizeUndefined: Self = StObject.set(x, "MozBackgroundSize", js.undefined)
@@ -21792,7 +21790,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozBinding(
         value: MozBinding | (js.Array[
               (Extract[js.UndefOr[MozBinding | js.Array[NonNullable[js.UndefOr[MozBinding]]]], String]) | NonNullable[js.UndefOr[MozBinding]]
-            ]) | `475`
+            ]) | `474`
       ): Self = StObject.set(x, "MozBinding", value.asInstanceOf[js.Any])
       
       inline def setMozBindingUndefined: Self = StObject.set(x, "MozBinding", js.undefined)
@@ -21807,7 +21805,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MozBorderBottomColors | js.Array[NonNullable[js.UndefOr[MozBorderBottomColors]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MozBorderBottomColors]]
-            ]) | `404`
+            ]) | `403`
       ): Self = StObject.set(x, "MozBorderBottomColors", value.asInstanceOf[js.Any])
       
       inline def setMozBorderBottomColorsUndefined: Self = StObject.set(x, "MozBorderBottomColors", js.undefined)
@@ -21825,7 +21823,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderInlineEndColor | js.Array[NonNullable[js.UndefOr[BorderInlineEndColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderInlineEndColor]]
-            ]) | `29`
+            ]) | `28`
       ): Self = StObject.set(x, "MozBorderEndColor", value.asInstanceOf[js.Any])
       
       inline def setMozBorderEndColorUndefined: Self = StObject.set(x, "MozBorderEndColor", js.undefined)
@@ -21843,7 +21841,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderInlineEndStyle | js.Array[NonNullable[js.UndefOr[BorderInlineEndStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderInlineEndStyle]]
-            ]) | `37`
+            ]) | `36`
       ): Self = StObject.set(x, "MozBorderEndStyle", value.asInstanceOf[js.Any])
       
       inline def setMozBorderEndStyleUndefined: Self = StObject.set(x, "MozBorderEndStyle", js.undefined)
@@ -21863,7 +21861,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderInlineEndWidth[Double | String]]])
-            ]) | `3`
+            ]) | `2`
       ): Self = StObject.set(x, "MozBorderEndWidth", value.asInstanceOf[js.Any])
       
       inline def setMozBorderEndWidthUndefined: Self = StObject.set(x, "MozBorderEndWidth", js.undefined)
@@ -21880,7 +21878,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozBorderImage(
         value: BorderImage | (js.Array[
               (Extract[js.UndefOr[BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]], String]) | NonNullable[js.UndefOr[BorderImage]]
-            ]) | `242`
+            ]) | `241`
       ): Self = StObject.set(x, "MozBorderImage", value.asInstanceOf[js.Any])
       
       inline def setMozBorderImageUndefined: Self = StObject.set(x, "MozBorderImage", js.undefined)
@@ -21895,7 +21893,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MozBorderLeftColors | js.Array[NonNullable[js.UndefOr[MozBorderLeftColors]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MozBorderLeftColors]]
-            ]) | `35`
+            ]) | `34`
       ): Self = StObject.set(x, "MozBorderLeftColors", value.asInstanceOf[js.Any])
       
       inline def setMozBorderLeftColorsUndefined: Self = StObject.set(x, "MozBorderLeftColors", js.undefined)
@@ -21915,7 +21913,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderRadius[Double | String]]])
-            ]) | `400`
+            ]) | `399`
       ): Self = StObject.set(x, "MozBorderRadius", value.asInstanceOf[js.Any])
       
       inline def setMozBorderRadiusBottomleft(
@@ -21926,7 +21924,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBottomLeftRadius[Double | String]]])
-            ]) | `103`
+            ]) | `102`
       ): Self = StObject.set(x, "MozBorderRadiusBottomleft", value.asInstanceOf[js.Any])
       
       inline def setMozBorderRadiusBottomleftUndefined: Self = StObject.set(x, "MozBorderRadiusBottomleft", js.undefined)
@@ -21948,7 +21946,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBottomRightRadius[Double | String]]])
-            ]) | `136`
+            ]) | `135`
       ): Self = StObject.set(x, "MozBorderRadiusBottomright", value.asInstanceOf[js.Any])
       
       inline def setMozBorderRadiusBottomrightUndefined: Self = StObject.set(x, "MozBorderRadiusBottomright", js.undefined)
@@ -21970,7 +21968,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderTopLeftRadius[Double | String]]])
-            ]) | `221`
+            ]) | `220`
       ): Self = StObject.set(x, "MozBorderRadiusTopleft", value.asInstanceOf[js.Any])
       
       inline def setMozBorderRadiusTopleftUndefined: Self = StObject.set(x, "MozBorderRadiusTopleft", js.undefined)
@@ -21992,7 +21990,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderTopRightRadius[Double | String]]])
-            ]) | `77`
+            ]) | `76`
       ): Self = StObject.set(x, "MozBorderRadiusTopright", value.asInstanceOf[js.Any])
       
       inline def setMozBorderRadiusToprightUndefined: Self = StObject.set(x, "MozBorderRadiusTopright", js.undefined)
@@ -22023,7 +22021,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MozBorderRightColors | js.Array[NonNullable[js.UndefOr[MozBorderRightColors]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MozBorderRightColors]]
-            ]) | `543`
+            ]) | `542`
       ): Self = StObject.set(x, "MozBorderRightColors", value.asInstanceOf[js.Any])
       
       inline def setMozBorderRightColorsUndefined: Self = StObject.set(x, "MozBorderRightColors", js.undefined)
@@ -22043,7 +22041,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[BorderInlineStartColor]]
-            ]) | `160`
+            ]) | `159`
       ): Self = StObject.set(x, "MozBorderStartColor", value.asInstanceOf[js.Any])
       
       inline def setMozBorderStartColorUndefined: Self = StObject.set(x, "MozBorderStartColor", js.undefined)
@@ -22065,7 +22063,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[BorderInlineStartStyle]]
-            ]) | `395`
+            ]) | `394`
       ): Self = StObject.set(x, "MozBorderStartStyle", value.asInstanceOf[js.Any])
       
       inline def setMozBorderStartStyleUndefined: Self = StObject.set(x, "MozBorderStartStyle", js.undefined)
@@ -22085,7 +22083,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MozBorderTopColors | js.Array[NonNullable[js.UndefOr[MozBorderTopColors]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MozBorderTopColors]]
-            ]) | `64`
+            ]) | `63`
       ): Self = StObject.set(x, "MozBorderTopColors", value.asInstanceOf[js.Any])
       
       inline def setMozBorderTopColorsUndefined: Self = StObject.set(x, "MozBorderTopColors", js.undefined)
@@ -22100,7 +22098,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozBoxAlign(
         value: BoxAlign | (js.Array[
               (Extract[js.UndefOr[BoxAlign | js.Array[NonNullable[js.UndefOr[BoxAlign]]]], String]) | NonNullable[js.UndefOr[BoxAlign]]
-            ]) | `83`
+            ]) | `82`
       ): Self = StObject.set(x, "MozBoxAlign", value.asInstanceOf[js.Any])
       
       inline def setMozBoxAlignUndefined: Self = StObject.set(x, "MozBoxAlign", js.undefined)
@@ -22112,7 +22110,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozBoxDirection(
         value: BoxDirection | (js.Array[
               (Extract[js.UndefOr[BoxDirection | js.Array[NonNullable[js.UndefOr[BoxDirection]]]], String]) | NonNullable[js.UndefOr[BoxDirection]]
-            ]) | `59`
+            ]) | `58`
       ): Self = StObject.set(x, "MozBoxDirection", value.asInstanceOf[js.Any])
       
       inline def setMozBoxDirectionUndefined: Self = StObject.set(x, "MozBoxDirection", js.undefined)
@@ -22124,7 +22122,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozBoxFlex(
         value: BoxFlex | (js.Array[
               (Extract[js.UndefOr[BoxFlex | js.Array[NonNullable[js.UndefOr[BoxFlex]]]], String]) | NonNullable[js.UndefOr[BoxFlex]]
-            ]) | `140`
+            ]) | `139`
       ): Self = StObject.set(x, "MozBoxFlex", value.asInstanceOf[js.Any])
       
       inline def setMozBoxFlexUndefined: Self = StObject.set(x, "MozBoxFlex", js.undefined)
@@ -22139,7 +22137,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BoxOrdinalGroup | js.Array[NonNullable[js.UndefOr[BoxOrdinalGroup]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BoxOrdinalGroup]]
-            ]) | `190`
+            ]) | `189`
       ): Self = StObject.set(x, "MozBoxOrdinalGroup", value.asInstanceOf[js.Any])
       
       inline def setMozBoxOrdinalGroupUndefined: Self = StObject.set(x, "MozBoxOrdinalGroup", js.undefined)
@@ -22154,7 +22152,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozBoxOrient(
         value: BoxOrient | (js.Array[
               (Extract[js.UndefOr[BoxOrient | js.Array[NonNullable[js.UndefOr[BoxOrient]]]], String]) | NonNullable[js.UndefOr[BoxOrient]]
-            ]) | `22`
+            ]) | `21`
       ): Self = StObject.set(x, "MozBoxOrient", value.asInstanceOf[js.Any])
       
       inline def setMozBoxOrientUndefined: Self = StObject.set(x, "MozBoxOrient", js.undefined)
@@ -22166,7 +22164,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozBoxPack(
         value: BoxPack | (js.Array[
               (Extract[js.UndefOr[BoxPack | js.Array[NonNullable[js.UndefOr[BoxPack]]]], String]) | NonNullable[js.UndefOr[BoxPack]]
-            ]) | `119`
+            ]) | `118`
       ): Self = StObject.set(x, "MozBoxPack", value.asInstanceOf[js.Any])
       
       inline def setMozBoxPackUndefined: Self = StObject.set(x, "MozBoxPack", js.undefined)
@@ -22178,7 +22176,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozBoxShadow(
         value: BoxShadow | (js.Array[
               (Extract[js.UndefOr[BoxShadow | js.Array[NonNullable[js.UndefOr[BoxShadow]]]], String]) | NonNullable[js.UndefOr[BoxShadow]]
-            ]) | `108`
+            ]) | `107`
       ): Self = StObject.set(x, "MozBoxShadow", value.asInstanceOf[js.Any])
       
       inline def setMozBoxShadowUndefined: Self = StObject.set(x, "MozBoxShadow", js.undefined)
@@ -22190,7 +22188,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozBoxSizing(
         value: BoxSizing | (js.Array[
               (Extract[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]], String]) | NonNullable[js.UndefOr[BoxSizing]]
-            ]) | `14`
+            ]) | `13`
       ): Self = StObject.set(x, "MozBoxSizing", value.asInstanceOf[js.Any])
       
       inline def setMozBoxSizingUndefined: Self = StObject.set(x, "MozBoxSizing", js.undefined)
@@ -22202,7 +22200,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozColumnCount(
         value: ColumnCount | (js.Array[
               (Extract[js.UndefOr[ColumnCount | js.Array[NonNullable[js.UndefOr[ColumnCount]]]], String]) | NonNullable[js.UndefOr[ColumnCount]]
-            ]) | `357`
+            ]) | `356`
       ): Self = StObject.set(x, "MozColumnCount", value.asInstanceOf[js.Any])
       
       inline def setMozColumnCountUndefined: Self = StObject.set(x, "MozColumnCount", js.undefined)
@@ -22214,7 +22212,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozColumnFill(
         value: ColumnFill | (js.Array[
               (Extract[js.UndefOr[ColumnFill | js.Array[NonNullable[js.UndefOr[ColumnFill]]]], String]) | NonNullable[js.UndefOr[ColumnFill]]
-            ]) | `274`
+            ]) | `273`
       ): Self = StObject.set(x, "MozColumnFill", value.asInstanceOf[js.Any])
       
       inline def setMozColumnFillUndefined: Self = StObject.set(x, "MozColumnFill", js.undefined)
@@ -22231,7 +22229,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ColumnRule[Double | String]]])
-            ]) | `260`
+            ]) | `259`
       ): Self = StObject.set(x, "MozColumnRule", value.asInstanceOf[js.Any])
       
       inline def setMozColumnRuleColor(
@@ -22240,7 +22238,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ColumnRuleColor | js.Array[NonNullable[js.UndefOr[ColumnRuleColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ColumnRuleColor]]
-            ]) | `153`
+            ]) | `152`
       ): Self = StObject.set(x, "MozColumnRuleColor", value.asInstanceOf[js.Any])
       
       inline def setMozColumnRuleColorUndefined: Self = StObject.set(x, "MozColumnRuleColor", js.undefined)
@@ -22258,7 +22256,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ColumnRuleStyle | js.Array[NonNullable[js.UndefOr[ColumnRuleStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ColumnRuleStyle]]
-            ]) | `6`
+            ]) | `5`
       ): Self = StObject.set(x, "MozColumnRuleStyle", value.asInstanceOf[js.Any])
       
       inline def setMozColumnRuleStyleUndefined: Self = StObject.set(x, "MozColumnRuleStyle", js.undefined)
@@ -22289,7 +22287,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ColumnRuleWidth[Double | String]]])
-            ]) | `95`
+            ]) | `94`
       ): Self = StObject.set(x, "MozColumnRuleWidth", value.asInstanceOf[js.Any])
       
       inline def setMozColumnRuleWidthUndefined: Self = StObject.set(x, "MozColumnRuleWidth", js.undefined)
@@ -22311,7 +22309,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ColumnWidth[Double | String]]])
-            ]) | `220`
+            ]) | `219`
       ): Self = StObject.set(x, "MozColumnWidth", value.asInstanceOf[js.Any])
       
       inline def setMozColumnWidthUndefined: Self = StObject.set(x, "MozColumnWidth", js.undefined)
@@ -22333,7 +22331,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Columns[Double | String]]])
-            ]) | `98`
+            ]) | `97`
       ): Self = StObject.set(x, "MozColumns", value.asInstanceOf[js.Any])
       
       inline def setMozColumnsUndefined: Self = StObject.set(x, "MozColumns", js.undefined)
@@ -22353,7 +22351,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MozContextProperties | js.Array[NonNullable[js.UndefOr[MozContextProperties]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MozContextProperties]]
-            ]) | `391`
+            ]) | `390`
       ): Self = StObject.set(x, "MozContextProperties", value.asInstanceOf[js.Any])
       
       inline def setMozContextPropertiesUndefined: Self = StObject.set(x, "MozContextProperties", js.undefined)
@@ -22368,7 +22366,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozFloatEdge(
         value: MozFloatEdge | (js.Array[
               (Extract[js.UndefOr[MozFloatEdge | js.Array[NonNullable[js.UndefOr[MozFloatEdge]]]], String]) | NonNullable[js.UndefOr[MozFloatEdge]]
-            ]) | `361`
+            ]) | `360`
       ): Self = StObject.set(x, "MozFloatEdge", value.asInstanceOf[js.Any])
       
       inline def setMozFloatEdgeUndefined: Self = StObject.set(x, "MozFloatEdge", js.undefined)
@@ -22383,7 +22381,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontFeatureSettings | js.Array[NonNullable[js.UndefOr[FontFeatureSettings]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontFeatureSettings]]
-            ]) | `101`
+            ]) | `100`
       ): Self = StObject.set(x, "MozFontFeatureSettings", value.asInstanceOf[js.Any])
       
       inline def setMozFontFeatureSettingsUndefined: Self = StObject.set(x, "MozFontFeatureSettings", js.undefined)
@@ -22401,7 +22399,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontLanguageOverride | js.Array[NonNullable[js.UndefOr[FontLanguageOverride]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontLanguageOverride]]
-            ]) | `186`
+            ]) | `185`
       ): Self = StObject.set(x, "MozFontLanguageOverride", value.asInstanceOf[js.Any])
       
       inline def setMozFontLanguageOverrideUndefined: Self = StObject.set(x, "MozFontLanguageOverride", js.undefined)
@@ -22421,7 +22419,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[MozForceBrokenImageIcon]]
-            ]) | `92`
+            ]) | `91`
       ): Self = StObject.set(x, "MozForceBrokenImageIcon", value.asInstanceOf[js.Any])
       
       inline def setMozForceBrokenImageIconUndefined: Self = StObject.set(x, "MozForceBrokenImageIcon", js.undefined)
@@ -22438,7 +22436,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozHyphens(
         value: Hyphens | (js.Array[
               (Extract[js.UndefOr[Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]], String]) | NonNullable[js.UndefOr[Hyphens]]
-            ]) | `289`
+            ]) | `288`
       ): Self = StObject.set(x, "MozHyphens", value.asInstanceOf[js.Any])
       
       inline def setMozHyphensUndefined: Self = StObject.set(x, "MozHyphens", js.undefined)
@@ -22453,7 +22451,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MozImageRegion | js.Array[NonNullable[js.UndefOr[MozImageRegion]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MozImageRegion]]
-            ]) | `115`
+            ]) | `114`
       ): Self = StObject.set(x, "MozImageRegion", value.asInstanceOf[js.Any])
       
       inline def setMozImageRegionUndefined: Self = StObject.set(x, "MozImageRegion", js.undefined)
@@ -22473,7 +22471,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginInlineEnd[Double | String]]])
-            ]) | `5`
+            ]) | `4`
       ): Self = StObject.set(x, "MozMarginEnd", value.asInstanceOf[js.Any])
       
       inline def setMozMarginEndUndefined: Self = StObject.set(x, "MozMarginEnd", js.undefined)
@@ -22495,7 +22493,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginInlineStart[Double | String]]])
-            ]) | `240`
+            ]) | `239`
       ): Self = StObject.set(x, "MozMarginStart", value.asInstanceOf[js.Any])
       
       inline def setMozMarginStartUndefined: Self = StObject.set(x, "MozMarginStart", js.undefined)
@@ -22512,7 +22510,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozOpacity(
         value: Opacity | (js.Array[
               (Extract[js.UndefOr[Opacity | js.Array[NonNullable[js.UndefOr[Opacity]]]], String]) | NonNullable[js.UndefOr[Opacity]]
-            ]) | `248`
+            ]) | `247`
       ): Self = StObject.set(x, "MozOpacity", value.asInstanceOf[js.Any])
       
       inline def setMozOpacityUndefined: Self = StObject.set(x, "MozOpacity", js.undefined)
@@ -22524,7 +22522,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozOrient(
         value: MozOrient | (js.Array[
               (Extract[js.UndefOr[MozOrient | js.Array[NonNullable[js.UndefOr[MozOrient]]]], String]) | NonNullable[js.UndefOr[MozOrient]]
-            ]) | `291`
+            ]) | `290`
       ): Self = StObject.set(x, "MozOrient", value.asInstanceOf[js.Any])
       
       inline def setMozOrientUndefined: Self = StObject.set(x, "MozOrient", js.undefined)
@@ -22541,7 +22539,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[FontSmooth[Double | String]]])
-            ]) | `229`
+            ]) | `228`
       ): Self = StObject.set(x, "MozOsxFontSmoothing", value.asInstanceOf[js.Any])
       
       inline def setMozOsxFontSmoothingUndefined: Self = StObject.set(x, "MozOsxFontSmoothing", js.undefined)
@@ -22563,13 +22561,13 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Outline[Double | String]]])
-            ]) | `331`
+            ]) | `330`
       ): Self = StObject.set(x, "MozOutline", value.asInstanceOf[js.Any])
       
       inline def setMozOutlineColor(
         value: OutlineColor | (js.Array[
               (Extract[js.UndefOr[OutlineColor | js.Array[NonNullable[js.UndefOr[OutlineColor]]]], String]) | NonNullable[js.UndefOr[OutlineColor]]
-            ]) | `222`
+            ]) | `221`
       ): Self = StObject.set(x, "MozOutlineColor", value.asInstanceOf[js.Any])
       
       inline def setMozOutlineColorUndefined: Self = StObject.set(x, "MozOutlineColor", js.undefined)
@@ -22586,7 +22584,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MozOutlineRadius[Double | String]]])
-            ]) | `11`
+            ]) | `10`
       ): Self = StObject.set(x, "MozOutlineRadius", value.asInstanceOf[js.Any])
       
       inline def setMozOutlineRadiusBottomleft(
@@ -22597,7 +22595,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MozOutlineRadiusBottomleft[Double | String]]])
-            ]) | `72`
+            ]) | `71`
       ): Self = StObject.set(x, "MozOutlineRadiusBottomleft", value.asInstanceOf[js.Any])
       
       inline def setMozOutlineRadiusBottomleftUndefined: Self = StObject.set(x, "MozOutlineRadiusBottomleft", js.undefined)
@@ -22619,7 +22617,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MozOutlineRadiusBottomright[Double | String]]])
-            ]) | `479`
+            ]) | `478`
       ): Self = StObject.set(x, "MozOutlineRadiusBottomright", value.asInstanceOf[js.Any])
       
       inline def setMozOutlineRadiusBottomrightUndefined: Self = StObject.set(x, "MozOutlineRadiusBottomright", js.undefined)
@@ -22641,7 +22639,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MozOutlineRadiusTopleft[Double | String]]])
-            ]) | `23`
+            ]) | `22`
       ): Self = StObject.set(x, "MozOutlineRadiusTopleft", value.asInstanceOf[js.Any])
       
       inline def setMozOutlineRadiusTopleftUndefined: Self = StObject.set(x, "MozOutlineRadiusTopleft", js.undefined)
@@ -22663,7 +22661,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MozOutlineRadiusTopright[Double | String]]])
-            ]) | `206`
+            ]) | `205`
       ): Self = StObject.set(x, "MozOutlineRadiusTopright", value.asInstanceOf[js.Any])
       
       inline def setMozOutlineRadiusToprightUndefined: Self = StObject.set(x, "MozOutlineRadiusTopright", js.undefined)
@@ -22691,7 +22689,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozOutlineStyle(
         value: OutlineStyle | (js.Array[
               (Extract[js.UndefOr[OutlineStyle | js.Array[NonNullable[js.UndefOr[OutlineStyle]]]], String]) | NonNullable[js.UndefOr[OutlineStyle]]
-            ]) | `344`
+            ]) | `343`
       ): Self = StObject.set(x, "MozOutlineStyle", value.asInstanceOf[js.Any])
       
       inline def setMozOutlineStyleUndefined: Self = StObject.set(x, "MozOutlineStyle", js.undefined)
@@ -22719,7 +22717,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[OutlineWidth[Double | String]]])
-            ]) | `162`
+            ]) | `161`
       ): Self = StObject.set(x, "MozOutlineWidth", value.asInstanceOf[js.Any])
       
       inline def setMozOutlineWidthUndefined: Self = StObject.set(x, "MozOutlineWidth", js.undefined)
@@ -22741,7 +22739,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingInlineEnd[Double | String]]])
-            ]) | `185`
+            ]) | `184`
       ): Self = StObject.set(x, "MozPaddingEnd", value.asInstanceOf[js.Any])
       
       inline def setMozPaddingEndUndefined: Self = StObject.set(x, "MozPaddingEnd", js.undefined)
@@ -22763,7 +22761,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingInlineStart[Double | String]]])
-            ]) | `102`
+            ]) | `101`
       ): Self = StObject.set(x, "MozPaddingStart", value.asInstanceOf[js.Any])
       
       inline def setMozPaddingStartUndefined: Self = StObject.set(x, "MozPaddingStart", js.undefined)
@@ -22785,7 +22783,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Perspective[Double | String]]])
-            ]) | `294`
+            ]) | `293`
       ): Self = StObject.set(x, "MozPerspective", value.asInstanceOf[js.Any])
       
       inline def setMozPerspectiveOrigin(
@@ -22796,7 +22794,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PerspectiveOrigin[Double | String]]])
-            ]) | `213`
+            ]) | `212`
       ): Self = StObject.set(x, "MozPerspectiveOrigin", value.asInstanceOf[js.Any])
       
       inline def setMozPerspectiveOriginUndefined: Self = StObject.set(x, "MozPerspectiveOrigin", js.undefined)
@@ -22827,7 +22825,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MozStackSizing | js.Array[NonNullable[js.UndefOr[MozStackSizing]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MozStackSizing]]
-            ]) | `555`
+            ]) | `554`
       ): Self = StObject.set(x, "MozStackSizing", value.asInstanceOf[js.Any])
       
       inline def setMozStackSizingUndefined: Self = StObject.set(x, "MozStackSizing", js.undefined)
@@ -22847,7 +22845,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[TabSize[Double | String]]])
-            ]) | `169`
+            ]) | `168`
       ): Self = StObject.set(x, "MozTabSize", value.asInstanceOf[js.Any])
       
       inline def setMozTabSizeUndefined: Self = StObject.set(x, "MozTabSize", js.undefined)
@@ -22867,7 +22865,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextAlignLast | js.Array[NonNullable[js.UndefOr[TextAlignLast]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextAlignLast]]
-            ]) | `267`
+            ]) | `266`
       ): Self = StObject.set(x, "MozTextAlignLast", value.asInstanceOf[js.Any])
       
       inline def setMozTextAlignLastUndefined: Self = StObject.set(x, "MozTextAlignLast", js.undefined)
@@ -22882,7 +22880,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozTextBlink(
         value: MozTextBlink | (js.Array[
               (Extract[js.UndefOr[MozTextBlink | js.Array[NonNullable[js.UndefOr[MozTextBlink]]]], String]) | NonNullable[js.UndefOr[MozTextBlink]]
-            ]) | `255`
+            ]) | `254`
       ): Self = StObject.set(x, "MozTextBlink", value.asInstanceOf[js.Any])
       
       inline def setMozTextBlinkUndefined: Self = StObject.set(x, "MozTextBlink", js.undefined)
@@ -22897,7 +22895,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextDecorationColor | js.Array[NonNullable[js.UndefOr[TextDecorationColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextDecorationColor]]
-            ]) | `53`
+            ]) | `52`
       ): Self = StObject.set(x, "MozTextDecorationColor", value.asInstanceOf[js.Any])
       
       inline def setMozTextDecorationColorUndefined: Self = StObject.set(x, "MozTextDecorationColor", js.undefined)
@@ -22915,7 +22913,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextDecorationLine | js.Array[NonNullable[js.UndefOr[TextDecorationLine]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextDecorationLine]]
-            ]) | `21`
+            ]) | `20`
       ): Self = StObject.set(x, "MozTextDecorationLine", value.asInstanceOf[js.Any])
       
       inline def setMozTextDecorationLineUndefined: Self = StObject.set(x, "MozTextDecorationLine", js.undefined)
@@ -22933,7 +22931,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextDecorationStyle | js.Array[NonNullable[js.UndefOr[TextDecorationStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextDecorationStyle]]
-            ]) | `254`
+            ]) | `253`
       ): Self = StObject.set(x, "MozTextDecorationStyle", value.asInstanceOf[js.Any])
       
       inline def setMozTextDecorationStyleUndefined: Self = StObject.set(x, "MozTextDecorationStyle", js.undefined)
@@ -22951,7 +22949,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextSizeAdjust | js.Array[NonNullable[js.UndefOr[TextSizeAdjust]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextSizeAdjust]]
-            ]) | `1`
+            ]) | `0`
       ): Self = StObject.set(x, "MozTextSizeAdjust", value.asInstanceOf[js.Any])
       
       inline def setMozTextSizeAdjustUndefined: Self = StObject.set(x, "MozTextSizeAdjust", js.undefined)
@@ -22971,7 +22969,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[TransformOrigin[Double | String]]])
-            ]) | `65`
+            ]) | `64`
       ): Self = StObject.set(x, "MozTransformOrigin", value.asInstanceOf[js.Any])
       
       inline def setMozTransformOriginUndefined: Self = StObject.set(x, "MozTransformOrigin", js.undefined)
@@ -22991,7 +22989,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TransformStyle | js.Array[NonNullable[js.UndefOr[TransformStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TransformStyle]]
-            ]) | `154`
+            ]) | `153`
       ): Self = StObject.set(x, "MozTransformStyle", value.asInstanceOf[js.Any])
       
       inline def setMozTransformStyleUndefined: Self = StObject.set(x, "MozTransformStyle", js.undefined)
@@ -23009,7 +23007,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[Transition[String] | js.Array[NonNullable[js.UndefOr[Transition[String]]]]], 
                 String
               ]) | NonNullable[js.UndefOr[Transition[String]]]
-            ]) | `68`
+            ]) | `67`
       ): Self = StObject.set(x, "MozTransition", value.asInstanceOf[js.Any])
       
       inline def setMozTransitionDelay(
@@ -23020,7 +23018,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionDelay[String]]]
-            ]) | `212`
+            ]) | `211`
       ): Self = StObject.set(x, "MozTransitionDelay", value.asInstanceOf[js.Any])
       
       inline def setMozTransitionDelayUndefined: Self = StObject.set(x, "MozTransitionDelay", js.undefined)
@@ -23042,7 +23040,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionDuration[String]]]
-            ]) | `78`
+            ]) | `77`
       ): Self = StObject.set(x, "MozTransitionDuration", value.asInstanceOf[js.Any])
       
       inline def setMozTransitionDurationUndefined: Self = StObject.set(x, "MozTransitionDuration", js.undefined)
@@ -23062,7 +23060,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionProperty]]
-            ]) | `228`
+            ]) | `227`
       ): Self = StObject.set(x, "MozTransitionProperty", value.asInstanceOf[js.Any])
       
       inline def setMozTransitionPropertyUndefined: Self = StObject.set(x, "MozTransitionProperty", js.undefined)
@@ -23082,7 +23080,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionTimingFunction]]
-            ]) | `272`
+            ]) | `271`
       ): Self = StObject.set(x, "MozTransitionTimingFunction", value.asInstanceOf[js.Any])
       
       inline def setMozTransitionTimingFunctionUndefined: Self = StObject.set(x, "MozTransitionTimingFunction", js.undefined)
@@ -23108,7 +23106,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozUserFocus(
         value: MozUserFocus | (js.Array[
               (Extract[js.UndefOr[MozUserFocus | js.Array[NonNullable[js.UndefOr[MozUserFocus]]]], String]) | NonNullable[js.UndefOr[MozUserFocus]]
-            ]) | SKIPCHECKBoolean
+            ]) | MULTIVALUESKIPCHECK
       ): Self = StObject.set(x, "MozUserFocus", value.asInstanceOf[js.Any])
       
       inline def setMozUserFocusUndefined: Self = StObject.set(x, "MozUserFocus", js.undefined)
@@ -23120,7 +23118,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozUserInput(
         value: MozUserInput | (js.Array[
               (Extract[js.UndefOr[MozUserInput | js.Array[NonNullable[js.UndefOr[MozUserInput]]]], String]) | NonNullable[js.UndefOr[MozUserInput]]
-            ]) | `521`
+            ]) | `520`
       ): Self = StObject.set(x, "MozUserInput", value.asInstanceOf[js.Any])
       
       inline def setMozUserInputUndefined: Self = StObject.set(x, "MozUserInput", js.undefined)
@@ -23135,7 +23133,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MozUserModify | js.Array[NonNullable[js.UndefOr[MozUserModify]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MozUserModify]]
-            ]) | `459`
+            ]) | `458`
       ): Self = StObject.set(x, "MozUserModify", value.asInstanceOf[js.Any])
       
       inline def setMozUserModifyUndefined: Self = StObject.set(x, "MozUserModify", js.undefined)
@@ -23150,7 +23148,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMozUserSelect(
         value: UserSelect | (js.Array[
               (Extract[js.UndefOr[UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]], String]) | NonNullable[js.UndefOr[UserSelect]]
-            ]) | `47`
+            ]) | `46`
       ): Self = StObject.set(x, "MozUserSelect", value.asInstanceOf[js.Any])
       
       inline def setMozUserSelectUndefined: Self = StObject.set(x, "MozUserSelect", js.undefined)
@@ -23165,7 +23163,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MozWindowDragging | js.Array[NonNullable[js.UndefOr[MozWindowDragging]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MozWindowDragging]]
-            ]) | `180`
+            ]) | `179`
       ): Self = StObject.set(x, "MozWindowDragging", value.asInstanceOf[js.Any])
       
       inline def setMozWindowDraggingUndefined: Self = StObject.set(x, "MozWindowDragging", js.undefined)
@@ -23183,7 +23181,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MozWindowShadow | js.Array[NonNullable[js.UndefOr[MozWindowShadow]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MozWindowShadow]]
-            ]) | `280`
+            ]) | `279`
       ): Self = StObject.set(x, "MozWindowShadow", value.asInstanceOf[js.Any])
       
       inline def setMozWindowShadowUndefined: Self = StObject.set(x, "MozWindowShadow", js.undefined)
@@ -23201,7 +23199,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsAccelerator | js.Array[NonNullable[js.UndefOr[MsAccelerator]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsAccelerator]]
-            ]) | `67`
+            ]) | `66`
       ): Self = StObject.set(x, "msAccelerator", value.asInstanceOf[js.Any])
       
       inline def setMsAcceleratorUndefined: Self = StObject.set(x, "msAccelerator", js.undefined)
@@ -23219,7 +23217,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsBlockProgression | js.Array[NonNullable[js.UndefOr[MsBlockProgression]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsBlockProgression]]
-            ]) | `401`
+            ]) | `400`
       ): Self = StObject.set(x, "msBlockProgression", value.asInstanceOf[js.Any])
       
       inline def setMsBlockProgressionUndefined: Self = StObject.set(x, "msBlockProgression", js.undefined)
@@ -23237,7 +23235,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsContentZoomChaining | js.Array[NonNullable[js.UndefOr[MsContentZoomChaining]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsContentZoomChaining]]
-            ]) | `360`
+            ]) | `359`
       ): Self = StObject.set(x, "msContentZoomChaining", value.asInstanceOf[js.Any])
       
       inline def setMsContentZoomChainingUndefined: Self = StObject.set(x, "msContentZoomChaining", js.undefined)
@@ -23255,7 +23253,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsContentZoomLimit | js.Array[NonNullable[js.UndefOr[MsContentZoomLimit]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsContentZoomLimit]]
-            ]) | `309`
+            ]) | `308`
       ): Self = StObject.set(x, "msContentZoomLimit", value.asInstanceOf[js.Any])
       
       inline def setMsContentZoomLimitMax(
@@ -23264,7 +23262,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsContentZoomLimitMax | js.Array[NonNullable[js.UndefOr[MsContentZoomLimitMax]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsContentZoomLimitMax]]
-            ]) | `89`
+            ]) | `88`
       ): Self = StObject.set(x, "msContentZoomLimitMax", value.asInstanceOf[js.Any])
       
       inline def setMsContentZoomLimitMaxUndefined: Self = StObject.set(x, "msContentZoomLimitMax", js.undefined)
@@ -23282,7 +23280,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsContentZoomLimitMin | js.Array[NonNullable[js.UndefOr[MsContentZoomLimitMin]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsContentZoomLimitMin]]
-            ]) | `356`
+            ]) | `355`
       ): Self = StObject.set(x, "msContentZoomLimitMin", value.asInstanceOf[js.Any])
       
       inline def setMsContentZoomLimitMinUndefined: Self = StObject.set(x, "msContentZoomLimitMin", js.undefined)
@@ -23309,7 +23307,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsContentZoomSnap | js.Array[NonNullable[js.UndefOr[MsContentZoomSnap]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsContentZoomSnap]]
-            ]) | `287`
+            ]) | `286`
       ): Self = StObject.set(x, "msContentZoomSnap", value.asInstanceOf[js.Any])
       
       inline def setMsContentZoomSnapPoints(
@@ -23320,7 +23318,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[MsContentZoomSnapPoints]]
-            ]) | `496`
+            ]) | `495`
       ): Self = StObject.set(x, "msContentZoomSnapPoints", value.asInstanceOf[js.Any])
       
       inline def setMsContentZoomSnapPointsUndefined: Self = StObject.set(x, "msContentZoomSnapPoints", js.undefined)
@@ -23340,7 +23338,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsContentZoomSnapType | js.Array[NonNullable[js.UndefOr[MsContentZoomSnapType]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsContentZoomSnapType]]
-            ]) | `219`
+            ]) | `218`
       ): Self = StObject.set(x, "msContentZoomSnapType", value.asInstanceOf[js.Any])
       
       inline def setMsContentZoomSnapTypeUndefined: Self = StObject.set(x, "msContentZoomSnapType", js.undefined)
@@ -23367,7 +23365,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsContentZooming | js.Array[NonNullable[js.UndefOr[MsContentZooming]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsContentZooming]]
-            ]) | `25`
+            ]) | `24`
       ): Self = StObject.set(x, "msContentZooming", value.asInstanceOf[js.Any])
       
       inline def setMsContentZoomingUndefined: Self = StObject.set(x, "msContentZooming", js.undefined)
@@ -23382,7 +23380,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsFilter(
         value: MsFilter | (js.Array[
               (Extract[js.UndefOr[MsFilter | js.Array[NonNullable[js.UndefOr[MsFilter]]]], String]) | NonNullable[js.UndefOr[MsFilter]]
-            ]) | `328`
+            ]) | `327`
       ): Self = StObject.set(x, "msFilter", value.asInstanceOf[js.Any])
       
       inline def setMsFilterUndefined: Self = StObject.set(x, "msFilter", js.undefined)
@@ -23399,7 +23397,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Flex[Double | String]]])
-            ]) | `310`
+            ]) | `309`
       ): Self = StObject.set(x, "msFlex", value.asInstanceOf[js.Any])
       
       inline def setMsFlexDirection(
@@ -23408,7 +23406,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FlexDirection]]
-            ]) | `121`
+            ]) | `120`
       ): Self = StObject.set(x, "msFlexDirection", value.asInstanceOf[js.Any])
       
       inline def setMsFlexDirectionUndefined: Self = StObject.set(x, "msFlexDirection", js.undefined)
@@ -23423,7 +23421,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsFlexPositive(
         value: FlexGrow | (js.Array[
               (Extract[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]], String]) | NonNullable[js.UndefOr[FlexGrow]]
-            ]) | `97`
+            ]) | `96`
       ): Self = StObject.set(x, "msFlexPositive", value.asInstanceOf[js.Any])
       
       inline def setMsFlexPositiveUndefined: Self = StObject.set(x, "msFlexPositive", js.undefined)
@@ -23446,7 +23444,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsFlowFrom(
         value: MsFlowFrom | (js.Array[
               (Extract[js.UndefOr[MsFlowFrom | js.Array[NonNullable[js.UndefOr[MsFlowFrom]]]], String]) | NonNullable[js.UndefOr[MsFlowFrom]]
-            ]) | `531`
+            ]) | `530`
       ): Self = StObject.set(x, "msFlowFrom", value.asInstanceOf[js.Any])
       
       inline def setMsFlowFromUndefined: Self = StObject.set(x, "msFlowFrom", js.undefined)
@@ -23458,7 +23456,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsFlowInto(
         value: MsFlowInto | (js.Array[
               (Extract[js.UndefOr[MsFlowInto | js.Array[NonNullable[js.UndefOr[MsFlowInto]]]], String]) | NonNullable[js.UndefOr[MsFlowInto]]
-            ]) | `192`
+            ]) | `191`
       ): Self = StObject.set(x, "msFlowInto", value.asInstanceOf[js.Any])
       
       inline def setMsFlowIntoUndefined: Self = StObject.set(x, "msFlowInto", js.undefined)
@@ -23475,7 +23473,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MsGridColumns[Double | String]]])
-            ]) | `150`
+            ]) | `149`
       ): Self = StObject.set(x, "msGridColumns", value.asInstanceOf[js.Any])
       
       inline def setMsGridColumnsUndefined: Self = StObject.set(x, "msGridColumns", js.undefined)
@@ -23497,7 +23495,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MsGridRows[Double | String]]])
-            ]) | `551`
+            ]) | `550`
       ): Self = StObject.set(x, "msGridRows", value.asInstanceOf[js.Any])
       
       inline def setMsGridRowsUndefined: Self = StObject.set(x, "msGridRows", js.undefined)
@@ -23517,7 +23515,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsHighContrastAdjust | js.Array[NonNullable[js.UndefOr[MsHighContrastAdjust]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsHighContrastAdjust]]
-            ]) | `54`
+            ]) | `53`
       ): Self = StObject.set(x, "msHighContrastAdjust", value.asInstanceOf[js.Any])
       
       inline def setMsHighContrastAdjustUndefined: Self = StObject.set(x, "msHighContrastAdjust", js.undefined)
@@ -23535,7 +23533,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsHyphenateLimitChars | js.Array[NonNullable[js.UndefOr[MsHyphenateLimitChars]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsHyphenateLimitChars]]
-            ]) | `124`
+            ]) | `123`
       ): Self = StObject.set(x, "msHyphenateLimitChars", value.asInstanceOf[js.Any])
       
       inline def setMsHyphenateLimitCharsUndefined: Self = StObject.set(x, "msHyphenateLimitChars", js.undefined)
@@ -23553,7 +23551,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsHyphenateLimitLines | js.Array[NonNullable[js.UndefOr[MsHyphenateLimitLines]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsHyphenateLimitLines]]
-            ]) | `299`
+            ]) | `298`
       ): Self = StObject.set(x, "msHyphenateLimitLines", value.asInstanceOf[js.Any])
       
       inline def setMsHyphenateLimitLinesUndefined: Self = StObject.set(x, "msHyphenateLimitLines", js.undefined)
@@ -23573,7 +23571,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MsHyphenateLimitZone[Double | String]]])
-            ]) | `145`
+            ]) | `144`
       ): Self = StObject.set(x, "msHyphenateLimitZone", value.asInstanceOf[js.Any])
       
       inline def setMsHyphenateLimitZoneUndefined: Self = StObject.set(x, "msHyphenateLimitZone", js.undefined)
@@ -23590,7 +23588,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsHyphens(
         value: Hyphens | (js.Array[
               (Extract[js.UndefOr[Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]], String]) | NonNullable[js.UndefOr[Hyphens]]
-            ]) | `289`
+            ]) | `288`
       ): Self = StObject.set(x, "msHyphens", value.asInstanceOf[js.Any])
       
       inline def setMsHyphensUndefined: Self = StObject.set(x, "msHyphens", js.undefined)
@@ -23602,7 +23600,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsImeAlign(
         value: MsImeAlign | (js.Array[
               (Extract[js.UndefOr[MsImeAlign | js.Array[NonNullable[js.UndefOr[MsImeAlign]]]], String]) | NonNullable[js.UndefOr[MsImeAlign]]
-            ]) | `522`
+            ]) | `521`
       ): Self = StObject.set(x, "msImeAlign", value.asInstanceOf[js.Any])
       
       inline def setMsImeAlignUndefined: Self = StObject.set(x, "msImeAlign", js.undefined)
@@ -23614,7 +23612,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsImeMode(
         value: ImeMode | (js.Array[
               (Extract[js.UndefOr[ImeMode | js.Array[NonNullable[js.UndefOr[ImeMode]]]], String]) | NonNullable[js.UndefOr[ImeMode]]
-            ]) | `172`
+            ]) | `171`
       ): Self = StObject.set(x, "msImeMode", value.asInstanceOf[js.Any])
       
       inline def setMsImeModeUndefined: Self = StObject.set(x, "msImeMode", js.undefined)
@@ -23626,7 +23624,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsLineBreak(
         value: LineBreak | (js.Array[
               (Extract[js.UndefOr[LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]], String]) | NonNullable[js.UndefOr[LineBreak]]
-            ]) | `134`
+            ]) | `133`
       ): Self = StObject.set(x, "msLineBreak", value.asInstanceOf[js.Any])
       
       inline def setMsLineBreakUndefined: Self = StObject.set(x, "msLineBreak", js.undefined)
@@ -23638,7 +23636,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsOrder(
         value: Order | (js.Array[
               (Extract[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]], String]) | NonNullable[js.UndefOr[Order]]
-            ]) | `174`
+            ]) | `173`
       ): Self = StObject.set(x, "msOrder", value.asInstanceOf[js.Any])
       
       inline def setMsOrderUndefined: Self = StObject.set(x, "msOrder", js.undefined)
@@ -23653,7 +23651,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsOverflowStyle | js.Array[NonNullable[js.UndefOr[MsOverflowStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsOverflowStyle]]
-            ]) | `411`
+            ]) | `410`
       ): Self = StObject.set(x, "msOverflowStyle", value.asInstanceOf[js.Any])
       
       inline def setMsOverflowStyleUndefined: Self = StObject.set(x, "msOverflowStyle", js.undefined)
@@ -23668,7 +23666,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsOverflowX(
         value: OverflowX | (js.Array[
               (Extract[js.UndefOr[OverflowX | js.Array[NonNullable[js.UndefOr[OverflowX]]]], String]) | NonNullable[js.UndefOr[OverflowX]]
-            ]) | `276`
+            ]) | `275`
       ): Self = StObject.set(x, "msOverflowX", value.asInstanceOf[js.Any])
       
       inline def setMsOverflowXUndefined: Self = StObject.set(x, "msOverflowX", js.undefined)
@@ -23680,7 +23678,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsOverflowY(
         value: OverflowY | (js.Array[
               (Extract[js.UndefOr[OverflowY | js.Array[NonNullable[js.UndefOr[OverflowY]]]], String]) | NonNullable[js.UndefOr[OverflowY]]
-            ]) | `144`
+            ]) | `143`
       ): Self = StObject.set(x, "msOverflowY", value.asInstanceOf[js.Any])
       
       inline def setMsOverflowYUndefined: Self = StObject.set(x, "msOverflowY", js.undefined)
@@ -23695,7 +23693,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsScrollChaining | js.Array[NonNullable[js.UndefOr[MsScrollChaining]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollChaining]]
-            ]) | `9`
+            ]) | `8`
       ): Self = StObject.set(x, "msScrollChaining", value.asInstanceOf[js.Any])
       
       inline def setMsScrollChainingUndefined: Self = StObject.set(x, "msScrollChaining", js.undefined)
@@ -23713,7 +23711,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsScrollLimit | js.Array[NonNullable[js.UndefOr[MsScrollLimit]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollLimit]]
-            ]) | `31`
+            ]) | `30`
       ): Self = StObject.set(x, "msScrollLimit", value.asInstanceOf[js.Any])
       
       inline def setMsScrollLimitUndefined: Self = StObject.set(x, "msScrollLimit", js.undefined)
@@ -23733,7 +23731,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MsScrollLimitXMax[Double | String]]])
-            ]) | `402`
+            ]) | `401`
       ): Self = StObject.set(x, "msScrollLimitXMax", value.asInstanceOf[js.Any])
       
       inline def setMsScrollLimitXMaxUndefined: Self = StObject.set(x, "msScrollLimitXMax", js.undefined)
@@ -23755,7 +23753,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MsScrollLimitXMin[Double | String]]])
-            ]) | `452`
+            ]) | `451`
       ): Self = StObject.set(x, "msScrollLimitXMin", value.asInstanceOf[js.Any])
       
       inline def setMsScrollLimitXMinUndefined: Self = StObject.set(x, "msScrollLimitXMin", js.undefined)
@@ -23777,7 +23775,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MsScrollLimitYMax[Double | String]]])
-            ]) | `448`
+            ]) | `447`
       ): Self = StObject.set(x, "msScrollLimitYMax", value.asInstanceOf[js.Any])
       
       inline def setMsScrollLimitYMaxUndefined: Self = StObject.set(x, "msScrollLimitYMax", js.undefined)
@@ -23799,7 +23797,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MsScrollLimitYMin[Double | String]]])
-            ]) | `502`
+            ]) | `501`
       ): Self = StObject.set(x, "msScrollLimitYMin", value.asInstanceOf[js.Any])
       
       inline def setMsScrollLimitYMinUndefined: Self = StObject.set(x, "msScrollLimitYMin", js.undefined)
@@ -23819,7 +23817,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsScrollRails | js.Array[NonNullable[js.UndefOr[MsScrollRails]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollRails]]
-            ]) | `527`
+            ]) | `526`
       ): Self = StObject.set(x, "msScrollRails", value.asInstanceOf[js.Any])
       
       inline def setMsScrollRailsUndefined: Self = StObject.set(x, "msScrollRails", js.undefined)
@@ -23837,7 +23835,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsScrollSnapPointsX | js.Array[NonNullable[js.UndefOr[MsScrollSnapPointsX]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollSnapPointsX]]
-            ]) | `148`
+            ]) | `147`
       ): Self = StObject.set(x, "msScrollSnapPointsX", value.asInstanceOf[js.Any])
       
       inline def setMsScrollSnapPointsXUndefined: Self = StObject.set(x, "msScrollSnapPointsX", js.undefined)
@@ -23855,7 +23853,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsScrollSnapPointsY | js.Array[NonNullable[js.UndefOr[MsScrollSnapPointsY]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollSnapPointsY]]
-            ]) | `432`
+            ]) | `431`
       ): Self = StObject.set(x, "msScrollSnapPointsY", value.asInstanceOf[js.Any])
       
       inline def setMsScrollSnapPointsYUndefined: Self = StObject.set(x, "msScrollSnapPointsY", js.undefined)
@@ -23873,7 +23871,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsScrollSnapType | js.Array[NonNullable[js.UndefOr[MsScrollSnapType]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollSnapType]]
-            ]) | `182`
+            ]) | `181`
       ): Self = StObject.set(x, "msScrollSnapType", value.asInstanceOf[js.Any])
       
       inline def setMsScrollSnapTypeUndefined: Self = StObject.set(x, "msScrollSnapType", js.undefined)
@@ -23891,7 +23889,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsScrollSnapX | js.Array[NonNullable[js.UndefOr[MsScrollSnapX]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollSnapX]]
-            ]) | `316`
+            ]) | `315`
       ): Self = StObject.set(x, "msScrollSnapX", value.asInstanceOf[js.Any])
       
       inline def setMsScrollSnapXUndefined: Self = StObject.set(x, "msScrollSnapX", js.undefined)
@@ -23909,7 +23907,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsScrollSnapY | js.Array[NonNullable[js.UndefOr[MsScrollSnapY]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollSnapY]]
-            ]) | `243`
+            ]) | `242`
       ): Self = StObject.set(x, "msScrollSnapY", value.asInstanceOf[js.Any])
       
       inline def setMsScrollSnapYUndefined: Self = StObject.set(x, "msScrollSnapY", js.undefined)
@@ -23927,7 +23925,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsScrollTranslation | js.Array[NonNullable[js.UndefOr[MsScrollTranslation]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollTranslation]]
-            ]) | `453`
+            ]) | `452`
       ): Self = StObject.set(x, "msScrollTranslation", value.asInstanceOf[js.Any])
       
       inline def setMsScrollTranslationUndefined: Self = StObject.set(x, "msScrollTranslation", js.undefined)
@@ -23947,7 +23945,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollbar3dlightColor]]
-            ]) | `60`
+            ]) | `59`
       ): Self = StObject.set(x, "msScrollbar3dlightColor", value.asInstanceOf[js.Any])
       
       inline def setMsScrollbar3dlightColorUndefined: Self = StObject.set(x, "msScrollbar3dlightColor", js.undefined)
@@ -23967,7 +23965,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsScrollbarArrowColor | js.Array[NonNullable[js.UndefOr[MsScrollbarArrowColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollbarArrowColor]]
-            ]) | `302`
+            ]) | `301`
       ): Self = StObject.set(x, "msScrollbarArrowColor", value.asInstanceOf[js.Any])
       
       inline def setMsScrollbarArrowColorUndefined: Self = StObject.set(x, "msScrollbarArrowColor", js.undefined)
@@ -23985,7 +23983,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsScrollbarBaseColor | js.Array[NonNullable[js.UndefOr[MsScrollbarBaseColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollbarBaseColor]]
-            ]) | `540`
+            ]) | `539`
       ): Self = StObject.set(x, "msScrollbarBaseColor", value.asInstanceOf[js.Any])
       
       inline def setMsScrollbarBaseColorUndefined: Self = StObject.set(x, "msScrollbarBaseColor", js.undefined)
@@ -24005,7 +24003,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollbarDarkshadowColor]]
-            ]) | `412`
+            ]) | `411`
       ): Self = StObject.set(x, "msScrollbarDarkshadowColor", value.asInstanceOf[js.Any])
       
       inline def setMsScrollbarDarkshadowColorUndefined: Self = StObject.set(x, "msScrollbarDarkshadowColor", js.undefined)
@@ -24025,7 +24023,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsScrollbarFaceColor | js.Array[NonNullable[js.UndefOr[MsScrollbarFaceColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollbarFaceColor]]
-            ]) | `537`
+            ]) | `536`
       ): Self = StObject.set(x, "msScrollbarFaceColor", value.asInstanceOf[js.Any])
       
       inline def setMsScrollbarFaceColorUndefined: Self = StObject.set(x, "msScrollbarFaceColor", js.undefined)
@@ -24045,7 +24043,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollbarHighlightColor]]
-            ]) | `438`
+            ]) | `437`
       ): Self = StObject.set(x, "msScrollbarHighlightColor", value.asInstanceOf[js.Any])
       
       inline def setMsScrollbarHighlightColorUndefined: Self = StObject.set(x, "msScrollbarHighlightColor", js.undefined)
@@ -24067,7 +24065,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollbarShadowColor]]
-            ]) | `252`
+            ]) | `251`
       ): Self = StObject.set(x, "msScrollbarShadowColor", value.asInstanceOf[js.Any])
       
       inline def setMsScrollbarShadowColorUndefined: Self = StObject.set(x, "msScrollbarShadowColor", js.undefined)
@@ -24087,7 +24085,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsScrollbarTrackColor | js.Array[NonNullable[js.UndefOr[MsScrollbarTrackColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsScrollbarTrackColor]]
-            ]) | `4`
+            ]) | `3`
       ): Self = StObject.set(x, "msScrollbarTrackColor", value.asInstanceOf[js.Any])
       
       inline def setMsScrollbarTrackColorUndefined: Self = StObject.set(x, "msScrollbarTrackColor", js.undefined)
@@ -24105,7 +24103,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsTextAutospace | js.Array[NonNullable[js.UndefOr[MsTextAutospace]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsTextAutospace]]
-            ]) | `165`
+            ]) | `164`
       ): Self = StObject.set(x, "msTextAutospace", value.asInstanceOf[js.Any])
       
       inline def setMsTextAutospaceUndefined: Self = StObject.set(x, "msTextAutospace", js.undefined)
@@ -24123,7 +24121,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextCombineUpright | js.Array[NonNullable[js.UndefOr[TextCombineUpright]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextCombineUpright]]
-            ]) | `20`
+            ]) | `19`
       ): Self = StObject.set(x, "msTextCombineHorizontal", value.asInstanceOf[js.Any])
       
       inline def setMsTextCombineHorizontalUndefined: Self = StObject.set(x, "msTextCombineHorizontal", js.undefined)
@@ -24138,7 +24136,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsTextOverflow(
         value: TextOverflow | (js.Array[
               (Extract[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]], String]) | NonNullable[js.UndefOr[TextOverflow]]
-            ]) | `112`
+            ]) | `111`
       ): Self = StObject.set(x, "msTextOverflow", value.asInstanceOf[js.Any])
       
       inline def setMsTextOverflowUndefined: Self = StObject.set(x, "msTextOverflow", js.undefined)
@@ -24150,7 +24148,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsTouchAction(
         value: TouchAction | (js.Array[
               (Extract[js.UndefOr[TouchAction | js.Array[NonNullable[js.UndefOr[TouchAction]]]], String]) | NonNullable[js.UndefOr[TouchAction]]
-            ]) | `177`
+            ]) | `176`
       ): Self = StObject.set(x, "msTouchAction", value.asInstanceOf[js.Any])
       
       inline def setMsTouchActionUndefined: Self = StObject.set(x, "msTouchAction", js.undefined)
@@ -24165,7 +24163,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsTouchSelect | js.Array[NonNullable[js.UndefOr[MsTouchSelect]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsTouchSelect]]
-            ]) | `535`
+            ]) | `534`
       ): Self = StObject.set(x, "msTouchSelect", value.asInstanceOf[js.Any])
       
       inline def setMsTouchSelectUndefined: Self = StObject.set(x, "msTouchSelect", js.undefined)
@@ -24180,7 +24178,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsTransform(
         value: Transform | (js.Array[
               (Extract[js.UndefOr[Transform | js.Array[NonNullable[js.UndefOr[Transform]]]], String]) | NonNullable[js.UndefOr[Transform]]
-            ]) | `125`
+            ]) | `124`
       ): Self = StObject.set(x, "msTransform", value.asInstanceOf[js.Any])
       
       inline def setMsTransformOrigin(
@@ -24191,7 +24189,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[TransformOrigin[Double | String]]])
-            ]) | `65`
+            ]) | `64`
       ): Self = StObject.set(x, "msTransformOrigin", value.asInstanceOf[js.Any])
       
       inline def setMsTransformOriginUndefined: Self = StObject.set(x, "msTransformOrigin", js.undefined)
@@ -24217,7 +24215,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[Transition[String] | js.Array[NonNullable[js.UndefOr[Transition[String]]]]], 
                 String
               ]) | NonNullable[js.UndefOr[Transition[String]]]
-            ]) | `68`
+            ]) | `67`
       ): Self = StObject.set(x, "msTransition", value.asInstanceOf[js.Any])
       
       inline def setMsTransitionDelay(
@@ -24228,7 +24226,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionDelay[String]]]
-            ]) | `212`
+            ]) | `211`
       ): Self = StObject.set(x, "msTransitionDelay", value.asInstanceOf[js.Any])
       
       inline def setMsTransitionDelayUndefined: Self = StObject.set(x, "msTransitionDelay", js.undefined)
@@ -24250,7 +24248,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionDuration[String]]]
-            ]) | `78`
+            ]) | `77`
       ): Self = StObject.set(x, "msTransitionDuration", value.asInstanceOf[js.Any])
       
       inline def setMsTransitionDurationUndefined: Self = StObject.set(x, "msTransitionDuration", js.undefined)
@@ -24270,7 +24268,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionProperty]]
-            ]) | `228`
+            ]) | `227`
       ): Self = StObject.set(x, "msTransitionProperty", value.asInstanceOf[js.Any])
       
       inline def setMsTransitionPropertyUndefined: Self = StObject.set(x, "msTransitionProperty", js.undefined)
@@ -24290,7 +24288,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionTimingFunction]]
-            ]) | `272`
+            ]) | `271`
       ): Self = StObject.set(x, "msTransitionTimingFunction", value.asInstanceOf[js.Any])
       
       inline def setMsTransitionTimingFunctionUndefined: Self = StObject.set(x, "msTransitionTimingFunction", js.undefined)
@@ -24316,7 +24314,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsUserSelect(
         value: MsUserSelect | (js.Array[
               (Extract[js.UndefOr[MsUserSelect | js.Array[NonNullable[js.UndefOr[MsUserSelect]]]], String]) | NonNullable[js.UndefOr[MsUserSelect]]
-            ]) | `296`
+            ]) | `295`
       ): Self = StObject.set(x, "msUserSelect", value.asInstanceOf[js.Any])
       
       inline def setMsUserSelectUndefined: Self = StObject.set(x, "msUserSelect", js.undefined)
@@ -24328,7 +24326,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsWordBreak(
         value: WordBreak | (js.Array[
               (Extract[js.UndefOr[WordBreak | js.Array[NonNullable[js.UndefOr[WordBreak]]]], String]) | NonNullable[js.UndefOr[WordBreak]]
-            ]) | `90`
+            ]) | `89`
       ): Self = StObject.set(x, "msWordBreak", value.asInstanceOf[js.Any])
       
       inline def setMsWordBreakUndefined: Self = StObject.set(x, "msWordBreak", js.undefined)
@@ -24340,7 +24338,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsWrapFlow(
         value: MsWrapFlow | (js.Array[
               (Extract[js.UndefOr[MsWrapFlow | js.Array[NonNullable[js.UndefOr[MsWrapFlow]]]], String]) | NonNullable[js.UndefOr[MsWrapFlow]]
-            ]) | `286`
+            ]) | `285`
       ): Self = StObject.set(x, "msWrapFlow", value.asInstanceOf[js.Any])
       
       inline def setMsWrapFlowUndefined: Self = StObject.set(x, "msWrapFlow", js.undefined)
@@ -24357,7 +24355,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MsWrapMargin[Double | String]]])
-            ]) | `343`
+            ]) | `342`
       ): Self = StObject.set(x, "msWrapMargin", value.asInstanceOf[js.Any])
       
       inline def setMsWrapMarginUndefined: Self = StObject.set(x, "msWrapMargin", js.undefined)
@@ -24377,7 +24375,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MsWrapThrough | js.Array[NonNullable[js.UndefOr[MsWrapThrough]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MsWrapThrough]]
-            ]) | `270`
+            ]) | `269`
       ): Self = StObject.set(x, "msWrapThrough", value.asInstanceOf[js.Any])
       
       inline def setMsWrapThroughUndefined: Self = StObject.set(x, "msWrapThrough", js.undefined)
@@ -24392,7 +24390,7 @@ object esHooksUseStyleRegisterMod {
       inline def setMsWritingMode(
         value: WritingMode | (js.Array[
               (Extract[js.UndefOr[WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]], String]) | NonNullable[js.UndefOr[WritingMode]]
-            ]) | `181`
+            ]) | `180`
       ): Self = StObject.set(x, "msWritingMode", value.asInstanceOf[js.Any])
       
       inline def setMsWritingModeUndefined: Self = StObject.set(x, "msWritingMode", js.undefined)
@@ -24407,7 +24405,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[Animation[String] | js.Array[NonNullable[js.UndefOr[Animation[String]]]]], 
                 String
               ]) | NonNullable[js.UndefOr[Animation[String]]]
-            ]) | `28`
+            ]) | `27`
       ): Self = StObject.set(x, "OAnimation", value.asInstanceOf[js.Any])
       
       inline def setOAnimationDelay(
@@ -24418,7 +24416,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationDelay[String]]]
-            ]) | `241`
+            ]) | `240`
       ): Self = StObject.set(x, "OAnimationDelay", value.asInstanceOf[js.Any])
       
       inline def setOAnimationDelayUndefined: Self = StObject.set(x, "OAnimationDelay", js.undefined)
@@ -24438,7 +24436,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationDirection]]
-            ]) | `111`
+            ]) | `110`
       ): Self = StObject.set(x, "OAnimationDirection", value.asInstanceOf[js.Any])
       
       inline def setOAnimationDirectionUndefined: Self = StObject.set(x, "OAnimationDirection", js.undefined)
@@ -24458,7 +24456,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationDuration[String]]]
-            ]) | `99`
+            ]) | `98`
       ): Self = StObject.set(x, "OAnimationDuration", value.asInstanceOf[js.Any])
       
       inline def setOAnimationDurationUndefined: Self = StObject.set(x, "OAnimationDuration", js.undefined)
@@ -24478,7 +24476,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationFillMode]]
-            ]) | `114`
+            ]) | `113`
       ): Self = StObject.set(x, "OAnimationFillMode", value.asInstanceOf[js.Any])
       
       inline def setOAnimationFillModeUndefined: Self = StObject.set(x, "OAnimationFillMode", js.undefined)
@@ -24498,7 +24496,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationIterationCount]]
-            ]) | `87`
+            ]) | `86`
       ): Self = StObject.set(x, "OAnimationIterationCount", value.asInstanceOf[js.Any])
       
       inline def setOAnimationIterationCountUndefined: Self = StObject.set(x, "OAnimationIterationCount", js.undefined)
@@ -24518,7 +24516,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationName]]
-            ]) | `168`
+            ]) | `167`
       ): Self = StObject.set(x, "OAnimationName", value.asInstanceOf[js.Any])
       
       inline def setOAnimationNameUndefined: Self = StObject.set(x, "OAnimationName", js.undefined)
@@ -24536,7 +24534,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationPlayState]]
-            ]) | `159`
+            ]) | `158`
       ): Self = StObject.set(x, "OAnimationPlayState", value.asInstanceOf[js.Any])
       
       inline def setOAnimationPlayStateUndefined: Self = StObject.set(x, "OAnimationPlayState", js.undefined)
@@ -24556,7 +24554,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationTimingFunction]]
-            ]) | `161`
+            ]) | `160`
       ): Self = StObject.set(x, "OAnimationTimingFunction", value.asInstanceOf[js.Any])
       
       inline def setOAnimationTimingFunctionUndefined: Self = StObject.set(x, "OAnimationTimingFunction", js.undefined)
@@ -24587,7 +24585,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BackgroundSize[Double | String]]])
-            ]) | `55`
+            ]) | `54`
       ): Self = StObject.set(x, "OBackgroundSize", value.asInstanceOf[js.Any])
       
       inline def setOBackgroundSizeUndefined: Self = StObject.set(x, "OBackgroundSize", js.undefined)
@@ -24604,7 +24602,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOBorderImage(
         value: BorderImage | (js.Array[
               (Extract[js.UndefOr[BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]], String]) | NonNullable[js.UndefOr[BorderImage]]
-            ]) | `242`
+            ]) | `241`
       ): Self = StObject.set(x, "OBorderImage", value.asInstanceOf[js.Any])
       
       inline def setOBorderImageUndefined: Self = StObject.set(x, "OBorderImage", js.undefined)
@@ -24616,7 +24614,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOObjectFit(
         value: ObjectFit | (js.Array[
               (Extract[js.UndefOr[ObjectFit | js.Array[NonNullable[js.UndefOr[ObjectFit]]]], String]) | NonNullable[js.UndefOr[ObjectFit]]
-            ]) | `339`
+            ]) | `338`
       ): Self = StObject.set(x, "OObjectFit", value.asInstanceOf[js.Any])
       
       inline def setOObjectFitUndefined: Self = StObject.set(x, "OObjectFit", js.undefined)
@@ -24633,7 +24631,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ObjectPosition[Double | String]]])
-            ]) | `17`
+            ]) | `16`
       ): Self = StObject.set(x, "OObjectPosition", value.asInstanceOf[js.Any])
       
       inline def setOObjectPositionUndefined: Self = StObject.set(x, "OObjectPosition", js.undefined)
@@ -24655,7 +24653,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[TabSize[Double | String]]])
-            ]) | `169`
+            ]) | `168`
       ): Self = StObject.set(x, "OTabSize", value.asInstanceOf[js.Any])
       
       inline def setOTabSizeUndefined: Self = StObject.set(x, "OTabSize", js.undefined)
@@ -24672,7 +24670,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOTextOverflow(
         value: TextOverflow | (js.Array[
               (Extract[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]], String]) | NonNullable[js.UndefOr[TextOverflow]]
-            ]) | `112`
+            ]) | `111`
       ): Self = StObject.set(x, "OTextOverflow", value.asInstanceOf[js.Any])
       
       inline def setOTextOverflowUndefined: Self = StObject.set(x, "OTextOverflow", js.undefined)
@@ -24684,7 +24682,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOTransform(
         value: Transform | (js.Array[
               (Extract[js.UndefOr[Transform | js.Array[NonNullable[js.UndefOr[Transform]]]], String]) | NonNullable[js.UndefOr[Transform]]
-            ]) | `125`
+            ]) | `124`
       ): Self = StObject.set(x, "OTransform", value.asInstanceOf[js.Any])
       
       inline def setOTransformOrigin(
@@ -24695,7 +24693,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[TransformOrigin[Double | String]]])
-            ]) | `65`
+            ]) | `64`
       ): Self = StObject.set(x, "OTransformOrigin", value.asInstanceOf[js.Any])
       
       inline def setOTransformOriginUndefined: Self = StObject.set(x, "OTransformOrigin", js.undefined)
@@ -24721,7 +24719,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[Transition[String] | js.Array[NonNullable[js.UndefOr[Transition[String]]]]], 
                 String
               ]) | NonNullable[js.UndefOr[Transition[String]]]
-            ]) | `68`
+            ]) | `67`
       ): Self = StObject.set(x, "OTransition", value.asInstanceOf[js.Any])
       
       inline def setOTransitionDelay(
@@ -24732,7 +24730,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionDelay[String]]]
-            ]) | `212`
+            ]) | `211`
       ): Self = StObject.set(x, "OTransitionDelay", value.asInstanceOf[js.Any])
       
       inline def setOTransitionDelayUndefined: Self = StObject.set(x, "OTransitionDelay", js.undefined)
@@ -24754,7 +24752,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionDuration[String]]]
-            ]) | `78`
+            ]) | `77`
       ): Self = StObject.set(x, "OTransitionDuration", value.asInstanceOf[js.Any])
       
       inline def setOTransitionDurationUndefined: Self = StObject.set(x, "OTransitionDuration", js.undefined)
@@ -24774,7 +24772,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionProperty]]
-            ]) | `228`
+            ]) | `227`
       ): Self = StObject.set(x, "OTransitionProperty", value.asInstanceOf[js.Any])
       
       inline def setOTransitionPropertyUndefined: Self = StObject.set(x, "OTransitionProperty", js.undefined)
@@ -24794,7 +24792,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionTimingFunction]]
-            ]) | `272`
+            ]) | `271`
       ): Self = StObject.set(x, "OTransitionTimingFunction", value.asInstanceOf[js.Any])
       
       inline def setOTransitionTimingFunctionUndefined: Self = StObject.set(x, "OTransitionTimingFunction", js.undefined)
@@ -24820,7 +24818,7 @@ object esHooksUseStyleRegisterMod {
       inline def setObjectFit(
         value: ObjectFit | (js.Array[
               (Extract[js.UndefOr[ObjectFit | js.Array[NonNullable[js.UndefOr[ObjectFit]]]], String]) | NonNullable[js.UndefOr[ObjectFit]]
-            ]) | `339`
+            ]) | `338`
       ): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
       
       inline def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
@@ -24837,7 +24835,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ObjectPosition[Double | String]]])
-            ]) | `17`
+            ]) | `16`
       ): Self = StObject.set(x, "objectPosition", value.asInstanceOf[js.Any])
       
       inline def setObjectPositionUndefined: Self = StObject.set(x, "objectPosition", js.undefined)
@@ -24859,7 +24857,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Offset[Double | String]]])
-            ]) | `285`
+            ]) | `284`
       ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetAnchor(
@@ -24870,7 +24868,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[OffsetAnchor[Double | String]]])
-            ]) | `12`
+            ]) | `11`
       ): Self = StObject.set(x, "offsetAnchor", value.asInstanceOf[js.Any])
       
       inline def setOffsetAnchorUndefined: Self = StObject.set(x, "offsetAnchor", js.undefined)
@@ -24892,7 +24890,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[InsetBlock[Double | String]]])
-            ]) | `268`
+            ]) | `267`
       ): Self = StObject.set(x, "offsetBlock", value.asInstanceOf[js.Any])
       
       inline def setOffsetBlockEnd(
@@ -24903,7 +24901,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[InsetBlockEnd[Double | String]]])
-            ]) | `157`
+            ]) | `156`
       ): Self = StObject.set(x, "offsetBlockEnd", value.asInstanceOf[js.Any])
       
       inline def setOffsetBlockEndUndefined: Self = StObject.set(x, "offsetBlockEnd", js.undefined)
@@ -24925,7 +24923,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[InsetBlockStart[Double | String]]])
-            ]) | `226`
+            ]) | `225`
       ): Self = StObject.set(x, "offsetBlockStart", value.asInstanceOf[js.Any])
       
       inline def setOffsetBlockStartUndefined: Self = StObject.set(x, "offsetBlockStart", js.undefined)
@@ -24958,7 +24956,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[OffsetDistance[Double | String]]])
-            ]) | `258`
+            ]) | `257`
       ): Self = StObject.set(x, "offsetDistance", value.asInstanceOf[js.Any])
       
       inline def setOffsetDistanceUndefined: Self = StObject.set(x, "offsetDistance", js.undefined)
@@ -24980,7 +24978,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[InsetInline[Double | String]]])
-            ]) | `217`
+            ]) | `216`
       ): Self = StObject.set(x, "offsetInline", value.asInstanceOf[js.Any])
       
       inline def setOffsetInlineEnd(
@@ -24991,7 +24989,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[InsetInlineEnd[Double | String]]])
-            ]) | `428`
+            ]) | `427`
       ): Self = StObject.set(x, "offsetInlineEnd", value.asInstanceOf[js.Any])
       
       inline def setOffsetInlineEndUndefined: Self = StObject.set(x, "offsetInlineEnd", js.undefined)
@@ -25013,7 +25011,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[InsetInlineStart[Double | String]]])
-            ]) | `275`
+            ]) | `274`
       ): Self = StObject.set(x, "offsetInlineStart", value.asInstanceOf[js.Any])
       
       inline def setOffsetInlineStartUndefined: Self = StObject.set(x, "offsetInlineStart", js.undefined)
@@ -25041,7 +25039,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOffsetPath(
         value: OffsetPath | (js.Array[
               (Extract[js.UndefOr[OffsetPath | js.Array[NonNullable[js.UndefOr[OffsetPath]]]], String]) | NonNullable[js.UndefOr[OffsetPath]]
-            ]) | `107`
+            ]) | `106`
       ): Self = StObject.set(x, "offsetPath", value.asInstanceOf[js.Any])
       
       inline def setOffsetPathUndefined: Self = StObject.set(x, "offsetPath", js.undefined)
@@ -25058,7 +25056,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[OffsetPosition[Double | String]]])
-            ]) | `251`
+            ]) | `250`
       ): Self = StObject.set(x, "offsetPosition", value.asInstanceOf[js.Any])
       
       inline def setOffsetPositionUndefined: Self = StObject.set(x, "offsetPosition", js.undefined)
@@ -25075,7 +25073,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOffsetRotate(
         value: OffsetRotate | (js.Array[
               (Extract[js.UndefOr[OffsetRotate | js.Array[NonNullable[js.UndefOr[OffsetRotate]]]], String]) | NonNullable[js.UndefOr[OffsetRotate]]
-            ]) | `86`
+            ]) | `85`
       ): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
       
       inline def setOffsetRotateUndefined: Self = StObject.set(x, "offsetRotate", js.undefined)
@@ -25087,7 +25085,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOffsetRotation(
         value: OffsetRotate | (js.Array[
               (Extract[js.UndefOr[OffsetRotate | js.Array[NonNullable[js.UndefOr[OffsetRotate]]]], String]) | NonNullable[js.UndefOr[OffsetRotate]]
-            ]) | `86`
+            ]) | `85`
       ): Self = StObject.set(x, "offsetRotation", value.asInstanceOf[js.Any])
       
       inline def setOffsetRotationUndefined: Self = StObject.set(x, "offsetRotation", js.undefined)
@@ -25110,7 +25108,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOpacity(
         value: Opacity | (js.Array[
               (Extract[js.UndefOr[Opacity | js.Array[NonNullable[js.UndefOr[Opacity]]]], String]) | NonNullable[js.UndefOr[Opacity]]
-            ]) | `248`
+            ]) | `247`
       ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
@@ -25122,7 +25120,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOrder(
         value: Order | (js.Array[
               (Extract[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]], String]) | NonNullable[js.UndefOr[Order]]
-            ]) | `174`
+            ]) | `173`
       ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
@@ -25134,7 +25132,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOrphans(
         value: Orphans | (js.Array[
               (Extract[js.UndefOr[Orphans | js.Array[NonNullable[js.UndefOr[Orphans]]]], String]) | NonNullable[js.UndefOr[Orphans]]
-            ]) | `541`
+            ]) | `540`
       ): Self = StObject.set(x, "orphans", value.asInstanceOf[js.Any])
       
       inline def setOrphansUndefined: Self = StObject.set(x, "orphans", js.undefined)
@@ -25151,13 +25149,13 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Outline[Double | String]]])
-            ]) | `331`
+            ]) | `330`
       ): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
       
       inline def setOutlineColor(
         value: OutlineColor | (js.Array[
               (Extract[js.UndefOr[OutlineColor | js.Array[NonNullable[js.UndefOr[OutlineColor]]]], String]) | NonNullable[js.UndefOr[OutlineColor]]
-            ]) | `222`
+            ]) | `221`
       ): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
       
       inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
@@ -25174,7 +25172,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[OutlineOffset[Double | String]]])
-            ]) | `200`
+            ]) | `199`
       ): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
       
       inline def setOutlineOffsetUndefined: Self = StObject.set(x, "outlineOffset", js.undefined)
@@ -25191,7 +25189,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOutlineStyle(
         value: OutlineStyle | (js.Array[
               (Extract[js.UndefOr[OutlineStyle | js.Array[NonNullable[js.UndefOr[OutlineStyle]]]], String]) | NonNullable[js.UndefOr[OutlineStyle]]
-            ]) | `344`
+            ]) | `343`
       ): Self = StObject.set(x, "outlineStyle", value.asInstanceOf[js.Any])
       
       inline def setOutlineStyleUndefined: Self = StObject.set(x, "outlineStyle", js.undefined)
@@ -25219,7 +25217,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[OutlineWidth[Double | String]]])
-            ]) | `162`
+            ]) | `161`
       ): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
       
       inline def setOutlineWidthUndefined: Self = StObject.set(x, "outlineWidth", js.undefined)
@@ -25236,7 +25234,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOverflow(
         value: Overflow | (js.Array[
               (Extract[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]], String]) | NonNullable[js.UndefOr[Overflow]]
-            ]) | `399`
+            ]) | `398`
       ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setOverflowAnchor(
@@ -25245,7 +25243,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[OverflowAnchor | js.Array[NonNullable[js.UndefOr[OverflowAnchor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[OverflowAnchor]]
-            ]) | `131`
+            ]) | `130`
       ): Self = StObject.set(x, "overflowAnchor", value.asInstanceOf[js.Any])
       
       inline def setOverflowAnchorUndefined: Self = StObject.set(x, "overflowAnchor", js.undefined)
@@ -25263,7 +25261,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[OverflowBlock | js.Array[NonNullable[js.UndefOr[OverflowBlock]]]], 
                 String
               ]) | NonNullable[js.UndefOr[OverflowBlock]]
-            ]) | `421`
+            ]) | `420`
       ): Self = StObject.set(x, "overflowBlock", value.asInstanceOf[js.Any])
       
       inline def setOverflowBlockUndefined: Self = StObject.set(x, "overflowBlock", js.undefined)
@@ -25281,7 +25279,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[OverflowClipBox | js.Array[NonNullable[js.UndefOr[OverflowClipBox]]]], 
                 String
               ]) | NonNullable[js.UndefOr[OverflowClipBox]]
-            ]) | `524`
+            ]) | `523`
       ): Self = StObject.set(x, "overflowClipBox", value.asInstanceOf[js.Any])
       
       inline def setOverflowClipBoxUndefined: Self = StObject.set(x, "overflowClipBox", js.undefined)
@@ -25301,7 +25299,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[OverflowClipMargin[Double | String]]])
-            ]) | `325`
+            ]) | `324`
       ): Self = StObject.set(x, "overflowClipMargin", value.asInstanceOf[js.Any])
       
       inline def setOverflowClipMarginUndefined: Self = StObject.set(x, "overflowClipMargin", js.undefined)
@@ -25321,7 +25319,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[OverflowInline | js.Array[NonNullable[js.UndefOr[OverflowInline]]]], 
                 String
               ]) | NonNullable[js.UndefOr[OverflowInline]]
-            ]) | `193`
+            ]) | `192`
       ): Self = StObject.set(x, "overflowInline", value.asInstanceOf[js.Any])
       
       inline def setOverflowInlineUndefined: Self = StObject.set(x, "overflowInline", js.undefined)
@@ -25342,7 +25340,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOverflowWrap(
         value: OverflowWrap | (js.Array[
               (Extract[js.UndefOr[OverflowWrap | js.Array[NonNullable[js.UndefOr[OverflowWrap]]]], String]) | NonNullable[js.UndefOr[OverflowWrap]]
-            ]) | `365`
+            ]) | `364`
       ): Self = StObject.set(x, "overflowWrap", value.asInstanceOf[js.Any])
       
       inline def setOverflowWrapUndefined: Self = StObject.set(x, "overflowWrap", js.undefined)
@@ -25354,7 +25352,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOverflowX(
         value: OverflowX | (js.Array[
               (Extract[js.UndefOr[OverflowX | js.Array[NonNullable[js.UndefOr[OverflowX]]]], String]) | NonNullable[js.UndefOr[OverflowX]]
-            ]) | `276`
+            ]) | `275`
       ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
       
       inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
@@ -25366,7 +25364,7 @@ object esHooksUseStyleRegisterMod {
       inline def setOverflowY(
         value: OverflowY | (js.Array[
               (Extract[js.UndefOr[OverflowY | js.Array[NonNullable[js.UndefOr[OverflowY]]]], String]) | NonNullable[js.UndefOr[OverflowY]]
-            ]) | `144`
+            ]) | `143`
       ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
       
       inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
@@ -25381,7 +25379,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[OverscrollBehavior | js.Array[NonNullable[js.UndefOr[OverscrollBehavior]]]], 
                 String
               ]) | NonNullable[js.UndefOr[OverscrollBehavior]]
-            ]) | SKIPCHECKBooleanValue
+            ]) | SKIPCHECKValue
       ): Self = StObject.set(x, "overscrollBehavior", value.asInstanceOf[js.Any])
       
       inline def setOverscrollBehaviorBlock(
@@ -25392,7 +25390,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[OverscrollBehaviorBlock]]
-            ]) | `50`
+            ]) | `49`
       ): Self = StObject.set(x, "overscrollBehaviorBlock", value.asInstanceOf[js.Any])
       
       inline def setOverscrollBehaviorBlockUndefined: Self = StObject.set(x, "overscrollBehaviorBlock", js.undefined)
@@ -25414,7 +25412,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[OverscrollBehaviorInline]]
-            ]) | `132`
+            ]) | `131`
       ): Self = StObject.set(x, "overscrollBehaviorInline", value.asInstanceOf[js.Any])
       
       inline def setOverscrollBehaviorInlineUndefined: Self = StObject.set(x, "overscrollBehaviorInline", js.undefined)
@@ -25443,7 +25441,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[OverscrollBehaviorX | js.Array[NonNullable[js.UndefOr[OverscrollBehaviorX]]]], 
                 String
               ]) | NonNullable[js.UndefOr[OverscrollBehaviorX]]
-            ]) | `456`
+            ]) | `455`
       ): Self = StObject.set(x, "overscrollBehaviorX", value.asInstanceOf[js.Any])
       
       inline def setOverscrollBehaviorXUndefined: Self = StObject.set(x, "overscrollBehaviorX", js.undefined)
@@ -25461,7 +25459,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[OverscrollBehaviorY | js.Array[NonNullable[js.UndefOr[OverscrollBehaviorY]]]], 
                 String
               ]) | NonNullable[js.UndefOr[OverscrollBehaviorY]]
-            ]) | `73`
+            ]) | `72`
       ): Self = StObject.set(x, "overscrollBehaviorY", value.asInstanceOf[js.Any])
       
       inline def setOverscrollBehaviorYUndefined: Self = StObject.set(x, "overscrollBehaviorY", js.undefined)
@@ -25481,7 +25479,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Padding[Double | String]]])
-            ]) | `334`
+            ]) | `333`
       ): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
       inline def setPaddingBlock(
@@ -25492,7 +25490,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingBlock[Double | String]]])
-            ]) | `171`
+            ]) | `170`
       ): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
       
       inline def setPaddingBlockEnd(
@@ -25503,7 +25501,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingBlockEnd[Double | String]]])
-            ]) | `546`
+            ]) | `545`
       ): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
       
       inline def setPaddingBlockEndUndefined: Self = StObject.set(x, "paddingBlockEnd", js.undefined)
@@ -25525,7 +25523,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingBlockStart[Double | String]]])
-            ]) | `336`
+            ]) | `335`
       ): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
       
       inline def setPaddingBlockStartUndefined: Self = StObject.set(x, "paddingBlockStart", js.undefined)
@@ -25558,7 +25556,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingBottom[Double | String]]])
-            ]) | `410`
+            ]) | `409`
       ): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
       inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
@@ -25580,7 +25578,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingInline[Double | String]]])
-            ]) | `209`
+            ]) | `208`
       ): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
       
       inline def setPaddingInlineEnd(
@@ -25591,7 +25589,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingInlineEnd[Double | String]]])
-            ]) | `185`
+            ]) | `184`
       ): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
       
       inline def setPaddingInlineEndUndefined: Self = StObject.set(x, "paddingInlineEnd", js.undefined)
@@ -25613,7 +25611,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingInlineStart[Double | String]]])
-            ]) | `102`
+            ]) | `101`
       ): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
       
       inline def setPaddingInlineStartUndefined: Self = StObject.set(x, "paddingInlineStart", js.undefined)
@@ -25646,7 +25644,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingLeft[Double | String]]])
-            ]) | `550`
+            ]) | `549`
       ): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
       inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
@@ -25668,7 +25666,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingRight[Double | String]]])
-            ]) | `93`
+            ]) | `92`
       ): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
       inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
@@ -25690,7 +25688,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingTop[Double | String]]])
-            ]) | `417`
+            ]) | `416`
       ): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
       inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
@@ -25718,7 +25716,7 @@ object esHooksUseStyleRegisterMod {
       inline def setPage(
         value: Page | (js.Array[
               (Extract[js.UndefOr[Page | js.Array[NonNullable[js.UndefOr[Page]]]], String]) | NonNullable[js.UndefOr[Page]]
-            ]) | `430`
+            ]) | `429`
       ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
       inline def setPageBreakAfter(
@@ -25727,7 +25725,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[PageBreakAfter | js.Array[NonNullable[js.UndefOr[PageBreakAfter]]]], 
                 String
               ]) | NonNullable[js.UndefOr[PageBreakAfter]]
-            ]) | `91`
+            ]) | `90`
       ): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
       
       inline def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
@@ -25745,7 +25743,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[PageBreakBefore | js.Array[NonNullable[js.UndefOr[PageBreakBefore]]]], 
                 String
               ]) | NonNullable[js.UndefOr[PageBreakBefore]]
-            ]) | `523`
+            ]) | `522`
       ): Self = StObject.set(x, "pageBreakBefore", value.asInstanceOf[js.Any])
       
       inline def setPageBreakBeforeUndefined: Self = StObject.set(x, "pageBreakBefore", js.undefined)
@@ -25763,7 +25761,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[PageBreakInside | js.Array[NonNullable[js.UndefOr[PageBreakInside]]]], 
                 String
               ]) | NonNullable[js.UndefOr[PageBreakInside]]
-            ]) | `143`
+            ]) | `142`
       ): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
       
       inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
@@ -25784,7 +25782,7 @@ object esHooksUseStyleRegisterMod {
       inline def setPaintOrder(
         value: PaintOrder | (js.Array[
               (Extract[js.UndefOr[PaintOrder | js.Array[NonNullable[js.UndefOr[PaintOrder]]]], String]) | NonNullable[js.UndefOr[PaintOrder]]
-            ]) | `123`
+            ]) | `122`
       ): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
       
       inline def setPaintOrderUndefined: Self = StObject.set(x, "paintOrder", js.undefined)
@@ -25801,7 +25799,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Perspective[Double | String]]])
-            ]) | `294`
+            ]) | `293`
       ): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
       
       inline def setPerspectiveOrigin(
@@ -25812,7 +25810,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PerspectiveOrigin[Double | String]]])
-            ]) | `213`
+            ]) | `212`
       ): Self = StObject.set(x, "perspectiveOrigin", value.asInstanceOf[js.Any])
       
       inline def setPerspectiveOriginUndefined: Self = StObject.set(x, "perspectiveOrigin", js.undefined)
@@ -25840,7 +25838,7 @@ object esHooksUseStyleRegisterMod {
       inline def setPlaceContent(
         value: PlaceContent | (js.Array[
               (Extract[js.UndefOr[PlaceContent | js.Array[NonNullable[js.UndefOr[PlaceContent]]]], String]) | NonNullable[js.UndefOr[PlaceContent]]
-            ]) | `446`
+            ]) | `445`
       ): Self = StObject.set(x, "placeContent", value.asInstanceOf[js.Any])
       
       inline def setPlaceContentUndefined: Self = StObject.set(x, "placeContent", js.undefined)
@@ -25852,7 +25850,7 @@ object esHooksUseStyleRegisterMod {
       inline def setPlaceItems(
         value: PlaceItems | (js.Array[
               (Extract[js.UndefOr[PlaceItems | js.Array[NonNullable[js.UndefOr[PlaceItems]]]], String]) | NonNullable[js.UndefOr[PlaceItems]]
-            ]) | `392`
+            ]) | `391`
       ): Self = StObject.set(x, "placeItems", value.asInstanceOf[js.Any])
       
       inline def setPlaceItemsUndefined: Self = StObject.set(x, "placeItems", js.undefined)
@@ -25864,7 +25862,7 @@ object esHooksUseStyleRegisterMod {
       inline def setPlaceSelf(
         value: PlaceSelf | (js.Array[
               (Extract[js.UndefOr[PlaceSelf | js.Array[NonNullable[js.UndefOr[PlaceSelf]]]], String]) | NonNullable[js.UndefOr[PlaceSelf]]
-            ]) | `497`
+            ]) | `496`
       ): Self = StObject.set(x, "placeSelf", value.asInstanceOf[js.Any])
       
       inline def setPlaceSelfUndefined: Self = StObject.set(x, "placeSelf", js.undefined)
@@ -25879,7 +25877,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[PointerEvents | js.Array[NonNullable[js.UndefOr[PointerEvents]]]], 
                 String
               ]) | NonNullable[js.UndefOr[PointerEvents]]
-            ]) | `262`
+            ]) | `261`
       ): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
       
       inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
@@ -25894,7 +25892,7 @@ object esHooksUseStyleRegisterMod {
       inline def setPosition(
         value: Position | (js.Array[
               (Extract[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]], String]) | NonNullable[js.UndefOr[Position]]
-            ]) | `269`
+            ]) | `268`
       ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
@@ -25909,7 +25907,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[PrintColorAdjust | js.Array[NonNullable[js.UndefOr[PrintColorAdjust]]]], 
                 String
               ]) | NonNullable[js.UndefOr[PrintColorAdjust]]
-            ]) | `284`
+            ]) | `283`
       ): Self = StObject.set(x, "printColorAdjust", value.asInstanceOf[js.Any])
       
       inline def setPrintColorAdjustUndefined: Self = StObject.set(x, "printColorAdjust", js.undefined)
@@ -25924,7 +25922,7 @@ object esHooksUseStyleRegisterMod {
       inline def setQuotes(
         value: Quotes | (js.Array[
               (Extract[js.UndefOr[Quotes | js.Array[NonNullable[js.UndefOr[Quotes]]]], String]) | NonNullable[js.UndefOr[Quotes]]
-            ]) | `288`
+            ]) | `287`
       ): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
       
       inline def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
@@ -25936,7 +25934,7 @@ object esHooksUseStyleRegisterMod {
       inline def setResize(
         value: Resize | (js.Array[
               (Extract[js.UndefOr[Resize | js.Array[NonNullable[js.UndefOr[Resize]]]], String]) | NonNullable[js.UndefOr[Resize]]
-            ]) | `245`
+            ]) | `244`
       ): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
       inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
@@ -25953,7 +25951,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Right[Double | String]]])
-            ]) | `315`
+            ]) | `314`
       ): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
       inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
@@ -25970,7 +25968,7 @@ object esHooksUseStyleRegisterMod {
       inline def setRotate(
         value: Rotate | (js.Array[
               (Extract[js.UndefOr[Rotate | js.Array[NonNullable[js.UndefOr[Rotate]]]], String]) | NonNullable[js.UndefOr[Rotate]]
-            ]) | `519`
+            ]) | `518`
       ): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
       inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
@@ -25987,7 +25985,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[RowGap[Double | String]]])
-            ]) | `352`
+            ]) | `351`
       ): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
       
       inline def setRowGapUndefined: Self = StObject.set(x, "rowGap", js.undefined)
@@ -26004,7 +26002,7 @@ object esHooksUseStyleRegisterMod {
       inline def setRubyAlign(
         value: RubyAlign | (js.Array[
               (Extract[js.UndefOr[RubyAlign | js.Array[NonNullable[js.UndefOr[RubyAlign]]]], String]) | NonNullable[js.UndefOr[RubyAlign]]
-            ]) | `530`
+            ]) | `529`
       ): Self = StObject.set(x, "rubyAlign", value.asInstanceOf[js.Any])
       
       inline def setRubyAlignUndefined: Self = StObject.set(x, "rubyAlign", js.undefined)
@@ -26016,7 +26014,7 @@ object esHooksUseStyleRegisterMod {
       inline def setRubyMerge(
         value: RubyMerge | (js.Array[
               (Extract[js.UndefOr[RubyMerge | js.Array[NonNullable[js.UndefOr[RubyMerge]]]], String]) | NonNullable[js.UndefOr[RubyMerge]]
-            ]) | `82`
+            ]) | `81`
       ): Self = StObject.set(x, "rubyMerge", value.asInstanceOf[js.Any])
       
       inline def setRubyMergeUndefined: Self = StObject.set(x, "rubyMerge", js.undefined)
@@ -26028,7 +26026,7 @@ object esHooksUseStyleRegisterMod {
       inline def setRubyPosition(
         value: RubyPosition | (js.Array[
               (Extract[js.UndefOr[RubyPosition | js.Array[NonNullable[js.UndefOr[RubyPosition]]]], String]) | NonNullable[js.UndefOr[RubyPosition]]
-            ]) | `327`
+            ]) | `326`
       ): Self = StObject.set(x, "rubyPosition", value.asInstanceOf[js.Any])
       
       inline def setRubyPositionUndefined: Self = StObject.set(x, "rubyPosition", js.undefined)
@@ -26040,7 +26038,7 @@ object esHooksUseStyleRegisterMod {
       inline def setScale(
         value: Scale | (js.Array[
               (Extract[js.UndefOr[Scale | js.Array[NonNullable[js.UndefOr[Scale]]]], String]) | NonNullable[js.UndefOr[Scale]]
-            ]) | `139`
+            ]) | `138`
       ): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
@@ -26055,7 +26053,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollBehavior | js.Array[NonNullable[js.UndefOr[ScrollBehavior]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollBehavior]]
-            ]) | `465`
+            ]) | `464`
       ): Self = StObject.set(x, "scrollBehavior", value.asInstanceOf[js.Any])
       
       inline def setScrollBehaviorUndefined: Self = StObject.set(x, "scrollBehavior", js.undefined)
@@ -26075,7 +26073,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMargin[Double | String]]])
-            ]) | `109`
+            ]) | `108`
       ): Self = StObject.set(x, "scrollMargin", value.asInstanceOf[js.Any])
       
       inline def setScrollMarginBlock(
@@ -26086,7 +26084,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginBlock[Double | String]]])
-            ]) | `468`
+            ]) | `467`
       ): Self = StObject.set(x, "scrollMarginBlock", value.asInstanceOf[js.Any])
       
       inline def setScrollMarginBlockEnd(
@@ -26097,7 +26095,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginBlockEnd[Double | String]]])
-            ]) | `439`
+            ]) | `438`
       ): Self = StObject.set(x, "scrollMarginBlockEnd", value.asInstanceOf[js.Any])
       
       inline def setScrollMarginBlockEndUndefined: Self = StObject.set(x, "scrollMarginBlockEnd", js.undefined)
@@ -26119,7 +26117,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginBlockStart[Double | String]]])
-            ]) | `557`
+            ]) | `556`
       ): Self = StObject.set(x, "scrollMarginBlockStart", value.asInstanceOf[js.Any])
       
       inline def setScrollMarginBlockStartUndefined: Self = StObject.set(x, "scrollMarginBlockStart", js.undefined)
@@ -26152,7 +26150,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginBottom[Double | String]]])
-            ]) | `281`
+            ]) | `280`
       ): Self = StObject.set(x, "scrollMarginBottom", value.asInstanceOf[js.Any])
       
       inline def setScrollMarginBottomUndefined: Self = StObject.set(x, "scrollMarginBottom", js.undefined)
@@ -26174,7 +26172,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginInline[Double | String]]])
-            ]) | `364`
+            ]) | `363`
       ): Self = StObject.set(x, "scrollMarginInline", value.asInstanceOf[js.Any])
       
       inline def setScrollMarginInlineEnd(
@@ -26185,7 +26183,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginInlineEnd[Double | String]]])
-            ]) | `422`
+            ]) | `421`
       ): Self = StObject.set(x, "scrollMarginInlineEnd", value.asInstanceOf[js.Any])
       
       inline def setScrollMarginInlineEndUndefined: Self = StObject.set(x, "scrollMarginInlineEnd", js.undefined)
@@ -26207,7 +26205,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginInlineStart[Double | String]]])
-            ]) | `329`
+            ]) | `328`
       ): Self = StObject.set(x, "scrollMarginInlineStart", value.asInstanceOf[js.Any])
       
       inline def setScrollMarginInlineStartUndefined: Self = StObject.set(x, "scrollMarginInlineStart", js.undefined)
@@ -26240,7 +26238,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginLeft[Double | String]]])
-            ]) | `2`
+            ]) | `1`
       ): Self = StObject.set(x, "scrollMarginLeft", value.asInstanceOf[js.Any])
       
       inline def setScrollMarginLeftUndefined: Self = StObject.set(x, "scrollMarginLeft", js.undefined)
@@ -26262,7 +26260,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginRight[Double | String]]])
-            ]) | `127`
+            ]) | `126`
       ): Self = StObject.set(x, "scrollMarginRight", value.asInstanceOf[js.Any])
       
       inline def setScrollMarginRightUndefined: Self = StObject.set(x, "scrollMarginRight", js.undefined)
@@ -26284,7 +26282,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginTop[Double | String]]])
-            ]) | `26`
+            ]) | `25`
       ): Self = StObject.set(x, "scrollMarginTop", value.asInstanceOf[js.Any])
       
       inline def setScrollMarginTopUndefined: Self = StObject.set(x, "scrollMarginTop", js.undefined)
@@ -26317,7 +26315,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollPadding[Double | String]]])
-            ]) | `375`
+            ]) | `374`
       ): Self = StObject.set(x, "scrollPadding", value.asInstanceOf[js.Any])
       
       inline def setScrollPaddingBlock(
@@ -26328,7 +26326,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollPaddingBlock[Double | String]]])
-            ]) | `405`
+            ]) | `404`
       ): Self = StObject.set(x, "scrollPaddingBlock", value.asInstanceOf[js.Any])
       
       inline def setScrollPaddingBlockEnd(
@@ -26339,7 +26337,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollPaddingBlockEnd[Double | String]]])
-            ]) | `443`
+            ]) | `442`
       ): Self = StObject.set(x, "scrollPaddingBlockEnd", value.asInstanceOf[js.Any])
       
       inline def setScrollPaddingBlockEndUndefined: Self = StObject.set(x, "scrollPaddingBlockEnd", js.undefined)
@@ -26361,7 +26359,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollPaddingBlockStart[Double | String]]])
-            ]) | `454`
+            ]) | `453`
       ): Self = StObject.set(x, "scrollPaddingBlockStart", value.asInstanceOf[js.Any])
       
       inline def setScrollPaddingBlockStartUndefined: Self = StObject.set(x, "scrollPaddingBlockStart", js.undefined)
@@ -26394,7 +26392,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollPaddingBottom[Double | String]]])
-            ]) | `173`
+            ]) | `172`
       ): Self = StObject.set(x, "scrollPaddingBottom", value.asInstanceOf[js.Any])
       
       inline def setScrollPaddingBottomUndefined: Self = StObject.set(x, "scrollPaddingBottom", js.undefined)
@@ -26416,7 +26414,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollPaddingInline[Double | String]]])
-            ]) | `473`
+            ]) | `472`
       ): Self = StObject.set(x, "scrollPaddingInline", value.asInstanceOf[js.Any])
       
       inline def setScrollPaddingInlineEnd(
@@ -26427,7 +26425,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollPaddingInlineEnd[Double | String]]])
-            ]) | `380`
+            ]) | `379`
       ): Self = StObject.set(x, "scrollPaddingInlineEnd", value.asInstanceOf[js.Any])
       
       inline def setScrollPaddingInlineEndUndefined: Self = StObject.set(x, "scrollPaddingInlineEnd", js.undefined)
@@ -26449,7 +26447,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollPaddingInlineStart[Double | String]]])
-            ]) | `300`
+            ]) | `299`
       ): Self = StObject.set(x, "scrollPaddingInlineStart", value.asInstanceOf[js.Any])
       
       inline def setScrollPaddingInlineStartUndefined: Self = StObject.set(x, "scrollPaddingInlineStart", js.undefined)
@@ -26482,7 +26480,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollPaddingLeft[Double | String]]])
-            ]) | `247`
+            ]) | `246`
       ): Self = StObject.set(x, "scrollPaddingLeft", value.asInstanceOf[js.Any])
       
       inline def setScrollPaddingLeftUndefined: Self = StObject.set(x, "scrollPaddingLeft", js.undefined)
@@ -26504,7 +26502,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollPaddingRight[Double | String]]])
-            ]) | `16`
+            ]) | `15`
       ): Self = StObject.set(x, "scrollPaddingRight", value.asInstanceOf[js.Any])
       
       inline def setScrollPaddingRightUndefined: Self = StObject.set(x, "scrollPaddingRight", js.undefined)
@@ -26526,7 +26524,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollPaddingTop[Double | String]]])
-            ]) | `445`
+            ]) | `444`
       ): Self = StObject.set(x, "scrollPaddingTop", value.asInstanceOf[js.Any])
       
       inline def setScrollPaddingTopUndefined: Self = StObject.set(x, "scrollPaddingTop", js.undefined)
@@ -26557,7 +26555,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollSnapAlign | js.Array[NonNullable[js.UndefOr[ScrollSnapAlign]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollSnapAlign]]
-            ]) | `474`
+            ]) | `473`
       ): Self = StObject.set(x, "scrollSnapAlign", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapAlignUndefined: Self = StObject.set(x, "scrollSnapAlign", js.undefined)
@@ -26577,7 +26575,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollSnapCoordinate[Double | String]]])
-            ]) | `232`
+            ]) | `231`
       ): Self = StObject.set(x, "scrollSnapCoordinate", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapCoordinateUndefined: Self = StObject.set(x, "scrollSnapCoordinate", js.undefined)
@@ -26599,7 +26597,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollSnapDestination[Double | String]]])
-            ]) | `170`
+            ]) | `169`
       ): Self = StObject.set(x, "scrollSnapDestination", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapDestinationUndefined: Self = StObject.set(x, "scrollSnapDestination", js.undefined)
@@ -26621,7 +26619,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMargin[Double | String]]])
-            ]) | `109`
+            ]) | `108`
       ): Self = StObject.set(x, "scrollSnapMargin", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapMarginBottom(
@@ -26632,7 +26630,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginBottom[Double | String]]])
-            ]) | `281`
+            ]) | `280`
       ): Self = StObject.set(x, "scrollSnapMarginBottom", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapMarginBottomUndefined: Self = StObject.set(x, "scrollSnapMarginBottom", js.undefined)
@@ -26654,7 +26652,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginLeft[Double | String]]])
-            ]) | `2`
+            ]) | `1`
       ): Self = StObject.set(x, "scrollSnapMarginLeft", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapMarginLeftUndefined: Self = StObject.set(x, "scrollSnapMarginLeft", js.undefined)
@@ -26676,7 +26674,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginRight[Double | String]]])
-            ]) | `127`
+            ]) | `126`
       ): Self = StObject.set(x, "scrollSnapMarginRight", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapMarginRightUndefined: Self = StObject.set(x, "scrollSnapMarginRight", js.undefined)
@@ -26698,7 +26696,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ScrollMarginTop[Double | String]]])
-            ]) | `26`
+            ]) | `25`
       ): Self = StObject.set(x, "scrollSnapMarginTop", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapMarginTopUndefined: Self = StObject.set(x, "scrollSnapMarginTop", js.undefined)
@@ -26729,7 +26727,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollSnapPointsX | js.Array[NonNullable[js.UndefOr[ScrollSnapPointsX]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollSnapPointsX]]
-            ]) | `303`
+            ]) | `302`
       ): Self = StObject.set(x, "scrollSnapPointsX", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapPointsXUndefined: Self = StObject.set(x, "scrollSnapPointsX", js.undefined)
@@ -26747,7 +26745,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollSnapPointsY | js.Array[NonNullable[js.UndefOr[ScrollSnapPointsY]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollSnapPointsY]]
-            ]) | `261`
+            ]) | `260`
       ): Self = StObject.set(x, "scrollSnapPointsY", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapPointsYUndefined: Self = StObject.set(x, "scrollSnapPointsY", js.undefined)
@@ -26765,7 +26763,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollSnapStop | js.Array[NonNullable[js.UndefOr[ScrollSnapStop]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollSnapStop]]
-            ]) | `189`
+            ]) | `188`
       ): Self = StObject.set(x, "scrollSnapStop", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapStopUndefined: Self = StObject.set(x, "scrollSnapStop", js.undefined)
@@ -26783,7 +26781,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollSnapType | js.Array[NonNullable[js.UndefOr[ScrollSnapType]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollSnapType]]
-            ]) | `70`
+            ]) | `69`
       ): Self = StObject.set(x, "scrollSnapType", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapTypeUndefined: Self = StObject.set(x, "scrollSnapType", js.undefined)
@@ -26801,7 +26799,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollSnapTypeX | js.Array[NonNullable[js.UndefOr[ScrollSnapTypeX]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollSnapTypeX]]
-            ]) | `495`
+            ]) | `494`
       ): Self = StObject.set(x, "scrollSnapTypeX", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapTypeXUndefined: Self = StObject.set(x, "scrollSnapTypeX", js.undefined)
@@ -26819,7 +26817,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollSnapTypeY | js.Array[NonNullable[js.UndefOr[ScrollSnapTypeY]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollSnapTypeY]]
-            ]) | `419`
+            ]) | `418`
       ): Self = StObject.set(x, "scrollSnapTypeY", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapTypeYUndefined: Self = StObject.set(x, "scrollSnapTypeY", js.undefined)
@@ -26837,7 +26835,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollTimeline | js.Array[NonNullable[js.UndefOr[ScrollTimeline]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollTimeline]]
-            ]) | `34`
+            ]) | `33`
       ): Self = StObject.set(x, "scrollTimeline", value.asInstanceOf[js.Any])
       
       inline def setScrollTimelineAxis(
@@ -26846,7 +26844,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollTimelineAxis | js.Array[NonNullable[js.UndefOr[ScrollTimelineAxis]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollTimelineAxis]]
-            ]) | `346`
+            ]) | `345`
       ): Self = StObject.set(x, "scrollTimelineAxis", value.asInstanceOf[js.Any])
       
       inline def setScrollTimelineAxisUndefined: Self = StObject.set(x, "scrollTimelineAxis", js.undefined)
@@ -26864,7 +26862,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollTimelineName | js.Array[NonNullable[js.UndefOr[ScrollTimelineName]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollTimelineName]]
-            ]) | `61`
+            ]) | `60`
       ): Self = StObject.set(x, "scrollTimelineName", value.asInstanceOf[js.Any])
       
       inline def setScrollTimelineNameUndefined: Self = StObject.set(x, "scrollTimelineName", js.undefined)
@@ -26891,7 +26889,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollbarColor | js.Array[NonNullable[js.UndefOr[ScrollbarColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollbarColor]]
-            ]) | `292`
+            ]) | `291`
       ): Self = StObject.set(x, "scrollbarColor", value.asInstanceOf[js.Any])
       
       inline def setScrollbarColorUndefined: Self = StObject.set(x, "scrollbarColor", js.undefined)
@@ -26909,7 +26907,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollbarGutter | js.Array[NonNullable[js.UndefOr[ScrollbarGutter]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollbarGutter]]
-            ]) | `510`
+            ]) | `509`
       ): Self = StObject.set(x, "scrollbarGutter", value.asInstanceOf[js.Any])
       
       inline def setScrollbarGutterUndefined: Self = StObject.set(x, "scrollbarGutter", js.undefined)
@@ -26927,7 +26925,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollbarWidth | js.Array[NonNullable[js.UndefOr[ScrollbarWidth]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollbarWidth]]
-            ]) | `368`
+            ]) | `367`
       ): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
       
       inline def setScrollbarWidthUndefined: Self = StObject.set(x, "scrollbarWidth", js.undefined)
@@ -26945,7 +26943,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ShapeImageThreshold | js.Array[NonNullable[js.UndefOr[ShapeImageThreshold]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ShapeImageThreshold]]
-            ]) | `307`
+            ]) | `306`
       ): Self = StObject.set(x, "shapeImageThreshold", value.asInstanceOf[js.Any])
       
       inline def setShapeImageThresholdUndefined: Self = StObject.set(x, "shapeImageThreshold", js.undefined)
@@ -26965,7 +26963,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ShapeMargin[Double | String]]])
-            ]) | `100`
+            ]) | `99`
       ): Self = StObject.set(x, "shapeMargin", value.asInstanceOf[js.Any])
       
       inline def setShapeMarginUndefined: Self = StObject.set(x, "shapeMargin", js.undefined)
@@ -26982,7 +26980,7 @@ object esHooksUseStyleRegisterMod {
       inline def setShapeOutside(
         value: ShapeOutside | (js.Array[
               (Extract[js.UndefOr[ShapeOutside | js.Array[NonNullable[js.UndefOr[ShapeOutside]]]], String]) | NonNullable[js.UndefOr[ShapeOutside]]
-            ]) | `382`
+            ]) | `381`
       ): Self = StObject.set(x, "shapeOutside", value.asInstanceOf[js.Any])
       
       inline def setShapeOutsideUndefined: Self = StObject.set(x, "shapeOutside", js.undefined)
@@ -26997,7 +26995,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ShapeRendering | js.Array[NonNullable[js.UndefOr[ShapeRendering]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ShapeRendering]]
-            ]) | `33`
+            ]) | `32`
       ): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
       
       inline def setShapeRenderingUndefined: Self = StObject.set(x, "shapeRendering", js.undefined)
@@ -27012,7 +27010,7 @@ object esHooksUseStyleRegisterMod {
       inline def setStopColor(
         value: StopColor | (js.Array[
               (Extract[js.UndefOr[StopColor | js.Array[NonNullable[js.UndefOr[StopColor]]]], String]) | NonNullable[js.UndefOr[StopColor]]
-            ]) | `457`
+            ]) | `456`
       ): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
       
       inline def setStopColorUndefined: Self = StObject.set(x, "stopColor", js.undefined)
@@ -27024,7 +27022,7 @@ object esHooksUseStyleRegisterMod {
       inline def setStopOpacity(
         value: StopOpacity | (js.Array[
               (Extract[js.UndefOr[StopOpacity | js.Array[NonNullable[js.UndefOr[StopOpacity]]]], String]) | NonNullable[js.UndefOr[StopOpacity]]
-            ]) | `436`
+            ]) | `435`
       ): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
       
       inline def setStopOpacityUndefined: Self = StObject.set(x, "stopOpacity", js.undefined)
@@ -27036,7 +27034,7 @@ object esHooksUseStyleRegisterMod {
       inline def setStroke(
         value: Stroke | (js.Array[
               (Extract[js.UndefOr[Stroke | js.Array[NonNullable[js.UndefOr[Stroke]]]], String]) | NonNullable[js.UndefOr[Stroke]]
-            ]) | `449`
+            ]) | `448`
       ): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
       inline def setStrokeDasharray(
@@ -27047,7 +27045,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[StrokeDasharray[Double | String]]])
-            ]) | `514`
+            ]) | `513`
       ): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
       
       inline def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
@@ -27069,7 +27067,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[StrokeDashoffset[Double | String]]])
-            ]) | `349`
+            ]) | `348`
       ): Self = StObject.set(x, "strokeDashoffset", value.asInstanceOf[js.Any])
       
       inline def setStrokeDashoffsetUndefined: Self = StObject.set(x, "strokeDashoffset", js.undefined)
@@ -27089,7 +27087,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[StrokeLinecap | js.Array[NonNullable[js.UndefOr[StrokeLinecap]]]], 
                 String
               ]) | NonNullable[js.UndefOr[StrokeLinecap]]
-            ]) | `246`
+            ]) | `245`
       ): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
       
       inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
@@ -27107,7 +27105,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[StrokeLinejoin | js.Array[NonNullable[js.UndefOr[StrokeLinejoin]]]], 
                 String
               ]) | NonNullable[js.UndefOr[StrokeLinejoin]]
-            ]) | `345`
+            ]) | `344`
       ): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
       
       inline def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
@@ -27125,7 +27123,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[StrokeMiterlimit | js.Array[NonNullable[js.UndefOr[StrokeMiterlimit]]]], 
                 String
               ]) | NonNullable[js.UndefOr[StrokeMiterlimit]]
-            ]) | `52`
+            ]) | `51`
       ): Self = StObject.set(x, "strokeMiterlimit", value.asInstanceOf[js.Any])
       
       inline def setStrokeMiterlimitUndefined: Self = StObject.set(x, "strokeMiterlimit", js.undefined)
@@ -27143,7 +27141,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[StrokeOpacity | js.Array[NonNullable[js.UndefOr[StrokeOpacity]]]], 
                 String
               ]) | NonNullable[js.UndefOr[StrokeOpacity]]
-            ]) | `314`
+            ]) | `313`
       ): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
       
       inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
@@ -27169,7 +27167,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[StrokeWidth[Double | String]]])
-            ]) | `323`
+            ]) | `322`
       ): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
       inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
@@ -27191,7 +27189,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[TabSize[Double | String]]])
-            ]) | `169`
+            ]) | `168`
       ): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
       
       inline def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
@@ -27208,7 +27206,7 @@ object esHooksUseStyleRegisterMod {
       inline def setTableLayout(
         value: TableLayout | (js.Array[
               (Extract[js.UndefOr[TableLayout | js.Array[NonNullable[js.UndefOr[TableLayout]]]], String]) | NonNullable[js.UndefOr[TableLayout]]
-            ]) | `120`
+            ]) | `119`
       ): Self = StObject.set(x, "tableLayout", value.asInstanceOf[js.Any])
       
       inline def setTableLayoutUndefined: Self = StObject.set(x, "tableLayout", js.undefined)
@@ -27220,7 +27218,7 @@ object esHooksUseStyleRegisterMod {
       inline def setTextAlign(
         value: TextAlign | (js.Array[
               (Extract[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]], String]) | NonNullable[js.UndefOr[TextAlign]]
-            ]) | `43`
+            ]) | `42`
       ): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
       inline def setTextAlignLast(
@@ -27229,7 +27227,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextAlignLast | js.Array[NonNullable[js.UndefOr[TextAlignLast]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextAlignLast]]
-            ]) | `267`
+            ]) | `266`
       ): Self = StObject.set(x, "textAlignLast", value.asInstanceOf[js.Any])
       
       inline def setTextAlignLastUndefined: Self = StObject.set(x, "textAlignLast", js.undefined)
@@ -27250,7 +27248,7 @@ object esHooksUseStyleRegisterMod {
       inline def setTextAnchor(
         value: TextAnchor | (js.Array[
               (Extract[js.UndefOr[TextAnchor | js.Array[NonNullable[js.UndefOr[TextAnchor]]]], String]) | NonNullable[js.UndefOr[TextAnchor]]
-            ]) | `304`
+            ]) | `303`
       ): Self = StObject.set(x, "textAnchor", value.asInstanceOf[js.Any])
       
       inline def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
@@ -27265,7 +27263,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextCombineUpright | js.Array[NonNullable[js.UndefOr[TextCombineUpright]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextCombineUpright]]
-            ]) | `20`
+            ]) | `19`
       ): Self = StObject.set(x, "textCombineUpright", value.asInstanceOf[js.Any])
       
       inline def setTextCombineUprightUndefined: Self = StObject.set(x, "textCombineUpright", js.undefined)
@@ -27285,7 +27283,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[TextDecoration[Double | String]]])
-            ]) | `500`
+            ]) | `499`
       ): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
       
       inline def setTextDecorationColor(
@@ -27294,7 +27292,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextDecorationColor | js.Array[NonNullable[js.UndefOr[TextDecorationColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextDecorationColor]]
-            ]) | `53`
+            ]) | `52`
       ): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
       
       inline def setTextDecorationColorUndefined: Self = StObject.set(x, "textDecorationColor", js.undefined)
@@ -27312,7 +27310,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextDecorationLine | js.Array[NonNullable[js.UndefOr[TextDecorationLine]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextDecorationLine]]
-            ]) | `21`
+            ]) | `20`
       ): Self = StObject.set(x, "textDecorationLine", value.asInstanceOf[js.Any])
       
       inline def setTextDecorationLineUndefined: Self = StObject.set(x, "textDecorationLine", js.undefined)
@@ -27330,7 +27328,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextDecorationSkip | js.Array[NonNullable[js.UndefOr[TextDecorationSkip]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextDecorationSkip]]
-            ]) | `164`
+            ]) | `163`
       ): Self = StObject.set(x, "textDecorationSkip", value.asInstanceOf[js.Any])
       
       inline def setTextDecorationSkipInk(
@@ -27339,7 +27337,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextDecorationSkipInk | js.Array[NonNullable[js.UndefOr[TextDecorationSkipInk]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextDecorationSkipInk]]
-            ]) | `122`
+            ]) | `121`
       ): Self = StObject.set(x, "textDecorationSkipInk", value.asInstanceOf[js.Any])
       
       inline def setTextDecorationSkipInkUndefined: Self = StObject.set(x, "textDecorationSkipInk", js.undefined)
@@ -27366,7 +27364,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextDecorationStyle | js.Array[NonNullable[js.UndefOr[TextDecorationStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextDecorationStyle]]
-            ]) | `254`
+            ]) | `253`
       ): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
       
       inline def setTextDecorationStyleUndefined: Self = StObject.set(x, "textDecorationStyle", js.undefined)
@@ -27386,7 +27384,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[TextDecorationThickness[Double | String]]])
-            ]) | `207`
+            ]) | `206`
       ): Self = StObject.set(x, "textDecorationThickness", value.asInstanceOf[js.Any])
       
       inline def setTextDecorationThicknessUndefined: Self = StObject.set(x, "textDecorationThickness", js.undefined)
@@ -27414,7 +27412,7 @@ object esHooksUseStyleRegisterMod {
       inline def setTextEmphasis(
         value: TextEmphasis | (js.Array[
               (Extract[js.UndefOr[TextEmphasis | js.Array[NonNullable[js.UndefOr[TextEmphasis]]]], String]) | NonNullable[js.UndefOr[TextEmphasis]]
-            ]) | `66`
+            ]) | `65`
       ): Self = StObject.set(x, "textEmphasis", value.asInstanceOf[js.Any])
       
       inline def setTextEmphasisColor(
@@ -27423,7 +27421,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextEmphasisColor | js.Array[NonNullable[js.UndefOr[TextEmphasisColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextEmphasisColor]]
-            ]) | `359`
+            ]) | `358`
       ): Self = StObject.set(x, "textEmphasisColor", value.asInstanceOf[js.Any])
       
       inline def setTextEmphasisColorUndefined: Self = StObject.set(x, "textEmphasisColor", js.undefined)
@@ -27441,7 +27439,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextEmphasisPosition | js.Array[NonNullable[js.UndefOr[TextEmphasisPosition]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextEmphasisPosition]]
-            ]) | `366`
+            ]) | `365`
       ): Self = StObject.set(x, "textEmphasisPosition", value.asInstanceOf[js.Any])
       
       inline def setTextEmphasisPositionUndefined: Self = StObject.set(x, "textEmphasisPosition", js.undefined)
@@ -27459,7 +27457,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextEmphasisStyle | js.Array[NonNullable[js.UndefOr[TextEmphasisStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextEmphasisStyle]]
-            ]) | `384`
+            ]) | `383`
       ): Self = StObject.set(x, "textEmphasisStyle", value.asInstanceOf[js.Any])
       
       inline def setTextEmphasisStyleUndefined: Self = StObject.set(x, "textEmphasisStyle", js.undefined)
@@ -27485,7 +27483,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[TextIndent[Double | String]]])
-            ]) | `451`
+            ]) | `450`
       ): Self = StObject.set(x, "textIndent", value.asInstanceOf[js.Any])
       
       inline def setTextIndentUndefined: Self = StObject.set(x, "textIndent", js.undefined)
@@ -27502,7 +27500,7 @@ object esHooksUseStyleRegisterMod {
       inline def setTextJustify(
         value: TextJustify | (js.Array[
               (Extract[js.UndefOr[TextJustify | js.Array[NonNullable[js.UndefOr[TextJustify]]]], String]) | NonNullable[js.UndefOr[TextJustify]]
-            ]) | `386`
+            ]) | `385`
       ): Self = StObject.set(x, "textJustify", value.asInstanceOf[js.Any])
       
       inline def setTextJustifyUndefined: Self = StObject.set(x, "textJustify", js.undefined)
@@ -27517,7 +27515,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextOrientation | js.Array[NonNullable[js.UndefOr[TextOrientation]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextOrientation]]
-            ]) | `308`
+            ]) | `307`
       ): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
       
       inline def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
@@ -27532,7 +27530,7 @@ object esHooksUseStyleRegisterMod {
       inline def setTextOverflow(
         value: TextOverflow | (js.Array[
               (Extract[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]], String]) | NonNullable[js.UndefOr[TextOverflow]]
-            ]) | `112`
+            ]) | `111`
       ): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
       
       inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
@@ -27547,7 +27545,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextRendering | js.Array[NonNullable[js.UndefOr[TextRendering]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextRendering]]
-            ]) | `381`
+            ]) | `380`
       ): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
       
       inline def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
@@ -27562,7 +27560,7 @@ object esHooksUseStyleRegisterMod {
       inline def setTextShadow(
         value: TextShadow | (js.Array[
               (Extract[js.UndefOr[TextShadow | js.Array[NonNullable[js.UndefOr[TextShadow]]]], String]) | NonNullable[js.UndefOr[TextShadow]]
-            ]) | `178`
+            ]) | `177`
       ): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
       
       inline def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
@@ -27577,7 +27575,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextSizeAdjust | js.Array[NonNullable[js.UndefOr[TextSizeAdjust]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextSizeAdjust]]
-            ]) | `1`
+            ]) | `0`
       ): Self = StObject.set(x, "textSizeAdjust", value.asInstanceOf[js.Any])
       
       inline def setTextSizeAdjustUndefined: Self = StObject.set(x, "textSizeAdjust", js.undefined)
@@ -27595,7 +27593,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextTransform | js.Array[NonNullable[js.UndefOr[TextTransform]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextTransform]]
-            ]) | `379`
+            ]) | `378`
       ): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
       
       inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
@@ -27615,7 +27613,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[TextUnderlineOffset[Double | String]]])
-            ]) | `460`
+            ]) | `459`
       ): Self = StObject.set(x, "textUnderlineOffset", value.asInstanceOf[js.Any])
       
       inline def setTextUnderlineOffsetUndefined: Self = StObject.set(x, "textUnderlineOffset", js.undefined)
@@ -27635,7 +27633,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextUnderlinePosition | js.Array[NonNullable[js.UndefOr[TextUnderlinePosition]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextUnderlinePosition]]
-            ]) | `293`
+            ]) | `292`
       ): Self = StObject.set(x, "textUnderlinePosition", value.asInstanceOf[js.Any])
       
       inline def setTextUnderlinePositionUndefined: Self = StObject.set(x, "textUnderlinePosition", js.undefined)
@@ -27655,7 +27653,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Top[Double | String]]])
-            ]) | `499`
+            ]) | `498`
       ): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
       inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
@@ -27672,7 +27670,7 @@ object esHooksUseStyleRegisterMod {
       inline def setTouchAction(
         value: TouchAction | (js.Array[
               (Extract[js.UndefOr[TouchAction | js.Array[NonNullable[js.UndefOr[TouchAction]]]], String]) | NonNullable[js.UndefOr[TouchAction]]
-            ]) | `177`
+            ]) | `176`
       ): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
       
       inline def setTouchActionUndefined: Self = StObject.set(x, "touchAction", js.undefined)
@@ -27684,13 +27682,13 @@ object esHooksUseStyleRegisterMod {
       inline def setTransform(
         value: Transform | (js.Array[
               (Extract[js.UndefOr[Transform | js.Array[NonNullable[js.UndefOr[Transform]]]], String]) | NonNullable[js.UndefOr[Transform]]
-            ]) | `125`
+            ]) | `124`
       ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
       inline def setTransformBox(
         value: TransformBox | (js.Array[
               (Extract[js.UndefOr[TransformBox | js.Array[NonNullable[js.UndefOr[TransformBox]]]], String]) | NonNullable[js.UndefOr[TransformBox]]
-            ]) | `265`
+            ]) | `264`
       ): Self = StObject.set(x, "transformBox", value.asInstanceOf[js.Any])
       
       inline def setTransformBoxUndefined: Self = StObject.set(x, "transformBox", js.undefined)
@@ -27707,7 +27705,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[TransformOrigin[Double | String]]])
-            ]) | `65`
+            ]) | `64`
       ): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
       
       inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
@@ -27727,7 +27725,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TransformStyle | js.Array[NonNullable[js.UndefOr[TransformStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TransformStyle]]
-            ]) | `154`
+            ]) | `153`
       ): Self = StObject.set(x, "transformStyle", value.asInstanceOf[js.Any])
       
       inline def setTransformStyleUndefined: Self = StObject.set(x, "transformStyle", js.undefined)
@@ -27751,7 +27749,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[Transition[String] | js.Array[NonNullable[js.UndefOr[Transition[String]]]]], 
                 String
               ]) | NonNullable[js.UndefOr[Transition[String]]]
-            ]) | `68`
+            ]) | `67`
       ): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
       inline def setTransitionDelay(
@@ -27762,7 +27760,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionDelay[String]]]
-            ]) | `212`
+            ]) | `211`
       ): Self = StObject.set(x, "transitionDelay", value.asInstanceOf[js.Any])
       
       inline def setTransitionDelayUndefined: Self = StObject.set(x, "transitionDelay", js.undefined)
@@ -27784,7 +27782,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionDuration[String]]]
-            ]) | `78`
+            ]) | `77`
       ): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
       inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
@@ -27804,7 +27802,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionProperty]]
-            ]) | `228`
+            ]) | `227`
       ): Self = StObject.set(x, "transitionProperty", value.asInstanceOf[js.Any])
       
       inline def setTransitionPropertyUndefined: Self = StObject.set(x, "transitionProperty", js.undefined)
@@ -27824,7 +27822,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionTimingFunction]]
-            ]) | `272`
+            ]) | `271`
       ): Self = StObject.set(x, "transitionTimingFunction", value.asInstanceOf[js.Any])
       
       inline def setTransitionTimingFunctionUndefined: Self = StObject.set(x, "transitionTimingFunction", js.undefined)
@@ -27855,7 +27853,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Translate[Double | String]]])
-            ]) | `0`
+            ]) | MULTIVALUESKIPCHECKValue
       ): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
@@ -27872,7 +27870,7 @@ object esHooksUseStyleRegisterMod {
       inline def setUnicodeBidi(
         value: UnicodeBidi | (js.Array[
               (Extract[js.UndefOr[UnicodeBidi | js.Array[NonNullable[js.UndefOr[UnicodeBidi]]]], String]) | NonNullable[js.UndefOr[UnicodeBidi]]
-            ]) | `362`
+            ]) | `361`
       ): Self = StObject.set(x, "unicodeBidi", value.asInstanceOf[js.Any])
       
       inline def setUnicodeBidiUndefined: Self = StObject.set(x, "unicodeBidi", js.undefined)
@@ -27884,7 +27882,7 @@ object esHooksUseStyleRegisterMod {
       inline def setUserSelect(
         value: UserSelect | (js.Array[
               (Extract[js.UndefOr[UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]], String]) | NonNullable[js.UndefOr[UserSelect]]
-            ]) | `47`
+            ]) | `46`
       ): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
       
       inline def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
@@ -27896,7 +27894,7 @@ object esHooksUseStyleRegisterMod {
       inline def setVectorEffect(
         value: VectorEffect | (js.Array[
               (Extract[js.UndefOr[VectorEffect | js.Array[NonNullable[js.UndefOr[VectorEffect]]]], String]) | NonNullable[js.UndefOr[VectorEffect]]
-            ]) | `51`
+            ]) | `50`
       ): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
       
       inline def setVectorEffectUndefined: Self = StObject.set(x, "vectorEffect", js.undefined)
@@ -27913,7 +27911,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[VerticalAlign[Double | String]]])
-            ]) | `56`
+            ]) | `55`
       ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
@@ -27933,7 +27931,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ViewTransitionName | js.Array[NonNullable[js.UndefOr[ViewTransitionName]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ViewTransitionName]]
-            ]) | `463`
+            ]) | `462`
       ): Self = StObject.set(x, "viewTransitionName", value.asInstanceOf[js.Any])
       
       inline def setViewTransitionNameUndefined: Self = StObject.set(x, "viewTransitionName", js.undefined)
@@ -27948,7 +27946,7 @@ object esHooksUseStyleRegisterMod {
       inline def setVisibility(
         value: Visibility | (js.Array[
               (Extract[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]], String]) | NonNullable[js.UndefOr[Visibility]]
-            ]) | `71`
+            ]) | `70`
       ): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
       
       inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
@@ -27960,7 +27958,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitAlignContent(
         value: AlignContent | (js.Array[
               (Extract[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]], String]) | NonNullable[js.UndefOr[AlignContent]]
-            ]) | `244`
+            ]) | `243`
       ): Self = StObject.set(x, "WebkitAlignContent", value.asInstanceOf[js.Any])
       
       inline def setWebkitAlignContentUndefined: Self = StObject.set(x, "WebkitAlignContent", js.undefined)
@@ -27972,7 +27970,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitAlignItems(
         value: AlignItems | (js.Array[
               (Extract[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]], String]) | NonNullable[js.UndefOr[AlignItems]]
-            ]) | `424`
+            ]) | `423`
       ): Self = StObject.set(x, "WebkitAlignItems", value.asInstanceOf[js.Any])
       
       inline def setWebkitAlignItemsUndefined: Self = StObject.set(x, "WebkitAlignItems", js.undefined)
@@ -27984,7 +27982,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitAlignSelf(
         value: AlignSelf | (js.Array[
               (Extract[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]], String]) | NonNullable[js.UndefOr[AlignSelf]]
-            ]) | `461`
+            ]) | `460`
       ): Self = StObject.set(x, "WebkitAlignSelf", value.asInstanceOf[js.Any])
       
       inline def setWebkitAlignSelfUndefined: Self = StObject.set(x, "WebkitAlignSelf", js.undefined)
@@ -27999,7 +27997,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[Animation[String] | js.Array[NonNullable[js.UndefOr[Animation[String]]]]], 
                 String
               ]) | NonNullable[js.UndefOr[Animation[String]]]
-            ]) | `28`
+            ]) | `27`
       ): Self = StObject.set(x, "WebkitAnimation", value.asInstanceOf[js.Any])
       
       inline def setWebkitAnimationDelay(
@@ -28010,7 +28008,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationDelay[String]]]
-            ]) | `241`
+            ]) | `240`
       ): Self = StObject.set(x, "WebkitAnimationDelay", value.asInstanceOf[js.Any])
       
       inline def setWebkitAnimationDelayUndefined: Self = StObject.set(x, "WebkitAnimationDelay", js.undefined)
@@ -28030,7 +28028,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationDirection]]
-            ]) | `111`
+            ]) | `110`
       ): Self = StObject.set(x, "WebkitAnimationDirection", value.asInstanceOf[js.Any])
       
       inline def setWebkitAnimationDirectionUndefined: Self = StObject.set(x, "WebkitAnimationDirection", js.undefined)
@@ -28050,7 +28048,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationDuration[String]]]
-            ]) | `99`
+            ]) | `98`
       ): Self = StObject.set(x, "WebkitAnimationDuration", value.asInstanceOf[js.Any])
       
       inline def setWebkitAnimationDurationUndefined: Self = StObject.set(x, "WebkitAnimationDuration", js.undefined)
@@ -28070,7 +28068,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationFillMode]]
-            ]) | `114`
+            ]) | `113`
       ): Self = StObject.set(x, "WebkitAnimationFillMode", value.asInstanceOf[js.Any])
       
       inline def setWebkitAnimationFillModeUndefined: Self = StObject.set(x, "WebkitAnimationFillMode", js.undefined)
@@ -28090,7 +28088,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationIterationCount]]
-            ]) | `87`
+            ]) | `86`
       ): Self = StObject.set(x, "WebkitAnimationIterationCount", value.asInstanceOf[js.Any])
       
       inline def setWebkitAnimationIterationCountUndefined: Self = StObject.set(x, "WebkitAnimationIterationCount", js.undefined)
@@ -28110,7 +28108,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationName]]
-            ]) | `168`
+            ]) | `167`
       ): Self = StObject.set(x, "WebkitAnimationName", value.asInstanceOf[js.Any])
       
       inline def setWebkitAnimationNameUndefined: Self = StObject.set(x, "WebkitAnimationName", js.undefined)
@@ -28128,7 +28126,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationPlayState]]
-            ]) | `159`
+            ]) | `158`
       ): Self = StObject.set(x, "WebkitAnimationPlayState", value.asInstanceOf[js.Any])
       
       inline def setWebkitAnimationPlayStateUndefined: Self = StObject.set(x, "WebkitAnimationPlayState", js.undefined)
@@ -28148,7 +28146,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[AnimationTimingFunction]]
-            ]) | `161`
+            ]) | `160`
       ): Self = StObject.set(x, "WebkitAnimationTimingFunction", value.asInstanceOf[js.Any])
       
       inline def setWebkitAnimationTimingFunctionUndefined: Self = StObject.set(x, "WebkitAnimationTimingFunction", js.undefined)
@@ -28177,7 +28175,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitAppearance | js.Array[NonNullable[js.UndefOr[WebkitAppearance]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitAppearance]]
-            ]) | `335`
+            ]) | `334`
       ): Self = StObject.set(x, "WebkitAppearance", value.asInstanceOf[js.Any])
       
       inline def setWebkitAppearanceUndefined: Self = StObject.set(x, "WebkitAppearance", js.undefined)
@@ -28195,7 +28193,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackdropFilter | js.Array[NonNullable[js.UndefOr[BackdropFilter]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackdropFilter]]
-            ]) | `42`
+            ]) | `41`
       ): Self = StObject.set(x, "WebkitBackdropFilter", value.asInstanceOf[js.Any])
       
       inline def setWebkitBackdropFilterUndefined: Self = StObject.set(x, "WebkitBackdropFilter", js.undefined)
@@ -28213,7 +28211,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackfaceVisibility | js.Array[NonNullable[js.UndefOr[BackfaceVisibility]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackfaceVisibility]]
-            ]) | `130`
+            ]) | `129`
       ): Self = StObject.set(x, "WebkitBackfaceVisibility", value.asInstanceOf[js.Any])
       
       inline def setWebkitBackfaceVisibilityUndefined: Self = StObject.set(x, "WebkitBackfaceVisibility", js.undefined)
@@ -28231,7 +28229,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackgroundClip | js.Array[NonNullable[js.UndefOr[BackgroundClip]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackgroundClip]]
-            ]) | `142`
+            ]) | `141`
       ): Self = StObject.set(x, "WebkitBackgroundClip", value.asInstanceOf[js.Any])
       
       inline def setWebkitBackgroundClipUndefined: Self = StObject.set(x, "WebkitBackgroundClip", js.undefined)
@@ -28249,7 +28247,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BackgroundOrigin | js.Array[NonNullable[js.UndefOr[BackgroundOrigin]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BackgroundOrigin]]
-            ]) | `84`
+            ]) | `83`
       ): Self = StObject.set(x, "WebkitBackgroundOrigin", value.asInstanceOf[js.Any])
       
       inline def setWebkitBackgroundOriginUndefined: Self = StObject.set(x, "WebkitBackgroundOrigin", js.undefined)
@@ -28269,7 +28267,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BackgroundSize[Double | String]]])
-            ]) | `55`
+            ]) | `54`
       ): Self = StObject.set(x, "WebkitBackgroundSize", value.asInstanceOf[js.Any])
       
       inline def setWebkitBackgroundSizeUndefined: Self = StObject.set(x, "WebkitBackgroundSize", js.undefined)
@@ -28291,7 +28289,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[WebkitBorderBefore[Double | String]]])
-            ]) | `39`
+            ]) | `38`
       ): Self = StObject.set(x, "WebkitBorderBefore", value.asInstanceOf[js.Any])
       
       inline def setWebkitBorderBeforeColor(
@@ -28302,7 +28300,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitBorderBeforeColor]]
-            ]) | `113`
+            ]) | `112`
       ): Self = StObject.set(x, "WebkitBorderBeforeColor", value.asInstanceOf[js.Any])
       
       inline def setWebkitBorderBeforeColorUndefined: Self = StObject.set(x, "WebkitBorderBeforeColor", js.undefined)
@@ -28324,7 +28322,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitBorderBeforeStyle]]
-            ]) | `253`
+            ]) | `252`
       ): Self = StObject.set(x, "WebkitBorderBeforeStyle", value.asInstanceOf[js.Any])
       
       inline def setWebkitBorderBeforeStyleUndefined: Self = StObject.set(x, "WebkitBorderBeforeStyle", js.undefined)
@@ -28357,7 +28355,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[WebkitBorderBeforeWidth[Double | String]]])
-            ]) | `435`
+            ]) | `434`
       ): Self = StObject.set(x, "WebkitBorderBeforeWidth", value.asInstanceOf[js.Any])
       
       inline def setWebkitBorderBeforeWidthUndefined: Self = StObject.set(x, "WebkitBorderBeforeWidth", js.undefined)
@@ -28379,7 +28377,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBottomLeftRadius[Double | String]]])
-            ]) | `103`
+            ]) | `102`
       ): Self = StObject.set(x, "WebkitBorderBottomLeftRadius", value.asInstanceOf[js.Any])
       
       inline def setWebkitBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "WebkitBorderBottomLeftRadius", js.undefined)
@@ -28401,7 +28399,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderBottomRightRadius[Double | String]]])
-            ]) | `136`
+            ]) | `135`
       ): Self = StObject.set(x, "WebkitBorderBottomRightRadius", value.asInstanceOf[js.Any])
       
       inline def setWebkitBorderBottomRightRadiusUndefined: Self = StObject.set(x, "WebkitBorderBottomRightRadius", js.undefined)
@@ -28418,7 +28416,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitBorderImage(
         value: BorderImage | (js.Array[
               (Extract[js.UndefOr[BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]], String]) | NonNullable[js.UndefOr[BorderImage]]
-            ]) | `242`
+            ]) | `241`
       ): Self = StObject.set(x, "WebkitBorderImage", value.asInstanceOf[js.Any])
       
       inline def setWebkitBorderImageSlice(
@@ -28427,7 +28425,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BorderImageSlice | js.Array[NonNullable[js.UndefOr[BorderImageSlice]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BorderImageSlice]]
-            ]) | `135`
+            ]) | `134`
       ): Self = StObject.set(x, "WebkitBorderImageSlice", value.asInstanceOf[js.Any])
       
       inline def setWebkitBorderImageSliceUndefined: Self = StObject.set(x, "WebkitBorderImageSlice", js.undefined)
@@ -28453,7 +28451,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderRadius[Double | String]]])
-            ]) | `400`
+            ]) | `399`
       ): Self = StObject.set(x, "WebkitBorderRadius", value.asInstanceOf[js.Any])
       
       inline def setWebkitBorderRadiusUndefined: Self = StObject.set(x, "WebkitBorderRadius", js.undefined)
@@ -28475,7 +28473,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderTopLeftRadius[Double | String]]])
-            ]) | `221`
+            ]) | `220`
       ): Self = StObject.set(x, "WebkitBorderTopLeftRadius", value.asInstanceOf[js.Any])
       
       inline def setWebkitBorderTopLeftRadiusUndefined: Self = StObject.set(x, "WebkitBorderTopLeftRadius", js.undefined)
@@ -28497,7 +28495,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[BorderTopRightRadius[Double | String]]])
-            ]) | `77`
+            ]) | `76`
       ): Self = StObject.set(x, "WebkitBorderTopRightRadius", value.asInstanceOf[js.Any])
       
       inline def setWebkitBorderTopRightRadiusUndefined: Self = StObject.set(x, "WebkitBorderTopRightRadius", js.undefined)
@@ -28514,7 +28512,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitBoxAlign(
         value: BoxAlign | (js.Array[
               (Extract[js.UndefOr[BoxAlign | js.Array[NonNullable[js.UndefOr[BoxAlign]]]], String]) | NonNullable[js.UndefOr[BoxAlign]]
-            ]) | `83`
+            ]) | `82`
       ): Self = StObject.set(x, "WebkitBoxAlign", value.asInstanceOf[js.Any])
       
       inline def setWebkitBoxAlignUndefined: Self = StObject.set(x, "WebkitBoxAlign", js.undefined)
@@ -28529,7 +28527,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BoxDecorationBreak | js.Array[NonNullable[js.UndefOr[BoxDecorationBreak]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BoxDecorationBreak]]
-            ]) | `158`
+            ]) | `157`
       ): Self = StObject.set(x, "WebkitBoxDecorationBreak", value.asInstanceOf[js.Any])
       
       inline def setWebkitBoxDecorationBreakUndefined: Self = StObject.set(x, "WebkitBoxDecorationBreak", js.undefined)
@@ -28544,7 +28542,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitBoxDirection(
         value: BoxDirection | (js.Array[
               (Extract[js.UndefOr[BoxDirection | js.Array[NonNullable[js.UndefOr[BoxDirection]]]], String]) | NonNullable[js.UndefOr[BoxDirection]]
-            ]) | `59`
+            ]) | `58`
       ): Self = StObject.set(x, "WebkitBoxDirection", value.asInstanceOf[js.Any])
       
       inline def setWebkitBoxDirectionUndefined: Self = StObject.set(x, "WebkitBoxDirection", js.undefined)
@@ -28556,13 +28554,13 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitBoxFlex(
         value: BoxFlex | (js.Array[
               (Extract[js.UndefOr[BoxFlex | js.Array[NonNullable[js.UndefOr[BoxFlex]]]], String]) | NonNullable[js.UndefOr[BoxFlex]]
-            ]) | `140`
+            ]) | `139`
       ): Self = StObject.set(x, "WebkitBoxFlex", value.asInstanceOf[js.Any])
       
       inline def setWebkitBoxFlexGroup(
         value: BoxFlexGroup | (js.Array[
               (Extract[js.UndefOr[BoxFlexGroup | js.Array[NonNullable[js.UndefOr[BoxFlexGroup]]]], String]) | NonNullable[js.UndefOr[BoxFlexGroup]]
-            ]) | `152`
+            ]) | `151`
       ): Self = StObject.set(x, "WebkitBoxFlexGroup", value.asInstanceOf[js.Any])
       
       inline def setWebkitBoxFlexGroupUndefined: Self = StObject.set(x, "WebkitBoxFlexGroup", js.undefined)
@@ -28580,7 +28578,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitBoxLines(
         value: BoxLines | (js.Array[
               (Extract[js.UndefOr[BoxLines | js.Array[NonNullable[js.UndefOr[BoxLines]]]], String]) | NonNullable[js.UndefOr[BoxLines]]
-            ]) | `199`
+            ]) | `198`
       ): Self = StObject.set(x, "WebkitBoxLines", value.asInstanceOf[js.Any])
       
       inline def setWebkitBoxLinesUndefined: Self = StObject.set(x, "WebkitBoxLines", js.undefined)
@@ -28595,7 +28593,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[BoxOrdinalGroup | js.Array[NonNullable[js.UndefOr[BoxOrdinalGroup]]]], 
                 String
               ]) | NonNullable[js.UndefOr[BoxOrdinalGroup]]
-            ]) | `190`
+            ]) | `189`
       ): Self = StObject.set(x, "WebkitBoxOrdinalGroup", value.asInstanceOf[js.Any])
       
       inline def setWebkitBoxOrdinalGroupUndefined: Self = StObject.set(x, "WebkitBoxOrdinalGroup", js.undefined)
@@ -28610,7 +28608,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitBoxOrient(
         value: BoxOrient | (js.Array[
               (Extract[js.UndefOr[BoxOrient | js.Array[NonNullable[js.UndefOr[BoxOrient]]]], String]) | NonNullable[js.UndefOr[BoxOrient]]
-            ]) | `22`
+            ]) | `21`
       ): Self = StObject.set(x, "WebkitBoxOrient", value.asInstanceOf[js.Any])
       
       inline def setWebkitBoxOrientUndefined: Self = StObject.set(x, "WebkitBoxOrient", js.undefined)
@@ -28622,7 +28620,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitBoxPack(
         value: BoxPack | (js.Array[
               (Extract[js.UndefOr[BoxPack | js.Array[NonNullable[js.UndefOr[BoxPack]]]], String]) | NonNullable[js.UndefOr[BoxPack]]
-            ]) | `119`
+            ]) | `118`
       ): Self = StObject.set(x, "WebkitBoxPack", value.asInstanceOf[js.Any])
       
       inline def setWebkitBoxPackUndefined: Self = StObject.set(x, "WebkitBoxPack", js.undefined)
@@ -28639,7 +28637,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[WebkitBoxReflect[Double | String]]])
-            ]) | `318`
+            ]) | `317`
       ): Self = StObject.set(x, "WebkitBoxReflect", value.asInstanceOf[js.Any])
       
       inline def setWebkitBoxReflectUndefined: Self = StObject.set(x, "WebkitBoxReflect", js.undefined)
@@ -28656,7 +28654,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitBoxShadow(
         value: BoxShadow | (js.Array[
               (Extract[js.UndefOr[BoxShadow | js.Array[NonNullable[js.UndefOr[BoxShadow]]]], String]) | NonNullable[js.UndefOr[BoxShadow]]
-            ]) | `108`
+            ]) | `107`
       ): Self = StObject.set(x, "WebkitBoxShadow", value.asInstanceOf[js.Any])
       
       inline def setWebkitBoxShadowUndefined: Self = StObject.set(x, "WebkitBoxShadow", js.undefined)
@@ -28668,7 +28666,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitBoxSizing(
         value: BoxSizing | (js.Array[
               (Extract[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]], String]) | NonNullable[js.UndefOr[BoxSizing]]
-            ]) | `14`
+            ]) | `13`
       ): Self = StObject.set(x, "WebkitBoxSizing", value.asInstanceOf[js.Any])
       
       inline def setWebkitBoxSizingUndefined: Self = StObject.set(x, "WebkitBoxSizing", js.undefined)
@@ -28680,7 +28678,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitClipPath(
         value: ClipPath | (js.Array[
               (Extract[js.UndefOr[ClipPath | js.Array[NonNullable[js.UndefOr[ClipPath]]]], String]) | NonNullable[js.UndefOr[ClipPath]]
-            ]) | `129`
+            ]) | `128`
       ): Self = StObject.set(x, "WebkitClipPath", value.asInstanceOf[js.Any])
       
       inline def setWebkitClipPathUndefined: Self = StObject.set(x, "WebkitClipPath", js.undefined)
@@ -28692,7 +28690,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitColumnCount(
         value: ColumnCount | (js.Array[
               (Extract[js.UndefOr[ColumnCount | js.Array[NonNullable[js.UndefOr[ColumnCount]]]], String]) | NonNullable[js.UndefOr[ColumnCount]]
-            ]) | `357`
+            ]) | `356`
       ): Self = StObject.set(x, "WebkitColumnCount", value.asInstanceOf[js.Any])
       
       inline def setWebkitColumnCountUndefined: Self = StObject.set(x, "WebkitColumnCount", js.undefined)
@@ -28704,7 +28702,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitColumnFill(
         value: ColumnFill | (js.Array[
               (Extract[js.UndefOr[ColumnFill | js.Array[NonNullable[js.UndefOr[ColumnFill]]]], String]) | NonNullable[js.UndefOr[ColumnFill]]
-            ]) | `274`
+            ]) | `273`
       ): Self = StObject.set(x, "WebkitColumnFill", value.asInstanceOf[js.Any])
       
       inline def setWebkitColumnFillUndefined: Self = StObject.set(x, "WebkitColumnFill", js.undefined)
@@ -28721,7 +28719,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ColumnRule[Double | String]]])
-            ]) | `260`
+            ]) | `259`
       ): Self = StObject.set(x, "WebkitColumnRule", value.asInstanceOf[js.Any])
       
       inline def setWebkitColumnRuleColor(
@@ -28730,7 +28728,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ColumnRuleColor | js.Array[NonNullable[js.UndefOr[ColumnRuleColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ColumnRuleColor]]
-            ]) | `153`
+            ]) | `152`
       ): Self = StObject.set(x, "WebkitColumnRuleColor", value.asInstanceOf[js.Any])
       
       inline def setWebkitColumnRuleColorUndefined: Self = StObject.set(x, "WebkitColumnRuleColor", js.undefined)
@@ -28748,7 +28746,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ColumnRuleStyle | js.Array[NonNullable[js.UndefOr[ColumnRuleStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ColumnRuleStyle]]
-            ]) | `6`
+            ]) | `5`
       ): Self = StObject.set(x, "WebkitColumnRuleStyle", value.asInstanceOf[js.Any])
       
       inline def setWebkitColumnRuleStyleUndefined: Self = StObject.set(x, "WebkitColumnRuleStyle", js.undefined)
@@ -28779,7 +28777,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ColumnRuleWidth[Double | String]]])
-            ]) | `95`
+            ]) | `94`
       ): Self = StObject.set(x, "WebkitColumnRuleWidth", value.asInstanceOf[js.Any])
       
       inline def setWebkitColumnRuleWidthUndefined: Self = StObject.set(x, "WebkitColumnRuleWidth", js.undefined)
@@ -28796,7 +28794,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitColumnSpan(
         value: ColumnSpan | (js.Array[
               (Extract[js.UndefOr[ColumnSpan | js.Array[NonNullable[js.UndefOr[ColumnSpan]]]], String]) | NonNullable[js.UndefOr[ColumnSpan]]
-            ]) | `133`
+            ]) | `132`
       ): Self = StObject.set(x, "WebkitColumnSpan", value.asInstanceOf[js.Any])
       
       inline def setWebkitColumnSpanUndefined: Self = StObject.set(x, "WebkitColumnSpan", js.undefined)
@@ -28813,7 +28811,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ColumnWidth[Double | String]]])
-            ]) | `220`
+            ]) | `219`
       ): Self = StObject.set(x, "WebkitColumnWidth", value.asInstanceOf[js.Any])
       
       inline def setWebkitColumnWidthUndefined: Self = StObject.set(x, "WebkitColumnWidth", js.undefined)
@@ -28835,7 +28833,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Columns[Double | String]]])
-            ]) | `98`
+            ]) | `97`
       ): Self = StObject.set(x, "WebkitColumns", value.asInstanceOf[js.Any])
       
       inline def setWebkitColumnsUndefined: Self = StObject.set(x, "WebkitColumns", js.undefined)
@@ -28852,7 +28850,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitFilter(
         value: Filter | (js.Array[
               (Extract[js.UndefOr[Filter | js.Array[NonNullable[js.UndefOr[Filter]]]], String]) | NonNullable[js.UndefOr[Filter]]
-            ]) | `397`
+            ]) | `396`
       ): Self = StObject.set(x, "WebkitFilter", value.asInstanceOf[js.Any])
       
       inline def setWebkitFilterUndefined: Self = StObject.set(x, "WebkitFilter", js.undefined)
@@ -28869,7 +28867,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Flex[Double | String]]])
-            ]) | `310`
+            ]) | `309`
       ): Self = StObject.set(x, "WebkitFlex", value.asInstanceOf[js.Any])
       
       inline def setWebkitFlexBasis(
@@ -28880,7 +28878,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[FlexBasis[Double | String]]])
-            ]) | `19`
+            ]) | `18`
       ): Self = StObject.set(x, "WebkitFlexBasis", value.asInstanceOf[js.Any])
       
       inline def setWebkitFlexBasisUndefined: Self = StObject.set(x, "WebkitFlexBasis", js.undefined)
@@ -28900,7 +28898,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FlexDirection]]
-            ]) | `121`
+            ]) | `120`
       ): Self = StObject.set(x, "WebkitFlexDirection", value.asInstanceOf[js.Any])
       
       inline def setWebkitFlexDirectionUndefined: Self = StObject.set(x, "WebkitFlexDirection", js.undefined)
@@ -28915,7 +28913,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitFlexFlow(
         value: FlexFlow | (js.Array[
               (Extract[js.UndefOr[FlexFlow | js.Array[NonNullable[js.UndefOr[FlexFlow]]]], String]) | NonNullable[js.UndefOr[FlexFlow]]
-            ]) | `167`
+            ]) | `166`
       ): Self = StObject.set(x, "WebkitFlexFlow", value.asInstanceOf[js.Any])
       
       inline def setWebkitFlexFlowUndefined: Self = StObject.set(x, "WebkitFlexFlow", js.undefined)
@@ -28927,7 +28925,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitFlexGrow(
         value: FlexGrow | (js.Array[
               (Extract[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]], String]) | NonNullable[js.UndefOr[FlexGrow]]
-            ]) | `97`
+            ]) | `96`
       ): Self = StObject.set(x, "WebkitFlexGrow", value.asInstanceOf[js.Any])
       
       inline def setWebkitFlexGrowUndefined: Self = StObject.set(x, "WebkitFlexGrow", js.undefined)
@@ -28939,7 +28937,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitFlexShrink(
         value: FlexShrink | (js.Array[
               (Extract[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]], String]) | NonNullable[js.UndefOr[FlexShrink]]
-            ]) | `198`
+            ]) | `197`
       ): Self = StObject.set(x, "WebkitFlexShrink", value.asInstanceOf[js.Any])
       
       inline def setWebkitFlexShrinkUndefined: Self = StObject.set(x, "WebkitFlexShrink", js.undefined)
@@ -28962,7 +28960,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitFlexWrap(
         value: FlexWrap | (js.Array[
               (Extract[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]], String]) | NonNullable[js.UndefOr[FlexWrap]]
-            ]) | `15`
+            ]) | `14`
       ): Self = StObject.set(x, "WebkitFlexWrap", value.asInstanceOf[js.Any])
       
       inline def setWebkitFlexWrapUndefined: Self = StObject.set(x, "WebkitFlexWrap", js.undefined)
@@ -28977,7 +28975,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontFeatureSettings | js.Array[NonNullable[js.UndefOr[FontFeatureSettings]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontFeatureSettings]]
-            ]) | `101`
+            ]) | `100`
       ): Self = StObject.set(x, "WebkitFontFeatureSettings", value.asInstanceOf[js.Any])
       
       inline def setWebkitFontFeatureSettingsUndefined: Self = StObject.set(x, "WebkitFontFeatureSettings", js.undefined)
@@ -28992,7 +28990,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitFontKerning(
         value: FontKerning | (js.Array[
               (Extract[js.UndefOr[FontKerning | js.Array[NonNullable[js.UndefOr[FontKerning]]]], String]) | NonNullable[js.UndefOr[FontKerning]]
-            ]) | `179`
+            ]) | `178`
       ): Self = StObject.set(x, "WebkitFontKerning", value.asInstanceOf[js.Any])
       
       inline def setWebkitFontKerningUndefined: Self = StObject.set(x, "WebkitFontKerning", js.undefined)
@@ -29009,7 +29007,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[FontSmooth[Double | String]]])
-            ]) | `229`
+            ]) | `228`
       ): Self = StObject.set(x, "WebkitFontSmoothing", value.asInstanceOf[js.Any])
       
       inline def setWebkitFontSmoothingUndefined: Self = StObject.set(x, "WebkitFontSmoothing", js.undefined)
@@ -29029,7 +29027,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[FontVariantLigatures | js.Array[NonNullable[js.UndefOr[FontVariantLigatures]]]], 
                 String
               ]) | NonNullable[js.UndefOr[FontVariantLigatures]]
-            ]) | `79`
+            ]) | `78`
       ): Self = StObject.set(x, "WebkitFontVariantLigatures", value.asInstanceOf[js.Any])
       
       inline def setWebkitFontVariantLigaturesUndefined: Self = StObject.set(x, "WebkitFontVariantLigatures", js.undefined)
@@ -29047,7 +29045,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[HyphenateCharacter | js.Array[NonNullable[js.UndefOr[HyphenateCharacter]]]], 
                 String
               ]) | NonNullable[js.UndefOr[HyphenateCharacter]]
-            ]) | `396`
+            ]) | `395`
       ): Self = StObject.set(x, "WebkitHyphenateCharacter", value.asInstanceOf[js.Any])
       
       inline def setWebkitHyphenateCharacterUndefined: Self = StObject.set(x, "WebkitHyphenateCharacter", js.undefined)
@@ -29062,7 +29060,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitHyphens(
         value: Hyphens | (js.Array[
               (Extract[js.UndefOr[Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]], String]) | NonNullable[js.UndefOr[Hyphens]]
-            ]) | `289`
+            ]) | `288`
       ): Self = StObject.set(x, "WebkitHyphens", value.asInstanceOf[js.Any])
       
       inline def setWebkitHyphensUndefined: Self = StObject.set(x, "WebkitHyphens", js.undefined)
@@ -29077,7 +29075,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[InitialLetter | js.Array[NonNullable[js.UndefOr[InitialLetter]]]], 
                 String
               ]) | NonNullable[js.UndefOr[InitialLetter]]
-            ]) | `176`
+            ]) | `175`
       ): Self = StObject.set(x, "WebkitInitialLetter", value.asInstanceOf[js.Any])
       
       inline def setWebkitInitialLetterUndefined: Self = StObject.set(x, "WebkitInitialLetter", js.undefined)
@@ -29095,7 +29093,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]], 
                 String
               ]) | NonNullable[js.UndefOr[JustifyContent]]
-            ]) | `203`
+            ]) | `202`
       ): Self = StObject.set(x, "WebkitJustifyContent", value.asInstanceOf[js.Any])
       
       inline def setWebkitJustifyContentUndefined: Self = StObject.set(x, "WebkitJustifyContent", js.undefined)
@@ -29110,7 +29108,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitLineBreak(
         value: LineBreak | (js.Array[
               (Extract[js.UndefOr[LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]], String]) | NonNullable[js.UndefOr[LineBreak]]
-            ]) | `134`
+            ]) | `133`
       ): Self = StObject.set(x, "WebkitLineBreak", value.asInstanceOf[js.Any])
       
       inline def setWebkitLineBreakUndefined: Self = StObject.set(x, "WebkitLineBreak", js.undefined)
@@ -29125,7 +29123,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitLineClamp | js.Array[NonNullable[js.UndefOr[WebkitLineClamp]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitLineClamp]]
-            ]) | `516`
+            ]) | `515`
       ): Self = StObject.set(x, "WebkitLineClamp", value.asInstanceOf[js.Any])
       
       inline def setWebkitLineClampUndefined: Self = StObject.set(x, "WebkitLineClamp", js.undefined)
@@ -29145,7 +29143,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginInlineEnd[Double | String]]])
-            ]) | `5`
+            ]) | `4`
       ): Self = StObject.set(x, "WebkitMarginEnd", value.asInstanceOf[js.Any])
       
       inline def setWebkitMarginEndUndefined: Self = StObject.set(x, "WebkitMarginEnd", js.undefined)
@@ -29167,7 +29165,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MarginInlineStart[Double | String]]])
-            ]) | `240`
+            ]) | `239`
       ): Self = StObject.set(x, "WebkitMarginStart", value.asInstanceOf[js.Any])
       
       inline def setWebkitMarginStartUndefined: Self = StObject.set(x, "WebkitMarginStart", js.undefined)
@@ -29189,7 +29187,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[WebkitMask[Double | String]]])
-            ]) | `197`
+            ]) | `196`
       ): Self = StObject.set(x, "WebkitMask", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskAttachment(
@@ -29198,7 +29196,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitMaskAttachment | js.Array[NonNullable[js.UndefOr[WebkitMaskAttachment]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitMaskAttachment]]
-            ]) | `509`
+            ]) | `508`
       ): Self = StObject.set(x, "WebkitMaskAttachment", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskAttachmentUndefined: Self = StObject.set(x, "WebkitMaskAttachment", js.undefined)
@@ -29213,7 +29211,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitMaskBoxImage(
         value: MaskBorder | (js.Array[
               (Extract[js.UndefOr[MaskBorder | js.Array[NonNullable[js.UndefOr[MaskBorder]]]], String]) | NonNullable[js.UndefOr[MaskBorder]]
-            ]) | SKIPCHECK
+            ]) | MULTIVALUE
       ): Self = StObject.set(x, "WebkitMaskBoxImage", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskBoxImageOutset(
@@ -29224,7 +29222,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MaskBorderOutset[Double | String]]])
-            ]) | `227`
+            ]) | `226`
       ): Self = StObject.set(x, "WebkitMaskBoxImageOutset", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskBoxImageOutsetUndefined: Self = StObject.set(x, "WebkitMaskBoxImageOutset", js.undefined)
@@ -29244,7 +29242,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MaskBorderRepeat | js.Array[NonNullable[js.UndefOr[MaskBorderRepeat]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MaskBorderRepeat]]
-            ]) | `215`
+            ]) | `214`
       ): Self = StObject.set(x, "WebkitMaskBoxImageRepeat", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskBoxImageRepeatUndefined: Self = StObject.set(x, "WebkitMaskBoxImageRepeat", js.undefined)
@@ -29262,7 +29260,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MaskBorderSlice | js.Array[NonNullable[js.UndefOr[MaskBorderSlice]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MaskBorderSlice]]
-            ]) | `188`
+            ]) | `187`
       ): Self = StObject.set(x, "WebkitMaskBoxImageSlice", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskBoxImageSliceUndefined: Self = StObject.set(x, "WebkitMaskBoxImageSlice", js.undefined)
@@ -29280,7 +29278,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[MaskBorderSource | js.Array[NonNullable[js.UndefOr[MaskBorderSource]]]], 
                 String
               ]) | NonNullable[js.UndefOr[MaskBorderSource]]
-            ]) | `407`
+            ]) | `406`
       ): Self = StObject.set(x, "WebkitMaskBoxImageSource", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskBoxImageSourceUndefined: Self = StObject.set(x, "WebkitMaskBoxImageSource", js.undefined)
@@ -29306,7 +29304,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MaskBorderWidth[Double | String]]])
-            ]) | `494`
+            ]) | `493`
       ): Self = StObject.set(x, "WebkitMaskBoxImageWidth", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskBoxImageWidthUndefined: Self = StObject.set(x, "WebkitMaskBoxImageWidth", js.undefined)
@@ -29326,7 +29324,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitMaskClip | js.Array[NonNullable[js.UndefOr[WebkitMaskClip]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitMaskClip]]
-            ]) | `437`
+            ]) | `436`
       ): Self = StObject.set(x, "WebkitMaskClip", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskClipUndefined: Self = StObject.set(x, "WebkitMaskClip", js.undefined)
@@ -29344,7 +29342,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitMaskComposite | js.Array[NonNullable[js.UndefOr[WebkitMaskComposite]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitMaskComposite]]
-            ]) | `466`
+            ]) | `465`
       ): Self = StObject.set(x, "WebkitMaskComposite", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskCompositeUndefined: Self = StObject.set(x, "WebkitMaskComposite", js.undefined)
@@ -29362,7 +29360,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitMaskImage | js.Array[NonNullable[js.UndefOr[WebkitMaskImage]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitMaskImage]]
-            ]) | `536`
+            ]) | `535`
       ): Self = StObject.set(x, "WebkitMaskImage", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskImageUndefined: Self = StObject.set(x, "WebkitMaskImage", js.undefined)
@@ -29380,7 +29378,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitMaskOrigin | js.Array[NonNullable[js.UndefOr[WebkitMaskOrigin]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitMaskOrigin]]
-            ]) | `76`
+            ]) | `75`
       ): Self = StObject.set(x, "WebkitMaskOrigin", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskOriginUndefined: Self = StObject.set(x, "WebkitMaskOrigin", js.undefined)
@@ -29400,7 +29398,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[WebkitMaskPosition[Double | String]]])
-            ]) | `238`
+            ]) | `237`
       ): Self = StObject.set(x, "WebkitMaskPosition", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskPositionUndefined: Self = StObject.set(x, "WebkitMaskPosition", js.undefined)
@@ -29422,7 +29420,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[WebkitMaskPositionX[Double | String]]])
-            ]) | `418`
+            ]) | `417`
       ): Self = StObject.set(x, "WebkitMaskPositionX", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskPositionXUndefined: Self = StObject.set(x, "WebkitMaskPositionX", js.undefined)
@@ -29444,7 +29442,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[WebkitMaskPositionY[Double | String]]])
-            ]) | `137`
+            ]) | `136`
       ): Self = StObject.set(x, "WebkitMaskPositionY", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskPositionYUndefined: Self = StObject.set(x, "WebkitMaskPositionY", js.undefined)
@@ -29464,7 +29462,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitMaskRepeat | js.Array[NonNullable[js.UndefOr[WebkitMaskRepeat]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitMaskRepeat]]
-            ]) | `126`
+            ]) | `125`
       ): Self = StObject.set(x, "WebkitMaskRepeat", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskRepeatUndefined: Self = StObject.set(x, "WebkitMaskRepeat", js.undefined)
@@ -29482,7 +29480,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitMaskRepeatX | js.Array[NonNullable[js.UndefOr[WebkitMaskRepeatX]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitMaskRepeatX]]
-            ]) | `464`
+            ]) | `463`
       ): Self = StObject.set(x, "WebkitMaskRepeatX", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskRepeatXUndefined: Self = StObject.set(x, "WebkitMaskRepeatX", js.undefined)
@@ -29500,7 +29498,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitMaskRepeatY | js.Array[NonNullable[js.UndefOr[WebkitMaskRepeatY]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitMaskRepeatY]]
-            ]) | `491`
+            ]) | `490`
       ): Self = StObject.set(x, "WebkitMaskRepeatY", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskRepeatYUndefined: Self = StObject.set(x, "WebkitMaskRepeatY", js.undefined)
@@ -29520,7 +29518,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[WebkitMaskSize[Double | String]]])
-            ]) | `214`
+            ]) | `213`
       ): Self = StObject.set(x, "WebkitMaskSize", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskSizeUndefined: Self = StObject.set(x, "WebkitMaskSize", js.undefined)
@@ -29553,7 +29551,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[MaxInlineSize[Double | String]]])
-            ]) | `69`
+            ]) | `68`
       ): Self = StObject.set(x, "WebkitMaxInlineSize", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaxInlineSizeUndefined: Self = StObject.set(x, "WebkitMaxInlineSize", js.undefined)
@@ -29570,7 +29568,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitOrder(
         value: Order | (js.Array[
               (Extract[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]], String]) | NonNullable[js.UndefOr[Order]]
-            ]) | `174`
+            ]) | `173`
       ): Self = StObject.set(x, "WebkitOrder", value.asInstanceOf[js.Any])
       
       inline def setWebkitOrderUndefined: Self = StObject.set(x, "WebkitOrder", js.undefined)
@@ -29587,7 +29585,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitOverflowScrolling]]
-            ]) | `319`
+            ]) | `318`
       ): Self = StObject.set(x, "WebkitOverflowScrolling", value.asInstanceOf[js.Any])
       
       inline def setWebkitOverflowScrollingUndefined: Self = StObject.set(x, "WebkitOverflowScrolling", js.undefined)
@@ -29609,7 +29607,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingInlineEnd[Double | String]]])
-            ]) | `185`
+            ]) | `184`
       ): Self = StObject.set(x, "WebkitPaddingEnd", value.asInstanceOf[js.Any])
       
       inline def setWebkitPaddingEndUndefined: Self = StObject.set(x, "WebkitPaddingEnd", js.undefined)
@@ -29631,7 +29629,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PaddingInlineStart[Double | String]]])
-            ]) | `102`
+            ]) | `101`
       ): Self = StObject.set(x, "WebkitPaddingStart", value.asInstanceOf[js.Any])
       
       inline def setWebkitPaddingStartUndefined: Self = StObject.set(x, "WebkitPaddingStart", js.undefined)
@@ -29653,7 +29651,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Perspective[Double | String]]])
-            ]) | `294`
+            ]) | `293`
       ): Self = StObject.set(x, "WebkitPerspective", value.asInstanceOf[js.Any])
       
       inline def setWebkitPerspectiveOrigin(
@@ -29664,7 +29662,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[PerspectiveOrigin[Double | String]]])
-            ]) | `213`
+            ]) | `212`
       ): Self = StObject.set(x, "WebkitPerspectiveOrigin", value.asInstanceOf[js.Any])
       
       inline def setWebkitPerspectiveOriginUndefined: Self = StObject.set(x, "WebkitPerspectiveOrigin", js.undefined)
@@ -29695,7 +29693,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[PrintColorAdjust | js.Array[NonNullable[js.UndefOr[PrintColorAdjust]]]], 
                 String
               ]) | NonNullable[js.UndefOr[PrintColorAdjust]]
-            ]) | `284`
+            ]) | `283`
       ): Self = StObject.set(x, "WebkitPrintColorAdjust", value.asInstanceOf[js.Any])
       
       inline def setWebkitPrintColorAdjustUndefined: Self = StObject.set(x, "WebkitPrintColorAdjust", js.undefined)
@@ -29710,7 +29708,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitRubyPosition(
         value: RubyPosition | (js.Array[
               (Extract[js.UndefOr[RubyPosition | js.Array[NonNullable[js.UndefOr[RubyPosition]]]], String]) | NonNullable[js.UndefOr[RubyPosition]]
-            ]) | `327`
+            ]) | `326`
       ): Self = StObject.set(x, "WebkitRubyPosition", value.asInstanceOf[js.Any])
       
       inline def setWebkitRubyPositionUndefined: Self = StObject.set(x, "WebkitRubyPosition", js.undefined)
@@ -29725,7 +29723,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollSnapPointsX | js.Array[NonNullable[js.UndefOr[ScrollSnapPointsX]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollSnapPointsX]]
-            ]) | `303`
+            ]) | `302`
       ): Self = StObject.set(x, "WebkitScrollSnapPointsX", value.asInstanceOf[js.Any])
       
       inline def setWebkitScrollSnapPointsXUndefined: Self = StObject.set(x, "WebkitScrollSnapPointsX", js.undefined)
@@ -29743,7 +29741,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollSnapPointsY | js.Array[NonNullable[js.UndefOr[ScrollSnapPointsY]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollSnapPointsY]]
-            ]) | `261`
+            ]) | `260`
       ): Self = StObject.set(x, "WebkitScrollSnapPointsY", value.asInstanceOf[js.Any])
       
       inline def setWebkitScrollSnapPointsYUndefined: Self = StObject.set(x, "WebkitScrollSnapPointsY", js.undefined)
@@ -29761,7 +29759,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[ScrollSnapType | js.Array[NonNullable[js.UndefOr[ScrollSnapType]]]], 
                 String
               ]) | NonNullable[js.UndefOr[ScrollSnapType]]
-            ]) | `70`
+            ]) | `69`
       ): Self = StObject.set(x, "WebkitScrollSnapType", value.asInstanceOf[js.Any])
       
       inline def setWebkitScrollSnapTypeUndefined: Self = StObject.set(x, "WebkitScrollSnapType", js.undefined)
@@ -29781,7 +29779,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[ShapeMargin[Double | String]]])
-            ]) | `100`
+            ]) | `99`
       ): Self = StObject.set(x, "WebkitShapeMargin", value.asInstanceOf[js.Any])
       
       inline def setWebkitShapeMarginUndefined: Self = StObject.set(x, "WebkitShapeMargin", js.undefined)
@@ -29803,7 +29801,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitTapHighlightColor]]
-            ]) | `216`
+            ]) | `215`
       ): Self = StObject.set(x, "WebkitTapHighlightColor", value.asInstanceOf[js.Any])
       
       inline def setWebkitTapHighlightColorUndefined: Self = StObject.set(x, "WebkitTapHighlightColor", js.undefined)
@@ -29823,7 +29821,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextCombineUpright | js.Array[NonNullable[js.UndefOr[TextCombineUpright]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextCombineUpright]]
-            ]) | `20`
+            ]) | `19`
       ): Self = StObject.set(x, "WebkitTextCombine", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextCombineUndefined: Self = StObject.set(x, "WebkitTextCombine", js.undefined)
@@ -29841,7 +29839,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextDecorationColor | js.Array[NonNullable[js.UndefOr[TextDecorationColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextDecorationColor]]
-            ]) | `53`
+            ]) | `52`
       ): Self = StObject.set(x, "WebkitTextDecorationColor", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextDecorationColorUndefined: Self = StObject.set(x, "WebkitTextDecorationColor", js.undefined)
@@ -29859,7 +29857,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextDecorationLine | js.Array[NonNullable[js.UndefOr[TextDecorationLine]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextDecorationLine]]
-            ]) | `21`
+            ]) | `20`
       ): Self = StObject.set(x, "WebkitTextDecorationLine", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextDecorationLineUndefined: Self = StObject.set(x, "WebkitTextDecorationLine", js.undefined)
@@ -29877,7 +29875,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextDecorationSkip | js.Array[NonNullable[js.UndefOr[TextDecorationSkip]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextDecorationSkip]]
-            ]) | `164`
+            ]) | `163`
       ): Self = StObject.set(x, "WebkitTextDecorationSkip", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextDecorationSkipUndefined: Self = StObject.set(x, "WebkitTextDecorationSkip", js.undefined)
@@ -29895,7 +29893,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextDecorationStyle | js.Array[NonNullable[js.UndefOr[TextDecorationStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextDecorationStyle]]
-            ]) | `254`
+            ]) | `253`
       ): Self = StObject.set(x, "WebkitTextDecorationStyle", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextDecorationStyleUndefined: Self = StObject.set(x, "WebkitTextDecorationStyle", js.undefined)
@@ -29910,7 +29908,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitTextEmphasis(
         value: TextEmphasis | (js.Array[
               (Extract[js.UndefOr[TextEmphasis | js.Array[NonNullable[js.UndefOr[TextEmphasis]]]], String]) | NonNullable[js.UndefOr[TextEmphasis]]
-            ]) | `66`
+            ]) | `65`
       ): Self = StObject.set(x, "WebkitTextEmphasis", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextEmphasisColor(
@@ -29919,7 +29917,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextEmphasisColor | js.Array[NonNullable[js.UndefOr[TextEmphasisColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextEmphasisColor]]
-            ]) | `359`
+            ]) | `358`
       ): Self = StObject.set(x, "WebkitTextEmphasisColor", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextEmphasisColorUndefined: Self = StObject.set(x, "WebkitTextEmphasisColor", js.undefined)
@@ -29937,7 +29935,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextEmphasisPosition | js.Array[NonNullable[js.UndefOr[TextEmphasisPosition]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextEmphasisPosition]]
-            ]) | `366`
+            ]) | `365`
       ): Self = StObject.set(x, "WebkitTextEmphasisPosition", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextEmphasisPositionUndefined: Self = StObject.set(x, "WebkitTextEmphasisPosition", js.undefined)
@@ -29955,7 +29953,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextEmphasisStyle | js.Array[NonNullable[js.UndefOr[TextEmphasisStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextEmphasisStyle]]
-            ]) | `384`
+            ]) | `383`
       ): Self = StObject.set(x, "WebkitTextEmphasisStyle", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextEmphasisStyleUndefined: Self = StObject.set(x, "WebkitTextEmphasisStyle", js.undefined)
@@ -29979,7 +29977,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitTextFillColor | js.Array[NonNullable[js.UndefOr[WebkitTextFillColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitTextFillColor]]
-            ]) | `533`
+            ]) | `532`
       ): Self = StObject.set(x, "WebkitTextFillColor", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextFillColorUndefined: Self = StObject.set(x, "WebkitTextFillColor", js.undefined)
@@ -29997,7 +29995,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextOrientation | js.Array[NonNullable[js.UndefOr[TextOrientation]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextOrientation]]
-            ]) | `308`
+            ]) | `307`
       ): Self = StObject.set(x, "WebkitTextOrientation", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextOrientationUndefined: Self = StObject.set(x, "WebkitTextOrientation", js.undefined)
@@ -30015,7 +30013,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextSizeAdjust | js.Array[NonNullable[js.UndefOr[TextSizeAdjust]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextSizeAdjust]]
-            ]) | `1`
+            ]) | `0`
       ): Self = StObject.set(x, "WebkitTextSizeAdjust", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextSizeAdjustUndefined: Self = StObject.set(x, "WebkitTextSizeAdjust", js.undefined)
@@ -30035,7 +30033,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[WebkitTextStroke[Double | String]]])
-            ]) | Value
+            ]) | SKIPCHECK
       ): Self = StObject.set(x, "WebkitTextStroke", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextStrokeColor(
@@ -30044,7 +30042,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitTextStrokeColor | js.Array[NonNullable[js.UndefOr[WebkitTextStrokeColor]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitTextStrokeColor]]
-            ]) | `508`
+            ]) | `507`
       ): Self = StObject.set(x, "WebkitTextStrokeColor", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextStrokeColorUndefined: Self = StObject.set(x, "WebkitTextStrokeColor", js.undefined)
@@ -30075,7 +30073,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[WebkitTextStrokeWidth[Double | String]]])
-            ]) | `513`
+            ]) | `512`
       ): Self = StObject.set(x, "WebkitTextStrokeWidth", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextStrokeWidthUndefined: Self = StObject.set(x, "WebkitTextStrokeWidth", js.undefined)
@@ -30095,7 +30093,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TextUnderlinePosition | js.Array[NonNullable[js.UndefOr[TextUnderlinePosition]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TextUnderlinePosition]]
-            ]) | `293`
+            ]) | `292`
       ): Self = StObject.set(x, "WebkitTextUnderlinePosition", value.asInstanceOf[js.Any])
       
       inline def setWebkitTextUnderlinePositionUndefined: Self = StObject.set(x, "WebkitTextUnderlinePosition", js.undefined)
@@ -30113,7 +30111,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitTouchCallout | js.Array[NonNullable[js.UndefOr[WebkitTouchCallout]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitTouchCallout]]
-            ]) | `398`
+            ]) | `397`
       ): Self = StObject.set(x, "WebkitTouchCallout", value.asInstanceOf[js.Any])
       
       inline def setWebkitTouchCalloutUndefined: Self = StObject.set(x, "WebkitTouchCallout", js.undefined)
@@ -30128,7 +30126,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitTransform(
         value: Transform | (js.Array[
               (Extract[js.UndefOr[Transform | js.Array[NonNullable[js.UndefOr[Transform]]]], String]) | NonNullable[js.UndefOr[Transform]]
-            ]) | `125`
+            ]) | `124`
       ): Self = StObject.set(x, "WebkitTransform", value.asInstanceOf[js.Any])
       
       inline def setWebkitTransformOrigin(
@@ -30139,7 +30137,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[TransformOrigin[Double | String]]])
-            ]) | `65`
+            ]) | `64`
       ): Self = StObject.set(x, "WebkitTransformOrigin", value.asInstanceOf[js.Any])
       
       inline def setWebkitTransformOriginUndefined: Self = StObject.set(x, "WebkitTransformOrigin", js.undefined)
@@ -30159,7 +30157,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TransformStyle | js.Array[NonNullable[js.UndefOr[TransformStyle]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TransformStyle]]
-            ]) | `154`
+            ]) | `153`
       ): Self = StObject.set(x, "WebkitTransformStyle", value.asInstanceOf[js.Any])
       
       inline def setWebkitTransformStyleUndefined: Self = StObject.set(x, "WebkitTransformStyle", js.undefined)
@@ -30183,7 +30181,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[Transition[String] | js.Array[NonNullable[js.UndefOr[Transition[String]]]]], 
                 String
               ]) | NonNullable[js.UndefOr[Transition[String]]]
-            ]) | `68`
+            ]) | `67`
       ): Self = StObject.set(x, "WebkitTransition", value.asInstanceOf[js.Any])
       
       inline def setWebkitTransitionDelay(
@@ -30194,7 +30192,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionDelay[String]]]
-            ]) | `212`
+            ]) | `211`
       ): Self = StObject.set(x, "WebkitTransitionDelay", value.asInstanceOf[js.Any])
       
       inline def setWebkitTransitionDelayUndefined: Self = StObject.set(x, "WebkitTransitionDelay", js.undefined)
@@ -30216,7 +30214,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionDuration[String]]]
-            ]) | `78`
+            ]) | `77`
       ): Self = StObject.set(x, "WebkitTransitionDuration", value.asInstanceOf[js.Any])
       
       inline def setWebkitTransitionDurationUndefined: Self = StObject.set(x, "WebkitTransitionDuration", js.undefined)
@@ -30236,7 +30234,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionProperty]]
-            ]) | `228`
+            ]) | `227`
       ): Self = StObject.set(x, "WebkitTransitionProperty", value.asInstanceOf[js.Any])
       
       inline def setWebkitTransitionPropertyUndefined: Self = StObject.set(x, "WebkitTransitionProperty", js.undefined)
@@ -30256,7 +30254,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | NonNullable[js.UndefOr[TransitionTimingFunction]]
-            ]) | `272`
+            ]) | `271`
       ): Self = StObject.set(x, "WebkitTransitionTimingFunction", value.asInstanceOf[js.Any])
       
       inline def setWebkitTransitionTimingFunctionUndefined: Self = StObject.set(x, "WebkitTransitionTimingFunction", js.undefined)
@@ -30285,7 +30283,7 @@ object esHooksUseStyleRegisterMod {
                 js.UndefOr[WebkitUserModify | js.Array[NonNullable[js.UndefOr[WebkitUserModify]]]], 
                 String
               ]) | NonNullable[js.UndefOr[WebkitUserModify]]
-            ]) | `257`
+            ]) | `256`
       ): Self = StObject.set(x, "WebkitUserModify", value.asInstanceOf[js.Any])
       
       inline def setWebkitUserModifyUndefined: Self = StObject.set(x, "WebkitUserModify", js.undefined)
@@ -30300,7 +30298,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitUserSelect(
         value: UserSelect | (js.Array[
               (Extract[js.UndefOr[UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]], String]) | NonNullable[js.UndefOr[UserSelect]]
-            ]) | `47`
+            ]) | `46`
       ): Self = StObject.set(x, "WebkitUserSelect", value.asInstanceOf[js.Any])
       
       inline def setWebkitUserSelectUndefined: Self = StObject.set(x, "WebkitUserSelect", js.undefined)
@@ -30312,7 +30310,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWebkitWritingMode(
         value: WritingMode | (js.Array[
               (Extract[js.UndefOr[WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]], String]) | NonNullable[js.UndefOr[WritingMode]]
-            ]) | `181`
+            ]) | `180`
       ): Self = StObject.set(x, "WebkitWritingMode", value.asInstanceOf[js.Any])
       
       inline def setWebkitWritingModeUndefined: Self = StObject.set(x, "WebkitWritingMode", js.undefined)
@@ -30324,7 +30322,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWhiteSpace(
         value: WhiteSpace | (js.Array[
               (Extract[js.UndefOr[WhiteSpace | js.Array[NonNullable[js.UndefOr[WhiteSpace]]]], String]) | NonNullable[js.UndefOr[WhiteSpace]]
-            ]) | `266`
+            ]) | `265`
       ): Self = StObject.set(x, "whiteSpace", value.asInstanceOf[js.Any])
       
       inline def setWhiteSpaceUndefined: Self = StObject.set(x, "whiteSpace", js.undefined)
@@ -30336,7 +30334,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWidows(
         value: Widows | (js.Array[
               (Extract[js.UndefOr[Widows | js.Array[NonNullable[js.UndefOr[Widows]]]], String]) | NonNullable[js.UndefOr[Widows]]
-            ]) | `354`
+            ]) | `353`
       ): Self = StObject.set(x, "widows", value.asInstanceOf[js.Any])
       
       inline def setWidowsUndefined: Self = StObject.set(x, "widows", js.undefined)
@@ -30353,7 +30351,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[Width[Double | String]]])
-            ]) | `36`
+            ]) | `35`
       ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
@@ -30370,7 +30368,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWillChange(
         value: WillChange | (js.Array[
               (Extract[js.UndefOr[WillChange | js.Array[NonNullable[js.UndefOr[WillChange]]]], String]) | NonNullable[js.UndefOr[WillChange]]
-            ]) | `371`
+            ]) | `370`
       ): Self = StObject.set(x, "willChange", value.asInstanceOf[js.Any])
       
       inline def setWillChangeUndefined: Self = StObject.set(x, "willChange", js.undefined)
@@ -30382,7 +30380,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWordBreak(
         value: WordBreak | (js.Array[
               (Extract[js.UndefOr[WordBreak | js.Array[NonNullable[js.UndefOr[WordBreak]]]], String]) | NonNullable[js.UndefOr[WordBreak]]
-            ]) | `90`
+            ]) | `89`
       ): Self = StObject.set(x, "wordBreak", value.asInstanceOf[js.Any])
       
       inline def setWordBreakUndefined: Self = StObject.set(x, "wordBreak", js.undefined)
@@ -30399,7 +30397,7 @@ object esHooksUseStyleRegisterMod {
                 ], 
                 String
               ]) | (NonNullable[js.UndefOr[WordSpacing[Double | String]]])
-            ]) | `383`
+            ]) | `382`
       ): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
       
       inline def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
@@ -30416,7 +30414,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWordWrap(
         value: WordWrap | (js.Array[
               (Extract[js.UndefOr[WordWrap | js.Array[NonNullable[js.UndefOr[WordWrap]]]], String]) | NonNullable[js.UndefOr[WordWrap]]
-            ]) | `295`
+            ]) | `294`
       ): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
       
       inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
@@ -30428,7 +30426,7 @@ object esHooksUseStyleRegisterMod {
       inline def setWritingMode(
         value: WritingMode | (js.Array[
               (Extract[js.UndefOr[WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]], String]) | NonNullable[js.UndefOr[WritingMode]]
-            ]) | `181`
+            ]) | `180`
       ): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
       
       inline def setWritingModeUndefined: Self = StObject.set(x, "writingMode", js.undefined)
@@ -30440,7 +30438,7 @@ object esHooksUseStyleRegisterMod {
       inline def setZIndex(
         value: ZIndex | (js.Array[
               (Extract[js.UndefOr[ZIndex | js.Array[NonNullable[js.UndefOr[ZIndex]]]], String]) | NonNullable[js.UndefOr[ZIndex]]
-            ]) | `218`
+            ]) | `217`
       ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
       inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
@@ -30452,7 +30450,7 @@ object esHooksUseStyleRegisterMod {
       inline def setZoom(
         value: Zoom | (js.Array[
               (Extract[js.UndefOr[Zoom | js.Array[NonNullable[js.UndefOr[Zoom]]]], String]) | NonNullable[js.UndefOr[Zoom]]
-            ]) | `387`
+            ]) | `386`
       ): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
       inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
@@ -31412,7 +31410,11 @@ object esHooksUseStyleRegisterMod {
     
     var layer: js.UndefOr[String] = js.undefined
     
+    var linters: js.UndefOr[js.Array[Linter]] = js.undefined
+    
     var path: js.UndefOr[String] = js.undefined
+    
+    var transformers: js.UndefOr[js.Array[Transformer]] = js.undefined
   }
   object ParseConfig {
     
@@ -31436,9 +31438,21 @@ object esHooksUseStyleRegisterMod {
       
       inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
       
+      inline def setLinters(value: js.Array[Linter]): Self = StObject.set(x, "linters", value.asInstanceOf[js.Any])
+      
+      inline def setLintersUndefined: Self = StObject.set(x, "linters", js.undefined)
+      
+      inline def setLintersVarargs(value: Linter*): Self = StObject.set(x, "linters", js.Array(value*))
+      
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      
+      inline def setTransformers(value: js.Array[Transformer]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
+      
+      inline def setTransformersUndefined: Self = StObject.set(x, "transformers", js.undefined)
+      
+      inline def setTransformersVarargs(value: Transformer*): Self = StObject.set(x, "transformers", js.Array(value*))
     }
   }
   
@@ -31446,12 +31460,14 @@ object esHooksUseStyleRegisterMod {
     
     var injectHash: js.UndefOr[Boolean] = js.undefined
     
+    var parentSelectors: js.Array[String]
+    
     var root: js.UndefOr[Boolean] = js.undefined
   }
   object ParseInfo {
     
-    inline def apply(): ParseInfo = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(parentSelectors: js.Array[String]): ParseInfo = {
+      val __obj = js.Dynamic.literal(parentSelectors = parentSelectors.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseInfo]
     }
     
@@ -31461,6 +31477,10 @@ object esHooksUseStyleRegisterMod {
       inline def setInjectHash(value: Boolean): Self = StObject.set(x, "injectHash", value.asInstanceOf[js.Any])
       
       inline def setInjectHashUndefined: Self = StObject.set(x, "injectHash", js.undefined)
+      
+      inline def setParentSelectors(value: js.Array[String]): Self = StObject.set(x, "parentSelectors", value.asInstanceOf[js.Any])
+      
+      inline def setParentSelectorsVarargs(value: String*): Self = StObject.set(x, "parentSelectors", js.Array(value*))
       
       inline def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

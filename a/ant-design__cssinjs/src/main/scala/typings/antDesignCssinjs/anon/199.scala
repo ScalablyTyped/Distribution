@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BoxLines
-import typings.std.Extract
+import typings.csstype.mod.Property.OutlineOffset
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `199` extends StObject {
   
   var value: js.UndefOr[
-    BoxLines | (js.Array[
-      (Extract[js.UndefOr[BoxLines | js.Array[NonNullable[js.UndefOr[BoxLines]]]], String]) | NonNullable[js.UndefOr[BoxLines]]
+    (OutlineOffset[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[OutlineOffset[Double | String]]]]) | (NonNullable[js.UndefOr[OutlineOffset[Double | String]]]) | (OutlineOffset[Double | String])
+      ]
     ])
   ] = js.native
 }

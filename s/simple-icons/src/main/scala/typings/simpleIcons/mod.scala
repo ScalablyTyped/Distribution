@@ -9791,6 +9791,10 @@ object mod {
   @js.native
   val siZigbee: I = js.native
   
+  @JSImport("simple-icons", "siZilch")
+  @js.native
+  val siZilch: I = js.native
+  
   @JSImport("simple-icons", "siZillow")
   @js.native
   val siZillow: I = js.native

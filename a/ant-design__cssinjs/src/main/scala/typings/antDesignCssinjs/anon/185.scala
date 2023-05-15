@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PaddingInlineEnd
-import typings.std.Extract
+import typings.csstype.mod.Property.FontLanguageOverride
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `185` extends StObject {
   
   var value: js.UndefOr[
-    (PaddingInlineEnd[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (PaddingInlineEnd[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingInlineEnd[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[PaddingInlineEnd[Double | String]]])
+    FontLanguageOverride | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[FontLanguageOverride]]] | FontLanguageOverride | NonNullable[js.UndefOr[FontLanguageOverride]]
+      ]
     ])
   ] = js.native
 }

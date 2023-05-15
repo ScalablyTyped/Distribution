@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FloodColor
-import typings.std.Extract
+import typings.csstype.mod.Property.Marker
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `511` extends StObject {
   
   var value: js.UndefOr[
-    FloodColor | (js.Array[
-      (Extract[js.UndefOr[FloodColor | js.Array[NonNullable[js.UndefOr[FloodColor]]]], String]) | NonNullable[js.UndefOr[FloodColor]]
+    Marker | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[Marker]]] | Marker | NonNullable[js.UndefOr[Marker]]
+      ]
     ])
   ] = js.native
 }

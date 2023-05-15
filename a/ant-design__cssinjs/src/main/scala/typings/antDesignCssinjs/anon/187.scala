@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBottomStyle
-import typings.std.Extract
+import typings.csstype.mod.Property.MaskBorderSlice
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `187` extends StObject {
   
   var value: js.UndefOr[
-    BorderBottomStyle | (js.Array[
-      (Extract[
-        js.UndefOr[BorderBottomStyle | js.Array[NonNullable[js.UndefOr[BorderBottomStyle]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BorderBottomStyle]]
+    MaskBorderSlice | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MaskBorderSlice]]] | MaskBorderSlice | NonNullable[js.UndefOr[MaskBorderSlice]]
+      ]
     ])
   ] = js.native
 }

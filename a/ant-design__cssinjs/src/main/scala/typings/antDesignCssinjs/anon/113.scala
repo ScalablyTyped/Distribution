@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitBorderBeforeColor
-import typings.std.Extract
+import typings.csstype.mod.Property.AnimationFillMode
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `113` extends StObject {
   
   var value: js.UndefOr[
-    WebkitBorderBeforeColor | (js.Array[
-      (Extract[
-        js.UndefOr[
-          WebkitBorderBeforeColor | js.Array[NonNullable[js.UndefOr[WebkitBorderBeforeColor]]]
-        ], 
-        String
-      ]) | NonNullable[js.UndefOr[WebkitBorderBeforeColor]]
+    AnimationFillMode | (js.Array[
+      js.UndefOr[
+        AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]] | NonNullable[js.UndefOr[AnimationFillMode]]
+      ]
     ])
   ] = js.native
 }

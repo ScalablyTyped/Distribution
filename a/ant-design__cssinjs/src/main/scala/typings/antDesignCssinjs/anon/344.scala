@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OutlineStyle
-import typings.std.Extract
+import typings.csstype.mod.Property.StrokeLinejoin
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `344` extends StObject {
   
   var value: js.UndefOr[
-    OutlineStyle | (js.Array[
-      (Extract[js.UndefOr[OutlineStyle | js.Array[NonNullable[js.UndefOr[OutlineStyle]]]], String]) | NonNullable[js.UndefOr[OutlineStyle]]
+    StrokeLinejoin | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[StrokeLinejoin]]] | NonNullable[js.UndefOr[StrokeLinejoin]] | StrokeLinejoin
+      ]
     ])
   ] = js.native
 }

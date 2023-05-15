@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PrintColorAdjust
-import typings.std.Extract
+import typings.csstype.mod.Property.Offset
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `284` extends StObject {
   
   var value: js.UndefOr[
-    PrintColorAdjust | (js.Array[
-      (Extract[
-        js.UndefOr[PrintColorAdjust | js.Array[NonNullable[js.UndefOr[PrintColorAdjust]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[PrintColorAdjust]]
+    (Offset[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[Offset[Double | String]]]]) | (NonNullable[js.UndefOr[Offset[Double | String]]]) | (Offset[Double | String])
+      ]
     ])
   ] = js.native
 }

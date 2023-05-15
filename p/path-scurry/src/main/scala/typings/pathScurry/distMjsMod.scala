@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable7
 import org.scalablytyped.runtime.StringDictionary
 import typings.minipass.mod.Minipass
+import typings.minipass.mod.Minipass.Events
 import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.Dirent
 import typings.node.fsMod.Stats
@@ -922,63 +923,78 @@ object distMjsMod {
       */
     def stream(): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def stream(entry: String): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def stream(entry: String, opts: WalkOptions): Minipass[
         PathBase | String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any, 
+        Events[PathBase | String]
       ] = js.native
     def stream(entry: String, opts: WalkOptionsWithFileTypesFalse): Minipass[
         String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any, 
+        Events[String]
       ] = js.native
     def stream(entry: String, opts: WalkOptionsWithFileTypesTrue): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def stream(entry: String, opts: WalkOptionsWithFileTypesUnset): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def stream(entry: PathBase): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def stream(entry: PathBase, opts: WalkOptions): Minipass[
         PathBase | String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any, 
+        Events[PathBase | String]
       ] = js.native
     def stream(entry: PathBase, opts: WalkOptionsWithFileTypesFalse): Minipass[
         String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any, 
+        Events[String]
       ] = js.native
     def stream(entry: PathBase, opts: WalkOptionsWithFileTypesTrue): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def stream(entry: PathBase, opts: WalkOptionsWithFileTypesUnset): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def stream(opts: WalkOptions): Minipass[
         String | PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: string | path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string | path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: string | path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string | path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[String | PathBase]
       ] = js.native
     def stream(opts: WalkOptionsWithFileTypesFalse): Minipass[
         String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any, 
+        Events[String]
       ] = js.native
     def stream(opts: WalkOptionsWithFileTypesTrue): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def stream(opts: WalkOptionsWithFileTypesUnset): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     
     /**
@@ -992,63 +1008,78 @@ object distMjsMod {
       */
     def streamSync(): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def streamSync(entry: String): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def streamSync(entry: String, opts: WalkOptions): Minipass[
         PathBase | String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any, 
+        Events[PathBase | String]
       ] = js.native
     def streamSync(entry: String, opts: WalkOptionsWithFileTypesFalse): Minipass[
         String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any, 
+        Events[String]
       ] = js.native
     def streamSync(entry: String, opts: WalkOptionsWithFileTypesTrue): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def streamSync(entry: String, opts: WalkOptionsWithFileTypesUnset): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def streamSync(entry: PathBase): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def streamSync(entry: PathBase, opts: WalkOptions): Minipass[
         PathBase | String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any, 
+        Events[PathBase | String]
       ] = js.native
     def streamSync(entry: PathBase, opts: WalkOptionsWithFileTypesFalse): Minipass[
         String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any, 
+        Events[String]
       ] = js.native
     def streamSync(entry: PathBase, opts: WalkOptionsWithFileTypesTrue): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def streamSync(entry: PathBase, opts: WalkOptionsWithFileTypesUnset): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def streamSync(opts: WalkOptions): Minipass[
         String | PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: string | path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string | path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: string | path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string | path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[String | PathBase]
       ] = js.native
     def streamSync(opts: WalkOptionsWithFileTypesFalse): Minipass[
         String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: string extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : string */ js.Any, 
+        Events[String]
       ] = js.native
     def streamSync(opts: WalkOptionsWithFileTypesTrue): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     def streamSync(opts: WalkOptionsWithFileTypesUnset): Minipass[
         PathBase, 
-        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: path-scurry.path-scurry/dist/mjs.PathBase extends minipass.minipass.Minipass.BufferOrString ? minipass.minipass.Minipass.ContiguousData : path-scurry.path-scurry/dist/mjs.PathBase */ js.Any, 
+        Events[PathBase]
       ] = js.native
     
     /**

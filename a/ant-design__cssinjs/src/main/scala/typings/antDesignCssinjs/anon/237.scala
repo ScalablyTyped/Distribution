@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBlockStyle
-import typings.std.Extract
+import typings.csstype.mod.Property.WebkitMaskPosition
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `237` extends StObject {
   
   var value: js.UndefOr[
-    BorderBlockStyle | (js.Array[
-      (Extract[
-        js.UndefOr[BorderBlockStyle | js.Array[NonNullable[js.UndefOr[BorderBlockStyle]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BorderBlockStyle]]
+    (WebkitMaskPosition[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[WebkitMaskPosition[Double | String]]]]) | (NonNullable[js.UndefOr[WebkitMaskPosition[Double | String]]]) | (WebkitMaskPosition[Double | String])
+      ]
     ])
   ] = js.native
 }

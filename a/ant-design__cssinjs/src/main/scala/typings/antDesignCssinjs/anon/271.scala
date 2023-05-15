@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ImageResolution
-import typings.std.Extract
+import typings.csstype.mod.Property.TransitionTimingFunction
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `271` extends StObject {
   
   var value: js.UndefOr[
-    ImageResolution | (js.Array[
-      (Extract[
-        js.UndefOr[ImageResolution | js.Array[NonNullable[js.UndefOr[ImageResolution]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[ImageResolution]]
+    TransitionTimingFunction | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[TransitionTimingFunction]]] | NonNullable[js.UndefOr[TransitionTimingFunction]] | TransitionTimingFunction
+      ]
     ])
   ] = js.native
 }

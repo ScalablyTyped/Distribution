@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.InsetInlineStart
-import typings.std.Extract
+import typings.csstype.mod.Property.OverflowX
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `275` extends StObject {
   
   var value: js.UndefOr[
-    (InsetInlineStart[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (InsetInlineStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[InsetInlineStart[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[InsetInlineStart[Double | String]]])
+    OverflowX | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[OverflowX]]] | NonNullable[js.UndefOr[OverflowX]] | OverflowX
+      ]
     ])
   ] = js.native
 }

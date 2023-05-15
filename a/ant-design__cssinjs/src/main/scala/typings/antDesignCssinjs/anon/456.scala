@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OverscrollBehaviorX
-import typings.std.Extract
+import typings.csstype.mod.Property.StopColor
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `456` extends StObject {
   
   var value: js.UndefOr[
-    OverscrollBehaviorX | (js.Array[
-      (Extract[
-        js.UndefOr[OverscrollBehaviorX | js.Array[NonNullable[js.UndefOr[OverscrollBehaviorX]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[OverscrollBehaviorX]]
+    StopColor | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[StopColor]]] | NonNullable[js.UndefOr[StopColor]] | StopColor
+      ]
     ])
   ] = js.native
 }

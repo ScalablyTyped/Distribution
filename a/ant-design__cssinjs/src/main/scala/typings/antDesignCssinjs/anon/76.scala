@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitMaskOrigin
-import typings.std.Extract
+import typings.csstype.mod.Property.BorderTopRightRadius
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `76` extends StObject {
   
   var value: js.UndefOr[
-    WebkitMaskOrigin | (js.Array[
-      (Extract[
-        js.UndefOr[WebkitMaskOrigin | js.Array[NonNullable[js.UndefOr[WebkitMaskOrigin]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[WebkitMaskOrigin]]
+    (BorderTopRightRadius[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[BorderTopRightRadius[Double | String]]]]) | (BorderTopRightRadius[Double | String]) | (NonNullable[js.UndefOr[BorderTopRightRadius[Double | String]]])
+      ]
     ])
   ] = js.native
 }

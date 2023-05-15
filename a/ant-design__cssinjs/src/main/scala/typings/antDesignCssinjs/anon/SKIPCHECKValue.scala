@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ImageOrientation
-import typings.std.Extract
+import typings.csstype.mod.Property.OverscrollBehavior
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SKIPCHECKValue extends StObject {
   
   var value: js.UndefOr[
-    ImageOrientation | (js.Array[
-      (Extract[
-        js.UndefOr[ImageOrientation | js.Array[NonNullable[js.UndefOr[ImageOrientation]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[ImageOrientation]]
+    OverscrollBehavior | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[OverscrollBehavior]]] | NonNullable[js.UndefOr[OverscrollBehavior]] | OverscrollBehavior
+      ]
     ])
   ] = js.native
 }

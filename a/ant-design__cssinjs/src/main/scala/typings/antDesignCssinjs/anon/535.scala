@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsTouchSelect
-import typings.std.Extract
+import typings.csstype.mod.Property.WebkitMaskImage
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `535` extends StObject {
   
   var value: js.UndefOr[
-    MsTouchSelect | (js.Array[
-      (Extract[
-        js.UndefOr[MsTouchSelect | js.Array[NonNullable[js.UndefOr[MsTouchSelect]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[MsTouchSelect]]
+    WebkitMaskImage | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[WebkitMaskImage]]] | NonNullable[js.UndefOr[WebkitMaskImage]] | WebkitMaskImage
+      ]
     ])
   ] = js.native
 }

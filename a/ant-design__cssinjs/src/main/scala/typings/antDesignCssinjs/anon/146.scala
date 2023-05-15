@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.CounterSet
-import typings.std.Extract
+import typings.csstype.mod.Property.MarginRight
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `146` extends StObject {
   
   var value: js.UndefOr[
-    CounterSet | (js.Array[
-      (Extract[js.UndefOr[CounterSet | js.Array[NonNullable[js.UndefOr[CounterSet]]]], String]) | NonNullable[js.UndefOr[CounterSet]]
+    (MarginRight[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]]) | (MarginRight[Double | String]) | (NonNullable[js.UndefOr[MarginRight[Double | String]]])
+      ]
     ])
   ] = js.native
 }

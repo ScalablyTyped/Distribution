@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AnimationTimeline
-import typings.std.Extract
+import typings.csstype.mod.Property.InsetBlockStart
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `225` extends StObject {
   
   var value: js.UndefOr[
-    AnimationTimeline | (js.Array[
-      (Extract[
-        js.UndefOr[AnimationTimeline | js.Array[NonNullable[js.UndefOr[AnimationTimeline]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[AnimationTimeline]]
+    (InsetBlockStart[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[InsetBlockStart[Double | String]]]]) | (InsetBlockStart[Double | String]) | (NonNullable[js.UndefOr[InsetBlockStart[Double | String]]])
+      ]
     ])
   ] = js.native
 }

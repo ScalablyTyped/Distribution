@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextIndent
-import typings.std.Extract
+import typings.csstype.mod.Property.MsScrollLimitXMin
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `451` extends StObject {
   
   var value: js.UndefOr[
-    (TextIndent[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (TextIndent[Double | String]) | (js.Array[NonNullable[js.UndefOr[TextIndent[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[TextIndent[Double | String]]])
+    (MsScrollLimitXMin[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[MsScrollLimitXMin[Double | String]]]]) | (MsScrollLimitXMin[Double | String]) | (NonNullable[js.UndefOr[MsScrollLimitXMin[Double | String]]])
+      ]
     ])
   ] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OffsetPosition
-import typings.std.Extract
+import typings.csstype.mod.Property.MsScrollbarShadowColor
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `251` extends StObject {
   
   var value: js.UndefOr[
-    (OffsetPosition[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (OffsetPosition[Double | String]) | (js.Array[NonNullable[js.UndefOr[OffsetPosition[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[OffsetPosition[Double | String]]])
+    MsScrollbarShadowColor | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MsScrollbarShadowColor]]] | MsScrollbarShadowColor | NonNullable[js.UndefOr[MsScrollbarShadowColor]]
+      ]
     ])
   ] = js.native
 }

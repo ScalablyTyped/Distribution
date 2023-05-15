@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.StrokeDashoffset
-import typings.std.Extract
+import typings.csstype.mod.Property.BorderRight
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `349` extends StObject {
   
   var value: js.UndefOr[
-    (StrokeDashoffset[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (StrokeDashoffset[Double | String]) | (js.Array[NonNullable[js.UndefOr[StrokeDashoffset[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[StrokeDashoffset[Double | String]]])
+    (BorderRight[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[BorderRight[Double | String]]]]) | (BorderRight[Double | String]) | (NonNullable[js.UndefOr[BorderRight[Double | String]]])
+      ]
     ])
   ] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderEndEndRadius
-import typings.std.Extract
+import typings.csstype.mod.Property.MsScrollSnapPointsY
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `431` extends StObject {
   
   var value: js.UndefOr[
-    (BorderEndEndRadius[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (BorderEndEndRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderEndEndRadius[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[BorderEndEndRadius[Double | String]]])
+    MsScrollSnapPointsY | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MsScrollSnapPointsY]]] | MsScrollSnapPointsY | NonNullable[js.UndefOr[MsScrollSnapPointsY]]
+      ]
     ])
   ] = js.native
 }

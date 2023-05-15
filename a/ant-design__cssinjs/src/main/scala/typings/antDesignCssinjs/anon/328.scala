@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsFilter
-import typings.std.Extract
+import typings.csstype.mod.Property.ScrollMarginInlineStart
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `328` extends StObject {
   
   var value: js.UndefOr[
-    MsFilter | (js.Array[
-      (Extract[js.UndefOr[MsFilter | js.Array[NonNullable[js.UndefOr[MsFilter]]]], String]) | NonNullable[js.UndefOr[MsFilter]]
+    (ScrollMarginInlineStart[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[ScrollMarginInlineStart[Double | String]]]]) | (NonNullable[js.UndefOr[ScrollMarginInlineStart[Double | String]]]) | (ScrollMarginInlineStart[Double | String])
+      ]
     ])
   ] = js.native
 }

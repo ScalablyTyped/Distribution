@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsContentZoomLimitMax
-import typings.std.Extract
+import typings.csstype.mod.Property.WordBreak
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `89` extends StObject {
   
   var value: js.UndefOr[
-    MsContentZoomLimitMax | (js.Array[
-      (Extract[
-        js.UndefOr[MsContentZoomLimitMax | js.Array[NonNullable[js.UndefOr[MsContentZoomLimitMax]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[MsContentZoomLimitMax]]
+    WordBreak | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[WordBreak]]] | NonNullable[js.UndefOr[WordBreak]] | WordBreak
+      ]
     ])
   ] = js.native
 }

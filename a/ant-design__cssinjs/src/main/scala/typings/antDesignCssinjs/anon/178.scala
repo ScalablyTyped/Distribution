@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextShadow
-import typings.std.Extract
+import typings.csstype.mod.Property.FontKerning
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `178` extends StObject {
   
   var value: js.UndefOr[
-    TextShadow | (js.Array[
-      (Extract[js.UndefOr[TextShadow | js.Array[NonNullable[js.UndefOr[TextShadow]]]], String]) | NonNullable[js.UndefOr[TextShadow]]
+    FontKerning | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[FontKerning]]] | FontKerning | NonNullable[js.UndefOr[FontKerning]]
+      ]
     ])
   ] = js.native
 }

@@ -11,6 +11,8 @@ trait HashId extends StObject {
   
   var layer: js.UndefOr[String] = js.undefined
   
+  var nonce: js.UndefOr[String | js.Function0[String]] = js.undefined
+  
   var path: js.Array[String]
   
   var theme: Theme[Any, Any]
@@ -34,6 +36,12 @@ object HashId {
     inline def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    
+    inline def setNonce(value: String | js.Function0[String]): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceFunction0(value: () => String): Self = StObject.set(x, "nonce", js.Any.fromFunction0(value))
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

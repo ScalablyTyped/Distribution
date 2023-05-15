@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FontSize
-import typings.std.Extract
+import typings.csstype.mod.Property.PaddingTop
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `416` extends StObject {
   
   var value: js.UndefOr[
-    (FontSize[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (FontSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[FontSize[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[FontSize[Double | String]]])
+    (PaddingTop[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]]) | (NonNullable[js.UndefOr[PaddingTop[Double | String]]]) | (PaddingTop[Double | String])
+      ]
     ])
   ] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MarginInlineEnd
-import typings.std.Extract
+import typings.csstype.mod.Property.ColumnRuleStyle
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `5` extends StObject {
   
   var value: js.UndefOr[
-    (MarginInlineEnd[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (MarginInlineEnd[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginInlineEnd[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[MarginInlineEnd[Double | String]]])
+    ColumnRuleStyle | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[ColumnRuleStyle]]] | ColumnRuleStyle | NonNullable[js.UndefOr[ColumnRuleStyle]]
+      ]
     ])
   ] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextJustify
-import typings.std.Extract
+import typings.csstype.mod.Property.Zoom
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `386` extends StObject {
   
   var value: js.UndefOr[
-    TextJustify | (js.Array[
-      (Extract[js.UndefOr[TextJustify | js.Array[NonNullable[js.UndefOr[TextJustify]]]], String]) | NonNullable[js.UndefOr[TextJustify]]
+    Zoom | (js.Array[
+      js.UndefOr[js.Array[NonNullable[js.UndefOr[Zoom]]] | NonNullable[js.UndefOr[Zoom]] | Zoom]
     ])
   ] = js.native
 }

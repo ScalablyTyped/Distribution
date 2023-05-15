@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderInlineEndColor
-import typings.std.Extract
+import typings.csstype.mod.Property.BorderInline
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `29` extends StObject {
   
   var value: js.UndefOr[
-    BorderInlineEndColor | (js.Array[
-      (Extract[
-        js.UndefOr[BorderInlineEndColor | js.Array[NonNullable[js.UndefOr[BorderInlineEndColor]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BorderInlineEndColor]]
+    (BorderInline[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[BorderInline[Double | String]]]]) | (BorderInline[Double | String]) | (NonNullable[js.UndefOr[BorderInline[Double | String]]])
+      ]
     ])
   ] = js.native
 }

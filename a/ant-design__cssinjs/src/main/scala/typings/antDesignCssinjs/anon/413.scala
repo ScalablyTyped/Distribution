@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBlockEndStyle
-import typings.std.Extract
+import typings.csstype.mod.Property.ContainIntrinsicSize
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `413` extends StObject {
   
   var value: js.UndefOr[
-    BorderBlockEndStyle | (js.Array[
-      (Extract[
-        js.UndefOr[BorderBlockEndStyle | js.Array[NonNullable[js.UndefOr[BorderBlockEndStyle]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BorderBlockEndStyle]]
+    (ContainIntrinsicSize[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[ContainIntrinsicSize[Double | String]]]]) | (ContainIntrinsicSize[Double | String]) | (NonNullable[js.UndefOr[ContainIntrinsicSize[Double | String]]])
+      ]
     ])
   ] = js.native
 }

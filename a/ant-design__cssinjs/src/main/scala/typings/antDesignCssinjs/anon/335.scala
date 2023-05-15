@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitAppearance
-import typings.std.Extract
+import typings.csstype.mod.Property.PaddingBlockStart
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `335` extends StObject {
   
   var value: js.UndefOr[
-    WebkitAppearance | (js.Array[
-      (Extract[
-        js.UndefOr[WebkitAppearance | js.Array[NonNullable[js.UndefOr[WebkitAppearance]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[WebkitAppearance]]
+    (PaddingBlockStart[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[PaddingBlockStart[Double | String]]]]) | (NonNullable[js.UndefOr[PaddingBlockStart[Double | String]]]) | (PaddingBlockStart[Double | String])
+      ]
     ])
   ] = js.native
 }

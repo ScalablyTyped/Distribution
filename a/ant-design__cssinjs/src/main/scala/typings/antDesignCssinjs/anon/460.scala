@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextUnderlineOffset
-import typings.std.Extract
+import typings.csstype.mod.Property.AlignSelf
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `460` extends StObject {
   
   var value: js.UndefOr[
-    (TextUnderlineOffset[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (TextUnderlineOffset[Double | String]) | (js.Array[NonNullable[js.UndefOr[TextUnderlineOffset[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[TextUnderlineOffset[Double | String]]])
+    AlignSelf | (js.Array[
+      js.UndefOr[
+        AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]] | NonNullable[js.UndefOr[AlignSelf]]
+      ]
     ])
   ] = js.native
 }

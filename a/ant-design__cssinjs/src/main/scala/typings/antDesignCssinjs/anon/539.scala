@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BreakBefore
-import typings.std.Extract
+import typings.csstype.mod.Property.MsScrollbarBaseColor
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `539` extends StObject {
   
   var value: js.UndefOr[
-    BreakBefore | (js.Array[
-      (Extract[js.UndefOr[BreakBefore | js.Array[NonNullable[js.UndefOr[BreakBefore]]]], String]) | NonNullable[js.UndefOr[BreakBefore]]
+    MsScrollbarBaseColor | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MsScrollbarBaseColor]]] | MsScrollbarBaseColor | NonNullable[js.UndefOr[MsScrollbarBaseColor]]
+      ]
     ])
   ] = js.native
 }

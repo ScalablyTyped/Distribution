@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.CaretColor
-import typings.std.Extract
+import typings.csstype.mod.Property.OverflowBlock
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `420` extends StObject {
   
   var value: js.UndefOr[
-    CaretColor | (js.Array[
-      (Extract[js.UndefOr[CaretColor | js.Array[NonNullable[js.UndefOr[CaretColor]]]], String]) | NonNullable[js.UndefOr[CaretColor]]
+    OverflowBlock | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[OverflowBlock]]] | NonNullable[js.UndefOr[OverflowBlock]] | OverflowBlock
+      ]
     ])
   ] = js.native
 }

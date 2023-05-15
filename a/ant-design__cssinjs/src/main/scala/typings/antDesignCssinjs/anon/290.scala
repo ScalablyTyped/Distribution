@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ColumnGap
-import typings.std.Extract
+import typings.csstype.mod.Property.MozOrient
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `290` extends StObject {
   
   var value: js.UndefOr[
-    (ColumnGap[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (ColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[ColumnGap[Double | String]]])
+    MozOrient | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[MozOrient]]] | MozOrient | NonNullable[js.UndefOr[MozOrient]]
+      ]
     ])
   ] = js.native
 }

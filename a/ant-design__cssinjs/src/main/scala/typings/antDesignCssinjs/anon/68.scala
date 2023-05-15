@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Transition
-import typings.std.Extract
+import typings.csstype.mod.Property.MaxInlineSize
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `68` extends StObject {
   
   var value: js.UndefOr[
-    Transition[String] | (js.Array[
-      (Extract[
-        js.UndefOr[Transition[String] | js.Array[NonNullable[js.UndefOr[Transition[String]]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[Transition[String]]]
+    (MaxInlineSize[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[MaxInlineSize[Double | String]]]]) | (MaxInlineSize[Double | String]) | (NonNullable[js.UndefOr[MaxInlineSize[Double | String]]])
+      ]
     ])
   ] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BoxOrient
-import typings.std.Extract
+import typings.csstype.mod.Property.MozOutlineRadiusTopleft
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `22` extends StObject {
   
   var value: js.UndefOr[
-    BoxOrient | (js.Array[
-      (Extract[js.UndefOr[BoxOrient | js.Array[NonNullable[js.UndefOr[BoxOrient]]]], String]) | NonNullable[js.UndefOr[BoxOrient]]
+    (MozOutlineRadiusTopleft[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[MozOutlineRadiusTopleft[Double | String]]]]) | (MozOutlineRadiusTopleft[Double | String]) | (NonNullable[js.UndefOr[MozOutlineRadiusTopleft[Double | String]]])
+      ]
     ])
   ] = js.native
 }

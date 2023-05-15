@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsFlowFrom
-import typings.std.Extract
+import typings.csstype.mod.Property.FontVariationSettings
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `531` extends StObject {
   
   var value: js.UndefOr[
-    MsFlowFrom | (js.Array[
-      (Extract[js.UndefOr[MsFlowFrom | js.Array[NonNullable[js.UndefOr[MsFlowFrom]]]], String]) | NonNullable[js.UndefOr[MsFlowFrom]]
+    FontVariationSettings | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[FontVariationSettings]]] | FontVariationSettings | NonNullable[js.UndefOr[FontVariationSettings]]
+      ]
     ])
   ] = js.native
 }

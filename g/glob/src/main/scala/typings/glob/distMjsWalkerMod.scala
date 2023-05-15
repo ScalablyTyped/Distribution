@@ -6,6 +6,7 @@ import typings.glob.distMjsProcessorMod.Processor
 import typings.glob.globBooleans.`false`
 import typings.glob.globBooleans.`true`
 import typings.minipass.mod.Minipass
+import typings.minipass.mod.Minipass.Events
 import typings.node.processMod.global.NodeJS.Platform
 import typings.std.AbortSignal
 import typings.std.Set
@@ -25,7 +26,7 @@ object distMjsWalkerMod {
       opts: O
     ) = this()
     
-    var results: /* import warning: importer.ImportType#apply Failed type conversion: O extends glob.glob/dist/mjs/walker.GWOFileTypesTrue ? minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> : O extends glob.glob/dist/mjs/walker.GWOFileTypesFalse ? minipass.minipass.Minipass<string, string> : O extends glob.glob/dist/mjs/walker.GWOFileTypesUnset ? minipass.minipass.Minipass<string, string> : minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any | string, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any | string> */ js.Any = js.native
+    var results: /* import warning: importer.ImportType#apply Failed type conversion: O extends glob.glob/dist/mjs/walker.GWOFileTypesTrue ? minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, minipass.minipass.Minipass.Events</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>> : O extends glob.glob/dist/mjs/walker.GWOFileTypesFalse ? minipass.minipass.Minipass<string, string, minipass.minipass.Minipass.Events<string>> : O extends glob.glob/dist/mjs/walker.GWOFileTypesUnset ? minipass.minipass.Minipass<string, string, minipass.minipass.Minipass.Events<string>> : minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any | string, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any | string, minipass.minipass.Minipass.Events</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any | string>> */ js.Any = js.native
     
     def stream(): MatchStream[O] = js.native
     
@@ -397,12 +398,15 @@ object distMjsWalkerMod {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
-    O extends glob.glob/dist/mjs/walker.GWOFileTypesTrue ? minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> : O extends glob.glob/dist/mjs/walker.GWOFileTypesFalse ? minipass.minipass.Minipass<string, string> : O extends glob.glob/dist/mjs/walker.GWOFileTypesUnset ? minipass.minipass.Minipass<string, string> : minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any | string, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any | string>
+    O extends glob.glob/dist/mjs/walker.GWOFileTypesTrue ? minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, minipass.minipass.Minipass.Events</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>> : O extends glob.glob/dist/mjs/walker.GWOFileTypesFalse ? minipass.minipass.Minipass<string, string, minipass.minipass.Minipass.Events<string>> : O extends glob.glob/dist/mjs/walker.GWOFileTypesUnset ? minipass.minipass.Minipass<string, string, minipass.minipass.Minipass.Events<string>> : minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any | string, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any | string, minipass.minipass.Minipass.Events</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any | string>>
     }}}
     */
   type MatchStream[O /* <: GlobWalkerOpts */] = Minipass[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    Events[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+    ]
   ]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.

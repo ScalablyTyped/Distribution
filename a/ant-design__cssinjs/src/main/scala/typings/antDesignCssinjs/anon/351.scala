@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ListStylePosition
-import typings.std.Extract
+import typings.csstype.mod.Property.RowGap
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `351` extends StObject {
   
   var value: js.UndefOr[
-    ListStylePosition | (js.Array[
-      (Extract[
-        js.UndefOr[ListStylePosition | js.Array[NonNullable[js.UndefOr[ListStylePosition]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[ListStylePosition]]
+    (RowGap[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[RowGap[Double | String]]]]) | (NonNullable[js.UndefOr[RowGap[Double | String]]]) | (RowGap[Double | String])
+      ]
     ])
   ] = js.native
 }

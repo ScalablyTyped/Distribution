@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BoxOrdinalGroup
-import typings.std.Extract
+import typings.csstype.mod.Property.FontVariantCaps
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `190` extends StObject {
   
   var value: js.UndefOr[
-    BoxOrdinalGroup | (js.Array[
-      (Extract[
-        js.UndefOr[BoxOrdinalGroup | js.Array[NonNullable[js.UndefOr[BoxOrdinalGroup]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BoxOrdinalGroup]]
+    FontVariantCaps | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[FontVariantCaps]]] | FontVariantCaps | NonNullable[js.UndefOr[FontVariantCaps]]
+      ]
     ])
   ] = js.native
 }

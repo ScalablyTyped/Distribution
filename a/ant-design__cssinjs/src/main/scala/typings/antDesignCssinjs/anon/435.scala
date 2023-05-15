@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitBorderBeforeWidth
-import typings.std.Extract
+import typings.csstype.mod.Property.StopOpacity
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `435` extends StObject {
   
   var value: js.UndefOr[
-    (WebkitBorderBeforeWidth[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (WebkitBorderBeforeWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[WebkitBorderBeforeWidth[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[WebkitBorderBeforeWidth[Double | String]]])
+    StopOpacity | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[StopOpacity]]] | NonNullable[js.UndefOr[StopOpacity]] | StopOpacity
+      ]
     ])
   ] = js.native
 }

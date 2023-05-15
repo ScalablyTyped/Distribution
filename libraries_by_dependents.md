@@ -813,7 +813,6 @@
 | 0.0 | [big-integer](./b/big-integer) | An arbitrary length integer library for Javascript
 | 0.0 | [big-rat](./b/big-rat) | A big integer rational number
 | 0.0 | [big_dot_js](./b/big_dot_js) | A small, fast, easy-to-use library for arbitrary-p
-| 0.0 | [bigbite__wp-cypress](./b/bigbite__wp-cypress) | WordPress end to end testing with Cypress.io
 | 0.0 | [bigbluebutton-js](./b/bigbluebutton-js) | JavaScript wrapper for BigBlueButton API
 | 0.0 | [bigi](./b/bigi) | Big integers.
 | 0.0 | [bigint](./b/bigint) | Arbitrary-precision integer arithmetic using libgm
@@ -1765,7 +1764,6 @@
 | 0.0 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot
 | 0.0 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot.
 | 0.0 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate
-| 0.0 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.0 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis
 | 0.0 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm
 | 0.0 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u
@@ -2545,6 +2543,7 @@
 | 0.0 | [expired](./e/expired) | Calculate when HTTP responses expire from the cach
 | 0.0 | [expired-storage](./e/expired-storage) | Micro JS lib that provide local & session storage 
 | 0.0 | [expirymanager](./e/expirymanager) | An object for efficiently managing key expiries
+| 0.0 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de
 | 0.0 | [expo-mixpanel-analytics](./e/expo-mixpanel-analytics) | Mixpanel integration for use with React Native app
 | 0.0 | [expo__bunyan](./e/expo__bunyan) | a JSON logging library for node.js services
 | 0.0 | [expo__code-signing-certif](./e/expo__code-signing-certificates) | A library for working with expo-updates code signi

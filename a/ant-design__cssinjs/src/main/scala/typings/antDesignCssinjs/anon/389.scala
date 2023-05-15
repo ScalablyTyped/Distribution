@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.JustifySelf
-import typings.std.Extract
+import typings.csstype.mod.Property.MinBlockSize
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `389` extends StObject {
   
   var value: js.UndefOr[
-    JustifySelf | (js.Array[
-      (Extract[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]], String]) | NonNullable[js.UndefOr[JustifySelf]]
+    (MinBlockSize[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[MinBlockSize[Double | String]]]]) | (MinBlockSize[Double | String]) | (NonNullable[js.UndefOr[MinBlockSize[Double | String]]])
+      ]
     ])
   ] = js.native
 }

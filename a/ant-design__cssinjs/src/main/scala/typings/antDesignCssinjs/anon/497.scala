@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PlaceSelf
-import typings.std.Extract
+import typings.csstype.mod.Property.ColorScheme
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `497` extends StObject {
   
   var value: js.UndefOr[
-    PlaceSelf | (js.Array[
-      (Extract[js.UndefOr[PlaceSelf | js.Array[NonNullable[js.UndefOr[PlaceSelf]]]], String]) | NonNullable[js.UndefOr[PlaceSelf]]
+    ColorScheme | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[ColorScheme]]] | ColorScheme | NonNullable[js.UndefOr[ColorScheme]]
+      ]
     ])
   ] = js.native
 }

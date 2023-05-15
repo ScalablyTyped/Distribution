@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollPaddingTop
-import typings.std.Extract
+import typings.csstype.mod.Property.PlaceContent
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `445` extends StObject {
   
   var value: js.UndefOr[
-    (ScrollPaddingTop[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (ScrollPaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollPaddingTop[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[ScrollPaddingTop[Double | String]]])
+    PlaceContent | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[PlaceContent]]] | NonNullable[js.UndefOr[PlaceContent]] | PlaceContent
+      ]
     ])
   ] = js.native
 }

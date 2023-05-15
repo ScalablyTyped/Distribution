@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OffsetPath
-import typings.std.Extract
+import typings.csstype.mod.Property.BoxShadow
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `107` extends StObject {
   
   var value: js.UndefOr[
-    OffsetPath | (js.Array[
-      (Extract[js.UndefOr[OffsetPath | js.Array[NonNullable[js.UndefOr[OffsetPath]]]], String]) | NonNullable[js.UndefOr[OffsetPath]]
+    BoxShadow | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[BoxShadow]]] | BoxShadow | NonNullable[js.UndefOr[BoxShadow]]
+      ]
     ])
   ] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Margin
-import typings.std.Extract
+import typings.csstype.mod.Property.StrokeOpacity
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `313` extends StObject {
   
   var value: js.UndefOr[
-    (Margin[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[Margin[Double | String]]])
+    StrokeOpacity | (js.Array[
+      js.UndefOr[
+        js.Array[NonNullable[js.UndefOr[StrokeOpacity]]] | NonNullable[js.UndefOr[StrokeOpacity]] | StrokeOpacity
+      ]
     ])
   ] = js.native
 }

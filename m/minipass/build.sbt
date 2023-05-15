@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "minipass"
-version := "5.0.0-110cf0"
+version := "6.0.0-e18c2e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

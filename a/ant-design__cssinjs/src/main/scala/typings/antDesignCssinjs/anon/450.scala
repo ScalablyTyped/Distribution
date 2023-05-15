@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FillRule
-import typings.std.Extract
+import typings.csstype.mod.Property.TextIndent
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `450` extends StObject {
   
   var value: js.UndefOr[
-    FillRule | (js.Array[
-      (Extract[js.UndefOr[FillRule | js.Array[NonNullable[js.UndefOr[FillRule]]]], String]) | NonNullable[js.UndefOr[FillRule]]
+    (TextIndent[Double | String]) | (js.Array[
+      js.UndefOr[
+        (js.Array[NonNullable[js.UndefOr[TextIndent[Double | String]]]]) | (NonNullable[js.UndefOr[TextIndent[Double | String]]]) | (TextIndent[Double | String])
+      ]
     ])
   ] = js.native
 }
