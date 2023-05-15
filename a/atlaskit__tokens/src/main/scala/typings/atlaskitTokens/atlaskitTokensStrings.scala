@@ -15,6 +15,8 @@ import typings.atlaskitTokens.distTypesThemeConfigMod.Palettes
 import typings.atlaskitTokens.distTypesThemeConfigMod.ThemeColorModes_
 import typings.atlaskitTokens.distTypesThemeConfigMod.ThemeIds_
 import typings.atlaskitTokens.distTypesThemeConfigMod.ThemeKinds
+import typings.atlaskitTokens.distTypesThemeConfigMod.ThemeOverrideIds
+import typings.atlaskitTokens.distTypesThemeConfigMod.ThemeOverrides
 import typings.atlaskitTokens.distTypesThemeConfigMod.Themes
 import typings.atlaskitTokens.distTypesTypesMod.Groups
 import typings.atlaskitTokens.distTypesTypesMod.PaletteCategory
@@ -3915,8 +3917,16 @@ object atlaskitTokensStrings {
   inline def `atlassian-dark`: `atlassian-dark` = "atlassian-dark".asInstanceOf[`atlassian-dark`]
   
   @js.native
-  sealed trait `atlassian-dark-iteration` extends StObject
+  sealed trait `atlassian-dark-iteration`
+    extends StObject
+       with ThemeOverrides
   inline def `atlassian-dark-iteration`: `atlassian-dark-iteration` = "atlassian-dark-iteration".asInstanceOf[`atlassian-dark-iteration`]
+  
+  @js.native
+  sealed trait `atlassian-dark-new-input-border`
+    extends StObject
+       with ThemeOverrides
+  inline def `atlassian-dark-new-input-border`: `atlassian-dark-new-input-border` = "atlassian-dark-new-input-border".asInstanceOf[`atlassian-dark-new-input-border`]
   
   @js.native
   sealed trait `atlassian-legacy-dark`
@@ -3935,6 +3945,12 @@ object atlaskitTokensStrings {
     extends StObject
        with Themes
   inline def `atlassian-light`: `atlassian-light` = "atlassian-light".asInstanceOf[`atlassian-light`]
+  
+  @js.native
+  sealed trait `atlassian-light-new-input-border`
+    extends StObject
+       with ThemeOverrides
+  inline def `atlassian-light-new-input-border`: `atlassian-light-new-input-border` = "atlassian-light-new-input-border".asInstanceOf[`atlassian-light-new-input-border`]
   
   @js.native
   sealed trait `atlassian-shape`
@@ -7765,8 +7781,16 @@ object atlaskitTokensStrings {
   inline def `dark mode neutral`: `dark mode neutral` = ("dark mode neutral").asInstanceOf[`dark mode neutral`]
   
   @js.native
-  sealed trait `dark-iteration` extends StObject
+  sealed trait `dark-iteration`
+    extends StObject
+       with ThemeOverrideIds
   inline def `dark-iteration`: `dark-iteration` = "dark-iteration".asInstanceOf[`dark-iteration`]
+  
+  @js.native
+  sealed trait `dark-new-input-border`
+    extends StObject
+       with ThemeOverrideIds
+  inline def `dark-new-input-border`: `dark-new-input-border` = "dark-new-input-border".asInstanceOf[`dark-new-input-border`]
   
   @js.native
   sealed trait defaultPalette
@@ -8210,6 +8234,12 @@ object atlaskitTokensStrings {
     extends StObject
        with PaletteCategory
   inline def `light mode neutral`: `light mode neutral` = ("light mode neutral").asInstanceOf[`light mode neutral`]
+  
+  @js.native
+  sealed trait `light-new-input-border`
+    extends StObject
+       with ThemeOverrideIds
+  inline def `light-new-input-border`: `light-new-input-border` = "light-new-input-border".asInstanceOf[`light-new-input-border`]
   
   @js.native
   sealed trait lineHeight

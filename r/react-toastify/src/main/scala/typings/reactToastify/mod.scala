@@ -1,8 +1,8 @@
 package typings.reactToastify
 
 import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.JSX.Element
 import typings.react.mod.RefAttributes
-import typings.react.mod.global.JSX.Element
 import typings.reactToastify.anon.ContainerRef
 import typings.reactToastify.anon.EventHandlers
 import typings.reactToastify.distComponentsIconsMod.BuiltInIconProps

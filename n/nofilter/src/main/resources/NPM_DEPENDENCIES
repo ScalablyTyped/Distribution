@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "nofilter" : "3.1.0"
+      "nofilter" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "nofilter" : "3.1.0"
+      "nofilter" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

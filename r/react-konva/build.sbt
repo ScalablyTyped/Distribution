@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-konva"
-version := "18.2.8-9e6470"
+version := "18.2.8-25da9c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.2-5927f3",
-  "org.scalablytyped" %%% "konva" % "9.0.1-ddfa39",
+  "org.scalablytyped" %%% "konva" % "9.0.2-b50f57",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4446ee",
   "org.scalablytyped" %%% "react" % "18.2-dt-20230506Z-14ab9d",
   "org.scalablytyped" %%% "react-reconciler" % "0.28-dt-20230112Z-404cd2",

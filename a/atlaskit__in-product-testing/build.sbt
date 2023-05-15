@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "atlaskit__in-product-testing"
-version := "0.2.0-bdd880"
+version := "0.2.1-537e3d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@atlaskit/analytics-next" : "9.1.1"
+      "@atlaskit/analytics-next" : "9.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@atlaskit/analytics-next" : "9.1.1"
+      "@atlaskit/analytics-next" : "9.1.2"
     }
   ],
   "compile-devDependencies" : [

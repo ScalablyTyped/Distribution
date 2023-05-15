@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "konva" : "9.0.1"
+      "konva" : "9.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "konva" : "9.0.1"
+      "konva" : "9.0.2"
     }
   ],
   "compile-devDependencies" : [

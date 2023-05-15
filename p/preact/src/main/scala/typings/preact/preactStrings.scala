@@ -632,6 +632,10 @@ object preactStrings {
   inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
+  sealed trait hidden extends StObject
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @js.native
   sealed trait horizontal extends StObject
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
@@ -1538,6 +1542,10 @@ object preactStrings {
   @js.native
   sealed trait `unsafe-url` extends StObject
   inline def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
+  
+  @js.native
+  sealed trait `until-found` extends StObject
+  inline def `until-found`: `until-found` = "until-found".asInstanceOf[`until-found`]
   
   @js.native
   sealed trait up extends StObject

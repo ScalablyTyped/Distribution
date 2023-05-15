@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "atlaskit__focus-ring"
-version := "1.3.0-f9555e"
+version := "1.3.1-e44b9b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

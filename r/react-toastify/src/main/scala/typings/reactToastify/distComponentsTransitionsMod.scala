@@ -1,6 +1,6 @@
 package typings.reactToastify
 
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.JSX.Element
 import typings.reactToastify.distTypesMod.ToastTransitionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

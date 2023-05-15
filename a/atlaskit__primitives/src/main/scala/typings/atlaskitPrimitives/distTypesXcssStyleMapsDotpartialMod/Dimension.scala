@@ -14,4 +14,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.sizeDot600
   - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.sizeDot1000
 */
-trait MaxBlockSize extends StObject
+trait Dimension extends StObject

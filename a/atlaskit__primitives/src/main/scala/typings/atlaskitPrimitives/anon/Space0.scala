@@ -7,46 +7,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Space0 extends StObject {
   
   @JSName("space.0")
-  val spaceDot0: /* var(--ds-space-0) */ String
+  var spaceDot0: /* var(--ds-space-0) */ String
   
   @JSName("space.025")
-  val spaceDot025: /* var(--ds-space-025) */ String
+  var spaceDot025: /* var(--ds-space-025) */ String
   
   @JSName("space.050")
-  val spaceDot050: /* var(--ds-space-050) */ String
+  var spaceDot050: /* var(--ds-space-050) */ String
   
   @JSName("space.075")
-  val spaceDot075: /* var(--ds-space-075) */ String
+  var spaceDot075: /* var(--ds-space-075) */ String
   
   @JSName("space.100")
-  val spaceDot100: /* var(--ds-space-100) */ String
+  var spaceDot100: /* var(--ds-space-100) */ String
   
   @JSName("space.1000")
-  val spaceDot1000: /* var(--ds-space-1000) */ String
+  var spaceDot1000: /* var(--ds-space-1000) */ String
   
   @JSName("space.150")
-  val spaceDot150: /* var(--ds-space-150) */ String
+  var spaceDot150: /* var(--ds-space-150) */ String
   
   @JSName("space.200")
-  val spaceDot200: /* var(--ds-space-200) */ String
+  var spaceDot200: /* var(--ds-space-200) */ String
   
   @JSName("space.250")
-  val spaceDot250: /* var(--ds-space-250) */ String
+  var spaceDot250: /* var(--ds-space-250) */ String
   
   @JSName("space.300")
-  val spaceDot300: /* var(--ds-space-300) */ String
+  var spaceDot300: /* var(--ds-space-300) */ String
   
   @JSName("space.400")
-  val spaceDot400: /* var(--ds-space-400) */ String
+  var spaceDot400: /* var(--ds-space-400) */ String
   
   @JSName("space.500")
-  val spaceDot500: /* var(--ds-space-500) */ String
+  var spaceDot500: /* var(--ds-space-500) */ String
   
   @JSName("space.600")
-  val spaceDot600: /* var(--ds-space-600) */ String
+  var spaceDot600: /* var(--ds-space-600) */ String
   
   @JSName("space.800")
-  val spaceDot800: /* var(--ds-space-800) */ String
+  var spaceDot800: /* var(--ds-space-800) */ String
 }
 object Space0 {
   

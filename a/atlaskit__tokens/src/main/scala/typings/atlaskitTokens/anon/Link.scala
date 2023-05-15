@@ -8,11 +8,11 @@ trait Link extends StObject {
   
   var link: DefaultPressed
   
-  var text: Information
+  var text: Discovery
 }
 object Link {
   
-  inline def apply(link: DefaultPressed, text: Information): Link = {
+  inline def apply(link: DefaultPressed, text: Discovery): Link = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Link]
   }
@@ -22,6 +22,6 @@ object Link {
     
     inline def setLink(value: DefaultPressed): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    inline def setText(value: Information): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Discovery): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

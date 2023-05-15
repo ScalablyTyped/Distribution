@@ -10,62 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-    * @typedef {object} NoFilterOptions
-    * @property {string|Buffer} [input=null] Input source data.
-    * @property {BufferEncoding} [inputEncoding=null] Encoding name for input,
-    *   ignored if input is not a String.
-    * @property {number} [highWaterMark=16384] The maximum number of bytes to
-    *   store in the internal buffer before ceasing to read from the underlying
-    *   resource. Default=16kb, or 16 for objectMode streams.
-    * @property {BufferEncoding} [encoding=null] If specified, then buffers
-    *   will be decoded to strings using the specified encoding.
-    * @property {boolean} [objectMode=false] Whether this stream should behave
-    *   as a stream of objects. Meaning that stream.read(n) returns a single
-    *   value instead of a Buffer of size n.
-    * @property {boolean} [decodeStrings=true] Whether or not to decode
-    *   strings into Buffers before passing them to _write().
-    * @property {boolean} [watchPipe=true] Whether to watch for 'pipe' events,
-    *   setting this stream's objectMode based on the objectMode of the input
-    *   stream.
-    * @property {boolean} [readError=false] If true, when a read() underflows,
-    *   throw an error.
-    * @property {boolean} [allowHalfOpen=true] If set to false, then the
-    *   stream will automatically end the writable side when the readable side
-    *   ends.
-    * @property {boolean} [autoDestroy=true] Whether this stream should
-    *   automatically call .destroy() on itself after ending.
-    * @property {BufferEncoding} [defaultEncoding='utf8'] The default encoding
-    *   that is used when no encoding is specified as an argument to
-    *   stream.write().
-    * @property {boolean} [emitClose=true] Whether or not the stream should
-    *   emit 'close' after it has been destroyed.
-    * @property {number} [readableHighWaterMark] Sets highWaterMark for the
-    *   readable side of the stream. Has no effect if highWaterMark is provided.
-    * @property {boolean} [readableObjectMode=false] Sets objectMode for
-    *   readable side of the stream. Has no effect if objectMode is true.
-    * @property {number} [writableHighWaterMark] Sets highWaterMark for the
-    *   writable side of the stream. Has no effect if highWaterMark is provided.
-    * @property {boolean} [writableObjectMode=false] Sets objectMode for
-    *   writable side of the stream. Has no effect if objectMode is true.
-    */
-  /**
-    * NoFilter stream.  Can be used to sink or source data to and from
-    * other node streams.  Implemented as the "identity" Transform stream
-    * (hence the name), but allows for inspecting data that is in-flight.
-    *
-    * Allows passing in source data (input, inputEncoding) at creation
-    * time.  Source data can also be passed in the options object.
-    *
-    * @example <caption>source and sink</caption>
-    * const source = new NoFilter('Zm9v', 'base64')
-    * source.pipe(process.stdout)
-    * const sink = new Nofilter()
-    * // NOTE: 'finish' fires when the input is done writing
-    * sink.on('finish', () => console.log(n.toString('base64')))
-    * process.stdin.pipe(sink)
-    */
-  @JSImport("nofilter", JSImport.Namespace)
+  @JSImport("nofilter", "NoFilter")
   @js.native
   /**
     * Create an instance of NoFilter.
@@ -75,7 +20,7 @@ object mod {
     *   name for input, ignored if input is not a String.
     * @param {NoFilterOptions} [options] Other options.
     */
-  open class ^ () extends NoFilter {
+  open class NoFilter () extends Transform {
     def this(input: String) = this()
     def this(input: Buffer) = this()
     def this(input: BufferEncoding) = this()
@@ -105,111 +50,6 @@ object mod {
     def this(input: NoFilterOptions, inputEncoding: Unit, options: NoFilterOptions) = this()
     def this(input: NoFilterOptions, inputEncoding: BufferEncoding, options: NoFilterOptions) = this()
     def this(input: NoFilterOptions, inputEncoding: NoFilterOptions, options: NoFilterOptions) = this()
-  }
-  @JSImport("nofilter", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    * The same as nf1.compare(nf2). Useful for sorting an Array of NoFilters.
-    *
-    * @param {NoFilter} nf1 The first object to compare.
-    * @param {NoFilter} nf2 The second object to compare.
-    * @returns {number} -1, 0, 1 for less, equal, greater.
-    * @throws {TypeError} Arguments not NoFilter instances.
-    * @example
-    * const arr = [new NoFilter('1234'), new NoFilter('0123')]
-    * arr.sort(NoFilter.compare)
-    */
-  /* static member */
-  inline def compare(nf1: NoFilter, nf2: NoFilter): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(nf1.asInstanceOf[js.Any], nf2.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  /**
-    * Returns a buffer which is the result of concatenating all the
-    * NoFilters in the list together. If the list has no items, or if
-    * the totalLength is 0, then it returns a zero-length buffer.
-    *
-    * If length is not provided, it is read from the buffers in the
-    * list. However, this adds an additional loop to the function, so
-    * it is faster to provide the length explicitly if you already know it.
-    *
-    * @param {Array<NoFilter>} list Inputs.  Must not be all either in object
-    *   mode, or all not in object mode.
-    * @param {number} [length=null] Number of bytes or objects to read.
-    * @returns {Buffer|Array} The concatenated values as an array if in object
-    *   mode, otherwise a Buffer.
-    * @throws {TypeError} List not array of NoFilters.
-    */
-  /* static member */
-  inline def concat(list: js.Array[NoFilter]): Buffer | js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any]).asInstanceOf[Buffer | js.Array[Any]]
-  inline def concat(list: js.Array[NoFilter], length: Double): Buffer | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer | js.Array[Any]]
-  
-  /**
-    * Is the given object a {NoFilter}?
-    *
-    * @param {object} obj The object to test.
-    * @returns {boolean} True if obj is a NoFilter.
-    */
-  /* static member */
-  inline def isNoFilter(obj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoFilter")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  /**
-    * @typedef {object} NoFilterOptions
-    * @property {string|Buffer} [input=null] Input source data.
-    * @property {BufferEncoding} [inputEncoding=null] Encoding name for input,
-    *   ignored if input is not a String.
-    * @property {number} [highWaterMark=16384] The maximum number of bytes to
-    *   store in the internal buffer before ceasing to read from the underlying
-    *   resource. Default=16kb, or 16 for objectMode streams.
-    * @property {BufferEncoding} [encoding=null] If specified, then buffers
-    *   will be decoded to strings using the specified encoding.
-    * @property {boolean} [objectMode=false] Whether this stream should behave
-    *   as a stream of objects. Meaning that stream.read(n) returns a single
-    *   value instead of a Buffer of size n.
-    * @property {boolean} [decodeStrings=true] Whether or not to decode
-    *   strings into Buffers before passing them to _write().
-    * @property {boolean} [watchPipe=true] Whether to watch for 'pipe' events,
-    *   setting this stream's objectMode based on the objectMode of the input
-    *   stream.
-    * @property {boolean} [readError=false] If true, when a read() underflows,
-    *   throw an error.
-    * @property {boolean} [allowHalfOpen=true] If set to false, then the
-    *   stream will automatically end the writable side when the readable side
-    *   ends.
-    * @property {boolean} [autoDestroy=true] Whether this stream should
-    *   automatically call .destroy() on itself after ending.
-    * @property {BufferEncoding} [defaultEncoding='utf8'] The default encoding
-    *   that is used when no encoding is specified as an argument to
-    *   stream.write().
-    * @property {boolean} [emitClose=true] Whether or not the stream should
-    *   emit 'close' after it has been destroyed.
-    * @property {number} [readableHighWaterMark] Sets highWaterMark for the
-    *   readable side of the stream. Has no effect if highWaterMark is provided.
-    * @property {boolean} [readableObjectMode=false] Sets objectMode for
-    *   readable side of the stream. Has no effect if objectMode is true.
-    * @property {number} [writableHighWaterMark] Sets highWaterMark for the
-    *   writable side of the stream. Has no effect if highWaterMark is provided.
-    * @property {boolean} [writableObjectMode=false] Sets objectMode for
-    *   writable side of the stream. Has no effect if objectMode is true.
-    */
-  /**
-    * NoFilter stream.  Can be used to sink or source data to and from
-    * other node streams.  Implemented as the "identity" Transform stream
-    * (hence the name), but allows for inspecting data that is in-flight.
-    *
-    * Allows passing in source data (input, inputEncoding) at creation
-    * time.  Source data can also be passed in the options object.
-    *
-    * @example <caption>source and sink</caption>
-    * const source = new NoFilter('Zm9v', 'base64')
-    * source.pipe(process.stdout)
-    * const sink = new Nofilter()
-    * // NOTE: 'finish' fires when the input is done writing
-    * sink.on('finish', () => console.log(n.toString('base64')))
-    * process.stdin.pipe(sink)
-    */
-  @js.native
-  trait NoFilter extends Transform {
     
     /**
       * @returns {Buffer[]} The current internal buffers.  They are layed out
@@ -219,11 +59,16 @@ object mod {
     def _bufArray(): js.Array[Buffer] = js.native
     
     /**
+      * @ignore
+      */
+    def _transform(chunk: Any, encoding: Any, callback: Any): Unit = js.native
+    
+    /**
       * Returns a number indicating whether this comes before or after or is the
       * same as the other NoFilter in sort order.
       *
       * @param {NoFilter} other The other object to compare.
-      * @returns {number} -1, 0, 1 for less, equal, greater.
+      * @returns {number} - -1, 0, 1 for less, equal, greater.
       * @throws {TypeError} Arguments must be NoFilters.
       */
     def compare(other: NoFilter): Double = js.native
@@ -263,6 +108,26 @@ object mod {
       */
     def promise(): js.Promise[Buffer | String] = js.native
     def promise(cb: js.Function): js.Promise[Buffer | String] = js.native
+    
+    /**
+      * Pulls some data out of the internal buffer and returns it.
+      * If there is no data available, then it will return null.
+      *
+      * If you pass in a size argument, then it will return that many bytes. If
+      * size bytes are not available, then it will return null, unless we've
+      * ended, in which case it will return the data remaining in the buffer.
+      *
+      * If you do not specify a size argument, then it will return all the data in
+      * the internal buffer.
+      *
+      * @param {number} [size=null] Number of bytes to read.
+      * @returns {string|Buffer|null} If no data or not enough data, null.  If
+      *   decoding output a string, otherwise a Buffer.
+      * @throws Error If readError is true and there was underflow.
+      * @fires NoFilter#read When read from.
+      */
+    def read(): String | Buffer | Null = js.native
+    def read(size: Double): String | Buffer | Null = js.native
     
     /**
       * Read a variable-sized JavaScript signed BigInt from the stream in 2's
@@ -637,6 +502,53 @@ object mod {
       */
     def writeUInt8(value: Double): Boolean = js.native
   }
+  /* static members */
+  object NoFilter {
+    
+    @JSImport("nofilter", "NoFilter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * The same as nf1.compare(nf2). Useful for sorting an Array of NoFilters.
+      *
+      * @param {NoFilter} nf1 The first object to compare.
+      * @param {NoFilter} nf2 The second object to compare.
+      * @returns {number} - -1, 0, 1 for less, equal, greater.
+      * @throws {TypeError} Arguments not NoFilter instances.
+      * @example
+      * const arr = [new NoFilter('1234'), new NoFilter('0123')]
+      * arr.sort(NoFilter.compare)
+      */
+    inline def compare(nf1: NoFilter, nf2: NoFilter): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(nf1.asInstanceOf[js.Any], nf2.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    /**
+      * Returns a buffer which is the result of concatenating all the
+      * NoFilters in the list together. If the list has no items, or if
+      * the totalLength is 0, then it returns a zero-length buffer.
+      *
+      * If length is not provided, it is read from the buffers in the
+      * list. However, this adds an additional loop to the function, so
+      * it is faster to provide the length explicitly if you already know it.
+      *
+      * @param {Array<NoFilter>} list Inputs.  Must not be all either in object
+      *   mode, or all not in object mode.
+      * @param {number} [length=null] Number of bytes or objects to read.
+      * @returns {Buffer|Array} The concatenated values as an array if in object
+      *   mode, otherwise a Buffer.
+      * @throws {TypeError} List not array of NoFilters.
+      */
+    inline def concat(list: js.Array[NoFilter]): Buffer | js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any]).asInstanceOf[Buffer | js.Array[Any]]
+    inline def concat(list: js.Array[NoFilter], length: Double): Buffer | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer | js.Array[Any]]
+    
+    /**
+      * Is the given object a {NoFilter}?
+      *
+      * @param {object} obj The object to test.
+      * @returns {boolean} True if obj is a NoFilter.
+      */
+    inline def isNoFilter(obj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoFilter")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  }
   
   trait NoFilterOptions extends StObject {
     
@@ -688,7 +600,7 @@ object mod {
     /**
       * Input source data.
       */
-    var input: js.UndefOr[String | typings.node.bufferMod.global.Buffer] = js.undefined
+    var input: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * Encoding name for input,
@@ -778,7 +690,7 @@ object mod {
       
       inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      inline def setInput(value: String | typings.node.bufferMod.global.Buffer): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String | Buffer): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
       inline def setInputEncoding(value: BufferEncoding): Self = StObject.set(x, "inputEncoding", value.asInstanceOf[js.Any])
       

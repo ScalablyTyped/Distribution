@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Boldest extends StObject {
   
-  var bold: DefaultHovered
+  var bold: DefaultPaintToken
   
-  var bolder: DefaultHovered
+  var bolder: DefaultPaintToken
   
-  var boldest: DefaultHovered
+  var boldest: DefaultPaintToken
 }
 object Boldest {
   
-  inline def apply(bold: DefaultHovered, bolder: DefaultHovered, boldest: DefaultHovered): Boldest = {
+  inline def apply(bold: DefaultPaintToken, bolder: DefaultPaintToken, boldest: DefaultPaintToken): Boldest = {
     val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], bolder = bolder.asInstanceOf[js.Any], boldest = boldest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Boldest]
   }
@@ -22,10 +22,10 @@ object Boldest {
   @scala.inline
   implicit open class MutableBuilder[Self <: Boldest] (val x: Self) extends AnyVal {
     
-    inline def setBold(value: DefaultHovered): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: DefaultPaintToken): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
-    inline def setBolder(value: DefaultHovered): Self = StObject.set(x, "bolder", value.asInstanceOf[js.Any])
+    inline def setBolder(value: DefaultPaintToken): Self = StObject.set(x, "bolder", value.asInstanceOf[js.Any])
     
-    inline def setBoldest(value: DefaultHovered): Self = StObject.set(x, "boldest", value.asInstanceOf[js.Any])
+    inline def setBoldest(value: DefaultPaintToken): Self = StObject.set(x, "boldest", value.asInstanceOf[js.Any])
   }
 }

@@ -8,7 +8,7 @@ import typings.atlaskitPrimitives.distTypesComponentsStackMod.AlignBlock
 import typings.atlaskitPrimitives.distTypesComponentsStackMod.AlignInline
 import typings.atlaskitPrimitives.distTypesComponentsStackMod.Grow
 import typings.atlaskitPrimitives.distTypesComponentsStackMod.Spread
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Gap
+import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Space
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
@@ -38,7 +38,7 @@ trait PickStackPropsElementType extends StObject {
     */
   var ref: js.UndefOr[Ref[Any]] = js.undefined
   
-  var space: js.UndefOr[Gap] = js.undefined
+  var space: js.UndefOr[Space] = js.undefined
   
   var spread: js.UndefOr[Spread] = js.undefined
   
@@ -88,7 +88,7 @@ object PickStackPropsElementType {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    inline def setSpace(value: Gap): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: Space): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     

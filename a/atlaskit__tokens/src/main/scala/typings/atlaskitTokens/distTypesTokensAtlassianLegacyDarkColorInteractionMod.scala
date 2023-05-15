@@ -1,6 +1,6 @@
 package typings.atlaskitTokens
 
-import typings.atlaskitTokens.anon.InteractionHoveredPaintToken
+import typings.atlaskitTokens.anon.InteractionPressedPaintToken
 import typings.atlaskitTokens.atlaskitTokensStrings.attributes
 import typings.atlaskitTokens.distTypesTypesMod.OmitDistributive
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ object distTypesTokensAtlassianLegacyDarkColorInteractionMod {
     
     @JSImport("@atlaskit/tokens/dist/types/tokens/atlassian-legacy-dark/color/interaction", "default.color")
     @js.native
-    def color: OmitDistributive[InteractionHoveredPaintToken, attributes] = js.native
-    inline def color_=(x: OmitDistributive[InteractionHoveredPaintToken, attributes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
+    def color: OmitDistributive[InteractionPressedPaintToken, attributes] = js.native
+    inline def color_=(x: OmitDistributive[InteractionPressedPaintToken, attributes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
   }
 }

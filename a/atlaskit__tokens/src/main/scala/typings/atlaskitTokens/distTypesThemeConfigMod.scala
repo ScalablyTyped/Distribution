@@ -3,8 +3,6 @@ package typings.atlaskitTokens
 import typings.atlaskitTokens.anon.DisplayName
 import typings.atlaskitTokens.anon.typeExtractThemeKindsspac
 import typings.atlaskitTokens.anon.typecolormodeDataColorMod
-import typings.atlaskitTokens.atlaskitTokensStrings.`atlassian-dark-iteration`
-import typings.atlaskitTokens.atlaskitTokensStrings.`dark-iteration`
 import typings.atlaskitTokens.atlaskitTokensStrings.`legacy-dark`
 import typings.atlaskitTokens.atlaskitTokensStrings.`legacy-light`
 import typings.atlaskitTokens.atlaskitTokensStrings.auto
@@ -89,6 +87,18 @@ object distTypesThemeConfigMod {
     def atlassianDarkIteration: DisplayName = js.native
     
     inline def atlassianDarkIteration_=(x: DisplayName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("atlassian-dark-iteration")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/theme-config", "themeOverrideConfig.atlassian-dark-new-input-border")
+    @js.native
+    def atlassianDarkNewInputBorder: DisplayName = js.native
+    
+    inline def atlassianDarkNewInputBorder_=(x: DisplayName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("atlassian-dark-new-input-border")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/theme-config", "themeOverrideConfig.atlassian-light-new-input-border")
+    @js.native
+    def atlassianLightNewInputBorder: DisplayName = js.native
+    
+    inline def atlassianLightNewInputBorder_=(x: DisplayName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("atlassian-light-new-input-border")(x.asInstanceOf[js.Any])
   }
   
   type DataColorModes = Exclude[ThemeColorModes_, auto]
@@ -193,9 +203,35 @@ object distTypesThemeConfigMod {
     inline def typography: typings.atlaskitTokens.atlaskitTokensStrings.typography = "typography".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.typography]
   }
   
-  type ThemeOverrideIds = `dark-iteration`
+  /* Rewritten from type alias, can be one of: 
+    - typings.atlaskitTokens.atlaskitTokensStrings.`dark-iteration`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`light-new-input-border`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`dark-new-input-border`
+  */
+  trait ThemeOverrideIds extends StObject
+  object ThemeOverrideIds {
+    
+    inline def `dark-iteration`: typings.atlaskitTokens.atlaskitTokensStrings.`dark-iteration` = "dark-iteration".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`dark-iteration`]
+    
+    inline def `dark-new-input-border`: typings.atlaskitTokens.atlaskitTokensStrings.`dark-new-input-border` = "dark-new-input-border".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`dark-new-input-border`]
+    
+    inline def `light-new-input-border`: typings.atlaskitTokens.atlaskitTokensStrings.`light-new-input-border` = "light-new-input-border".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`light-new-input-border`]
+  }
   
-  type ThemeOverrides = `atlassian-dark-iteration`
+  /* Rewritten from type alias, can be one of: 
+    - typings.atlaskitTokens.atlaskitTokensStrings.`atlassian-dark-iteration`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`atlassian-light-new-input-border`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`atlassian-dark-new-input-border`
+  */
+  trait ThemeOverrides extends StObject
+  object ThemeOverrides {
+    
+    inline def `atlassian-dark-iteration`: typings.atlaskitTokens.atlaskitTokensStrings.`atlassian-dark-iteration` = "atlassian-dark-iteration".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`atlassian-dark-iteration`]
+    
+    inline def `atlassian-dark-new-input-border`: typings.atlaskitTokens.atlaskitTokensStrings.`atlassian-dark-new-input-border` = "atlassian-dark-new-input-border".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`atlassian-dark-new-input-border`]
+    
+    inline def `atlassian-light-new-input-border`: typings.atlaskitTokens.atlaskitTokensStrings.`atlassian-light-new-input-border` = "atlassian-light-new-input-border".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`atlassian-light-new-input-border`]
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.atlaskitTokens.atlaskitTokensStrings.`atlassian-light`

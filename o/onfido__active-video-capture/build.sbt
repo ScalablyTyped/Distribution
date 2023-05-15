@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "onfido__active-video-capture"
-version := "0.27.1-4c7e54"
+version := "0.27.1-db9b25"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.2-5927f3",
-  "org.scalablytyped" %%% "preact" % "10.13.2-13e901",
+  "org.scalablytyped" %%% "preact" % "10.14.0-c06e85",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4446ee",
   "org.scalablytyped" %%% "react" % "18.2-dt-20230506Z-14ab9d",
   "org.scalablytyped" %%% "react-webcam" % "7.0.1-3bdacf",

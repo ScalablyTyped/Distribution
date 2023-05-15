@@ -8,8 +8,7 @@ import typings.atlaskitPrimitives.distTypesComponentsInlineMod.AlignBlock
 import typings.atlaskitPrimitives.distTypesComponentsInlineMod.AlignInline
 import typings.atlaskitPrimitives.distTypesComponentsInlineMod.Grow
 import typings.atlaskitPrimitives.distTypesComponentsInlineMod.Spread
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Gap
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.RowGap
+import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Space
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
@@ -39,13 +38,13 @@ trait PickInlinePropsElementTyp extends StObject {
     */
   var ref: js.UndefOr[Ref[Any]] = js.undefined
   
-  var rowSpace: js.UndefOr[RowGap] = js.undefined
+  var rowSpace: js.UndefOr[Space] = js.undefined
   
   var separator: js.UndefOr[String] = js.undefined
   
   var shouldWrap: js.UndefOr[Boolean] = js.undefined
   
-  var space: js.UndefOr[Gap] = js.undefined
+  var space: js.UndefOr[Space] = js.undefined
   
   var spread: js.UndefOr[Spread] = js.undefined
   
@@ -95,7 +94,7 @@ object PickInlinePropsElementTyp {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    inline def setRowSpace(value: RowGap): Self = StObject.set(x, "rowSpace", value.asInstanceOf[js.Any])
+    inline def setRowSpace(value: Space): Self = StObject.set(x, "rowSpace", value.asInstanceOf[js.Any])
     
     inline def setRowSpaceUndefined: Self = StObject.set(x, "rowSpace", js.undefined)
     
@@ -107,7 +106,7 @@ object PickInlinePropsElementTyp {
     
     inline def setShouldWrapUndefined: Self = StObject.set(x, "shouldWrap", js.undefined)
     
-    inline def setSpace(value: Gap): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: Space): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     

@@ -9,6 +9,7 @@ import typings.preact.preactStrings.`same-origin`
 import typings.preact.preactStrings.`strict-origin-when-cross-origin`
 import typings.preact.preactStrings.`strict-origin`
 import typings.preact.preactStrings.`unsafe-url`
+import typings.preact.preactStrings.`until-found`
 import typings.preact.preactStrings.async
 import typings.preact.preactStrings.auto
 import typings.preact.preactStrings.characters
@@ -16,6 +17,7 @@ import typings.preact.preactStrings.done
 import typings.preact.preactStrings.eager
 import typings.preact.preactStrings.enter
 import typings.preact.preactStrings.go
+import typings.preact.preactStrings.hidden
 import typings.preact.preactStrings.ltr
 import typings.preact.preactStrings.next
 import typings.preact.preactStrings.no
@@ -179,7 +181,9 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
   
   var height: js.UndefOr[Double | String | (SignalLike[js.UndefOr[Double | String]])] = js.undefined
   
-  var hidden: js.UndefOr[Boolean | SignalLike[js.UndefOr[Boolean]]] = js.undefined
+  var hidden: js.UndefOr[
+    Boolean | typings.preact.preactStrings.hidden | `until-found` | (SignalLike[js.UndefOr[Boolean | typings.preact.preactStrings.hidden | `until-found`]])
+  ] = js.undefined
   
   var high: js.UndefOr[Double | SignalLike[js.UndefOr[Double]]] = js.undefined
   
@@ -195,7 +199,9 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
   
   var id: js.UndefOr[String | SignalLike[js.UndefOr[String]]] = js.undefined
   
-  var indeterminate: js.UndefOr[Boolean | SignalLike[Boolean]] = js.undefined
+  var indeterminate: js.UndefOr[Boolean | SignalLike[js.UndefOr[Boolean]]] = js.undefined
+  
+  var inert: js.UndefOr[Boolean | SignalLike[js.UndefOr[Boolean]]] = js.undefined
   
   var inlist: js.UndefOr[Any] = js.undefined
   
@@ -644,7 +650,9 @@ object HTMLAttributes {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHidden(value: Boolean | SignalLike[js.UndefOr[Boolean]]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(
+      value: Boolean | hidden | `until-found` | (SignalLike[js.UndefOr[Boolean | hidden | `until-found`]])
+    ): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
@@ -676,9 +684,13 @@ object HTMLAttributes {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setIndeterminate(value: Boolean | SignalLike[Boolean]): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
+    inline def setIndeterminate(value: Boolean | SignalLike[js.UndefOr[Boolean]]): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
     
     inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
+    
+    inline def setInert(value: Boolean | SignalLike[js.UndefOr[Boolean]]): Self = StObject.set(x, "inert", value.asInstanceOf[js.Any])
+    
+    inline def setInertUndefined: Self = StObject.set(x, "inert", js.undefined)
     
     inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     

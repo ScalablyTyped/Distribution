@@ -20,6 +20,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object typesLibEncoderMod {
   
   /**
+    * @typedef ObjectOptions
+    * @property {boolean} [indefinite = false] Force indefinite encoding for this
+    *   object.
+    * @property {boolean} [skipTypes = false] Do not use available type mappings
+    *   for this object, but encode it as a "normal" JS object would be.
+    */
+  /**
     * @typedef EncodingOptions
     * @property {any[]|object} [genTypes=[]] Array of pairs of
     *   `type`, `function(Encoder)` for semantic types to be encoded.  Not
@@ -151,10 +158,10 @@ object typesLibEncoderMod {
   /**
     * Encode one JavaScript object using the given options.
     *
-    * @static
     * @param {any} obj The object to encode.
     * @param {EncodingOptions} [options={}] Passed to the Encoder constructor.
     * @returns {Buffer} The encoded objects.
+    * @static
     */
   /* static member */
   inline def encodeOne(obj: Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeOne")(obj.asInstanceOf[js.Any]).asInstanceOf[Buffer]
@@ -226,7 +233,10 @@ object typesLibEncoderMod {
     * @ignore
     */
   /* static member */
-  inline def pushNoFilter(gen: Encoder, obj: typings.nofilter.mod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_pushNoFilter")(gen.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def pushNoFilter(
+    gen: Encoder,
+    obj: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NoFilter */ Any
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_pushNoFilter")(gen.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * @param {Encoder} gen Encoder.
@@ -278,6 +288,13 @@ object typesLibEncoderMod {
     */
   type EncodeFunction = js.Function2[/* enc */ Encoder, /* val */ Any, Boolean]
   
+  /**
+    * @typedef ObjectOptions
+    * @property {boolean} [indefinite = false] Force indefinite encoding for this
+    *   object.
+    * @property {boolean} [skipTypes = false] Do not use available type mappings
+    *   for this object, but encode it as a "normal" JS object would be.
+    */
   /**
     * @typedef EncodingOptions
     * @property {any[]|object} [genTypes=[]] Array of pairs of
@@ -351,7 +368,7 @@ object typesLibEncoderMod {
       * Choose the best float representation for a number and encode it.
       *
       * @param {number} obj A number that is known to be not-integer, but not
-      *    how many bytes of precision it needs.
+      *   how many bytes of precision it needs.
       * @returns {boolean} True on success.
       * @ignore
       */
@@ -377,13 +394,13 @@ object typesLibEncoderMod {
       * don't remember why).
       *
       * @param {number} obj A positive number that is known to be an integer,
-      *    but not how many bytes of precision it needs.
+      *   but not how many bytes of precision it needs.
       * @param {number} mt The Major Type number to combine with the integer.
-      *    Not yet shifted.
+      *   Not yet shifted.
       * @param {number} [orig] The number before it was transformed to positive.
-      *    If the mt is NEG_INT, and the positive number is over MAX_SAFE_INT,
-      *    then we'll encode this as a float rather than making the number
-      *    negative again and losing precision.
+      *   If the mt is NEG_INT, and the positive number is over MAX_SAFE_INT,
+      *   then we'll encode this as a float rather than making the number
+      *   negative again and losing precision.
       * @returns {boolean} True on success.
       * @ignore
       */
@@ -394,7 +411,7 @@ object typesLibEncoderMod {
       * Choose the best integer representation for a number and encode it.
       *
       * @param {number} obj A number that is known to be an integer,
-      *    but not how many bytes of precision it needs.
+      *   but not how many bytes of precision it needs.
       * @returns {boolean} True on success.
       * @ignore
       */
@@ -429,11 +446,13 @@ object typesLibEncoderMod {
     
     /**
       * @param {object} obj Object to encode.
+      * @param {ObjectOptions} [opts] Options for encoding this object.
       * @returns {boolean} True on success.
       * @throws {Error} Loop detected.
       * @ignore
       */
-    def _pushObject(obj: js.Object, opts: Any): Boolean = js.native
+    def _pushObject(obj: js.Object): Boolean = js.native
+    def _pushObject(obj: js.Object, opts: ObjectOptions): Boolean = js.native
     
     /**
       * @param {string} obj String to encode.
@@ -645,6 +664,40 @@ object typesLibEncoderMod {
       inline def setOmitUndefinedProperties(value: Boolean): Self = StObject.set(x, "omitUndefinedProperties", value.asInstanceOf[js.Any])
       
       inline def setOmitUndefinedPropertiesUndefined: Self = StObject.set(x, "omitUndefinedProperties", js.undefined)
+    }
+  }
+  
+  trait ObjectOptions extends StObject {
+    
+    /**
+      * Force indefinite encoding for this
+      * object.
+      */
+    var indefinite: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Do not use available type mappings
+      * for this object, but encode it as a "normal" JS object would be.
+      */
+    var skipTypes: js.UndefOr[Boolean] = js.undefined
+  }
+  object ObjectOptions {
+    
+    inline def apply(): ObjectOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectOptions] (val x: Self) extends AnyVal {
+      
+      inline def setIndefinite(value: Boolean): Self = StObject.set(x, "indefinite", value.asInstanceOf[js.Any])
+      
+      inline def setIndefiniteUndefined: Self = StObject.set(x, "indefinite", js.undefined)
+      
+      inline def setSkipTypes(value: Boolean): Self = StObject.set(x, "skipTypes", value.asInstanceOf[js.Any])
+      
+      inline def setSkipTypesUndefined: Self = StObject.set(x, "skipTypes", js.undefined)
     }
   }
   

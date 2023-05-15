@@ -1,6 +1,6 @@
 package typings.atlaskitTokens
 
-import typings.atlaskitTokens.anon.Border
+import typings.atlaskitTokens.anon.Icon
 import typings.atlaskitTokens.atlaskitTokensStrings.value
 import typings.atlaskitTokens.distTypesTypesMod.OmitDistributive
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ object distTypesTokensDefaultColorAccentMod {
     
     @JSImport("@atlaskit/tokens/dist/types/tokens/default/color/accent", "default.color")
     @js.native
-    def color: OmitDistributive[Border, value] = js.native
-    inline def color_=(x: OmitDistributive[Border, value]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
+    def color: OmitDistributive[Icon, value] = js.native
+    inline def color_=(x: OmitDistributive[Icon, value]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
   }
 }

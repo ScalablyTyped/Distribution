@@ -829,7 +829,6 @@
 | 0.808397558153292 | [angular__cli](./a/angular__cli) | CLI tool for Angular
 | 0.8083883443556319 | [sourcemap-codec](./s/sourcemap-codec) | Encode/decode sourcemap mappings
 | 0.8083051631706806 | [proper-lockfile](./p/proper-lockfile) | A inter-process and inter-machine lockfile utility
-| 0.8080856965007011 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de
 | 0.8080507144396566 | [react-element-to-jsx-stri](./r/react-element-to-jsx-string) | Turn a ReactElement into the corresponding JSX str
 | 0.8080489415201968 | [proxyquire](./p/proxyquire) | Proxies nodejs require in order to allow overridin
 | 0.8079365743204434 | [is-alphabetical](./i/is-alphabetical) | Check if a character is alphabetical
@@ -4517,7 +4516,6 @@
 | 0.6715263933221988 | [react-dnd__shallowequal](./r/react-dnd__shallowequal) | Like lodash isEqualWith but for shallow equal.
 | 0.6715028593119714 | [moddle](./m/moddle) | A library for importing meta-model based file form
 | 0.6714925649878302 | [cassanknex](./c/cassanknex) | An Apache Cassandra CQL query builder with support
-| 0.6714853737212092 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.6714584335377032 | [jss-plugin-global](./j/jss-plugin-global) | Global styles for JSS
 | 0.6714458699011386 | [progress-stream](./p/progress-stream) | Read the progress of a stream
 | 0.6714229772885696 | [totp-generator](./t/totp-generator) | Generate TOTP tokens from key

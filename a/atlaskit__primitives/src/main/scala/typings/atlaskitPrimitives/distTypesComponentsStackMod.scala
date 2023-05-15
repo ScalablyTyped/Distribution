@@ -7,7 +7,7 @@ import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.div
 import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.ol
 import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.span
 import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.ul
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Gap
+import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Space
 import typings.react.mod.ElementType
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.MemoExoticComponent
@@ -117,7 +117,7 @@ object distTypesComponentsStackMod extends Shortcut {
     /**
       * Represents the space between each child.
       */
-    var space: js.UndefOr[Gap] = js.undefined
+    var space: js.UndefOr[Space] = js.undefined
     
     /**
       * Used to distribute the children along the main axis.
@@ -165,7 +165,7 @@ object distTypesComponentsStackMod extends Shortcut {
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      inline def setSpace(value: Gap): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: Space): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
       inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
       

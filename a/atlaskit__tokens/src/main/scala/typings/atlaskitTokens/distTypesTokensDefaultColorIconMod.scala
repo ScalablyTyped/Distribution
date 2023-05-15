@@ -1,6 +1,6 @@
 package typings.atlaskitTokens
 
-import typings.atlaskitTokens.anon.Icon
+import typings.atlaskitTokens.anon.IconDisabled
 import typings.atlaskitTokens.atlaskitTokensStrings.value
 import typings.atlaskitTokens.distTypesTypesMod.OmitDistributive
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ object distTypesTokensDefaultColorIconMod {
     
     @JSImport("@atlaskit/tokens/dist/types/tokens/default/color/icon", "default.color")
     @js.native
-    def color: OmitDistributive[Icon, value] = js.native
-    inline def color_=(x: OmitDistributive[Icon, value]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
+    def color: OmitDistributive[IconDisabled, value] = js.native
+    inline def color_=(x: OmitDistributive[IconDisabled, value]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
   }
 }

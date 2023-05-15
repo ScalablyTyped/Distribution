@@ -2809,8 +2809,6 @@
 | [expired](./e/expired) | Calculate when HTTP responses expire from the cach | calculate, HTTP, response, expires, expire, expirey, cache, headers, pure |
 | [expired-storage](./e/expired-storage) | Micro JS lib that provide local & session storage  | localStorage, sessionStorage, storage, expiration, expired, temporary |
 | [expirymanager](./e/expirymanager) | An object for efficiently managing key expiries | expiry, expire, expirymanager, timeout, volatile, key |
-| [expo-constants](./e/expo-constants) | - | - |
-| [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de | react-native, expo, file-system, file |
 | [expo-mixpanel-analytics](./e/expo-mixpanel-analytics) | Mixpanel integration for use with React Native app | react, native, expo, mixpanel, analytics |
 | [expo-modules-autolinking](./e/expo-modules-autolinking) | - | - |
 | [expo__bunyan](./e/expo__bunyan) | a JSON logging library for node.js services | log, logging, log4j, json, bunyan |
@@ -4605,7 +4603,6 @@
 | [indefinite-observable](./i/indefinite-observable) |   | - |
 | [indent-string](./i/indent-string) | Indent each line in a string | indent, string, pad, align, line, text, each, every |
 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria | index, array, helper |
-| [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy | - |
 | [inert](./i/inert) | Static file and directory handlers plugin for hapi | file, directory, handler, hapi, plugin |
 | [ineum](./i/ineum) | - | - |
 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f | inferno, performance, framework, interfaces, user interfaces, html, renderToString, server, dom, browser, rollup, vdom |

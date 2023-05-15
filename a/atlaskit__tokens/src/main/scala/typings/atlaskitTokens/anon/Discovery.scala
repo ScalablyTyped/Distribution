@@ -26,6 +26,8 @@ trait Discovery extends StObject {
   
   var subtle: PaintToken[BaseToken]
   
+  var subtlest: PaintToken[BaseToken]
+  
   var success: PaintToken[BaseToken]
   
   var warning: Inverse
@@ -42,10 +44,11 @@ object Discovery {
     inverse: PaintToken[BaseToken],
     selected: PaintToken[BaseToken],
     subtle: PaintToken[BaseToken],
+    subtlest: PaintToken[BaseToken],
     success: PaintToken[BaseToken],
     warning: Inverse
   ): Discovery = {
-    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], danger = danger.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], discovery = discovery.asInstanceOf[js.Any], information = information.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], subtle = subtle.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], danger = danger.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], discovery = discovery.asInstanceOf[js.Any], information = information.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], subtle = subtle.asInstanceOf[js.Any], subtlest = subtlest.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
     __obj.updateDynamic("[default]")(`[default]`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Discovery]
   }
@@ -68,6 +71,8 @@ object Discovery {
     inline def setSelected(value: PaintToken[BaseToken]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     inline def setSubtle(value: PaintToken[BaseToken]): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
+    
+    inline def setSubtlest(value: PaintToken[BaseToken]): Self = StObject.set(x, "subtlest", value.asInstanceOf[js.Any])
     
     inline def setSuccess(value: PaintToken[BaseToken]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     

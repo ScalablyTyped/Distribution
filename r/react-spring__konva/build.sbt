@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-spring__konva"
-version := "9.7.2-0719bd"
+version := "9.7.2-710efe"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.2-5927f3",
-  "org.scalablytyped" %%% "konva" % "9.0.1-ddfa39",
+  "org.scalablytyped" %%% "konva" % "9.0.2-b50f57",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4446ee",
   "org.scalablytyped" %%% "react" % "18.2-dt-20230506Z-14ab9d",
-  "org.scalablytyped" %%% "react-konva" % "18.2.8-9e6470",
+  "org.scalablytyped" %%% "react-konva" % "18.2.8-25da9c",
   "org.scalablytyped" %%% "react-reconciler" % "0.28-dt-20230112Z-404cd2",
   "org.scalablytyped" %%% "react-spring__animated" % "9.7.2-f9bdf2",
   "org.scalablytyped" %%% "react-spring__core" % "9.7.2-4bc936",

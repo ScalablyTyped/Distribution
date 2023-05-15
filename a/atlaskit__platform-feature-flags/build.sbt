@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "atlaskit__platform-feature-flags"
-version := "0.2.0-29d913"
+version := "0.2.1-139c77"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

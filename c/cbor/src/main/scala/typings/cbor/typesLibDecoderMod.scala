@@ -68,7 +68,7 @@ object typesLibDecoderMod {
     var tags: StringDictionary[TagFunction] = js.native
     
     /* CompleteClass */
-    var valueBytes: typings.nofilter.mod.^ = js.native
+    var valueBytes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NoFilter */ Any = js.native
   }
   @JSImport("cbor/types/lib/decoder", JSImport.Namespace)
   @js.native
@@ -88,7 +88,6 @@ object typesLibDecoderMod {
     * Decode all of the CBOR items in the input.  This will error if there are
     * more bytes left over at the end.
     *
-    * @static
     * @param {BufferLike} input What to parse?
     * @param {DecoderOptions|decodeAllCallback|string} [options={}]
     *   Decoding options, the callback, or the input encoding.
@@ -96,6 +95,7 @@ object typesLibDecoderMod {
     * @returns {Promise<Array<ExtendedResults>|Array<any>>} Even if callback
     *   is specified.
     * @throws {TypeError} No input specified.
+    * @static
     */
   /* static member */
   inline def decodeAll(input: BufferLike): js.Promise[js.Array[Any | ExtendedResults]] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeAll")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any | ExtendedResults]]]
@@ -131,13 +131,13 @@ object typesLibDecoderMod {
     * an exception if the input is not valid CBOR; a zero-length input will
     * return an empty array.
     *
-    * @static
     * @param {BufferLike} input What to parse?
     * @param {DecoderOptions|string} [options={}] Options or encoding
     *   for input.
     * @returns {Array<ExtendedResults>|Array<any>} Array of all found items.
     * @throws {TypeError} No input provided.
     * @throws {Error} Insufficient data provided.
+    * @static
     */
   /* static member */
   inline def decodeAllSync(input: BufferLike): js.Array[Any | ExtendedResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeAllSync")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any | ExtendedResults]]
@@ -151,7 +151,6 @@ object typesLibDecoderMod {
     * {Decoder.NOT_FOUND} Symbol in the callback if no data was found and the
     * `required` option is false.
     *
-    * @static
     * @param {BufferLike} input What to parse?
     * @param {DecoderOptions|decodeCallback|string} [options={}] Options, the
     *   callback, or input encoding.
@@ -159,6 +158,7 @@ object typesLibDecoderMod {
     * @returns {Promise<ExtendedResults|any>} Returned even if callback is
     *   specified.
     * @throws {TypeError} No input provided.
+    * @static
     */
   /* static member */
   inline def decodeFirst(input: BufferLike): js.Promise[ExtendedResults | Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ExtendedResults | Any]]
@@ -175,7 +175,6 @@ object typesLibDecoderMod {
     * an exception if the input is not valid CBOR, or if there are more bytes
     * left over at the end (if options.extendedResults is not true).
     *
-    * @static
     * @param {BufferLike} input If a Readable stream, must have
     *   received the `readable` event already, or you will get an error
     *   claiming "Insufficient data".
@@ -183,6 +182,7 @@ object typesLibDecoderMod {
     * @returns {ExtendedResults|any} The decoded value.
     * @throws {UnexpectedDataError} Data is left over after decoding.
     * @throws {Error} Insufficient data.
+    * @static
     */
   /* static member */
   inline def decodeFirstSync(input: BufferLike): ExtendedResults | Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirstSync")(input.asInstanceOf[js.Any]).asInstanceOf[ExtendedResults | Any]
@@ -193,10 +193,10 @@ object typesLibDecoderMod {
     * Check the given value for a symbol encoding a NULL or UNDEFINED value in
     * the CBOR stream.
     *
-    * @static
     * @param {any} val The value to check.
     * @returns {any} The corrected value.
     * @throws {Error} Nothing was found.
+    * @static
     * @example
     * myDecoder.on('data', val => {
     *   val = Decoder.nullcheck(val)
@@ -248,7 +248,7 @@ object typesLibDecoderMod {
     
     var tags: StringDictionary[TagFunction]
     
-    var valueBytes: typings.nofilter.mod.^
+    var valueBytes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NoFilter */ Any
   }
   object Decoder {
     
@@ -262,7 +262,7 @@ object typesLibDecoderMod {
       required: Boolean,
       running: Boolean,
       tags: StringDictionary[TagFunction],
-      valueBytes: typings.nofilter.mod.^
+      valueBytes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NoFilter */ Any
     ): Decoder = {
       val __obj = js.Dynamic.literal(_onRead = js.Any.fromFunction1(_onRead), close = js.Any.fromFunction0(close), extendedResults = extendedResults.asInstanceOf[js.Any], max_depth = max_depth.asInstanceOf[js.Any], preferWeb = preferWeb.asInstanceOf[js.Any], preventDuplicateKeys = preventDuplicateKeys.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], valueBytes = valueBytes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Decoder]
@@ -287,7 +287,9 @@ object typesLibDecoderMod {
       
       inline def setTags(value: StringDictionary[TagFunction]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setValueBytes(value: typings.nofilter.mod.^): Self = StObject.set(x, "valueBytes", value.asInstanceOf[js.Any])
+      inline def setValueBytes(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NoFilter */ Any
+      ): Self = StObject.set(x, "valueBytes", value.asInstanceOf[js.Any])
       
       inline def set_onRead(value: Any => Unit): Self = StObject.set(x, "_onRead", js.Any.fromFunction1(value))
     }
@@ -399,8 +401,8 @@ object typesLibDecoderMod {
     
     /**
       * The bytes that were left over from the original
-      * input.  This property only exists if {@link Decoder.decodeFirst } or
-      * {@link Decoder.decodeFirstSync } was called.
+      * input.  This property only exists if {@linkcode Decoder.decodeFirst } or
+      * {@linkcode Decoder.decodeFirstSync } was called.
       */
     var unused: js.UndefOr[Buffer] = js.undefined
     

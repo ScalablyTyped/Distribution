@@ -2,9 +2,9 @@ package typings.reactToastify
 
 import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.JSX.Element
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
-import typings.react.mod.global.JSX.Element
 import typings.reactToastify.distComponentsCloseButtonMod.CloseButtonProps
 import typings.reactToastify.distComponentsIconsMod.BuiltInIconProps
 import typings.reactToastify.distComponentsProgressBarMod.ProgressBarProps

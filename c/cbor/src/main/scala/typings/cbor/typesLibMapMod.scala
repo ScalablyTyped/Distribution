@@ -1,5 +1,6 @@
 package typings.cbor
 
+import typings.std.IterableIterator
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -72,5 +73,14 @@ object typesLibMapMod {
       * @returns {boolean} True on success.
       */
     def encodeCBOR(gen: js.Object): Boolean = js.native
+    
+    /**
+      * Returns a new Iterator object that contains the [key, value] pairs for
+      * each element in the Map object in insertion order.
+      *
+      * @returns {IterableIterator} Key value pairs.
+      */
+    @JSName(js.Symbol.iterator)
+    var iterator_CborMap: js.Function0[IterableIterator[Any]] = js.native
   }
 }

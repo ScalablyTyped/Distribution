@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "atlaskit__popper"
-version := "5.5.1-74df95"
+version := "5.5.2-43adb9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "atlaskit__in-product-testing" % "0.2.0-bdd880",
+  "org.scalablytyped" %%% "atlaskit__in-product-testing" % "0.2.1-537e3d",
   "org.scalablytyped" %%% "buffer" % "6.0.3-acbfae",
   "org.scalablytyped" %%% "csstype" % "3.1.2-5927f3",
   "org.scalablytyped" %%% "cypress" % "12.12.0-4ad2d2",

@@ -1,14 +1,11 @@
 package typings.cbor
 
+import typings.cbor.cborDoubles.`4294967296`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesLibConstantsMod {
-  
-  @JSImport("cbor/types/lib/constants", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
   
   object BI {
     
@@ -99,8 +96,7 @@ object typesLibConstantsMod {
   
   @JSImport("cbor/types/lib/constants", "SHIFT32")
   @js.native
-  def SHIFT32: Double = js.native
-  inline def SHIFT32_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHIFT32")(x.asInstanceOf[js.Any])
+  val SHIFT32: `4294967296` = js.native
   
   object SIMPLE {
     

@@ -1,8 +1,8 @@
 package typings.reactToastify
 
+import typings.react.mod.JSX.Element
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.global.JSX.Element
 import typings.reactToastify.distTypesMod.Theme
 import typings.reactToastify.distTypesMod.TypeOptions
 import typings.std.HTMLElement

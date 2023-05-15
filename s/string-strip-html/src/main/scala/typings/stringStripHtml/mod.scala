@@ -87,13 +87,13 @@ object mod {
     
     var proposedReturn: Range | Null
     
-    var rangesArr: typings.rangesPush.mod.Ranges
+    var rangesArr: js.Array[Range]
     
     var tag: Tag
   }
   object CbObj {
     
-    inline def apply(rangesArr: typings.rangesPush.mod.Ranges, tag: Tag): CbObj = {
+    inline def apply(rangesArr: js.Array[Range], tag: Tag): CbObj = {
       val __obj = js.Dynamic.literal(rangesArr = rangesArr.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], deleteFrom = null, deleteTo = null, proposedReturn = null)
       __obj.asInstanceOf[CbObj]
     }
@@ -119,7 +119,9 @@ object mod {
       
       inline def setProposedReturnNull: Self = StObject.set(x, "proposedReturn", null)
       
-      inline def setRangesArr(value: typings.rangesPush.mod.Ranges): Self = StObject.set(x, "rangesArr", value.asInstanceOf[js.Any])
+      inline def setRangesArr(value: js.Array[Range]): Self = StObject.set(x, "rangesArr", value.asInstanceOf[js.Any])
+      
+      inline def setRangesArrVarargs(value: Range*): Self = StObject.set(x, "rangesArr", js.Array(value*))
       
       inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
@@ -130,6 +132,8 @@ object mod {
     var cb: Null | (js.Function1[/* cbObj */ CbObj, Unit])
     
     var dumpLinkHrefsNearby: Enabled
+    
+    var ignoreIndentations: Boolean
     
     var ignoreTags: js.Array[String]
     
@@ -155,6 +159,7 @@ object mod {
     
     inline def apply(
       dumpLinkHrefsNearby: Enabled,
+      ignoreIndentations: Boolean,
       ignoreTags: js.Array[String],
       ignoreTagsWithTheirContents: js.Array[String],
       onlyStripTags: js.Array[String],
@@ -165,7 +170,7 @@ object mod {
       stripTogetherWithTheirContents: js.Array[String],
       trimOnlySpaces: Boolean
     ): Opts = {
-      val __obj = js.Dynamic.literal(dumpLinkHrefsNearby = dumpLinkHrefsNearby.asInstanceOf[js.Any], ignoreTags = ignoreTags.asInstanceOf[js.Any], ignoreTagsWithTheirContents = ignoreTagsWithTheirContents.asInstanceOf[js.Any], onlyStripTags = onlyStripTags.asInstanceOf[js.Any], reportProgressFuncFrom = reportProgressFuncFrom.asInstanceOf[js.Any], reportProgressFuncTo = reportProgressFuncTo.asInstanceOf[js.Any], skipHtmlDecoding = skipHtmlDecoding.asInstanceOf[js.Any], stripRecognisedHTMLOnly = stripRecognisedHTMLOnly.asInstanceOf[js.Any], stripTogetherWithTheirContents = stripTogetherWithTheirContents.asInstanceOf[js.Any], trimOnlySpaces = trimOnlySpaces.asInstanceOf[js.Any], cb = null, reportProgressFunc = null)
+      val __obj = js.Dynamic.literal(dumpLinkHrefsNearby = dumpLinkHrefsNearby.asInstanceOf[js.Any], ignoreIndentations = ignoreIndentations.asInstanceOf[js.Any], ignoreTags = ignoreTags.asInstanceOf[js.Any], ignoreTagsWithTheirContents = ignoreTagsWithTheirContents.asInstanceOf[js.Any], onlyStripTags = onlyStripTags.asInstanceOf[js.Any], reportProgressFuncFrom = reportProgressFuncFrom.asInstanceOf[js.Any], reportProgressFuncTo = reportProgressFuncTo.asInstanceOf[js.Any], skipHtmlDecoding = skipHtmlDecoding.asInstanceOf[js.Any], stripRecognisedHTMLOnly = stripRecognisedHTMLOnly.asInstanceOf[js.Any], stripTogetherWithTheirContents = stripTogetherWithTheirContents.asInstanceOf[js.Any], trimOnlySpaces = trimOnlySpaces.asInstanceOf[js.Any], cb = null, reportProgressFunc = null)
       __obj.asInstanceOf[Opts]
     }
     
@@ -177,6 +182,8 @@ object mod {
       inline def setCbNull: Self = StObject.set(x, "cb", null)
       
       inline def setDumpLinkHrefsNearby(value: Enabled): Self = StObject.set(x, "dumpLinkHrefsNearby", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreIndentations(value: Boolean): Self = StObject.set(x, "ignoreIndentations", value.asInstanceOf[js.Any])
       
       inline def setIgnoreTags(value: js.Array[String]): Self = StObject.set(x, "ignoreTags", value.asInstanceOf[js.Any])
       

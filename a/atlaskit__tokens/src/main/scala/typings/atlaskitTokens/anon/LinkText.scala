@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LinkText extends StObject {
   
-  var link: PressedPaintToken
+  var link: DefaultPaintTokenPressedPaintToken
   
   var text: Subtlest
 }
 object LinkText {
   
-  inline def apply(link: PressedPaintToken, text: Subtlest): LinkText = {
+  inline def apply(link: DefaultPaintTokenPressedPaintToken, text: Subtlest): LinkText = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkText]
   }
@@ -20,7 +20,7 @@ object LinkText {
   @scala.inline
   implicit open class MutableBuilder[Self <: LinkText] (val x: Self) extends AnyVal {
     
-    inline def setLink(value: PressedPaintToken): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: DefaultPaintTokenPressedPaintToken): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     inline def setText(value: Subtlest): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

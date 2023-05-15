@@ -36,8 +36,8 @@ object typesLibDiagnoseMod {
     * @param {DiagnoseOptions |diagnoseCallback|string} [options={}]
     *   Options, the callback, or the input encoding.
     * @param {diagnoseCallback} [cb] Callback.
-    * @throws {TypeError} Input not provided.
     * @returns {Promise} If callback not specified.
+    * @throws {TypeError} Input not provided.
     */
   /* static member */
   inline def diagnose(input: BufferLike): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("diagnose")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]

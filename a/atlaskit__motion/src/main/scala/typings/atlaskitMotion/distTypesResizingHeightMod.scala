@@ -13,6 +13,9 @@ object distTypesResizingHeightMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * This exists only to be able to extract opts.
+    */
   inline def default(opts: ResizingHeightOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def ResizingHeight(param0: ResizingHeightOptschildre): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResizingHeight")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]

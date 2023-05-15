@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "atlaskit__interaction-context"
-version := "2.1.0-3766ce"
+version := "2.1.1-9a7c71"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

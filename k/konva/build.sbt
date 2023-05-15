@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "konva"
-version := "9.0.1-ddfa39"
+version := "9.0.2-b50f57"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for atlaskit__platform-feature-flags
 
-Typings are for version 0.2.0
+Typings are for version 0.2.1
 
 
 

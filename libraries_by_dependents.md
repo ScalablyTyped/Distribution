@@ -2545,7 +2545,6 @@
 | 0.0 | [expired](./e/expired) | Calculate when HTTP responses expire from the cach
 | 0.0 | [expired-storage](./e/expired-storage) | Micro JS lib that provide local & session storage 
 | 0.0 | [expirymanager](./e/expirymanager) | An object for efficiently managing key expiries
-| 0.0 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de
 | 0.0 | [expo-mixpanel-analytics](./e/expo-mixpanel-analytics) | Mixpanel integration for use with React Native app
 | 0.0 | [expo__bunyan](./e/expo__bunyan) | a JSON logging library for node.js services
 | 0.0 | [expo__code-signing-certif](./e/expo__code-signing-certificates) | A library for working with expo-updates code signi
@@ -3840,7 +3839,6 @@
 | 0.0 | [indefinite-observable](./i/indefinite-observable) |  
 | 0.0 | [indent-string](./i/indent-string) | Indent each line in a string
 | 0.0 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria
-| 0.0 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.0 | [inert](./i/inert) | Static file and directory handlers plugin for hapi
 | 0.0 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f
 | 0.0 | [inferno-clone-vnode](./i/inferno-clone-vnode) | provides helper function to clone Inferno's vNodes

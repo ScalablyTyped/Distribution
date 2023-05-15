@@ -15,6 +15,38 @@ inline def paddingStylesMap: SpacingStyleMap = ^.asInstanceOf[js.Dynamic].select
 
 inline def spaceStylesMap: SpacingStyleMap = ^.asInstanceOf[js.Dynamic].selectDynamic("spaceStylesMap").asInstanceOf[SpacingStyleMap]
 
+type BlockSize = Dimension
+
+type Bottom = Dimension
+
 type Flex = `1`
 
+type Height = Dimension
+
+type InlineSize = Dimension
+
+type Left = Dimension
+
+type MaxBlockSize = Dimension
+
+type MaxHeight = Dimension
+
+type MaxInlineSize = Dimension
+
+type MaxWidth = Dimension
+
+type MinBlockSize = Dimension
+
+type MinHeight = Dimension
+
+type MinInlineSize = Dimension
+
+type MinWidth = Dimension
+
+type Right = Dimension
+
 type SpacingStyleMap = Record[SpacingProperty, RecordSpacingTokenSeriali]
+
+type Top = Dimension
+
+type Width = Dimension

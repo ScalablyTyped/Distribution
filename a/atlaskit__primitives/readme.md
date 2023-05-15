@@ -1,7 +1,7 @@
 
 # Scala.js typings for atlaskit__primitives
 
-Typings are for version 0.9.1
+Typings are for version 0.9.2
 
 
 

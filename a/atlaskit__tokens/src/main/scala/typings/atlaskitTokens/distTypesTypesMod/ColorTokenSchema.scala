@@ -1,6 +1,6 @@
 package typings.atlaskitTokens.distTypesTypesMod
 
-import typings.atlaskitTokens.anon.BackgroundWarning
+import typings.atlaskitTokens.anon.BackgroundInput
 import typings.atlaskitTokens.anon.Transparent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with UtilTokenSchema[BaseToken]
 object ColorTokenSchema {
   
-  inline def apply[BaseToken](UNSAFE: Transparent, color: BackgroundWarning[BaseToken]): ColorTokenSchema[BaseToken] = {
+  inline def apply[BaseToken](UNSAFE: Transparent, color: BackgroundInput[BaseToken]): ColorTokenSchema[BaseToken] = {
     val __obj = js.Dynamic.literal(UNSAFE = UNSAFE.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorTokenSchema[BaseToken]]
   }

@@ -3,64 +3,30 @@ package typings.atlaskitPrimitives
 import typings.atlaskitPrimitives.distTypesComponentsInlineMod.AlignBlock
 import typings.atlaskitPrimitives.distTypesComponentsInlineMod.AlignInline
 import typings.atlaskitPrimitives.distTypesComponentsInlineMod.Grow
+import typings.atlaskitPrimitives.distTypesComponentsInternalBaseBoxMod.As
 import typings.atlaskitPrimitives.distTypesHelpersResponsiveTypesMod.Breakpoint
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.AlignSelf
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.BackgroundColor
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.BackgroundColorToken
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.BlockSize
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.BorderColor
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.BorderRadius
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.BorderStyle
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.BorderWidth
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Bottom
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.ColumnGap
+import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Dimension
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Display
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.FlexDirection
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.FlexGrow
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.FlexShrink
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Gap
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Height
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.InlineSize
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Inset
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.InsetBlock
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.InsetBlockEnd
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.InsetBlockStart
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.InsetInline
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.InsetInlineEnd
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.InsetInlineStart
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Layer
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Left
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.MaxBlockSize
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.MaxHeight
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.MaxInlineSize
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.MaxWidth
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.MinBlockSize
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.MinHeight
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.MinInlineSize
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.MinWidth
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Overflow
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.OverflowBlock
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.OverflowInline
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Padding
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingBlock
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingBlockEnd
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingBlockStart
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingBottom
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingInline
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingInlineEnd
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingInlineStart
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingLeft
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingRight
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingTop
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Position
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Right
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.RowGap
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Shadow
+import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Space
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.SpacingProperty
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.SpacingToken
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.TextColor
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Top
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Width
 import typings.atlaskitPrimitives.distTypesXcssXcssMod.AllowedInlineStyles
 import typings.atlaskitPrimitives.distTypesXcssXcssMod._AllowedBoxStyles
 import org.scalablytyped.runtime.StObject
@@ -86,22 +52,7 @@ object atlaskitPrimitivesStrings {
   @js.native
   sealed trait `100Percentsign`
     extends StObject
-       with BlockSize
-       with Bottom
-       with Height
-       with InlineSize
-       with Left
-       with MaxBlockSize
-       with MaxHeight
-       with MaxInlineSize
-       with MaxWidth
-       with MinBlockSize
-       with MinHeight
-       with MinInlineSize
-       with MinWidth
-       with Right
-       with Top
-       with Width
+       with Dimension
   inline def `100Percentsign`: `100Percentsign` = "100%".asInstanceOf[`100Percentsign`]
   
   @js.native
@@ -2899,7 +2850,9 @@ object atlaskitPrimitivesStrings {
   inline def appearance: appearance = "appearance".asInstanceOf[appearance]
   
   @js.native
-  sealed trait article extends StObject
+  sealed trait article
+    extends StObject
+       with As
   inline def article: article = "article".asInstanceOf[article]
   
   @js.native
@@ -2907,7 +2860,9 @@ object atlaskitPrimitivesStrings {
   inline def as: as = "as".asInstanceOf[as]
   
   @js.native
-  sealed trait aside extends StObject
+  sealed trait aside
+    extends StObject
+       with As
   inline def aside: aside = "aside".asInstanceOf[aside]
   
   @js.native
@@ -4967,6 +4922,7 @@ object atlaskitPrimitivesStrings {
   @js.native
   sealed trait dialog
     extends StObject
+       with As
        with Layer
        with typings.atlaskitPrimitives.distTypesConstantsMod.Layer
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
@@ -5037,7 +4993,9 @@ object atlaskitPrimitivesStrings {
   inline def display: display = "display".asInstanceOf[display]
   
   @js.native
-  sealed trait div extends StObject
+  sealed trait div
+    extends StObject
+       with As
   inline def div: div = "div".asInstanceOf[div]
   
   @js.native
@@ -5477,7 +5435,9 @@ object atlaskitPrimitivesStrings {
   inline def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
   
   @js.native
-  sealed trait footer extends StObject
+  sealed trait footer
+    extends StObject
+       with As
   inline def footer: footer = "footer".asInstanceOf[footer]
   
   @js.native
@@ -5614,7 +5574,9 @@ object atlaskitPrimitivesStrings {
   inline def hangingPunctuation: hangingPunctuation = "hangingPunctuation".asInstanceOf[hangingPunctuation]
   
   @js.native
-  sealed trait header extends StObject
+  sealed trait header
+    extends StObject
+       with As
   inline def header: header = "header".asInstanceOf[header]
   
   @js.native
@@ -5916,7 +5878,9 @@ object atlaskitPrimitivesStrings {
   inline def lg: lg = "lg".asInstanceOf[lg]
   
   @js.native
-  sealed trait li extends StObject
+  sealed trait li
+    extends StObject
+       with As
   inline def li: li = "li".asInstanceOf[li]
   
   @js.native
@@ -5974,7 +5938,9 @@ object atlaskitPrimitivesStrings {
   inline def listStyleType: listStyleType = "listStyleType".asInstanceOf[listStyleType]
   
   @js.native
-  sealed trait main extends StObject
+  sealed trait main
+    extends StObject
+       with As
   inline def main: main = "main".asInstanceOf[main]
   
   @js.native
@@ -6705,7 +6671,9 @@ object atlaskitPrimitivesStrings {
   inline def msWritingMode: msWritingMode = "msWritingMode".asInstanceOf[msWritingMode]
   
   @js.native
-  sealed trait nav extends StObject
+  sealed trait nav
+    extends StObject
+       with As
   inline def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
@@ -6875,7 +6843,9 @@ object atlaskitPrimitivesStrings {
   inline def offsetRotation: offsetRotation = "offsetRotation".asInstanceOf[offsetRotation]
   
   @js.native
-  sealed trait ol extends StObject
+  sealed trait ol
+    extends StObject
+       with As
   inline def ol: ol = "ol".asInstanceOf[ol]
   
   @js.native
@@ -7557,7 +7527,9 @@ object atlaskitPrimitivesStrings {
   inline def scrollbarWidth: scrollbarWidth = "scrollbarWidth".asInstanceOf[scrollbarWidth]
   
   @js.native
-  sealed trait section extends StObject
+  sealed trait section
+    extends StObject
+       with As
   inline def section: section = "section".asInstanceOf[section]
   
   @js.native
@@ -7631,148 +7603,43 @@ object atlaskitPrimitivesStrings {
   @js.native
   sealed trait sizeDot100
     extends StObject
-       with BlockSize
-       with Bottom
-       with Height
-       with InlineSize
-       with Left
-       with MaxBlockSize
-       with MaxHeight
-       with MaxInlineSize
-       with MaxWidth
-       with MinBlockSize
-       with MinHeight
-       with MinInlineSize
-       with MinWidth
-       with Right
-       with Top
-       with Width
+       with Dimension
   inline def sizeDot100: sizeDot100 = "size.100".asInstanceOf[sizeDot100]
   
   @js.native
   sealed trait sizeDot1000
     extends StObject
-       with BlockSize
-       with Bottom
-       with Height
-       with InlineSize
-       with Left
-       with MaxBlockSize
-       with MaxHeight
-       with MaxInlineSize
-       with MaxWidth
-       with MinBlockSize
-       with MinHeight
-       with MinInlineSize
-       with MinWidth
-       with Right
-       with Top
-       with Width
+       with Dimension
   inline def sizeDot1000: sizeDot1000 = "size.1000".asInstanceOf[sizeDot1000]
   
   @js.native
   sealed trait sizeDot200
     extends StObject
-       with BlockSize
-       with Bottom
-       with Height
-       with InlineSize
-       with Left
-       with MaxBlockSize
-       with MaxHeight
-       with MaxInlineSize
-       with MaxWidth
-       with MinBlockSize
-       with MinHeight
-       with MinInlineSize
-       with MinWidth
-       with Right
-       with Top
-       with Width
+       with Dimension
   inline def sizeDot200: sizeDot200 = "size.200".asInstanceOf[sizeDot200]
   
   @js.native
   sealed trait sizeDot300
     extends StObject
-       with BlockSize
-       with Bottom
-       with Height
-       with InlineSize
-       with Left
-       with MaxBlockSize
-       with MaxHeight
-       with MaxInlineSize
-       with MaxWidth
-       with MinBlockSize
-       with MinHeight
-       with MinInlineSize
-       with MinWidth
-       with Right
-       with Top
-       with Width
+       with Dimension
   inline def sizeDot300: sizeDot300 = "size.300".asInstanceOf[sizeDot300]
   
   @js.native
   sealed trait sizeDot400
     extends StObject
-       with BlockSize
-       with Bottom
-       with Height
-       with InlineSize
-       with Left
-       with MaxBlockSize
-       with MaxHeight
-       with MaxInlineSize
-       with MaxWidth
-       with MinBlockSize
-       with MinHeight
-       with MinInlineSize
-       with MinWidth
-       with Right
-       with Top
-       with Width
+       with Dimension
   inline def sizeDot400: sizeDot400 = "size.400".asInstanceOf[sizeDot400]
   
   @js.native
   sealed trait sizeDot500
     extends StObject
-       with BlockSize
-       with Bottom
-       with Height
-       with InlineSize
-       with Left
-       with MaxBlockSize
-       with MaxHeight
-       with MaxInlineSize
-       with MaxWidth
-       with MinBlockSize
-       with MinHeight
-       with MinInlineSize
-       with MinWidth
-       with Right
-       with Top
-       with Width
+       with Dimension
   inline def sizeDot500: sizeDot500 = "size.500".asInstanceOf[sizeDot500]
   
   @js.native
   sealed trait sizeDot600
     extends StObject
-       with BlockSize
-       with Bottom
-       with Height
-       with InlineSize
-       with Left
-       with MaxBlockSize
-       with MaxHeight
-       with MaxInlineSize
-       with MaxWidth
-       with MinBlockSize
-       with MinHeight
-       with MinInlineSize
-       with MinWidth
-       with Right
-       with Top
-       with Width
+       with Dimension
   inline def sizeDot600: sizeDot600 = "size.600".asInstanceOf[sizeDot600]
   
   @js.native
@@ -7794,383 +7661,105 @@ object atlaskitPrimitivesStrings {
   @js.native
   sealed trait spaceDot0
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot0: spaceDot0 = "space.0".asInstanceOf[spaceDot0]
   
   @js.native
   sealed trait spaceDot025
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot025: spaceDot025 = "space.025".asInstanceOf[spaceDot025]
   
   @js.native
   sealed trait spaceDot050
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot050: spaceDot050 = "space.050".asInstanceOf[spaceDot050]
   
   @js.native
   sealed trait spaceDot075
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot075: spaceDot075 = "space.075".asInstanceOf[spaceDot075]
   
   @js.native
   sealed trait spaceDot100
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot100: spaceDot100 = "space.100".asInstanceOf[spaceDot100]
   
   @js.native
   sealed trait spaceDot1000
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot1000: spaceDot1000 = "space.1000".asInstanceOf[spaceDot1000]
   
   @js.native
   sealed trait spaceDot150
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot150: spaceDot150 = "space.150".asInstanceOf[spaceDot150]
   
   @js.native
   sealed trait spaceDot200
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot200: spaceDot200 = "space.200".asInstanceOf[spaceDot200]
   
   @js.native
   sealed trait spaceDot250
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot250: spaceDot250 = "space.250".asInstanceOf[spaceDot250]
   
   @js.native
   sealed trait spaceDot300
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot300: spaceDot300 = "space.300".asInstanceOf[spaceDot300]
   
   @js.native
   sealed trait spaceDot400
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot400: spaceDot400 = "space.400".asInstanceOf[spaceDot400]
   
   @js.native
   sealed trait spaceDot500
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot500: spaceDot500 = "space.500".asInstanceOf[spaceDot500]
   
   @js.native
   sealed trait spaceDot600
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot600: spaceDot600 = "space.600".asInstanceOf[spaceDot600]
   
   @js.native
   sealed trait spaceDot800
     extends StObject
-       with ColumnGap
-       with Gap
-       with Inset
-       with InsetBlock
-       with InsetBlockEnd
-       with InsetBlockStart
-       with InsetInline
-       with InsetInlineEnd
-       with InsetInlineStart
-       with Padding
-       with PaddingBlock
-       with PaddingBlockEnd
-       with PaddingBlockStart
-       with PaddingBottom
-       with PaddingInline
-       with PaddingInlineEnd
-       with PaddingInlineStart
-       with PaddingLeft
-       with PaddingRight
-       with PaddingTop
-       with RowGap
+       with Space
        with SpacingToken
   inline def spaceDot800: spaceDot800 = "space.800".asInstanceOf[spaceDot800]
   
   @js.native
-  sealed trait span extends StObject
+  sealed trait span
+    extends StObject
+       with As
   inline def span: span = "span".asInstanceOf[span]
   
   @js.native
@@ -8560,7 +8149,9 @@ object atlaskitPrimitivesStrings {
   inline def translate: translate = "translate".asInstanceOf[translate]
   
   @js.native
-  sealed trait ul extends StObject
+  sealed trait ul
+    extends StObject
+       with As
   inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native

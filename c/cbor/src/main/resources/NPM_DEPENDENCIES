@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cbor" : "8.1.0"
+      "cbor" : "9.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cbor" : "8.1.0"
+      "cbor" : "9.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "atlaskit__motion"
-version := "1.4.0-e28ef2"
+version := "1.4.1-e2afe5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

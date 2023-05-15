@@ -1,6 +1,6 @@
 package typings.reactToastify
 
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.JSX.Element
 import typings.reactToastify.distTypesMod.Toast
 import typings.reactToastify.distTypesMod.ToastItem
 import typings.reactToastify.distTypesMod.ToastItemStatus

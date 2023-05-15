@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BackgroundBlanket extends StObject {
   
-  var background: Input
+  var background: Information
   
   var blanket: Selected
 }
 object BackgroundBlanket {
   
-  inline def apply(background: Input, blanket: Selected): BackgroundBlanket = {
+  inline def apply(background: Information, blanket: Selected): BackgroundBlanket = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], blanket = blanket.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundBlanket]
   }
@@ -20,7 +20,7 @@ object BackgroundBlanket {
   @scala.inline
   implicit open class MutableBuilder[Self <: BackgroundBlanket] (val x: Self) extends AnyVal {
     
-    inline def setBackground(value: Input): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Information): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setBlanket(value: Selected): Self = StObject.set(x, "blanket", value.asInstanceOf[js.Any])
   }

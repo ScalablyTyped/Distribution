@@ -1,8 +1,8 @@
 package typings.reactToastify
 
+import typings.react.mod.JSX.Element
 import typings.react.mod.ReactNode
 import typings.react.mod.SVGProps
-import typings.react.mod.global.JSX.Element
 import typings.reactToastify.distTypesMod.Theme
 import typings.reactToastify.distTypesMod.ToastProps
 import typings.reactToastify.distTypesMod.TypeOptions

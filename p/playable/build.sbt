@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "playable"
-version := "2.13.0-6b58dd"
+version := "2.13.0-5e861c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20230502Z-f7953c",
-  "org.scalablytyped" %%% "chromecast-caf-sender" % "1.0-dt-20211202Z-c484a4",
+  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20230514Z-0eb2c6",
+  "org.scalablytyped" %%% "chromecast-caf-sender" % "1.0-dt-20211202Z-209483",
   "org.scalablytyped" %%% "eventemitter3" % "5.0.1-abf8ed",
   "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20221103Z-382710",
   "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20221103Z-03309d",

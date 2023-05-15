@@ -1,6 +1,6 @@
 package typings.atlaskitTokens
 
-import typings.atlaskitTokens.anon.BorderDisabled
+import typings.atlaskitTokens.anon.Border
 import typings.atlaskitTokens.atlaskitTokensStrings.attributes
 import typings.atlaskitTokens.distTypesTypesMod.OmitDistributive
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ object distTypesTokensAtlassianLightColorBorderMod {
     
     @JSImport("@atlaskit/tokens/dist/types/tokens/atlassian-light/color/border", "default.color")
     @js.native
-    def color: OmitDistributive[BorderDisabled, attributes] = js.native
-    inline def color_=(x: OmitDistributive[BorderDisabled, attributes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
+    def color: OmitDistributive[Border, attributes] = js.native
+    inline def color_=(x: OmitDistributive[Border, attributes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
   }
 }

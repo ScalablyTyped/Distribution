@@ -52,6 +52,8 @@ object anon {
     
     var dumpLinkHrefsNearby: js.UndefOr[Enabled] = js.undefined
     
+    var ignoreIndentations: js.UndefOr[Boolean] = js.undefined
+    
     var ignoreTags: js.UndefOr[js.Array[String]] = js.undefined
     
     var ignoreTagsWithTheirContents: js.UndefOr[js.Array[String]] = js.undefined
@@ -91,6 +93,10 @@ object anon {
       inline def setDumpLinkHrefsNearby(value: Enabled): Self = StObject.set(x, "dumpLinkHrefsNearby", value.asInstanceOf[js.Any])
       
       inline def setDumpLinkHrefsNearbyUndefined: Self = StObject.set(x, "dumpLinkHrefsNearby", js.undefined)
+      
+      inline def setIgnoreIndentations(value: Boolean): Self = StObject.set(x, "ignoreIndentations", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreIndentationsUndefined: Self = StObject.set(x, "ignoreIndentations", js.undefined)
       
       inline def setIgnoreTags(value: js.Array[String]): Self = StObject.set(x, "ignoreTags", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,6 @@ object typesLibCommentedMod {
     * Comment on an input Buffer or string, creating a string passed to the
     * callback.  If callback not specified, a promise is returned.
     *
-    * @static
     * @param {string|Buffer|ArrayBuffer|Uint8Array|Uint8ClampedArray
     *   |DataView|stream.Readable} input Something to parse.
     * @param {CommentOptions|commentCallback|string|number} [options={}]
@@ -41,6 +40,7 @@ object typesLibCommentedMod {
     * @param {commentCallback} [cb] If specified, called on completion.
     * @returns {Promise} If cb not specified.
     * @throws {Error} Input required.
+    * @static
     */
   /* static member */
   inline def comment(
@@ -178,7 +178,7 @@ object typesLibCommentedMod {
       */
     /* private */ var _tag_24: Any = js.native
     
-    var all: typings.nofilter.mod.^ = js.native
+    var all: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NoFilter */ Any = js.native
     
     var depth: Double = js.native
     

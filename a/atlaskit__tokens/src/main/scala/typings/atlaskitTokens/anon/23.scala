@@ -6,33 +6,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `23` extends StObject {
   
-  var `1`: DefaultHovered
+  var `1`: DefaultPaintToken
   
-  var `2`: DefaultHovered
+  var `2`: DefaultPaintToken
   
-  var `3`: DefaultHovered
+  var `3`: DefaultPaintToken
   
-  var `4`: DefaultHovered
+  var `4`: DefaultPaintToken
   
-  var `5`: DefaultHovered
+  var `5`: DefaultPaintToken
   
-  var `6`: DefaultHovered
+  var `6`: DefaultPaintToken
   
-  var `7`: DefaultHovered
+  var `7`: DefaultPaintToken
   
-  var `8`: DefaultHovered
+  var `8`: DefaultPaintToken
 }
 object `23` {
   
   inline def apply(
-    `1`: DefaultHovered,
-    `2`: DefaultHovered,
-    `3`: DefaultHovered,
-    `4`: DefaultHovered,
-    `5`: DefaultHovered,
-    `6`: DefaultHovered,
-    `7`: DefaultHovered,
-    `8`: DefaultHovered
+    `1`: DefaultPaintToken,
+    `2`: DefaultPaintToken,
+    `3`: DefaultPaintToken,
+    `4`: DefaultPaintToken,
+    `5`: DefaultPaintToken,
+    `6`: DefaultPaintToken,
+    `7`: DefaultPaintToken,
+    `8`: DefaultPaintToken
   ): `23` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
@@ -49,20 +49,20 @@ object `23` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `23`] (val x: Self) extends AnyVal {
     
-    inline def set1(value: DefaultHovered): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: DefaultPaintToken): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    inline def set2(value: DefaultHovered): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+    inline def set2(value: DefaultPaintToken): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
-    inline def set3(value: DefaultHovered): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+    inline def set3(value: DefaultPaintToken): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
     
-    inline def set4(value: DefaultHovered): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+    inline def set4(value: DefaultPaintToken): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
     
-    inline def set5(value: DefaultHovered): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+    inline def set5(value: DefaultPaintToken): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
     
-    inline def set6(value: DefaultHovered): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+    inline def set6(value: DefaultPaintToken): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
     
-    inline def set7(value: DefaultHovered): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
+    inline def set7(value: DefaultPaintToken): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
     
-    inline def set8(value: DefaultHovered): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
+    inline def set8(value: DefaultPaintToken): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
   }
 }

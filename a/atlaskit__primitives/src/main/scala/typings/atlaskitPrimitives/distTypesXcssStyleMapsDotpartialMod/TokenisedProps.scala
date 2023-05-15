@@ -26,7 +26,7 @@ trait TokenisedProps extends StObject {
   
   var color: js.UndefOr[TextColor] = js.undefined
   
-  var columnGap: js.UndefOr[ColumnGap] = js.undefined
+  var columnGap: js.UndefOr[Space] = js.undefined
   
   var display: js.UndefOr[Display] = js.undefined
   
@@ -38,25 +38,25 @@ trait TokenisedProps extends StObject {
   
   var flexShrink: js.UndefOr[FlexShrink] = js.undefined
   
-  var gap: js.UndefOr[Gap] = js.undefined
+  var gap: js.UndefOr[Space] = js.undefined
   
   var height: js.UndefOr[Height] = js.undefined
   
   var inlineSize: js.UndefOr[InlineSize] = js.undefined
   
-  var inset: js.UndefOr[Inset] = js.undefined
+  var inset: js.UndefOr[Space] = js.undefined
   
-  var insetBlock: js.UndefOr[InsetBlock] = js.undefined
+  var insetBlock: js.UndefOr[Space] = js.undefined
   
-  var insetBlockEnd: js.UndefOr[InsetBlockEnd] = js.undefined
+  var insetBlockEnd: js.UndefOr[Space] = js.undefined
   
-  var insetBlockStart: js.UndefOr[InsetBlockStart] = js.undefined
+  var insetBlockStart: js.UndefOr[Space] = js.undefined
   
-  var insetInline: js.UndefOr[InsetInline] = js.undefined
+  var insetInline: js.UndefOr[Space] = js.undefined
   
-  var insetInlineEnd: js.UndefOr[InsetInlineEnd] = js.undefined
+  var insetInlineEnd: js.UndefOr[Space] = js.undefined
   
-  var insetInlineStart: js.UndefOr[InsetInlineStart] = js.undefined
+  var insetInlineStart: js.UndefOr[Space] = js.undefined
   
   var left: js.UndefOr[Left] = js.undefined
   
@@ -78,7 +78,7 @@ trait TokenisedProps extends StObject {
   
   var outlineColor: js.UndefOr[BorderColor] = js.undefined
   
-  var outlineOffset: js.UndefOr[Padding] = js.undefined
+  var outlineOffset: js.UndefOr[Space] = js.undefined
   
   var outlineWidth: js.UndefOr[BorderWidth] = js.undefined
   
@@ -88,25 +88,25 @@ trait TokenisedProps extends StObject {
   
   var overflowInline: js.UndefOr[OverflowInline] = js.undefined
   
-  var padding: js.UndefOr[Padding] = js.undefined
+  var padding: js.UndefOr[Space] = js.undefined
   
-  var paddingBlock: js.UndefOr[PaddingBlock] = js.undefined
+  var paddingBlock: js.UndefOr[Space] = js.undefined
   
-  var paddingBlockEnd: js.UndefOr[PaddingBlockEnd] = js.undefined
+  var paddingBlockEnd: js.UndefOr[Space] = js.undefined
   
-  var paddingBlockStart: js.UndefOr[PaddingBlockStart] = js.undefined
+  var paddingBlockStart: js.UndefOr[Space] = js.undefined
   
-  var paddingInline: js.UndefOr[PaddingInline] = js.undefined
+  var paddingInline: js.UndefOr[Space] = js.undefined
   
-  var paddingInlineEnd: js.UndefOr[PaddingInlineEnd] = js.undefined
+  var paddingInlineEnd: js.UndefOr[Space] = js.undefined
   
-  var paddingInlineStart: js.UndefOr[PaddingInlineStart] = js.undefined
+  var paddingInlineStart: js.UndefOr[Space] = js.undefined
   
   var position: js.UndefOr[Position] = js.undefined
   
   var right: js.UndefOr[Right] = js.undefined
   
-  var rowGap: js.UndefOr[RowGap] = js.undefined
+  var rowGap: js.UndefOr[Space] = js.undefined
   
   var top: js.UndefOr[Top] = js.undefined
   
@@ -164,7 +164,7 @@ object TokenisedProps {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColumnGap(value: ColumnGap): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+    inline def setColumnGap(value: Space): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
     
     inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
     
@@ -188,7 +188,7 @@ object TokenisedProps {
     
     inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
-    inline def setGap(value: Gap): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setGap(value: Space): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
@@ -200,27 +200,27 @@ object TokenisedProps {
     
     inline def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
     
-    inline def setInset(value: Inset): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: Space): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    inline def setInsetBlock(value: InsetBlock): Self = StObject.set(x, "insetBlock", value.asInstanceOf[js.Any])
+    inline def setInsetBlock(value: Space): Self = StObject.set(x, "insetBlock", value.asInstanceOf[js.Any])
     
-    inline def setInsetBlockEnd(value: InsetBlockEnd): Self = StObject.set(x, "insetBlockEnd", value.asInstanceOf[js.Any])
+    inline def setInsetBlockEnd(value: Space): Self = StObject.set(x, "insetBlockEnd", value.asInstanceOf[js.Any])
     
     inline def setInsetBlockEndUndefined: Self = StObject.set(x, "insetBlockEnd", js.undefined)
     
-    inline def setInsetBlockStart(value: InsetBlockStart): Self = StObject.set(x, "insetBlockStart", value.asInstanceOf[js.Any])
+    inline def setInsetBlockStart(value: Space): Self = StObject.set(x, "insetBlockStart", value.asInstanceOf[js.Any])
     
     inline def setInsetBlockStartUndefined: Self = StObject.set(x, "insetBlockStart", js.undefined)
     
     inline def setInsetBlockUndefined: Self = StObject.set(x, "insetBlock", js.undefined)
     
-    inline def setInsetInline(value: InsetInline): Self = StObject.set(x, "insetInline", value.asInstanceOf[js.Any])
+    inline def setInsetInline(value: Space): Self = StObject.set(x, "insetInline", value.asInstanceOf[js.Any])
     
-    inline def setInsetInlineEnd(value: InsetInlineEnd): Self = StObject.set(x, "insetInlineEnd", value.asInstanceOf[js.Any])
+    inline def setInsetInlineEnd(value: Space): Self = StObject.set(x, "insetInlineEnd", value.asInstanceOf[js.Any])
     
     inline def setInsetInlineEndUndefined: Self = StObject.set(x, "insetInlineEnd", js.undefined)
     
-    inline def setInsetInlineStart(value: InsetInlineStart): Self = StObject.set(x, "insetInlineStart", value.asInstanceOf[js.Any])
+    inline def setInsetInlineStart(value: Space): Self = StObject.set(x, "insetInlineStart", value.asInstanceOf[js.Any])
     
     inline def setInsetInlineStartUndefined: Self = StObject.set(x, "insetInlineStart", js.undefined)
     
@@ -268,7 +268,7 @@ object TokenisedProps {
     
     inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
-    inline def setOutlineOffset(value: Padding): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
+    inline def setOutlineOffset(value: Space): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
     
     inline def setOutlineOffsetUndefined: Self = StObject.set(x, "outlineOffset", js.undefined)
     
@@ -288,27 +288,27 @@ object TokenisedProps {
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
-    inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Space): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    inline def setPaddingBlock(value: PaddingBlock): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
+    inline def setPaddingBlock(value: Space): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
     
-    inline def setPaddingBlockEnd(value: PaddingBlockEnd): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
+    inline def setPaddingBlockEnd(value: Space): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
     
     inline def setPaddingBlockEndUndefined: Self = StObject.set(x, "paddingBlockEnd", js.undefined)
     
-    inline def setPaddingBlockStart(value: PaddingBlockStart): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
+    inline def setPaddingBlockStart(value: Space): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
     
     inline def setPaddingBlockStartUndefined: Self = StObject.set(x, "paddingBlockStart", js.undefined)
     
     inline def setPaddingBlockUndefined: Self = StObject.set(x, "paddingBlock", js.undefined)
     
-    inline def setPaddingInline(value: PaddingInline): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
+    inline def setPaddingInline(value: Space): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
     
-    inline def setPaddingInlineEnd(value: PaddingInlineEnd): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
+    inline def setPaddingInlineEnd(value: Space): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
     
     inline def setPaddingInlineEndUndefined: Self = StObject.set(x, "paddingInlineEnd", js.undefined)
     
-    inline def setPaddingInlineStart(value: PaddingInlineStart): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
+    inline def setPaddingInlineStart(value: Space): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
     
     inline def setPaddingInlineStartUndefined: Self = StObject.set(x, "paddingInlineStart", js.undefined)
     
@@ -324,7 +324,7 @@ object TokenisedProps {
     
     inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    inline def setRowGap(value: RowGap): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
+    inline def setRowGap(value: Space): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
     
     inline def setRowGapUndefined: Self = StObject.set(x, "rowGap", js.undefined)
     

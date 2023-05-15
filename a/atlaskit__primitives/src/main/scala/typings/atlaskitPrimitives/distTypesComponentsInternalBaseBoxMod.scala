@@ -1,30 +1,12 @@
 package typings.atlaskitPrimitives
 
 import org.scalablytyped.runtime.Shortcut
-import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.article
 import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.as
-import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.aside
 import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.className
-import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.dialog
 import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.div
-import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.footer
-import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.header
-import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.li
-import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.main
-import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.nav
-import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.ol
-import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.section
-import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.span
-import typings.atlaskitPrimitives.atlaskitPrimitivesStrings.ul
 import typings.atlaskitPrimitives.distTypesComponentsTypesMod.BasePrimitiveProps
 import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.BackgroundColor
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Padding
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingBlock
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingBlockEnd
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingBlockStart
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingInline
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingInlineEnd
-import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.PaddingInlineStart
+import typings.atlaskitPrimitives.distTypesXcssStyleMapsDotpartialMod.Space
 import typings.react.mod.ComponentPropsWithoutRef
 import typings.react.mod.ElementType
 import typings.react.mod.FC
@@ -45,6 +27,51 @@ object distTypesComponentsInternalBaseBoxMod extends Shortcut {
   @js.native
   val BaseBox: BaseBoxComponent[div] = js.native
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.article
+    - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.aside
+    - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.dialog
+    - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.div
+    - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.footer
+    - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.header
+    - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.li
+    - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.main
+    - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.nav
+    - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.ol
+    - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.section
+    - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.span
+    - typings.atlaskitPrimitives.atlaskitPrimitivesStrings.ul
+  */
+  trait As extends StObject
+  object As {
+    
+    inline def article: typings.atlaskitPrimitives.atlaskitPrimitivesStrings.article = "article".asInstanceOf[typings.atlaskitPrimitives.atlaskitPrimitivesStrings.article]
+    
+    inline def aside: typings.atlaskitPrimitives.atlaskitPrimitivesStrings.aside = "aside".asInstanceOf[typings.atlaskitPrimitives.atlaskitPrimitivesStrings.aside]
+    
+    inline def dialog: typings.atlaskitPrimitives.atlaskitPrimitivesStrings.dialog = "dialog".asInstanceOf[typings.atlaskitPrimitives.atlaskitPrimitivesStrings.dialog]
+    
+    inline def div: typings.atlaskitPrimitives.atlaskitPrimitivesStrings.div = "div".asInstanceOf[typings.atlaskitPrimitives.atlaskitPrimitivesStrings.div]
+    
+    inline def footer: typings.atlaskitPrimitives.atlaskitPrimitivesStrings.footer = "footer".asInstanceOf[typings.atlaskitPrimitives.atlaskitPrimitivesStrings.footer]
+    
+    inline def header: typings.atlaskitPrimitives.atlaskitPrimitivesStrings.header = "header".asInstanceOf[typings.atlaskitPrimitives.atlaskitPrimitivesStrings.header]
+    
+    inline def li: typings.atlaskitPrimitives.atlaskitPrimitivesStrings.li = "li".asInstanceOf[typings.atlaskitPrimitives.atlaskitPrimitivesStrings.li]
+    
+    inline def main: typings.atlaskitPrimitives.atlaskitPrimitivesStrings.main = "main".asInstanceOf[typings.atlaskitPrimitives.atlaskitPrimitivesStrings.main]
+    
+    inline def nav: typings.atlaskitPrimitives.atlaskitPrimitivesStrings.nav = "nav".asInstanceOf[typings.atlaskitPrimitives.atlaskitPrimitivesStrings.nav]
+    
+    inline def ol: typings.atlaskitPrimitives.atlaskitPrimitivesStrings.ol = "ol".asInstanceOf[typings.atlaskitPrimitives.atlaskitPrimitivesStrings.ol]
+    
+    inline def section: typings.atlaskitPrimitives.atlaskitPrimitivesStrings.section = "section".asInstanceOf[typings.atlaskitPrimitives.atlaskitPrimitivesStrings.section]
+    
+    inline def span: typings.atlaskitPrimitives.atlaskitPrimitivesStrings.span = "span".asInstanceOf[typings.atlaskitPrimitives.atlaskitPrimitivesStrings.span]
+    
+    inline def ul: typings.atlaskitPrimitives.atlaskitPrimitivesStrings.ul = "ul".asInstanceOf[typings.atlaskitPrimitives.atlaskitPrimitivesStrings.ul]
+  }
+  
   type BaseBoxComponent[T /* <: ElementType[Any] */] = (js.Function1[/* props */ BaseBoxProps[div], ReactElement | Null]) & FC[BaseBoxProps[T]]
   
   type BaseBoxProps[T /* <: ElementType[Any] */] = (Omit[ComponentPropsWithoutRef[T], as | className]) & BasePrimitiveProps & BaseBoxPropsFoundation[T]
@@ -54,9 +81,7 @@ object distTypesComponentsInternalBaseBoxMod extends Shortcut {
     /**
       * The DOM element to render as the Box. Defaults to `div`.
       */
-    var as: js.UndefOr[
-        article | aside | dialog | div | footer | header | li | main | nav | ol | section | span | ul
-      ] = js.undefined
+    var as: js.UndefOr[As] = js.undefined
     
     /**
       * Token representing background color with a built-in fallback value.
@@ -87,7 +112,7 @@ object distTypesComponentsInternalBaseBoxMod extends Shortcut {
       * @see paddingBlock
       * @see paddingInline
       */
-    var padding: js.UndefOr[Padding] = js.undefined
+    var padding: js.UndefOr[Space] = js.undefined
     
     /**
       * Tokens representing CSS shorthand `paddingBlock`.
@@ -95,17 +120,17 @@ object distTypesComponentsInternalBaseBoxMod extends Shortcut {
       * @see paddingBlockStart
       * @see paddingBlockEnd
       */
-    var paddingBlock: js.UndefOr[PaddingBlock] = js.undefined
+    var paddingBlock: js.UndefOr[Space] = js.undefined
     
     /**
       * Tokens representing CSS `paddingBlockEnd`.
       */
-    var paddingBlockEnd: js.UndefOr[PaddingBlockEnd] = js.undefined
+    var paddingBlockEnd: js.UndefOr[Space] = js.undefined
     
     /**
       * Tokens representing CSS `paddingBlockStart`.
       */
-    var paddingBlockStart: js.UndefOr[PaddingBlockStart] = js.undefined
+    var paddingBlockStart: js.UndefOr[Space] = js.undefined
     
     /**
       * Tokens representing CSS shorthand `paddingInline`.
@@ -113,17 +138,17 @@ object distTypesComponentsInternalBaseBoxMod extends Shortcut {
       * @see paddingInlineStart
       * @see paddingInlineEnd
       */
-    var paddingInline: js.UndefOr[PaddingInline] = js.undefined
+    var paddingInline: js.UndefOr[Space] = js.undefined
     
     /**
       * Tokens representing CSS `paddingInlineEnd`.
       */
-    var paddingInlineEnd: js.UndefOr[PaddingInlineEnd] = js.undefined
+    var paddingInlineEnd: js.UndefOr[Space] = js.undefined
     
     /**
       * Tokens representing CSS `paddingInlineStart`.
       */
-    var paddingInlineStart: js.UndefOr[PaddingInlineStart] = js.undefined
+    var paddingInlineStart: js.UndefOr[Space] = js.undefined
     
     /**
       * Forwarded ref element
@@ -142,9 +167,7 @@ object distTypesComponentsInternalBaseBoxMod extends Shortcut {
     @scala.inline
     implicit open class MutableBuilder[Self <: BaseBoxPropsFoundation[?], T /* <: ElementType[Any] */] (val x: Self & BaseBoxPropsFoundation[T]) extends AnyVal {
       
-      inline def setAs(
-        value: article | aside | dialog | div | footer | header | li | main | nav | ol | section | span | ul
-      ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: As): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -160,27 +183,27 @@ object distTypesComponentsInternalBaseBoxMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Space): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      inline def setPaddingBlock(value: PaddingBlock): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
+      inline def setPaddingBlock(value: Space): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
       
-      inline def setPaddingBlockEnd(value: PaddingBlockEnd): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
+      inline def setPaddingBlockEnd(value: Space): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
       
       inline def setPaddingBlockEndUndefined: Self = StObject.set(x, "paddingBlockEnd", js.undefined)
       
-      inline def setPaddingBlockStart(value: PaddingBlockStart): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
+      inline def setPaddingBlockStart(value: Space): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
       
       inline def setPaddingBlockStartUndefined: Self = StObject.set(x, "paddingBlockStart", js.undefined)
       
       inline def setPaddingBlockUndefined: Self = StObject.set(x, "paddingBlock", js.undefined)
       
-      inline def setPaddingInline(value: PaddingInline): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
+      inline def setPaddingInline(value: Space): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
       
-      inline def setPaddingInlineEnd(value: PaddingInlineEnd): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
+      inline def setPaddingInlineEnd(value: Space): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
       
       inline def setPaddingInlineEndUndefined: Self = StObject.set(x, "paddingInlineEnd", js.undefined)
       
-      inline def setPaddingInlineStart(value: PaddingInlineStart): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
+      inline def setPaddingInlineStart(value: Space): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
       
       inline def setPaddingInlineStartUndefined: Self = StObject.set(x, "paddingInlineStart", js.undefined)
       

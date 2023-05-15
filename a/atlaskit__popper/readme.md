@@ -1,7 +1,7 @@
 
 # Scala.js typings for atlaskit__popper
 
-Typings are for version 5.5.1
+Typings are for version 5.5.2
 
 ## Library description:
 Wrapper for react-popper with common config and some helpers

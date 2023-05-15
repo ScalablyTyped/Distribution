@@ -1,7 +1,7 @@
 
 # Scala.js typings for atlaskit__focus-ring
 
-Typings are for version 1.3.0
+Typings are for version 1.3.1
 
 ## Library description:
 A focus ring is used to indicate the currently focused item.

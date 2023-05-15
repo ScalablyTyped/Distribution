@@ -1,7 +1,7 @@
 
 # Scala.js typings for atlaskit__heading
 
-Typings are for version 1.3.0
+Typings are for version 1.3.1
 
 ## Library description:
 A heading is a typography component used to display text in different sizes and formats.
