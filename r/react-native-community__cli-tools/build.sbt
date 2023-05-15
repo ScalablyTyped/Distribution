@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-community__cli-tools"
-version := "11.2.3-6ab258"
+version := "11.2.3-6815f8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "formdata-polyfill" % "4.0.10-534907",
   "org.scalablytyped" %%% "node" % "20.1-dt-20230513Z-b25634",
   "org.scalablytyped" %%% "node-fetch" % "3.3.1-0dca8e",
-  "org.scalablytyped" %%% "ora" % "6.3.0-9a8687",
+  "org.scalablytyped" %%% "ora" % "6.3.1-f74ada",
   "org.scalablytyped" %%% "semver" % "7.5-dt-20230508Z-37288e",
   "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false

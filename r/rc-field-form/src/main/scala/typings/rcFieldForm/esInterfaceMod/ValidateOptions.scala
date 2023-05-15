@@ -7,14 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ValidateOptions extends StObject {
   
   /**
-    * Recursive validate. It will validate all the name path that contains the provided one.
-    * e.g. ['a'] will validate ['a'] , ['a', 'b'] and ['a', 1].
+    * Validate only and not trigger UI and Field status update
     */
-  var recursive: js.UndefOr[Boolean] = js.undefined
-  
-  var triggerName: js.UndefOr[String] = js.undefined
-  
-  var validateMessages: js.UndefOr[ValidateMessages] = js.undefined
+  var validateOnly: js.UndefOr[Boolean] = js.undefined
 }
 object ValidateOptions {
   
@@ -26,16 +21,8 @@ object ValidateOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: ValidateOptions] (val x: Self) extends AnyVal {
     
-    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
-    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
-    
-    inline def setTriggerName(value: String): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
-    
-    inline def setTriggerNameUndefined: Self = StObject.set(x, "triggerName", js.undefined)
-    
-    inline def setValidateMessages(value: ValidateMessages): Self = StObject.set(x, "validateMessages", value.asInstanceOf[js.Any])
-    
-    inline def setValidateMessagesUndefined: Self = StObject.set(x, "validateMessages", js.undefined)
+    inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

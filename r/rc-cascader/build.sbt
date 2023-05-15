@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-cascader"
-version := "3.11.1-4af0c6"
+version := "3.11.2-e31353"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

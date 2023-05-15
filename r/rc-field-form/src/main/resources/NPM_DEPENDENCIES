@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-field-form" : "1.30.0"
+      "rc-field-form" : "1.31.0"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-field-form" : "1.30.0"
+      "rc-field-form" : "1.31.0"
     }
   ],
   "compile-devDependencies" : [

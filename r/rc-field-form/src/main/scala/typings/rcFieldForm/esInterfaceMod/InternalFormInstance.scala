@@ -89,9 +89,9 @@ object InternalFormInstance {
     setFields: /* fields */ js.Array[FieldData] => Unit,
     setFieldsValue: /* values */ RecursivePartial[Any] => Unit,
     submit: () => Unit,
-    validateFields: (/* nameList */ js.UndefOr[js.Array[NamePath]], /* options */ js.UndefOr[ValidateOptions]) => js.Promise[Any]
+    validateFields: InternalValidateFields[Any]
   ): InternalFormInstance = {
-    val __obj = js.Dynamic.literal(getFieldError = js.Any.fromFunction1(getFieldError), getFieldValue = js.Any.fromFunction1(getFieldValue), getFieldWarning = js.Any.fromFunction1(getFieldWarning), getFieldsError = js.Any.fromFunction1(getFieldsError), getFieldsValue = getFieldsValue.asInstanceOf[js.Any], getInternalHooks = js.Any.fromFunction1(getInternalHooks), isFieldTouched = js.Any.fromFunction1(isFieldTouched), isFieldValidating = js.Any.fromFunction1(isFieldValidating), isFieldsTouched = isFieldsTouched.asInstanceOf[js.Any], isFieldsValidating = js.Any.fromFunction1(isFieldsValidating), resetFields = js.Any.fromFunction1(resetFields), setFieldValue = js.Any.fromFunction2(setFieldValue), setFields = js.Any.fromFunction1(setFields), setFieldsValue = js.Any.fromFunction1(setFieldsValue), submit = js.Any.fromFunction0(submit), validateFields = js.Any.fromFunction2(validateFields))
+    val __obj = js.Dynamic.literal(getFieldError = js.Any.fromFunction1(getFieldError), getFieldValue = js.Any.fromFunction1(getFieldValue), getFieldWarning = js.Any.fromFunction1(getFieldWarning), getFieldsError = js.Any.fromFunction1(getFieldsError), getFieldsValue = getFieldsValue.asInstanceOf[js.Any], getInternalHooks = js.Any.fromFunction1(getInternalHooks), isFieldTouched = js.Any.fromFunction1(isFieldTouched), isFieldValidating = js.Any.fromFunction1(isFieldValidating), isFieldsTouched = isFieldsTouched.asInstanceOf[js.Any], isFieldsValidating = js.Any.fromFunction1(isFieldsValidating), resetFields = js.Any.fromFunction1(resetFields), setFieldValue = js.Any.fromFunction2(setFieldValue), setFields = js.Any.fromFunction1(setFields), setFieldsValue = js.Any.fromFunction1(setFieldsValue), submit = js.Any.fromFunction0(submit), validateFields = validateFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalFormInstance]
   }
   
@@ -146,9 +146,7 @@ object InternalFormInstance {
     
     inline def setSubmit(value: () => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
     
-    inline def setValidateFields(
-      value: (/* nameList */ js.UndefOr[js.Array[NamePath]], /* options */ js.UndefOr[ValidateOptions]) => js.Promise[Any]
-    ): Self = StObject.set(x, "validateFields", js.Any.fromFunction2(value))
+    inline def setValidateFields(value: InternalValidateFields[Any]): Self = StObject.set(x, "validateFields", value.asInstanceOf[js.Any])
     
     inline def setValidateTrigger(value: String | js.Array[String] | `false`): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
     

@@ -16,8 +16,8 @@ import typings.rcFieldForm.esListMod.ListProps
 import typings.rcFieldForm.esUseWatchMod.GetGeneric
 import typings.react.mod.Context
 import typings.react.mod.FunctionComponent
+import typings.react.mod.JSX.Element
 import typings.react.mod.ReactElement
-import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

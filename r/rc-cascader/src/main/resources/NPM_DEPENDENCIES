@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-cascader" : "3.11.1"
+      "rc-cascader" : "3.11.2"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-cascader" : "3.11.1"
+      "rc-cascader" : "3.11.2"
     }
   ],
   "compile-devDependencies" : [

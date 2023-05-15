@@ -968,6 +968,7 @@
 | [big-integer](./b/big-integer) | An arbitrary length integer library for Javascript | math, big, bignum, bigint, biginteger, integer, arbitrary, precision, arithmetic |
 | [big-rat](./b/big-rat) | A big integer rational number | big, rat, huge, rational, number, big, integer, arithmetic, exact, geometry |
 | [big_dot_js](./b/big_dot_js) | A small, fast, easy-to-use library for arbitrary-p | arbitrary, precision, arithmetic, big, number, decimal, float, biginteger, bigdecimal, bignumber, bigint, bignum |
+| [bigbite__wp-cypress](./b/bigbite__wp-cypress) | WordPress end to end testing with Cypress.io | - |
 | [bigbluebutton-js](./b/bigbluebutton-js) | JavaScript wrapper for BigBlueButton API | bigbluebutton, bbb, api |
 | [bigi](./b/bigi) | Big integers. | cryptography, math, bitcoin, arbitrary, precision, arithmetic, big, integer, int, number, biginteger, bigint, bignumber, decimal, float |
 | [bigint](./b/bigint) | Arbitrary-precision integer arithmetic using libgm | gmp, libgmp, big, bignum, bigint, integer, arithmetic, precision |
@@ -1974,6 +1975,7 @@
 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot | cypress, plugin, dotenv, cypress-plugin, env |
 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot. | - |
 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate | cypress, cypress-plugin |
+| [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t | cypress, istanbul, cypress-plugin, code, coverage |
 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm | cytoscape, cytoscape-extension |
 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u | cytoscape, cytoscape.js, cytoscapejs, cytoscape-canvas, canvas, extension |
@@ -8651,6 +8653,7 @@
 | [rc-cascader](./r/rc-cascader) | cascade select ui component for react | react, react-component, react-cascader, react-select, select, cascade, cascader |
 | [rc-checkbox](./r/rc-checkbox) | checkbox ui component for react | react, react-component, react-checkbox, checkbox |
 | [rc-collapse](./r/rc-collapse) | rc-collapse ui component for react | react, react-component, react-rc-collapse, rc-collapse, collapse, accordion |
+| [rc-component__color-picke](./r/rc-component__color-picker) | - | - |
 | [rc-component__context](./r/rc-component__context) | - | - |
 | [rc-component__mini-decima](./r/rc-component__mini-decimal) | - | - |
 | [rc-component__mutate-obse](./r/rc-component__mutate-observer) | - | - |
@@ -12192,6 +12195,7 @@
 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises | yauzl, unzip, zip, promise, async, await |
 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling | yaml |
 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta | json-api, json, api, response, format, serialization, deserialization, yay, wow, omg |
+| [yazl](./y/yazl) | yet another zip library for node | zip, stream, archive, file |
 | [ydn-db](./y/ydn-db) | - | - |
 | [year-days](./y/year-days) | Get the number of days in a year | year, days, date, number, count |
 | [yeast](./y/yeast) | Tiny but linear growing unique id generator | yeast, id, generator, unique |

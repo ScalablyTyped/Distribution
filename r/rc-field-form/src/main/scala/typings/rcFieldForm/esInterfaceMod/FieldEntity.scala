@@ -34,5 +34,5 @@ trait FieldEntity extends StObject {
   var props: Dependencies = js.native
   
   def validateRules(): js.Promise[js.Array[RuleError]] = js.native
-  def validateRules(options: ValidateOptions): js.Promise[js.Array[RuleError]] = js.native
+  def validateRules(options: InternalValidateOptions): js.Promise[js.Array[RuleError]] = js.native
 }

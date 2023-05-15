@@ -132,9 +132,9 @@ object esComponentsFormFormMod {
       setFields: /* fields */ js.Array[FieldData] => Unit,
       setFieldsValue: /* values */ RecursivePartial[Any] => Unit,
       submit: () => Unit,
-      validateFields: /* nameList */ js.UndefOr[js.Array[NamePath]] => js.Promise[Any]
+      validateFields: ValidateFields[Any]
     ): FormInstance = {
-      val __obj = js.Dynamic.literal(getFieldError = js.Any.fromFunction1(getFieldError), getFieldValue = js.Any.fromFunction1(getFieldValue), getFieldsError = js.Any.fromFunction0(getFieldsError), getFieldsValue = getFieldsValue.asInstanceOf[js.Any], isFieldTouched = js.Any.fromFunction1(isFieldTouched), isFieldsTouched = isFieldsTouched.asInstanceOf[js.Any], resetFields = js.Any.fromFunction0(resetFields), setFieldValue = js.Any.fromFunction2(setFieldValue), setFields = js.Any.fromFunction1(setFields), setFieldsValue = js.Any.fromFunction1(setFieldsValue), submit = js.Any.fromFunction0(submit), validateFields = js.Any.fromFunction1(validateFields))
+      val __obj = js.Dynamic.literal(getFieldError = js.Any.fromFunction1(getFieldError), getFieldValue = js.Any.fromFunction1(getFieldValue), getFieldsError = js.Any.fromFunction0(getFieldsError), getFieldsValue = getFieldsValue.asInstanceOf[js.Any], isFieldTouched = js.Any.fromFunction1(isFieldTouched), isFieldsTouched = isFieldsTouched.asInstanceOf[js.Any], resetFields = js.Any.fromFunction0(resetFields), setFieldValue = js.Any.fromFunction2(setFieldValue), setFields = js.Any.fromFunction1(setFields), setFieldsValue = js.Any.fromFunction1(setFieldsValue), submit = js.Any.fromFunction0(submit), validateFields = validateFields.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormInstance]
     }
     
@@ -175,7 +175,7 @@ object esComponentsFormFormMod {
       
       inline def setSubmit(value: () => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
       
-      inline def setValidateFields(value: /* nameList */ js.UndefOr[js.Array[NamePath]] => js.Promise[Any]): Self = StObject.set(x, "validateFields", js.Any.fromFunction1(value))
+      inline def setValidateFields(value: ValidateFields[Any]): Self = StObject.set(x, "validateFields", value.asInstanceOf[js.Any])
     }
   }
   

@@ -14,9 +14,9 @@ import typings.rcFieldForm.esInterfaceMod.Store
 import typings.rcFieldForm.esInterfaceMod.StoreValue
 import typings.rcFieldForm.rcFieldFormBooleans.`false`
 import typings.rcFieldForm.rcFieldFormStrings.parallel
+import typings.react.mod.JSX.Element
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.global.JSX.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
